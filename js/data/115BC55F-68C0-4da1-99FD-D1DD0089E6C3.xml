@@ -1,0 +1,12 @@
+tocTab[tocTab.length] = new Array("0.3:1", "", "OversiktsdiagramVegkonstruksjon", "EARoot/EA3/EA77.htm", "175.png", "33", "0", "", "Logical diagram0","{B1E452E5-C6E0-4ad9-A179-EAA7DD1921DF}");
+tocTab[tocTab.length] = new Array("0.3:2", "", "«featureType» Veg", "EARoot/EA3/EA85.htm", "5.png", "E170", "0", "", "Class0","{CD3F4620-DF02-4bd6-8EBB-2F21F9582BCD}");
+tocTab[tocTab.length] = new Array("0.3:3", "", "«featureType» VegdesignElement", "EARoot/EA3/EA86.htm", "5.png", "E145", "0", "", "Class0","{5F46F001-116D-4d11-913F-FA75EF8DA966}");
+tocTab[tocTab.length] = new Array("0.3:4", "", "«featureType» VegElement", "EARoot/EA3/EA87.htm", "5.png", "E152", "0", "", "Class0","{00EB069B-1631-49d3-8E0B-F56777DC02C8}");
+tocTab[tocTab.length] = new Array("0.3:5", "", "VegElementsamling", "EARoot/EA3/EA88.htm", "5.png", "E169", "0", "", "Class0","{A1137C53-2216-4aea-8F7F-9E78C5AE4D3A}");
+tocTab[tocTab.length] = new Array("0.3:6", "", "Vegkonstruksjon", "EARoot/EA3/EA89.htm", "5.png", "E157", "0", "", "Class0","{90FBF272-D2DB-4596-A710-F675AAA82077}");
+tocTab[tocTab.length] = new Array("0.3.1", "1", "Grøfter", "EARoot/EA3/EA1/EA93.htm", "4.png", "", "", "{CC756122-EA6C-4014-B2F4-1C206A091E5E}", "Package");
+tocTab[tocTab.length] = new Array("0.3.2", "1", "Leveranse", "EARoot/EA3/EA2/EA124.htm", "4.png", "", "", "{31540E08-08E5-4f7d-91AF-E4A77162256F}", "Package");
+tocTab[tocTab.length] = new Array("0.3.3", "1", "Planum", "EARoot/EA3/EA3/EA179.htm", "4.png", "", "", "{4725D63F-9139-40ee-8296-9068DC8071B8}", "Package");
+tocTab[tocTab.length] = new Array("0.3.4", "1", "Rabatt", "EARoot/EA3/EA4/EA184.htm", "4.png", "", "", "{963C6ADC-D05F-4de2-AB5D-10244B78F45F}", "Package");
+tocTab[tocTab.length] = new Array("0.3.5", "1", "Sideområde", "EARoot/EA3/EA5/EA189.htm", "4.png", "", "", "{B4E36F0B-DE37-496a-91B4-3025438D0749}", "Package");
+tocTab[tocTab.length] = new Array("0.3.6", "1", "Vegkropp", "EARoot/EA3/EA6/EA196.htm", "4.png", "", "", "{CFD7337F-91C3-4a45-B822-A422B24EAB73}", "Package");
