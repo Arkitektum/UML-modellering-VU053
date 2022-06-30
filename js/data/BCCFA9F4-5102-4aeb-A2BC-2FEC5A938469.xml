@@ -4,4 +4,4 @@ tocTab[tocTab.length] = new Array("0.1:3", "", "«featureType» Veg", "EARoot/EA
 tocTab[tocTab.length] = new Array("0.1:4", "", "«featureType» VegElement", "EARoot/EA1/EA13.htm", "5.png", "E152", "0", "", "Class0","{00EB069B-1631-49d3-8E0B-F56777DC02C8}");
 tocTab[tocTab.length] = new Array("0.1:5", "", "VegElementsamling", "EARoot/EA1/EA14.htm", "5.png", "E169", "0", "", "Class0","{A1137C53-2216-4aea-8F7F-9E78C5AE4D3A}");
 tocTab[tocTab.length] = new Array("0.1.1", "1", "«applicationSchema» Vegkonstruksjon", "EARoot/EA1/EA1/EA19.htm", "4.png", "", "", "{115BC55F-68C0-4da1-99FD-D1DD0089E6C3}", "Package");
-tocTab[tocTab.length] = new Array("0.1.2", "1", "«applicationSchema» Vegområde", "EARoot/EA1/EA2/EA164.htm", "4.png", "", "", "{DB2FE64D-54D3-4a8f-9D96-7D6BB5336920}", "Package");
+tocTab[tocTab.length] = new Array("0.1.2", "1", "«applicationSchema» Vegområde", "EARoot/EA1/EA2/EA166.htm", "4.png", "", "", "{DB2FE64D-54D3-4a8f-9D96-7D6BB5336920}", "Package");
