@@ -1,2 +1,3 @@
-tocTab[tocTab.length] = new Array("0.3:1", "", "Grunnlagsdata", "EARoot/EA3/EA235.htm", "175.png", "39", "0", "", "Logical diagram0","{A794039D-196D-4de1-BAAB-1CC685695E14}");
-tocTab[tocTab.length] = new Array("0.3:2", "", "«codeList» Dekningsgrad", "EARoot/EA3/EA238.htm", "5.png", "E131", "0", "", "Class0","{0DC3341C-E5F3-426f-9FCB-C7CB452F6AC9}");
+tocTab[tocTab.length] = new Array("0.3:1", "", "Grunnlagsdata", "EARoot/EA3/EA236.htm", "175.png", "39", "0", "", "Logical diagram0","{A794039D-196D-4de1-BAAB-1CC685695E14}");
+tocTab[tocTab.length] = new Array("0.3:2", "", "«codeList» Dekningsgrad", "EARoot/EA3/EA240.htm", "5.png", "E131", "0", "", "Class0","{0DC3341C-E5F3-426f-9FCB-C7CB452F6AC9}");
+tocTab[tocTab.length] = new Array("0.3.1", "1", "Terrengmodell", "EARoot/EA3/EA1/EA243.htm", "4.png", "", "", "{AC68460E-C953-495b-9487-C0AEBA5D8F9C}", "Package");

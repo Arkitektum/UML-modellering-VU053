@@ -1,6 +1,6 @@
-tocTab[tocTab.length] = new Array("0.1.1.2:1", "", "Oversiktsdiagram leveranse", "EARoot/EA1/EA1/EA2/EA59.htm", "175.png", "34", "0", "", "Logical diagram0","{6962BDFF-79C0-4102-9EE0-58EA5E576863}");
-tocTab[tocTab.length] = new Array("0.1.1.2:2", "", "«featureType» Leveranse", "EARoot/EA1/EA1/EA2/EA65.htm", "5.png", "E150", "0", "", "Class0","{C3CDB1FF-3DCD-4786-96BD-373B12D4F7BA}");
-tocTab[tocTab.length] = new Array("0.1.1.2:3", "", "«codeList» Presisjon", "EARoot/EA1/EA1/EA2/EA66.htm", "5.png", "E5", "0", "", "Class0","{83DF642B-D002-459c-B067-D783A1FDF0B8}");
-tocTab[tocTab.length] = new Array("0.1.1.2.1", "1", "Dokumentasjon", "EARoot/EA1/EA1/EA2/EA1/EA71.htm", "4.png", "", "", "{2E8E46A3-9505-4378-B2C8-F0CF8BB5B7A6}", "Package");
-tocTab[tocTab.length] = new Array("0.1.1.2.2", "1", "Fremdrift", "EARoot/EA1/EA1/EA2/EA2/EA104.htm", "4.png", "", "", "{902288EE-5B5D-4c70-8006-CB937369E488}", "Package");
-tocTab[tocTab.length] = new Array("0.1.1.2.3", "1", "Fullføringsgrad", "EARoot/EA1/EA1/EA2/EA3/EA109.htm", "4.png", "", "", "{89FFC9F1-1E7F-4df4-A536-5C5D77DA24A0}", "Package");
+tocTab[tocTab.length] = new Array("0.1.1.2:1", "", "Oversiktsdiagram leveranse", "EARoot/EA1/EA1/EA2/EA58.htm", "175.png", "34", "0", "", "Logical diagram0","{6962BDFF-79C0-4102-9EE0-58EA5E576863}");
+tocTab[tocTab.length] = new Array("0.1.1.2:2", "", "«featureType» Leveranse", "EARoot/EA1/EA1/EA2/EA64.htm", "5.png", "E150", "0", "", "Class0","{C3CDB1FF-3DCD-4786-96BD-373B12D4F7BA}");
+tocTab[tocTab.length] = new Array("0.1.1.2:3", "", "«codeList» Presisjon", "EARoot/EA1/EA1/EA2/EA65.htm", "5.png", "E5", "0", "", "Class0","{83DF642B-D002-459c-B067-D783A1FDF0B8}");
+tocTab[tocTab.length] = new Array("0.1.1.2.1", "1", "Dokumentasjon", "EARoot/EA1/EA1/EA2/EA1/EA70.htm", "4.png", "", "", "{2E8E46A3-9505-4378-B2C8-F0CF8BB5B7A6}", "Package");
+tocTab[tocTab.length] = new Array("0.1.1.2.2", "1", "Fremdrift", "EARoot/EA1/EA1/EA2/EA2/EA103.htm", "4.png", "", "", "{902288EE-5B5D-4c70-8006-CB937369E488}", "Package");
+tocTab[tocTab.length] = new Array("0.1.1.2.3", "1", "Fullføringsgrad", "EARoot/EA1/EA1/EA2/EA3/EA108.htm", "4.png", "", "", "{89FFC9F1-1E7F-4df4-A536-5C5D77DA24A0}", "Package");
