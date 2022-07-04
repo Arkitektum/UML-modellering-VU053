@@ -1,0 +1,5 @@
+tocTab[tocTab.length] = new Array("0.3.1:1", "", "Grunnlagsdata", "EARoot/EA3/EA1/EA247.htm", "175.png", "53", "0", "", "Logical diagram0","{3A21DC08-B10B-4ca8-90D6-2D62E3ED87D0}");
+tocTab[tocTab.length] = new Array("0.3.1:2", "", "«featureType» Dataset", "EARoot/EA3/EA1/EA250.htm", "5.png", "E213", "0", "", "Class0","{0444B3F0-A046-4449-B592-A5DCC7FAC024}");
+tocTab[tocTab.length] = new Array("0.3.1:3", "", "«featureType» Grunnlagsdata", "EARoot/EA3/EA1/EA251.htm", "5.png", "E219", "0", "", "Class0","{E645A204-3568-4175-9353-F275407FF362}");
+tocTab[tocTab.length] = new Array("0.3.1:4", "", "«featureType» Grunnlagsområde", "EARoot/EA3/EA1/EA252.htm", "5.png", "E212", "0", "", "Class0","{8C50451B-F1E0-494a-B0C4-4841F5976AF5}");
+tocTab[tocTab.length] = new Array("0.3.1:5", "", "«codeList» Prosent", "EARoot/EA3/EA1/EA253.htm", "5.png", "E131", "0", "", "Class0","{0DC3341C-E5F3-426f-9FCB-C7CB452F6AC9}");

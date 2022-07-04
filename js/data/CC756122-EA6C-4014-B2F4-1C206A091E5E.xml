@@ -1,4 +1,4 @@
-tocTab[tocTab.length] = new Array("0.1.1.1:1", "", "Grøfter", "EARoot/EA1/EA1/EA1/EA27.htm", "175.png", "45", "0", "", "Logical diagram0","{BB582D7D-C569-44a9-8312-137CB3F5137C}");
-tocTab[tocTab.length] = new Array("0.1.1.1:2", "", "Grøfter", "EARoot/EA1/EA1/EA1/EA31.htm", "5.png", "E187", "0", "", "Class0","{B9B8CFBA-93AC-4c16-A495-4C349FF8BE53}");
-tocTab[tocTab.length] = new Array("0.1.1.1:3", "", "«featureType» GrøfterElement", "EARoot/EA1/EA1/EA1/EA32.htm", "5.png", "E188", "0", "", "Class0","{85BABC17-09D4-447b-969D-BD496F8ABFDE}");
-tocTab[tocTab.length] = new Array("0.1.1.1.1", "1", "Drennering", "EARoot/EA1/EA1/EA1/EA1/EA37.htm", "4.png", "", "", "{DE4DD7B1-9BEC-45ac-B1B3-EB9613DA1808}", "Package");
+tocTab[tocTab.length] = new Array("0.1.1.1:1", "", "Grøfter", "EARoot/EA1/EA1/EA1/EA28.htm", "175.png", "45", "0", "", "Logical diagram0","{BB582D7D-C569-44a9-8312-137CB3F5137C}");
+tocTab[tocTab.length] = new Array("0.1.1.1:2", "", "Grøfter", "EARoot/EA1/EA1/EA1/EA32.htm", "5.png", "E187", "0", "", "Class0","{B9B8CFBA-93AC-4c16-A495-4C349FF8BE53}");
+tocTab[tocTab.length] = new Array("0.1.1.1:3", "", "«featureType» GrøfterElement", "EARoot/EA1/EA1/EA1/EA33.htm", "5.png", "E188", "0", "", "Class0","{85BABC17-09D4-447b-969D-BD496F8ABFDE}");
+tocTab[tocTab.length] = new Array("0.1.1.1.1", "1", "Drennering", "EARoot/EA1/EA1/EA1/EA1/EA38.htm", "4.png", "", "", "{DE4DD7B1-9BEC-45ac-B1B3-EB9613DA1808}", "Package");
