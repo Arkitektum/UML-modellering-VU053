@@ -1,5 +1,5 @@
-tocTab[tocTab.length] = new Array("0.1.1.1.1:1", "", "Kodeliste Drennering", "EARoot/EA1/EA1/EA1/EA1/EA36.htm", "175.png", "46", "0", "", "Logical diagram0","{4E0B00B6-1BE3-472c-8906-8B85AEB85980}");
-tocTab[tocTab.length] = new Array("0.1.1.1.1:2", "", "Oversiktsdiagram drennering", "EARoot/EA1/EA1/EA1/EA1/EA38.htm", "175.png", "11", "0", "", "Logical diagram0","{845F4053-0F8D-47f9-B070-117E901546C9}");
-tocTab[tocTab.length] = new Array("0.1.1.1.1:3", "", "«featureType» Drennering", "EARoot/EA1/EA1/EA1/EA1/EA41.htm", "5.png", "E178", "0", "", "Class0","{6C3E2287-3CE5-45f9-8D3B-34625CA7E3BF}");
-tocTab[tocTab.length] = new Array("0.1.1.1.1.1", "1", "VannhåndteringÅpen", "EARoot/EA1/EA1/EA1/EA1/EA1/EA46.htm", "4.png", "", "", "{BBAC1C77-CB9A-445c-A829-87D6BFAD8BB3}", "Package");
-tocTab[tocTab.length] = new Array("0.1.1.1.1.2", "1", "VannhåndteringLukket", "EARoot/EA1/EA1/EA1/EA1/EA2/EA54.htm", "4.png", "", "", "{84D5D9DA-AEEF-475f-9FDF-A476D86E1927}", "Package");
+tocTab[tocTab.length] = new Array("0.1.2.1.1.1:1", "", "Kodeliste Drennering", "EARoot/EA1/EA2/EA1/EA1/EA1/EA58.htm", "175.png", "46", "0", "", "Logical diagram0","{4E0B00B6-1BE3-472c-8906-8B85AEB85980}");
+tocTab[tocTab.length] = new Array("0.1.2.1.1.1:2", "", "Oversiktsdiagram drennering", "EARoot/EA1/EA2/EA1/EA1/EA1/EA60.htm", "175.png", "11", "0", "", "Logical diagram0","{845F4053-0F8D-47f9-B070-117E901546C9}");
+tocTab[tocTab.length] = new Array("0.1.2.1.1.1:3", "", "«featureType» Drennering", "EARoot/EA1/EA2/EA1/EA1/EA1/EA63.htm", "5.png", "E178", "0", "", "Class0","{6C3E2287-3CE5-45f9-8D3B-34625CA7E3BF}");
+tocTab[tocTab.length] = new Array("0.1.2.1.1.1.1", "1", "VannhåndteringÅpen", "EARoot/EA1/EA2/EA1/EA1/EA1/EA1/EA68.htm", "4.png", "", "", "{BBAC1C77-CB9A-445c-A829-87D6BFAD8BB3}", "Package");
+tocTab[tocTab.length] = new Array("0.1.2.1.1.1.2", "1", "VannhåndteringLukket", "EARoot/EA1/EA2/EA1/EA1/EA1/EA2/EA76.htm", "4.png", "", "", "{84D5D9DA-AEEF-475f-9FDF-A476D86E1927}", "Package");

@@ -1,6 +1,6 @@
-tocTab[tocTab.length] = new Array("0.1:1", "", "Bruk av farger", "EARoot/EA1/EA8.htm", "175.png", "42", "0", "", "Logical diagram0","{9D72070B-4B7A-4d38-BBB4-CD546BF02216}");
-tocTab[tocTab.length] = new Array("0.1:2", "", "FagmodellVeg", "EARoot/EA1/EA10.htm", "175.png", "2", "0", "", "Logical diagram0","{9B8D5789-8C9E-44e8-9520-4CB3A7A0629C}");
-tocTab[tocTab.length] = new Array("0.1:3", "", "FagmodellElementsamling", "EARoot/EA1/EA13.htm", "5.png", "E169", "0", "", "Class0","{A1137C53-2216-4aea-8F7F-9E78C5AE4D3A}");
-tocTab[tocTab.length] = new Array("0.1:4", "", "«featureType» VegElement", "EARoot/EA1/EA16.htm", "5.png", "E152", "0", "", "Class0","{00EB069B-1631-49d3-8E0B-F56777DC02C8}");
-tocTab[tocTab.length] = new Array("0.1.1", "1", "«applicationSchema» Vegkonstruksjon", "EARoot/EA1/EA1/EA21.htm", "4.png", "", "", "{115BC55F-68C0-4da1-99FD-D1DD0089E6C3}", "Package");
-tocTab[tocTab.length] = new Array("0.1.2", "1", "«applicationSchema» Vegområde", "EARoot/EA1/EA2/EA124.htm", "4.png", "", "", "{DB2FE64D-54D3-4a8f-9D96-7D6BB5336920}", "Package");
+tocTab[tocTab.length] = new Array("0.1.2:1", "", "Bruk av farger", "EARoot/EA1/EA2/EA30.htm", "175.png", "42", "0", "", "Logical diagram0","{9D72070B-4B7A-4d38-BBB4-CD546BF02216}");
+tocTab[tocTab.length] = new Array("0.1.2:2", "", "Vegmodell", "EARoot/EA1/EA2/EA32.htm", "175.png", "2", "0", "", "Logical diagram0","{9B8D5789-8C9E-44e8-9520-4CB3A7A0629C}");
+tocTab[tocTab.length] = new Array("0.1.2:3", "", "«featureType» VegElement", "EARoot/EA1/EA2/EA37.htm", "5.png", "E152", "0", "", "Class0","{00EB069B-1631-49d3-8E0B-F56777DC02C8}");
+tocTab[tocTab.length] = new Array("0.1.2:4", "", "VegElementSamling", "EARoot/EA1/EA2/EA38.htm", "5.png", "E169", "0", "", "Class0","{A1137C53-2216-4aea-8F7F-9E78C5AE4D3A}");
+tocTab[tocTab.length] = new Array("0.1.2.1", "1", "«applicationSchema» Vegkonstruksjon", "EARoot/EA1/EA2/EA1/EA43.htm", "4.png", "", "", "{115BC55F-68C0-4da1-99FD-D1DD0089E6C3}", "Package");
+tocTab[tocTab.length] = new Array("0.1.2.2", "1", "«applicationSchema» Vegområde", "EARoot/EA1/EA2/EA2/EA146.htm", "4.png", "", "", "{DB2FE64D-54D3-4a8f-9D96-7D6BB5336920}", "Package");
