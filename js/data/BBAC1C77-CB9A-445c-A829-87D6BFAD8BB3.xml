@@ -1,6 +1,6 @@
-tocTab[tocTab.length] = new Array("0.1.2.1.1.1.1:1", "", "VannhåndteringÅpen", "EARoot/EA1/EA2/EA1/EA1/EA1/EA1/EA66.htm", "175.png", "26", "0", "", "Logical diagram0","{1A8E4720-FD21-42ec-86B3-01D9D81FC071}");
-tocTab[tocTab.length] = new Array("0.1.2.1.1.1.1:2", "", "«codeList» GrøftÅpenMaterial", "EARoot/EA1/EA2/EA1/EA1/EA1/EA1/EA69.htm", "5.png", "E189", "0", "", "Class0","{4C8DA510-AD37-4aa3-8342-CC4E46C5CAB0}");
-tocTab[tocTab.length] = new Array("0.1.2.1.1.1.1:3", "", "«featureType» Grøftskråning", "EARoot/EA1/EA2/EA1/EA1/EA1/EA1/EA70.htm", "5.png", "E184", "0", "", "Class0","{938DCEEB-8E8D-4264-B920-5D4966E1CBCE}");
-tocTab[tocTab.length] = new Array("0.1.2.1.1.1.1:4", "", "«featureType» Sidegrøft", "EARoot/EA1/EA2/EA1/EA1/EA1/EA1/EA71.htm", "5.png", "E182", "0", "", "Class0","{BDF3E99E-C3A6-40f8-B18D-9CD45245DC6E}");
-tocTab[tocTab.length] = new Array("0.1.2.1.1.1.1:5", "", "«featureType» VannHånteringÅpen", "EARoot/EA1/EA2/EA1/EA1/EA1/EA1/EA72.htm", "5.png", "E181", "0", "", "Class0","{4FFF093F-E2CD-4f2e-8F8D-D48D80043D15}");
-tocTab[tocTab.length] = new Array("0.1.2.1.1.1.1:6", "", "«featureType» Terrenggrøft", "EARoot/EA1/EA2/EA1/EA1/EA1/EA1/EA73.htm", "5.png", "E235", "0", "", "Class0","{48F96C48-371E-496b-BAC1-0A452046A937}");
+tocTab[tocTab.length] = new Array("0.1.2.1.1.1.1:1", "", "VannhåndteringÅpen", "EARoot/EA1/EA2/EA1/EA1/EA1/EA1/EA70.htm", "175.png", "26", "0", "", "Logical diagram0","{1A8E4720-FD21-42ec-86B3-01D9D81FC071}");
+tocTab[tocTab.length] = new Array("0.1.2.1.1.1.1:2", "", "«codeList» GrøftÅpenMaterial", "EARoot/EA1/EA2/EA1/EA1/EA1/EA1/EA73.htm", "5.png", "E189", "0", "", "Class0","{4C8DA510-AD37-4aa3-8342-CC4E46C5CAB0}");
+tocTab[tocTab.length] = new Array("0.1.2.1.1.1.1:3", "", "«featureType» Grøftskråning", "EARoot/EA1/EA2/EA1/EA1/EA1/EA1/EA74.htm", "5.png", "E184", "0", "", "Class0","{938DCEEB-8E8D-4264-B920-5D4966E1CBCE}");
+tocTab[tocTab.length] = new Array("0.1.2.1.1.1.1:4", "", "«featureType» Sidegrøft", "EARoot/EA1/EA2/EA1/EA1/EA1/EA1/EA75.htm", "5.png", "E182", "0", "", "Class0","{BDF3E99E-C3A6-40f8-B18D-9CD45245DC6E}");
+tocTab[tocTab.length] = new Array("0.1.2.1.1.1.1:5", "", "«featureType» VannHånteringÅpen", "EARoot/EA1/EA2/EA1/EA1/EA1/EA1/EA76.htm", "5.png", "E181", "0", "", "Class0","{4FFF093F-E2CD-4f2e-8F8D-D48D80043D15}");
+tocTab[tocTab.length] = new Array("0.1.2.1.1.1.1:6", "", "«featureType» Terrenggrøft", "EARoot/EA1/EA2/EA1/EA1/EA1/EA1/EA77.htm", "5.png", "E235", "0", "", "Class0","{48F96C48-371E-496b-BAC1-0A452046A937}");
