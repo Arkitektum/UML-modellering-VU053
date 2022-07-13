@@ -1,0 +1,8 @@
+tocTab[tocTab.length] = new Array("0.1.1.2:1", "", "Støtpute", "EARoot/EA1/EA1/EA2/EA41.htm", "175.png", "62", "0", "", "Logical diagram0","{BF42D88F-D6E2-4c28-AADC-1A810039482D}");
+tocTab[tocTab.length] = new Array("0.1.1.2:2", "", "«featureType» StøteputeElement", "EARoot/EA1/EA1/EA2/EA44.htm", "5.png", "E272", "0", "", "Class0","{959655F8-E108-4d16-988E-914DBF173F57}");
+tocTab[tocTab.length] = new Array("0.1.1.2:3", "", "Støtpute", "EARoot/EA1/EA1/EA2/EA45.htm", "5.png", "E245", "0", "", "Class0","{BB1CF8A8-691C-4d16-A987-4495058E69C8}");
+tocTab[tocTab.length] = new Array("0.1.1.2:4", "", "«codeList» Avledningsevne", "EARoot/EA1/EA1/EA2/EA46.htm", "5.png", "E277", "0", "", "Class0","{439381EB-C312-4663-B77E-708E567588A3}");
+tocTab[tocTab.length] = new Array("0.1.1.2:5", "", "«codeList» Bevegelsesklasse", "EARoot/EA1/EA1/EA2/EA47.htm", "5.png", "E279", "0", "", "Class0","{0B04CB13-3319-4fa3-85ED-002050967BC4}");
+tocTab[tocTab.length] = new Array("0.1.1.2:6", "", "«codeList» Sikkerhetsklasse", "EARoot/EA1/EA1/EA2/EA48.htm", "5.png", "E275", "0", "", "Class0","{98449B96-6588-4cda-B4A6-21E3F59F2C89}");
+tocTab[tocTab.length] = new Array("0.1.1.2:7", "", "«codeList» Skaderisiko", "EARoot/EA1/EA1/EA2/EA49.htm", "5.png", "E283", "0", "", "Class0","{159D1865-DE6D-45d2-8F73-713C1E4C474F}");
+tocTab[tocTab.length] = new Array("0.1.1.2:8", "", "«codeList» Utbøyningsklasse", "EARoot/EA1/EA1/EA2/EA50.htm", "5.png", "E281", "0", "", "Class0","{363EBEB3-8A04-4447-BBA7-348F9DD7512B}");
