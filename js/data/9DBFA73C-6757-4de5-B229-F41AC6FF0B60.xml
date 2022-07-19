@@ -1,5 +1,6 @@
 tocTab[tocTab.length] = new Array("0.1.1.3:1", "", "Rekkverksende", "EARoot/EA1/EA1/EA3/EA48.htm", "175.png", "64", "0", "", "Logical diagram0","{6E9DA808-D81E-4da6-AD17-3CE30F7A5471}");
 tocTab[tocTab.length] = new Array("0.1.1.3:2", "", "«codeList» Energiabsorpsjon", "EARoot/EA1/EA1/EA3/EA51.htm", "5.png", "E291", "0", "", "Class0","{2BA160DF-E568-4deb-AAAC-8E45910EADD1}");
-tocTab[tocTab.length] = new Array("0.1.1.3:3", "", "«featureType» RekkverksendeElement", "EARoot/EA1/EA1/EA3/EA52.htm", "5.png", "E287", "0", "", "Class0","{58E8AB17-DE7F-4544-B248-8C02EE740C3B}");
-tocTab[tocTab.length] = new Array("0.1.1.3:4", "", "«codeList» Sikkerhetsklasse", "EARoot/EA1/EA1/EA3/EA53.htm", "5.png", "E290", "0", "", "Class0","{7120BCB3-CBBC-4d4b-A24B-AECC2EC0B671}");
-tocTab[tocTab.length] = new Array("0.1.1.3:5", "", "«codeList» TypeRekkverksende", "EARoot/EA1/EA1/EA3/EA54.htm", "5.png", "E289", "0", "", "Class0","{CE359ECE-343D-454a-B245-1EC5E1523D66}");
+tocTab[tocTab.length] = new Array("0.1.1.3:3", "", "Rekkverksende", "EARoot/EA1/EA1/EA3/EA52.htm", "5.png", "E300", "0", "", "Class0","{65668804-A0AB-4150-9CAD-6430DABE4FBD}");
+tocTab[tocTab.length] = new Array("0.1.1.3:4", "", "«featureType» RekkverksendeElement", "EARoot/EA1/EA1/EA3/EA53.htm", "5.png", "E287", "0", "", "Class0","{58E8AB17-DE7F-4544-B248-8C02EE740C3B}");
+tocTab[tocTab.length] = new Array("0.1.1.3:5", "", "«codeList» Sikkerhetsklasse", "EARoot/EA1/EA1/EA3/EA54.htm", "5.png", "E290", "0", "", "Class0","{7120BCB3-CBBC-4d4b-A24B-AECC2EC0B671}");
+tocTab[tocTab.length] = new Array("0.1.1.3:6", "", "«codeList» TypeRekkverksende", "EARoot/EA1/EA1/EA3/EA55.htm", "5.png", "E289", "0", "", "Class0","{CE359ECE-343D-454a-B245-1EC5E1523D66}");
