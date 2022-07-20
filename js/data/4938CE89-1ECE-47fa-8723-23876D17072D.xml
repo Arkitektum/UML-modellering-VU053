@@ -1,4 +1,4 @@
-tocTab[tocTab.length] = new Array("0.1.1.1:1", "", "kodelister rekkverk", "EARoot/EA1/EA1/EA1/EA25.htm", "175.png", "63", "0", "", "Logical diagram0","{44FE6E61-A9CA-4b48-A4CC-7DCD146FA825}");
-tocTab[tocTab.length] = new Array("0.1.1.1:2", "", "«codeList» Bevegelsesklasse", "EARoot/EA1/EA1/EA1/EA28.htm", "5.png", "E279", "0", "", "Class0","{0B04CB13-3319-4fa3-85ED-002050967BC4}");
-tocTab[tocTab.length] = new Array("0.1.1.1:3", "", "«codeList» Skaderisiko", "EARoot/EA1/EA1/EA1/EA29.htm", "5.png", "E283", "0", "", "Class0","{159D1865-DE6D-45d2-8F73-713C1E4C474F}");
-tocTab[tocTab.length] = new Array("0.1.1.1:4", "", "«codeList» Utbøyningsklasse", "EARoot/EA1/EA1/EA1/EA30.htm", "5.png", "E281", "0", "", "Class0","{363EBEB3-8A04-4447-BBA7-348F9DD7512B}");
+tocTab[tocTab.length] = new Array("0.1.1.1:1", "", "kodelister rekkverk", "EARoot/EA1/EA1/EA1/EA26.htm", "175.png", "63", "0", "", "Logical diagram0","{44FE6E61-A9CA-4b48-A4CC-7DCD146FA825}");
+tocTab[tocTab.length] = new Array("0.1.1.1:2", "", "«codeList» Bevegelsesklasse", "EARoot/EA1/EA1/EA1/EA29.htm", "5.png", "E279", "0", "", "Class0","{0B04CB13-3319-4fa3-85ED-002050967BC4}");
+tocTab[tocTab.length] = new Array("0.1.1.1:3", "", "«codeList» Skaderisiko", "EARoot/EA1/EA1/EA1/EA30.htm", "5.png", "E283", "0", "", "Class0","{159D1865-DE6D-45d2-8F73-713C1E4C474F}");
+tocTab[tocTab.length] = new Array("0.1.1.1:4", "", "«codeList» Utbøyningsklasse", "EARoot/EA1/EA1/EA1/EA31.htm", "5.png", "E281", "0", "", "Class0","{363EBEB3-8A04-4447-BBA7-348F9DD7512B}");

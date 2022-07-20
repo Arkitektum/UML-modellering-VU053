@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Grunnlagsmodell::GrunnlagsmodellElementSamling</title>
+<title>Terrengmodell</title>
 <link href="../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("GrunnlagsmodellElementSamling", " : "))</script>  : Public   Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Terrengmodell", " : "))</script>  : Public  &lt;&lt;applicationSchema&gt;&gt; Package</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">04.07.2022 13:47:47</td>
+			<td width="85%" class="ObjectDetailsValue">01.07.2022 12:49:01</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">04.07.2022 14:22:30</td>
+			<td class="ObjectDetailsValue">12.07.2022 11:54:12</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,79 +87,131 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{6E1FAF6B-DC39-4f44-9573-470734AF3C73}</td>
+			<td class="ObjectDetailsValue">{AC68460E-C953-495b-9487-C0AEBA5D8F9C}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA300.htm">Grunnlagsmodell</a>, <a href="../EA1.htm">Vegprosjekt</a></td>
+			<td class="ObjectDetailsValue"></td>
 		</tr>
 	</table>
 	
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
-			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
-			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
 		</ul>
-		<div class="ItemBody" id="AssociationsToTable">
-			<table border="0" cellspacing="0" cellpadding="0" class="Table">
-				<tr>
-					<td width="40%" class="TableHeading">Element</td>
-					<td width="30%" class="TableHeading">Source Role</td>
-					<td width="30%" class="TableHeading">Target Role</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA7.htm">«featureType» Veg</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> grunnlagsmodell<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1621" onclick="parent.toggleDiv('detailsDIVLink1621','DetailsImageLink1621')" />Details:
-							<div id="detailsDIVLink1621" class="DetailsDiv" >
-							&nbsp;
-							</div>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Tag</td>
+			<td width="50%" class="TableHeading">Value</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">SOSI_modellstatus</td>
+				<td width="50%" class="TableRow" valign="top">under arbeid</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario1666" onclick="parent.toggleDiv('detailsDIVScenario1666','DetailsImageScenario1666')" />Details:
+						<div id="detailsDIVScenario1666" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: under arbeid,forslag,slettes,utelat,godkjent,vedtatt,erstattet<br />Default: under arbeid<br />Description: styrer status på en spesifikasjon i objektkatalog (alternativ så vil stereotype vise status og applicationschema tolkes som vedtatt) - hvis modellstatus settes til slettes eller utelat så vil ikke denne pakken og dens innhold indekseres for søk i objektkatalog<br /></div>
+
 						</div>
-					</td>
-				</tr>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">SOSI_produktgruppe</td>
+				<td width="50%" class="TableRow" valign="top">produktspes</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario1667" onclick="parent.toggleDiv('detailsDIVScenario1667','DetailsImageScenario1667')" />Details:
+						<div id="detailsDIVScenario1667" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: sosi,produktspes,fagområde,fkb,kartdata,arealis,arealplan,vegdata<br />Default: produktspes<br />Description: Brukes til katalogstruktur for def filer<br /></div>
 
-			</table>
-		</div>
-		<div class="ItemBody" id="LinksTable">
-			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
-				<tr>
-					<td width="30%" class="TableHeading">Object</td>
-					<td width="10%" class="TableHeading">Type</td>
-					<td width="10%" class="TableHeading">Connection</td>
-					<td width="10%" class="TableHeading">Direction</td>
-					<td width="40%" class="TableHeading">Notes</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA305.htm">Grunnlagsmodell</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../EA7.htm">«featureType» Veg</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Strong</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">SOSI_spesifikasjonstype</td>
+				<td width="50%" class="TableRow" valign="top">produktspesifikasjon</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario1668" onclick="parent.toggleDiv('detailsDIVScenario1668','DetailsImageScenario1668')" />Details:
+						<div id="detailsDIVScenario1668" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: produktspesifikasjon,fagområde<br />Default: produktspesifikasjon<br />Description: Brukes til å formatere Word tabeller i Syntaks rapport. Standard kolonne er ikke med når det er en produktspesifikasjon. Ved fagområde så blir SOSI_Objekt lagt til INKLUDER på alle objektdefenisjoner<br /></div>
 
-			</table>
-		</div>
-	</div>
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">targetNamespace</td>
+				<td width="50%" class="TableRow" valign="top">&lt;a href=&quot;http://skjema.geonorge.no/legg_inn_riktig_url&quot; target=&quot;_blank&quot; &gt;http://skjema.geonorge.no/legg_inn_riktig_url&lt;/a&gt;</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario1669" onclick="parent.toggleDiv('detailsDIVScenario1669','DetailsImageScenario1669')" />Details:
+						<div id="detailsDIVScenario1669" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Default: http://skjema.geonorge.no/legg_inn_riktig_url<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">version</td>
+				<td width="50%" class="TableRow" valign="top">1.0</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario1670" onclick="parent.toggleDiv('detailsDIVScenario1670','DetailsImageScenario1670')" />Details:
+						<div id="detailsDIVScenario1670" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Default: 1.0<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">xmlns</td>
+				<td width="50%" class="TableRow" valign="top">app</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario1671" onclick="parent.toggleDiv('detailsDIVScenario1671','DetailsImageScenario1671')" />Details:
+						<div id="detailsDIVScenario1671" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Default: app<br />Description: Namespace prefix (or) the abbreviated short form&nbsp;<WBR> <br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">xsdDocument</td>
+				<td width="50%" class="TableRow" valign="top">filnavn.xsd</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario1672" onclick="parent.toggleDiv('detailsDIVScenario1672','DetailsImageScenario1672')" />Details:
+						<div id="detailsDIVScenario1672" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Default: filnavn.xsd<br />Description: Valid file name or relative file name of the XSD f<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">xsdEncodingRule</td>
+				<td width="50%" class="TableRow" valign="top">sosi</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario1673" onclick="parent.toggleDiv('detailsDIVScenario1673','DetailsImageScenario1673')" />Details:
+						<div id="detailsDIVScenario1673" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: sosi,iso19136_2007,iso19136_2007_ShapeChange_1.0_Extensions,iso19136_2007_INSPIRE_Extensions,iso19139_2007,gml33,citygml-ade,metadata-profile,gsip<br />Default: sosi<br />Description: XML Schema encoding rule to apply<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+	</table>
+</div>	</div>
 <div class="pageFooter"></div>
  
 </body>
