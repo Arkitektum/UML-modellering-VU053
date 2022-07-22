@@ -1,3 +1,3 @@
-tocTab[tocTab.length] = new Array("0.1.2.1.1.1.2:1", "", "VannhåndteringLukket", "EARoot/EA1/EA2/EA1/EA1/EA1/EA2/EA103.htm", "175.png", "27", "0", "", "Logical diagram0","{54E72620-4E12-4696-AC69-34FC062615ED}");
-tocTab[tocTab.length] = new Array("0.1.2.1.1.1.2:2", "", "«featureType» VannHåmdteringLukket", "EARoot/EA1/EA2/EA1/EA1/EA1/EA2/EA106.htm", "5.png", "E191", "0", "", "Class0","{4B8DB74C-7EBF-47a0-80F1-DB41DB568CF6}");
-tocTab[tocTab.length] = new Array("0.1.2.1.1.1.2:3", "", "«codeList» TypeLukketRørgrøft", "EARoot/EA1/EA2/EA1/EA1/EA1/EA2/EA107.htm", "5.png", "E299", "0", "", "Class0","{31E5CC41-6DFF-4eeb-84C9-5AD24386D631}");
+tocTab[tocTab.length] = new Array("0.1.2.1.1.1.2:1", "", "VannhåndteringLukket", "EARoot/EA1/EA2/EA1/EA1/EA1/EA2/EA104.htm", "175.png", "27", "0", "", "Logical diagram0","{54E72620-4E12-4696-AC69-34FC062615ED}");
+tocTab[tocTab.length] = new Array("0.1.2.1.1.1.2:2", "", "«featureType» VannHåmdteringLukket", "EARoot/EA1/EA2/EA1/EA1/EA1/EA2/EA107.htm", "5.png", "E191", "0", "", "Class0","{4B8DB74C-7EBF-47a0-80F1-DB41DB568CF6}");
+tocTab[tocTab.length] = new Array("0.1.2.1.1.1.2:3", "", "«codeList» TypeLukketRørgrøft", "EARoot/EA1/EA2/EA1/EA1/EA1/EA2/EA108.htm", "5.png", "E299", "0", "", "Class0","{31E5CC41-6DFF-4eeb-84C9-5AD24386D631}");

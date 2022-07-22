@@ -2,4 +2,4 @@ tocTab[tocTab.length] = new Array("0.1:1", "", "Fagmodell", "EARoot/EA1/EA10.htm
 tocTab[tocTab.length] = new Array("0.1:2", "", "Fagmodell", "EARoot/EA1/EA13.htm", "5.png", "E239", "0", "", "Class0","{FD8A3C35-3678-4e93-AD3D-98B35DB94295}");
 tocTab[tocTab.length] = new Array("0.1:3", "", "fagmodellElementSamling", "EARoot/EA1/EA14.htm", "5.png", "E240", "0", "", "Class0","{81ADD4BD-1F17-46f1-AF46-38147437BEC6}");
 tocTab[tocTab.length] = new Array("0.1.1", "1", "«applicationSchema» Rekkverkmodell", "EARoot/EA1/EA1/EA19.htm", "4.png", "", "", "{40BD1F83-3309-4577-BE04-4A27C8F595C9}", "Package");
-tocTab[tocTab.length] = new Array("0.1.2", "1", "Vegmodell", "EARoot/EA1/EA2/EA66.htm", "4.png", "", "", "{BCCFA9F4-5102-4aeb-A2BC-2FEC5A938469}", "Package");
+tocTab[tocTab.length] = new Array("0.1.2", "1", "Vegmodell", "EARoot/EA1/EA2/EA67.htm", "4.png", "", "", "{BCCFA9F4-5102-4aeb-A2BC-2FEC5A938469}", "Package");
