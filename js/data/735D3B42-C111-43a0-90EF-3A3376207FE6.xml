@@ -1,6 +1,6 @@
-tocTab[tocTab.length] = new Array("0.1.1.4:1", "", "Støtpute", "EARoot/EA1/EA1/EA4/EA57.htm", "175.png", "62", "0", "", "Logical diagram0","{BF42D88F-D6E2-4c28-AADC-1A810039482D}");
-tocTab[tocTab.length] = new Array("0.1.1.4:2", "", "«featureType» StøteputeElement", "EARoot/EA1/EA1/EA4/EA60.htm", "5.png", "E272", "0", "", "Class0","{959655F8-E108-4d16-988E-914DBF173F57}");
-tocTab[tocTab.length] = new Array("0.1.1.4:3", "", "Støtpute", "EARoot/EA1/EA1/EA4/EA61.htm", "5.png", "E245", "0", "", "Class0","{BB1CF8A8-691C-4d16-A987-4495058E69C8}");
-tocTab[tocTab.length] = new Array("0.1.1.4:4", "", "«codeList» Avledningsevne", "EARoot/EA1/EA1/EA4/EA62.htm", "5.png", "E277", "0", "", "Class0","{439381EB-C312-4663-B77E-708E567588A3}");
-tocTab[tocTab.length] = new Array("0.1.1.4:5", "", "«codeList» ProduktnavnTypegodkjenningStøtpute", "EARoot/EA1/EA1/EA4/EA63.htm", "5.png", "E308", "0", "", "Class0","{85A745AC-D4E3-4c72-8312-5EB8BB4CBC62}");
-tocTab[tocTab.length] = new Array("0.1.1.4:6", "", "«codeList» Sikkerhetsklasse", "EARoot/EA1/EA1/EA4/EA64.htm", "5.png", "E275", "0", "", "Class0","{98449B96-6588-4cda-B4A6-21E3F59F2C89}");
+tocTab[tocTab.length] = new Array("0.1.1.4:1", "", "Støtpute", "EARoot/EA1/EA1/EA4/EA56.htm", "175.png", "62", "0", "", "Logical diagram0","{BF42D88F-D6E2-4c28-AADC-1A810039482D}");
+tocTab[tocTab.length] = new Array("0.1.1.4:2", "", "«featureType» StøteputeElement", "EARoot/EA1/EA1/EA4/EA59.htm", "5.png", "E272", "0", "", "Class0","{959655F8-E108-4d16-988E-914DBF173F57}");
+tocTab[tocTab.length] = new Array("0.1.1.4:3", "", "Støtpute", "EARoot/EA1/EA1/EA4/EA60.htm", "5.png", "E245", "0", "", "Class0","{BB1CF8A8-691C-4d16-A987-4495058E69C8}");
+tocTab[tocTab.length] = new Array("0.1.1.4:4", "", "«codeList» Avledningsevne", "EARoot/EA1/EA1/EA4/EA61.htm", "5.png", "E277", "0", "", "Class0","{439381EB-C312-4663-B77E-708E567588A3}");
+tocTab[tocTab.length] = new Array("0.1.1.4:5", "", "«codeList» ProduktnavnTypegodkjenningStøtpute", "EARoot/EA1/EA1/EA4/EA62.htm", "5.png", "E308", "0", "", "Class0","{85A745AC-D4E3-4c72-8312-5EB8BB4CBC62}");
+tocTab[tocTab.length] = new Array("0.1.1.4:6", "", "«codeList» Sikkerhetsklasse", "EARoot/EA1/EA1/EA4/EA63.htm", "5.png", "E275", "0", "", "Class0","{98449B96-6588-4cda-B4A6-21E3F59F2C89}");
