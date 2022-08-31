@@ -1,0 +1,10 @@
+tocTab[tocTab.length] = new Array("0.2.4.1:1", "", "Kodeliste ProsjektInformasjon", "EARoot/EA2/EA4/EA1/EA286.htm", "175.png", "91", "0", "", "Logical diagram0","{C7F7009D-6992-45a8-8C4A-542123DAB65F}");
+tocTab[tocTab.length] = new Array("0.2.4.1:2", "", "Oversiktsdiagram ProsjektInformasjon", "EARoot/EA2/EA4/EA1/EA288.htm", "175.png", "90", "0", "", "Logical diagram0","{85406061-D785-4f99-8774-2910F2556AB8}");
+tocTab[tocTab.length] = new Array("0.2.4.1:3", "", "«dataType» Koordinatsystem", "EARoot/EA2/EA4/EA1/EA291.htm", "5.png", "E380", "0", "", "Class0","{173508F7-562F-49a6-BBEB-E8854B1A2D9C}");
+tocTab[tocTab.length] = new Array("0.2.4.1:4", "", "«featureType» Prosjekt", "EARoot/EA2/EA4/EA1/EA292.htm", "5.png", "E377", "0", "", "Class0","{DCE84769-5123-4cbd-9DA1-DB26B3282202}");
+tocTab[tocTab.length] = new Array("0.2.4.1:5", "", "«codeList» Prosjektfase", "EARoot/EA2/EA4/EA1/EA293.htm", "5.png", "E378", "0", "", "Class0","{E64D5240-8BC8-4c42-8E07-0D17D2AF92F6}");
+tocTab[tocTab.length] = new Array("0.2.4.1:6", "", "«dataType» ProsjektnavnStandard", "EARoot/EA2/EA4/EA1/EA294.htm", "5.png", "E376", "0", "", "Class0","{7688169A-4B3C-47c4-96DC-8AA437CA08A2}");
+tocTab[tocTab.length] = new Array("0.2.4.1:7", "", "«featureType» Prosjektområde", "EARoot/EA2/EA4/EA1/EA295.htm", "5.png", "E379", "0", "", "Class0","{93A3849F-D00D-456a-ADA2-20D500C11BA4}");
+tocTab[tocTab.length] = new Array("0.2.4.1:8", "", "«codeList» Referansesystemkode", "EARoot/EA2/EA4/EA1/EA296.htm", "5.png", "E375", "0", "", "Class0","{5A9701DB-21EE-4342-8F41-9E37785B7D2C}");
+tocTab[tocTab.length] = new Array("0.2.4.1:9", "", "«codeList» Vegnummer", "EARoot/EA2/EA4/EA1/EA297.htm", "5.png", "E374", "0", "", "Class0","{D922F38A-0A5E-4b7a-A02C-51B954FD87FD}");
+tocTab[tocTab.length] = new Array("0.2.4.1:10", "", "«codeList» ReferansesystemkodeSOSI", "EARoot/EA2/EA4/EA1/EA298.htm", "5.png", "E373", "0", "", "Class0","{75FC3263-4060-43d5-A717-37B7CDA861BF}");

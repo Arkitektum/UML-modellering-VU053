@@ -1,0 +1,6 @@
+tocTab[tocTab.length] = new Array("0.2.2:1", "", "Oversiktsdiagram leveranse", "EARoot/EA2/EA2/EA202.htm", "175.png", "78", "0", "", "Logical diagram0","{D2668B0D-8731-4b42-8534-D2C1675DAF57}");
+tocTab[tocTab.length] = new Array("0.2.2:2", "", "«featureType» Leveranse", "EARoot/EA2/EA2/EA208.htm", "5.png", "E321", "0", "", "Class0","{CE764C89-0E62-4709-B166-4E810DAC389C}");
+tocTab[tocTab.length] = new Array("0.2.2:3", "", "«codeList» Presisjon", "EARoot/EA2/EA2/EA209.htm", "5.png", "E320", "0", "", "Class0","{C336682A-893E-4a11-9004-C8CD9C150499}");
+tocTab[tocTab.length] = new Array("0.2.2.1", "1", "Dokumentasjon", "EARoot/EA2/EA2/EA1/EA214.htm", "4.png", "", "", "{58BDC532-33A6-4c0a-BF72-D72052E80638}", "Package");
+tocTab[tocTab.length] = new Array("0.2.2.2", "1", "Fremdrift", "EARoot/EA2/EA2/EA2/EA247.htm", "4.png", "", "", "{F8EEAF06-EDA9-447b-B4B8-340067A6DE0D}", "Package");
+tocTab[tocTab.length] = new Array("0.2.2.3", "1", "Fullføringsgrad", "EARoot/EA2/EA2/EA3/EA252.htm", "4.png", "", "", "{D6B2D44A-107F-4662-820B-9BEDAB6E8C29}", "Package");

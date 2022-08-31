@@ -1,0 +1,5 @@
+tocTab[tocTab.length] = new Array("0.1.2.1.6:1", "", "Oversiktsdiagram Vegkropp", "EARoot/EA1/EA2/EA1/EA6/EA134.htm", "175.png", "69", "0", "", "Logical diagram0","{AD392FF4-85B0-48f4-BD8B-05886392A702}");
+tocTab[tocTab.length] = new Array("0.1.2.1.6:2", "", "Vegkropp", "EARoot/EA1/EA2/EA1/EA6/EA139.htm", "5.png", "E277", "0", "", "Class0","{98D7AA52-0251-42ab-94D2-AD249B8F5996}");
+tocTab[tocTab.length] = new Array("0.1.2.1.6:3", "", "«featureType» VegkroppElement", "EARoot/EA1/EA2/EA1/EA6/EA140.htm", "5.png", "E276", "0", "", "Class0","{57C8CF6A-2D80-4ee3-9CED-6D2F627D6481}");
+tocTab[tocTab.length] = new Array("0.1.2.1.6.1", "1", "Overbygning", "EARoot/EA1/EA2/EA1/EA6/EA1/EA145.htm", "4.png", "", "", "{9ED5F121-A6D9-43b0-A434-4B98F1BCB123}", "Package");
+tocTab[tocTab.length] = new Array("0.1.2.1.6.2", "1", "Underbygning", "EARoot/EA1/EA2/EA1/EA6/EA2/EA163.htm", "4.png", "", "", "{5A11F370-3327-4c60-A8D4-1E1AFA1149C8}", "Package");

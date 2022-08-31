@@ -1,0 +1,6 @@
+tocTab[tocTab.length] = new Array("0.2.2.3:1", "", "Kodeliste Fullføringsgrad", "EARoot/EA2/EA2/EA3/EA248.htm", "175.png", "85", "0", "", "Logical diagram0","{5A32313D-0E7B-473e-BA95-B38960314A86}");
+tocTab[tocTab.length] = new Array("0.2.2.3:2", "", "Oversiktsdiagram Fullføringsgrad", "EARoot/EA2/EA2/EA3/EA250.htm", "175.png", "84", "0", "", "Logical diagram0","{FF6B2138-89BB-4fbb-BE9F-86A111B6B4F4}");
+tocTab[tocTab.length] = new Array("0.2.2.3:3", "", "«featureType» Fullføringsgrad", "EARoot/EA2/EA2/EA3/EA253.htm", "5.png", "E350", "0", "", "Class0","{C696378E-1BE7-4f6b-8C73-B8F45B1CBD93}");
+tocTab[tocTab.length] = new Array("0.2.2.3:4", "", "«codeList» Fullføringsstatus", "EARoot/EA2/EA2/EA3/EA254.htm", "5.png", "E351", "0", "", "Class0","{3C944D83-843E-48d7-9F84-126B8FA161B4}");
+tocTab[tocTab.length] = new Array("0.2.2.3:5", "", "«codeList» Oppgave", "EARoot/EA2/EA2/EA3/EA255.htm", "5.png", "E352", "0", "", "Class0","{80FB001E-39EC-433d-83AB-1CEACD3E6C6D}");
+tocTab[tocTab.length] = new Array("0.2.2.3:6", "", "«codeList» Vekting", "EARoot/EA2/EA2/EA3/EA256.htm", "5.png", "E353", "0", "", "Class0","{076743D7-63BD-4c82-BDE1-9A9F8E1AA941}");
