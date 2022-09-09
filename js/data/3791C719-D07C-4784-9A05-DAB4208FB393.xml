@@ -1,0 +1,2 @@
+tocTab[tocTab.length] = new Array("0.3.1.1:1", "", "Situasjonsmodell", "EARoot/EA3/EA1/EA1/EA160.htm", "175.png", "244", "0", "", "Logical diagram0","{7580F983-DF6E-4806-A6B8-341CDFC50ED1}");
+tocTab[tocTab.length] = new Array("0.3.1.1:2", "", "«featureType» Situasjonsmodell", "EARoot/EA3/EA1/EA1/EA163.htm", "5.png", "E989", "0", "", "Class0","{451E57CD-3B6D-470f-9839-F990BB1A64C1}");
