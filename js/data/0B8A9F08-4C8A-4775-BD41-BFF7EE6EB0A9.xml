@@ -1,4 +1,4 @@
-tocTab[tocTab.length] = new Array("0.2.1:1", "", "Samordningsmodell", "EARoot/EA2/EA1/EA132.htm", "175.png", "242", "0", "", "Logical diagram0","{C47343B6-496B-40da-9F68-3BD0B9C75013}");
-tocTab[tocTab.length] = new Array("0.2.1:2", "", "Samordningsmodell", "EARoot/EA2/EA1/EA135.htm", "5.png", "E985", "0", "", "Class0","{D116F39F-F683-4a41-8F6C-11477897442B}");
-tocTab[tocTab.length] = new Array("0.2.1.1", "1", "Situasjonsmodell", "EARoot/EA2/EA1/EA1/EA140.htm", "4.png", "", "", "{3791C719-D07C-4784-9A05-DAB4208FB393}", "Package");
-tocTab[tocTab.length] = new Array("0.2.1.2", "1", "Tverrfagligmodell", "EARoot/EA2/EA1/EA2/EA160.htm", "4.png", "", "", "{4D5A85E7-9926-4d6c-A845-956B952DF9C5}", "Package");
+tocTab[tocTab.length] = new Array("0.2.1:1", "", "Samordningsmodell", "EARoot/EA2/EA1/EA126.htm", "175.png", "242", "0", "", "Logical diagram0","{C47343B6-496B-40da-9F68-3BD0B9C75013}");
+tocTab[tocTab.length] = new Array("0.2.1:2", "", "Samordningsmodell", "EARoot/EA2/EA1/EA129.htm", "5.png", "E985", "0", "", "Class0","{D116F39F-F683-4a41-8F6C-11477897442B}");
+tocTab[tocTab.length] = new Array("0.2.1.1", "1", "Situasjonsmodell", "EARoot/EA2/EA1/EA1/EA134.htm", "4.png", "", "", "{3791C719-D07C-4784-9A05-DAB4208FB393}", "Package");
+tocTab[tocTab.length] = new Array("0.2.1.2", "1", "Tverrfagligmodell", "EARoot/EA2/EA1/EA2/EA156.htm", "4.png", "", "", "{4D5A85E7-9926-4d6c-A845-956B952DF9C5}", "Package");
