@@ -1,7 +1,7 @@
-tocTab[tocTab.length] = new Array("0.1.2:1", "", "Leveranse", "EARoot/EA1/EA2/EA32.htm", "175.png", "224", "0", "", "Logical diagram0","{689A4E52-D431-4b2c-929C-022C7A693C54}");
-tocTab[tocTab.length] = new Array("0.1.2:2", "", "Leveranse kodeliste", "EARoot/EA1/EA2/EA34.htm", "175.png", "257", "0", "", "Logical diagram0","{012D8617-FA4E-4221-9172-446A2232D0B5}");
-tocTab[tocTab.length] = new Array("0.1.2:3", "", "«featureType» Leveranse", "EARoot/EA1/EA2/EA40.htm", "5.png", "E910", "0", "", "Class0","{8F3E3ABA-034B-4357-8BEE-B51562BDFA36}");
-tocTab[tocTab.length] = new Array("0.1.2:4", "", "«codeList» Presisjon", "EARoot/EA1/EA2/EA41.htm", "5.png", "E909", "0", "", "Class0","{5408480D-45FE-4fbb-9E02-BEB2F00CE8A0}");
-tocTab[tocTab.length] = new Array("0.1.2.1", "1", "Dokumentasjon", "EARoot/EA1/EA2/EA1/EA44.htm", "4.png", "", "", "{5A62BEEE-B577-4772-B22A-ABEDE6900853}", "Package");
-tocTab[tocTab.length] = new Array("0.1.2.2", "1", "Fremdrift", "EARoot/EA1/EA2/EA2/EA77.htm", "4.png", "", "", "{DBD31AAC-0661-4823-9F9A-058159105933}", "Package");
-tocTab[tocTab.length] = new Array("0.1.2.3", "1", "Fullfoeringsgrad", "EARoot/EA1/EA2/EA3/EA80.htm", "4.png", "", "", "{E8FA279B-3F47-49e6-9F55-678BD14DAA3D}", "Package");
+tocTab[tocTab.length] = new Array("0.2.2:1", "", "Leveranse", "EARoot/EA2/EA2/EA229.htm", "175.png", "224", "0", "", "Logical diagram0","{689A4E52-D431-4b2c-929C-022C7A693C54}");
+tocTab[tocTab.length] = new Array("0.2.2:2", "", "Leveranse kodeliste", "EARoot/EA2/EA2/EA231.htm", "175.png", "257", "0", "", "Logical diagram0","{012D8617-FA4E-4221-9172-446A2232D0B5}");
+tocTab[tocTab.length] = new Array("0.2.2:3", "", "«featureType» Leveranse", "EARoot/EA2/EA2/EA237.htm", "5.png", "E910", "0", "", "Class0","{8F3E3ABA-034B-4357-8BEE-B51562BDFA36}");
+tocTab[tocTab.length] = new Array("0.2.2:4", "", "«codeList» Presisjon", "EARoot/EA2/EA2/EA238.htm", "5.png", "E909", "0", "", "Class0","{5408480D-45FE-4fbb-9E02-BEB2F00CE8A0}");
+tocTab[tocTab.length] = new Array("0.2.2.1", "1", "Dokumentasjon", "EARoot/EA2/EA2/EA1/EA241.htm", "4.png", "", "", "{5A62BEEE-B577-4772-B22A-ABEDE6900853}", "Package");
+tocTab[tocTab.length] = new Array("0.2.2.2", "1", "Fremdrift", "EARoot/EA2/EA2/EA2/EA274.htm", "4.png", "", "", "{DBD31AAC-0661-4823-9F9A-058159105933}", "Package");
+tocTab[tocTab.length] = new Array("0.2.2.3", "1", "Fullfoeringsgrad", "EARoot/EA2/EA2/EA3/EA277.htm", "4.png", "", "", "{E8FA279B-3F47-49e6-9F55-678BD14DAA3D}", "Package");

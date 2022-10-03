@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("0.1.4.5:1", "", "ApplicationSchema", "EARoot/EA1/EA4/EA5/EA162.htm", "175.png", "342", "0", "", "Logical diagram0","{243D3B93-21F8-45c4-8B22-0CBEE0E44455}");
+tocTab[tocTab.length] = new Array("0.1.4.5:2", "", "«FeatureType» AnyFeature", "EARoot/EA1/EA4/EA5/EA166.htm", "5.png", "E1356", "0", "", "Class0","{681C3206-835F-4544-B25A-5DF752BDC625}");
+tocTab[tocTab.length] = new Array("0.1.4.5:3", "", "«metaclass» FeatureType", "EARoot/EA1/EA4/EA5/EA167.htm", "5.png", "E1355", "0", "", "Class0","{B8982CA1-2DFA-4e91-A1CD-121B82ED8AB0}");
+tocTab[tocTab.length] = new Array("0.1.4.5.1", "1", "Added_EO", "EARoot/EA1/EA4/EA5/EA1/EA170.htm", "4.png", "", "", "{D0966C6E-277E-4346-B85D-CB0AE24BE70A}", "Package");

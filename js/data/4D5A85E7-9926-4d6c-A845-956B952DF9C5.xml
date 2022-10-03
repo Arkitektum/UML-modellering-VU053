@@ -1,5 +1,5 @@
-tocTab[tocTab.length] = new Array("0.2.1.2:1", "", "Tverrfagligmodell", "EARoot/EA2/EA1/EA2/EA158.htm", "175.png", "243", "0", "", "Logical diagram0","{0FE99947-9680-4bb2-8EA1-00B92DF715BC}");
-tocTab[tocTab.length] = new Array("0.2.1.2:2", "", "«featureType» Tverrfagligmodell", "EARoot/EA2/EA1/EA2/EA161.htm", "5.png", "E988", "0", "", "Class0","{175422BC-69AF-4a97-A903-BA57E31C8EAE}");
-tocTab[tocTab.length] = new Array("0.2.1.2:3", "", "«featureType» Fagmodell", "EARoot/EA2/EA1/EA2/EA162.htm", "5.png", "E793", "0", "", "Class0","{36C4F71A-0569-4aa8-A34D-9F7A47FDD8B3}");
-tocTab[tocTab.length] = new Array("0.2.1.2.1", "1", "FagmodellRekkverk", "EARoot/EA2/EA1/EA2/EA1/EA169.htm", "4.png", "", "", "{1D4E45A0-C503-42bf-A3B3-D2771E71D7B1}", "Package");
-tocTab[tocTab.length] = new Array("0.2.1.2.2", "1", "FagmodellVeg", "EARoot/EA2/EA1/EA2/EA2/EA216.htm", "4.png", "", "", "{1BE0E74D-7E6B-4611-94BE-EC1FFBB91482}", "Package");
+tocTab[tocTab.length] = new Array("0.3.1.2:1", "", "Tverrfagligmodell", "EARoot/EA3/EA1/EA2/EA355.htm", "175.png", "243", "0", "", "Logical diagram0","{0FE99947-9680-4bb2-8EA1-00B92DF715BC}");
+tocTab[tocTab.length] = new Array("0.3.1.2:2", "", "«featureType» Tverrfagligmodell", "EARoot/EA3/EA1/EA2/EA358.htm", "5.png", "E988", "0", "", "Class0","{175422BC-69AF-4a97-A903-BA57E31C8EAE}");
+tocTab[tocTab.length] = new Array("0.3.1.2:3", "", "«featureType» Fagmodell", "EARoot/EA3/EA1/EA2/EA359.htm", "5.png", "E793", "0", "", "Class0","{36C4F71A-0569-4aa8-A34D-9F7A47FDD8B3}");
+tocTab[tocTab.length] = new Array("0.3.1.2.1", "1", "FagmodellRekkverk", "EARoot/EA3/EA1/EA2/EA1/EA366.htm", "4.png", "", "", "{1D4E45A0-C503-42bf-A3B3-D2771E71D7B1}", "Package");
+tocTab[tocTab.length] = new Array("0.3.1.2.2", "1", "FagmodellVeg", "EARoot/EA3/EA1/EA2/EA2/EA413.htm", "4.png", "", "", "{1BE0E74D-7E6B-4611-94BE-EC1FFBB91482}", "Package");
