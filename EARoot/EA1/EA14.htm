@@ -2,60 +2,135 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Prosjektorganisasjon</title>
+<title>SOSI Alignment</title>
 <link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../js/displayToc.js" type="text/javascript"></script>
 <script>
-function initPage(src) {	
-	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
-		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
-	else
-		parent.initPage(src);
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
 }
 
-function nameClassifier(name, separator)
-{
-  var str = name;
-  var classifierName;
-  var node = document.getElementById('name_classifier');
-  if(node != null)
-  {
-    classifierName = node.innerHTML;
-  }
-  if(classifierName != "")
-  {
-   str += separator + classifierName;
-  }
-  
-  return str;
-}
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
 </script>
+<style>
+
+</style>
 </head>
-<body onload="initPage(this);" class="Content">
-<div class="pageHeader"></div>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> SOSI Alignment </h1>
+			<!-- <img class="header_image" src="../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../EA3.htm">2022</a> / <a href="EA9.htm">Eksterne_UML-deler</a> / <a href="./EA5/EA278.htm">SOSI Alignment</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<li><img src="../../images/175.png" alt="Diagram"/> <a href="./EA5/EA266.htm">3DAlignment</a></li>
+<li><img src="../../images/175.png" alt="Diagram"/> <a href="./EA5/EA268.htm">Alignment</a></li>
+<li><img src="../../images/175.png" alt="Diagram"/> <a href="./EA5/EA270.htm">Alignment LR</a></li>
+<li><img src="../../images/175.png" alt="Diagram"/> <a href="./EA5/EA272.htm">HorizontalAlignment</a></li>
+<li><img src="../../images/175.png" alt="Diagram"/> <a href="./EA5/EA274.htm">SOSI Alignment</a></li>
+<li><img src="../../images/175.png" alt="Diagram"/> <a href="./EA5/EA276.htm">VerticalAlignment</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="./EA5/EA282.htm">Alignment</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="./EA5/EA283.htm">Alignment2DHorizontal</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="./EA5/EA284.htm">Alignment2DHorSegment</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="./EA5/EA285.htm">Alignment2DVertical</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="./EA5/EA286.htm">Alignment2DVertSegment</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="./EA5/EA287.htm">AlignmentSet</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="./EA5/EA288.htm">CurveSegment2DHorizontal</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="./EA5/EA289.htm">CurveSegment2DVert</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="./EA5/EA290.htm">TransitionCurve</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="./EA5/EA291.htm">TransitionType</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="./EA5/EA292.htm">VertSegmentCircularArc</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="./EA5/EA293.htm">VertSegmentLine</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="./EA5/EA294.htm">VertSegmentParabolicArc</a></li>
+<li><img src="../../images/58.png" alt="Association"/> <a href="./EA5/EA281.htm"></a></li>
+</ul>
+
+					</td>
+					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Prosjektorganisasjon", " : "))</script>  : Public   Boundary</span>
-	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+	<span class="ObjectTitle">SOSI Alignment  : Public  &lt;&lt;applicationSchema&gt;&gt; Package</span>
+	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">16.09.2022 13:18:21</td>
+			<td width="85%" class="ObjectDetailsValue">27.09.2019 11:27:32</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">16.09.2022 13:18:42</td>
+			<td class="ObjectDetailsValue">28.09.2022 10:33:39</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
-			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
 			<td class="ObjectDetailsValue"></td>
 		</tr>
 		<tr id="proj00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
-			<td class="ObjectDetailsValue">MatiasGonzalezTognoni</td>
+			<td class="ObjectDetailsValue">karmag</td>
 		</tr>
 		<tr id="proj01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
-			<td class="ObjectDetailsValue">1.0</td>
+			<td class="ObjectDetailsValue">0.1</td>
 		</tr>
 		<tr id="proj02" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
@@ -78,24 +153,30 @@ function nameClassifier(name, separator)
 			<td class="ObjectDetailsValue"></td>
 		</tr>
 		<tr id="proj05" style="display: none;">
-			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsTopic" >Multiplicity:</td>
 			<td class="ObjectDetailsValue"></td>
 		</tr>
 		<tr>
-			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
 			<td class="ObjectDetailsValue"></td>
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{93D7D0DA-66C2-4528-9C90-ED7196EDFAE1}</td>
+			<td class="ObjectDetailsValue">{C0EBF2C6-F3DD-4440-AD38-0C5F55754D82}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA8.htm">Fellesmoduler kodeliste</a></td>
+			<td class="ObjectDetailsValue"></td>
 		</tr>
 	</table>
 	
-<div class="pageFooter"></div>
- 
+ </div>
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
 </body>
 </html>
+

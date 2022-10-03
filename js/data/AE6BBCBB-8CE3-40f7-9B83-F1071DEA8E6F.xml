@@ -1,0 +1,2 @@
+tocTab[tocTab.length] = new Array("0.1.4.5.1:1", "", "Added_EO", "EARoot/EA1/EA4/EA5/EA1/EA179.htm", "175.png", "20339", "0", "", "Logical diagram0","{5B8F042D-8FE8-4b30-9892-F4EDC4DA8BAB}");
+tocTab[tocTab.length] = new Array("0.1.4.5.1:2", "", "ClothoideArcSegment", "EARoot/EA1/EA4/EA5/EA1/EA182.htm", "5.png", "E68316", "0", "", "Class0","{7F3D3C72-F886-4231-966B-7DB6BD79E864}");

@@ -1,0 +1,17 @@
+tocTab[tocTab.length] = new Array("0.1.4.1.1:1", "", "3.2", "EARoot/EA1/EA4/EA1/EA1/EA91.htm", "175.png", "20330", "0", "", "Logical diagram0","{E8AB9B71-89C6-4fce-9ABD-EABEC2D1AC8A}");
+tocTab[tocTab.length] = new Array("0.1.4.1.1:2", "", "AbstractGeometry", "EARoot/EA1/EA4/EA1/EA1/EA94.htm", "5.png", "E68260", "0", "", "Class0","{4FAEA2F4-9B3D-4aa4-84B5-F305617CB584}");
+tocTab[tocTab.length] = new Array("0.1.4.1.1:3", "", "AbstractSurface", "EARoot/EA1/EA4/EA1/EA1/EA95.htm", "8.png", "E68257", "0", "", "Interface0","{16B60AE4-50C5-4ab3-8C80-FBBE5B7E99A5}");
+tocTab[tocTab.length] = new Array("0.1.4.1.1:4", "", "Arc", "EARoot/EA1/EA4/EA1/EA1/EA96.htm", "8.png", "E68268", "0", "", "Interface0","{DD483AE9-C90D-4bf8-928F-1866BA39702B}");
+tocTab[tocTab.length] = new Array("0.1.4.1.1:5", "", "ArcByBulge", "EARoot/EA1/EA4/EA1/EA1/EA97.htm", "8.png", "E68264", "0", "", "Interface0","{C397536D-DD01-4ec5-9FF0-D072CFE2E7FE}");
+tocTab[tocTab.length] = new Array("0.1.4.1.1:6", "", "ArcByCenterPoint", "EARoot/EA1/EA4/EA1/EA1/EA98.htm", "8.png", "E68261", "0", "", "Interface0","{828A241F-99DA-4be0-B1BA-C961663D29BE}");
+tocTab[tocTab.length] = new Array("0.1.4.1.1:7", "", "«DataType» ArcString", "EARoot/EA1/EA4/EA1/EA1/EA99.htm", "5.png", "E68265", "0", "", "Class0","{C5D3FEEF-60C3-4caa-9991-1FA62A5217DF}");
+tocTab[tocTab.length] = new Array("0.1.4.1.1:8", "", "Clothoid", "EARoot/EA1/EA4/EA1/EA1/EA100.htm", "8.png", "E68269", "0", "", "Interface0","{EC04D102-CE9B-4986-BFDE-35D646EF96C1}");
+tocTab[tocTab.length] = new Array("0.1.4.1.1:9", "", "Curve", "EARoot/EA1/EA4/EA1/EA1/EA101.htm", "8.png", "E68262", "0", "", "Interface0","{AE29551B-FC49-462e-8A2A-08BE11C04DD2}");
+tocTab[tocTab.length] = new Array("0.1.4.1.1:10", "", "doubleList", "EARoot/EA1/EA4/EA1/EA1/EA102.htm", "8.png", "E68271", "0", "", "Interface0","{FDA744E5-179C-49c1-9988-9186F635383D}");
+tocTab[tocTab.length] = new Array("0.1.4.1.1:11", "", "integerList", "EARoot/EA1/EA4/EA1/EA1/EA103.htm", "8.png", "E68258", "0", "", "Interface0","{2B68770E-0512-4d85-9722-EDCA8E94A2FC}");
+tocTab[tocTab.length] = new Array("0.1.4.1.1:12", "", "Length", "EARoot/EA1/EA4/EA1/EA1/EA104.htm", "8.png", "E68256", "0", "", "Interface0","{0B53B155-9FAD-49e8-BB69-15EDA831EC5F}");
+tocTab[tocTab.length] = new Array("0.1.4.1.1:13", "", "LineString", "EARoot/EA1/EA4/EA1/EA1/EA105.htm", "8.png", "E68259", "0", "", "Interface0","{2C3E16ED-68E6-4d76-8394-D2317045CB27}");
+tocTab[tocTab.length] = new Array("0.1.4.1.1:14", "", "Point", "EARoot/EA1/EA4/EA1/EA1/EA106.htm", "8.png", "E68266", "0", "", "Interface0","{D438AD9B-7C84-4ac2-AEE8-F35BB69F50F8}");
+tocTab[tocTab.length] = new Array("0.1.4.1.1:15", "", "Polygon", "EARoot/EA1/EA4/EA1/EA1/EA107.htm", "8.png", "E68267", "0", "", "Interface0","{D5064A50-A804-48ed-AB16-69781342053F}");
+tocTab[tocTab.length] = new Array("0.1.4.1.1:16", "", "Solid", "EARoot/EA1/EA4/EA1/EA1/EA108.htm", "8.png", "E68270", "0", "", "Interface0","{F961D0EF-0C44-4f2d-B484-BFB3C35AB43E}");
+tocTab[tocTab.length] = new Array("0.1.4.1.1:17", "", "Surface", "EARoot/EA1/EA4/EA1/EA1/EA109.htm", "8.png", "E68263", "0", "", "Interface0","{C1C976BF-5F5B-442d-A9E6-EFA541D5A91D}");

@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("0.1.4.8:1", "", "Hoveddiagram Generelle egenskaper", "EARoot/EA1/EA4/EA8/EA255.htm", "175.png", "20343", "0", "", "Logical diagram0","{8813436B-7ED5-4582-BBCE-27FDBC3F2D7A}");
+tocTab[tocTab.length] = new Array("0.1.4.8:2", "", "«featureType» GenerelleEgenskaper", "EARoot/EA1/EA4/EA8/EA259.htm", "5.png", "E68326", "0", "", "Class0","{95C18DC6-364C-49d2-87D5-EF4DAFCE0521}");
+tocTab[tocTab.length] = new Array("0.1.4.8:3", "", "«dataType» Identifikasjon", "EARoot/EA1/EA4/EA8/EA260.htm", "5.png", "E68325", "0", "", "Class0","{1BAA1118-FE2A-43c3-9002-576B007DF7C2}");
+tocTab[tocTab.length] = new Array("0.1.4.8:4", "", "«dataType» LineærPosisjon", "EARoot/EA1/EA4/EA8/EA261.htm", "5.png", "E68429", "0", "", "Class0","{86AD5D9B-99AE-48e9-A1EB-5D68F52D1C08}");
