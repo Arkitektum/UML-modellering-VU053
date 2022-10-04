@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>LandInfra_Realisering</title>
+<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> LandInfra_Realisering </h1>
+			<!-- <img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../EA3.htm">Vegprosjekt VU053 v0.1.2</a> / <a href="../../EA7.htm">Eksterne_UML-deler</a> / <a href="../EA142.htm">LandInfra_Main</a> / <a href="EA148.htm">VU053_LandInfra</a> / <a href="EA144.htm">LandInfra_Realisering</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<li><img src="../../../../images/175.png" alt="Diagram"/> <a href="EA144.htm">LandInfra_Realisering</a></li>
+<li><img src="../../../../images/175.png" alt="Diagram"/> <a href="EA146.htm">VU053_LandInfra</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="EA155.htm">VU053Facility</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="EA150.htm">VU053FaciltyPart</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="EA156.htm">VU053Feature</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="EA151.htm">VU053PhysicalElement</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="EA152.htm">VU053Property</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="EA153.htm">VU053PropertySet</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="EA157.htm">VU053Set</a></li>
+</ul>
+
+					</td>
+					<td class="contentcell"><div class="PageBody">
+	<div class=diagram_image> 
+<img src="EA145.png" usemap="#EA145" border="0" />
+
+<MAP NAME="EA145">
+<area shape="rect" coords="591,260,701,330" href="EA151.htm" target="_self">
+<area shape="rect" coords="382,147,492,217" href="../../EA4/EA1/EA169.htm" target="_self">
+<area shape="rect" coords="793,764,903,834" href="EA152.htm" target="_self">
+<area shape="rect" coords="1013,540,1103,610" href="../../EA4/EA2/EA179.htm" target="_self">
+<area shape="rect" coords="769,534,929,635" href="../../EA4/EA2/EA178.htm" target="_self">
+<area shape="rect" coords="1202,435,1355,505" href="../../EA4/EA2/EA180.htm" target="_self">
+<area shape="rect" coords="1792,678,1902,776" href="../../EA4/EA4/EA233.htm" target="_self">
+<area shape="rect" coords="1485,701,1737,797" href="../../EA4/EA4/EA230.htm" target="_self">
+<area shape="rect" coords="35,10,255,100" href="../../EA1/EA4/EA1/EA96.htm" target="_self">
+<area shape="rect" coords="10,189,282,303" href="../../EA4/EA2/EA174.htm" target="_self">
+<area shape="rect" coords="521,382,733,467" href="../../EA4/EA5/EA237.htm" target="_self">
+<area shape="rect" coords="959,435,1109,484" href="EA157.htm" target="_self">
+<area shape="rect" coords="44,536,136,570" href="EA155.htm" target="_self">
+<area shape="rect" coords="63,389,227,461" href="EA156.htm" target="_self">
+<area shape="rect" coords="1012,764,1102,834" href="EA153.htm" target="_self">
+<area shape="rect" coords="259,517,349,587" href="EA150.htm" target="_self">
+<area shape="rect" coords="1445,631,2030,893" href="EA149.htm" target="_self">
+</MAP>
+ </div>
+	<div class="ObjectTitle">LandInfra_Realisering : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">27.09.2022 13:25:47</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">04.10.2022 16:45:47</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">ErlingOnstein</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{C183233C-269A-40dc-B557-E0CFFCF53DE6}</td>
+		</tr>
+	</table>
+	
+</div>
+
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

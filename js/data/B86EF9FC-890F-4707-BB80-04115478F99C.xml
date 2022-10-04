@@ -1,4 +1,6 @@
-tocTab[tocTab.length] = new Array("0.1.4.6:1", "", "Plassholdere_for_Original_InfraGML", "EARoot/EA1/EA4/EA6/EA183.htm", "175.png", "20340", "0", "", "Logical diagram0","{283C25D0-F569-4dfc-BA18-854122794CEE}");
-tocTab[tocTab.length] = new Array("0.1.4.6.1", "1", "«ApplicationSchema» Part2_Facility", "EARoot/EA1/EA4/EA6/EA1/EA191.htm", "4.png", "", "", "{60B2CCCE-F2C7-4986-8004-6EE9ED4129B3}", "Package");
-tocTab[tocTab.length] = new Array("0.1.4.6.2", "1", "«appicationSchema» LandInfra_part0_Core", "EARoot/EA1/EA4/EA6/EA2/EA195.htm", "4.png", "", "", "{B57208FA-A4FD-42c9-9056-898640990E4D}", "Package");
-tocTab[tocTab.length] = new Array("0.1.4.6.3", "1", "«appicationSchema» OGC-ASTopic19-LinearReferencing", "EARoot/EA1/EA4/EA6/EA3/EA206.htm", "4.png", "", "", "{AB68E0D7-4F84-4fb4-91FD-03AA396A42CD}", "Package");
+tocTab[tocTab.length] = new Array("0.1.4:1", "", "Plassholdere_for_Original_InfraGML", "EARoot/EA1/EA4/EA158.htm", "175.png", "20340", "0", "", "Logical diagram0","{283C25D0-F569-4dfc-BA18-854122794CEE}");
+tocTab[tocTab.length] = new Array("0.1.4.1", "1", "«Application Schema» LandInfra_Part2_Facility", "EARoot/EA1/EA4/EA1/EA168.htm", "4.png", "", "", "{60B2CCCE-F2C7-4986-8004-6EE9ED4129B3}", "Package");
+tocTab[tocTab.length] = new Array("0.1.4.2", "1", "«Application Schema» LandInfra_part0_Core", "EARoot/EA1/EA4/EA2/EA172.htm", "4.png", "", "", "{B57208FA-A4FD-42c9-9056-898640990E4D}", "Package");
+tocTab[tocTab.length] = new Array("0.1.4.3", "1", "«Application Schema» OGC-ASTopic19-LinearReferencing", "EARoot/EA1/EA4/EA3/EA185.htm", "4.png", "", "", "{AB68E0D7-4F84-4fb4-91FD-03AA396A42CD}", "Package");
+tocTab[tocTab.length] = new Array("0.1.4.4", "1", "«ApplicationSchema» SOSI Nettverk og lineære referanser 5.0", "EARoot/EA1/EA4/EA4/EA215.htm", "4.png", "", "", "{4F701CE8-791C-44e5-90B2-7F2892C1942D}", "Package");
+tocTab[tocTab.length] = new Array("0.1.4.5", "1", "SOSI_GenerelleEgenskaper", "EARoot/EA1/EA4/EA5/EA236.htm", "4.png", "", "", "{7562AEFE-0A79-4391-AE35-89002665BC4F}", "Package");

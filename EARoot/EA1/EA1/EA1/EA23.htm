@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>AlignmentReqClass</title>
+<title>AbstractGeometry</title>
 <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script language="JavaScript" src="../../../../js/displayToc.js" type="text/javascript"></script>
 <script>
@@ -64,12 +64,12 @@
 <div class="section group" >
 
 		<div class="col span_2_of_2 header_frame">
-			<h1> AlignmentReqClass </h1>
+			<h1> AbstractGeometry </h1>
 			<!-- <img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
 			<img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />
 		</div>
 		<div class="col span_2_of_2 breadcrumb_frame">
-			<p><a href="../../../EA3.htm">2022</a> / <a href="../../EA9.htm">Eksterne_UML-deler</a> / <a href="../EA15.htm">Alignment_Main</a> / <a href="EA31.htm">VU53_Part3_Alignment</a> / <a href="EA23.htm">AlignmentReqClass</a></p>
+			<p><a href="../../../EA3.htm">Vegprosjekt VU053 v0.1.2</a> / <a href="../../EA7.htm">Eksterne_UML-deler</a> / <a href="../EA13.htm">SupportingPackages</a> / <a href="EA22.htm">OGC-ASTopic1-FeatureGeometry</a> / <a href="EA23.htm">AbstractGeometry</a></p>
 		</div>
 			
 		<table class="contentmaintable">
@@ -84,83 +84,91 @@
 					<td class="indexcell">
 						<div class="projectBrowserTitle">Project: </div>
 						<ul>
-<li><img src="../../../../images/4.png" alt="Package"/> <a href="./EA1/EA47.htm">Added_EO</a></li>
-<li><img src="../../../../images/175.png" alt="Diagram"/> <a href="EA17.htm">3DAlignment</a></li>
-<li><img src="../../../../images/175.png" alt="Diagram"/> <a href="EA19.htm">Alignment</a></li>
-<li><img src="../../../../images/175.png" alt="Diagram"/> <a href="EA21.htm">Alignment LR</a></li>
-<li><img src="../../../../images/175.png" alt="Diagram"/> <a href="EA23.htm">AlignmentReqClass</a></li>
-<li><img src="../../../../images/175.png" alt="Diagram"/> <a href="EA25.htm">HorizontalAlignment</a></li>
-<li><img src="../../../../images/175.png" alt="Diagram"/> <a href="EA27.htm">VerticalAlignment</a></li>
-<li><img src="../../../../images/176.png" alt="Diagram"/> <a href="EA29.htm">VU53_Part3_Alignment</a></li>
-<li><img src="../../../../images/5.png" alt="Class"/> <a href="EA33.htm">Alignment</a></li>
-<li><img src="../../../../images/5.png" alt="Class"/> <a href="EA34.htm">Alignment2DHorizontal</a></li>
-<li><img src="../../../../images/5.png" alt="Class"/> <a href="EA35.htm">Alignment2DHorSegment</a></li>
-<li><img src="../../../../images/5.png" alt="Class"/> <a href="EA36.htm">Alignment2DVertical</a></li>
-<li><img src="../../../../images/5.png" alt="Class"/> <a href="EA37.htm">Alignment2DVertSegment</a></li>
-<li><img src="../../../../images/5.png" alt="Class"/> <a href="EA38.htm">AlignmentCurve</a></li>
-<li><img src="../../../../images/5.png" alt="Class"/> <a href="EA39.htm">AlignmentSet</a></li>
-<li><img src="../../../../images/5.png" alt="Class"/> <a href="EA40.htm">CurveSegment2DHorizontal</a></li>
-<li><img src="../../../../images/5.png" alt="Class"/> <a href="EA41.htm">CurveSegment2DVert</a></li>
-<li><img src="../../../../images/5.png" alt="Class"/> <a href="EA42.htm">VertSegmentCircularArc</a></li>
-<li><img src="../../../../images/5.png" alt="Class"/> <a href="EA43.htm">VertSegmentLine</a></li>
-<li><img src="../../../../images/5.png" alt="Class"/> <a href="EA44.htm">VertSegmentParabolicArc</a></li>
-</ul>
+<a href="EA22.htm">OGC-ASTopic1-FeatureGeometry</a></ul>
 
 					</td>
-					<td class="contentcell"><div class="PageBody">
-	<div class=diagram_image> 
-<img src="EA24.png" usemap="#EA24" border="0" />
-
-<MAP NAME="EA24">
-<area shape="rect" coords="80,643,271,741" href="EA40.htm" target="_self">
-<area shape="rect" coords="559,10,661,80" href="EA39.htm" target="_self">
-<area shape="rect" coords="581,839,754,909" href="EA44.htm" target="_self">
-<area shape="rect" coords="398,840,562,910" href="EA42.htm" target="_self">
-<area shape="rect" coords="213,839,377,909" href="EA43.htm" target="_self">
-<area shape="rect" coords="80,493,271,604" href="../../EA4/EA4/EA162.htm" target="_self">
-<area shape="rect" coords="388,413,552,483" href="EA37.htm" target="_self">
-<area shape="rect" coords="407,666,571,764" href="EA41.htm" target="_self">
-<area shape="rect" coords="10,383,174,453" href="EA35.htm" target="_self">
-<area shape="rect" coords="180,167,344,237" href="EA38.htm" target="_self">
-<area shape="rect" coords="384,263,548,333" href="EA36.htm" target="_self">
-<area shape="rect" coords="10,263,174,333" href="EA34.htm" target="_self">
-<area shape="rect" coords="180,10,344,80" href="EA33.htm" target="_self">
-</MAP>
- </div>
-	<div class="ObjectTitle">AlignmentReqClass : Class diagram</div>
-	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+					<td class="contentcell"><div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">AbstractGeometry  : Public  &lt;&lt;dataType&gt;&gt; Class</span>
+	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">27.09.2022 13:25:47</td>
+			<td width="85%" class="ObjectDetailsValue">04.10.2022 10:51:48</td>
 		</tr>
 		<tr>
-			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
-			<td width="85%" class="ObjectDetailsValue">28.09.2022 15:59:51</td>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">04.10.2022 10:52:22</td>
 		</tr>
-		<tr style="padding-top: 10px;">
-			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
-			<td width="85%" class="ObjectDetailsValue"></td>			
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td class="ObjectDetailsValue"></td>
 		</tr>
 		<tr id="proj00" style="display: none;">
-			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
-			<td width="85%" class="ObjectDetailsValue">Paul.Scarponcini</td>
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">erlin</td>
 		</tr>
 		<tr id="proj01" style="display: none;">
-			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
-			<td width="85%" class="ObjectDetailsValue">1.0</td>
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" >Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
 		</tr>
 		<tr>
-			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
-			<td width="85%" class="ObjectDetailsValue"></td>			
+			<td class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
 		</tr>
 		<tr id="adv00" style="display: none;">
-			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
-			<td width="85%" class="ObjectDetailsValue">{08CC9DD6-42FD-4953-93EC-29A9C4A6FA2A}</td>
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{A96A6D03-A83F-4d61-B43C-243F55BC7CBD}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"></td>
 		</tr>
 	</table>
 	
-</div>
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
+		</ul>
+		<div class="ItemBody" id="CustomPropertiesTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Property</td>
+					<td width="70%" class="TableHeading">Value</td>
+				</tr>
+			<tr>
+				<td width="30%" class="TableRow">isFinalSpecialization:</td>
+				<td width="70%" class="TableRow">0</td>
+			</tr>
 
+
+			</table>
+		</div>	</div>
+ </div>
  </td>
 				</tr>
 			</tbody>
