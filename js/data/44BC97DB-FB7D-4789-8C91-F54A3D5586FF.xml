@@ -1,7 +1,8 @@
-tocTab[tocTab.length] = new Array("0.3.1.2:1", "", "Fagmodel relation", "EARoot/EA3/EA1/EA2/EA400.htm", "175.png", "20384", "0", "", "Logical diagram0","{47529A88-82E4-4119-9100-D7507E62BB31}");
-tocTab[tocTab.length] = new Array("0.3.1.2:2", "", "Tverrfagligmodell", "EARoot/EA3/EA1/EA2/EA402.htm", "175.png", "20367", "0", "", "Logical diagram0","{5952AFEB-D7F9-43e4-8345-9FF98C1B9EA1}");
-tocTab[tocTab.length] = new Array("0.3.1.2:3", "", "«featureType» Fagmodell", "EARoot/EA3/EA1/EA2/EA406.htm", "5.png", "E68422", "0", "", "Class0","{45715C05-0C04-4032-A892-676EF232FEF4}");
-tocTab[tocTab.length] = new Array("0.3.1.2:4", "", "«featureType» Tverrfagligmodell", "EARoot/EA3/EA1/EA2/EA409.htm", "5.png", "E68423", "0", "", "Class0","{614CC87D-16D4-4e72-8589-BA7C4F38FDA0}");
-tocTab[tocTab.length] = new Array("0.3.1.2.1", "1", "FagmodellGeoteknisk", "EARoot/EA3/EA1/EA2/EA1/EA412.htm", "4.png", "", "", "{08501273-CB1D-4bf7-89C2-D5F319CBC3A3}", "Package");
-tocTab[tocTab.length] = new Array("0.3.1.2.2", "1", "FagmodellRekkverk", "EARoot/EA3/EA1/EA2/EA2/EA418.htm", "4.png", "", "", "{ABFAE0E2-A696-439b-BFFC-3C70AA94FB0F}", "Package");
-tocTab[tocTab.length] = new Array("0.3.1.2.3", "1", "FagmodellVeg", "EARoot/EA3/EA1/EA2/EA3/EA465.htm", "4.png", "", "", "{923266B6-880D-4a71-8E86-004132327433}", "Package");
+tocTab[tocTab.length] = new Array("0.3.1.2:1", "", "Fagmodel relation", "EARoot/EA3/EA1/EA2/EA400.htm", "175.png", "20232", "0", "", "Logical diagram0","{47529A88-82E4-4119-9100-D7507E62BB31}");
+tocTab[tocTab.length] = new Array("0.3.1.2:2", "", "Tverrfagligmodell", "EARoot/EA3/EA1/EA2/EA402.htm", "175.png", "20231", "0", "", "Logical diagram0","{5952AFEB-D7F9-43e4-8345-9FF98C1B9EA1}");
+tocTab[tocTab.length] = new Array("0.3.1.2:3", "", "«featureType» Fagmodell", "EARoot/EA3/EA1/EA2/EA406.htm", "5.png", "E67804", "0", "", "Class0","{45715C05-0C04-4032-A892-676EF232FEF4}");
+tocTab[tocTab.length] = new Array("0.3.1.2:4", "", "«featureType» Tverrfagligmodell", "EARoot/EA3/EA1/EA2/EA410.htm", "5.png", "E67805", "0", "", "Class0","{614CC87D-16D4-4e72-8589-BA7C4F38FDA0}");
+tocTab[tocTab.length] = new Array("0.3.1.2.1", "1", "FagmodellVannOgAvloep", "EARoot/EA3/EA1/EA2/EA1/EA415.htm", "4.png", "", "", "{D61A198A-870E-4838-A128-1F5F35C6071D}", "Package");
+tocTab[tocTab.length] = new Array("0.3.1.2.2", "1", "FagmodellGeoteknisk", "EARoot/EA3/EA1/EA2/EA2/EA556.htm", "4.png", "", "", "{08501273-CB1D-4bf7-89C2-D5F319CBC3A3}", "Package");
+tocTab[tocTab.length] = new Array("0.3.1.2.3", "1", "FagmodellRekkverk", "EARoot/EA3/EA1/EA2/EA3/EA562.htm", "4.png", "", "", "{ABFAE0E2-A696-439b-BFFC-3C70AA94FB0F}", "Package");
+tocTab[tocTab.length] = new Array("0.3.1.2.4", "1", "FagmodellVeg", "EARoot/EA3/EA1/EA2/EA4/EA609.htm", "4.png", "", "", "{923266B6-880D-4a71-8E86-004132327433}", "Package");

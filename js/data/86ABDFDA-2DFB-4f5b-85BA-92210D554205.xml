@@ -1,6 +1,6 @@
-tocTab[tocTab.length] = new Array("0.3.1.2.3.3.3:1", "", "Oversiktsdiagram Rabatt", "EARoot/EA3/EA1/EA2/EA3/EA3/EA3/EA578.htm", "175.png", "20297", "0", "", "Logical diagram0","{1955E83D-84E8-4d73-8BB5-19E7D20AC46F}");
-tocTab[tocTab.length] = new Array("0.3.1.2.3.3.3:2", "", "«CodeList» Bruksomraade", "EARoot/EA3/EA1/EA2/EA3/EA3/EA3/EA581.htm", "5.png", "E68462", "0", "", "Class0","{BCC733B6-5A8E-4dd8-A403-4BDE47C71CE8}");
-tocTab[tocTab.length] = new Array("0.3.1.2.3.3.3:3", "", "«CodeList» Material", "EARoot/EA3/EA1/EA2/EA3/EA3/EA3/EA582.htm", "5.png", "E68464", "0", "", "Class0","{3285D22A-9B36-4dc5-B119-2D2F1F952724}");
-tocTab[tocTab.length] = new Array("0.3.1.2.3.3.3:4", "", "«CodeList» Utforming", "EARoot/EA3/EA1/EA2/EA3/EA3/EA3/EA583.htm", "5.png", "E68463", "0", "", "Class0","{EC27B554-375B-4000-91FF-E53006137738}");
-tocTab[tocTab.length] = new Array("0.3.1.2.3.3.3:5", "", "Rabatt", "EARoot/EA3/EA1/EA2/EA3/EA3/EA3/EA584.htm", "5.png", "E68115", "0", "", "Class0","{581E737B-9ECC-427d-B420-36261B7F7C0D}");
-tocTab[tocTab.length] = new Array("0.3.1.2.3.3.3:6", "", "«featureType» RabattElement", "EARoot/EA3/EA1/EA2/EA3/EA3/EA3/EA585.htm", "5.png", "E68116", "0", "", "Class0","{DBE5A76C-3357-445f-9C3D-B53127922A6D}");
+tocTab[tocTab.length] = new Array("0.3.1.2.4.1.3:1", "", "Oversiktsdiagram Rabatt", "EARoot/EA3/EA1/EA2/EA4/EA1/EA3/EA662.htm", "175.png", "20276", "0", "", "Logical diagram0","{1955E83D-84E8-4d73-8BB5-19E7D20AC46F}");
+tocTab[tocTab.length] = new Array("0.3.1.2.4.1.3:2", "", "«CodeList» Bruksomraade", "EARoot/EA3/EA1/EA2/EA4/EA1/EA3/EA665.htm", "5.png", "E68087", "0", "", "Class0","{BCC733B6-5A8E-4dd8-A403-4BDE47C71CE8}");
+tocTab[tocTab.length] = new Array("0.3.1.2.4.1.3:3", "", "«CodeList» Material", "EARoot/EA3/EA1/EA2/EA4/EA1/EA3/EA666.htm", "5.png", "E68085", "0", "", "Class0","{3285D22A-9B36-4dc5-B119-2D2F1F952724}");
+tocTab[tocTab.length] = new Array("0.3.1.2.4.1.3:4", "", "Rabatt", "EARoot/EA3/EA1/EA2/EA4/EA1/EA3/EA667.htm", "5.png", "E68086", "0", "", "Class0","{581E737B-9ECC-427d-B420-36261B7F7C0D}");
+tocTab[tocTab.length] = new Array("0.3.1.2.4.1.3:5", "", "«featureType» RabattElement", "EARoot/EA3/EA1/EA2/EA4/EA1/EA3/EA668.htm", "5.png", "E68088", "0", "", "Class0","{DBE5A76C-3357-445f-9C3D-B53127922A6D}");
+tocTab[tocTab.length] = new Array("0.3.1.2.4.1.3:6", "", "«CodeList» Utforming", "EARoot/EA3/EA1/EA2/EA4/EA1/EA3/EA669.htm", "5.png", "E68089", "0", "", "Class0","{EC27B554-375B-4000-91FF-E53006137738}");

@@ -1,3 +1,3 @@
-tocTab[tocTab.length] = new Array("0.3.1.2.3.3.2:1", "", "Planum", "EARoot/EA3/EA1/EA2/EA3/EA3/EA2/EA573.htm", "175.png", "20296", "0", "", "Logical diagram0","{42885FBC-E4F3-4826-A784-954DBEDCBFB2}");
-tocTab[tocTab.length] = new Array("0.3.1.2.3.3.2:2", "", "Planum", "EARoot/EA3/EA1/EA2/EA3/EA3/EA2/EA576.htm", "5.png", "E68114", "0", "", "Class0","{7B0129FE-1EB5-4111-812F-6C1FB82E7A71}");
-tocTab[tocTab.length] = new Array("0.3.1.2.3.3.2:3", "", "«featureType» PlanumElement", "EARoot/EA3/EA1/EA2/EA3/EA3/EA2/EA577.htm", "5.png", "E68113", "0", "", "Class0","{010FF3DA-2FD1-47db-A683-D1087058583C}");
+tocTab[tocTab.length] = new Array("0.3.1.2.4.1.2:1", "", "Planum", "EARoot/EA3/EA1/EA2/EA4/EA1/EA2/EA657.htm", "175.png", "20275", "0", "", "Logical diagram0","{42885FBC-E4F3-4826-A784-954DBEDCBFB2}");
+tocTab[tocTab.length] = new Array("0.3.1.2.4.1.2:2", "", "Planum", "EARoot/EA3/EA1/EA2/EA4/EA1/EA2/EA660.htm", "5.png", "E68084", "0", "", "Class0","{7B0129FE-1EB5-4111-812F-6C1FB82E7A71}");
+tocTab[tocTab.length] = new Array("0.3.1.2.4.1.2:3", "", "«featureType» PlanumElement", "EARoot/EA3/EA1/EA2/EA4/EA1/EA2/EA661.htm", "5.png", "E68083", "0", "", "Class0","{010FF3DA-2FD1-47db-A683-D1087058583C}");
