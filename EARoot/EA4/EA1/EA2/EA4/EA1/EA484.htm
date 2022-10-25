@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Rekkverk</title>
+<link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Rekkverk </h1>
+			<!-- <img class="header_image" src="../../../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../../../EA3.htm">Vegprosjekt VU053 v0.1.2</a> / <a href="../../../../EA395.htm">LeveranseVegprosjekt</a> / <a href="../../../EA400.htm">Samordningsmodell</a> / <a href="../../EA430.htm">Tverrfagligmodell</a> / <a href="../EA471.htm">FagmodellRekkverk</a> / <a href="EA486.htm">Rekkverk</a> / <a href="EA484.htm">Rekkverk</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<li><img src="../../../../../../images/175.png" alt="Diagram"/> <a href="EA484.htm">Rekkverk</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA487.htm">BruRekkverk</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA488.htm">Overgang</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA489.htm">Rekkverk</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA490.htm">RekkverkElement</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA491.htm">Skinne</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA492.htm">Stolpe</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA493.htm">Bruksomraade</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA494.htm">PlasseringPåBru</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA495.htm">ProduktnavnTypegodkjenning</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA496.htm">Rekkverkstype</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA497.htm">Skinneutrustning</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA498.htm">Stolpeavstand</a></li>
+</ul>
+
+					</td>
+					<td class="contentcell"><div class="PageBody">
+	<div class=diagram_image> 
+<img src="EA485.png" usemap="#EA485" border="0" />
+
+<MAP NAME="EA485">
+<area shape="rect" coords="339,10,450,90" href="../EA475.htm" target="_self">
+<area shape="rect" coords="804,219,1005,3603" href="EA495.htm" target="_self">
+<area shape="rect" coords="14,435,226,520" href="EA487.htm" target="_self">
+<area shape="rect" coords="534,619,647,699" href="EA494.htm" target="_self">
+<area shape="rect" coords="551,435,630,487" href="EA488.htm" target="_self">
+<area shape="rect" coords="439,435,539,475" href="EA492.htm" target="_self">
+<area shape="rect" coords="664,629,797,831" href="EA493.htm" target="_self">
+<area shape="rect" coords="14,599,114,749" href="EA498.htm" target="_self">
+<area shape="rect" coords="324,609,520,902" href="EA496.htm" target="_self">
+<area shape="rect" coords="134,599,312,723" href="EA497.htm" target="_self">
+<area shape="rect" coords="238,435,427,507" href="EA491.htm" target="_self">
+<area shape="rect" coords="259,180,531,330" href="EA490.htm" target="_self">
+<area shape="rect" coords="10,222,116,290" href="EA489.htm" target="_self">
+</MAP>
+ </div>
+	<div class="ObjectTitle">Rekkverk : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">27.09.2022 13:25:15</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">13.10.2022 16:15:55</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">MatiasGonzalezTognon</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{01025470-DCBE-486c-B523-8D28664F3EB8}</td>
+		</tr>
+	</table>
+	
+</div>
+
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

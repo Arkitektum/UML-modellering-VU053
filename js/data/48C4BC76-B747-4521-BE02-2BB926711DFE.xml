@@ -1,8 +1,8 @@
-tocTab[tocTab.length] = new Array("0.2.2.1:1", "", "Oversiktsdiagram Dokumentasjon", "EARoot/EA2/EA2/EA1/EA284.htm", "175.png", "20214", "0", "", "Logical diagram0","{CE1F8254-1B83-4e7d-9CB3-FD45C2DB17ED}");
-tocTab[tocTab.length] = new Array("0.2.2.1:2", "", "«featureType» Dokumentasjon", "EARoot/EA2/EA2/EA1/EA287.htm", "5.png", "E67736", "0", "", "Class0","{730AC9B3-BDC5-4b77-B760-5DA054B8F121}");
-tocTab[tocTab.length] = new Array("0.2.2.1:3", "", "«codeList» Dokumentasjonstype", "EARoot/EA2/EA2/EA1/EA289.htm", "5.png", "E67739", "0", "", "Class0","{F1548516-184A-49e5-8737-7C14923425F2}");
-tocTab[tocTab.length] = new Array("0.2.2.1:4", "", "«codeList» Fagmodelltype", "EARoot/EA2/EA2/EA1/EA290.htm", "5.png", "E67734", "0", "", "Class0","{03467AA3-E628-4ac5-B8D3-9F0EDC4377EB}");
-tocTab[tocTab.length] = new Array("0.2.2.1:5", "", "«codeList» Grunnlagsmodell", "EARoot/EA2/EA2/EA1/EA291.htm", "5.png", "E67737", "0", "", "Class0","{B2579FAB-560C-4d30-8EAE-41EB7782D811}");
-tocTab[tocTab.length] = new Array("0.2.2.1:6", "", "«codeList» Modelltype", "EARoot/EA2/EA2/EA1/EA292.htm", "5.png", "E67738", "0", "", "Class0","{D13F4C35-59DF-40b3-B586-E0CC16A7C86B}");
-tocTab[tocTab.length] = new Array("0.2.2.1:7", "", "«codeList» Prosjekttype", "EARoot/EA2/EA2/EA1/EA293.htm", "5.png", "E67735", "0", "", "Class0","{71FECF16-43A1-4dd5-A33E-DD367623C690}");
-tocTab[tocTab.length] = new Array("0.2.2.1.1", "1", "DokumentasjonAnsvar", "EARoot/EA2/EA2/EA1/EA1/EA298.htm", "4.png", "", "", "{AD4EFB97-F4EA-4030-87A9-39208EFBE03B}", "Package");
+tocTab[tocTab.length] = new Array("0.3.1:1", "", "Oversiktsdiagram Dokumentasjon", "EARoot/EA3/EA1/EA348.htm", "175.png", "664", "0", "", "Logical diagram0","{CE1F8254-1B83-4e7d-9CB3-FD45C2DB17ED}");
+tocTab[tocTab.length] = new Array("0.3.1:2", "", "«featureType» Dokumentasjon", "EARoot/EA3/EA1/EA351.htm", "5.png", "E2995", "0", "", "Class0","{730AC9B3-BDC5-4b77-B760-5DA054B8F121}");
+tocTab[tocTab.length] = new Array("0.3.1:3", "", "«codeList» Dokumentasjonstype", "EARoot/EA3/EA1/EA353.htm", "5.png", "E2998", "0", "", "Class0","{F1548516-184A-49e5-8737-7C14923425F2}");
+tocTab[tocTab.length] = new Array("0.3.1:4", "", "«codeList» Fagmodelltype", "EARoot/EA3/EA1/EA354.htm", "5.png", "E2993", "0", "", "Class0","{03467AA3-E628-4ac5-B8D3-9F0EDC4377EB}");
+tocTab[tocTab.length] = new Array("0.3.1:5", "", "«codeList» Grunnlagsmodell", "EARoot/EA3/EA1/EA355.htm", "5.png", "E2996", "0", "", "Class0","{B2579FAB-560C-4d30-8EAE-41EB7782D811}");
+tocTab[tocTab.length] = new Array("0.3.1:6", "", "«codeList» Modelltype", "EARoot/EA3/EA1/EA356.htm", "5.png", "E2997", "0", "", "Class0","{D13F4C35-59DF-40b3-B586-E0CC16A7C86B}");
+tocTab[tocTab.length] = new Array("0.3.1:7", "", "«codeList» Prosjekttype", "EARoot/EA3/EA1/EA357.htm", "5.png", "E2994", "0", "", "Class0","{71FECF16-43A1-4dd5-A33E-DD367623C690}");
+tocTab[tocTab.length] = new Array("0.3.1.1", "1", "DokumentasjonAnsvar", "EARoot/EA3/EA1/EA1/EA362.htm", "4.png", "", "", "{AD4EFB97-F4EA-4030-87A9-39208EFBE03B}", "Package");
