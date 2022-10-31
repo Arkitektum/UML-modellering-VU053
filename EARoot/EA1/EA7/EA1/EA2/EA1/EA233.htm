@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>ControlContour</title>
+<title>Breakline</title>
 <link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script language="JavaScript" src="../../../../../../js/displayToc.js" type="text/javascript"></script>
 <script>
@@ -64,12 +64,12 @@
 <div class="section group" >
 
 		<div class="col span_2_of_2 header_frame">
-			<h1> ControlContour </h1>
+			<h1> Breakline </h1>
 			<!-- <img class="header_image" src="../../../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
 			<img class="header_image" src="../../../../../../images/ea-banner.png" align="right" alt="Header Image" />
 		</div>
 		<div class="col span_2_of_2 breadcrumb_frame">
-			<p><a href="../../../../../EA3.htm">Vegprosjekt VU053 v0.1.2</a> / <a href="../../../../EA8.htm">Eksterne_UML-deler</a> / <a href="../../../EA193.htm">SupportingPackages</a> / <a href="../../EA202.htm">GML</a> / <a href="../EA224.htm">3.3_TIN</a> / <a href="EA229.htm">MovedFron_Land_feature</a> / <a href="EA233.htm">ControlContour</a></p>
+			<p><a href="../../../../../EA3.htm">Vegprosjekt VU053 v0.1.2</a> / <a href="../../../../EA8.htm">Eksterne_UML-deler</a> / <a href="../../../EA195.htm">SupportingPackages</a> / <a href="../../EA204.htm">GML</a> / <a href="../EA226.htm">3.3_TIN</a> / <a href="EA231.htm">MovedFron_Land_feature</a> / <a href="EA233.htm">Breakline</a></p>
 		</div>
 			
 		<table class="contentmaintable">
@@ -84,12 +84,12 @@
 					<td class="indexcell">
 						<div class="projectBrowserTitle">Project: </div>
 						<ul>
-<a href="EA229.htm">MovedFron_Land_feature</a></ul>
+<a href="EA231.htm">MovedFron_Land_feature</a></ul>
 
 					</td>
 					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<span class="ObjectTitle">ControlContour  : Public   Class</span>
+	<span class="ObjectTitle">Breakline  : Public   Class</span>
 	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -142,14 +142,14 @@
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{BB12F3CD-B11A-4cf2-9F16-F5FAA731516B}</td>
+			<td class="ObjectDetailsValue">{6A974D3C-0E35-43ac-83FA-FFC529D29817}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA227.htm">TIN</a></td>
+			<td class="ObjectDetailsValue"><a href="EA229.htm">TIN</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">a breakline whose points have the same z coordinate value; behaves as a breakline&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">reprrepresents a local ridge or depression in the TIN surface.&#160;&#160;When a breakline is specified for a &lt;i&gt;TIN&lt;/i&gt; value, triangles in the &lt;i&gt;Patches&lt;/i&gt; attribute of the &lt;i&gt;TIN&lt;/i&gt; value must be adjusted so that no triangle is crossed by the breakline. The elevation along the breakline takes precedence over the elevation of the original TIN surface for the entire length of the breakline.&lt;br/&gt;During (re)triangulation, &lt;i&gt;Triangle &lt;/i&gt;values in the vicinity of each breakline are adjusted so that, if the &lt;i&gt;Triangle&lt;/i&gt; value intersects the &lt;i&gt;LineString&lt;/i&gt; breakline&#160;&#160;value, then either:&lt;br/&gt;a) one of the &lt;i&gt;Point&lt;/i&gt;&#160;&#160;values in the &lt;i&gt;ExteriorRing&lt;/i&gt; attribute value of the &lt;i&gt;Triangle&lt;/i&gt; value is spatially 3D equal to one of the &lt;i&gt;Point &lt;/i&gt;values in the &lt;i&gt;Points&lt;/i&gt; attribute of the &lt;i&gt;ST_LineString&lt;/i&gt; value of the breakline, or&lt;br/&gt;b) two of the &lt;i&gt;Point&lt;/i&gt; values in the &lt;i&gt;ExteriorRing&lt;/i&gt; attribute of the &lt;i&gt;Triangle&lt;/i&gt; value are spatially 3D equal to two consecutive &lt;i&gt;Point&lt;/i&gt; values in the &lt;i&gt;Points&lt;/i&gt; triangle lies along the breakline.&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -165,6 +165,23 @@
 			<td width="25%" class="TableHeading">Type</td>
 		</tr>
 						<tr>
+				<td width="50%" class="TableRow">
+					elementType
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					<a href="EA245.htm">TINElementType</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
 				<td width="50%" class="TableRow">
 					elementGeometry
 				</td>
@@ -184,28 +201,11 @@
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			3D, constant z coordinate&lt;br/&gt;
+			3D&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
 
-						
-				</td>
-			</tr>			<tr>
-				<td width="50%" class="TableRow">
-					elementType
-				</td>
-				<td width="25%" class="TableRow">
-					Public 
-				</td>
-				<td width="25%" class="TableRow">
-					<a href="EA243.htm">TINElementType</a>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="3">										
-					
-						&nbsp;
 						
 				</td>
 			</tr>
@@ -234,7 +234,7 @@
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA242.htm">TINElement</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA244.htm">TINElement</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">To</td>

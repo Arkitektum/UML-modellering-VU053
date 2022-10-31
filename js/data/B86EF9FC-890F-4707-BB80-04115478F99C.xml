@@ -1,4 +1,4 @@
-tocTab[tocTab.length] = new Array("0.1.5:1", "", "Plassholdere_for_Original_InfraGML", "EARoot/EA1/EA5/EA104.htm", "175.png", "623", "0", "", "Logical diagram0","{283C25D0-F569-4dfc-BA18-854122794CEE}");
+tocTab[tocTab.length] = new Array("0.1.5:1", "", "Plassholdere_for_Original_InfraGML", "EARoot/EA1/EA5/EA104.htm", "175.png", "824", "0", "", "Logical diagram0","{283C25D0-F569-4dfc-BA18-854122794CEE}");
 tocTab[tocTab.length] = new Array("0.1.5.1", "1", "«ApplicationSchema» LandInfra_part0_Core", "EARoot/EA1/EA5/EA1/EA113.htm", "4.png", "", "", "{B57208FA-A4FD-42c9-9056-898640990E4D}", "Package");
 tocTab[tocTab.length] = new Array("0.1.5.2", "1", "«ApplicationSchema» LandInfra_Part2_Facility", "EARoot/EA1/EA5/EA2/EA126.htm", "4.png", "", "", "{60B2CCCE-F2C7-4986-8004-6EE9ED4129B3}", "Package");
 tocTab[tocTab.length] = new Array("0.1.5.3", "1", "«ApplicationSchema» OGC-ASTopic19-LinearReferencing", "EARoot/EA1/EA5/EA3/EA130.htm", "4.png", "", "", "{AB68E0D7-4F84-4fb4-91FD-03AA396A42CD}", "Package");
