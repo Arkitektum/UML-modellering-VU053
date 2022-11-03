@@ -1,4 +1,4 @@
-tocTab[tocTab.length] = new Array("0.4.1.2.3.1:1", "", "VannhaandteringAapen", "EARoot/EA4/EA1/EA2/EA3/EA1/EA455.htm", "175.png", "685", "0", "", "Logical diagram0","{EAEB964B-9A28-4e6b-9119-15F04D436E7D}");
-tocTab[tocTab.length] = new Array("0.4.1.2.3.1:2", "", "«featureType» VannHaanteringAapen", "EARoot/EA4/EA1/EA2/EA3/EA1/EA458.htm", "5.png", "E3058", "0", "", "Class0","{31A27560-A313-491e-8F48-648DEDCE7F77}");
-tocTab[tocTab.length] = new Array("0.4.1.2.3.1:3", "", "«codeList» MaterialeGroeftAapen", "EARoot/EA4/EA1/EA2/EA3/EA1/EA459.htm", "5.png", "E3059", "0", "", "Class0","{56CAAB3E-7238-4303-9057-5401D655939F}");
-tocTab[tocTab.length] = new Array("0.4.1.2.3.1:4", "", "«codeList» TypeGroeftAapen", "EARoot/EA4/EA1/EA2/EA3/EA1/EA460.htm", "5.png", "E3060", "0", "", "Class0","{AF69EC34-271D-4175-A540-C9926E6E6B12}");
+tocTab[tocTab.length] = new Array("0.4.1.2.6.1:1", "", "VannhaandteringAapen", "EARoot/EA4/EA1/EA2/EA6/EA1/EA504.htm", "175.png", "685", "0", "", "Logical diagram0","{EAEB964B-9A28-4e6b-9119-15F04D436E7D}");
+tocTab[tocTab.length] = new Array("0.4.1.2.6.1:2", "", "«featureType» VannHaanteringAapen", "EARoot/EA4/EA1/EA2/EA6/EA1/EA507.htm", "5.png", "E3058", "0", "", "Class0","{31A27560-A313-491e-8F48-648DEDCE7F77}");
+tocTab[tocTab.length] = new Array("0.4.1.2.6.1:3", "", "«codeList» MaterialeGroeftAapen", "EARoot/EA4/EA1/EA2/EA6/EA1/EA508.htm", "5.png", "E3059", "0", "", "Class0","{56CAAB3E-7238-4303-9057-5401D655939F}");
+tocTab[tocTab.length] = new Array("0.4.1.2.6.1:4", "", "«codeList» TypeGroeftAapen", "EARoot/EA4/EA1/EA2/EA6/EA1/EA509.htm", "5.png", "E3060", "0", "", "Class0","{AF69EC34-271D-4175-A540-C9926E6E6B12}");

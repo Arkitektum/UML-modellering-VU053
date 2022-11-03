@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("0.4.1.2.2:1", "", "FagmocellSteinsetting", "EARoot/EA4/EA1/EA2/EA2/EA457.htm", "175.png", "902", "0", "", "Logical diagram0","{CCFBC864-977E-4b13-BC7C-2D3BF960606B}");
+tocTab[tocTab.length] = new Array("0.4.1.2.2:2", "", "«FeatureType» NedsenkaKantstein", "EARoot/EA4/EA1/EA2/EA2/EA460.htm", "5.png", "E4566", "0", "", "Class0","{7199D565-17CE-44d9-ADE7-041E2DFE4DC9}");
+tocTab[tocTab.length] = new Array("0.4.1.2.2:3", "", "«FeatureType» TaktileIndikatorer", "EARoot/EA4/EA1/EA2/EA2/EA461.htm", "5.png", "E4556", "0", "", "Class0","{5B2C3B9A-0245-40c2-9F1F-0FABF90CB3A6}");
+tocTab[tocTab.length] = new Array("0.4.1.2.2:4", "", "«FeatureType» Kantstein", "EARoot/EA4/EA1/EA2/EA2/EA462.htm", "5.png", "E4580", "0", "", "Class0","{9F2CE346-3803-4410-8048-733933B86DD2}");
