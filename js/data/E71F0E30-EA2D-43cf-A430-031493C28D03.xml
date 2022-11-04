@@ -1,4 +1,5 @@
-tocTab[tocTab.length] = new Array("0.4.1.2.2:1", "", "FagmocellSteinsetting", "EARoot/EA4/EA1/EA2/EA2/EA457.htm", "175.png", "902", "0", "", "Logical diagram0","{CCFBC864-977E-4b13-BC7C-2D3BF960606B}");
-tocTab[tocTab.length] = new Array("0.4.1.2.2:2", "", "«FeatureType» NedsenkaKantstein", "EARoot/EA4/EA1/EA2/EA2/EA460.htm", "5.png", "E4566", "0", "", "Class0","{7199D565-17CE-44d9-ADE7-041E2DFE4DC9}");
-tocTab[tocTab.length] = new Array("0.4.1.2.2:3", "", "«FeatureType» TaktileIndikatorer", "EARoot/EA4/EA1/EA2/EA2/EA461.htm", "5.png", "E4556", "0", "", "Class0","{5B2C3B9A-0245-40c2-9F1F-0FABF90CB3A6}");
-tocTab[tocTab.length] = new Array("0.4.1.2.2:4", "", "«FeatureType» Kantstein", "EARoot/EA4/EA1/EA2/EA2/EA462.htm", "5.png", "E4580", "0", "", "Class0","{9F2CE346-3803-4410-8048-733933B86DD2}");
+tocTab[tocTab.length] = new Array("0.4.1.2.7:1", "", "FagmodellSteinsetting", "EARoot/EA4/EA1/EA2/EA7/EA568.htm", "175.png", "926", "0", "", "Logical diagram0","{CCFBC864-977E-4b13-BC7C-2D3BF960606B}");
+tocTab[tocTab.length] = new Array("0.4.1.2.7:2", "", "FagmodellSteinsetting Kodelister", "EARoot/EA4/EA1/EA2/EA7/EA570.htm", "175.png", "927", "0", "", "Logical diagram0","{6CF3BC15-73D8-4dc9-B5BD-2E5B6A626284}");
+tocTab[tocTab.length] = new Array("0.4.1.2.7:3", "", "«FeatureType» NedsenkaKantstein", "EARoot/EA4/EA1/EA2/EA7/EA573.htm", "5.png", "E4839", "0", "", "Class0","{7199D565-17CE-44d9-ADE7-041E2DFE4DC9}");
+tocTab[tocTab.length] = new Array("0.4.1.2.7:4", "", "«FeatureType» TaktileIndikatorer", "EARoot/EA4/EA1/EA2/EA7/EA574.htm", "5.png", "E4838", "0", "", "Class0","{5B2C3B9A-0245-40c2-9F1F-0FABF90CB3A6}");
+tocTab[tocTab.length] = new Array("0.4.1.2.7:5", "", "«FeatureType» Kantstein", "EARoot/EA4/EA1/EA2/EA7/EA575.htm", "5.png", "E4840", "0", "", "Class0","{9F2CE346-3803-4410-8048-733933B86DD2}");

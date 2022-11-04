@@ -1,2 +1,2 @@
-tocTab[tocTab.length] = new Array("0.4.1.2.5.1:1", "", "Merknader", "EARoot/EA4/EA1/EA2/EA5/EA1/EA476.htm", "175.png", "906", "0", "", "Logical diagram0","{1EFF4D2D-8433-4c3a-9BFC-54307F1F8407}");
-tocTab[tocTab.length] = new Array("0.4.1.2.5.1:2", "", "«FeatureType» Grunnundersoekelser", "EARoot/EA4/EA1/EA2/EA5/EA1/EA479.htm", "5.png", "E4665", "0", "", "Class0","{A4D9EC7A-E7B1-4044-91CE-BA1195BE3512}");
+tocTab[tocTab.length] = new Array("0.4.1.2.3.1:1", "", "Merknader", "EARoot/EA4/EA1/EA2/EA3/EA1/EA466.htm", "175.png", "906", "0", "", "Logical diagram0","{1EFF4D2D-8433-4c3a-9BFC-54307F1F8407}");
+tocTab[tocTab.length] = new Array("0.4.1.2.3.1:2", "", "«FeatureType» Grunnundersoekelser", "EARoot/EA4/EA1/EA2/EA3/EA1/EA469.htm", "5.png", "E4665", "0", "", "Class0","{A4D9EC7A-E7B1-4044-91CE-BA1195BE3512}");

@@ -1,2 +1,2 @@
-tocTab[tocTab.length] = new Array("0.4.1.2.5.1", "1", "«ApplicationSchema» Merknader", "EARoot/EA4/EA1/EA2/EA5/EA1/EA478.htm", "4.png", "", "", "{01855477-CCA8-46dc-984D-AB397D2928A6}", "Package");
-tocTab[tocTab.length] = new Array("0.4.1.2.5.2", "1", "«ApplicationSchema» Tiltak", "EARoot/EA4/EA1/EA2/EA5/EA2/EA482.htm", "4.png", "", "", "{42A618ED-35EC-4988-B21A-86BBB6BD4C00}", "Package");
+tocTab[tocTab.length] = new Array("0.4.1.2.3.1", "1", "«ApplicationSchema» Merknader", "EARoot/EA4/EA1/EA2/EA3/EA1/EA468.htm", "4.png", "", "", "{01855477-CCA8-46dc-984D-AB397D2928A6}", "Package");
+tocTab[tocTab.length] = new Array("0.4.1.2.3.2", "1", "«ApplicationSchema» Tiltak", "EARoot/EA4/EA1/EA2/EA3/EA2/EA472.htm", "4.png", "", "", "{42A618ED-35EC-4988-B21A-86BBB6BD4C00}", "Package");

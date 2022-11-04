@@ -1,2 +1,2 @@
-tocTab[tocTab.length] = new Array("0.4.1.2.3:1", "", "FagmodellTunnel", "EARoot/EA4/EA1/EA2/EA3/EA463.htm", "175.png", "905", "0", "", "Logical diagram0","{FDDFF708-940B-4d5f-8DE7-ECA7B9BAD2AC}");
-tocTab[tocTab.length] = new Array("0.4.1.2.3:2", "", "«FeatureType» Portal", "EARoot/EA4/EA1/EA2/EA3/EA466.htm", "5.png", "E4538", "0", "", "Class0","{0BB1B5CA-3905-4b90-AE27-DCD9FE052610}");
+tocTab[tocTab.length] = new Array("0.4.1.2.8:1", "", "FagmodellTunnel", "EARoot/EA4/EA1/EA2/EA8/EA576.htm", "175.png", "925", "0", "", "Logical diagram0","{FDDFF708-940B-4d5f-8DE7-ECA7B9BAD2AC}");
+tocTab[tocTab.length] = new Array("0.4.1.2.8:2", "", "«FeatureType» Portal", "EARoot/EA4/EA1/EA2/EA8/EA579.htm", "5.png", "E4835", "0", "", "Class0","{0BB1B5CA-3905-4b90-AE27-DCD9FE052610}");
