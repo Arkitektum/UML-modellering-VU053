@@ -1,0 +1,1435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:fmfm="http://skjema.geonorge.no/fagmodellfelles" xmlns:fmveg="http://skjema.geonorge.no/fagmodellveg" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:svvli="http://skjema.geonorge.no/svvlandinfra/1.0" xml:wfs="http://www.opengis.net/wfs/2.0"  targetNamespace="http://skjema.geonorge.no/fagmodellveg" elementFormDefault="qualified" version="0.1.2">
+	<import namespace="http://skjema.geonorge.no/fagmodellfelles" schemaLocation="FagmodellFelles.xsd"/>
+	<import namespace="http://skjema.geonorge.no/svvlandinfra/1.0" schemaLocation="SVV_Landinfra.xsd"/>
+	<import namespace="http://www.opengis.net/wfs/2.0" schemaLocation="http://schemas.opengis.net/wfs/2.0/wfs.xsd"/>
+	<import namespace="http://www.interactive-instruments.de/ShapeChange/AppInfo" schemaLocation="http://shapechange.net/resources/schema/ShapeChangeAppinfo.xsd"/>
+	<import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+	<!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+	<element name="BaerelagNedre" type="fmveg:BaerelagNedreType" substitutionGroup="fmveg:Overbygning"/>
+	<complexType name="BaerelagNedreType">
+		<complexContent>
+			<extension base="fmveg:OverbygningType">
+				<sequence>
+					<element name="nedreNominelleSteinstørrelse" type="gml:CodeType" minOccurs="0"/>
+					<element name="øvreNominelleSteinstørrelse" type="gml:CodeType" minOccurs="0"/>
+					<element name="bæretype" type="gml:CodeType" minOccurs="0"/>
+					<element name="merknad" type="string" minOccurs="0"/>
+					<element name="tykkelse" type="double" minOccurs="0"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="BaerelagNedrePropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:BaerelagNedre"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="BaerelagOever" type="fmveg:BaerelagOeverType" substitutionGroup="fmveg:Overbygning"/>
+	<complexType name="BaerelagOeverType">
+		<complexContent>
+			<extension base="fmveg:OverbygningType">
+				<sequence>
+					<element name="bæretype" type="gml:CodeType" minOccurs="0"/>
+					<element name="øvreNominelleSteinstørrelse" type="gml:CodeType" minOccurs="0"/>
+					<element name="nedreNominelleSteinstørrelse" type="gml:CodeType" minOccurs="0"/>
+					<element name="merknad" type="string" minOccurs="0"/>
+					<element name="tykkelse" type="double" minOccurs="0"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="BaerelagOeverPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:BaerelagOever"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Bindelag" type="fmveg:BindelagType" substitutionGroup="fmveg:Overbygning"/>
+	<complexType name="BindelagType">
+		<complexContent>
+			<extension base="fmveg:OverbygningType">
+				<sequence>
+					<element name="areal" type="double" minOccurs="0"/>
+					<element name="geometry" type="gml:SolidPropertyType" minOccurs="0"/>
+					<element name="masseforbruk" type="double" minOccurs="0"/>
+					<element name="massetype" type="gml:CodeType" minOccurs="0"/>
+					<element name="tykkelse" type="double" minOccurs="0"/>
+					<element name="øvreNominelleSteinstørrelse" type="gml:CodeType" minOccurs="0"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="BindelagPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:Bindelag"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="BreddeHellingGittVerdi" type="fmveg:BreddeHellingGittVerdiType" substitutionGroup="gml:AbstractObject">
+		<annotation>
+			<documentation>Det er angitt ved start og sluttverdi. Dette er bredden eller hellingen som skal brukes på flaten (del av hele overflaten), for eksempel kjørefelt, skulder, fortau, g/s-veg, fylling og skjæring. Både verdiStart og verdiSlutt trengs. Dessuten mellomverdier</documentation>
+		</annotation>
+	</element>
+	<complexType name="BreddeHellingGittVerdiType">
+		<sequence>
+			<element name="breddeStart" type="double">
+				<annotation>
+					<documentation>bredde i startprofil</documentation>
+				</annotation>
+			</element>
+			<element name="hellingStart" type="double">
+				<annotation>
+					<documentation>helling i startprofil</documentation>
+				</annotation>
+			</element>
+			<element name="breddeMellom" type="fmveg:MellomprofilPropertyType" minOccurs="0" maxOccurs="unbounded">
+				<annotation>
+					<documentation>bredde i mellomprofil</documentation>
+				</annotation>
+			</element>
+			<element name="hellingMellom" type="fmveg:MellomprofilPropertyType" minOccurs="0" maxOccurs="unbounded">
+				<annotation>
+					<documentation>helling i mellomprofil</documentation>
+				</annotation>
+			</element>
+			<element name="breddeSlutt" type="double">
+				<annotation>
+					<documentation>flatebredde i sluttprofil</documentation>
+				</annotation>
+			</element>
+			<element name="hellingSlutt" type="double">
+				<annotation>
+					<documentation>helling i sluttprofil</documentation>
+				</annotation>
+			</element>
+		</sequence>
+	</complexType>
+	<complexType name="BreddeHellingGittVerdiPropertyType">
+		<sequence>
+			<element ref="fmveg:BreddeHellingGittVerdi"/>
+		</sequence>
+	</complexType>
+	<element name="DreneringElement" type="fmveg:DreneringElementType" abstract="true" substitutionGroup="fmveg:VegkonstruksjonElement"/>
+	<complexType name="DreneringElementType" abstract="true">
+		<complexContent>
+			<extension base="fmveg:VegkonstruksjonElementType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="DreneringElementPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:DreneringElement"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="FagmodellVeg" type="fmveg:FagmodellVegType" substitutionGroup="fmfm:Fagmodell"/>
+	<complexType name="FagmodellVegType">
+		<complexContent>
+			<extension base="fmfm:FagmodellType">
+				<sequence>
+					<element name="linje" type="gml:LineStringSegmentType" minOccurs="0"/>
+					<element name="veg" minOccurs="0" maxOccurs="unbounded">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="fmfm:Veg"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="FagmodellVegPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:FagmodellVeg"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Fartsdemper" type="fmveg:FartsdemperType" substitutionGroup="fmveg:VegOgGateObjekterElement">
+		<annotation>
+			<appinfo>
+				<sc:taggedValue tag="NVDB_ID">103</sc:taggedValue>
+			</appinfo>
+		</annotation>
+	</element>
+	<complexType name="FartsdemperType">
+		<complexContent>
+			<extension base="fmveg:VegOgGateObjekterElementType">
+				<sequence>
+					<element name="type" type="gml:CodeType" minOccurs="0"/>
+					<element name="profil" type="gml:CodeType" minOccurs="0"/>
+					<element name="material" type="gml:CodeType" minOccurs="0"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="FartsdemperPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:Fartsdemper"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Ferist" type="fmveg:FeristType" substitutionGroup="fmveg:VegOgGateObjekterElement">
+		<annotation>
+			<documentation>Konstruksjon med rist eller gitter som er innbygd i vegbanen, og som hindrer krøtter i å komme over. (jfr bokmålsordboka)</documentation>
+			<appinfo>
+				<sc:taggedValue tag="NVDB_ID">22</sc:taggedValue>
+			</appinfo>
+		</annotation>
+	</element>
+	<complexType name="FeristType">
+		<complexContent>
+			<extension base="fmveg:VegOgGateObjekterElementType">
+				<sequence>
+					<element name="type" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<documentation>1104: Angir hvilken type vegobjektet er av</documentation>
+							<appinfo>
+								<sc:taggedValue tag="NVDB_ID">1104</sc:taggedValue>
+								<sc:taggedValue tag="SOSI_navn">NVDB_TYPE</sc:taggedValue>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="passeringVedFerist" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<documentation>1737: Angir om det er mulighet for passering for fotgjengere utenom ferist</documentation>
+							<appinfo>
+								<sc:taggedValue tag="NVDB_ID">1737</sc:taggedValue>
+								<sc:taggedValue tag="SOSI_navn">NVDB_PASSERING_VED_FERIST</sc:taggedValue>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="vinterforberedelse" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<documentation>4595: Angir hva som skal gjøres med ferist i forkant av vinter sesongen</documentation>
+							<appinfo>
+								<sc:taggedValue tag="NVDB_ID">4595</sc:taggedValue>
+								<sc:taggedValue tag="SOSI_navn">NVDB_VINTERFORBEREDELSE</sc:taggedValue>
+							</appinfo>
+						</annotation>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="FeristPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:Ferist"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Fiberduk" type="fmveg:FiberdukType" substitutionGroup="fmveg:Overbygning"/>
+	<complexType name="FiberdukType">
+		<complexContent>
+			<extension base="fmveg:OverbygningType">
+				<sequence>
+					<element name="bruksklasse" type="gml:CodeType" minOccurs="0"/>
+					<element name="plasering" type="string" minOccurs="0"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="FiberdukPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:Fiberduk"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Filterlag" type="fmveg:FilterlagType" substitutionGroup="fmveg:Overbygning"/>
+	<complexType name="FilterlagType">
+		<complexContent>
+			<extension base="fmveg:OverbygningType">
+				<sequence>
+					<element name="tykkelse" type="double" minOccurs="0"/>
+					<element name="masseforbruk" type="double" minOccurs="0"/>
+					<element name="merknad" type="string" minOccurs="0"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="FilterlagPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:Filterlag"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Forsterkningslag" type="fmveg:ForsterkningslagType" substitutionGroup="fmveg:Overbygning"/>
+	<complexType name="ForsterkningslagType">
+		<complexContent>
+			<extension base="fmveg:OverbygningType">
+				<sequence>
+					<element name="forsterkningslag" type="gml:CodeType" minOccurs="0"/>
+					<element name="steinstørrelse" type="double" minOccurs="0"/>
+					<element name="tykkelse" type="double" minOccurs="0"/>
+					<element name="merknad" type="string" minOccurs="0"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="ForsterkningslagPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:Forsterkningslag"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Fylling" type="fmveg:FyllingType" substitutionGroup="fmveg:SideomraadeElement">
+		<annotation>
+			<documentation>Oppfylling på opprinnelig terreng begrenset av fyllingsskråning og vegens planum. (Datakatalog 2.29) - Vegobjekttype 930</documentation>
+		</annotation>
+	</element>
+	<complexType name="FyllingType">
+		<complexContent>
+			<extension base="fmveg:SideomraadeElementType">
+				<sequence>
+					<element name="type" type="gml:CodeType" minOccurs="0"/>
+					<element name="materiale" type="gml:CodeType" minOccurs="0"/>
+					<element name="dekkemateriale" type="string" minOccurs="0"/>
+					<element name="fyllingssaale" type="fmveg:FyllingssaaleType" minOccurs="0"/>
+					<element name="tykkelseMaks" type="double" minOccurs="0"/>
+					<element name="areal" type="double" minOccurs="0"/>
+					<element name="tilleggsinformasjon" type="string" minOccurs="0"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="FyllingPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:Fylling"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="FyllingOppTilPlanum" type="fmveg:FyllingOppTilPlanumType" substitutionGroup="fmveg:Underbygning"/>
+	<complexType name="FyllingOppTilPlanumType">
+		<complexContent>
+			<extension base="fmveg:UnderbygningType">
+				<sequence>
+					<element name="type" type="gml:CodeType" minOccurs="0"/>
+					<element name="materiale" type="gml:CodeType" minOccurs="0"/>
+					<element name="dekkemateriale" type="string" minOccurs="0"/>
+					<element name="fyllingssaale" type="fmveg:FyllingssaaleType" minOccurs="0"/>
+					<element name="tykkelseMaks" type="double" minOccurs="0"/>
+					<element name="areal" type="double" minOccurs="0"/>
+					<element name="tilleginformasjon" type="string" minOccurs="0"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="FyllingOppTilPlanumPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:FyllingOppTilPlanum"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Fyllinggsskraaning" type="fmveg:FyllinggsskraaningType" substitutionGroup="fmveg:SideomraadeElement"/>
+	<complexType name="FyllinggsskraaningType">
+		<complexContent>
+			<extension base="fmveg:SideomraadeElementType">
+				<sequence>
+					<element name="helning" type="gml:CodeType" minOccurs="0"/>
+					<element name="hoeydeMaksimal" type="double" minOccurs="0"/>
+					<element name="breddeGjennomsnitt" type="double" minOccurs="0"/>
+					<element name="areal" type="double" minOccurs="0"/>
+					<element name="tilleggsinformasjon" type="string" minOccurs="0"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="FyllinggsskraaningPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:Fyllinggsskraaning"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<simpleType name="FyllingssaaleType">
+		<annotation>
+			<documentation>11532: Angir om det er etablert fyllingssåle i henhold til kravene gitt i HB N200 kap 254,.</documentation>
+			<appinfo>
+				<sc:taggedValue tag="NVDB_ID">11532</sc:taggedValue>
+				<sc:taggedValue tag="NVDB_ID">11532</sc:taggedValue>
+				<sc:taggedValue tag="SOSI_navn">NVDB_FYLLINGSSÅLE</sc:taggedValue>
+			</appinfo>
+		</annotation>
+		<union memberTypes="fmveg:FyllingssaaleEnumerationType fmveg:FyllingssaaleOtherType"/>
+	</simpleType>
+	<simpleType name="FyllingssaaleEnumerationType">
+		<annotation>
+			<documentation>11532: Angir om det er etablert fyllingssåle i henhold til kravene gitt i HB N200 kap 254,.</documentation>
+			<appinfo>
+				<sc:taggedValue tag="NVDB_ID">11532</sc:taggedValue>
+				<sc:taggedValue tag="NVDB_ID">11532</sc:taggedValue>
+				<sc:taggedValue tag="SOSI_navn">NVDB_FYLLINGSSÅLE</sc:taggedValue>
+			</appinfo>
+		</annotation>
+		<restriction base="string">
+			<enumeration value="Ja">
+				<annotation>
+					<documentation>19595: Ja</documentation>
+					<appinfo>
+						<sc:taggedValue tag="NVDB_ID">19595</sc:taggedValue>
+					</appinfo>
+				</annotation>
+			</enumeration>
+			<enumeration value="Nei">
+				<annotation>
+					<documentation>19596: Nei</documentation>
+					<appinfo>
+						<sc:taggedValue tag="NVDB_ID">19596</sc:taggedValue>
+					</appinfo>
+				</annotation>
+			</enumeration>
+			<enumeration value="Ukjent">
+				<annotation>
+					<documentation>19597: Ukjent</documentation>
+					<appinfo>
+						<sc:taggedValue tag="NVDB_ID">19597</sc:taggedValue>
+					</appinfo>
+				</annotation>
+			</enumeration>
+		</restriction>
+	</simpleType>
+	<simpleType name="FyllingssaaleOtherType">
+		<restriction base="string">
+			<pattern value="other: \w{2,}"/>
+		</restriction>
+	</simpleType>
+	<element name="Gjerde" type="fmveg:GjerdeType" substitutionGroup="fmveg:VegOgGateObjekterElement">
+		<annotation>
+			<documentation>Gjerde er frittstående hinder som skal stenge/lede ferdsel av folk eller dyr</documentation>
+			<appinfo>
+				<sc:taggedValue tag="NVDB_ID">7</sc:taggedValue>
+			</appinfo>
+		</annotation>
+	</element>
+	<complexType name="GjerdeType">
+		<complexContent>
+			<extension base="fmveg:VegOgGateObjekterElementType">
+				<sequence>
+					<element name="bruksområde" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<documentation>1249: Angir hva vegobjektet brukes til, hvilken funksjon det har</documentation>
+							<appinfo>
+								<sc:taggedValue tag="NVDB_ID">1249</sc:taggedValue>
+								<sc:taggedValue tag="SOSI_navn">NVDB_BRUKSOMRÅDE</sc:taggedValue>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="høydeGjennomsnitt" type="double" minOccurs="0">
+						<annotation>
+							<documentation>1575: Angir gjennomsnittlig egenhøyde for hele vegobjektet.
+Enhet: Meter</documentation>
+							<appinfo>
+								<sc:taggedValue tag="NVDB_ID">1575</sc:taggedValue>
+								<sc:taggedValue tag="SOSI_navn">NVDB_HØYDE_GJSNITT</sc:taggedValue>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="lengde" type="double" minOccurs="0">
+						<annotation>
+							<documentation>1300: Angir eksakt lengde av gjerde
+Enhet: Meter</documentation>
+							<appinfo>
+								<sc:taggedValue tag="NVDB_ID">1300</sc:taggedValue>
+								<sc:taggedValue tag="SOSI_navn">NVDB_LENGDE</sc:taggedValue>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="type" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<documentation>1091: Angir hvilken type vegobjektet er av</documentation>
+							<appinfo>
+								<sc:taggedValue tag="NVDB_ID">1091</sc:taggedValue>
+								<sc:taggedValue tag="SOSI_navn">NVDB_TYPE</sc:taggedValue>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="typeStolpe" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<documentation>2105: Angir hvilken type stolper gjerdet har</documentation>
+							<appinfo>
+								<sc:taggedValue tag="NVDB_ID">2105</sc:taggedValue>
+								<sc:taggedValue tag="SOSI_navn">NVDB_TYPESTOLPE</sc:taggedValue>
+							</appinfo>
+						</annotation>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="GjerdePropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:Gjerde"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Gjerdeport" type="fmveg:GjerdeportType" substitutionGroup="fmveg:VegOgGateObjekterElement">
+		<annotation>
+			<documentation>Passasje i gjerder eller skjermer</documentation>
+			<appinfo>
+				<sc:taggedValue tag="NVDB_ID">855</sc:taggedValue>
+				<sc:taggedValue tag="NVDB_ID">855</sc:taggedValue>
+			</appinfo>
+		</annotation>
+	</element>
+	<complexType name="GjerdeportType">
+		<complexContent>
+			<extension base="fmveg:VegOgGateObjekterElementType">
+				<sequence>
+					<element name="bruksområde" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<documentation>9773: Angir hva vegobjektet brukes til, hvilken funksjon det har.</documentation>
+							<appinfo>
+								<sc:taggedValue tag="NVDB_ID">9773</sc:taggedValue>
+								<sc:taggedValue tag="SOSI_navn">NVDB_BRUKSOMRÅDE</sc:taggedValue>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="materiale" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<documentation>9778: Angir materiale.</documentation>
+							<appinfo>
+								<sc:taggedValue tag="NVDB_ID">9778</sc:taggedValue>
+								<sc:taggedValue tag="SOSI_navn">NVDB_MATERIALE</sc:taggedValue>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="utforming" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<documentation>9781: Angir hvilken utforming grinda har.</documentation>
+							<appinfo>
+								<sc:taggedValue tag="NVDB_ID">9781</sc:taggedValue>
+								<sc:taggedValue tag="SOSI_navn">NVDB_UTFORMING</sc:taggedValue>
+							</appinfo>
+						</annotation>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="GjerdeportPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:Gjerdeport"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Hoeydehinder" type="fmveg:HoeydehinderType" substitutionGroup="fmveg:VegOgGateObjekterElement">
+		<annotation>
+			<documentation>Fysisk hinder plassert over kjørebanen. Benyttes foran tunneler, underganger etc. for å hindre for høye kjøretøy å gjøre skade.</documentation>
+			<appinfo>
+				<sc:taggedValue tag="NVDB_ID">610</sc:taggedValue>
+			</appinfo>
+		</annotation>
+	</element>
+	<complexType name="HoeydehinderType">
+		<complexContent>
+			<extension base="fmveg:VegOgGateObjekterElementType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="HoeydehinderPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:Hoeydehinder"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Kantstein" type="fmveg:KantsteinType" substitutionGroup="fmveg:VegOgGateObjekterElement">
+		<annotation>
+			<documentation>Stein som settes for å avgrense trafikkøyer, fortau, midtdeler, etc.(1)</documentation>
+			<appinfo>
+				<sc:taggedValue tag="NVDB_ID">9</sc:taggedValue>
+				<sc:taggedValue tag="NVDB_ID">9</sc:taggedValue>
+			</appinfo>
+		</annotation>
+	</element>
+	<complexType name="KantsteinType">
+		<complexContent>
+			<extension base="fmveg:VegOgGateObjekterElementType">
+				<sequence>
+					<element name="elementlengde" type="double" minOccurs="0">
+						<annotation>
+							<documentation>1966: Angir normal lengde av enkeltelement. Lengde av enkelt kantstein.</documentation>
+							<appinfo>
+								<sc:taggedValue tag="NVDB_ID">1966</sc:taggedValue>
+								<sc:taggedValue tag="SOSI_navn">NVDB_ELEMENTLENGDE</sc:taggedValue>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="høydeEgen" type="double" minOccurs="0">
+						<annotation>
+							<documentation>10424: Angir egenhøyde av kantstein, dvs synlig høyde + nedgravd høyde.</documentation>
+							<appinfo>
+								<sc:taggedValue tag="NVDB_ID">10424</sc:taggedValue>
+								<sc:taggedValue tag="SOSI_navn">NVDB_HØYDE_EGEN</sc:taggedValue>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="høydeOverVegdekke" type="double" minOccurs="0">
+						<annotation>
+							<documentation>2052: Angir gjennomsnittlig høyde over vegdekke for hele vegobjektet.</documentation>
+							<appinfo>
+								<sc:taggedValue tag="NVDB_ID">2052</sc:taggedValue>
+								<sc:taggedValue tag="SOSI_navn">NVDB_HØYDEOVERVEGDEKKE</sc:taggedValue>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="kantsteinsprofil" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<documentation>1655: Angir hvordan tverrprofilet av kantsteinen er utformet (visflate).</documentation>
+							<appinfo>
+								<sc:taggedValue tag="NVDB_ID">1655</sc:taggedValue>
+								<sc:taggedValue tag="SOSI_navn">NVDB_KANTSTEINSPROFIL</sc:taggedValue>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="materialtype" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<documentation>1092: Angir hvilken materialtype vegobjektet er av.</documentation>
+							<appinfo>
+								<sc:taggedValue tag="NVDB_ID">1092</sc:taggedValue>
+								<sc:taggedValue tag="SOSI_navn">NVDB_MATERIALTYPE</sc:taggedValue>
+							</appinfo>
+						</annotation>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="KantsteinPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:Kantstein"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="KunstUtsmykking" type="fmveg:KunstUtsmykkingType" substitutionGroup="fmveg:VegOgGateObjekterElement">
+		<annotation>
+			<documentation>Kunst/utsmykking i forbindelse med et veganlegg.  Kan være skulpturer, relieff mm</documentation>
+			<appinfo>
+				<sc:taggedValue tag="NVDB_ID">19</sc:taggedValue>
+			</appinfo>
+		</annotation>
+	</element>
+	<complexType name="KunstUtsmykkingType">
+		<complexContent>
+			<extension base="fmveg:VegOgGateObjekterElementType">
+				<sequence>
+					<element name="type" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<documentation>1101: Angir hvilken type vegobjektet er av</documentation>
+							<appinfo>
+								<sc:taggedValue tag="NVDB_ID">1101</sc:taggedValue>
+								<sc:taggedValue tag="SOSI_navn">NVDB_TYPE</sc:taggedValue>
+							</appinfo>
+						</annotation>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="KunstUtsmykkingPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:KunstUtsmykking"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Lekeapparat" type="fmveg:LekeapparatType" substitutionGroup="fmveg:VegOgGateObjekterElement">
+		<annotation>
+			<documentation>Utstyr satt opp på f.eks. rasteplasser brukt til lek mm</documentation>
+			<appinfo>
+				<sc:taggedValue tag="NVDB_ID">26</sc:taggedValue>
+			</appinfo>
+		</annotation>
+	</element>
+	<complexType name="LekeapparatType">
+		<complexContent>
+			<extension base="fmveg:VegOgGateObjekterElementType">
+				<sequence>
+					<element name="type" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<documentation>1107: Angir hvilken type vegobjektet er av</documentation>
+							<appinfo>
+								<sc:taggedValue tag="NVDB_ID">1107</sc:taggedValue>
+								<sc:taggedValue tag="SOSI_navn">NVDB_TYPE</sc:taggedValue>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="underlag" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<documentation>1740: Angir hvilket underlag der er i tilknytning til lekeapparatet</documentation>
+							<appinfo>
+								<sc:taggedValue tag="NVDB_ID">1740</sc:taggedValue>
+								<sc:taggedValue tag="SOSI_navn">NVDB_UNDERLAG</sc:taggedValue>
+							</appinfo>
+						</annotation>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="LekeapparatPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:Lekeapparat"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Leskur" type="fmveg:LeskurType" substitutionGroup="fmveg:VegOgGateObjekterElement">
+		<annotation>
+			<documentation>Lite bygg for vern mot vær og vind.  Benyttes i forbindelse med holdeplasser.</documentation>
+			<appinfo>
+				<sc:taggedValue tag="NVDB_ID">25</sc:taggedValue>
+			</appinfo>
+		</annotation>
+	</element>
+	<complexType name="LeskurType">
+		<complexContent>
+			<extension base="fmveg:VegOgGateObjekterElementType">
+				<sequence>
+					<element name="materialtype" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<documentation>1401: Angir primær materialtype for vegobjektet</documentation>
+							<appinfo>
+								<sc:taggedValue tag="NVDB_ID">1401</sc:taggedValue>
+								<sc:taggedValue tag="SOSI_navn">NVDB_MATERIALTYPE</sc:taggedValue>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="innvendigBelysning" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<documentation>3128: Angir om det er innvendig belysning i leskur</documentation>
+							<appinfo>
+								<sc:taggedValue tag="NVDB_ID">3128</sc:taggedValue>
+								<sc:taggedValue tag="SOSI_navn">NVDB_INNVENDIGBELYSNING</sc:taggedValue>
+							</appinfo>
+						</annotation>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="LeskurPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:Leskur"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Mellomprofil" type="fmveg:MellomprofilType" substitutionGroup="gml:AbstractObject"/>
+	<complexType name="MellomprofilType">
+		<sequence>
+			<element name="profilnummer" type="integer">
+				<annotation>
+					<documentation>metrering fra starten på referanse-linja</documentation>
+				</annotation>
+			</element>
+			<element name="verdi" type="integer">
+				<annotation>
+					<documentation>verdien på spesifisert profilnummer</documentation>
+				</annotation>
+			</element>
+		</sequence>
+	</complexType>
+	<complexType name="MellomprofilPropertyType">
+		<sequence>
+			<element ref="fmveg:Mellomprofil"/>
+		</sequence>
+	</complexType>
+	<element name="NedsenkaKantstein" type="fmveg:NedsenkaKantsteinType" substitutionGroup="fmveg:VegOgGateObjekterElement">
+		<annotation>
+			<documentation>Nedsenka kantstein er en del av kantsteinen som er senket. F.eks. i forbindelse med avkjørsler og gangfelt.</documentation>
+			<appinfo>
+				<sc:taggedValue tag="NVDB_ID">10</sc:taggedValue>
+			</appinfo>
+		</annotation>
+	</element>
+	<complexType name="NedsenkaKantsteinType">
+		<complexContent>
+			<extension base="fmveg:VegOgGateObjekterElementType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="NedsenkaKantsteinPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:NedsenkaKantstein"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Overbygning" type="fmveg:OverbygningType" abstract="true" substitutionGroup="fmveg:VegkroppElement"/>
+	<complexType name="OverbygningType" abstract="true">
+		<complexContent>
+			<extension base="fmveg:VegkroppElementType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="OverbygningPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:Overbygning"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="PlanumElement" type="fmveg:PlanumElementType" substitutionGroup="fmveg:VegkonstruksjonElement"/>
+	<complexType name="PlanumElementType">
+		<complexContent>
+			<extension base="fmveg:VegkonstruksjonElementType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="PlanumElementPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:PlanumElement"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="PortDoer" type="fmveg:PortDoerType" substitutionGroup="fmveg:VegOgGateObjekterElement">
+		<annotation>
+			<documentation>Åpning til/fra et rom/område. Kan åpnes og lukkes med dør eller port.</documentation>
+			<appinfo>
+				<sc:taggedValue tag="NVDB_ID">13</sc:taggedValue>
+			</appinfo>
+		</annotation>
+	</element>
+	<complexType name="PortDoerType">
+		<complexContent>
+			<extension base="fmveg:VegOgGateObjekterElementType">
+				<sequence>
+					<element name="type" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<documentation>Angir primær materialtype for vegobjektet</documentation>
+						</annotation>
+					</element>
+					<element name="branndør" type="boolean" minOccurs="0">
+						<annotation>
+							<appinfo>
+								<sc:taggedValue tag="NVDB_ID">3509</sc:taggedValue>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="uforming" type="gml:CodeType" minOccurs="0"/>
+					<element name="bruksområde" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<documentation>Angir om det er innvendig belysning i leskur</documentation>
+						</annotation>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="PortDoerPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:PortDoer"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Portal" type="fmveg:PortalType" substitutionGroup="fmveg:VegOgGateObjekterElement"/>
+	<complexType name="PortalType">
+		<complexContent>
+			<extension base="fmveg:VegOgGateObjekterElementType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="PortalPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:Portal"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="RabattElement" type="fmveg:RabattElementType" substitutionGroup="fmveg:VegkonstruksjonElement"/>
+	<complexType name="RabattElementType">
+		<complexContent>
+			<extension base="fmveg:VegkonstruksjonElementType">
+				<sequence>
+					<element name="bruksområde" type="gml:CodeType" minOccurs="0"/>
+					<element name="utforming" type="gml:CodeType" minOccurs="0"/>
+					<element name="material" type="gml:CodeType" minOccurs="0"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="RabattElementPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:RabattElement"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="SideomraadeElement" type="fmveg:SideomraadeElementType" substitutionGroup="fmveg:VegkonstruksjonElement"/>
+	<complexType name="SideomraadeElementType">
+		<complexContent>
+			<extension base="fmveg:VegkonstruksjonElementType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="SideomraadeElementPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:SideomraadeElement"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Skiltportal" type="fmveg:SkiltportalType" substitutionGroup="fmveg:Portal">
+		<annotation>
+			<documentation>Anordning for å henge opp skilt, teknisk utstyr etc. over kjørefeltene.</documentation>
+			<appinfo>
+				<sc:taggedValue tag="NVDB_ID">24</sc:taggedValue>
+			</appinfo>
+		</annotation>
+	</element>
+	<complexType name="SkiltportalType">
+		<complexContent>
+			<extension base="fmveg:PortalType">
+				<sequence>
+					<element name="bruksområde" type="gml:CodeType" minOccurs="0"/>
+					<element name="type" minOccurs="0">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="fmveg:Skiltportal"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="SkiltportalPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:Skiltportal"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Skjaering" type="fmveg:SkjaeringType" substitutionGroup="fmveg:SideomraadeElement"/>
+	<complexType name="SkjaeringType">
+		<complexContent>
+			<extension base="fmveg:SideomraadeElementType">
+				<sequence>
+					<element name="hoeydeMiddel" type="double" minOccurs="0"/>
+					<element name="hoeydeMaksimal" type="double" minOccurs="0"/>
+					<element name="bergskjaeringsID" type="string" minOccurs="0"/>
+					<element name="type" type="gml:CodeType" minOccurs="0"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="SkjaeringPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:Skjaering"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Skjerm" type="fmveg:SkjermType" substitutionGroup="fmveg:VegOgGateObjekterElement">
+		<annotation>
+			<appinfo>
+				<sc:taggedValue tag="NVDB_ID">3</sc:taggedValue>
+			</appinfo>
+		</annotation>
+	</element>
+	<complexType name="SkjermType">
+		<complexContent>
+			<extension base="fmveg:VegOgGateObjekterElementType">
+				<sequence>
+					<element name="bruksområde" type="gml:CodeType" minOccurs="0"/>
+					<element name="materialeSkjerm" type="gml:CodeType" minOccurs="0"/>
+					<element name="materialeSøyler" type="gml:CodeType" minOccurs="0"/>
+					<element name="fundamenteringPlassering" type="gml:CodeType" minOccurs="0"/>
+					<element name="typeFundament" type="gml:CodeType" minOccurs="0"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="SkjermPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:Skjerm"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Skraaning" type="fmveg:SkraaningType" substitutionGroup="fmveg:SideomraadeElement"/>
+	<complexType name="SkraaningType">
+		<complexContent>
+			<extension base="fmveg:SideomraadeElementType">
+				<sequence>
+					<element name="type" type="gml:CodeType" minOccurs="0"/>
+					<element name="tilleggsinformasjon" type="string" minOccurs="0"/>
+					<element name="breddeGjSnitt" type="double" minOccurs="0"/>
+					<element name="areal" type="integer" minOccurs="0"/>
+					<element name="lengde" type="double" minOccurs="0"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="SkraaningPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:Skraaning"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Slitelag" type="fmveg:SlitelagType" substitutionGroup="fmveg:Overbygning"/>
+	<complexType name="SlitelagType">
+		<complexContent>
+			<extension base="fmveg:OverbygningType">
+				<sequence>
+					<element name="masseforbruk" type="double" minOccurs="0"/>
+					<element name="areal" type="double" minOccurs="0"/>
+					<element name="øvreNominelleSteinstørrelse" type="gml:CodeType" minOccurs="0"/>
+					<element name="massetype" type="gml:CodeType" minOccurs="0"/>
+					<element name="tykkelse" type="double" minOccurs="0"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="SlitelagPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:Slitelag"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Stroesandkasse" type="fmveg:StroesandkasseType" substitutionGroup="fmveg:VegOgGateObjekterElement">
+		<annotation>
+			<documentation>Innretning laget for lagring av strøsand.</documentation>
+			<appinfo>
+				<sc:taggedValue tag="NVDB_ID">29</sc:taggedValue>
+			</appinfo>
+		</annotation>
+	</element>
+	<complexType name="StroesandkasseType">
+		<complexContent>
+			<extension base="fmveg:VegOgGateObjekterElementType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="StroesandkassePropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:Stroesandkasse"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Sykkelparkering" type="fmveg:SykkelparkeringType" substitutionGroup="fmveg:VegOgGateObjekterElement">
+		<annotation>
+			<documentation>Angir område tilrettelagt for sykkelparkering.</documentation>
+			<appinfo>
+				<sc:taggedValue tag="NVDB_ID">451</sc:taggedValue>
+			</appinfo>
+		</annotation>
+	</element>
+	<complexType name="SykkelparkeringType">
+		<complexContent>
+			<extension base="fmveg:VegOgGateObjekterElementType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="SykkelparkeringPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:Sykkelparkering"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="TaktileIndikatorer" type="fmveg:TaktileIndikatorerType" substitutionGroup="fmveg:VegOgGateObjekterElement">
+		<annotation>
+			<documentation>Taktile indikatorer er standardiserte elementer som er lagt ned i gategrunn for å bidra til vegfinning for blinde og svaksynte. Kan bestå av retnings-, varsels- eller oppmerksomhetsindikator. For mer utfyllende informasjon, se HB V129 (278).</documentation>
+			<appinfo>
+				<sc:taggedValue tag="NVDB_ID">859</sc:taggedValue>
+			</appinfo>
+		</annotation>
+	</element>
+	<complexType name="TaktileIndikatorerType">
+		<complexContent>
+			<extension base="fmveg:VegOgGateObjekterElementType">
+				<sequence>
+					<element name="bruksområde" type="gml:CodeType" minOccurs="0"/>
+					<element name="materiale" type="gml:CodeType" minOccurs="0"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="TaktileIndikatorerPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:TaktileIndikatorer"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Toalettanlegg" type="fmveg:ToalettanleggType" substitutionGroup="fmveg:VegOgGateObjekterElement">
+		<annotation>
+			<documentation>Ett eller flere rom i en bygning med ett eller flere klosett/toalettskåler/pissoarer.</documentation>
+			<appinfo>
+				<sc:taggedValue tag="NVDB_ID">243</sc:taggedValue>
+			</appinfo>
+		</annotation>
+	</element>
+	<complexType name="ToalettanleggType">
+		<complexContent>
+			<extension base="fmveg:VegOgGateObjekterElementType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="ToalettanleggPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:Toalettanlegg"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Tunnelportal" type="fmveg:TunnelportalType" substitutionGroup="fmveg:Portal">
+		<annotation>
+			<documentation>Byggverk som benyttes i endene av fjelltunnelene for å beskytte tunnelåpning mot rennende vann og fallende snø, is stein og jord. (HB V440).</documentation>
+			<appinfo>
+				<sc:taggedValue tag="NVDB_ID">69</sc:taggedValue>
+			</appinfo>
+		</annotation>
+	</element>
+	<complexType name="TunnelportalType">
+		<complexContent>
+			<extension base="fmveg:PortalType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="TunnelportalPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:Tunnelportal"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Underbygning" type="fmveg:UnderbygningType" substitutionGroup="fmveg:VegkroppElement"/>
+	<complexType name="UnderbygningType">
+		<complexContent>
+			<extension base="fmveg:VegkroppElementType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="UnderbygningPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:Underbygning"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="UndergrunnForbedret" type="fmveg:UndergrunnForbedretType" substitutionGroup="fmveg:Underbygning"/>
+	<complexType name="UndergrunnForbedretType">
+		<complexContent>
+			<extension base="fmveg:UnderbygningType">
+				<sequence>
+					<element name="merknad" type="string" minOccurs="0"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="UndergrunnForbedretPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:UndergrunnForbedret"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Utemøbler" type="fmveg:UtemøblerType" substitutionGroup="fmveg:VegOgGateObjekterElement">
+		<annotation>
+			<documentation>Møbler som benyttes ute i samband med vegsystemet. Dette kan f.eks. være på rasteplasser, ferjeoppstillingsplasser etc.</documentation>
+			<appinfo>
+				<sc:taggedValue tag="NVDB_ID">28</sc:taggedValue>
+			</appinfo>
+		</annotation>
+	</element>
+	<complexType name="UtemøblerType">
+		<complexContent>
+			<extension base="fmveg:VegOgGateObjekterElementType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="UtemøblerPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:Utemøbler"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="VegElement" type="fmveg:VegElementType" substitutionGroup="svvli:VU053PhysicalElement"/>
+	<complexType name="VegElementType">
+		<complexContent>
+			<extension base="svvli:VU053PhysicalElementType">
+				<sequence>
+					<element name="vegElementID" type="string" minOccurs="0"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="VegElementPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:VegElement"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="VegElementSamling" type="fmveg:VegElementSamlingType" abstract="true" substitutionGroup="gml:AbstractFeature"/>
+	<complexType name="VegElementSamlingType" abstract="true">
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="vegElement" minOccurs="0" maxOccurs="unbounded">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="fmveg:VegElement"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="VegElementSamlingPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:VegElementSamling"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="VegOgGateObjekter" type="fmveg:VegOgGateObjekterType" substitutionGroup="fmveg:VegElementSamling"/>
+	<complexType name="VegOgGateObjekterType">
+		<complexContent>
+			<extension base="fmveg:VegElementSamlingType">
+				<sequence>
+					<element name="vegOgGateObjekterElement" minOccurs="0" maxOccurs="unbounded">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="fmveg:VegOgGateObjekterElement"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="VegOgGateObjekterPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:VegOgGateObjekter"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="VegOgGateObjekterElement" type="fmveg:VegOgGateObjekterElementType" substitutionGroup="fmveg:VegElement"/>
+	<complexType name="VegOgGateObjekterElementType">
+		<complexContent>
+			<extension base="fmveg:VegElementType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="VegOgGateObjekterElementPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:VegOgGateObjekterElement"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Vegbom" type="fmveg:VegbomType" substitutionGroup="fmveg:VegOgGateObjekterElement">
+		<annotation>
+			<documentation>Fysisk hinder for å kunne stenge en veg. F.eks. i forbindelse med rasfare, tunnel, høgfjell etc.</documentation>
+		</annotation>
+	</element>
+	<complexType name="VegbomType">
+		<complexContent>
+			<extension base="fmveg:VegOgGateObjekterElementType">
+				<sequence>
+					<element name="bruksområde" type="gml:CodeType" minOccurs="0"/>
+					<element name="type" type="gml:CodeType" minOccurs="0"/>
+					<element name="materiale" type="gml:CodeType" minOccurs="0"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="VegbomPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:Vegbom"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Vegkonstruksjon" type="fmveg:VegkonstruksjonType" substitutionGroup="fmveg:VegElementSamling"/>
+	<complexType name="VegkonstruksjonType">
+		<complexContent>
+			<extension base="fmveg:VegElementSamlingType">
+				<sequence>
+					<element name="vegkonstruksjon" minOccurs="0" maxOccurs="unbounded">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="fmveg:VegkonstruksjonElement"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="VegkonstruksjonPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:Vegkonstruksjon"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="VegkonstruksjonElement" type="fmveg:VegkonstruksjonElementType" abstract="true" substitutionGroup="fmveg:VegElement"/>
+	<complexType name="VegkonstruksjonElementType" abstract="true">
+		<complexContent>
+			<extension base="fmveg:VegElementType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="VegkonstruksjonElementPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:VegkonstruksjonElement"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="VegkroppElement" type="fmveg:VegkroppElementType" substitutionGroup="fmveg:VegkonstruksjonElement"/>
+	<complexType name="VegkroppElementType">
+		<complexContent>
+			<extension base="fmveg:VegkonstruksjonElementType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="VegkroppElementPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:VegkroppElement"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Vegomraade" type="fmveg:VegomraadeType" substitutionGroup="fmveg:VegElementSamling"/>
+	<complexType name="VegomraadeType">
+		<complexContent>
+			<extension base="fmveg:VegElementSamlingType">
+				<sequence>
+					<element name="vegomraadeElement" minOccurs="0" maxOccurs="unbounded">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="fmveg:VegomraadeElement"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="VegomraadePropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:Vegomraade"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="VegomraadeElement" type="fmveg:VegomraadeElementType" substitutionGroup="fmveg:VegElement"/>
+	<complexType name="VegomraadeElementType">
+		<complexContent>
+			<extension base="fmveg:VegElementType">
+				<sequence>
+					<element name="vegDesign" type="fmveg:VegomraadeRefPropertyType"/>
+					<element name="ytterkant" type="fmveg:YtterkantPropertyType"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="VegomraadeElementPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmveg:VegomraadeElement"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="VegomraadeRef" type="fmveg:VegomraadeRefType" substitutionGroup="gml:AbstractObject"/>
+	<complexType name="VegomraadeRefType">
+		<sequence>
+			<element name="flatetype" type="gml:CodeType"/>
+			<element name="flaterekkefølge" type="integer"/>
+			<element name="vegside" type="gml:CodeType"/>
+		</sequence>
+	</complexType>
+	<complexType name="VegomraadeRefPropertyType">
+		<sequence>
+			<element ref="fmveg:VegomraadeRef"/>
+		</sequence>
+	</complexType>
+	<element name="Ytterkant" type="fmveg:YtterkantType" substitutionGroup="gml:AbstractObject"/>
+	<complexType name="YtterkantType">
+		<choice>
+			<element name="gitteVerdier" type="fmveg:BreddeHellingGittVerdiPropertyType"/>
+		</choice>
+	</complexType>
+	<complexType name="YtterkantPropertyType">
+		<sequence>
+			<element ref="fmveg:Ytterkant"/>
+		</sequence>
+	</complexType>
+</schema>
