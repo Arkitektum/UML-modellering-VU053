@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:fmfm="http://skjema.geonorge.no/fagmodellfelles" xmlns:fmveg="http://skjema.geonorge.no/fagmodellveg" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:svvli="http://skjema.geonorge.no/svvlandinfra/1.0" xml:wfs="http://www.opengis.net/wfs/2.0"  targetNamespace="http://skjema.geonorge.no/fagmodellveg" elementFormDefault="qualified" version="0.1.2">
-	<import namespace="http://skjema.geonorge.no/fagmodellfelles" schemaLocation="FagmodellFelles.xsd"/>
-	<import namespace="http://skjema.geonorge.no/svvlandinfra/1.0" schemaLocation="SVV_Landinfra.xsd"/>
+	<import namespace="http://skjema.geonorge.no/fagmodellfelles" schemaLocation="https://github.com/Arkitektum/UML-modellering-VU053/blob/main/xsd_files/FagmodellFelles.xsd"/>
+	<import namespace="http://skjema.geonorge.no/svvlandinfra/1.0" schemaLocation="https://github.com/Arkitektum/UML-modellering-VU053/blob/main/xsd_files/SVV_Landinfra.xsd"/>
 	<import namespace="http://www.opengis.net/wfs/2.0" schemaLocation="http://schemas.opengis.net/wfs/2.0/wfs.xsd"/>
 	<import namespace="http://www.interactive-instruments.de/ShapeChange/AppInfo" schemaLocation="http://shapechange.net/resources/schema/ShapeChangeAppinfo.xsd"/>
 	<import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>

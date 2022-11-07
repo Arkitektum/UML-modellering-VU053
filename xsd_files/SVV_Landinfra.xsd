@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:svvli="http://skjema.geonorge.no/svvlandinfra/1.0" xmlns:svvlr="http://skjema.geonorge.no/svvlinearereferanser/1.0" xmlns:svvpm="http://skjema.geonorge.no/svvpolyfacemesh/1.0" targetNamespace="http://skjema.geonorge.no/svvlandinfra/1.0" elementFormDefault="qualified" version="0.1.2">
-	<import namespace="http://skjema.geonorge.no/svvlinearereferanser/1.0" schemaLocation="SVV_LineareReferanser.xsd"/>
-	<import namespace="http://skjema.geonorge.no/svvpolyfacemesh/1.0" schemaLocation="SVV_PolyfaceMesh.xsd"/>
+	<import namespace="http://skjema.geonorge.no/svvlinearereferanser/1.0" schemaLocation="https://github.com/Arkitektum/UML-modellering-VU053/blob/main/xsd_files/SVV_LineareReferanser.xsd"/>
+	<import namespace="http://skjema.geonorge.no/svvpolyfacemesh/1.0" schemaLocation="https://github.com/Arkitektum/UML-modellering-VU053/blob/main/xsd_files/SVV_PolyfaceMesh.xsd"/>
 	<import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
 	<!--XML Schema document created by ShapeChange - http://shapechange.net/-->
 	<element name="DistanceExpression" type="svvli:DistanceExpressionType" substitutionGroup="gml:AbstractGML"/>

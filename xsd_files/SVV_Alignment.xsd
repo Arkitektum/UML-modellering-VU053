@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:lilc="http://www.opengis.net/infragml/core/1.0n" xmlns:ogc19="http://skjema.geonorge.no/OGC_ASTopic19" xmlns:svval="http://skjema.geonorge.no/svvalignment/1.0" xmlns:svvli="http://skjema.geonorge.no/svvlandinfra/1.0" elementFormDefault="qualified" targetNamespace="http://skjema.geonorge.no/svvalignment/1.0" version="0.1.2">
   <import namespace="http://skjema.geonorge.no/OGC_ASTopic19"/>
-  <import namespace="http://skjema.geonorge.no/svvlandinfra/1.0" schemaLocation="SVV_Landinfra.xsd"/>
+  <import namespace="http://skjema.geonorge.no/svvlandinfra/1.0" schemaLocation="https://github.com/Arkitektum/UML-modellering-VU053/blob/main/xsd_files/SVV_Landinfra.xsd"/>
   <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
   <import namespace="http://www.opengis.net/infragml/core/1.0n"/>
   <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
