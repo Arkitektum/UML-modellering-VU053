@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:fmfm="http://skjema.geonorge.no/fagmodellfelles" xmlns:fmva="http://skjema.geonorge.no/fagmodellvannogavloep" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:svvli="http://skjema.geonorge.no/svvlandinfra/1.0" elementFormDefault="qualified" targetNamespace="http://skjema.geonorge.no/fagmodellvannogavloep" version="0.1.2">
-  <import namespace="http://skjema.geonorge.no/fagmodellfelles" schemaLocation="https://github.com/Arkitektum/UML-modellering-VU053/blob/main/xsd_files/FagmodellFelles.xsd"/>
-  <import namespace="http://skjema.geonorge.no/svvlandinfra/1.0" schemaLocation="https://github.com/Arkitektum/UML-modellering-VU053/blob/main/xsd_files/SVV_Landinfra.xsd"/>
+  <import namespace="http://skjema.geonorge.no/fagmodellfelles" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/FagmodellFelles.xsd"/>
+  <import namespace="http://skjema.geonorge.no/svvlandinfra/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/SVV_Landinfra.xsd"/>
   <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
   <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
   <element name="Anboring" substitutionGroup="fmva:Roerdel" type="fmva:AnboringType"/>

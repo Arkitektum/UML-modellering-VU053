@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:fm="http://skjema.geonorge.no/fellesmoduler" xmlns:fmveg="http://skjema.geonorge.no/fagmodellveg" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:lv="http://skjema.geonorge.no/leveranse/1.0" elementFormDefault="qualified" targetNamespace="http://skjema.geonorge.no/leveranse/1.0" version="0.1.2">
-  <import namespace="http://skjema.geonorge.no/fagmodellveg" schemaLocation="https://github.com/Arkitektum/UML-modellering-VU053/blob/main/xsd_files/FagmodellVeg.xsd"/>
-  <import namespace="http://skjema.geonorge.no/fellesmoduler" schemaLocation="https://github.com/Arkitektum/UML-modellering-VU053/blob/main/xsd_files/Fellesmoduler.xsd"/>
+  <import namespace="http://skjema.geonorge.no/fagmodellveg" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/xsd_files/FagmodellVeg.xsd"/>
+  <import namespace="http://skjema.geonorge.no/fellesmoduler" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/Fellesmoduler.xsd"/>
   <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
   <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
   <element name="Arkivar" substitutionGroup="lv:Godkjenningsprosess" type="lv:ArkivarType"/>

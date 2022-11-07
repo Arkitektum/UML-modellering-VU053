@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- edited with XMLSpy v2016 rel. 2 (x64) (http://www.altova.com) by Matias (Arkitektum AS) -->
 <schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:fmfm="http://skjema.geonorge.no/fagmodellfelles" xmlns:fmre="http://skjema.geonorge.no/fagmodellrekkverk" xmlns:fmva="http://skjema.geonorge.no/fagmodellvannogavloep" xmlns:fmveg="http://skjema.geonorge.no/fagmodellveg" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:svvlr="http://skjema.geonorge.no/svvlinearereferanser/1.0" targetNamespace="http://skjema.geonorge.no/fagmodellfelles" elementFormDefault="qualified" version="0.1.2">
-	<import namespace="http://skjema.geonorge.no/fagmodellrekkverk" schemaLocation="https://github.com/Arkitektum/UML-modellering-VU053/blob/main/xsd_files/FagmodellRekkverk.xsd"/>
-	<import namespace="http://skjema.geonorge.no/fagmodellvannogavloep" schemaLocation="https://github.com/Arkitektum/UML-modellering-VU053/blob/main/xsd_files/FagmodellVanOgAvloep.xsd"/>
-	<import namespace="http://skjema.geonorge.no/fagmodellveg" schemaLocation="https://github.com/Arkitektum/UML-modellering-VU053/blob/main/xsd_files/FagmodellVeg.xsd"/>
-	<import namespace="http://skjema.geonorge.no/svvlinearereferanser/1.0" schemaLocation="https://github.com/Arkitektum/UML-modellering-VU053/blob/main/xsd_files/SVV_LineareReferanser.xsd"/>
+	<import namespace="http://skjema.geonorge.no/fagmodellrekkverk" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/FagmodellRekkverk.xsd"/>
+	<import namespace="http://skjema.geonorge.no/fagmodellvannogavloep" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/FagmodellVanOgAvloep.xsd"/>
+	<import namespace="http://skjema.geonorge.no/fagmodellveg" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/FagmodellVeg.xsd"/>
+	<import namespace="http://skjema.geonorge.no/svvlinearereferanser/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/SVV_LineareReferanser.xsd"/>
 	<import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
 	<!--XML Schema document created by ShapeChange - http://shapechange.net/-->
 	<element name="Fagmodell" type="fmfm:FagmodellType" abstract="true" substitutionGroup="gml:AbstractFeature"/>
