@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>SOSI Nettverk og lineære referanser 5.0</title>
+<link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> SOSI Nettverk og lineære referanser 5.0 </h1>
+			<!-- <img class="header_image" src="../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../EA3.htm">Vegprosjekt VU053 v0.1.2</a> / <a href="../EA9.htm">Eksterne_UML-deler</a> / <a href="EA107.htm">Plassholdere_for_Original</a> / <a href="./EA4/EA161.htm">SOSI Nettverk og lineære referanser 5.0</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<li><img src="../../../images/175.png" alt="Diagram"/> <a href="./EA4/EA133.htm">Oppdateres - Pakkeavhengighet</a></li>
+<li><img src="../../../images/175.png" alt="Diagram"/> <a href="./EA4/EA135.htm">Hoveddiagram</a></li>
+<li><img src="../../../images/175.png" alt="Diagram"/> <a href="./EA4/EA137.htm">Nettverk</a></li>
+<li><img src="../../../images/175.png" alt="Diagram"/> <a href="./EA4/EA139.htm">Lenke og Node</a></li>
+<li><img src="../../../images/175.png" alt="Diagram"/> <a href="./EA4/EA141.htm">Lenkesekvenser og Lenkesett</a></li>
+<li><img src="../../../images/175.png" alt="Diagram"/> <a href="./EA4/EA143.htm">Nettverkskobling</a></li>
+<li><img src="../../../images/175.png" alt="Diagram"/> <a href="./EA4/EA145.htm">Posisjon i sekvenser</a></li>
+<li><img src="../../../images/175.png" alt="Diagram"/> <a href="./EA4/EA147.htm">Nettverk med alle egenskaper</a></li>
+<li><img src="../../../images/175.png" alt="Diagram"/> <a href="./EA4/EA149.htm">Lineære referansemetoder</a></li>
+<li><img src="../../../images/175.png" alt="Diagram"/> <a href="./EA4/EA151.htm">Lineær posisjon</a></li>
+<li><img src="../../../images/175.png" alt="Diagram"/> <a href="./EA4/EA153.htm">Lineær posisjon med eksempel</a></li>
+<li><img src="../../../images/175.png" alt="Diagram"/> <a href="./EA4/EA155.htm">Forholdet til ISO 19148 - Linear referencing system</a></li>
+<li><img src="../../../images/175.png" alt="Diagram"/> <a href="./EA4/EA157.htm">Forholdet til INSPIRE Generic Network Model - nettverk</a></li>
+<li><img src="../../../images/175.png" alt="Diagram"/> <a href="./EA4/EA159.htm">Forholdet til INSPIRE Generic Network Model - LR</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="./EA4/EA166.htm">Nettverk</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="./EA4/EA167.htm">Nettverkskobling</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="./EA4/EA168.htm">Retningskode</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="./EA4/EA169.htm">RettaLenke</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="./EA4/EA170.htm">Nettverkselement</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="./EA4/EA171.htm">GeneralisertLenke</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="./EA4/EA172.htm">Lenke</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="./EA4/EA173.htm">Lenkesekvens</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="./EA4/EA174.htm">Lenkesett</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="./EA4/EA175.htm">Node</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="./EA4/EA176.htm">LineærPosisjon</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="./EA4/EA177.htm">LineærPosisjonPunkt</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="./EA4/EA178.htm">LineærPosisjonStrekning</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="./EA4/EA179.htm">LineærReferanseMetode</a></li>
+<li><img src="../../../images/329.png" alt="Text"/> <a href="./EA4/EA162.htm"></a></li>
+<li><img src="../../../images/329.png" alt="Text"/> <a href="./EA4/EA165.htm"></a></li>
+</ul>
+
+					</td>
+					<td class="contentcell"><div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">SOSI Nettverk og lineære referanser 5.0  : Public  &lt;&lt;ApplicationSchema&gt;&gt; Package</span>
+	<table border="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">02.11.2015 16:11:26</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">04.10.2022 12:15:51</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">karmag</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" >Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{4F701CE8-791C-44e5-90B2-7F2892C1942D}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+	</table>
+	
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+		</ul>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Tag</td>
+			<td width="50%" class="TableHeading">Value</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">targetNamespace</td>
+				<td width="50%" class="TableRow" valign="top"><a href="http://skjema.geonorge.no/SOSI_Linearereferanser" target="_blank" >http://skjema.geonorge.no/SOSI_Linearereferanser</a></td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					Details:
+						&nbsp;
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">version</td>
+				<td width="50%" class="TableRow" valign="top">5.0</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					Details:
+						&nbsp;
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">xmlns</td>
+				<td width="50%" class="TableRow" valign="top">sosilr</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					Details:
+						&nbsp;
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">xsdDocument</td>
+				<td width="50%" class="TableRow" valign="top">SOSI_LineareReferanser.xsd</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					Details:
+						&nbsp;
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">xsdEncodingRule</td>
+				<td width="50%" class="TableRow" valign="top">sosi</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					Details:
+						&nbsp;
+				</td>
+			</tr>
+	</table>
+</div>	</div>
+ </div>
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

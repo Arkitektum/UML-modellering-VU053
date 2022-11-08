@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>CurveSegment2DHorizontal</title>
+<title>AlignmentCurve</title>
 <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script language="JavaScript" src="../../../../js/displayToc.js" type="text/javascript"></script>
 <script>
@@ -64,12 +64,12 @@
 <div class="section group" >
 
 		<div class="col span_2_of_2 header_frame">
-			<h1> CurveSegment2DHorizontal </h1>
+			<h1> AlignmentCurve </h1>
 			<!-- <img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
 			<img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />
 		</div>
 		<div class="col span_2_of_2 breadcrumb_frame">
-			<p><a href="../../../EA3.htm">Vegprosjekt VU053 v0.1.2</a> / <a href="../../EA8.htm">Eksterne_UML-deler</a> / <a href="../EA195.htm">SupportingPackages</a> / <a href="EA277.htm">LandInfra_part3_Alignment</a> / <a href="EA279.htm">CurveSegment2DHorizontal</a></p>
+			<p><a href="../../../EA3.htm">Vegprosjekt VU053 v0.1.2</a> / <a href="../../EA9.htm">Eksterne_UML-deler</a> / <a href="../EA196.htm">SupportingPackages</a> / <a href="EA278.htm">LandInfra_part3_Alignment</a> / <a href="EA279.htm">AlignmentCurve</a></p>
 		</div>
 			
 		<table class="contentmaintable">
@@ -84,12 +84,12 @@
 					<td class="indexcell">
 						<div class="projectBrowserTitle">Project: </div>
 						<ul>
-<a href="EA277.htm">LandInfra_part3_Alignment</a></ul>
+<a href="EA278.htm">LandInfra_part3_Alignment</a></ul>
 
 					</td>
 					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<span class="ObjectTitle">CurveSegment2DHorizontal  : Public abstract &lt;&lt;union&gt;&gt; Class</span>
+	<span class="ObjectTitle">AlignmentCurve  : Public   Class</span>
 	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -110,7 +110,7 @@
 		</tr>
 		<tr id="proj01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
-			<td class="ObjectDetailsValue">0.2</td>
+			<td class="ObjectDetailsValue">0..1</td>
 		</tr>
 		<tr id="proj02" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
@@ -142,14 +142,15 @@
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{FF955D25-EF90-45fb-88D1-90A34D692372}</td>
+			<td class="ObjectDetailsValue">{4CF27BA5-AF4A-42d1-85A9-D5C5DC1E71BE}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../../EA2/EA1/EA33.htm">HorizontalAlignment</a>, <a href="../../EA2/EA1/EA31.htm">AlignmentReqClass</a>, <a href="EA275.htm">LandInfra_part3_Alignment</a></td>
+			<td class="ObjectDetailsValue"><a href="EA276.htm">LandInfra_part3_Alignment</a></td>
 		</tr>
 	</table>
-	
+	<div class="ObjectDetailsNotes">combined horizontal and vertical alignment represented as a 3D linestring.&lt;br/&gt;If an Alignment also has a HorizontalAlignment and VerticalAlignment, the 3DAlignment must agree in geometry.&#160;&#160;In this case, it was probably generated from the HorizontalAlignment and VerticalAlignments.&lt;br/&gt;</div>
+
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
@@ -165,64 +166,13 @@
 		</tr>
 						<tr>
 				<td width="50%" class="TableRow">
-					lineSegment
+					crs
 				</td>
 				<td width="25%" class="TableRow">
 					Public 
 				</td>
 				<td width="25%" class="TableRow">
-					<a href="../EA1/EA1/EA221.htm">LineString</a>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="3">										
-					
-						&nbsp;
-						
-				</td>
-			</tr>			<tr>
-				<td width="50%" class="TableRow">
-					circularArcSegment
-				</td>
-				<td width="25%" class="TableRow">
-					Public 
-				</td>
-				<td width="25%" class="TableRow">
-					<a href="../EA1/EA1/EA215.htm">ArcString</a>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="3">										
-					
-						&nbsp;
-						
-				</td>
-			</tr>			<tr>
-				<td width="50%" class="TableRow">
-					clothoidArcSegment
-				</td>
-				<td width="25%" class="TableRow">
-					Public 
-				</td>
-				<td width="25%" class="TableRow">
-					<a href="../EA1/EA1/EA216.htm">Clothoid</a>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="3">										
-					
-						&nbsp;
-						
-				</td>
-			</tr>			<tr>
-				<td width="50%" class="TableRow">
-					transitionSegment
-				</td>
-				<td width="25%" class="TableRow">
-					Public 
-				</td>
-				<td width="25%" class="TableRow">
-					<a href="../../EA1/EA22.htm">TransitionCurve</a>
+					<a href="../../EA1/EA22.htm">SC_EngineeringCRS</a>
 				</td>
 			</tr>
 			<tr>
@@ -257,7 +207,7 @@
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA1/EA48.htm">«union» CurveSegment2DHorizontal</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA20.htm">«dataType» AlignmentCurve</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Realization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
