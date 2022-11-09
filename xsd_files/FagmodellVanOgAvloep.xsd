@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:fmfm="http://skjema.geonorge.no/fagmodellfelles" xmlns:fmva="http://skjema.geonorge.no/fagmodellvannogavloep" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:svvli="http://skjema.geonorge.no/svvlandinfra/1.0" elementFormDefault="qualified" targetNamespace="http://skjema.geonorge.no/fagmodellvannogavloep" version="0.1.2">
-  <import namespace="http://skjema.geonorge.no/fagmodellfelles" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/FagmodellFelles.xsd"/>
-  <import namespace="http://skjema.geonorge.no/svvlandinfra/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/SVV_Landinfra.xsd"/>
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:fmva="https://skjema.atlas.vegvesen.no/r000/fagmodellvannogavloep/0.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:lv="https://skjema.atlas.vegvesen.no/r000/leveranse/0.1" xmlns:svvli="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/0.1" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/fagmodellvannogavloep/0.1" version="0.1">
   <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/leveranse/0.1" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/Leveranse.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/0.1" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/SVV_Landinfra.xsd"/>
   <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
   <element name="Anboring" substitutionGroup="fmva:Roerdel" type="fmva:AnboringType"/>
   <complexType name="AnboringType">
@@ -71,10 +71,10 @@ Spillvann er separert fra overvann, så spillvannsledninger skal i prinsippet ik
       <pattern value="other: \w{2,}"/>
     </restriction>
   </simpleType>
-  <element name="Avloepsrensing" substitutionGroup="fmva:NettstasjonElement" type="fmva:AvloepsrensingType"/>
+  <element name="Avloepsrensing" substitutionGroup="fmva:Nettstasjon" type="fmva:AvloepsrensingType"/>
   <complexType name="AvloepsrensingType">
     <complexContent>
-      <extension base="fmva:NettstasjonElementType">
+      <extension base="fmva:NettstasjonType">
         <sequence/>
       </extension>
     </complexContent>
@@ -101,10 +101,10 @@ Spillvann er separert fra overvann, så spillvannsledninger skal i prinsippet ik
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
-  <element name="Basseng" substitutionGroup="fmva:NettstasjonElement" type="fmva:BassengType"/>
+  <element name="Basseng" substitutionGroup="fmva:Nettstasjon" type="fmva:BassengType"/>
   <complexType name="BassengType">
     <complexContent>
-      <extension base="fmva:NettstasjonElementType">
+      <extension base="fmva:NettstasjonType">
         <sequence>
           <element name="bassengtype" type="gml:CodeType"/>
         </sequence>
@@ -180,11 +180,23 @@ Spillvann er separert fra overvann, så spillvannsledninger skal i prinsippet ik
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
-  <element name="FagmodellVannOgAvloep" substitutionGroup="fmfm:Fagmodell" type="fmva:FagmodellVannOgAvloepType"/>
+  <element name="FagmodellVannOgAvloep" substitutionGroup="lv:Fagmodell" type="fmva:FagmodellVannOgAvloepType"/>
   <complexType name="FagmodellVannOgAvloepType">
     <complexContent>
-      <extension base="fmfm:FagmodellType">
+      <extension base="lv:FagmodellType">
         <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="elementSamling">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmva:VannOgAvloepElementSamling"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
           <element maxOccurs="unbounded" minOccurs="0" name="vannOgAvloepElement">
             <complexType>
               <complexContent>
@@ -208,10 +220,10 @@ Spillvann er separert fra overvann, så spillvannsledninger skal i prinsippet ik
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
-  <element name="Fordroeyninsanlegg" substitutionGroup="fmva:NettstasjonElement" type="fmva:FordroeyninsanleggType"/>
+  <element name="Fordroeyninsanlegg" substitutionGroup="fmva:Nettstasjon" type="fmva:FordroeyninsanleggType"/>
   <complexType name="FordroeyninsanleggType">
     <complexContent>
-      <extension base="fmva:NettstasjonElementType">
+      <extension base="fmva:NettstasjonType">
         <sequence/>
       </extension>
     </complexContent>
@@ -255,10 +267,10 @@ Spillvann er separert fra overvann, så spillvannsledninger skal i prinsippet ik
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
-  <element name="Infiltrasjonsanlegg" substitutionGroup="fmva:NettstasjonElement" type="fmva:InfiltrasjonsanleggType"/>
+  <element name="Infiltrasjonsanlegg" substitutionGroup="fmva:Nettstasjon" type="fmva:InfiltrasjonsanleggType"/>
   <complexType name="InfiltrasjonsanleggType">
     <complexContent>
-      <extension base="fmva:NettstasjonElementType">
+      <extension base="fmva:NettstasjonType">
         <sequence/>
       </extension>
     </complexContent>
@@ -315,18 +327,6 @@ Spillvann er separert fra overvann, så spillvannsledninger skal i prinsippet ik
       <extension base="fmva:VannOgAvloepElementSamlingType">
         <sequence>
           <element minOccurs="0" name="trykklasse" type="fmva:TrykklasseType"/>
-          <element maxOccurs="unbounded" minOccurs="0" name="nettstasjonElement">
-            <complexType>
-              <complexContent>
-                <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="fmva:NettstasjonElement"/>
-                  </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
-                </extension>
-              </complexContent>
-            </complexType>
-          </element>
           <element maxOccurs="unbounded" minOccurs="0" name="koplingElement">
             <complexType>
               <complexContent>
@@ -561,10 +561,10 @@ Spillvann er separert fra overvann, så spillvannsledninger skal i prinsippet ik
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
-  <element name="Maalestasjon" substitutionGroup="fmva:NettstasjonElement" type="fmva:MaalestasjonType"/>
+  <element name="Maalestasjon" substitutionGroup="fmva:Nettstasjon" type="fmva:MaalestasjonType"/>
   <complexType name="MaalestasjonType">
     <complexContent>
-      <extension base="fmva:NettstasjonElementType">
+      <extension base="fmva:NettstasjonType">
         <sequence/>
       </extension>
     </complexContent>
@@ -607,17 +607,17 @@ Spillvann er separert fra overvann, så spillvannsledninger skal i prinsippet ik
       <pattern value="other: \w{2,}"/>
     </restriction>
   </simpleType>
-  <element name="NettstasjonElement" substitutionGroup="fmva:VannOgAvloepElement" type="fmva:NettstasjonElementType"/>
-  <complexType name="NettstasjonElementType">
+  <element name="Nettstasjon" substitutionGroup="fmva:KoplingElement" type="fmva:NettstasjonType"/>
+  <complexType name="NettstasjonType">
     <complexContent>
-      <extension base="fmva:VannOgAvloepElementType">
+      <extension base="fmva:KoplingElementType">
         <sequence/>
       </extension>
     </complexContent>
   </complexType>
-  <complexType name="NettstasjonElementPropertyType">
+  <complexType name="NettstasjonPropertyType">
     <sequence minOccurs="0">
-      <element ref="fmva:NettstasjonElement"/>
+      <element ref="fmva:Nettstasjon"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
@@ -654,10 +654,10 @@ Spillvann er separert fra overvann, så spillvannsledninger skal i prinsippet ik
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
-  <element name="Overloepstasjon" substitutionGroup="fmva:NettstasjonElement" type="fmva:OverloepstasjonType"/>
+  <element name="Overloepstasjon" substitutionGroup="fmva:Nettstasjon" type="fmva:OverloepstasjonType"/>
   <complexType name="OverloepstasjonType">
     <complexContent>
-      <extension base="fmva:NettstasjonElementType">
+      <extension base="fmva:NettstasjonType">
         <sequence>
           <element name="overløpstype" type="gml:CodeType"/>
         </sequence>
@@ -718,10 +718,10 @@ Formålet er å lede bort vann som ville skapt utvendig trykk på en konstruksjo
       <pattern value="other: \w{2,}"/>
     </restriction>
   </simpleType>
-  <element name="Paaslippskum" substitutionGroup="fmva:NettstasjonElement" type="fmva:PaaslippskumType"/>
+  <element name="Paaslippskum" substitutionGroup="fmva:Nettstasjon" type="fmva:PaaslippskumType"/>
   <complexType name="PaaslippskumType">
     <complexContent>
-      <extension base="fmva:NettstasjonElementType">
+      <extension base="fmva:NettstasjonType">
         <sequence/>
       </extension>
     </complexContent>
@@ -765,10 +765,10 @@ Formålet er å lede bort vann som ville skapt utvendig trykk på en konstruksjo
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
-  <element name="Pumpestasjon" substitutionGroup="fmva:NettstasjonElement" type="fmva:PumpestasjonType"/>
+  <element name="Pumpestasjon" substitutionGroup="fmva:Nettstasjon" type="fmva:PumpestasjonType"/>
   <complexType name="PumpestasjonType">
     <complexContent>
-      <extension base="fmva:NettstasjonElementType">
+      <extension base="fmva:NettstasjonType">
         <sequence/>
       </extension>
     </complexContent>
@@ -780,10 +780,10 @@ Formålet er å lede bort vann som ville skapt utvendig trykk på en konstruksjo
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
-  <element name="Reduksjonskum" substitutionGroup="fmva:NettstasjonElement" type="fmva:ReduksjonskumType"/>
+  <element name="Reduksjonskum" substitutionGroup="fmva:Nettstasjon" type="fmva:ReduksjonskumType"/>
   <complexType name="ReduksjonskumType">
     <complexContent>
-      <extension base="fmva:NettstasjonElementType">
+      <extension base="fmva:NettstasjonType">
         <sequence/>
       </extension>
     </complexContent>
@@ -1517,10 +1517,10 @@ Brukes når ledningen går (dykker) under elv/bekk/vei/bane osv.</documentation>
       <pattern value="other: \w{2,}"/>
     </restriction>
   </simpleType>
-  <element name="Ujevningsbasseng" substitutionGroup="fmva:NettstasjonElement" type="fmva:UjevningsbassengType"/>
+  <element name="Ujevningsbasseng" substitutionGroup="fmva:Nettstasjon" type="fmva:UjevningsbassengType"/>
   <complexType name="UjevningsbassengType">
     <complexContent>
-      <extension base="fmva:NettstasjonElementType">
+      <extension base="fmva:NettstasjonType">
         <sequence/>
       </extension>
     </complexContent>
@@ -1601,8 +1601,8 @@ Brukes når ledningen går (dykker) under elv/bekk/vei/bane osv.</documentation>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
-  <element name="VannOgAvloepElementSamling" substitutionGroup="gml:AbstractFeature" type="fmva:VannOgAvloepElementSamlingType"/>
-  <complexType name="VannOgAvloepElementSamlingType">
+  <element abstract="true" name="VannOgAvloepElementSamling" substitutionGroup="gml:AbstractFeature" type="fmva:VannOgAvloepElementSamlingType"/>
+  <complexType abstract="true" name="VannOgAvloepElementSamlingType">
     <complexContent>
       <extension base="gml:AbstractFeatureType">
         <sequence/>
@@ -1616,10 +1616,10 @@ Brukes når ledningen går (dykker) under elv/bekk/vei/bane osv.</documentation>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
-  <element name="Vannbehandling" substitutionGroup="fmva:NettstasjonElement" type="fmva:VannbehandlingType"/>
+  <element name="Vannbehandling" substitutionGroup="fmva:Nettstasjon" type="fmva:VannbehandlingType"/>
   <complexType name="VannbehandlingType">
     <complexContent>
-      <extension base="fmva:NettstasjonElementType">
+      <extension base="fmva:NettstasjonType">
         <sequence/>
       </extension>
     </complexContent>
@@ -1694,10 +1694,10 @@ Brukes når ledningen går (dykker) under elv/bekk/vei/bane osv.</documentation>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
-  <element name="Ventilkammer" substitutionGroup="fmva:NettstasjonElement" type="fmva:VentilkammerType"/>
+  <element name="Ventilkammer" substitutionGroup="fmva:Nettstasjon" type="fmva:VentilkammerType"/>
   <complexType name="VentilkammerType">
     <complexContent>
-      <extension base="fmva:NettstasjonElementType">
+      <extension base="fmva:NettstasjonType">
         <sequence/>
       </extension>
     </complexContent>
