@@ -1,0 +1,3 @@
+tocTab[tocTab.length] = new Array("0.1.7.6:1", "", "WFS", "EARoot/EA1/EA7/EA6/EA285.htm", "175.png", "1198", "0", "", "Logical diagram0","{504EF123-0184-4fe4-87A5-64044A143DEF}");
+tocTab[tocTab.length] = new Array("0.1.7.6:2", "", "«featureType» FeatureCollection", "EARoot/EA1/EA7/EA6/EA288.htm", "5.png", "E6109", "0", "", "Class0","{6CC64ED0-66D4-4af5-AD43-7EA3FE31E904}");
+tocTab[tocTab.length] = new Array("0.1.7.6:3", "", "«featureType» member", "EARoot/EA1/EA7/EA6/EA289.htm", "5.png", "E6110", "0", "", "Class0","{94AE67B4-24E5-4c31-9416-5546AC24188D}");

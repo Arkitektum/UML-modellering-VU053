@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>LineærPosisjonStrekning</title>
+<title>LineærReferanseMetode</title>
 <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script language="JavaScript" src="../../../../js/displayToc.js" type="text/javascript"></script>
 <script>
@@ -64,12 +64,12 @@
 <div class="section group" >
 
 		<div class="col span_2_of_2 header_frame">
-			<h1> LineærPosisjonStrekning </h1>
+			<h1> LineærReferanseMetode </h1>
 			<!-- <img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
 			<img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />
 		</div>
 		<div class="col span_2_of_2 breadcrumb_frame">
-			<p><a href="../../../EA3.htm">Vegprosjekt VU053 v0.1.2</a> / <a href="../../EA9.htm">Eksterne_UML-deler</a> / <a href="../EA84.htm">Nettverk og linearReferenser</a> / <a href="EA98.htm">VU053 Nettverk og lineære referanser</a> / <a href="EA103.htm">LineærPosisjonStrekning</a></p>
+			<p><a href="../../../EA3.htm">Vegprosjekt VU053 v0.1.2</a> / <a href="../../EA8.htm">Eksterne_UML-deler</a> / <a href="../EA83.htm">Nettverk og linearReferenser</a> / <a href="EA97.htm">VU053 Nettverk og lineære referanser</a> / <a href="EA103.htm">LineærReferanseMetode</a></p>
 		</div>
 			
 		<table class="contentmaintable">
@@ -84,12 +84,12 @@
 					<td class="indexcell">
 						<div class="projectBrowserTitle">Project: </div>
 						<ul>
-<a href="EA98.htm">VU053 Nettverk og lineære referanser</a></ul>
+<a href="EA97.htm">VU053 Nettverk og lineære referanser</a></ul>
 
 					</td>
 					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<span class="ObjectTitle">LineærPosisjonStrekning  : Public  &lt;&lt;dataType&gt;&gt; Class</span>
+	<span class="ObjectTitle">LineærReferanseMetode  : Public  &lt;&lt;codeList&gt;&gt; Class</span>
 	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -142,22 +142,20 @@
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{FF5CC69F-3482-4903-9BCE-26BD60A2642A}</td>
+			<td class="ObjectDetailsValue">{35CBDC7C-CD80-4214-B4F8-5E7F41ACA775}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA82.htm">Sammenheng_SOSI_VU053</a>, <a href="EA96.htm">Lineær posisjon</a>, <a href="EA92.htm">Hoveddiagram</a>, <a href="EA94.htm">Lineære referansemetoder</a></td>
+			<td class="ObjectDetailsValue"><a href="EA91.htm">Hoveddiagram</a>, <a href="EA93.htm">Lineære referansemetoder</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">lineær posisjon som en strekning&lt;br/&gt;&lt;br/&gt;Merknad: &lt;br/&gt;Dette er en forenkling i forhold til ISO19148, der posisjonsangivelsene er en egen datatype LR_DistanceExpression som har igjen egenskapen DistanceAlong.&lt;br/&gt;LR_DistanceExpression har også en subtype LRO_LateralOffsetDistanceExpression, som inneholder egenskapen offsetLateralDistance (avstandSide).&lt;br/&gt;&lt;br/&gt;&lt;i&gt;Realisering av ISO19148: LE_FromToLocation&lt;/i&gt;&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">Metode brukt for lineære referanser&lt;br/&gt;&lt;br/&gt;Merknad:&lt;br/&gt;&lt;br/&gt;Dersom offset er i bruk så angis også positiv offsetretning til side (høyre eller venstre) og vertikalt (opp/ned). &lt;br/&gt;Felles for alle metoder i Norge:&lt;br/&gt;&lt;ul&gt;<br /> &lt;li&gt;offsetUnits: &quot;meter&quot; &lt;/li&gt; &lt;li&gt;positiveLateralOffsetDirection: &quot;right&quot; &lt;/li&gt;&lt;/ul&gt;<br />positiveVerticalOffsetDirection: &quot;up&quot;&lt;br/&gt;&lt;br/&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;Dette er en kodeliste basert på en forenkling av ISO19148: LR_LinearReferencingMethod, som benytter 4 attributter&lt;/font&gt;&lt;br/&gt;&lt;ul&gt;<br /> &lt;li&gt;navn &lt;/li&gt; &lt;li&gt;type (absolutt, relativ eller interpolert) &lt;/li&gt; &lt;li&gt;måleenhet &lt;/li&gt; &lt;li&gt;restriksjoner/regler (constraints) &lt;/li&gt;&lt;/ul&gt;&lt;p/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
 			<li onClick="toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
-			<li onClick="toggleItem('Constraints');" id="ConstraintsTitle">Constraints</li>
 			<li onClick="toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
-			<li onClick="toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 <div class="ItemBody" id="AttributesTable">
 	<table border="0" cellspacing="0" cellpadding="0" class="Table">
@@ -168,25 +166,25 @@
 		</tr>
 						<tr>
 				<td width="50%" class="TableRow">
-					fraPosisjon
+					metrering
 				</td>
 				<td width="25%" class="TableRow">
 					Public 
 				</td>
 				<td width="25%" class="TableRow">
-					Real
+					
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="3">										
-					SOSI_datatype=D<br>SOSI_lengde=10<br>SOSI_navn=LRFRAPOSISJON<br>
+					SOSI_verdi=1<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			&lt;font color=&quot;#0f0f0f&quot;&gt;startposisjon langs &lt;/font&gt;nettverkselementet,&lt;font color=&quot;#0f0f0f&quot;&gt; i henhold til referansemetoden &lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;Merknad: Ref &lt;i&gt;ISO19148: fromPosition -&#160;&#160;distanceAlong&lt;/i&gt; &lt;/font&gt;&lt;br/&gt;
+			posisjon fra start av nettverkselementet (lenken), angitt i meter&lt;br/&gt;&lt;br/&gt;Merknad: Kan ta utgangspunkt i en angitt startverdi for nettverkselementet.&lt;br/&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;ISO19148: LR_LinearReferencingMethod:&lt;/font&gt;&lt;br/&gt;&lt;ul&gt;<br /> &lt;li&gt;type: &quot;absolute&quot;&#160;&#160;&lt;/li&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br /> &lt;li&gt;units: &quot;meter&quot;&#160;&#160;&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -195,25 +193,79 @@
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow">
-					tilPosisjon
+					kilometrering
 				</td>
 				<td width="25%" class="TableRow">
 					Public 
 				</td>
 				<td width="25%" class="TableRow">
-					Real
+					
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="3">										
-					SOSI_datatype=D<br>SOSI_lengde=10<br>SOSI_navn=LRTILPOSISJON<br>
+					SOSI_verdi=2<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			&lt;font color=&quot;#0f0f0f&quot;&gt;sluttposisjon langs &lt;/font&gt;nettverkselementet&lt;font color=&quot;#0f0f0f&quot;&gt;, i henhold til referansemetoden&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;Merknad: Ref &lt;i&gt;ISO19148: toPosition -&#160;&#160;distanceAlong&lt;/i&gt; &lt;/font&gt;&lt;br/&gt;
+			posisjon fra start av nettverkselementet, angitt i kilometer. &lt;br/&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;Merknad: &lt;/font&gt;Kan ta utgangspunkt i en angitt startverdi for nettverkselementet (lenken).&lt;br/&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;ISO19148: LR_LinearReferencingMethod:&lt;/font&gt;&lt;br/&gt;&lt;ul&gt;<br /> &lt;li&gt;type: &quot;absolute&quot; &lt;/li&gt; &lt;li&gt;units: &quot;kilometer&quot; &lt;/li&gt;&lt;/ul&gt;&lt;p/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					normalisert
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					SOSI_verdi=3<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			posisjon fra start av nettverkselementet, angitt som et desimaltall mellom 0 og 1, i forhold til start (0) og slutt (1) på nettverkselementet (lenken)&lt;br/&gt;&lt;br/&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;Merknad: &lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;ISO19148: LR_LinearReferencingMethod:&lt;/font&gt;&lt;br/&gt;&lt;ul&gt;<br /> &lt;li&gt;type: &quot;Interpolative&quot;&#160;&#160;&lt;/li&gt; &lt;li&gt;units: &quot;0..1&quot;&#160;&#160;&lt;/li&gt;&lt;/ul&gt;&lt;p/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					prosent
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					SOSI_verdi=5<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			posisjon fra start av nettverkselementet, angitt i prosent av lengden på nettverkselementet (lenken)&lt;br/&gt;&lt;br/&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;Merknad: &lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;ISO19148: LR_LinearReferencingMethod:&lt;/font&gt;&lt;br/&gt;&lt;ul&gt;<br /> &lt;li&gt;type: &quot;Interpolative&quot;&#160;&#160;&lt;/li&gt; &lt;li&gt;units: &quot;percent&quot;&#160;&#160;&lt;/li&gt;&lt;/ul&gt;&lt;p/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -230,8 +282,26 @@
 			<td width="50%" class="TableHeading">Value</td>
 		</tr>
 					<tr>
+				<td width="50%" class="TableRow" valign="top">SOSI_datatype</td>
+				<td width="50%" class="TableRow" valign="top">T</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					Details:
+						&nbsp;
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">SOSI_lengde</td>
+				<td width="50%" class="TableRow" valign="top">20</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					Details:
+						&nbsp;
+				</td>
+			</tr>			<tr>
 				<td width="50%" class="TableRow" valign="top">SOSI_navn</td>
-				<td width="50%" class="TableRow" valign="top">LRSTREKNING</td>
+				<td width="50%" class="TableRow" valign="top">LRLRM</td>
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
@@ -240,32 +310,7 @@
 				</td>
 			</tr>
 	</table>
-</div>		<div class="ItemBody" id="ConstraintsTable">
-			<table class="Table ea_table">
-			  	<tr>
-					<td width="80%" class="TableHeading">Constraint</td>
-					<td width="10%" class="TableHeading">Type</td>
-					<td width="10%" class="TableHeading">Status</td>
-				</tr>
-				<tr>
-					<td width="80%" class="TableRow">fraPosisjon mindre enn tilPosisjon</td>
-					<td width="10%" class="TableRow">OCL</td>
-					<td width="10%" class="TableRow">Approved</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed" colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints177" /></button>Details:
-							<div id="detailsDIVConstraints177" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">inv:self.fraPosisjon#lt;self.tilPosisjon&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-
-			</table>
-		</div>
-		<div class="ItemBody" id="CustomPropertiesTable">
+</div>		<div class="ItemBody" id="CustomPropertiesTable">
 			<table class="Table ea_table">
 				<tr>
 					<td width="30%" class="TableHeading">Property</td>
@@ -278,33 +323,7 @@
 
 
 			</table>
-		</div>		<div class="ItemBody" id="LinksTable">
-			<table class="Table ea_table">
-				<tr>
-					<td width="30%" class="TableHeading">Object</td>
-					<td width="10%" class="TableHeading">Type</td>
-					<td width="10%" class="TableHeading">Connection</td>
-					<td width="10%" class="TableHeading">Direction</td>
-					<td width="40%" class="TableHeading">Notes</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA5/EA4/EA178.htm">«dataType» LineærPosisjonStrekning</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Realization</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA101.htm">«dataType» LineærPosisjon</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-
-			</table>
-		</div>
-	</div>
+		</div>	</div>
  </div>
  </td>
 				</tr>

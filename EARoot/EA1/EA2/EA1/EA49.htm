@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>CurveSegment2DHorizontal</title>
+<title>CurveSegment2DVert</title>
 <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script language="JavaScript" src="../../../../js/displayToc.js" type="text/javascript"></script>
 <script>
@@ -64,12 +64,12 @@
 <div class="section group" >
 
 		<div class="col span_2_of_2 header_frame">
-			<h1> CurveSegment2DHorizontal </h1>
+			<h1> CurveSegment2DVert </h1>
 			<!-- <img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
 			<img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />
 		</div>
 		<div class="col span_2_of_2 breadcrumb_frame">
-			<p><a href="../../../EA3.htm">Vegprosjekt VU053 v0.1.2</a> / <a href="../../EA9.htm">Eksterne_UML-deler</a> / <a href="../EA24.htm">Alignment_Main</a> / <a href="EA40.htm">VU053_Part3_Alignment</a> / <a href="EA49.htm">CurveSegment2DHorizontal</a></p>
+			<p><a href="../../../EA3.htm">Vegprosjekt VU053 v0.1.2</a> / <a href="../../EA8.htm">Eksterne_UML-deler</a> / <a href="../EA23.htm">Alignment_Main</a> / <a href="EA39.htm">VU053_Part3_Alignment</a> / <a href="EA49.htm">CurveSegment2DVert</a></p>
 		</div>
 			
 		<table class="contentmaintable">
@@ -84,12 +84,12 @@
 					<td class="indexcell">
 						<div class="projectBrowserTitle">Project: </div>
 						<ul>
-<a href="EA40.htm">VU053_Part3_Alignment</a></ul>
+<a href="EA39.htm">VU053_Part3_Alignment</a></ul>
 
 					</td>
 					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<span class="ObjectTitle">CurveSegment2DHorizontal  : Public  &lt;&lt;union&gt;&gt; Class</span>
+	<span class="ObjectTitle">CurveSegment2DVert  : Public  &lt;&lt;dataType&gt;&gt; Class</span>
 	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -106,11 +106,11 @@
 		</tr>
 		<tr id="proj00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
-			<td class="ObjectDetailsValue">MatiasGonzalezTognoni</td>
+			<td class="ObjectDetailsValue">Paul.Scarponcini</td>
 		</tr>
 		<tr id="proj01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
-			<td class="ObjectDetailsValue">0.2</td>
+			<td class="ObjectDetailsValue">0.5</td>
 		</tr>
 		<tr id="proj02" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
@@ -142,17 +142,18 @@
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{2321AEDB-B9B7-4d80-8122-0228471DD257}</td>
+			<td class="ObjectDetailsValue">{02480C0B-10C0-46aa-B718-8FC20C0459CF}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA28.htm">Alignment</a>, <a href="EA32.htm">AlignmentReqClass</a>, <a href="../../EA7/EA4/EA276.htm">LandInfra_part3_Alignment</a></td>
+			<td class="ObjectDetailsValue"><a href="EA35.htm">VerticalAlignment</a>, <a href="EA27.htm">Alignment</a>, <a href="EA31.htm">AlignmentReqClass</a></td>
 		</tr>
 	</table>
 	
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
 			<li onClick="toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
 			<li onClick="toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
@@ -165,13 +166,13 @@
 		</tr>
 						<tr>
 				<td width="50%" class="TableRow">
-					lineSegment
+					startDistAlong
 				</td>
 				<td width="25%" class="TableRow">
 					Public 
 				</td>
 				<td width="25%" class="TableRow">
-					<a href="../../EA7/EA1/EA1/EA222.htm">LineString</a>
+					<a href="../../EA3/EA1/EA62.htm">DistanceExpression</a>
 				</td>
 			</tr>
 			<tr>
@@ -182,13 +183,13 @@
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow">
-					circularArcSegment
+					startHeight
 				</td>
 				<td width="25%" class="TableRow">
 					Public 
 				</td>
 				<td width="25%" class="TableRow">
-					<a href="../../EA7/EA1/EA1/EA216.htm">ArcString</a>
+					<a href="../../EA7/EA1/EA1/EA221.htm">Length</a>
 				</td>
 			</tr>
 			<tr>
@@ -199,13 +200,30 @@
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow">
-					clothoidArcSegment
+					startGradient
 				</td>
 				<td width="25%" class="TableRow">
 					Public 
 				</td>
 				<td width="25%" class="TableRow">
-					<a href="../../EA7/EA1/EA1/EA217.htm">Clothoid</a>
+					<a href="../../EA3/EA1/EA63.htm">Percentage</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					horizontalLength
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					<a href="../../EA7/EA1/EA1/EA221.htm">Length</a>
 				</td>
 			</tr>
 			<tr>
@@ -217,7 +235,35 @@
 			</tr>
 	</table>
 </div>
-		<div class="ItemBody" id="CustomPropertiesTable">
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Tag</td>
+			<td width="50%" class="TableHeading">Value</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">isCollection</td>
+				<td width="50%" class="TableRow" valign="top">false</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					Details:
+						<div class="ObjectDetailsNotes">Values: true,false<br />Default: false<br /></div>
+
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">noPropertyType</td>
+				<td width="50%" class="TableRow" valign="top">false</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					Details:
+						<div class="ObjectDetailsNotes">Values: true,false<br />Default: false<br /></div>
+
+				</td>
+			</tr>
+	</table>
+</div>		<div class="ItemBody" id="CustomPropertiesTable">
 			<table class="Table ea_table">
 				<tr>
 					<td width="30%" class="TableHeading">Property</td>
@@ -240,10 +286,24 @@
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA7/EA4/EA280.htm">«union» CurveSegment2DHorizontal</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA53.htm">«dataType» VertSegmentParabolicArc</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Realization</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA51.htm">«dataType» VertSegmentCircularArc</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA52.htm">«dataType» VertSegmentLine</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 
