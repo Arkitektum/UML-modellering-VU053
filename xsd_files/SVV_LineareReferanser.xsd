@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:svvli="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/0.1" xmlns:svvlr="https://skjema.atlas.vegvesen.no/r000/svvlinearereferanser/0.1" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/svvlinearereferanser/0.1" version="0.1">
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:svvli="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/0.1" xmlns:svvlr="https://skjema.atlas.vegvesen.no/r000/svvlinearereferanser/1.0" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/svvlinearereferanser/0.1" version="0.1">
   <import namespace="http://www.interactive-instruments.de/ShapeChange/AppInfo" schemaLocation="http://shapechange.net/resources/schema/ShapeChangeAppinfo.xsd"/>
   <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
   <import namespace="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/0.1" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/SVV_Landinfra.xsd"/>
-  <import namespace="https://skjema.atlas.vegvesen.no/r000/svvlinearereferanser/0.1" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/SVV_LineareReferanser.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/svvlinearereferanser/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/SVV_LineareReferanser.xsd"/>
   <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
   <element name="LinearElement" substitutionGroup="gml:AbstractFeature" type="svvlr:LinearElementType"/>
   <complexType name="LinearElementType">

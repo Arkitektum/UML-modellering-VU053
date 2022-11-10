@@ -397,7 +397,7 @@ Kan (bør?) valideres mot prosjektkrav om hvilket koordinatsystem som er "valgt"
     <complexContent>
       <extension base="gml:AbstractFeatureType">
         <sequence>
-          <element name="kvalitet" type="gml:CodeType"/>
+          <element name="kvalitet" type="lv:PresisjonType"/>
           <element maxOccurs="unbounded" minOccurs="0" name="fagmodell">
             <complexType>
               <complexContent>
@@ -638,6 +638,22 @@ Kan (bør?) valideres mot prosjektkrav om hvilket koordinatsystem som er "valgt"
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
+  <simpleType name="PresisjonType">
+    <union memberTypes="lv:PresisjonEnumerationType lv:PresisjonOtherType"/>
+  </simpleType>
+  <simpleType name="PresisjonEnumerationType">
+    <restriction base="string">
+      <enumeration value="2"/>
+      <enumeration value="3-6"/>
+      <enumeration value="6-20"/>
+      <enumeration value="20"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="PresisjonOtherType">
+    <restriction base="string">
+      <pattern value="other: \w{2,}"/>
+    </restriction>
+  </simpleType>
   <element abstract="true" name="Resultatdata" substitutionGroup="gml:AbstractFeature" type="lv:ResultatdataType"/>
   <complexType abstract="true" name="ResultatdataType">
     <complexContent>

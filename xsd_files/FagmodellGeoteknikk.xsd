@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:VU053_="http://skjema.geonorge.no/package_URL" xmlns:fmget="https://skjema.atlas.vegvesen.no/r000/fagmodellgeoteknikk/0.1" xmlns:gml="http://www.opengis.net/gml/3.2" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/fagmodellgeoteknikk/0.1" version="0.1">
+  <import namespace="http://skjema.geonorge.no/package_URL"/>
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="FagmodellGeoteknikk" substitutionGroup="gml:AbstractFeature" type="fmget:FagmodellGeoteknikkType"/>
+  <complexType name="FagmodellGeoteknikkType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="FagmodellGeoteknikkPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:FagmodellGeoteknikk"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="GeoteknikkElement" substitutionGroup="gml:AbstractFeature" type="fmget:GeoteknikkElementType"/>
+  <complexType name="GeoteknikkElementType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GeoteknikkElementPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:GeoteknikkElement"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="GeoteknikkElementSamling" substitutionGroup="gml:AbstractFeature" type="fmget:GeoteknikkElementSamlingType"/>
+  <complexType abstract="true" name="GeoteknikkElementSamlingType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GeoteknikkElementSamlingPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:GeoteknikkElementSamling"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>

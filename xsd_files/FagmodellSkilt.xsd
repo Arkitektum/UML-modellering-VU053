@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:fmgtm="https://skjema.atlas.vegvesen.no/r000/fagmodellgatemoebler/0.1" xmlns:fmskl="https://skjema.atlas.vegvesen.no/r000/fagmodellskilt/0.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/fagmodellskilt/0.1" version="0.1">
+  <import namespace="http://www.interactive-instruments.de/ShapeChange/AppInfo" schemaLocation="http://shapechange.net/resources/schema/ShapeChangeAppinfo.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/fagmodellgatemoebler/0.1" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/FagmodellGatemoebler.xsd"/>
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="Skiltportal" substitutionGroup="fmgtm:GatemoeblerElement" type="fmskl:SkiltportalType">
+    <annotation>
+      <documentation>Anordning for å henge opp skilt, teknisk utstyr etc. over kjørefeltene.</documentation>
+      <appinfo>
+        <sc:taggedValue tag="NVDB_ID">24</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="SkiltportalType">
+    <complexContent>
+      <extension base="fmgtm:GatemoeblerElementType">
+        <sequence>
+          <element minOccurs="0" name="bruksområde" type="gml:CodeType"/>
+          <element minOccurs="0" name="type" type="gml:CodeType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SkiltportalPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmskl:Skiltportal"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>

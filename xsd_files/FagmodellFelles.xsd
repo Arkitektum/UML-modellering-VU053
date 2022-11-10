@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:fmfm="https://skjema.atlas.vegvesen.no/r000/fagmodellfelles/0.1" xmlns:fmre="https://skjema.atlas.vegvesen.no/r000/fagmodellrekkverk/0.1" xmlns:fmveg="https://skjema.atlas.vegvesen.no/r000/fagmodellveg/0.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:svvlr="https://skjema.atlas.vegvesen.no/r000/svvlinearereferanser/0.1" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/fagmodellfelles/0.1" version="0.1">
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:fmfel="https://skjema.atlas.vegvesen.no/r000/fagmodellfelles/0.1" xmlns:fmrek="https://skjema.atlas.vegvesen.no/r000/fagmodellrekkverk/0.1" xmlns:fmveg="https://skjema.atlas.vegvesen.no/r000/fagmodellveg/0.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:svvlr="https://skjema.atlas.vegvesen.no/r000/svvlinearereferanser/0.1" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/fagmodellfelles/0.1" version="0.1">
   <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
   <import namespace="https://skjema.atlas.vegvesen.no/r000/fagmodellrekkverk/0.1" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/FagmodellRekkverk.xsd"/>
   <import namespace="https://skjema.atlas.vegvesen.no/r000/fagmodellveg/0.1" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/FagmodellVeg.xsd"/>
   <import namespace="https://skjema.atlas.vegvesen.no/r000/svvlinearereferanser/0.1"/>
-  <import namespace="https://skjema.atlas.vegvesen.no/r000/svvlinearereferanser/0.1" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/SVV_LineareReferanser.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/svvlinearereferanser/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/SVV_LineareReferanser.xsd"/>
   <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
-  <element name="Veg" substitutionGroup="gml:AbstractFeature" type="fmfm:VegType"/>
+  <element name="Veg" substitutionGroup="gml:AbstractFeature" type="fmfel:VegType"/>
   <complexType name="VegType">
     <complexContent>
       <extension base="gml:AbstractFeatureType">
@@ -24,6 +24,18 @@
           </element>
           <element minOccurs="0" name="lineearPosisjonStrekning" type="svvlr:LineærPosisjonStrekningPropertyType"/>
           <element minOccurs="0" name="lineearPosisjonPunkt" type="svvlr:LineærPosisjonPunktPropertyType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="rekkverkElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmrek:FagmodellRekkverkElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
           <element maxOccurs="unbounded" minOccurs="0" name="vegElement">
             <complexType>
               <complexContent>
@@ -48,25 +60,13 @@
               </complexContent>
             </complexType>
           </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="rekkverkElement">
-            <complexType>
-              <complexContent>
-                <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="fmre:FagmodellRekkverkElement"/>
-                  </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
-                </extension>
-              </complexContent>
-            </complexType>
-          </element>
         </sequence>
       </extension>
     </complexContent>
   </complexType>
   <complexType name="VegPropertyType">
     <sequence minOccurs="0">
-      <element ref="fmfm:Veg"/>
+      <element ref="fmfel:Veg"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>

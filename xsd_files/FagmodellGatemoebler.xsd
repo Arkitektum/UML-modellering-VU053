@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:fmgtm="https://skjema.atlas.vegvesen.no/r000/fagmodellgatemoebler/0.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:lv="https://skjema.atlas.vegvesen.no/r000/leveranse/0.1" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:svvli="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/0.1" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/fagmodellgatemoebler/0.1" version="0.1">
+  <import namespace="http://www.interactive-instruments.de/ShapeChange/AppInfo" schemaLocation="http://shapechange.net/resources/schema/ShapeChangeAppinfo.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/leveranse/0.1" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/Leveranse.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/0.1" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/SVV_Landinfra.xsd"/>
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <simpleType name="ArealTilpassetRullestolType">
+    <annotation>
+      <documentation>Angir om det finnes fritt areal innvendig på minst 1.5 x 1.5 m.</documentation>
+      <appinfo>
+        <sc:taggedValue tag="NVDB_ID">9846</sc:taggedValue>
+        <sc:taggedValue tag="NVDB_ID">9846</sc:taggedValue>
+        <sc:taggedValue tag="SOSI_navn">NVDB_AREALTILPASSETRULLESTOL</sc:taggedValue>
+      </appinfo>
+    </annotation>
+    <union memberTypes="fmgtm:ArealTilpassetRullestolEnumerationType fmgtm:ArealTilpassetRullestolOtherType"/>
+  </simpleType>
+  <simpleType name="ArealTilpassetRullestolEnumerationType">
+    <annotation>
+      <documentation>Angir om det finnes fritt areal innvendig på minst 1.5 x 1.5 m.</documentation>
+      <appinfo>
+        <sc:taggedValue tag="NVDB_ID">9846</sc:taggedValue>
+        <sc:taggedValue tag="NVDB_ID">9846</sc:taggedValue>
+        <sc:taggedValue tag="SOSI_navn">NVDB_AREALTILPASSETRULLESTOL</sc:taggedValue>
+      </appinfo>
+    </annotation>
+    <restriction base="string">
+      <enumeration value="Ja">
+        <annotation>
+          <documentation>16008: Ja</documentation>
+          <appinfo>
+            <sc:taggedValue tag="NVDB_ID">16008</sc:taggedValue>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Nei">
+        <annotation>
+          <documentation>16009: Nei</documentation>
+          <appinfo>
+            <sc:taggedValue tag="NVDB_ID">16009</sc:taggedValue>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <simpleType name="ArealTilpassetRullestolOtherType">
+    <restriction base="string">
+      <pattern value="other: \w{2,}"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="EierLeskurType">
+    <annotation>
+      <documentation>Angir hvem som er eier av vegobjektet.</documentation>
+      <appinfo>
+        <sc:taggedValue tag="NVDB_ID">5812</sc:taggedValue>
+        <sc:taggedValue tag="NVDB_ID">5812</sc:taggedValue>
+        <sc:taggedValue tag="SOSI_navn">NVDB_EIERLESKUR</sc:taggedValue>
+      </appinfo>
+    </annotation>
+    <union memberTypes="fmgtm:EierLeskurEnumerationType fmgtm:EierLeskurOtherType"/>
+  </simpleType>
+  <simpleType name="EierLeskurEnumerationType">
+    <annotation>
+      <documentation>Angir hvem som er eier av vegobjektet.</documentation>
+      <appinfo>
+        <sc:taggedValue tag="NVDB_ID">5812</sc:taggedValue>
+        <sc:taggedValue tag="NVDB_ID">5812</sc:taggedValue>
+        <sc:taggedValue tag="SOSI_navn">NVDB_EIERLESKUR</sc:taggedValue>
+      </appinfo>
+    </annotation>
+    <restriction base="string">
+      <enumeration value="Stat, Statens vegvesen">
+        <annotation>
+          <documentation>8207: Stat, Statens vegvesen</documentation>
+          <appinfo>
+            <sc:taggedValue tag="NVDB_ID">8207</sc:taggedValue>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Stat, Nye Veier">
+        <annotation>
+          <documentation>18589: Stat, Nye Veier</documentation>
+          <appinfo>
+            <sc:taggedValue tag="NVDB_ID">18589</sc:taggedValue>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Fylkeskommune">
+        <annotation>
+          <documentation>10699: Fylkeskommune</documentation>
+          <appinfo>
+            <sc:taggedValue tag="NVDB_ID">10699</sc:taggedValue>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Kommune">
+        <annotation>
+          <documentation>8233: Kommune</documentation>
+          <appinfo>
+            <sc:taggedValue tag="NVDB_ID">8233</sc:taggedValue>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Privat">
+        <annotation>
+          <documentation>8259: Privat</documentation>
+          <appinfo>
+            <sc:taggedValue tag="NVDB_ID">8259</sc:taggedValue>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Uavklart">
+        <annotation>
+          <documentation>17597: Verdi benyttes inntil det er avklart hvem som er eier (ingen verdi tolkes som at vegeier er eier).</documentation>
+          <appinfo>
+            <sc:taggedValue tag="NVDB_ID">17597</sc:taggedValue>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <simpleType name="EierLeskurOtherType">
+    <restriction base="string">
+      <pattern value="other: \w{2,}"/>
+    </restriction>
+  </simpleType>
+  <element name="FagmodellGatemoebler" substitutionGroup="lv:Fagmodell" type="fmgtm:FagmodellGatemoeblerType"/>
+  <complexType name="FagmodellGatemoeblerType">
+    <complexContent>
+      <extension base="lv:FagmodellType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="gatemoeblerElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmgtm:GatemoeblerElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="FagmodellGatemoeblerPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmgtm:FagmodellGatemoebler"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="GatemoeblerElement" substitutionGroup="svvli:VU053PhysicalElement" type="fmgtm:GatemoeblerElementType"/>
+  <complexType name="GatemoeblerElementType">
+    <complexContent>
+      <extension base="svvli:VU053PhysicalElementType">
+        <sequence>
+          <element name="farge" type="string"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GatemoeblerElementPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmgtm:GatemoeblerElement"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Gjerde" substitutionGroup="fmgtm:GatemoeblerElement" type="fmgtm:GjerdeType">
+    <annotation>
+      <documentation>Gjerde er frittstående hinder som skal stenge/lede ferdsel av folk eller dyr</documentation>
+      <appinfo>
+        <sc:taggedValue tag="NVDB_ID">7</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="GjerdeType">
+    <complexContent>
+      <extension base="fmgtm:GatemoeblerElementType">
+        <sequence>
+          <element minOccurs="0" name="bruksområde" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hva vegobjektet brukes til, hvilken funksjon det har</documentation>
+              <appinfo>
+                <sc:taggedValue tag="NVDB_ID">1249</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="type" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvilken type vegobjektet er av</documentation>
+              <appinfo>
+                <sc:taggedValue tag="NVDB_ID">1091</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="typeStolpe" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvilken type stolper gjerdet har</documentation>
+              <appinfo>
+                <sc:taggedValue tag="NVDB_ID">2105</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GjerdePropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmgtm:Gjerde"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Gjerdeport" substitutionGroup="fmgtm:GatemoeblerElement" type="fmgtm:GjerdeportType">
+    <annotation>
+      <documentation>Passasje i gjerder eller skjermer</documentation>
+      <appinfo>
+        <sc:taggedValue tag="NVDB_ID">855</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="GjerdeportType">
+    <complexContent>
+      <extension base="fmgtm:GatemoeblerElementType">
+        <sequence>
+          <element minOccurs="0" name="bruksområde" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hva vegobjektet brukes til, hvilken funksjon det har.</documentation>
+              <appinfo>
+                <sc:taggedValue tag="NVDB_ID">9773</sc:taggedValue>
+                <sc:taggedValue tag="SOSI_navn">NVDB_BRUKSOMRÅDE</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="materiale" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir materiale.</documentation>
+              <appinfo>
+                <sc:taggedValue tag="NVDB_ID">9778</sc:taggedValue>
+                <sc:taggedValue tag="SOSI_navn">NVDB_MATERIALE</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="utforming" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvilken utforming grinda har.</documentation>
+              <appinfo>
+                <sc:taggedValue tag="NVDB_ID">9781</sc:taggedValue>
+                <sc:taggedValue tag="SOSI_navn">NVDB_UTFORMING</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GjerdeportPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmgtm:Gjerdeport"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="KunstUtsmykking" substitutionGroup="gml:AbstractFeature" type="fmgtm:KunstUtsmykkingType">
+    <annotation>
+      <documentation>Kunst/utsmykking i forbindelse med et veganlegg.  Kan være skulpturer, relieff mm</documentation>
+      <appinfo>
+        <sc:taggedValue tag="NVDB_ID">19</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="KunstUtsmykkingType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element minOccurs="0" name="type" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvilken type vegobjektet er av</documentation>
+              <appinfo>
+                <sc:taggedValue tag="NVDB_ID">1101</sc:taggedValue>
+                <sc:taggedValue tag="SOSI_navn">NVDB_TYPE</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="KunstUtsmykkingPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmgtm:KunstUtsmykking"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Lekeapparat" substitutionGroup="fmgtm:GatemoeblerElement" type="fmgtm:LekeapparatType">
+    <annotation>
+      <documentation>Utstyr satt opp på f.eks. rasteplasser brukt til lek mm</documentation>
+      <appinfo>
+        <sc:taggedValue tag="NVDB_ID">26</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="LekeapparatType">
+    <complexContent>
+      <extension base="fmgtm:GatemoeblerElementType">
+        <sequence>
+          <element minOccurs="0" name="type" type="gml:CodeType">
+            <annotation>
+              <documentation>1107: Angir hvilken type vegobjektet er av</documentation>
+              <appinfo>
+                <sc:taggedValue tag="NVDB_ID">1107</sc:taggedValue>
+                <sc:taggedValue tag="SOSI_navn">NVDB_TYPE</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="underlag" type="gml:CodeType">
+            <annotation>
+              <documentation>1740: Angir hvilket underlag der er i tilknytning til lekeapparatet</documentation>
+              <appinfo>
+                <sc:taggedValue tag="NVDB_ID">1740</sc:taggedValue>
+                <sc:taggedValue tag="SOSI_navn">NVDB_UNDERLAG</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="LekeapparatPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmgtm:Lekeapparat"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Leskur" substitutionGroup="fmgtm:GatemoeblerElement" type="fmgtm:LeskurType">
+    <annotation>
+      <documentation>Lite bygg for vern mot vær og vind.  Benyttes i forbindelse med holdeplasser.</documentation>
+      <appinfo>
+        <sc:taggedValue tag="NVDB_ID">25</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="LeskurType">
+    <complexContent>
+      <extension base="fmgtm:GatemoeblerElementType">
+        <sequence>
+          <element minOccurs="0" name="materialtype" type="gml:CodeType">
+            <annotation>
+              <documentation>1401: Angir primær materialtype for vegobjektet</documentation>
+              <appinfo>
+                <sc:taggedValue tag="NVDB_ID">1401</sc:taggedValue>
+                <sc:taggedValue tag="SOSI_navn">NVDB_MATERIALTYPE</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="innvendigBelysning" type="gml:CodeType">
+            <annotation>
+              <documentation>3128: Angir om det er innvendig belysning i leskur</documentation>
+              <appinfo>
+                <sc:taggedValue tag="NVDB_ID">3128</sc:taggedValue>
+                <sc:taggedValue tag="SOSI_navn">NVDB_INNVENDIGBELYSNING</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="LeskurPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmgtm:Leskur"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Sykkelparkering" substitutionGroup="fmgtm:GatemoeblerElement" type="fmgtm:SykkelparkeringType">
+    <annotation>
+      <documentation>Angir område tilrettelagt for sykkelparkering.</documentation>
+      <appinfo>
+        <sc:taggedValue tag="NVDB_ID">451</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="SykkelparkeringType">
+    <complexContent>
+      <extension base="fmgtm:GatemoeblerElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SykkelparkeringPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmgtm:Sykkelparkering"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Toalettanlegg" substitutionGroup="fmgtm:GatemoeblerElement" type="fmgtm:ToalettanleggType">
+    <annotation>
+      <documentation>Ett eller flere rom i en bygning med ett eller flere klosett/toalettskåler/pissoarer.</documentation>
+      <appinfo>
+        <sc:taggedValue tag="NVDB_ID">243</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="ToalettanleggType">
+    <complexContent>
+      <extension base="fmgtm:GatemoeblerElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ToalettanleggPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmgtm:Toalettanlegg"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Utemoebler" substitutionGroup="fmgtm:GatemoeblerElement" type="fmgtm:UtemoeblerType">
+    <annotation>
+      <documentation>Møbler som benyttes ute i samband med vegsystemet. Dette kan f.eks. være på rasteplasser, ferjeoppstillingsplasser etc.</documentation>
+      <appinfo>
+        <sc:taggedValue tag="NVDB_ID">28</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="UtemoeblerType">
+    <complexContent>
+      <extension base="fmgtm:GatemoeblerElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="UtemoeblerPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmgtm:Utemoebler"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <simpleType name="VedlikeholdsansvarligLeskurType">
+    <annotation>
+      <documentation>Angir hvem som er ansvarlig for vedlikehold av vegobjektet.</documentation>
+      <appinfo>
+        <sc:taggedValue tag="NVDB_ID">3129</sc:taggedValue>
+        <sc:taggedValue tag="NVDB_ID">3129</sc:taggedValue>
+        <sc:taggedValue tag="SOSI_navn">NVDB_VEDLIKEHOLDSANSVARLIGLESKUR</sc:taggedValue>
+      </appinfo>
+    </annotation>
+    <union memberTypes="fmgtm:VedlikeholdsansvarligLeskurEnumerationType fmgtm:VedlikeholdsansvarligLeskurOtherType"/>
+  </simpleType>
+  <simpleType name="VedlikeholdsansvarligLeskurEnumerationType">
+    <annotation>
+      <documentation>Angir hvem som er ansvarlig for vedlikehold av vegobjektet.</documentation>
+      <appinfo>
+        <sc:taggedValue tag="NVDB_ID">3129</sc:taggedValue>
+        <sc:taggedValue tag="NVDB_ID">3129</sc:taggedValue>
+        <sc:taggedValue tag="SOSI_navn">NVDB_VEDLIKEHOLDSANSVARLIGLESKUR</sc:taggedValue>
+      </appinfo>
+    </annotation>
+    <restriction base="string">
+      <enumeration value="Statens vegvesen">
+        <annotation>
+          <documentation>4662: Statens vegvesen</documentation>
+          <appinfo>
+            <sc:taggedValue tag="NVDB_ID">4662</sc:taggedValue>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Nye Veier">
+        <annotation>
+          <documentation>18710: Nye Veier</documentation>
+          <appinfo>
+            <sc:taggedValue tag="NVDB_ID">18710</sc:taggedValue>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Fylkeskommune">
+        <annotation>
+          <documentation>19896: Fylkeskommune</documentation>
+          <appinfo>
+            <sc:taggedValue tag="NVDB_ID">19896</sc:taggedValue>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="OPS">
+        <annotation>
+          <documentation>18839: OPS</documentation>
+          <appinfo>
+            <sc:taggedValue tag="NVDB_ID">18839</sc:taggedValue>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Kommune">
+        <annotation>
+          <documentation>4663: Kommune</documentation>
+          <appinfo>
+            <sc:taggedValue tag="NVDB_ID">4663</sc:taggedValue>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Privat">
+        <annotation>
+          <documentation>4664: Privat</documentation>
+          <appinfo>
+            <sc:taggedValue tag="NVDB_ID">4664</sc:taggedValue>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Uavklart">
+        <annotation>
+          <documentation>17674: Uavklart</documentation>
+          <appinfo>
+            <sc:taggedValue tag="NVDB_ID">17674</sc:taggedValue>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <simpleType name="VedlikeholdsansvarligLeskurOtherType">
+    <restriction base="string">
+      <pattern value="other: \w{2,}"/>
+    </restriction>
+  </simpleType>
+</schema>
