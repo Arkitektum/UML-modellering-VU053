@@ -86,17 +86,17 @@ Spillvann er separert fra overvann, så spillvannsledninger skal i prinsippet ik
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
-  <element name="Bakkeinntak" substitutionGroup="fmva:KoplingElement" type="fmva:BakkeinntakType"/>
-  <complexType name="BakkeinntakType">
+  <element name="Bekkeinntak" substitutionGroup="fmva:KoplingElement" type="fmva:BekkeinntakType"/>
+  <complexType name="BekkeinntakType">
     <complexContent>
       <extension base="fmva:KoplingElementType">
         <sequence/>
       </extension>
     </complexContent>
   </complexType>
-  <complexType name="BakkeinntakPropertyType">
+  <complexType name="BekkeinntakPropertyType">
     <sequence minOccurs="0">
-      <element ref="fmva:Bakkeinntak"/>
+      <element ref="fmva:Bekkeinntak"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
