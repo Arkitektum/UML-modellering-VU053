@@ -1,3 +1,3 @@
-tocTab[tocTab.length] = new Array("0.4:1", "", "LeveranserVegprosjekt", "EARoot/EA4/EA417.htm", "175.png", "1226", "0", "", "Logical diagram0","{9DF176F0-BD16-4ac8-8F1D-0AA937E91079}");
-tocTab[tocTab.length] = new Array("0.4:2", "", "LeveranserVegprosjekt  package", "EARoot/EA4/EA419.htm", "175.png", "1227", "0", "", "Logical diagram0","{22823ABC-9E2A-4f9f-A8C1-5E4173F77B1E}");
-tocTab[tocTab.length] = new Array("0.4.1", "1", "Samordningsmodell", "EARoot/EA4/EA1/EA425.htm", "4.png", "", "", "{0A9A46B4-16B7-4152-A46B-0897716DE2E1}", "Package");
+tocTab[tocTab.length] = new Array("0.4:1", "", "LeveranserVegprosjekt", "EARoot/EA4/EA419.htm", "175.png", "1331", "0", "", "Logical diagram0","{9DF176F0-BD16-4ac8-8F1D-0AA937E91079}");
+tocTab[tocTab.length] = new Array("0.4:2", "", "LeveranserVegprosjekt  package", "EARoot/EA4/EA421.htm", "175.png", "1332", "0", "", "Logical diagram0","{22823ABC-9E2A-4f9f-A8C1-5E4173F77B1E}");
+tocTab[tocTab.length] = new Array("0.4.1", "1", "Samordningsmodell", "EARoot/EA4/EA1/EA427.htm", "4.png", "", "", "{0A9A46B4-16B7-4152-A46B-0897716DE2E1}", "Package");

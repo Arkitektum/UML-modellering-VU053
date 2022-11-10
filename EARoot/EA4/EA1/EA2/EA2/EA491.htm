@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Lekeapparat</title>
+<title>Gjerdeport</title>
 <link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script language="JavaScript" src="../../../../../js/displayToc.js" type="text/javascript"></script>
 <script>
@@ -64,12 +64,12 @@
 <div class="section group" >
 
 		<div class="col span_2_of_2 header_frame">
-			<h1> Lekeapparat </h1>
+			<h1> Gjerdeport </h1>
 			<!-- <img class="header_image" src="../../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
 			<img class="header_image" src="../../../../../images/ea-banner.png" align="right" alt="Header Image" />
 		</div>
 		<div class="col span_2_of_2 breadcrumb_frame">
-			<p><a href="../../../../EA3.htm">Vegprosjekt VU053 v0.1.2</a> / <a href="../../../EA421.htm">LeveranseVegprosjekt</a> / <a href="../../EA425.htm">Samordningsmodell</a> / <a href="../EA452.htm">Tverrfagligmodell</a> / <a href="EA471.htm">FagmodellGatemoebler</a> / <a href="EA491.htm">Lekeapparat</a></p>
+			<p><a href="../../../../EA3.htm">Vegprosjekt VU053 v0.1.2</a> / <a href="../../../EA423.htm">LeveranseVegprosjekt</a> / <a href="../../EA427.htm">Samordningsmodell</a> / <a href="../EA454.htm">Tverrfagligmodell</a> / <a href="EA473.htm">FagmodellGatemoebler</a> / <a href="EA491.htm">Gjerdeport</a></p>
 		</div>
 			
 		<table class="contentmaintable">
@@ -84,16 +84,16 @@
 					<td class="indexcell">
 						<div class="projectBrowserTitle">Project: </div>
 						<ul>
-<a href="EA471.htm">FagmodellGatemoebler</a></ul>
+<a href="EA473.htm">FagmodellGatemoebler</a></ul>
 
 					</td>
 					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<span class="ObjectTitle">Lekeapparat  : Public  &lt;&lt;FeatureType&gt;&gt; Class</span>
+	<span class="ObjectTitle">Gjerdeport  : Public  &lt;&lt;FeatureType&gt;&gt; Class</span>
 	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">05.10.2022 15:52:57</td>
+			<td width="85%" class="ObjectDetailsValue">05.10.2022 14:57:15</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
@@ -142,14 +142,14 @@
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{C389585C-7B9D-4d07-8F47-BE3C33D5D4FB}</td>
+			<td class="ObjectDetailsValue">{8453A9DF-60FC-4bdc-A23C-3308794EDFCD}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA467.htm">FagmodellGatemoebler</a></td>
+			<td class="ObjectDetailsValue"><a href="EA469.htm">FagmodellGatemoebler</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">Utstyr satt opp på f.eks. rasteplasser brukt til lek mm&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">Passasje i gjerder eller skjermer&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -168,25 +168,25 @@
 		</tr>
 						<tr>
 				<td width="50%" class="TableRow">
-					type
+					bruksområde
 				</td>
 				<td width="25%" class="TableRow">
 					Public 
 				</td>
 				<td width="25%" class="TableRow">
-					<a href="EA525.htm">TypeLekeapparat</a>
+					<a href="EA498.htm">BruksområdeGjerdeport</a>
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="3">										
-					defaultCodespace=<a href="https://raw.githubusercontent.com/jetgeo/NVDBGML/master/XSD/OLFV/V430Type.xml" target="_blank" >https://raw.githubusercontent.com/jetgeo/NVDBGML/master/XSD/OLFV/V430Type.xml</a><br>NVDB_ID=1107<br>NVDB_navn=Type<br>NVDB_Viktighet=Påkrevd ved nyregistrering<br>SOSI_datatype=T<br>SOSI_lengde=30<br>SOSI_navn=NVDB_TYPE<br>
+					KORTN_EGENSKAPSTYPE=brukOmr<br>NVDB_ID=9773<br>NVDB_navn=Bruksområde<br>SOSI_datatype=T<br>SOSI_lengde=50<br>SOSI_navn=NVDB_BRUKSOMRÅDE<br>SOSINVDB_navn=Bruksområde_9773<br>Viktighet=Opsjonell<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Angir hvilken type vegobjektet er av&lt;br/&gt;
+			Angir hva vegobjektet brukes til, hvilken funksjon det har.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -195,25 +195,52 @@
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow">
-					underlag
+					materiale
 				</td>
 				<td width="25%" class="TableRow">
 					Public 
 				</td>
 				<td width="25%" class="TableRow">
-					<a href="EA530.htm">Underlag</a>
+					<a href="EA513.htm">MaterialeGjerdeport</a>
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="3">										
-					defaultCodespace=<a href="https://raw.githubusercontent.com/jetgeo/NVDBGML/master/XSD/OLFV/V430Underlag.xml" target="_blank" >https://raw.githubusercontent.com/jetgeo/NVDBGML/master/XSD/OLFV/V430Underlag.xml</a><br>NVDB_ID=1740<br>NVDB_navn=Underlag<br>NVDB_Viktighet=Påkrevd ved nyregistrering<br>SOSI_datatype=T<br>SOSI_lengde=50<br>SOSI_navn=NVDB_UNDERLAG<br>
+					KORTN_EGENSKAPSTYPE=material<br>NVDB_ID=9778<br>NVDB_navn=Materiale<br>ObjektlisteFerdigveg=true<br>SOSI_datatype=T<br>SOSI_lengde=50<br>SOSI_navn=NVDB_MATERIALE<br>SOSINVDB_navn=Materiale_9778<br>Viktighet=Påkrevd ved nyregistrering<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Angir hvilket underlag der er i tilknytning til lekeapparatet&lt;br/&gt;
+			Angir materiale.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					utforming
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					<a href="EA530.htm">UtformingGjerdeport</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					KORTN_EGENSKAPSTYPE=utform<br>NVDB_ID=9781<br>NVDB_navn=Utforming<br>SOSI_datatype=T<br>SOSI_lengde=7<br>SOSI_navn=NVDB_UTFORMING<br>SOSINVDB_navn=Utforming_9781<br>Viktighet=Opsjonell<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Angir hvilken utforming grinda har.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -231,7 +258,7 @@
 		</tr>
 					<tr>
 				<td width="50%" class="TableRow" valign="top">NVDB_ID</td>
-				<td width="50%" class="TableRow" valign="top">26</td>
+				<td width="50%" class="TableRow" valign="top">855</td>
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
@@ -254,8 +281,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed" colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints1077" /></button>Details:
-							<div id="detailsDIVConstraints1077" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints1064" /></button>Details:
+							<div id="detailsDIVConstraints1064" class="DetailsDiv" >
 							<div class="ObjectDetailsNotes">inv:count(self.posisjon)+count(self.lineærPosisjon)#gt;0&lt;br/&gt;</div>
 
 							</div>
@@ -288,7 +315,7 @@
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA473.htm">«FeatureType» GatemoeblerElement</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA475.htm">«FeatureType» GatemoeblerElement</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">To</td>

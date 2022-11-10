@@ -1,5 +1,5 @@
-tocTab[tocTab.length] = new Array("0:1", "", "Vegprosjekt VU053 v0.1.2", "EARoot/EA1.htm", "175.png", "1160", "0", "", "Logical diagram0","{4788B961-4908-4d23-8559-7F6597CB0620}");
+tocTab[tocTab.length] = new Array("0:1", "", "Vegprosjekt VU053 v0.1.2", "EARoot/EA1.htm", "175.png", "1265", "0", "", "Logical diagram0","{4788B961-4908-4d23-8559-7F6597CB0620}");
 tocTab[tocTab.length] = new Array("0.1", "1", "Eksterne_UML-deler", "EARoot/EA1/EA8.htm", "4.png", "", "", "{4FE556F0-37A3-4606-8201-8C2B8484470A}", "Package");
-tocTab[tocTab.length] = new Array("0.2", "1", "«ApplicationSchema» Fellesmoduler", "EARoot/EA2/EA298.htm", "4.png", "", "", "{C8893CB3-0FD1-4ce8-A57A-C825C55A5F77}", "Package");
-tocTab[tocTab.length] = new Array("0.3", "1", "«ApplicationSchema» Leveranse", "EARoot/EA3/EA348.htm", "4.png", "", "", "{BBEA34BF-BDA8-43da-A7C3-4D328D94092C}", "Package");
-tocTab[tocTab.length] = new Array("0.4", "1", "LeveranseVegprosjekt", "EARoot/EA4/EA421.htm", "4.png", "", "", "{49FB2EB5-5C16-4375-8CFB-80E7F8AF190E}", "Package");
+tocTab[tocTab.length] = new Array("0.2", "1", "«ApplicationSchema» Fellesmoduler", "EARoot/EA2/EA300.htm", "4.png", "", "", "{C8893CB3-0FD1-4ce8-A57A-C825C55A5F77}", "Package");
+tocTab[tocTab.length] = new Array("0.3", "1", "«ApplicationSchema» Leveranse", "EARoot/EA3/EA350.htm", "4.png", "", "", "{BBEA34BF-BDA8-43da-A7C3-4D328D94092C}", "Package");
+tocTab[tocTab.length] = new Array("0.4", "1", "LeveranseVegprosjekt", "EARoot/EA4/EA423.htm", "4.png", "", "", "{49FB2EB5-5C16-4375-8CFB-80E7F8AF190E}", "Package");
