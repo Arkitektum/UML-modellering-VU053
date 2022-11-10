@@ -1,832 +1,833 @@
-<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:fm="https://skjema.atlas.vegvesen.no/r000/fellesmoduler/0.1" xmlns:gmgld="https://skjema.atlas.vegvesen.no/r000/grunnlagsdata/0.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:lv="https://skjema.atlas.vegvesen.no/r000/leveranse/0.1" xmlns:wfs="http://www.opengis.net/wfs/2.0" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/leveranse/0.1" version="0.1">
-  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
-  <import namespace="http://www.opengis.net/wfs/2.0" schemaLocation="http://schemas.opengis.net/wfs/2.0/wfs.xsd"/>
-  <import namespace="https://skjema.atlas.vegvesen.no/r000/fellesmoduler/0.1" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/Fellesmoduler.xsd"/>
-  <import namespace="https://skjema.atlas.vegvesen.no/r000/grunnlagsdata/0.1"/>
-  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
-  <element name="Arkivar" substitutionGroup="lv:Godkjenningsprosess" type="lv:ArkivarType"/>
-  <complexType name="ArkivarType">
-    <complexContent>
-      <extension base="lv:GodkjenningsprosessType">
-        <sequence>
-          <element name="arkivsted" type="string"/>
-        </sequence>
-      </extension>
-    </complexContent>
-  </complexType>
-  <complexType name="ArkivarPropertyType">
-    <sequence minOccurs="0">
-      <element ref="lv:Arkivar"/>
-    </sequence>
-    <attributeGroup ref="gml:AssociationAttributeGroup"/>
-    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
-  </complexType>
-  <element name="Bestilertype" substitutionGroup="gml:AbstractFeature" type="lv:BestilertypeType"/>
-  <complexType name="BestilertypeType">
-    <complexContent>
-      <extension base="gml:AbstractFeatureType">
-        <sequence>
-          <element name="ansvar">
-            <complexType>
-              <complexContent>
-                <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="fm:Oppdragsgiver"/>
-                  </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
-                </extension>
-              </complexContent>
-            </complexType>
-          </element>
-          <element name="bestilling" type="lv:BestillingstypePropertyType"/>
-        </sequence>
-      </extension>
-    </complexContent>
-  </complexType>
-  <complexType name="BestilertypePropertyType">
-    <sequence minOccurs="0">
-      <element ref="lv:Bestilertype"/>
-    </sequence>
-    <attributeGroup ref="gml:AssociationAttributeGroup"/>
-    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
-  </complexType>
-  <element name="Bestillingstype" substitutionGroup="gml:AbstractObject" type="lv:BestillingstypeType"/>
-  <complexType name="BestillingstypeType">
-    <sequence>
-      <element name="kontraktsform" type="gml:CodeType"/>
-      <element name="konkurransegrunnlagsmal" type="gml:CodeType"/>
-      <element name="konkurranseform" type="gml:CodeType"/>
-    </sequence>
-  </complexType>
-  <complexType name="BestillingstypePropertyType">
-    <sequence>
-      <element ref="lv:Bestillingstype"/>
-    </sequence>
-  </complexType>
-  <element name="DokumentasjonkravGrunnlagsdata" substitutionGroup="lv:DokumentasjonskravVegprosjekt" type="lv:DokumentasjonkravGrunnlagsdataType"/>
-  <complexType name="DokumentasjonkravGrunnlagsdataType">
-    <complexContent>
-      <extension base="lv:DokumentasjonskravVegprosjektType">
-        <sequence/>
-      </extension>
-    </complexContent>
-  </complexType>
-  <complexType name="DokumentasjonkravGrunnlagsdataPropertyType">
-    <sequence minOccurs="0">
-      <element ref="lv:DokumentasjonkravGrunnlagsdata"/>
-    </sequence>
-    <attributeGroup ref="gml:AssociationAttributeGroup"/>
-    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
-  </complexType>
-  <element name="DokumentasjonskravFagmodeller" substitutionGroup="lv:DokumentasjonskravModeller" type="lv:DokumentasjonskravFagmodellerType"/>
-  <complexType name="DokumentasjonskravFagmodellerType">
-    <complexContent>
-      <extension base="lv:DokumentasjonskravModellerType">
-        <sequence/>
-      </extension>
-    </complexContent>
-  </complexType>
-  <complexType name="DokumentasjonskravFagmodellerPropertyType">
-    <sequence minOccurs="0">
-      <element ref="lv:DokumentasjonskravFagmodeller"/>
-    </sequence>
-    <attributeGroup ref="gml:AssociationAttributeGroup"/>
-    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
-  </complexType>
-  <element name="DokumentasjonskravGrunnlagsmodeller" substitutionGroup="lv:DokumentasjonskravModeller" type="lv:DokumentasjonskravGrunnlagsmodellerType"/>
-  <complexType name="DokumentasjonskravGrunnlagsmodellerType">
-    <complexContent>
-      <extension base="lv:DokumentasjonskravModellerType">
-        <sequence/>
-      </extension>
-    </complexContent>
-  </complexType>
-  <complexType name="DokumentasjonskravGrunnlagsmodellerPropertyType">
-    <sequence minOccurs="0">
-      <element ref="lv:DokumentasjonskravGrunnlagsmodeller"/>
-    </sequence>
-    <attributeGroup ref="gml:AssociationAttributeGroup"/>
-    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
-  </complexType>
-  <element name="DokumentasjonskravModeller" substitutionGroup="lv:DokumentasjonskravVegprosjekt" type="lv:DokumentasjonskravModellerType"/>
-  <complexType name="DokumentasjonskravModellerType">
-    <complexContent>
-      <extension base="lv:DokumentasjonskravVegprosjektType">
-        <sequence/>
-      </extension>
-    </complexContent>
-  </complexType>
-  <complexType name="DokumentasjonskravModellerPropertyType">
-    <sequence minOccurs="0">
-      <element ref="lv:DokumentasjonskravModeller"/>
-    </sequence>
-    <attributeGroup ref="gml:AssociationAttributeGroup"/>
-    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
-  </complexType>
-  <element abstract="true" name="DokumentasjonskravResultatdata" substitutionGroup="lv:DokumentasjonskravModeller" type="lv:DokumentasjonskravResultatdataType"/>
-  <complexType abstract="true" name="DokumentasjonskravResultatdataType">
-    <complexContent>
-      <extension base="lv:DokumentasjonskravModellerType">
-        <sequence/>
-      </extension>
-    </complexContent>
-  </complexType>
-  <complexType name="DokumentasjonskravResultatdataPropertyType">
-    <sequence minOccurs="0">
-      <element ref="lv:DokumentasjonskravResultatdata"/>
-    </sequence>
-    <attributeGroup ref="gml:AssociationAttributeGroup"/>
-    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
-  </complexType>
-  <element name="DokumentasjonskravVegprosjekt" substitutionGroup="gml:AbstractFeature" type="lv:DokumentasjonskravVegprosjektType"/>
-  <complexType name="DokumentasjonskravVegprosjektType">
-    <complexContent>
-      <extension base="gml:AbstractFeatureType">
-        <sequence>
-          <element name="koordinatsystem" type="string">
-            <annotation>
-              <documentation>dokumentasjon av hvilket koordinatsystem som er brukt i leveransen.
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:fm="https://skjema.atlas.vegvesen.no/r000/fellesmoduler/0.1" xmlns:gmgld="https://skjema.atlas.vegvesen.no/r000/grunnlagsdata/0.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:lv="https://skjema.atlas.vegvesen.no/r000/leveranse/0.1" xmlns:wfs="http://www.opengis.net/wfs/2.0" targetNamespace="https://skjema.atlas.vegvesen.no/r000/leveranse/0.1" elementFormDefault="qualified" version="0.1">
+	<import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+	<import namespace="http://www.opengis.net/wfs/2.0" schemaLocation="http://schemas.opengis.net/wfs/2.0/wfs.xsd"/>
+	<import namespace="https://skjema.atlas.vegvesen.no/r000/fellesmoduler/0.1" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/Fellesmoduler.xsd"/>
+	<import namespace="https://skjema.atlas.vegvesen.no/r000/grunnlagsdata/0.1" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/Grunnlagsdata.xsd"/>
+	<!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+	<element name="Arkivar" type="lv:ArkivarType" substitutionGroup="lv:Godkjenningsprosess"/>
+	<complexType name="ArkivarType">
+		<complexContent>
+			<extension base="lv:GodkjenningsprosessType">
+				<sequence>
+					<element name="arkivsted" type="string"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="ArkivarPropertyType">
+		<sequence minOccurs="0">
+			<element ref="lv:Arkivar"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Bestilertype" type="lv:BestilertypeType" substitutionGroup="gml:AbstractFeature"/>
+	<complexType name="BestilertypeType">
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="ansvar">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="fm:Oppdragsgiver"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+					<element name="bestilling" type="lv:BestillingstypePropertyType"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="BestilertypePropertyType">
+		<sequence minOccurs="0">
+			<element ref="lv:Bestilertype"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Bestillingstype" type="lv:BestillingstypeType" substitutionGroup="gml:AbstractObject"/>
+	<complexType name="BestillingstypeType">
+		<sequence>
+			<element name="kontraktsform" type="gml:CodeType"/>
+			<element name="konkurransegrunnlagsmal" type="gml:CodeType"/>
+			<element name="konkurranseform" type="gml:CodeType"/>
+		</sequence>
+	</complexType>
+	<complexType name="BestillingstypePropertyType">
+		<sequence>
+			<element ref="lv:Bestillingstype"/>
+		</sequence>
+	</complexType>
+	<element name="DokumentasjonkravGrunnlagsdata" type="lv:DokumentasjonkravGrunnlagsdataType" substitutionGroup="lv:DokumentasjonskravVegprosjekt"/>
+	<complexType name="DokumentasjonkravGrunnlagsdataType">
+		<complexContent>
+			<extension base="lv:DokumentasjonskravVegprosjektType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="DokumentasjonkravGrunnlagsdataPropertyType">
+		<sequence minOccurs="0">
+			<element ref="lv:DokumentasjonkravGrunnlagsdata"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="DokumentasjonskravFagmodeller" type="lv:DokumentasjonskravFagmodellerType" substitutionGroup="lv:DokumentasjonskravModeller"/>
+	<complexType name="DokumentasjonskravFagmodellerType">
+		<complexContent>
+			<extension base="lv:DokumentasjonskravModellerType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="DokumentasjonskravFagmodellerPropertyType">
+		<sequence minOccurs="0">
+			<element ref="lv:DokumentasjonskravFagmodeller"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="DokumentasjonskravGrunnlagsmodeller" type="lv:DokumentasjonskravGrunnlagsmodellerType" substitutionGroup="lv:DokumentasjonskravModeller"/>
+	<complexType name="DokumentasjonskravGrunnlagsmodellerType">
+		<complexContent>
+			<extension base="lv:DokumentasjonskravModellerType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="DokumentasjonskravGrunnlagsmodellerPropertyType">
+		<sequence minOccurs="0">
+			<element ref="lv:DokumentasjonskravGrunnlagsmodeller"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="DokumentasjonskravModeller" type="lv:DokumentasjonskravModellerType" substitutionGroup="lv:DokumentasjonskravVegprosjekt"/>
+	<complexType name="DokumentasjonskravModellerType">
+		<complexContent>
+			<extension base="lv:DokumentasjonskravVegprosjektType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="DokumentasjonskravModellerPropertyType">
+		<sequence minOccurs="0">
+			<element ref="lv:DokumentasjonskravModeller"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="DokumentasjonskravResultatdata" type="lv:DokumentasjonskravResultatdataType" abstract="true" substitutionGroup="lv:DokumentasjonskravModeller"/>
+	<complexType name="DokumentasjonskravResultatdataType" abstract="true">
+		<complexContent>
+			<extension base="lv:DokumentasjonskravModellerType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="DokumentasjonskravResultatdataPropertyType">
+		<sequence minOccurs="0">
+			<element ref="lv:DokumentasjonskravResultatdata"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="DokumentasjonskravVegprosjekt" type="lv:DokumentasjonskravVegprosjektType" substitutionGroup="gml:AbstractFeature"/>
+	<complexType name="DokumentasjonskravVegprosjektType">
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="koordinatsystem" type="string">
+						<annotation>
+							<documentation>dokumentasjon av hvilket koordinatsystem som er brukt i leveransen.
 
 Kan (bør?) valideres mot prosjektkrav om hvilket koordinatsystem som er "valgt" for prosjetket.</documentation>
-            </annotation>
-          </element>
-        </sequence>
-      </extension>
-    </complexContent>
-  </complexType>
-  <complexType name="DokumentasjonskravVegprosjektPropertyType">
-    <sequence minOccurs="0">
-      <element ref="lv:DokumentasjonskravVegprosjekt"/>
-    </sequence>
-    <attributeGroup ref="gml:AssociationAttributeGroup"/>
-    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
-  </complexType>
-  <element name="EndretAv" substitutionGroup="lv:Godkjenningsprosess" type="lv:EndretAvType"/>
-  <complexType name="EndretAvType">
-    <complexContent>
-      <extension base="lv:GodkjenningsprosessType">
-        <sequence>
-          <element name="endring" type="gml:CodeType"/>
-        </sequence>
-      </extension>
-    </complexContent>
-  </complexType>
-  <complexType name="EndretAvPropertyType">
-    <sequence minOccurs="0">
-      <element ref="lv:EndretAv"/>
-    </sequence>
-    <attributeGroup ref="gml:AssociationAttributeGroup"/>
-    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
-  </complexType>
-  <element abstract="true" name="Fagmodell" substitutionGroup="gml:AbstractFeature" type="lv:FagmodellType"/>
-  <complexType abstract="true" name="FagmodellType">
-    <complexContent>
-      <extension base="gml:AbstractFeatureType">
-        <sequence>
-          <element maxOccurs="unbounded" minOccurs="0" name="dokumentasjonskrav">
-            <complexType>
-              <complexContent>
-                <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="lv:DokumentasjonskravFagmodeller"/>
-                  </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
-                </extension>
-              </complexContent>
-            </complexType>
-          </element>
-        </sequence>
-      </extension>
-    </complexContent>
-  </complexType>
-  <complexType name="FagmodellPropertyType">
-    <sequence minOccurs="0">
-      <element ref="lv:Fagmodell"/>
-    </sequence>
-    <attributeGroup ref="gml:AssociationAttributeGroup"/>
-    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
-  </complexType>
-  <element abstract="true" name="FeatureCollection" substitutionGroup="wfs:FeatureCollection" type="lv:FeatureCollectionType"/>
-  <complexType abstract="true" name="FeatureCollectionType">
-    <complexContent>
-      <extension base="wfs:FeatureCollectionType">
-        <sequence/>
-      </extension>
-    </complexContent>
-  </complexType>
-  <complexType name="FeatureCollectionPropertyType">
-    <sequence minOccurs="0">
-      <element ref="lv:FeatureCollection"/>
-    </sequence>
-    <attributeGroup ref="gml:AssociationAttributeGroup"/>
-    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
-  </complexType>
-  <element name="Fullfoeringsgrad" substitutionGroup="gml:AbstractFeature" type="lv:FullfoeringsgradType"/>
-  <complexType name="FullfoeringsgradType">
-    <complexContent>
-      <extension base="gml:AbstractFeatureType">
-        <sequence>
-          <element name="fullfoeringsstatus" type="gml:CodeType"/>
-          <element name="oppgave" type="gml:CodeType"/>
-          <element name="vekting" type="gml:CodeType"/>
-        </sequence>
-      </extension>
-    </complexContent>
-  </complexType>
-  <complexType name="FullfoeringsgradPropertyType">
-    <sequence minOccurs="0">
-      <element ref="lv:Fullfoeringsgrad"/>
-    </sequence>
-    <attributeGroup ref="gml:AssociationAttributeGroup"/>
-    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
-  </complexType>
-  <element name="Godkjenningsprosess" substitutionGroup="gml:AbstractFeature" type="lv:GodkjenningsprosessType"/>
-  <complexType name="GodkjenningsprosessType">
-    <complexContent>
-      <extension base="gml:AbstractFeatureType">
-        <sequence>
-          <element name="ansvar" type="fm:AnsvarPropertyType"/>
-          <element minOccurs="0" name="status" type="gml:CodeType"/>
-        </sequence>
-      </extension>
-    </complexContent>
-  </complexType>
-  <complexType name="GodkjenningsprosessPropertyType">
-    <sequence minOccurs="0">
-      <element ref="lv:Godkjenningsprosess"/>
-    </sequence>
-    <attributeGroup ref="gml:AssociationAttributeGroup"/>
-    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
-  </complexType>
-  <element name="GodkjentAv" substitutionGroup="lv:Godkjenningsprosess" type="lv:GodkjentAvType"/>
-  <complexType name="GodkjentAvType">
-    <complexContent>
-      <extension base="lv:GodkjenningsprosessType">
-        <sequence>
-          <element name="godkjenningstype" type="gml:CodeType"/>
-        </sequence>
-      </extension>
-    </complexContent>
-  </complexType>
-  <complexType name="GodkjentAvPropertyType">
-    <sequence minOccurs="0">
-      <element ref="lv:GodkjentAv"/>
-    </sequence>
-    <attributeGroup ref="gml:AssociationAttributeGroup"/>
-    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
-  </complexType>
-  <element abstract="true" name="Grunnlagsmodell" substitutionGroup="gml:AbstractFeature" type="lv:GrunnlagsmodellType"/>
-  <complexType abstract="true" name="GrunnlagsmodellType">
-    <complexContent>
-      <extension base="gml:AbstractFeatureType">
-        <sequence>
-          <element name="inngrepssone">
-            <complexType>
-              <complexContent>
-                <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="gmgld:SoneElement"/>
-                  </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
-                </extension>
-              </complexContent>
-            </complexType>
-          </element>
-          <element name="visualiseringssone">
-            <complexType>
-              <complexContent>
-                <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="gmgld:SoneElement"/>
-                  </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
-                </extension>
-              </complexContent>
-            </complexType>
-          </element>
-          <element name="dekningsKrav" type="gml:CodeType"/>
-          <element name="grunnlagsElementID" type="string"/>
-          <element maxOccurs="unbounded" minOccurs="0" name="dokumentasjonskrav">
-            <complexType>
-              <complexContent>
-                <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="lv:DokumentasjonskravGrunnlagsmodeller"/>
-                  </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
-                </extension>
-              </complexContent>
-            </complexType>
-          </element>
-        </sequence>
-      </extension>
-    </complexContent>
-  </complexType>
-  <complexType name="GrunnlagsmodellPropertyType">
-    <sequence minOccurs="0">
-      <element ref="lv:Grunnlagsmodell"/>
-    </sequence>
-    <attributeGroup ref="gml:AssociationAttributeGroup"/>
-    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
-  </complexType>
-  <element name="Kontrolloer" substitutionGroup="lv:Godkjenningsprosess" type="lv:KontrolloerType"/>
-  <complexType name="KontrolloerType">
-    <complexContent>
-      <extension base="lv:GodkjenningsprosessType">
-        <sequence>
-          <element name="kontrolltype" type="gml:CodeType"/>
-        </sequence>
-      </extension>
-    </complexContent>
-  </complexType>
-  <complexType name="KontrolloerPropertyType">
-    <sequence minOccurs="0">
-      <element ref="lv:Kontrolloer"/>
-    </sequence>
-    <attributeGroup ref="gml:AssociationAttributeGroup"/>
-    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
-  </complexType>
-  <element name="LagretAv" substitutionGroup="lv:Godkjenningsprosess" type="lv:LagretAvType"/>
-  <complexType name="LagretAvType">
-    <complexContent>
-      <extension base="lv:GodkjenningsprosessType">
-        <sequence>
-          <element name="lagringssted" type="string"/>
-        </sequence>
-      </extension>
-    </complexContent>
-  </complexType>
-  <complexType name="LagretAvPropertyType">
-    <sequence minOccurs="0">
-      <element ref="lv:LagretAv"/>
-    </sequence>
-    <attributeGroup ref="gml:AssociationAttributeGroup"/>
-    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
-  </complexType>
-  <element name="Leverandør" substitutionGroup="gml:AbstractFeature" type="lv:LeverandørType"/>
-  <complexType name="LeverandørType">
-    <complexContent>
-      <extension base="gml:AbstractFeatureType">
-        <sequence>
-          <element name="ansvar">
-            <complexType>
-              <complexContent>
-                <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="fm:Aktoer"/>
-                  </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
-                </extension>
-              </complexContent>
-            </complexType>
-          </element>
-          <element name="leveranse" type="gml:CodeType"/>
-        </sequence>
-      </extension>
-    </complexContent>
-  </complexType>
-  <complexType name="LeverandørPropertyType">
-    <sequence minOccurs="0">
-      <element ref="lv:Leverandør"/>
-    </sequence>
-    <attributeGroup ref="gml:AssociationAttributeGroup"/>
-    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
-  </complexType>
-  <element name="Leveranse" substitutionGroup="gml:AbstractFeature" type="lv:LeveranseType"/>
-  <complexType name="LeveranseType">
-    <complexContent>
-      <extension base="gml:AbstractFeatureType">
-        <sequence>
-          <element name="kvalitet" type="lv:PresisjonType"/>
-          <element maxOccurs="unbounded" minOccurs="0" name="fagmodell">
-            <complexType>
-              <complexContent>
-                <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="lv:Fagmodell"/>
-                  </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
-                </extension>
-              </complexContent>
-            </complexType>
-          </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="situasjonsmodell">
-            <complexType>
-              <complexContent>
-                <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="lv:Situasjonsmodell"/>
-                  </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
-                </extension>
-              </complexContent>
-            </complexType>
-          </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="resultatdata">
-            <complexType>
-              <complexContent>
-                <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="lv:Resultatdata"/>
-                  </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
-                </extension>
-              </complexContent>
-            </complexType>
-          </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="tverrfagligmodell">
-            <complexType>
-              <complexContent>
-                <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="lv:Tverrfagligmodell"/>
-                  </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
-                </extension>
-              </complexContent>
-            </complexType>
-          </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="samordningsmodell">
-            <complexType>
-              <complexContent>
-                <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="lv:Samordningsmodell"/>
-                  </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
-                </extension>
-              </complexContent>
-            </complexType>
-          </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="grunnlagsmodell">
-            <complexType>
-              <complexContent>
-                <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="lv:Grunnlagsmodell"/>
-                  </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
-                </extension>
-              </complexContent>
-            </complexType>
-          </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="leveransedokumentasjon">
-            <complexType>
-              <complexContent>
-                <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="lv:LeveranseDokumentasjon"/>
-                  </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
-                </extension>
-              </complexContent>
-            </complexType>
-          </element>
-        </sequence>
-      </extension>
-    </complexContent>
-  </complexType>
-  <complexType name="LeveransePropertyType">
-    <sequence minOccurs="0">
-      <element ref="lv:Leveranse"/>
-    </sequence>
-    <attributeGroup ref="gml:AssociationAttributeGroup"/>
-    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
-  </complexType>
-  <element name="LeveranseDokumentasjon" substitutionGroup="gml:AbstractFeature" type="lv:LeveranseDokumentasjonType">
-    <annotation>
-      <documentation>Samling av dokumentasjon som er nødvendig for å knytte leveransen til kravene og også svare på kravene i bestillingen</documentation>
-    </annotation>
-  </element>
-  <complexType name="LeveranseDokumentasjonType">
-    <complexContent>
-      <extension base="gml:AbstractFeatureType">
-        <sequence>
-          <element name="dokumentasjonstype" type="gml:CodeType"/>
-          <element name="modeltype" type="gml:CodeType"/>
-          <element name="grunnlagmodelltype" type="gml:CodeType"/>
-          <element name="fagmodelltype" type="gml:CodeType"/>
-          <element name="prosjekttype" type="gml:CodeType"/>
-          <element name="fullføringsgrad">
-            <complexType>
-              <complexContent>
-                <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="lv:Fullfoeringsgrad"/>
-                  </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
-                </extension>
-              </complexContent>
-            </complexType>
-          </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="dokumentasjonAnsvar" type="lv:OverrekkelsePropertyType">
-            <annotation>
-              <appinfo>
-                <reversePropertyName xmlns="http://www.opengis.net/gml/3.2">lv:dokumentasjon</reversePropertyName>
-              </appinfo>
-            </annotation>
-          </element>
-        </sequence>
-      </extension>
-    </complexContent>
-  </complexType>
-  <complexType name="LeveranseDokumentasjonPropertyType">
-    <sequence minOccurs="0">
-      <element ref="lv:LeveranseDokumentasjon"/>
-    </sequence>
-    <attributeGroup ref="gml:AssociationAttributeGroup"/>
-    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
-  </complexType>
-  <element abstract="true" name="LeveranseVegprosjekt" substitutionGroup="gml:AbstractFeature" type="lv:LeveranseVegprosjektType"/>
-  <complexType abstract="true" name="LeveranseVegprosjektType">
-    <complexContent>
-      <extension base="gml:AbstractFeatureType">
-        <sequence>
-          <element maxOccurs="unbounded" minOccurs="0" name="grunnlagsmodell">
-            <complexType>
-              <complexContent>
-                <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="lv:Grunnlagsmodell"/>
-                  </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
-                </extension>
-              </complexContent>
-            </complexType>
-          </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="fagmodeller" type="gml:CodeType"/>
-          <element maxOccurs="unbounded" minOccurs="0" name="samordningsmodell">
-            <complexType>
-              <complexContent>
-                <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="lv:Samordningsmodell"/>
-                  </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
-                </extension>
-              </complexContent>
-            </complexType>
-          </element>
-        </sequence>
-      </extension>
-    </complexContent>
-  </complexType>
-  <complexType name="LeveranseVegprosjektPropertyType">
-    <sequence minOccurs="0">
-      <element ref="lv:LeveranseVegprosjekt"/>
-    </sequence>
-    <attributeGroup ref="gml:AssociationAttributeGroup"/>
-    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
-  </complexType>
-  <element name="Overrekkelse" substitutionGroup="gml:AbstractFeature" type="lv:OverrekkelseType"/>
-  <complexType name="OverrekkelseType">
-    <complexContent>
-      <extension base="gml:AbstractFeatureType">
-        <sequence>
-          <element name="dato" type="dateTime"/>
-          <element maxOccurs="unbounded" name="dokumentasjon" type="lv:LeveranseDokumentasjonPropertyType">
-            <annotation>
-              <appinfo>
-                <reversePropertyName xmlns="http://www.opengis.net/gml/3.2">lv:dokumentasjonAnsvar</reversePropertyName>
-              </appinfo>
-            </annotation>
-          </element>
-          <element maxOccurs="unbounded" name="bestiler">
-            <complexType>
-              <complexContent>
-                <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="lv:Bestilertype"/>
-                  </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
-                </extension>
-              </complexContent>
-            </complexType>
-          </element>
-          <element maxOccurs="unbounded" name="leverandør">
-            <complexType>
-              <complexContent>
-                <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="lv:Leverandør"/>
-                  </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
-                </extension>
-              </complexContent>
-            </complexType>
-          </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="fase">
-            <complexType>
-              <complexContent>
-                <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="lv:Godkjenningsprosess"/>
-                  </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
-                </extension>
-              </complexContent>
-            </complexType>
-          </element>
-        </sequence>
-      </extension>
-    </complexContent>
-  </complexType>
-  <complexType name="OverrekkelsePropertyType">
-    <sequence minOccurs="0">
-      <element ref="lv:Overrekkelse"/>
-    </sequence>
-    <attributeGroup ref="gml:AssociationAttributeGroup"/>
-    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
-  </complexType>
-  <simpleType name="PresisjonType">
-    <union memberTypes="lv:PresisjonEnumerationType lv:PresisjonOtherType"/>
-  </simpleType>
-  <simpleType name="PresisjonEnumerationType">
-    <restriction base="string">
-      <enumeration value="2"/>
-      <enumeration value="3-6"/>
-      <enumeration value="6-20"/>
-      <enumeration value="20"/>
-    </restriction>
-  </simpleType>
-  <simpleType name="PresisjonOtherType">
-    <restriction base="string">
-      <pattern value="other: \w{2,}"/>
-    </restriction>
-  </simpleType>
-  <element abstract="true" name="Resultatdata" substitutionGroup="gml:AbstractFeature" type="lv:ResultatdataType"/>
-  <complexType abstract="true" name="ResultatdataType">
-    <complexContent>
-      <extension base="gml:AbstractFeatureType">
-        <sequence>
-          <element maxOccurs="unbounded" minOccurs="0" name="dokumentasjonskrav">
-            <complexType>
-              <complexContent>
-                <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="lv:DokumentasjonskravResultatdata"/>
-                  </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
-                </extension>
-              </complexContent>
-            </complexType>
-          </element>
-        </sequence>
-      </extension>
-    </complexContent>
-  </complexType>
-  <complexType name="ResultatdataPropertyType">
-    <sequence minOccurs="0">
-      <element ref="lv:Resultatdata"/>
-    </sequence>
-    <attributeGroup ref="gml:AssociationAttributeGroup"/>
-    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
-  </complexType>
-  <element abstract="true" name="Samordningsmodell" substitutionGroup="gml:AbstractFeature" type="lv:SamordningsmodellType"/>
-  <complexType abstract="true" name="SamordningsmodellType">
-    <complexContent>
-      <extension base="gml:AbstractFeatureType">
-        <sequence>
-          <element maxOccurs="unbounded" minOccurs="0" name="trverrfaglimodell">
-            <complexType>
-              <complexContent>
-                <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="lv:Tverrfagligmodell"/>
-                  </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
-                </extension>
-              </complexContent>
-            </complexType>
-          </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="situasjonsmodell">
-            <complexType>
-              <complexContent>
-                <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="lv:Situasjonsmodell"/>
-                  </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
-                </extension>
-              </complexContent>
-            </complexType>
-          </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="dokumentasjonskrav">
-            <complexType>
-              <complexContent>
-                <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="lv:DokumentasjonskravModeller"/>
-                  </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
-                </extension>
-              </complexContent>
-            </complexType>
-          </element>
-        </sequence>
-      </extension>
-    </complexContent>
-  </complexType>
-  <complexType name="SamordningsmodellPropertyType">
-    <sequence minOccurs="0">
-      <element ref="lv:Samordningsmodell"/>
-    </sequence>
-    <attributeGroup ref="gml:AssociationAttributeGroup"/>
-    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
-  </complexType>
-  <element name="Situasjonsmodell" substitutionGroup="gml:AbstractFeature" type="lv:SituasjonsmodellType"/>
-  <complexType name="SituasjonsmodellType">
-    <complexContent>
-      <extension base="gml:AbstractFeatureType">
-        <sequence>
-          <element maxOccurs="unbounded" minOccurs="0" name="grunnlagsElement">
-            <complexType>
-              <complexContent>
-                <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="lv:Grunnlagsmodell"/>
-                  </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
-                </extension>
-              </complexContent>
-            </complexType>
-          </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="dokumentasjonskrav">
-            <complexType>
-              <complexContent>
-                <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="lv:DokumentasjonskravModeller"/>
-                  </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
-                </extension>
-              </complexContent>
-            </complexType>
-          </element>
-        </sequence>
-      </extension>
-    </complexContent>
-  </complexType>
-  <complexType name="SituasjonsmodellPropertyType">
-    <sequence minOccurs="0">
-      <element ref="lv:Situasjonsmodell"/>
-    </sequence>
-    <attributeGroup ref="gml:AssociationAttributeGroup"/>
-    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
-  </complexType>
-  <element name="Tverrfagligmodell" substitutionGroup="gml:AbstractFeature" type="lv:TverrfagligmodellType"/>
-  <complexType name="TverrfagligmodellType">
-    <complexContent>
-      <extension base="gml:AbstractFeatureType">
-        <sequence>
-          <element maxOccurs="unbounded" minOccurs="0" name="fagmodellElement">
-            <complexType>
-              <complexContent>
-                <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="lv:Fagmodell"/>
-                  </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
-                </extension>
-              </complexContent>
-            </complexType>
-          </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="dokumentasjonskrav">
-            <complexType>
-              <complexContent>
-                <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="lv:DokumentasjonskravModeller"/>
-                  </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
-                </extension>
-              </complexContent>
-            </complexType>
-          </element>
-        </sequence>
-      </extension>
-    </complexContent>
-  </complexType>
-  <complexType name="TverrfagligmodellPropertyType">
-    <sequence minOccurs="0">
-      <element ref="lv:Tverrfagligmodell"/>
-    </sequence>
-    <attributeGroup ref="gml:AssociationAttributeGroup"/>
-    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
-  </complexType>
-  <element name="Vegprosjekt" substitutionGroup="gml:AbstractFeature" type="lv:VegprosjektType"/>
-  <complexType name="VegprosjektType">
-    <complexContent>
-      <extension base="gml:AbstractFeatureType">
-        <sequence/>
-      </extension>
-    </complexContent>
-  </complexType>
-  <complexType name="VegprosjektPropertyType">
-    <sequence minOccurs="0">
-      <element ref="lv:Vegprosjekt"/>
-    </sequence>
-    <attributeGroup ref="gml:AssociationAttributeGroup"/>
-    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
-  </complexType>
+						</annotation>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="DokumentasjonskravVegprosjektPropertyType">
+		<sequence minOccurs="0">
+			<element ref="lv:DokumentasjonskravVegprosjekt"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="EndretAv" type="lv:EndretAvType" substitutionGroup="lv:Godkjenningsprosess"/>
+	<complexType name="EndretAvType">
+		<complexContent>
+			<extension base="lv:GodkjenningsprosessType">
+				<sequence>
+					<element name="endring" type="gml:CodeType"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="EndretAvPropertyType">
+		<sequence minOccurs="0">
+			<element ref="lv:EndretAv"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Fagmodell" type="lv:FagmodellType" abstract="true" substitutionGroup="gml:AbstractFeature"/>
+	<complexType name="FagmodellType" abstract="true">
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="dokumentasjonskrav" minOccurs="0" maxOccurs="unbounded">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="lv:DokumentasjonskravFagmodeller"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="FagmodellPropertyType">
+		<sequence minOccurs="0">
+			<element ref="lv:Fagmodell"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="FeatureCollection" type="lv:FeatureCollectionType" abstract="true" substitutionGroup="wfs:FeatureCollection"/>
+	<complexType name="FeatureCollectionType" abstract="true">
+		<complexContent>
+			<extension base="wfs:FeatureCollectionType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="FeatureCollectionPropertyType">
+		<sequence minOccurs="0">
+			<element ref="lv:FeatureCollection"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Fullfoeringsgrad" type="lv:FullfoeringsgradType" substitutionGroup="gml:AbstractFeature"/>
+	<complexType name="FullfoeringsgradType">
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="fullfoeringsstatus" type="gml:CodeType"/>
+					<element name="oppgave" type="gml:CodeType"/>
+					<element name="vekting" type="gml:CodeType"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="FullfoeringsgradPropertyType">
+		<sequence minOccurs="0">
+			<element ref="lv:Fullfoeringsgrad"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Godkjenningsprosess" type="lv:GodkjenningsprosessType" substitutionGroup="gml:AbstractFeature"/>
+	<complexType name="GodkjenningsprosessType">
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="ansvar" type="fm:AnsvarPropertyType"/>
+					<element name="status" type="gml:CodeType" minOccurs="0"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="GodkjenningsprosessPropertyType">
+		<sequence minOccurs="0">
+			<element ref="lv:Godkjenningsprosess"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="GodkjentAv" type="lv:GodkjentAvType" substitutionGroup="lv:Godkjenningsprosess"/>
+	<complexType name="GodkjentAvType">
+		<complexContent>
+			<extension base="lv:GodkjenningsprosessType">
+				<sequence>
+					<element name="godkjenningstype" type="gml:CodeType"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="GodkjentAvPropertyType">
+		<sequence minOccurs="0">
+			<element ref="lv:GodkjentAv"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Grunnlagsmodell" type="lv:GrunnlagsmodellType" abstract="true" substitutionGroup="gml:AbstractFeature"/>
+	<complexType name="GrunnlagsmodellType" abstract="true">
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="inngrepssone">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="gmgld:SoneElement"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+					<element name="visualiseringssone">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="gmgld:SoneElement"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+					<element name="dekningsKrav" type="gml:CodeType"/>
+					<element name="grunnlagsElementID" type="string"/>
+					<element name="dokumentasjonskrav" minOccurs="0" maxOccurs="unbounded">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="lv:DokumentasjonskravGrunnlagsmodeller"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="GrunnlagsmodellPropertyType">
+		<sequence minOccurs="0">
+			<element ref="lv:Grunnlagsmodell"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Kontrolloer" type="lv:KontrolloerType" substitutionGroup="lv:Godkjenningsprosess"/>
+	<complexType name="KontrolloerType">
+		<complexContent>
+			<extension base="lv:GodkjenningsprosessType">
+				<sequence>
+					<element name="kontrolltype" type="gml:CodeType"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="KontrolloerPropertyType">
+		<sequence minOccurs="0">
+			<element ref="lv:Kontrolloer"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="LagretAv" type="lv:LagretAvType" substitutionGroup="lv:Godkjenningsprosess"/>
+	<complexType name="LagretAvType">
+		<complexContent>
+			<extension base="lv:GodkjenningsprosessType">
+				<sequence>
+					<element name="lagringssted" type="string"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="LagretAvPropertyType">
+		<sequence minOccurs="0">
+			<element ref="lv:LagretAv"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Leverandør" type="lv:LeverandørType" substitutionGroup="gml:AbstractFeature"/>
+	<complexType name="LeverandørType">
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="ansvar">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="fm:Aktoer"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+					<element name="leveranse" type="gml:CodeType"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="LeverandørPropertyType">
+		<sequence minOccurs="0">
+			<element ref="lv:Leverandør"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Leveranse" type="lv:LeveranseType" substitutionGroup="gml:AbstractFeature"/>
+	<complexType name="LeveranseType">
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="kvalitet" type="lv:PresisjonType"/>
+					<element name="fagmodell" minOccurs="0" maxOccurs="unbounded">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="lv:Fagmodell"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+					<element name="situasjonsmodell" minOccurs="0" maxOccurs="unbounded">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="lv:Situasjonsmodell"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+					<element name="resultatdata" minOccurs="0" maxOccurs="unbounded">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="lv:Resultatdata"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+					<element name="tverrfagligmodell" minOccurs="0" maxOccurs="unbounded">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="lv:Tverrfagligmodell"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+					<element name="samordningsmodell" minOccurs="0" maxOccurs="unbounded">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="lv:Samordningsmodell"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+					<element name="grunnlagsmodell" minOccurs="0" maxOccurs="unbounded">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="lv:Grunnlagsmodell"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+					<element name="leveransedokumentasjon" minOccurs="0" maxOccurs="unbounded">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="lv:LeveranseDokumentasjon"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="LeveransePropertyType">
+		<sequence minOccurs="0">
+			<element ref="lv:Leveranse"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="LeveranseDokumentasjon" type="lv:LeveranseDokumentasjonType" substitutionGroup="gml:AbstractFeature">
+		<annotation>
+			<documentation>Samling av dokumentasjon som er nødvendig for å knytte leveransen til kravene og også svare på kravene i bestillingen</documentation>
+		</annotation>
+	</element>
+	<complexType name="LeveranseDokumentasjonType">
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="dokumentasjonstype" type="gml:CodeType"/>
+					<element name="modeltype" type="gml:CodeType"/>
+					<element name="grunnlagmodelltype" type="gml:CodeType"/>
+					<element name="fagmodelltype" type="gml:CodeType"/>
+					<element name="prosjekttype" type="gml:CodeType"/>
+					<element name="fullføringsgrad">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="lv:Fullfoeringsgrad"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+					<element name="dokumentasjonAnsvar" type="lv:OverrekkelsePropertyType" minOccurs="0" maxOccurs="unbounded">
+						<annotation>
+							<appinfo>
+								<reversePropertyName xmlns="http://www.opengis.net/gml/3.2">lv:dokumentasjon</reversePropertyName>
+							</appinfo>
+						</annotation>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="LeveranseDokumentasjonPropertyType">
+		<sequence minOccurs="0">
+			<element ref="lv:LeveranseDokumentasjon"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="LeveranseVegprosjekt" type="lv:LeveranseVegprosjektType" abstract="true" substitutionGroup="gml:AbstractFeature"/>
+	<complexType name="LeveranseVegprosjektType" abstract="true">
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="grunnlagsmodell" minOccurs="0" maxOccurs="unbounded">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="lv:Grunnlagsmodell"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+					<element name="fagmodeller" type="gml:CodeType" minOccurs="0" maxOccurs="unbounded"/>
+					<element name="samordningsmodell" minOccurs="0" maxOccurs="unbounded">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="lv:Samordningsmodell"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="LeveranseVegprosjektPropertyType">
+		<sequence minOccurs="0">
+			<element ref="lv:LeveranseVegprosjekt"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Overrekkelse" type="lv:OverrekkelseType" substitutionGroup="gml:AbstractFeature"/>
+	<complexType name="OverrekkelseType">
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="dato" type="dateTime"/>
+					<element name="dokumentasjon" type="lv:LeveranseDokumentasjonPropertyType" maxOccurs="unbounded">
+						<annotation>
+							<appinfo>
+								<reversePropertyName xmlns="http://www.opengis.net/gml/3.2">lv:dokumentasjonAnsvar</reversePropertyName>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="bestiler" maxOccurs="unbounded">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="lv:Bestilertype"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+					<element name="leverandør" maxOccurs="unbounded">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="lv:Leverandør"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+					<element name="fase" minOccurs="0" maxOccurs="unbounded">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="lv:Godkjenningsprosess"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="OverrekkelsePropertyType">
+		<sequence minOccurs="0">
+			<element ref="lv:Overrekkelse"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<simpleType name="PresisjonType">
+		<union memberTypes="lv:PresisjonEnumerationType lv:PresisjonOtherType"/>
+	</simpleType>
+	<simpleType name="PresisjonEnumerationType">
+		<restriction base="string">
+			<enumeration value="2"/>
+			<enumeration value="3-6"/>
+			<enumeration value="6-20"/>
+			<enumeration value="20"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="PresisjonOtherType">
+		<restriction base="string">
+			<pattern value="other: \w{2,}"/>
+		</restriction>
+	</simpleType>
+	<element name="Resultatdata" type="lv:ResultatdataType" abstract="true" substitutionGroup="gml:AbstractFeature"/>
+	<complexType name="ResultatdataType" abstract="true">
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="dokumentasjonskrav" minOccurs="0" maxOccurs="unbounded">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="lv:DokumentasjonskravResultatdata"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="ResultatdataPropertyType">
+		<sequence minOccurs="0">
+			<element ref="lv:Resultatdata"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Samordningsmodell" type="lv:SamordningsmodellType" abstract="true" substitutionGroup="gml:AbstractFeature"/>
+	<complexType name="SamordningsmodellType" abstract="true">
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="trverrfaglimodell" minOccurs="0" maxOccurs="unbounded">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="lv:Tverrfagligmodell"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+					<element name="situasjonsmodell" minOccurs="0" maxOccurs="unbounded">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="lv:Situasjonsmodell"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+					<element name="dokumentasjonskrav" minOccurs="0" maxOccurs="unbounded">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="lv:DokumentasjonskravModeller"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="SamordningsmodellPropertyType">
+		<sequence minOccurs="0">
+			<element ref="lv:Samordningsmodell"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Situasjonsmodell" type="lv:SituasjonsmodellType" substitutionGroup="gml:AbstractFeature"/>
+	<complexType name="SituasjonsmodellType">
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="grunnlagsElement" minOccurs="0" maxOccurs="unbounded">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="lv:Grunnlagsmodell"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+					<element name="dokumentasjonskrav" minOccurs="0" maxOccurs="unbounded">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="lv:DokumentasjonskravModeller"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="SituasjonsmodellPropertyType">
+		<sequence minOccurs="0">
+			<element ref="lv:Situasjonsmodell"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Tverrfagligmodell" type="lv:TverrfagligmodellType" substitutionGroup="gml:AbstractFeature"/>
+	<complexType name="TverrfagligmodellType">
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="fagmodellElement" minOccurs="0" maxOccurs="unbounded">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="lv:Fagmodell"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+					<element name="dokumentasjonskrav" minOccurs="0" maxOccurs="unbounded">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="lv:DokumentasjonskravModeller"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="TverrfagligmodellPropertyType">
+		<sequence minOccurs="0">
+			<element ref="lv:Tverrfagligmodell"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Vegprosjekt" type="lv:VegprosjektType" substitutionGroup="gml:AbstractFeature"/>
+	<complexType name="VegprosjektType">
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="VegprosjektPropertyType">
+		<sequence minOccurs="0">
+			<element ref="lv:Vegprosjekt"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
 </schema>

@@ -2,8 +2,7 @@
   <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
   <import namespace="https://skjema.atlas.vegvesen.no/r000/fagmodellrekkverk/0.1" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/FagmodellRekkverk.xsd"/>
   <import namespace="https://skjema.atlas.vegvesen.no/r000/fagmodellveg/0.1" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/FagmodellVeg.xsd"/>
-  <import namespace="https://skjema.atlas.vegvesen.no/r000/svvlinearereferanser/0.1"/>
-  <import namespace="https://skjema.atlas.vegvesen.no/r000/svvlinearereferanser/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/SVV_LineareReferanser.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/svvlinearereferanser/0.1" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/SVV_LineareReferanser.xsd"/>
   <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
   <element name="Veg" substitutionGroup="gml:AbstractFeature" type="fmfel:VegType"/>
   <complexType name="VegType">
