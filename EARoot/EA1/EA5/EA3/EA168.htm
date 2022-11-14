@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Lenkesekvens</title>
+<title>Lenke</title>
 <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script language="JavaScript" src="../../../../js/displayToc.js" type="text/javascript"></script>
 <script>
@@ -64,12 +64,12 @@
 <div class="section group" >
 
 		<div class="col span_2_of_2 header_frame">
-			<h1> Lenkesekvens </h1>
+			<h1> Lenke </h1>
 			<!-- <img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
 			<img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />
 		</div>
 		<div class="col span_2_of_2 breadcrumb_frame">
-			<p><a href="../../../EA3.htm">Vegprosjekt VU053 v0.1.2</a> / <a href="../../EA8.htm">Eksterne_UML-deler</a> / <a href="../EA106.htm">Plassholdere_for_Original</a> / <a href="EA156.htm">SOSI Nettverk og lineære referanser 5.0</a> / <a href="EA168.htm">Lenkesekvens</a></p>
+			<p><a href="../../../EA3.htm">Vegprosjekt VU053 v0.1.2</a> / <a href="../../EA8.htm">Eksterne_UML-deler</a> / <a href="../EA107.htm">Plassholdere_for_Original</a> / <a href="EA157.htm">SOSI Nettverk og lineære referanser 5.0</a> / <a href="EA168.htm">Lenke</a></p>
 		</div>
 			
 		<table class="contentmaintable">
@@ -84,12 +84,12 @@
 					<td class="indexcell">
 						<div class="projectBrowserTitle">Project: </div>
 						<ul>
-<a href="EA156.htm">SOSI Nettverk og lineære referanser 5.0</a></ul>
+<a href="EA157.htm">SOSI Nettverk og lineære referanser 5.0</a></ul>
 
 					</td>
 					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<span class="ObjectTitle">Lenkesekvens  : Public abstract &lt;&lt;featureType&gt;&gt; Class</span>
+	<span class="ObjectTitle">Lenke  : Public abstract &lt;&lt;featureType&gt;&gt; Class</span>
 	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -97,7 +97,7 @@
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">16.03.2016 09:31:52</td>
+			<td class="ObjectDetailsValue">16.03.2016 09:25:38</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -142,18 +142,22 @@
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{84357EDD-C84B-499b-A2FB-BF8984A096CC}</td>
+			<td class="ObjectDetailsValue">{E92629D4-BCBE-457b-8F0E-0BDBE295648F}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA146.htm">Lineær posisjon</a>, <a href="EA130.htm">Hoveddiagram</a>, <a href="EA132.htm">Nettverk</a>, <a href="EA136.htm">Lenkesekvenser og Lenkesett</a>, <a href="EA140.htm">Posisjon i sekvenser</a>, <a href="EA152.htm">Forholdet til INSPIRE Generic Network Model - nettverk</a>, <a href="EA142.htm">Nettverk med alle egenskaper</a></td>
+			<td class="ObjectDetailsValue"><a href="EA147.htm">Lineær posisjon</a>, <a href="EA131.htm">Hoveddiagram</a>, <a href="EA151.htm">Forholdet til ISO 19148 - Linear referencing system</a>, <a href="EA149.htm">Lineær posisjon med eksempel</a>, <a href="EA135.htm">Lenke og Node</a>, <a href="EA133.htm">Nettverk</a>, <a href="EA137.htm">Lenkesekvenser og Lenkesett</a>, <a href="EA141.htm">Posisjon i sekvenser</a>, <a href="EA153.htm">Forholdet til INSPIRE Generic Network Model - nettverk</a>, <a href="EA143.htm">Nettverk med alle egenskaper</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">Abstrakt objekttype for sekvenser av lenker.&lt;br/&gt;Eksempel: En sammenhengende rute bestående av flere dellenker &lt;br/&gt;&lt;i&gt;Realisering av INSPIRE Network:LinkSequence&lt;/i&gt;&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">Abstrakt objekttype for nettverkslenker, med mulighet for å angi posisjon i en sekvens av lenker.&lt;br/&gt;&lt;br/&gt;Merknad: Lenkens posisjon i et nettverk og skalering av lengde i forhold til geometrilengde&#160;&#160;kan angis på flere alternative måter:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br /> &lt;li&gt;Kun startVerdi. Målt lengde og sluttverdi er lik geometrilengde&#160;&#160;&#160;&#160;&#160;&#160;&lt;/li&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br /> &lt;li&gt;Kombinasjonen startVerdi-sluttVerdi. Målt lengde er lik differansen mellom disse egenskapene.&#160;&#160;&#160;&#160;&#160;&#160;&lt;/li&gt; &lt;li&gt;Kombinasjonen startVerdi-måltLengde. Sluttverdi er lik summen av disse egenskapene.&#160;&#160;&#160;&#160;&#160;&#160;&lt;/li&gt; &lt;li&gt;Kun måltLengde. startverdi er lik 0, og sluttverdi er lik målt lengde&#160;&#160;&#160;&#160;&#160;&#160;&lt;/li&gt; &lt;li&gt;Ingen av egenskapene angitt. Kun geometrien benyttes for beregning av posisjoner.&#160;&#160;&#160;&#160;&#160;&#160;&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;i&gt;Realisering av INSPIRE Network:Link.&lt;/i&gt;&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="toggleItem('Constraints');" id="ConstraintsTitle">Constraints</li>
 			<li onClick="toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
 			<li onClick="toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
@@ -166,25 +170,79 @@
 		</tr>
 						<tr>
 				<td width="50%" class="TableRow">
-					lenke
+					måltLengde
 				</td>
 				<td width="25%" class="TableRow">
 					Public 
 				</td>
 				<td width="25%" class="TableRow">
-					<a href="EA164.htm">RettaLenke</a>
+					Real
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="3">										
-					SOSI_navn=LENKE<br>
+					SOSI_datatype=D<br>SOSI_lengde=10<br>SOSI_navn=LRMÅLTLENGDE<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			ordna samling med retta lenker som utgjør lenkesekvensen&lt;br/&gt;
+			Målt lengde for lenken, innenfor lenkens lineære referansesystem&lt;br/&gt;&lt;br/&gt;Merknad: Målt lengde overstyrer geometrilengde. &lt;br/&gt;&lt;br/&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;&lt;i&gt;ISO19148: LR_ILinearElement ::measure(measureAttribute : CharacterString = defaultLength) : Measure&lt;/i&gt;&lt;/font&gt;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					startposisjon
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					Real
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					SOSI_datatype=D<br>SOSI_lengde=10<br>SOSI_navn=LRSTARTVERDI<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			&lt;font color=&quot;#0f0f0f&quot;&gt;startposisjon for lenken i et lineært referansesystem&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;&lt;i&gt;ISO19148: &lt;/i&gt;&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;&lt;i&gt;LR_ILinearElement ::&lt;/i&gt;&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;&lt;i&gt;startValue(LRM : LinearReferencingMethod) : Measure&lt;/i&gt; &lt;/font&gt;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					sluttposisjon
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					Real
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					SOSI_datatype=D<br>SOSI_lengde=10<br>SOSI_navn=LRSLUTTVERDI<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			&lt;font color=&quot;#0f0f0f&quot;&gt;sluttposisjon for lenken i et lineært referansesystem&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;&lt;i&gt;ISO19148: Finnes ikke&lt;/i&gt; &lt;/font&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -194,6 +252,136 @@
 			</tr>
 	</table>
 </div>
+		<div class="ItemBody" id="AssociationsToTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA171.htm">«featureType» Node</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> startnodeFor<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> startnode<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink268" /></button>Details:
+							<div id="detailsDIVLink268" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA171.htm">«featureType» Node</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> sluttnodeFor<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> sluttnode<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink269" /></button>Details:
+							<div id="detailsDIVLink269" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA165.htm">«dataType» RettaLenke</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> lenke<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink270" /></button>Details:
+							<div id="detailsDIVLink270" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Tag</td>
+			<td width="50%" class="TableHeading">Value</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">SOSI_fremmednøkkel</td>
+				<td width="50%" class="TableRow" valign="top">identifikasjon</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					Details:
+						&nbsp;
+				</td>
+			</tr>
+	</table>
+</div>		<div class="ItemBody" id="ConstraintsTable">
+			<table class="Table ea_table">
+			  	<tr>
+					<td width="80%" class="TableHeading">Constraint</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Status</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">Realiserbare subtyper skal ha kurvegeometri</td>
+					<td width="10%" class="TableRow">Invariant</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed" colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints272" /></button>Details:
+							<div id="detailsDIVConstraints272" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
 		<div class="ItemBody" id="CustomPropertiesTable">
 			<table class="Table ea_table">
 				<tr>
@@ -217,7 +405,7 @@
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA166.htm">«featureType» GeneralisertLenke</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA167.htm">«featureType» GeneralisertLenke</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">To</td>

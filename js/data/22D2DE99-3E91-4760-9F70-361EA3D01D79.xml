@@ -1,6 +1,5 @@
-tocTab[tocTab.length] = new Array("0.4.1.2.4.2:1", "", "VannhaandteringLukket", "EARoot/EA4/EA1/EA2/EA4/EA2/EA603.htm", "175.png", "1356", "0", "", "Logical diagram0","{5734FF14-983A-4352-AC17-87DD46F94A14}");
-tocTab[tocTab.length] = new Array("0.4.1.2.4.2:2", "", "«featureType» VannHaamdteringLukket", "EARoot/EA4/EA1/EA2/EA4/EA2/EA606.htm", "5.png", "E6859", "0", "", "Class0","{AB9B361C-C7A2-4efd-B463-87CA696BA62F}");
-tocTab[tocTab.length] = new Array("0.4.1.2.4.2:3", "", "«featureType» VannHaandteringElement", "EARoot/EA4/EA1/EA2/EA4/EA2/EA607.htm", "5.png", "E6860", "0", "", "Class0","{F0908503-0F5B-4869-A824-F06615DF2C0B}");
-tocTab[tocTab.length] = new Array("0.4.1.2.4.2:4", "", "«codeList» Kabler", "EARoot/EA4/EA1/EA2/EA4/EA2/EA608.htm", "5.png", "E6857", "0", "", "Class0","{18A6FA25-16D0-4ba6-8ED2-1DBAE53E782B}");
-tocTab[tocTab.length] = new Array("0.4.1.2.4.2:5", "", "«codeList» TypeLukketRoergroeft", "EARoot/EA4/EA1/EA2/EA4/EA2/EA609.htm", "5.png", "E6856", "0", "", "Class0","{00674620-74B6-497a-82A7-20E1028D23A5}");
-tocTab[tocTab.length] = new Array("0.4.1.2.4.2:6", "", "«codeList» VarmekablerLukketRørgrøft", "EARoot/EA4/EA1/EA2/EA4/EA2/EA610.htm", "5.png", "E6858", "0", "", "Class0","{80F0F4A6-D5B8-4b8c-8080-0B1475DF6D7E}");
+tocTab[tocTab.length] = new Array("0.4.1.2.4.2:1", "", "VannhaandteringLukket", "EARoot/EA4/EA1/EA2/EA4/EA2/EA613.htm", "175.png", "1509", "0", "", "Logical diagram0","{5734FF14-983A-4352-AC17-87DD46F94A14}");
+tocTab[tocTab.length] = new Array("0.4.1.2.4.2:2", "", "«featureType» VannHaamdteringLukket", "EARoot/EA4/EA1/EA2/EA4/EA2/EA616.htm", "5.png", "E7803", "0", "", "Class0","{AB9B361C-C7A2-4efd-B463-87CA696BA62F}");
+tocTab[tocTab.length] = new Array("0.4.1.2.4.2:3", "", "«codeList» Kabler", "EARoot/EA4/EA1/EA2/EA4/EA2/EA617.htm", "5.png", "E7801", "0", "", "Class0","{18A6FA25-16D0-4ba6-8ED2-1DBAE53E782B}");
+tocTab[tocTab.length] = new Array("0.4.1.2.4.2:4", "", "«codeList» TypeLukketRoergroeft", "EARoot/EA4/EA1/EA2/EA4/EA2/EA618.htm", "5.png", "E7800", "0", "", "Class0","{00674620-74B6-497a-82A7-20E1028D23A5}");
+tocTab[tocTab.length] = new Array("0.4.1.2.4.2:5", "", "«codeList» VarmekablerLukketRørgrøft", "EARoot/EA4/EA1/EA2/EA4/EA2/EA619.htm", "5.png", "E7802", "0", "", "Class0","{80F0F4A6-D5B8-4b8c-8080-0B1475DF6D7E}");
