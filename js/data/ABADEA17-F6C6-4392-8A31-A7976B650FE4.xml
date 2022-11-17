@@ -1,5 +1,5 @@
-tocTab[tocTab.length] = new Array("0.3.2:1", "", "Fullfoeringsgrad", "EARoot/EA3/EA2/EA369.htm", "175.png", "1456", "0", "", "Logical diagram0","{CCAB2994-B891-4581-A75D-7ED3F276DC7E}");
-tocTab[tocTab.length] = new Array("0.3.2:2", "", "«featureType» Fullfoeringsgrad", "EARoot/EA3/EA2/EA372.htm", "5.png", "E7394", "0", "", "Class0","{05C9FE9C-66AF-4ece-A9EA-2BCF82AA9F2B}");
-tocTab[tocTab.length] = new Array("0.3.2:3", "", "«codeList» Fullfoeringsstatus", "EARoot/EA3/EA2/EA373.htm", "5.png", "E7397", "0", "", "Class0","{A332C8B3-CEC7-4925-BFE6-833B6C62AFBB}");
-tocTab[tocTab.length] = new Array("0.3.2:4", "", "«codeList» Oppgave", "EARoot/EA3/EA2/EA374.htm", "5.png", "E7396", "0", "", "Class0","{582D068A-CDAA-47ee-A2D0-CB12A744585C}");
-tocTab[tocTab.length] = new Array("0.3.2:5", "", "«codeList» Vekting", "EARoot/EA3/EA2/EA375.htm", "5.png", "E7395", "0", "", "Class0","{27E9E820-00B7-4b2b-9520-28CC0040569D}");
+tocTab[tocTab.length] = new Array("0.3.2:1", "", "Fullfoeringsgrad", "EARoot/EA3/EA2/EA373.htm", "175.png", "1582", "0", "", "Logical diagram0","{CCAB2994-B891-4581-A75D-7ED3F276DC7E}");
+tocTab[tocTab.length] = new Array("0.3.2:2", "", "«featureType» Fullfoeringsgrad", "EARoot/EA3/EA2/EA376.htm", "5.png", "E8160", "0", "", "Class0","{05C9FE9C-66AF-4ece-A9EA-2BCF82AA9F2B}");
+tocTab[tocTab.length] = new Array("0.3.2:3", "", "«codeList» Fullfoeringsstatus", "EARoot/EA3/EA2/EA377.htm", "5.png", "E8163", "0", "", "Class0","{A332C8B3-CEC7-4925-BFE6-833B6C62AFBB}");
+tocTab[tocTab.length] = new Array("0.3.2:4", "", "«codeList» Oppgave", "EARoot/EA3/EA2/EA378.htm", "5.png", "E8162", "0", "", "Class0","{582D068A-CDAA-47ee-A2D0-CB12A744585C}");
+tocTab[tocTab.length] = new Array("0.3.2:5", "", "«codeList» Vekting", "EARoot/EA3/EA2/EA379.htm", "5.png", "E8161", "0", "", "Class0","{27E9E820-00B7-4b2b-9520-28CC0040569D}");

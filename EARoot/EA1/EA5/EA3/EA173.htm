@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>LineærPosisjonPunkt</title>
+<title>Lenkesekvens</title>
 <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script language="JavaScript" src="../../../../js/displayToc.js" type="text/javascript"></script>
 <script>
@@ -64,12 +64,12 @@
 <div class="section group" >
 
 		<div class="col span_2_of_2 header_frame">
-			<h1> LineærPosisjonPunkt </h1>
+			<h1> Lenkesekvens </h1>
 			<!-- <img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
 			<img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />
 		</div>
 		<div class="col span_2_of_2 breadcrumb_frame">
-			<p><a href="../../../EA3.htm">Vegprosjekt VU053 v0.1.2</a> / <a href="../../EA8.htm">Eksterne_UML-deler</a> / <a href="../EA107.htm">Plassholdere_for_Original</a> / <a href="EA157.htm">SOSI Nettverk og lineære referanser 5.0</a> / <a href="EA173.htm">LineærPosisjonPunkt</a></p>
+			<p><a href="../../../EA3.htm">Vegprosjekt VU053 v0.1.2</a> / <a href="../../EA8.htm">Eksterne_UML-deler</a> / <a href="../EA111.htm">Plassholdere_for_Original</a> / <a href="EA161.htm">SOSI Nettverk og lineære referanser 5.0</a> / <a href="EA173.htm">Lenkesekvens</a></p>
 		</div>
 			
 		<table class="contentmaintable">
@@ -84,12 +84,12 @@
 					<td class="indexcell">
 						<div class="projectBrowserTitle">Project: </div>
 						<ul>
-<a href="EA157.htm">SOSI Nettverk og lineære referanser 5.0</a></ul>
+<a href="EA161.htm">SOSI Nettverk og lineære referanser 5.0</a></ul>
 
 					</td>
 					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<span class="ObjectTitle">LineærPosisjonPunkt  : Public  &lt;&lt;dataType&gt;&gt; Class</span>
+	<span class="ObjectTitle">Lenkesekvens  : Public abstract &lt;&lt;featureType&gt;&gt; Class</span>
 	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -97,7 +97,7 @@
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">16.03.2016 09:25:38</td>
+			<td class="ObjectDetailsValue">16.03.2016 09:31:52</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -142,19 +142,18 @@
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{7DB75949-36C8-42ee-B39D-DE53D2BA82CC}</td>
+			<td class="ObjectDetailsValue">{84357EDD-C84B-499b-A2FB-BF8984A096CC}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../../EA4/EA82.htm">Sammenheng_SOSI_VU053</a>, <a href="EA147.htm">Lineær posisjon</a>, <a href="EA131.htm">Hoveddiagram</a>, <a href="EA151.htm">Forholdet til ISO 19148 - Linear referencing system</a>, <a href="EA149.htm">Lineær posisjon med eksempel</a>, <a href="EA145.htm">Lineære referansemetoder</a>, <a href="EA155.htm">Forholdet til INSPIRE Generic Network Model - LR</a></td>
+			<td class="ObjectDetailsValue"><a href="EA151.htm">Lineær posisjon</a>, <a href="EA135.htm">Hoveddiagram</a>, <a href="EA137.htm">Nettverk</a>, <a href="EA141.htm">Lenkesekvenser og Lenkesett</a>, <a href="EA145.htm">Posisjon i sekvenser</a>, <a href="EA157.htm">Forholdet til INSPIRE Generic Network Model - nettverk</a>, <a href="EA147.htm">Nettverk med alle egenskaper</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">lineær posisjon som et punkt&lt;br/&gt;&lt;br/&gt;Merknad:&lt;br/&gt;Dette er en forenkling i forhold til ISO19148, der posisjonsangivelsene er en egen datatype LR_DistanceExpression som har igjen egenskapen DistanceAlong.&lt;br/&gt;LR_DistanceExpression har også en subtype LRO_LateralOffsetDistanceExpression, som inneholder egenskapen offsetLateralDistance (avstandSide).&lt;br/&gt;&lt;br/&gt;&lt;i&gt;Realisering av ISO19148: LE_AtLocation&lt;/i&gt;&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">Abstrakt objekttype for sekvenser av lenker.&lt;br/&gt;Eksempel: En sammenhengende rute bestående av flere dellenker &lt;br/&gt;&lt;i&gt;Realisering av INSPIRE Network:LinkSequence&lt;/i&gt;&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
-			<li onClick="toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
 			<li onClick="toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
 			<li onClick="toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
@@ -167,25 +166,25 @@
 		</tr>
 						<tr>
 				<td width="50%" class="TableRow">
-					posisjon
+					lenke
 				</td>
 				<td width="25%" class="TableRow">
 					Public 
 				</td>
 				<td width="25%" class="TableRow">
-					Real
+					<a href="EA169.htm">RettaLenke</a>
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="3">										
-					SOSI_datatype=D<br>SOSI_lengde=10<br>SOSI_navn=LRPUNKTPOSISJON<br>
+					SOSI_navn=LENKE<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			posisjon langs nettverkselementet, i henhold til referansemetoden &lt;br/&gt;&lt;br/&gt;Merknad: Ref&lt;font color=&quot;#0f0f0f&quot;&gt; &lt;i&gt;ISO19148: atPosition -&#160;&#160;distanceAlong&lt;/i&gt; &lt;/font&gt;&lt;br/&gt;
+			ordna samling med retta lenker som utgjør lenkesekvensen&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -195,24 +194,7 @@
 			</tr>
 	</table>
 </div>
-<div class="ItemBody" id="TaggedValTable">
-	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
-		<tr>
-			<td width="50%" class="TableHeading">Tag</td>
-			<td width="50%" class="TableHeading">Value</td>
-		</tr>
-					<tr>
-				<td width="50%" class="TableRow" valign="top">SOSI_navn</td>
-				<td width="50%" class="TableRow" valign="top">LRPUNKT</td>
-			</tr>	
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="2">
-					Details:
-						&nbsp;
-				</td>
-			</tr>
-	</table>
-</div>		<div class="ItemBody" id="CustomPropertiesTable">
+		<div class="ItemBody" id="CustomPropertiesTable">
 			<table class="Table ea_table">
 				<tr>
 					<td width="30%" class="TableHeading">Property</td>
@@ -235,14 +217,7 @@
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA4/EA1/EA102.htm">«dataType» LineærPosisjonPunkt</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Realization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA172.htm">«dataType» LineærPosisjon</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA171.htm">«featureType» GeneralisertLenke</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">To</td>
