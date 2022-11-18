@@ -1,0 +1,33 @@
+<?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Konkuranseform" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
+  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fellesmoduler/0.1">Konkuranseform</gml:identifier>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_8140_19894">
+      <gml:description>Over EØS-terskelverdi</gml:description>
+      <gml:identifier codeSpace="http://skjema.geonorge.no/legg_inn_riktig_url">begrensetTilbudskonkurranse_UnderEØS</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_8140_19895">
+      <gml:description>Over EØS-terskelverdi</gml:description>
+      <gml:identifier codeSpace="http://skjema.geonorge.no/legg_inn_riktig_url">prosedyreForForhandling_OverEØS</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_8140_19896">
+      <gml:description>Over EØS-terskelverdi</gml:description>
+      <gml:identifier codeSpace="http://skjema.geonorge.no/legg_inn_riktig_url">prosedyreForKonkurransepregetDialog_OverEØS</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_8140_19897">
+      <gml:description>Over EØS-terskelverdi</gml:description>
+      <gml:identifier codeSpace="http://skjema.geonorge.no/legg_inn_riktig_url">åpenTilbudskonkurranse_OverEØS</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_8140_19898">
+      <gml:description>Under EØS-terskelverdi</gml:description>
+      <gml:identifier codeSpace="http://skjema.geonorge.no/legg_inn_riktig_url">åpenTilbudskonkurranse_underEØS</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>
