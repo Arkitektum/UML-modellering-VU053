@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:fmva="https://skjema.atlas.vegvesen.no/r000/fagmodellvannogavloep/0.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:lv="https://skjema.atlas.vegvesen.no/r000/leveranse/0.1" xmlns:svvli="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/0.1" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/fagmodellvannogavloep/0.1" version="0.1">
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:fmva="https://skjema.atlas.vegvesen.no/r000/fagmodellvannogavloep/0.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:lv="https://skjema.atlas.vegvesen.no/r000/leveranse/0.1" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:svvli="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/0.1" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/fagmodellvannogavloep/0.1" version="0.1">
+  <import namespace="http://www.interactive-instruments.de/ShapeChange/AppInfo" schemaLocation="http://shapechange.net/resources/schema/ShapeChangeAppinfo.xsd"/>
   <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
   <import namespace="https://skjema.atlas.vegvesen.no/r000/leveranse/0.1" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/Leveranse.xsd"/>
   <import namespace="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/0.1" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/SVV_Landinfra.xsd"/>
@@ -86,6 +87,29 @@ Spillvann er separert fra overvann, så spillvannsledninger skal i prinsippet ik
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
+  <element name="Basseng" substitutionGroup="fmva:Nettstasjon" type="fmva:BassengType"/>
+  <complexType name="BassengType">
+    <complexContent>
+      <extension base="fmva:NettstasjonType">
+        <sequence>
+          <element name="bassengtype" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>http://skjema.geonorge.no/legg_inn_riktig_url</sc:targetCodeListURI>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BassengPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Basseng"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
   <element name="Bekkeinntak" substitutionGroup="fmva:KoplingElement" type="fmva:BekkeinntakType"/>
   <complexType name="BekkeinntakType">
     <complexContent>
@@ -97,23 +121,6 @@ Spillvann er separert fra overvann, så spillvannsledninger skal i prinsippet ik
   <complexType name="BekkeinntakPropertyType">
     <sequence minOccurs="0">
       <element ref="fmva:Bekkeinntak"/>
-    </sequence>
-    <attributeGroup ref="gml:AssociationAttributeGroup"/>
-    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
-  </complexType>
-  <element name="Basseng" substitutionGroup="fmva:Nettstasjon" type="fmva:BassengType"/>
-  <complexType name="BassengType">
-    <complexContent>
-      <extension base="fmva:NettstasjonType">
-        <sequence>
-          <element name="bassengtype" type="gml:CodeType"/>
-        </sequence>
-      </extension>
-    </complexContent>
-  </complexType>
-  <complexType name="BassengPropertyType">
-    <sequence minOccurs="0">
-      <element ref="fmva:Basseng"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
@@ -168,7 +175,13 @@ Spillvann er separert fra overvann, så spillvannsledninger skal i prinsippet ik
     <complexContent>
       <extension base="fmva:ProsessType">
         <sequence>
-          <element minOccurs="0" name="prosesstype" type="gml:CodeType"/>
+          <element minOccurs="0" name="prosesstype" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://www.codelistURL.com</sc:targetCodeListURI>
+              </appinfo>
+            </annotation>
+          </element>
         </sequence>
       </extension>
     </complexContent>
@@ -185,24 +198,24 @@ Spillvann er separert fra overvann, så spillvannsledninger skal i prinsippet ik
     <complexContent>
       <extension base="lv:FagmodellType">
         <sequence>
-          <element maxOccurs="unbounded" minOccurs="0" name="elementSamling">
-            <complexType>
-              <complexContent>
-                <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="fmva:VannOgAvloepElementSamling"/>
-                  </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
-                </extension>
-              </complexContent>
-            </complexType>
-          </element>
           <element maxOccurs="unbounded" minOccurs="0" name="vannOgAvloepElement">
             <complexType>
               <complexContent>
                 <extension base="gml:AbstractFeatureMemberType">
                   <sequence minOccurs="0">
                     <element ref="fmva:VannOgAvloepElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="elementSamling">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmva:VannOgAvloepElementSamling"/>
                   </sequence>
                   <attributeGroup ref="gml:AssociationAttributeGroup"/>
                 </extension>
@@ -255,7 +268,13 @@ Spillvann er separert fra overvann, så spillvannsledninger skal i prinsippet ik
     <complexContent>
       <extension base="fmva:VentilType">
         <sequence>
-          <element minOccurs="0" name="hydrantTilkobling" type="gml:CodeType"/>
+          <element minOccurs="0" name="hydrantTilkobling" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://www.codelistURL.com</sc:targetCodeListURI>
+              </appinfo>
+            </annotation>
+          </element>
         </sequence>
       </extension>
     </complexContent>
@@ -385,8 +404,20 @@ Spillvann er separert fra overvann, så spillvannsledninger skal i prinsippet ik
     <complexContent>
       <extension base="fmva:KoplingElementType">
         <sequence>
-          <element minOccurs="0" name="kumtype" type="gml:CodeType"/>
-          <element minOccurs="0" name="utskiller" type="gml:CodeType"/>
+          <element minOccurs="0" name="kumtype" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>http://skjema.geonorge.no/legg_inn_riktig_url</sc:targetCodeListURI>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="utskiller" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>http://skjema.geonorge.no/legg_inn_riktig_url</sc:targetCodeListURI>
+              </appinfo>
+            </annotation>
+          </element>
         </sequence>
       </extension>
     </complexContent>
@@ -438,6 +469,11 @@ Spillvann er separert fra overvann, så spillvannsledninger skal i prinsippet ik
           <element minOccurs="0" name="trykkforhold" type="fmva:TrykkforholdType"/>
           <element minOccurs="0" name="trykklasse" type="fmva:TrykklasseType"/>
           <element minOccurs="0" name="funksjon" type="fmva:LedningsfunksjonType"/>
+          <element name="diameter" type="double">
+            <annotation>
+              <documentation>enhet [mm]</documentation>
+            </annotation>
+          </element>
         </sequence>
       </extension>
     </complexContent>
@@ -549,7 +585,13 @@ Spillvann er separert fra overvann, så spillvannsledninger skal i prinsippet ik
     <complexContent>
       <extension base="fmva:ProsessType">
         <sequence>
-          <element minOccurs="0" name="måleetype" type="gml:CodeType"/>
+          <element minOccurs="0" name="måleetype" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://www.codelistURL.com</sc:targetCodeListURI>
+              </appinfo>
+            </annotation>
+          </element>
         </sequence>
       </extension>
     </complexContent>
@@ -642,7 +684,13 @@ Spillvann er separert fra overvann, så spillvannsledninger skal i prinsippet ik
     <complexContent>
       <extension base="fmva:ProsessType">
         <sequence>
-          <element minOccurs="0" name="type" type="gml:CodeType"/>
+          <element minOccurs="0" name="type" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://www.codelistURL.com</sc:targetCodeListURI>
+              </appinfo>
+            </annotation>
+          </element>
         </sequence>
       </extension>
     </complexContent>
@@ -659,7 +707,13 @@ Spillvann er separert fra overvann, så spillvannsledninger skal i prinsippet ik
     <complexContent>
       <extension base="fmva:NettstasjonType">
         <sequence>
-          <element name="overløpstype" type="gml:CodeType"/>
+          <element name="overløpstype" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>http://skjema.geonorge.no/legg_inn_riktig_url</sc:targetCodeListURI>
+              </appinfo>
+            </annotation>
+          </element>
         </sequence>
       </extension>
     </complexContent>
@@ -753,7 +807,13 @@ Formålet er å lede bort vann som ville skapt utvendig trykk på en konstruksjo
     <complexContent>
       <extension base="fmva:ProsessType">
         <sequence>
-          <element minOccurs="0" name="pumpetype" type="gml:CodeType"/>
+          <element minOccurs="0" name="pumpetype" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://www.codelistURL.com</sc:targetCodeListURI>
+              </appinfo>
+            </annotation>
+          </element>
         </sequence>
       </extension>
     </complexContent>
@@ -800,7 +860,13 @@ Formålet er å lede bort vann som ville skapt utvendig trykk på en konstruksjo
     <complexContent>
       <extension base="fmva:VentilType">
         <sequence>
-          <element name="reguleringsventiltype" type="gml:CodeType"/>
+          <element name="reguleringsventiltype" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://www.codelistURL.com</sc:targetCodeListURI>
+              </appinfo>
+            </annotation>
+          </element>
         </sequence>
       </extension>
     </complexContent>
@@ -1424,8 +1490,20 @@ Formålet er å lede bort vann som ville skapt utvendig trykk på en konstruksjo
     <complexContent>
       <extension base="fmva:VentilType">
         <sequence>
-          <element minOccurs="0" name="stengeventiltype" type="gml:CodeType"/>
-          <element minOccurs="0" name="betjening" type="gml:CodeType"/>
+          <element minOccurs="0" name="stengeventiltype" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://www.codelistURL.com</sc:targetCodeListURI>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="betjening" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://www.codelistURL.com</sc:targetCodeListURI>
+              </appinfo>
+            </annotation>
+          </element>
         </sequence>
       </extension>
     </complexContent>
@@ -1463,7 +1541,13 @@ Formålet er å lede bort vann som ville skapt utvendig trykk på en konstruksjo
     <complexContent>
       <extension base="fmva:VentilType">
         <sequence>
-          <element minOccurs="0" name="tilbakeventiltype" type="gml:CodeType"/>
+          <element minOccurs="0" name="tilbakeventiltype" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://www.codelistURL.com</sc:targetCodeListURI>
+              </appinfo>
+            </annotation>
+          </element>
         </sequence>
       </extension>
     </complexContent>
@@ -1552,7 +1636,13 @@ Brukes når ledningen går (dykker) under elv/bekk/vei/bane osv.</documentation>
     <complexContent>
       <extension base="fmva:KoplingElementType">
         <sequence>
-          <element minOccurs="0" name="uttakstype" type="gml:CodeType"/>
+          <element minOccurs="0" name="uttakstype" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>http://skjema.geonorge.no/legg_inn_riktig_url</sc:targetCodeListURI>
+              </appinfo>
+            </annotation>
+          </element>
         </sequence>
       </extension>
     </complexContent>
@@ -1682,7 +1772,13 @@ Brukes når ledningen går (dykker) under elv/bekk/vei/bane osv.</documentation>
     <complexContent>
       <extension base="fmva:KoplingElementType">
         <sequence>
-          <element minOccurs="0" name="tilkobling" type="gml:CodeType"/>
+          <element minOccurs="0" name="tilkobling" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://www.codelistURL.com</sc:targetCodeListURI>
+              </appinfo>
+            </annotation>
+          </element>
         </sequence>
       </extension>
     </complexContent>

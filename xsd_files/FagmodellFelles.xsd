@@ -23,12 +23,12 @@
           </element>
           <element minOccurs="0" name="lineearPosisjonStrekning" type="svvlr:LineærPosisjonStrekningPropertyType"/>
           <element minOccurs="0" name="lineearPosisjonPunkt" type="svvlr:LineærPosisjonPunktPropertyType"/>
-          <element maxOccurs="unbounded" minOccurs="0" name="rekkverkElement">
+          <element maxOccurs="unbounded" minOccurs="0" name="vegElementSamling">
             <complexType>
               <complexContent>
                 <extension base="gml:AbstractFeatureMemberType">
                   <sequence minOccurs="0">
-                    <element ref="fmrek:FagmodellRekkverkElement"/>
+                    <element ref="fmveg:VegElementSamling"/>
                   </sequence>
                   <attributeGroup ref="gml:AssociationAttributeGroup"/>
                 </extension>
@@ -47,12 +47,12 @@
               </complexContent>
             </complexType>
           </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="vegElementSamling">
+          <element maxOccurs="unbounded" minOccurs="0" name="rekkverkElement">
             <complexType>
               <complexContent>
                 <extension base="gml:AbstractFeatureMemberType">
                   <sequence minOccurs="0">
-                    <element ref="fmveg:VegElementSamling"/>
+                    <element ref="fmrek:FagmodellRekkverkElement"/>
                   </sequence>
                   <attributeGroup ref="gml:AssociationAttributeGroup"/>
                 </extension>

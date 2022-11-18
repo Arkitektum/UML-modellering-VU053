@@ -10,7 +10,13 @@
     <complexContent>
       <extension base="fmrek:RekkverkElementType">
         <sequence>
-          <element minOccurs="0" name="plassering" type="fmrek:PlasseringPåBruType"/>
+          <element minOccurs="0" name="plassering" type="fmrek:PlasseringPåBruType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/vegvesen/NVDB-Datakatalogen/master/GMLPlasseringPåBru</sc:targetCodeListURI>
+              </appinfo>
+            </annotation>
+          </element>
           <element minOccurs="0" name="håndlist" type="boolean"/>
         </sequence>
       </extension>
@@ -28,18 +34,6 @@
     <complexContent>
       <extension base="lv:FagmodellType">
         <sequence>
-          <element maxOccurs="unbounded" minOccurs="0" name="veg">
-            <complexType>
-              <complexContent>
-                <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="fmfel:Veg"/>
-                  </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
-                </extension>
-              </complexContent>
-            </complexType>
-          </element>
           <element maxOccurs="unbounded" minOccurs="0" name="rekkverkElement">
             <complexType>
               <complexContent>
@@ -58,6 +52,18 @@
                 <extension base="gml:AbstractFeatureMemberType">
                   <sequence minOccurs="0">
                     <element ref="fmrek:RekkverkElementSamling"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="veg">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmfel:Veg"/>
                   </sequence>
                   <attributeGroup ref="gml:AssociationAttributeGroup"/>
                 </extension>
@@ -188,13 +194,37 @@
     <complexContent>
       <extension base="fmrek:FagmodellRekkverkElementType">
         <sequence>
-          <element name="stolpeavstand" type="gml:CodeType"/>
+          <element name="stolpeavstand" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/vegvesen/NVDB-Datakatalogen/master/GMLStolpeavstand</sc:targetCodeListURI>
+              </appinfo>
+            </annotation>
+          </element>
           <element name="lengde" type="double"/>
           <element minOccurs="0" name="høyde" type="double"/>
-          <element name="rekkverktype" type="gml:CodeType"/>
+          <element name="rekkverktype" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/vegvesen/NVDB-Datakatalogen/master/GMLRekkverkstype</sc:targetCodeListURI>
+              </appinfo>
+            </annotation>
+          </element>
           <element minOccurs="0" name="sikkerhetavstand" type="double"/>
-          <element name="bruksområde" type="gml:CodeType"/>
-          <element name="produktnavnTypegodkjenning" type="gml:CodeType"/>
+          <element name="bruksområde" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/vegvesen/NVDB-Datakatalogen/master/GMLBruksområdeRekkverk</sc:targetCodeListURI>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="produktnavnTypegodkjenning" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/vegvesen/NVDB-Datakatalogen/master/GMLProduktnavnTypegodkjenning</sc:targetCodeListURI>
+              </appinfo>
+            </annotation>
+          </element>
           <element name="etableringsår" type="dateTime"/>
         </sequence>
       </extension>
@@ -255,14 +285,56 @@
     <complexContent>
       <extension base="fmrek:FagmodellRekkverkElementType">
         <sequence>
-          <element name="type" type="gml:CodeType"/>
+          <element name="type" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/vegvesen/NVDB-Datakatalogen/master/GMLTypeRekkverksende</sc:targetCodeListURI>
+              </appinfo>
+            </annotation>
+          </element>
           <element name="etableringsår" type="dateTime"/>
-          <element minOccurs="0" name="produktnavnTypegodkjenning" type="gml:CodeType"/>
-          <element minOccurs="0" name="sikkerhetsklasse" type="gml:CodeType"/>
-          <element minOccurs="0" name="energiabsorpsjon" type="gml:CodeType"/>
-          <element minOccurs="0" name="bevegelsesklasse" type="gml:CodeType"/>
-          <element minOccurs="0" name="skaderisiko" type="gml:CodeType"/>
-          <element minOccurs="0" name="utbøyningsklasse" type="gml:CodeType"/>
+          <element minOccurs="0" name="produktnavnTypegodkjenning" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/vegvesen/NVDB-Datakatalogen/master/GMLProduktnavnTypegodkjenning</sc:targetCodeListURI>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="sikkerhetsklasse" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>http://skjema.geonorge.no/legg_inn_riktig_url</sc:targetCodeListURI>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="energiabsorpsjon" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>http://skjema.geonorge.no/legg_inn_riktig_url</sc:targetCodeListURI>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="bevegelsesklasse" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/vegvesen/NVDB-Datakatalogen/master/GMLBevegelsesklasse</sc:targetCodeListURI>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="skaderisiko" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/vegvesen/NVDB-Datakatalogen/master/GMLSkaderisiko</sc:targetCodeListURI>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="utbøyningsklasse" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/vegvesen/NVDB-Datakatalogen/master/GMLUtbøyningsklasse</sc:targetCodeListURI>
+              </appinfo>
+            </annotation>
+          </element>
         </sequence>
       </extension>
     </complexContent>
@@ -279,7 +351,13 @@
     <complexContent>
       <extension base="fmrek:RekkverkElementType">
         <sequence>
-          <element minOccurs="0" name="skinneutrustning" type="gml:CodeType"/>
+          <element minOccurs="0" name="skinneutrustning" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/vegvesen/NVDB-Datakatalogen/master/GMLSkinneutrustning</sc:targetCodeListURI>
+              </appinfo>
+            </annotation>
+          </element>
           <element minOccurs="0" name="mcSkine" type="boolean"/>
         </sequence>
       </extension>
@@ -312,12 +390,48 @@
     <complexContent>
       <extension base="fmrek:FagmodellRekkverkElementType">
         <sequence>
-          <element minOccurs="0" name="produktnavnTypegodkjenning" type="gml:CodeType"/>
-          <element minOccurs="0" name="sikkerhetsklasse" type="gml:CodeType"/>
-          <element minOccurs="0" name="avledningsevne" type="gml:CodeType"/>
-          <element minOccurs="0" name="bevegelsesklasse" type="gml:CodeType"/>
-          <element minOccurs="0" name="utbøyningsklasse" type="gml:CodeType"/>
-          <element minOccurs="0" name="skaderisiko" type="gml:CodeType"/>
+          <element minOccurs="0" name="produktnavnTypegodkjenning" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/vegvesen/NVDB-Datakatalogen/master/GMLProduktnavnTypegodkjenningStøtpute</sc:targetCodeListURI>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="sikkerhetsklasse" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/vegvesen/NVDB-Datakatalogen/master/GMLSikkerhetsklasse</sc:targetCodeListURI>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="avledningsevne" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/vegvesen/NVDB-Datakatalogen/master/GMLAvledningsevne</sc:targetCodeListURI>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="bevegelsesklasse" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/vegvesen/NVDB-Datakatalogen/master/GMLBevegelsesklasse</sc:targetCodeListURI>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="utbøyningsklasse" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/vegvesen/NVDB-Datakatalogen/master/GMLUtbøyningsklasse</sc:targetCodeListURI>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="skaderisiko" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/vegvesen/NVDB-Datakatalogen/master/GMLSkaderisiko</sc:targetCodeListURI>
+              </appinfo>
+            </annotation>
+          </element>
           <element minOccurs="0" name="etableringsår" type="dateTime"/>
         </sequence>
       </extension>

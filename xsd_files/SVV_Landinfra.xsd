@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:svvli="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/0.1" xmlns:svvlr="https://skjema.atlas.vegvesen.no/r000/svvlinearereferanser/0.1" xmlns:svvpm="https://skjema.atlas.vegvesen.no/r000/svvpolyfacemesh/0.1" targetNamespace="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/0.1" elementFormDefault="qualified" version="0.1">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:svvge="https://skjema.atlas.vegvesen.no/r000/sosigenerelleegenskaper/0.1" xmlns:svvli="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/0.1" xmlns:svvlr="https://skjema.atlas.vegvesen.no/r000/svvlinearereferanser/0.1" xmlns:svvpm="https://skjema.atlas.vegvesen.no/r000/svvpolyfacemesh/0.1" targetNamespace="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/0.1" elementFormDefault="qualified" version="0.1">
 	<import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+	<import namespace="https://skjema.atlas.vegvesen.no/r000/sosigenerelleegenskaper/0.1" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/SOSI_GenerelleEgenskaper.xsd"/>
 	<import namespace="https://skjema.atlas.vegvesen.no/r000/svvlinearereferanser/0.1" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/SVV_LineareReferanser.xsd"/>
 	<import namespace="https://skjema.atlas.vegvesen.no/r000/svvpolyfacemesh/0.1" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/SVV_PolyfaceMesh.xsd"/>
 	<!--XML Schema document created by ShapeChange - http://shapechange.net/-->
@@ -20,76 +21,6 @@
 		</sequence>
 		<attributeGroup ref="gml:AssociationAttributeGroup"/>
 		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
-	</complexType>
-	<element name="GenerelleEgenskaper" type="svvli:GenerelleEgenskaperType" substitutionGroup="gml:AbstractFeature">
-		<annotation>
-			<documentation>Abstrakt supertype med generelle egenskaper fra SOSI Del 1 og LandInfra</documentation>
-		</annotation>
-	</element>
-	<complexType name="GenerelleEgenskaperType">
-		<complexContent>
-			<extension base="gml:AbstractFeatureType">
-				<sequence>
-					<element name="identifikasjon" type="svvli:IdentifikasjonPropertyType" minOccurs="0">
-						<annotation>
-							<documentation>Bruker SOSI_Identifikasjon i stedet for LandInfra/ID</documentation>
-						</annotation>
-					</element>
-					<element name="navn" type="string" minOccurs="0">
-						<annotation>
-							<documentation>Tilsvarer LandInfra/AbstractData/name</documentation>
-						</annotation>
-					</element>
-					<element name="beskrivelse" type="string" minOccurs="0">
-						<annotation>
-							<documentation>Tilsvarer LandInfra/AbstractData/description</documentation>
-						</annotation>
-					</element>
-				</sequence>
-			</extension>
-		</complexContent>
-	</complexType>
-	<complexType name="GenerelleEgenskaperPropertyType">
-		<sequence minOccurs="0">
-			<element ref="svvli:GenerelleEgenskaper"/>
-		</sequence>
-		<attributeGroup ref="gml:AssociationAttributeGroup"/>
-		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
-	</complexType>
-	<element name="Identifikasjon" type="svvli:IdentifikasjonType" substitutionGroup="gml:AbstractObject">
-		<annotation>
-			<documentation>Identification: Unik identifikasjon av et objekt i et datasett, forvaltet av den ansvarlige produsent/forvalter, og kan benyttes av eksterne applikasjoner som stabil referanse til objektet. 
-Merknad 1: Denne objektidentifikasjonen må ikke forveksles med en tematisk objektidentifikasjon, slik som f.eks bygningsnummer. 
-Merknad 2: Denne unike identifikatoren vil ikke endres i løpet av objektets levetid, og ikke gjenbrukes i andre objekt.</documentation>
-		</annotation>
-	</element>
-	<complexType name="IdentifikasjonType">
-		<sequence>
-			<element name="lokalId" type="string" minOccurs="0">
-				<annotation>
-					<documentation>localId: lokal identifikator av et objekt
-Merknad: Det er dataleverendørens ansvar å sørge for at den lokale identifikatoren er unik innenfor navnerommet.
-lokalId skal være en UUID</documentation>
-				</annotation>
-			</element>
-			<element name="navnerom" type="string" minOccurs="0">
-				<annotation>
-					<documentation>namespace: navnerom som unikt identifiserer datakilden til et objekt, anbefales å være en http-URI
-Eksempel: http://data.geonorge.no/SentraltStedsnavnsregister/1.0
-Merknad : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og må være registrert i data.geonorge.no eller data.norge.no</documentation>
-				</annotation>
-			</element>
-			<element name="versjonId" type="string" minOccurs="0">
-				<annotation>
-					<documentation>versionId: identifikasjon av en spesiell versjon av et geografisk objekt (instans)</documentation>
-				</annotation>
-			</element>
-		</sequence>
-	</complexType>
-	<complexType name="IdentifikasjonPropertyType">
-		<sequence>
-			<element ref="svvli:Identifikasjon"/>
-		</sequence>
 	</complexType>
 	<element name="Percentage" type="svvli:PercentageType" substitutionGroup="gml:AbstractGML"/>
 	<complexType name="PercentageType">
@@ -167,10 +98,10 @@ Merknad : Verdien for nanverom vil eies av den dataprodusent som har ansvar for 
 		<attributeGroup ref="gml:AssociationAttributeGroup"/>
 		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
 	</complexType>
-	<element name="VU053Feature" type="svvli:VU053FeatureType" substitutionGroup="svvli:GenerelleEgenskaper"/>
+	<element name="VU053Feature" type="svvli:VU053FeatureType" substitutionGroup="svvge:SOSIFeature"/>
 	<complexType name="VU053FeatureType">
 		<complexContent>
-			<extension base="svvli:GenerelleEgenskaperType">
+			<extension base="svvge:SOSIFeatureType">
 				<sequence>
 					<element name="linearposisjon" type="svvlr:LineærPosisjonPropertyType" minOccurs="0" maxOccurs="unbounded"/>
 					<element name="spatialRepresentation" type="svvli:SpatialRepresentationTypePropertyType" minOccurs="0" maxOccurs="unbounded"/>
