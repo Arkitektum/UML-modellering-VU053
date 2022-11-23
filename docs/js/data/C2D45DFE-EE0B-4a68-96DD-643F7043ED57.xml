@@ -1,3 +1,3 @@
-tocTab[tocTab.length] = new Array("0.1.4:1", "", "LinearElement og Features", "EARoot/EA1/EA4/EA77.htm", "175.png", "1534", "0", "", "Logical diagram0","{8E3ED03B-CBED-4777-A30B-B3496FC59F67}");
-tocTab[tocTab.length] = new Array("0.1.4:2", "", "Sammenheng_SOSI_VU053", "EARoot/EA1/EA4/EA79.htm", "175.png", "1533", "0", "", "Logical diagram0","{B99D3DB4-5760-4781-A27E-9CF731894A35}");
+tocTab[tocTab.length] = new Array("0.1.4:1", "", "LinearElement og Features", "EARoot/EA1/EA4/EA77.htm", "175.png", "1635", "0", "", "Logical diagram0","{8E3ED03B-CBED-4777-A30B-B3496FC59F67}");
+tocTab[tocTab.length] = new Array("0.1.4:2", "", "Sammenheng_SOSI_VU053", "EARoot/EA1/EA4/EA79.htm", "175.png", "1634", "0", "", "Logical diagram0","{B99D3DB4-5760-4781-A27E-9CF731894A35}");
 tocTab[tocTab.length] = new Array("0.1.4.1", "1", "«ApplicationSchema» VU053 Nettverk og lineære referanser", "EARoot/EA1/EA4/EA1/EA95.htm", "4.png", "", "", "{1D21E858-DE75-4a38-97C1-6797205B9FFF}", "Package");

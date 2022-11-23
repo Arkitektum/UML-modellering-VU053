@@ -1,3 +1,3 @@
-tocTab[tocTab.length] = new Array("0.1.5.4:1", "", "WFS", "EARoot/EA1/EA5/EA4/EA173.htm", "175.png", "1556", "0", "", "Logical diagram0","{504EF123-0184-4fe4-87A5-64044A143DEF}");
-tocTab[tocTab.length] = new Array("0.1.5.4:2", "", "«featureType» FeatureCollection", "EARoot/EA1/EA5/EA4/EA176.htm", "5.png", "E8044", "0", "", "Class0","{6CC64ED0-66D4-4af5-AD43-7EA3FE31E904}");
-tocTab[tocTab.length] = new Array("0.1.5.4:3", "", "«featureType» member", "EARoot/EA1/EA5/EA4/EA177.htm", "5.png", "E8045", "0", "", "Class0","{94AE67B4-24E5-4c31-9416-5546AC24188D}");
+tocTab[tocTab.length] = new Array("0.1.5.4:1", "", "WFS", "EARoot/EA1/EA5/EA4/EA173.htm", "175.png", "1653", "0", "", "Logical diagram0","{504EF123-0184-4fe4-87A5-64044A143DEF}");
+tocTab[tocTab.length] = new Array("0.1.5.4:2", "", "«featureType» FeatureCollection", "EARoot/EA1/EA5/EA4/EA176.htm", "5.png", "E8581", "0", "", "Class0","{6CC64ED0-66D4-4af5-AD43-7EA3FE31E904}");
+tocTab[tocTab.length] = new Array("0.1.5.4:3", "", "«featureType» member", "EARoot/EA1/EA5/EA4/EA177.htm", "5.png", "E8582", "0", "", "Class0","{94AE67B4-24E5-4c31-9416-5546AC24188D}");
