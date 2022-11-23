@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="b6d27bc8-844f-42d3-94b0-9cbd53988798" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
+	<gml:metaDataDictionary>
+		<gml:GenericMetaData>
+			<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+			<status xsi:type="gml:StringOrRefType">Sendt inn</status>
+			<kilde xsi:type="gml:StringOrRefType">Håndboka/NVDB/SOSI</kilde>
+		</gml:GenericMetaData>
+	</gml:metaDataDictionary>
+	<gml:description>Angir skaderisiko.</gml:description>
+	<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Skaderisiko.xml">Skaderisiko</gml:identifier>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2196_6604">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:description>A</gml:description>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Skaderisiko.xml">A</gml:identifier>
+			<gml:name>5717</gml:name>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2196_6605">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:description>B</gml:description>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Skaderisiko.xml">B</gml:identifier>
+			<gml:name>5718</gml:name>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+</gml:Dictionary>

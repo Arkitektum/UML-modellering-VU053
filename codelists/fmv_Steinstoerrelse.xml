@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="d85ce547-6e11-4b21-820c-33e350da32d0" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
+	<gml:metaDataDictionary>
+		<gml:GenericMetaData>
+			<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+			<status xsi:type="gml:StringOrRefType">Sendt inn</status>
+			<kilde xsi:type="gml:StringOrRefType">Håndboka/NVDB/SOSI</kilde>
+		</gml:GenericMetaData>
+	</gml:metaDataDictionary>
+	<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Steinstoerrelse.xml">Steinstoerrelse</gml:identifier>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2408_7452">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Steinstoerrelse.xml">2</gml:identifier>
+			<gml:name>4134</gml:name>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2408_7453">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Steinstoerrelse.xml">4</gml:identifier>
+			<gml:name>4135</gml:name>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2408_7454">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Steinstoerrelse.xml">8</gml:identifier>
+			<gml:name>4136</gml:name>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2408_7455">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Steinstoerrelse.xml">11</gml:identifier>
+			<gml:name>4137</gml:name>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2408_7456">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Steinstoerrelse.xml">12</gml:identifier>
+			<gml:name>4138</gml:name>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2408_7457">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Steinstoerrelse.xml">14</gml:identifier>
+			<gml:name>4139</gml:name>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2408_7458">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Steinstoerrelse.xml">16</gml:identifier>
+			<gml:name>4140</gml:name>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2408_7459">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Steinstoerrelse.xml">22</gml:identifier>
+			<gml:name>4141</gml:name>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2408_7460">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Steinstoerrelse.xml">28</gml:identifier>
+			<gml:name>4142</gml:name>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2408_7461">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Steinstoerrelse.xml">32</gml:identifier>
+			<gml:name>4143</gml:name>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2408_7462">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Steinstoerrelse.xml">6</gml:identifier>
+			<gml:name>6726</gml:name>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+</gml:Dictionary>

@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="7d2440b7-c8b6-4b2f-87f7-833b4ea8305b" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
+	<gml:metaDataDictionary>
+		<gml:GenericMetaData>
+			<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+			<status xsi:type="gml:StringOrRefType">Sendt inn</status>
+			<kilde xsi:type="gml:StringOrRefType">Håndboka/NVDB/SOSI</kilde>
+		</gml:GenericMetaData>
+	</gml:metaDataDictionary>
+	<gml:description>Angir hvilken type rekkverk det er tale om</gml:description>
+	<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Rekkverkstype.xml">Rekkverkstype</gml:identifier>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2209_6637">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:description>Stålskinne m/trestolper</gml:description>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Rekkverkstype.xml">Stålskinne m/trestolper</gml:identifier>
+			<gml:name>13747</gml:name>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2209_6638">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:description>Stålskinne m/stålstolpler</gml:description>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Rekkverkstype.xml">Stålskinne m/stålstolpler</gml:identifier>
+			<gml:name>13746</gml:name>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2209_6639">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:description>Stålskinne m/sigma stålstolper</gml:description>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Rekkverkstype.xml">Stålskinne m/sigma stålstolper</gml:identifier>
+			<gml:name>13790</gml:name>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2209_6640">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:description>Stålskinne m/plaststolper</gml:description>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Rekkverkstype.xml">Stålskinne m/plaststolper</gml:identifier>
+			<gml:name>13745</gml:name>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2209_6641">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:description>Rekkverksskinne er festet på mur, vegg, skjerm, etc og ikke på egen stolper</gml:description>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Rekkverkstype.xml">Stålskinne festet på mur/vegg</gml:identifier>
+			<gml:name>13791</gml:name>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2209_6642">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:description>Betong, plasstøpt</gml:description>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Rekkverkstype.xml">Betong, plasstøpt</gml:identifier>
+			<gml:name>3366</gml:name>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2209_6643">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:description>Betong, prefabrikkert</gml:description>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Rekkverkstype.xml">Betong, prefabrikkert</gml:identifier>
+			<gml:name>3367</gml:name>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2209_6644">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:description>Betong, New Jersey</gml:description>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Rekkverkstype.xml">Betong, New Jersey</gml:identifier>
+			<gml:name>3368</gml:name>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2209_6645">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:description>Stålrør m/runde stålstolper</gml:description>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Rekkverkstype.xml">Stålrør m/runde stålstolper</gml:identifier>
+			<gml:name>13748</gml:name>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2209_6646">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:description>Stålrør m/sigma stålstolper</gml:description>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Rekkverkstype.xml">Stålrør m/sigma stålstolper</gml:identifier>
+			<gml:name>13749</gml:name>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2209_6647">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:description>Stålrør m/trestolper</gml:description>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Rekkverkstype.xml">Stålrør m/trestolper</gml:identifier>
+			<gml:name>13750</gml:name>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2209_6648">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:description>Wirerekkverk</gml:description>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Rekkverkstype.xml">Wirerekkverk</gml:identifier>
+			<gml:name>3371</gml:name>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2209_6649">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:description>Treskinne m/trestolper</gml:description>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Rekkverkstype.xml">Treskinne m/trestolper</gml:identifier>
+			<gml:name>13752</gml:name>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2209_6650">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:description>Treskinne m/stålstolper</gml:description>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Rekkverkstype.xml">Treskinne m/stålstolper</gml:identifier>
+			<gml:name>13751</gml:name>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2209_6651">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:description>Stabbesteiner</gml:description>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Rekkverkstype.xml">Stabbesteiner</gml:identifier>
+			<gml:name>3370</gml:name>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2209_6652">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:description>Brurekkverk, stål m/føringsskinne</gml:description>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Rekkverkstype.xml">Brurekkverk, stål m/føringsskinne</gml:identifier>
+			<gml:name>13743</gml:name>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2209_6653">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:description>Brurekkverk, stål u/føringsskinne</gml:description>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Rekkverkstype.xml">Brurekkverk, stål u/føringsskinne</gml:identifier>
+			<gml:name>13744</gml:name>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2209_6654">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:description>Brurekkverk, betong</gml:description>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Rekkverkstype.xml">Brurekkverk, betong</gml:identifier>
+			<gml:name>3467</gml:name>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2209_6655">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:description>Rekkverk som er dimensjonert for gående og syklende. Kan f.eks være for å hindre  utforkjørsel med sykkel. Benyttes ikke på/ved veger med biltrafikk</gml:description>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Rekkverkstype.xml">Rekkverk for gående/syklende</gml:identifier>
+			<gml:name>17305</gml:name>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+</gml:Dictionary>

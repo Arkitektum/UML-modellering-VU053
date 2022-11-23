@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="dcb12033-2ce1-430a-939e-4b256f49be2f" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
+	<gml:metaDataDictionary>
+		<gml:GenericMetaData>
+			<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+			<status xsi:type="gml:StringOrRefType">Sendt inn</status>
+			<kilde xsi:type="gml:StringOrRefType">Håndboka/NVDB/SOSI</kilde>
+		</gml:GenericMetaData>
+	</gml:metaDataDictionary>
+	<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Energiabsorpsjon.xml">Energiabsorpsjon</gml:identifier>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2215_6901">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Energiabsorpsjon.xml">energiabsorberende</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2215_6902">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Energiabsorpsjon.xml">ikkeEnergiabsorberende</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+</gml:Dictionary>

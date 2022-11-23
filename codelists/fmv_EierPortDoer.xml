@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="1ebcdd25-6a87-4acc-a65d-16a92bf43ad6" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
+	<gml:metaDataDictionary>
+		<gml:GenericMetaData>
+			<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+			<status xsi:type="gml:StringOrRefType">Sendt inn</status>
+			<kilde xsi:type="gml:StringOrRefType">Håndboka/NVDB/SOSI</kilde>
+		</gml:GenericMetaData>
+	</gml:metaDataDictionary>
+	<gml:description>Angir hvem som er eier av vegobjektet.</gml:description>
+	<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_EierPortDoer.xml">EierPortDoer</gml:identifier>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2433_7588">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:description>Stat, Statens vegvesen</gml:description>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_EierPortDoer.xml">Stat, Statens vegvesen</gml:identifier>
+			<gml:name>15922</gml:name>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2433_7589">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:description>Stat, Nye Veier</gml:description>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_EierPortDoer.xml">Stat, Nye Veier</gml:identifier>
+			<gml:name>18643</gml:name>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2433_7590">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:description>Fylkeskommune</gml:description>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_EierPortDoer.xml">Fylkeskommune</gml:identifier>
+			<gml:name>15923</gml:name>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2433_7591">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:description>Kommune</gml:description>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_EierPortDoer.xml">Kommune</gml:identifier>
+			<gml:name>15924</gml:name>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2433_7592">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:description>Privat</gml:description>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_EierPortDoer.xml">Privat</gml:identifier>
+			<gml:name>15925</gml:name>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2433_7593">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:description>Verdi benyttes inntil det er avklart hvem som er eier (ingen verdi tolkes som at vegeier er eier).</gml:description>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_EierPortDoer.xml">Uavklart</gml:identifier>
+			<gml:name>17625</gml:name>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+</gml:Dictionary>

@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="5994fbf9-2580-416b-873b-dd26c3609308" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
+	<gml:metaDataDictionary>
+		<gml:GenericMetaData>
+			<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+			<status xsi:type="gml:StringOrRefType">Sendt inn</status>
+			<kilde xsi:type="gml:StringOrRefType">Håndboka/NVDB/SOSI</kilde>
+		</gml:GenericMetaData>
+	</gml:metaDataDictionary>
+	<gml:description>Angir hvilken type vegobjektet er av.</gml:description>
+	<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_TypeVegbom.xml">TypeVegbom</gml:identifier>
+	<gml:name>1105</gml:name>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2463_7713">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:description>Heve-/senkebommer åpnes og lukkes ved å heve/senke vegbommen.  Heve-/senkebom kan sperre hele eller deler av vegbanen. Merknad: I tilfeller med heve-/senkebommer på begge side av vegen i samme snitt skal det registreres to forekomster av vegbom.</gml:description>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_TypeVegbom.xml">Heve-/senkebom</gml:identifier>
+			<gml:name>2498</gml:name>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2463_7714">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:description>Svingbommer åpnes og lukkes ved at de svinges til side.  Svingbommer kan sperre hele eller deler av vegbanen.</gml:description>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_TypeVegbom.xml">Svingbom</gml:identifier>
+			<gml:name>2501</gml:name>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2463_7715">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:description>En eller flere stolper, pullerter eller kjegler satt opp på rekke med innbyrdes avstand slik at veg sperres for biltrafikk. Kan være permanent, fjernes manuelt eller fjernes ved automatisk nedsenkning. Informasjon om dette angis under ET 3839 "Type åpning/lukking"</gml:description>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_TypeVegbom.xml">Stolpe/pullert/kjegle</gml:identifier>
+			<gml:name>5486</gml:name>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2463_7716">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:description>Disse vegbommene kan være sammensatt av en eller flere deler, f,eks som to parallellle sideforskyvde gelender/trafikkgjerder med passasje for myke trafikanter mellom. Denne type vegbom må normalt løftes til side eller demonteres for å åpne for biltrafik.</gml:description>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_TypeVegbom.xml">Rørgelender</gml:identifier>
+			<gml:name>5487</gml:name>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2463_7717">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:description>En eller flere steinblokker plassert på tvers av veg. Normalt mulig for myke trafikanter å passere</gml:description>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_TypeVegbom.xml">Steinblokk</gml:identifier>
+			<gml:name>5488</gml:name>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2463_7718">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:description>En eller flere New-Jersy/betongblokker plassert på tvers av veg. Normalt mulig for myke trafikanter å passere</gml:description>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_TypeVegbom.xml">New jersey</gml:identifier>
+			<gml:name>5489</gml:name>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="_2463_7719">
+			<gml:description></gml:description>
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<gml:description>Benyttes om vegbommerr/sperringer som ikke dekkes av de øvrige verdiene. Beskrivelse skal angis under tilleggsinformasjon</gml:description>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_TypeVegbom.xml">Annen type vegbom/sperring</gml:identifier>
+			<gml:name>5490</gml:name>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+</gml:Dictionary>
