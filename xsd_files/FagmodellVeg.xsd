@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:fmfel="https://skjema.atlas.vegvesen.no/r000/fagmodellfelles/0.1" xmlns:fmveg="https://skjema.atlas.vegvesen.no/r000/fagmodellveg/0.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:lv="https://skjema.atlas.vegvesen.no/r000/leveranse/0.1" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:svvli="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/0.1" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/fagmodellveg/0.1" version="0.1">
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:fmveg="https://skjema.atlas.vegvesen.no/r000/fagmodellveg/0.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:lv="https://skjema.atlas.vegvesen.no/r000/leveranse/0.1" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:svvli="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/0.1" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/fagmodellveg/0.1" version="0.1">
   <import namespace="http://www.interactive-instruments.de/ShapeChange/AppInfo" schemaLocation="http://shapechange.net/resources/schema/ShapeChangeAppinfo.xsd"/>
   <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
-  <import namespace="https://skjema.atlas.vegvesen.no/r000/fagmodellfelles/0.1" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/FagmodellFelles.xsd"/>
   <import namespace="https://skjema.atlas.vegvesen.no/r000/leveranse/0.1" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/Leveranse.xsd"/>
   <import namespace="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/0.1" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/SVV_Landinfra.xsd"/>
   <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
@@ -13,21 +12,24 @@
           <element minOccurs="0" name="nedreNominelleSteinstørrelse" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <sc:targetCodeListURI>http://skjema.geonorge.no/legg_inn_riktig_url</sc:targetCodeListURI>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Steinstoerrelse.xml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Steinstoerrelse.xml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
           <element minOccurs="0" name="øvreNominelleSteinstørrelse" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <sc:targetCodeListURI>http://skjema.geonorge.no/legg_inn_riktig_url</sc:targetCodeListURI>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Steinstoerrelse.xml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Steinstoerrelse.xml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
           <element minOccurs="0" name="bæretype" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <sc:targetCodeListURI>https://raw.githubusercontent.com/vegvesen/NVDB-Datakatalogen/master/GMLTypeBærelag</sc:targetCodeListURI>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Baerelagtype.xml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Baerelagtype.xml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -51,21 +53,24 @@
           <element minOccurs="0" name="bæretype" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <sc:targetCodeListURI>https://raw.githubusercontent.com/vegvesen/NVDB-Datakatalogen/master/GMLTypeBærelag</sc:targetCodeListURI>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Baerelagtype.xml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Baerlagtype.xml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
           <element minOccurs="0" name="øvreNominelleSteinstørrelse" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <sc:targetCodeListURI>http://skjema.geonorge.no/legg_inn_riktig_url</sc:targetCodeListURI>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Steinstoerrelse.xml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Steinstoerrelse.xml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
           <element minOccurs="0" name="nedreNominelleSteinstørrelse" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <sc:targetCodeListURI>http://skjema.geonorge.no/legg_inn_riktig_url</sc:targetCodeListURI>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Steinstoerrelse.xml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Steinstoerrelse.xml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -91,13 +96,15 @@
             <annotation>
               <appinfo>
                 <sc:targetCodeListURI>https://raw.githubusercontent.com/vegvesen/NVDB-Datakatalogen/master/GMLMassetype</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Massetype.xml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
           <element minOccurs="0" name="øvreNominelleSteinstørrelse" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <sc:targetCodeListURI>http://skjema.geonorge.no/legg_inn_riktig_url</sc:targetCodeListURI>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Steinstoerrelse.xml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Steinstoerrelse.xml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -177,12 +184,24 @@
       <extension base="lv:FagmodellType">
         <sequence>
           <element minOccurs="0" name="linje" type="gml:LineStringType"/>
-          <element maxOccurs="unbounded" minOccurs="0" name="veg">
+          <element maxOccurs="unbounded" minOccurs="0" name="vegElementSamling">
             <complexType>
               <complexContent>
                 <extension base="gml:AbstractFeatureMemberType">
                   <sequence minOccurs="0">
-                    <element ref="fmfel:Veg"/>
+                    <element ref="fmveg:VegElementSamling"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="vegElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmveg:VegElement"/>
                   </sequence>
                   <attributeGroup ref="gml:AssociationAttributeGroup"/>
                 </extension>
@@ -215,6 +234,7 @@
             <annotation>
               <appinfo>
                 <sc:targetCodeListURI>https://raw.githubusercontent.com/vegvesen/NVDB-Datakatalogen/master/GMLTypeFartsdemper</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_TypeFartsdemper.xml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -222,6 +242,7 @@
             <annotation>
               <appinfo>
                 <sc:targetCodeListURI>https://raw.githubusercontent.com/vegvesen/NVDB-Datakatalogen/master/GMLProfil</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Profil.xml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -229,6 +250,7 @@
             <annotation>
               <appinfo>
                 <sc:targetCodeListURI>https://raw.githubusercontent.com/jetgeo/NVDBGML/master/XSD/OLFV/V430MaterialeBelegning</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_MaterialBelegning.xml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -260,8 +282,8 @@
               <documentation>1104: Angir hvilken type vegobjektet er av</documentation>
               <appinfo>
                 <sc:targetCodeListURI>https://raw.githubusercontent.com/jetgeo/NVDBGML/master/XSD/OLFV/V430TypeFerist</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_TypeFerist.xml</defaultCodeSpace>
                 <sc:taggedValue tag="NVDB_ID">1104</sc:taggedValue>
-                <sc:taggedValue tag="SOSI_navn">NVDB_TYPE</sc:taggedValue>
               </appinfo>
             </annotation>
           </element>
@@ -270,8 +292,8 @@
               <documentation>1737: Angir om det er mulighet for passering for fotgjengere utenom ferist</documentation>
               <appinfo>
                 <sc:targetCodeListURI>https://raw.githubusercontent.com/jetgeo/NVDBGML/master/XSD/OLFV/V430Passering_Ved_Ferist</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_passeringVedFerist.xml</defaultCodeSpace>
                 <sc:taggedValue tag="NVDB_ID">1737</sc:taggedValue>
-                <sc:taggedValue tag="SOSI_navn">NVDB_PASSERING_VED_FERIST</sc:taggedValue>
               </appinfo>
             </annotation>
           </element>
@@ -280,8 +302,8 @@
               <documentation>4595: Angir hva som skal gjøres med ferist i forkant av vinter sesongen</documentation>
               <appinfo>
                 <sc:targetCodeListURI>https://raw.githubusercontent.com/vegvesen/NVDB-Datakatalogen/master/GMLVinterforberedelse</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Vinterforberedelse.xml</defaultCodeSpace>
                 <sc:taggedValue tag="NVDB_ID">4595</sc:taggedValue>
-                <sc:taggedValue tag="SOSI_navn">NVDB_VINTERFORBEREDELSE</sc:taggedValue>
               </appinfo>
             </annotation>
           </element>
@@ -304,7 +326,8 @@
           <element minOccurs="0" name="bruksklasse" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <sc:targetCodeListURI>http://skjema.geonorge.no/legg_inn_riktig_url</sc:targetCodeListURI>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Bruksklasse.xml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Bruksklasse.xml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -360,7 +383,8 @@
           <element minOccurs="0" name="forsterkningslag" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <sc:targetCodeListURI>http://skjema.geonorge.no/legg_inn_riktig_url</sc:targetCodeListURI>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Forsterkningstype.xml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Forsterkningstype.xml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -431,6 +455,7 @@
             <annotation>
               <appinfo>
                 <sc:targetCodeListURI>http://skjema.geonorge.no/legg_inn_riktig_url</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Fyllingtype.xml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -438,6 +463,7 @@
             <annotation>
               <appinfo>
                 <sc:targetCodeListURI>http://skjema.geonorge.no/legg_inn_riktig_url</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_FyllingMaterial.xml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -446,6 +472,7 @@
             <annotation>
               <appinfo>
                 <sc:targetCodeListURI>https://raw.githubusercontent.com/vegvesen/NVDB-Datakatalogen/master/GMLFyllingssåle</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Fyllingssaale.xml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -710,6 +737,7 @@
               <documentation>Angir primær materialtype for vegobjektet</documentation>
               <appinfo>
                 <sc:targetCodeListURI>https://raw.githubusercontent.com/jetgeo/NVDBGML/master/XSD/OLFV/V430TypePortDør</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_TypePortDoer.xml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -717,6 +745,7 @@
             <annotation>
               <appinfo>
                 <sc:targetCodeListURI>https://raw.githubusercontent.com/vegvesen/NVDB-Datakatalogen/master/GMLBranndør</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Branndoer.xml</defaultCodeSpace>
                 <sc:taggedValue tag="NVDB_ID">3509</sc:taggedValue>
               </appinfo>
             </annotation>
@@ -725,6 +754,7 @@
             <annotation>
               <appinfo>
                 <sc:targetCodeListURI>https://raw.githubusercontent.com/vegvesen/NVDB-Datakatalogen/master/GMLUtformingPortDør</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_UtformingPortDoer.xml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -733,6 +763,7 @@
               <documentation>Angir om det er innvendig belysning i leskur</documentation>
               <appinfo>
                 <sc:targetCodeListURI>https://raw.githubusercontent.com/jetgeo/NVDBGML/master/XSD/OLFV/V430BruksområdePortDør</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_BruksomraadePortDoer.xml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -755,13 +786,27 @@
           <element minOccurs="0" name="bruksområde" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <sc:targetCodeListURI>https://www.codelistURL.com</sc:targetCodeListURI>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">noko_URI</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Bruksomraade.xml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Bruksomraade.xml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
-          <element minOccurs="0" name="utforming" type="gml:CodeType"/>
-          <element minOccurs="0" name="material" type="gml:CodeType"/>
+          <element minOccurs="0" name="utforming" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_RabattUtforming.xml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_RabattUtforming.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="material" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Material.xml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Material.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
         </sequence>
       </extension>
     </complexContent>
@@ -859,6 +904,7 @@
             <annotation>
               <appinfo>
                 <sc:targetCodeListURI>https://raw.githubusercontent.com/vegvesen/NVDB-Datakatalogen/master/GMLBruksområdeSkjerm</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_BruksomraadeSkjerm.xml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -866,6 +912,7 @@
             <annotation>
               <appinfo>
                 <sc:targetCodeListURI>https://raw.githubusercontent.com/vegvesen/NVDB-Datakatalogen/master/GMLMaterialeSkjerm</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_MaterialeSkjerm.xml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -873,6 +920,7 @@
             <annotation>
               <appinfo>
                 <sc:targetCodeListURI>https://raw.githubusercontent.com/vegvesen/NVDB-Datakatalogen/master/GMLMaterialeSøyler</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_MaterialeSoeyler.xml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -880,6 +928,7 @@
             <annotation>
               <appinfo>
                 <sc:targetCodeListURI>https://raw.githubusercontent.com/vegvesen/NVDB-Datakatalogen/master/GMLFundamenteringPlassering</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_FundamenteringPlassering.xml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -887,6 +936,7 @@
             <annotation>
               <appinfo>
                 <sc:targetCodeListURI>https://raw.githubusercontent.com/vegvesen/NVDB-Datakatalogen/master/GMLTypeFundament</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_TypeFundament.xml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -952,7 +1002,8 @@
           <element minOccurs="0" name="øvreNominelleSteinstørrelse" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <sc:targetCodeListURI>http://skjema.geonorge.no/legg_inn_riktig_url</sc:targetCodeListURI>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Steinstoerrelse.xml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Steinstørrelse.xml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -960,6 +1011,7 @@
             <annotation>
               <appinfo>
                 <sc:targetCodeListURI>https://raw.githubusercontent.com/vegvesen/NVDB-Datakatalogen/master/GMLMassetype</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Massetype.xml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -1028,10 +1080,10 @@
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
-  <element name="VegElement" substitutionGroup="svvli:VU053PhysicalElement" type="fmveg:VegElementType"/>
+  <element name="VegElement" substitutionGroup="svvli:VU053Feature" type="fmveg:VegElementType"/>
   <complexType name="VegElementType">
     <complexContent>
-      <extension base="svvli:VU053PhysicalElementType">
+      <extension base="svvli:VU053FeatureType">
         <sequence>
           <element minOccurs="0" name="vegElementID" type="string"/>
         </sequence>
@@ -1129,6 +1181,7 @@
             <annotation>
               <appinfo>
                 <sc:targetCodeListURI>https://raw.githubusercontent.com/vegvesen/NVDB-Datakatalogen/master/GMLBruksområdeVegbom</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_BruksomraadeVegbom.xml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -1136,6 +1189,7 @@
             <annotation>
               <appinfo>
                 <sc:targetCodeListURI>https://raw.githubusercontent.com/vegvesen/NVDB-Datakatalogen/master/GMLTypeVegbom</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_TypeVegbom.xml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -1143,6 +1197,7 @@
             <annotation>
               <appinfo>
                 <sc:targetCodeListURI>https://raw.githubusercontent.com/vegvesen/NVDB-Datakatalogen/master/GMLMaterialtypeVegbom</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_MaterialtypeVegbom.xml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -1268,6 +1323,7 @@
         <annotation>
           <appinfo>
             <sc:targetCodeListURI>http://skjema.geonorge.no/legg_inn_riktig_url</sc:targetCodeListURI>
+            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_VegomraadeElementType.xml</defaultCodeSpace>
           </appinfo>
         </annotation>
       </element>
@@ -1276,6 +1332,7 @@
         <annotation>
           <appinfo>
             <sc:targetCodeListURI>http://skjema.geonorge.no/legg_inn_riktig_url</sc:targetCodeListURI>
+            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Side.xml</defaultCodeSpace>
           </appinfo>
         </annotation>
       </element>
