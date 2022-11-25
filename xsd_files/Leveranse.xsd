@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:fm="https://skjema.atlas.vegvesen.no/r000/fellesmoduler/0.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:lv="https://skjema.atlas.vegvesen.no/r000/leveranse/0.1" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:wfs="http://www.opengis.net/wfs/2.0" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/leveranse/0.1" version="0.1">
-  <import namespace="http://www.interactive-instruments.de/ShapeChange/AppInfo" schemaLocation="http://shapechange.net/resources/schema/ShapeChangeAppinfo.xsd"/>
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:fm="https://skjema.atlas.vegvesen.no/r000/fellesmoduler/0.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:lv="https://skjema.atlas.vegvesen.no/r000/leveranse/0.1" xmlns:svvli="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/0.1" xmlns:svvlr="https://skjema.atlas.vegvesen.no/r000/svvlinearereferanser/0.1" xmlns:wfs="http://www.opengis.net/wfs/2.0" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/leveranse/0.1" version="0.1">
   <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
   <import namespace="http://www.opengis.net/wfs/2.0" schemaLocation="http://schemas.opengis.net/wfs/2.0/wfs.xsd"/>
   <import namespace="https://skjema.atlas.vegvesen.no/r000/fellesmoduler/0.1" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/Fellesmoduler.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/0.1" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/SVV_Landinfra.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/svvlinearereferanser/0.1" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/SVV_LineareReferanser.xsd"/>
   <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
   <element name="Arkivar" substitutionGroup="lv:Godkjenningsprosess" type="lv:ArkivarType"/>
   <complexType name="ArkivarType">
@@ -153,13 +154,7 @@ Kan (bør?) valideres mot prosjektkrav om hvilket koordinatsystem som er "valgt"
     <complexContent>
       <extension base="lv:GodkjenningsprosessType">
         <sequence>
-          <element name="endring" type="gml:CodeType">
-            <annotation>
-              <appinfo>
-                <sc:targetCodeListURI>http://skjema.geonorge.no/legg_inn_riktig_url</sc:targetCodeListURI>
-              </appinfo>
-            </annotation>
-          </element>
+          <element name="endring" type="gml:CodeType"/>
         </sequence>
       </extension>
     </complexContent>
@@ -176,6 +171,18 @@ Kan (bør?) valideres mot prosjektkrav om hvilket koordinatsystem som er "valgt"
     <complexContent>
       <extension base="gml:AbstractFeatureType">
         <sequence>
+          <element minOccurs="0" name="veg">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="lv:Veg"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
           <element maxOccurs="unbounded" minOccurs="0" name="dokumentasjonskrav">
             <complexType>
               <complexContent>
@@ -219,27 +226,9 @@ Kan (bør?) valideres mot prosjektkrav om hvilket koordinatsystem som er "valgt"
     <complexContent>
       <extension base="gml:AbstractFeatureType">
         <sequence>
-          <element name="fullfoeringsstatus" type="gml:CodeType">
-            <annotation>
-              <appinfo>
-                <sc:targetCodeListURI>http://skjema.geonorge.no/legg_inn_riktig_url</sc:targetCodeListURI>
-              </appinfo>
-            </annotation>
-          </element>
-          <element name="oppgave" type="gml:CodeType">
-            <annotation>
-              <appinfo>
-                <sc:targetCodeListURI>http://skjema.geonorge.no/legg_inn_riktig_url</sc:targetCodeListURI>
-              </appinfo>
-            </annotation>
-          </element>
-          <element name="vekting" type="gml:CodeType">
-            <annotation>
-              <appinfo>
-                <sc:targetCodeListURI>http://skjema.geonorge.no/legg_inn_riktig_url</sc:targetCodeListURI>
-              </appinfo>
-            </annotation>
-          </element>
+          <element name="fullfoeringsstatus" type="gml:CodeType"/>
+          <element name="oppgave" type="gml:CodeType"/>
+          <element name="vekting" type="gml:CodeType"/>
         </sequence>
       </extension>
     </complexContent>
@@ -257,13 +246,7 @@ Kan (bør?) valideres mot prosjektkrav om hvilket koordinatsystem som er "valgt"
       <extension base="gml:AbstractFeatureType">
         <sequence>
           <element name="ansvar" type="fm:AnsvarPropertyType"/>
-          <element minOccurs="0" name="status" type="gml:CodeType">
-            <annotation>
-              <appinfo>
-                <sc:targetCodeListURI>http://skjema.geonorge.no/legg_inn_riktig_url</sc:targetCodeListURI>
-              </appinfo>
-            </annotation>
-          </element>
+          <element minOccurs="0" name="status" type="gml:CodeType"/>
         </sequence>
       </extension>
     </complexContent>
@@ -280,13 +263,7 @@ Kan (bør?) valideres mot prosjektkrav om hvilket koordinatsystem som er "valgt"
     <complexContent>
       <extension base="lv:GodkjenningsprosessType">
         <sequence>
-          <element name="godkjenningstype" type="gml:CodeType">
-            <annotation>
-              <appinfo>
-                <sc:targetCodeListURI>http://skjema.geonorge.no/legg_inn_riktig_url</sc:targetCodeListURI>
-              </appinfo>
-            </annotation>
-          </element>
+          <element name="godkjenningstype" type="gml:CodeType"/>
         </sequence>
       </extension>
     </complexContent>
@@ -331,13 +308,7 @@ Kan (bør?) valideres mot prosjektkrav om hvilket koordinatsystem som er "valgt"
     <complexContent>
       <extension base="lv:GodkjenningsprosessType">
         <sequence>
-          <element name="kontrolltype" type="gml:CodeType">
-            <annotation>
-              <appinfo>
-                <sc:targetCodeListURI>http://skjema.geonorge.no/legg_inn_riktig_url</sc:targetCodeListURI>
-              </appinfo>
-            </annotation>
-          </element>
+          <element name="kontrolltype" type="gml:CodeType"/>
         </sequence>
       </extension>
     </complexContent>
@@ -383,13 +354,7 @@ Kan (bør?) valideres mot prosjektkrav om hvilket koordinatsystem som er "valgt"
               </complexContent>
             </complexType>
           </element>
-          <element name="leveranse" type="gml:CodeType">
-            <annotation>
-              <appinfo>
-                <sc:targetCodeListURI>http://skjema.geonorge.no/legg_inn_riktig_url</sc:targetCodeListURI>
-              </appinfo>
-            </annotation>
-          </element>
+          <element name="leveranse" type="gml:CodeType"/>
         </sequence>
       </extension>
     </complexContent>
@@ -514,41 +479,11 @@ Kan (bør?) valideres mot prosjektkrav om hvilket koordinatsystem som er "valgt"
     <complexContent>
       <extension base="gml:AbstractFeatureType">
         <sequence>
-          <element name="dokumentasjonstype" type="gml:CodeType">
-            <annotation>
-              <appinfo>
-                <sc:targetCodeListURI>http://skjema.geonorge.no/svvDokumentasjonstype.xml</sc:targetCodeListURI>
-              </appinfo>
-            </annotation>
-          </element>
-          <element name="modeltype" type="gml:CodeType">
-            <annotation>
-              <appinfo>
-                <sc:targetCodeListURI>http://skjema.geonorge.no/Modelltype.xml</sc:targetCodeListURI>
-              </appinfo>
-            </annotation>
-          </element>
-          <element name="grunnlagmodelltype" type="gml:CodeType">
-            <annotation>
-              <appinfo>
-                <sc:targetCodeListURI>http://skjema.geonorge.no/svvGrunnlagsmodellType.xml</sc:targetCodeListURI>
-              </appinfo>
-            </annotation>
-          </element>
-          <element name="fagmodelltype" type="gml:CodeType">
-            <annotation>
-              <appinfo>
-                <sc:targetCodeListURI>http://skjema.geonorge.no/svvFagmodelltype.xml</sc:targetCodeListURI>
-              </appinfo>
-            </annotation>
-          </element>
-          <element name="prosjekttype" type="gml:CodeType">
-            <annotation>
-              <appinfo>
-                <sc:targetCodeListURI>http://skjema.geonorge.no/legg_inn_riktig_url</sc:targetCodeListURI>
-              </appinfo>
-            </annotation>
-          </element>
+          <element minOccurs="0" name="dokumentasjonstype" type="gml:CodeType"/>
+          <element minOccurs="0" name="modeltype" type="gml:CodeType"/>
+          <element minOccurs="0" name="grunnlagmodelltype" type="gml:CodeType"/>
+          <element minOccurs="0" name="fagmodelltype" type="gml:CodeType"/>
+          <element minOccurs="0" name="prosjekttype" type="gml:CodeType"/>
           <element name="fullføringsgrad">
             <complexType>
               <complexContent>
@@ -590,13 +525,7 @@ Kan (bør?) valideres mot prosjektkrav om hvilket koordinatsystem som er "valgt"
               </complexContent>
             </complexType>
           </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="fagmodeller" type="gml:CodeType">
-            <annotation>
-              <appinfo>
-                <sc:targetCodeListURI>http://skjema.geonorge.no/svvFagmodelltype.xml</sc:targetCodeListURI>
-              </appinfo>
-            </annotation>
-          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="fagmodeller" type="gml:CodeType"/>
           <element maxOccurs="unbounded" minOccurs="0" name="samordningsmodell">
             <complexType>
               <complexContent>
@@ -829,6 +758,36 @@ Kan (bør?) valideres mot prosjektkrav om hvilket koordinatsystem som er "valgt"
   <complexType name="TverrfagligmodellPropertyType">
     <sequence minOccurs="0">
       <element ref="lv:Tverrfagligmodell"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Veg" substitutionGroup="svvli:VU053Feature" type="lv:VegType"/>
+  <complexType name="VegType">
+    <complexContent>
+      <extension base="svvli:VU053FeatureType">
+        <sequence>
+          <element minOccurs="0" name="referanselinje">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="svvlr:LinearElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="lineearPosisjonStrekning" type="svvlr:LineærPosisjonStrekningPropertyType"/>
+          <element minOccurs="0" name="lineearPosisjonPunkt" type="svvlr:LineærPosisjonPunktPropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="VegPropertyType">
+    <sequence minOccurs="0">
+      <element ref="lv:Veg"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
