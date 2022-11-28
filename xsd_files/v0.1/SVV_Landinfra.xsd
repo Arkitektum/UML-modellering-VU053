@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:svvge="https://skjema.atlas.vegvesen.no/r000/sosigenerelleegenskaper/0.1" xmlns:svvli="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/0.1" xmlns:svvlr="https://skjema.atlas.vegvesen.no/r000/svvlinearereferanser/0.1" xmlns:svvpm="https://skjema.atlas.vegvesen.no/r000/svvpolyfacemesh/0.1" targetNamespace="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/0.1" elementFormDefault="qualified" version="0.1">
 	<import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
-	<import namespace="https://skjema.atlas.vegvesen.no/r000/sosigenerelleegenskaper/0.1" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/SOSI_GenerelleEgenskaper.xsd"/>
-	<import namespace="https://skjema.atlas.vegvesen.no/r000/svvlinearereferanser/0.1" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/SVV_LineareReferanser.xsd"/>
-	<import namespace="https://skjema.atlas.vegvesen.no/r000/svvpolyfacemesh/0.1" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/SVV_PolyfaceMesh.xsd"/>
+	<import namespace="https://skjema.atlas.vegvesen.no/r000/sosigenerelleegenskaper/0.1" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/v0.1/SOSI_GenerelleEgenskaper.xsd"/>
+	<import namespace="https://skjema.atlas.vegvesen.no/r000/svvlinearereferanser/0.1" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/v0.1/SVV_LineareReferanser.xsd"/>
+	<import namespace="https://skjema.atlas.vegvesen.no/r000/svvpolyfacemesh/0.1" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/v0.1/SVV_PolyfaceMesh.xsd"/>
 	<!--XML Schema document created by ShapeChange - http://shapechange.net/-->
 	<element name="DistanceExpression" type="svvli:DistanceExpressionType" substitutionGroup="gml:AbstractGML"/>
 	<complexType name="DistanceExpressionType">
