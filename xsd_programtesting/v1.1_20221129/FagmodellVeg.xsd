@@ -51,7 +51,7 @@
 					<element name="bæretype" type="gml:CodeType" minOccurs="0">
 						<annotation>
 							<appinfo>
-								<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Baerlagtype.xml</defaultCodeSpace>
+								<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Baerelagtype.xml</defaultCodeSpace>
 							</appinfo>
 						</annotation>
 					</element>
@@ -240,7 +240,7 @@
 					<element name="material" type="gml:CodeType" minOccurs="0">
 						<annotation>
 							<appinfo>
-								<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_MaterialBelegning.xml</defaultCodeSpace>
+								<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_MaterialeBelegning.xml</defaultCodeSpace>
 							</appinfo>
 						</annotation>
 					</element>
@@ -280,7 +280,7 @@
 						<annotation>
 							<documentation>1737: Angir om det er mulighet for passering for fotgjengere utenom ferist</documentation>
 							<appinfo>
-								<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_passeringVedFerist.xml</defaultCodeSpace>
+								<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_PasseringVedFerist.xml</defaultCodeSpace>
 								<sc:taggedValue tag="NVDB_ID">1737</sc:taggedValue>
 							</appinfo>
 						</annotation>
@@ -936,7 +936,7 @@
 					<element name="øvreNominelleSteinstørrelse" type="gml:CodeType" minOccurs="0">
 						<annotation>
 							<appinfo>
-								<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Steinstørrelse.xml</defaultCodeSpace>
+								<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmv_Steinstoerrelse.xml</defaultCodeSpace>
 							</appinfo>
 						</annotation>
 					</element>

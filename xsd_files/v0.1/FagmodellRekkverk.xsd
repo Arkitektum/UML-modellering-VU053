@@ -283,7 +283,7 @@
           <element minOccurs="0" name="produktnavnTypegodkjenning" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Produktnavngodkjenning.xml</defaultCodeSpace>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
