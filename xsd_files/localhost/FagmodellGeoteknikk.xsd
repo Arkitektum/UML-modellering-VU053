@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:fmget="https://skjema.atlas.vegvesen.no/r000/fagmodellgeoteknikk/0.1" xmlns:gml="http://www.opengis.net/gml/3.2" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/fagmodellgeoteknikk/0.1" version="0.1">
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="Avstiving" substitutionGroup="gml:AbstractObject" type="fmget:AvstivingType"/>
+  <complexType name="AvstivingType">
+    <choice>
+      <element name="forankringsstag">
+        <complexType>
+          <complexContent>
+            <extension base="gml:AbstractFeatureMemberType">
+              <sequence minOccurs="0">
+                <element ref="fmget:Forankringsstag"/>
+              </sequence>
+              <attributeGroup ref="gml:AssociationAttributeGroup"/>
+            </extension>
+          </complexContent>
+        </complexType>
+      </element>
+      <element name="innvendigAvstiving">
+        <complexType>
+          <complexContent>
+            <extension base="gml:AbstractFeatureMemberType">
+              <sequence minOccurs="0">
+                <element ref="fmget:InnvendigAvstiving"/>
+              </sequence>
+              <attributeGroup ref="gml:AssociationAttributeGroup"/>
+            </extension>
+          </complexContent>
+        </complexType>
+      </element>
+    </choice>
+  </complexType>
+  <complexType name="AvstivingPropertyType">
+    <sequence>
+      <element ref="fmget:Avstiving"/>
+    </sequence>
+  </complexType>
+  <element name="Bjelkestengsler" substitutionGroup="fmget:TiltakElement" type="fmget:BjelkestengslerType"/>
+  <complexType name="BjelkestengslerType">
+    <complexContent>
+      <extension base="fmget:TiltakElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BjelkestengslerPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Bjelkestengsler"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="BoredePeler" substitutionGroup="gml:AbstractFeature" type="fmget:BoredePelerType"/>
+  <complexType name="BoredePelerType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="boremetode" type="integer"/>
+          <element name="borkrone" type="integer"/>
+          <element name="innboringIBerg" type="integer"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BoredePelerPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:BoredePeler"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Elvebredder" substitutionGroup="fmget:Erosjonssikring" type="fmget:ElvebredderType"/>
+  <complexType name="ElvebredderType">
+    <complexContent>
+      <extension base="fmget:ErosjonssikringType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ElvebredderPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Elvebredder"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Erosjonssikring" substitutionGroup="fmget:TiltakElement" type="fmget:ErosjonssikringType"/>
+  <complexType name="ErosjonssikringType">
+    <complexContent>
+      <extension base="fmget:TiltakElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ErosjonssikringPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Erosjonssikring"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="FagmodellGeoteknikk" substitutionGroup="gml:AbstractFeature" type="fmget:FagmodellGeoteknikkType"/>
+  <complexType name="FagmodellGeoteknikkType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="FagmodellGeoteknikkPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:FagmodellGeoteknikk"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="FeatureType1" substitutionGroup="gml:AbstractFeature" type="fmget:FeatureType1Type"/>
+  <complexType name="FeatureType1Type">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="FeatureType1PropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:FeatureType1"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Forankringsstag" substitutionGroup="gml:AbstractFeature" type="fmget:ForankringsstagType"/>
+  <complexType name="ForankringsstagType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="stagtype" type="integer"/>
+          <element name="typeBorkrone" type="integer"/>
+          <element name="diameterBorkrone" type="integer"/>
+          <element name="forankringslengde" type="integer"/>
+          <element name="injeksjonslengde" type="integer"/>
+          <element name="frilengde" type="integer"/>
+          <element name="dimensjonerendeLevetid" type="integer"/>
+          <element name="dimensjonerendeKapasitet" type="integer"/>
+          <element name="prøvelast" type="integer"/>
+          <element name="låselast" type="integer"/>
+          <element name="avstiving" type="fmget:AvstivingPropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ForankringsstagPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Forankringsstag"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Gabioner" substitutionGroup="fmget:Stoettekonstruksjoner" type="fmget:GabionerType"/>
+  <complexType name="GabionerType">
+    <complexContent>
+      <extension base="fmget:StoettekonstruksjonerType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GabionerPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Gabioner"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="GeoteknikkElement" substitutionGroup="gml:AbstractFeature" type="fmget:GeoteknikkElementType"/>
+  <complexType name="GeoteknikkElementType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GeoteknikkElementPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:GeoteknikkElement"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="GeoteknikkElementSamling" substitutionGroup="gml:AbstractFeature" type="fmget:GeoteknikkElementSamlingType"/>
+  <complexType abstract="true" name="GeoteknikkElementSamlingType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GeoteknikkElementSamlingPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:GeoteknikkElementSamling"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="GraveplanerForByggegrop" substitutionGroup="fmget:TiltakElement" type="fmget:GraveplanerForByggegropType"/>
+  <complexType name="GraveplanerForByggegropType">
+    <complexContent>
+      <extension base="fmget:TiltakElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GraveplanerForByggegropPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:GraveplanerForByggegrop"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Grunnforsterkning" substitutionGroup="fmget:TiltakElement" type="fmget:GrunnforsterkningType"/>
+  <complexType name="GrunnforsterkningType">
+    <complexContent>
+      <extension base="fmget:TiltakElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GrunnforsterkningPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Grunnforsterkning"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Innstallasjonsmetode" substitutionGroup="gml:AbstractObject" type="fmget:InnstallasjonsmetodeType"/>
+  <complexType name="InnstallasjonsmetodeType">
+    <choice>
+      <element name="rammedePeler">
+        <complexType>
+          <complexContent>
+            <extension base="gml:AbstractFeatureMemberType">
+              <sequence minOccurs="0">
+                <element ref="fmget:RammedePeler"/>
+              </sequence>
+              <attributeGroup ref="gml:AssociationAttributeGroup"/>
+            </extension>
+          </complexContent>
+        </complexType>
+      </element>
+      <element name="boredePeler">
+        <complexType>
+          <complexContent>
+            <extension base="gml:AbstractFeatureMemberType">
+              <sequence minOccurs="0">
+                <element ref="fmget:BoredePeler"/>
+              </sequence>
+              <attributeGroup ref="gml:AssociationAttributeGroup"/>
+            </extension>
+          </complexContent>
+        </complexType>
+      </element>
+    </choice>
+  </complexType>
+  <complexType name="InnstallasjonsmetodePropertyType">
+    <sequence>
+      <element ref="fmget:Innstallasjonsmetode"/>
+    </sequence>
+  </complexType>
+  <element name="InnvendigAvstiving" substitutionGroup="gml:AbstractFeature" type="fmget:InnvendigAvstivingType"/>
+  <complexType name="InnvendigAvstivingType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="profiltype" type="integer"/>
+          <element name="dimensjon" type="integer"/>
+          <element name="stålkvalitet" type="integer"/>
+          <element name="lengde" type="integer"/>
+          <element name="dimensjonerendeLevetid" type="integer"/>
+          <element name="avstiving" type="fmget:AvstivingPropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="InnvendigAvstivingPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:InnvendigAvstiving"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Jetpeler" substitutionGroup="fmget:Grunnforsterkning" type="fmget:JetpelerType"/>
+  <complexType name="JetpelerType">
+    <complexContent>
+      <extension base="fmget:GrunnforsterkningType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="JetpelerPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Jetpeler"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="JordArmertmur" substitutionGroup="fmget:Stoettekonstruksjoner" type="fmget:JordArmertmurType"/>
+  <complexType name="JordArmertmurType">
+    <complexContent>
+      <extension base="fmget:StoettekonstruksjonerType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="JordArmertmurPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:JordArmertmur"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Jordnagling" substitutionGroup="fmget:Stoettekonstruksjoner" type="fmget:JordnaglingType"/>
+  <complexType name="JordnaglingType">
+    <complexContent>
+      <extension base="fmget:StoettekonstruksjonerType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="JordnaglingPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Jordnagling"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="KalkSemtpeler" substitutionGroup="fmget:Grunnforsterkning" type="fmget:KalkSemtpelerType"/>
+  <complexType name="KalkSemtpelerType">
+    <complexContent>
+      <extension base="fmget:GrunnforsterkningType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="KalkSemtpelerPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:KalkSemtpeler"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Lettfyllinger" substitutionGroup="fmget:TiltakElement" type="fmget:LettfyllingerType"/>
+  <complexType name="LettfyllingerType">
+    <complexContent>
+      <extension base="fmget:TiltakElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="LettfyllingerPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Lettfyllinger"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Masseutskifting" substitutionGroup="fmget:TiltakElement" type="fmget:MasseutskiftingType"/>
+  <complexType name="MasseutskiftingType">
+    <complexContent>
+      <extension base="fmget:TiltakElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="MasseutskiftingPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Masseutskifting"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Peler" substitutionGroup="fmget:TiltakElement" type="fmget:PelerType"/>
+  <complexType name="PelerType">
+    <complexContent>
+      <extension base="fmget:TiltakElementType">
+        <sequence>
+          <element name="type" type="gml:CodeType"/>
+          <element name="installasjonsmetode" type="integer"/>
+          <element name="dimensjon" type="integer"/>
+          <element name="lengde" type="double"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="PelerPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Peler"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="PermanentSpunt" substitutionGroup="fmget:Stoettekonstruksjoner" type="fmget:PermanentSpuntType"/>
+  <complexType name="PermanentSpuntType">
+    <complexContent>
+      <extension base="fmget:StoettekonstruksjonerType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="PermanentSpuntPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:PermanentSpunt"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="RammedePeler" substitutionGroup="gml:AbstractFeature" type="fmget:RammedePelerType"/>
+  <complexType name="RammedePelerType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="rammeenergi" type="integer"/>
+          <element name="stoppkriterium" type="integer"/>
+          <element name="innmeislingIBerg" type="integer"/>
+          <element name="etteramming" type="integer"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RammedePelerPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:RammedePeler"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Roervegger" substitutionGroup="fmget:Stoettekonstruksjoner" type="fmget:RoerveggerType"/>
+  <complexType name="RoerveggerType">
+    <complexContent>
+      <extension base="fmget:StoettekonstruksjonerType">
+        <sequence>
+          <element name="type" type="integer"/>
+          <element name="dimensjon" type="integer"/>
+          <element name="lengde" type="integer"/>
+          <element name="dimensjonerendeLevetid" type="integer"/>
+          <element name="avstiving" type="fmget:AvstivingPropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RoerveggerPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Roervegger"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="SkraaningenOgTerreng" substitutionGroup="fmget:Erosjonssikring" type="fmget:SkraaningenOgTerrengType"/>
+  <complexType name="SkraaningenOgTerrengType">
+    <complexContent>
+      <extension base="fmget:ErosjonssikringType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SkraaningenOgTerrengPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:SkraaningenOgTerreng"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Slissevegger" substitutionGroup="fmget:Stoettekonstruksjoner" type="fmget:SlisseveggerType"/>
+  <complexType name="SlisseveggerType">
+    <complexContent>
+      <extension base="fmget:StoettekonstruksjonerType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SlisseveggerPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Slissevegger"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Spunt" substitutionGroup="fmget:Stoettekonstruksjoner" type="fmget:SpuntType"/>
+  <complexType name="SpuntType">
+    <complexContent>
+      <extension base="fmget:StoettekonstruksjonerType">
+        <sequence>
+          <element name="spunttype" type="integer"/>
+          <element name="spuntlengde" type="integer"/>
+          <element name="fordyblingIBerg" type="integer"/>
+          <element name="korrosjonsbeskyttelse" type="integer"/>
+          <element name="dimensjonerendeLevetid" type="integer"/>
+          <element name="avstiving" type="fmget:AvstivingPropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SpuntPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Spunt"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Stoettekonstruksjoner" substitutionGroup="fmget:TiltakElement" type="fmget:StoettekonstruksjonerType"/>
+  <complexType name="StoettekonstruksjonerType">
+    <complexContent>
+      <extension base="fmget:TiltakElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="StoettekonstruksjonerPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Stoettekonstruksjoner"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Strandsoner" substitutionGroup="fmget:Erosjonssikring" type="fmget:StrandsonerType"/>
+  <complexType name="StrandsonerType">
+    <complexContent>
+      <extension base="fmget:ErosjonssikringType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="StrandsonerPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Strandsoner"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Tiltak" substitutionGroup="fmget:GeoteknikkElementSamling" type="fmget:TiltakType"/>
+  <complexType name="TiltakType">
+    <complexContent>
+      <extension base="fmget:GeoteknikkElementSamlingType">
+        <sequence>
+          <element name="geotekniskKategori" type="gml:CodeType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="tiltakElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmget:TiltakElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="TiltakPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Tiltak"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="TiltakElement" substitutionGroup="fmget:FagmodellGeoteknikk" type="fmget:TiltakElementType"/>
+  <complexType name="TiltakElementType">
+    <complexContent>
+      <extension base="fmget:FagmodellGeoteknikkType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="TiltakElementPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:TiltakElement"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Toerrmur" substitutionGroup="fmget:Stoettekonstruksjoner" type="fmget:ToerrmurType"/>
+  <complexType name="ToerrmurType">
+    <complexContent>
+      <extension base="fmget:StoettekonstruksjonerType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ToerrmurPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Toerrmur"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>

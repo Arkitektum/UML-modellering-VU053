@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:fmste="https://skjema.atlas.vegvesen.no/r000/fagmodellsteinsetting/0.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/fagmodellsteinsetting/0.1" version="0.1">
+  <import namespace="http://www.interactive-instruments.de/ShapeChange/AppInfo" schemaLocation="http://shapechange.net/resources/schema/ShapeChangeAppinfo.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="Kantstein" substitutionGroup="gml:AbstractFeature" type="fmste:KantsteinType">
+    <annotation>
+      <documentation>Stein som settes for å avgrense trafikkøyer, fortau, midtdeler, etc.(1)</documentation>
+      <appinfo>
+        <sc:taggedValue tag="NVDB_ID">9</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="KantsteinType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element minOccurs="0" name="kantsteinsprofil" type="gml:CodeType">
+            <annotation>
+              <documentation>1655: Angir hvordan tverrprofilet av kantsteinen er utformet (visflate).</documentation>
+              <appinfo>
+                <sc:taggedValue tag="NVDB_ID">1655</sc:taggedValue>
+                <sc:taggedValue tag="SOSI_navn">NVDB_KANTSTEINSPROFIL</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="materialtype" type="gml:CodeType">
+            <annotation>
+              <documentation>1092: Angir hvilken materialtype vegobjektet er av.</documentation>
+              <appinfo>
+                <sc:taggedValue tag="NVDB_ID">1092</sc:taggedValue>
+                <sc:taggedValue tag="SOSI_navn">NVDB_MATERIALTYPE</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="KantsteinPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmste:Kantstein"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="NedsenkaKantstein" substitutionGroup="gml:AbstractFeature" type="fmste:NedsenkaKantsteinType">
+    <annotation>
+      <documentation>Nedsenka kantstein er en del av kantsteinen som er senket. F.eks. i forbindelse med avkjørsler og gangfelt.</documentation>
+      <appinfo>
+        <sc:taggedValue tag="NVDB_ID">10</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="NedsenkaKantsteinType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="NedsenkaKantsteinPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmste:NedsenkaKantstein"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="TaktileIndikatorer" substitutionGroup="gml:AbstractFeature" type="fmste:TaktileIndikatorerType">
+    <annotation>
+      <documentation>Taktile indikatorer er standardiserte elementer som er lagt ned i gategrunn for å bidra til vegfinning for blinde og svaksynte. Kan bestå av retnings-, varsels- eller oppmerksomhetsindikator. For mer utfyllende informasjon, se HB V129 (278).</documentation>
+      <appinfo>
+        <sc:taggedValue tag="NVDB_ID">859</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="TaktileIndikatorerType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element minOccurs="0" name="bruksområde" type="gml:CodeType"/>
+          <element minOccurs="0" name="materiale" type="gml:CodeType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="TaktileIndikatorerPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmste:TaktileIndikatorer"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>

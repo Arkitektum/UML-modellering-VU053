@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:svvge="https://skjema.atlas.vegvesen.no/r000/sosigenerelleegenskaper/0.1" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/sosigenerelleegenskaper/0.1" version="0.1">
+  <annotation>
+    <documentation>Pakke med generelle egenskaper fra SOSI Del 1 Generelle Typer og LandInfra</documentation>
+  </annotation>
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="GenerelleEgenskaper" substitutionGroup="gml:AbstractFeature" type="svvge:GenerelleEgenskaperType">
+    <annotation>
+      <documentation>Abstrakt supertype med generelle egenskaper fra SOSI Del 1 og LandInfra</documentation>
+    </annotation>
+  </element>
+  <complexType name="GenerelleEgenskaperType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element minOccurs="0" name="identifikasjon" type="svvge:IdentifikasjonPropertyType">
+            <annotation>
+              <documentation>Bruker SOSI_Identifikasjon i stedet for LandInfra/ID</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="navn" type="string">
+            <annotation>
+              <documentation>Tilsvarer LandInfra/AbstractData/name</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="beskrivelse" type="string">
+            <annotation>
+              <documentation>Tilsvarer LandInfra/AbstractData/description</documentation>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GenerelleEgenskaperPropertyType">
+    <sequence minOccurs="0">
+      <element ref="svvge:GenerelleEgenskaper"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Identifikasjon" substitutionGroup="gml:AbstractObject" type="svvge:IdentifikasjonType">
+    <annotation>
+      <documentation>Identification: Unik identifikasjon av et objekt i et datasett, forvaltet av den ansvarlige produsent/forvalter, og kan benyttes av eksterne applikasjoner som stabil referanse til objektet. 
+Merknad 1: Denne objektidentifikasjonen må ikke forveksles med en tematisk objektidentifikasjon, slik som f.eks bygningsnummer. 
+Merknad 2: Denne unike identifikatoren vil ikke endres i løpet av objektets levetid, og ikke gjenbrukes i andre objekt.</documentation>
+    </annotation>
+  </element>
+  <complexType name="IdentifikasjonType">
+    <sequence>
+      <element minOccurs="0" name="lokalId" type="string">
+        <annotation>
+          <documentation>localId: lokal identifikator av et objekt
+Merknad: Det er dataleverendørens ansvar å sørge for at den lokale identifikatoren er unik innenfor navnerommet.
+lokalId skal være en UUID</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="navnerom" type="string">
+        <annotation>
+          <documentation>namespace: navnerom som unikt identifiserer datakilden til et objekt, anbefales å være en http-URI
+Eksempel: http://data.geonorge.no/SentraltStedsnavnsregister/1.0
+Merknad : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og må være registrert i data.geonorge.no eller data.norge.no</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="versjonId" type="string">
+        <annotation>
+          <documentation>versionId: identifikasjon av en spesiell versjon av et geografisk objekt (instans)</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="IdentifikasjonPropertyType">
+    <sequence>
+      <element ref="svvge:Identifikasjon"/>
+    </sequence>
+  </complexType>
+  <element abstract="true" name="SOSIFeature" substitutionGroup="svvge:GenerelleEgenskaper" type="svvge:SOSIFeatureType"/>
+  <complexType abstract="true" name="SOSIFeatureType">
+    <complexContent>
+      <extension base="svvge:GenerelleEgenskaperType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SOSIFeaturePropertyType">
+    <sequence minOccurs="0">
+      <element ref="svvge:SOSIFeature"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>
