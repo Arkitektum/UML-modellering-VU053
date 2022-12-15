@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Nettstasjon</title>
+<link href="../../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Nettstasjon </h1>
+			<!-- <img class="header_image" src="../../../../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../../../../EA3.htm">Vegprosjekt VU053 v0.1.2</a> / <a href="../../../../../EA432.htm">LeveranseVegprosjekt</a> / <a href="../../../../EA436.htm">Samordningsmodell</a> / <a href="../../../EA500.htm">Tverrfagligmodell</a> / <a href="../../EA974.htm">FagmodellVannOgAvloep</a> / <a href="../EA991.htm">Kopling</a> / <a href="EA1008.htm">Nettstasjon</a> / <a href="EA1006.htm">Nettstasjon</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<li><img src="../../../../../../../images/175.png" alt="Diagram"/> <a href="EA1006.htm">Nettstasjon</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA1009.htm">Avloepsrensing</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA1010.htm">Basseng</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA1011.htm">Fordroeyninsanlegg</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA1012.htm">Infiltrasjonsanlegg</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA1013.htm">Maalestasjon</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA1014.htm">Nettstasjon</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA1015.htm">Overloepstasjon</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA1017.htm">Pumpestasjon</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA1016.htm">Paaslippskum</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA1018.htm">Reduksjonskum</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA1019.htm">Ujevningsbasseng</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA1020.htm">Vannbehandling</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA1021.htm">Ventilkammer</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA1022.htm">Bassengtype</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA1023.htm">Overløpstasjonstype</a></li>
+</ul>
+
+					</td>
+					<td class="contentcell"><div class="PageBody">
+	<div class=diagram_image> 
+<img src="EA1007.png" usemap="#EA1007" border="0" />
+
+<MAP NAME="EA1007">
+<area shape="rect" coords="603,43,727,128" href="EA1022.htm" target="_self">
+<area shape="rect" coords="10,10,119,108" href="EA1023.htm" target="_self">
+<area shape="rect" coords="1702,203,1951,346" href="EA1021.htm" target="_self">
+<area shape="rect" coords="1278,406,1527,549" href="EA1019.htm" target="_self">
+<area shape="rect" coords="996,406,1245,549" href="EA1009.htm" target="_self">
+<area shape="rect" coords="705,406,954,549" href="EA1012.htm" target="_self">
+<area shape="rect" coords="434,406,683,549" href="EA1017.htm" target="_self">
+<area shape="rect" coords="154,401,403,557" href="EA1015.htm" target="_self">
+<area shape="rect" coords="1420,204,1669,347" href="EA1016.htm" target="_self">
+<area shape="rect" coords="1138,204,1387,360" href="EA1010.htm" target="_self">
+<area shape="rect" coords="856,204,1105,347" href="EA1011.htm" target="_self">
+<area shape="rect" coords="574,204,823,347" href="EA1020.htm" target="_self">
+<area shape="rect" coords="292,204,541,347" href="EA1013.htm" target="_self">
+<area shape="rect" coords="10,204,259,347" href="EA1018.htm" target="_self">
+<area shape="rect" coords="465,34,575,104" href="EA1014.htm" target="_self">
+<area shape="rect" coords="178,32,335,107" href="../EA993.htm" target="_self">
+</MAP>
+ </div>
+	<div class="ObjectTitle">Nettstasjon : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">12.10.2022 14:31:50</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">29.11.2022 13:20:32</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">MatiasGonzalezTognoni</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{437C7135-6BAB-42df-A7ED-1799C862EFB4}</td>
+		</tr>
+	</table>
+	
+</div>
+
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

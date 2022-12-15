@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:fm="https://skjema.atlas.vegvesen.no/r000/fellesmoduler/0.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" targetNamespace="https://skjema.atlas.vegvesen.no/r000/fellesmoduler/0.1" elementFormDefault="qualified" version="0.1">
+	<import namespace="http://www.interactive-instruments.de/ShapeChange/AppInfo" schemaLocation="http://shapechange.net/resources/schema/ShapeChangeAppinfo.xsd"/>
+	<import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+	<!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+	<element name="Aktoer" type="fm:AktoerType" substitutionGroup="gml:AbstractFeature"/>
+	<complexType name="AktoerType">
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="part" type="gml:CodeType">
+						<annotation>
+							<appinfo>
+								<sc:targetCodeListURI>http://skjema.geonorge.no/legg_inn_riktig_url</sc:targetCodeListURI>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="organisasjonnavn" type="string"/>
+					<element name="personRolle" type="fm:PersonRollePropertyType" maxOccurs="unbounded"/>
+					<element name="person" type="fm:PersonPropertyType"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="AktoerPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fm:Aktoer"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="AktoerRolleKlasse" type="fm:AktoerRolleKlasseType" substitutionGroup="gml:AbstractObject"/>
+	<complexType name="AktoerRolleKlasseType">
+		<choice>
+			<element name="rolle" type="gml:CodeType">
+				<annotation>
+					<appinfo>
+						<sc:targetCodeListURI>http://skjema.geonorge.no/legg_inn_riktig_url</sc:targetCodeListURI>
+					</appinfo>
+				</annotation>
+			</element>
+			<element name="fagressus" type="gml:CodeType">
+				<annotation>
+					<appinfo>
+						<sc:targetCodeListURI>http://skjema.geonorge.no/legg_inn_riktig_url</sc:targetCodeListURI>
+					</appinfo>
+				</annotation>
+			</element>
+		</choice>
+	</complexType>
+	<complexType name="AktoerRolleKlassePropertyType">
+		<sequence>
+			<element ref="fm:AktoerRolleKlasse"/>
+		</sequence>
+	</complexType>
+	<element name="Ansvar" type="fm:AnsvarType" substitutionGroup="gml:AbstractObject"/>
+	<complexType name="AnsvarType">
+		<choice>
+			<element name="aktoer">
+				<complexType>
+					<complexContent>
+						<extension base="gml:AbstractFeatureMemberType">
+							<sequence minOccurs="0">
+								<element ref="fm:Aktoer"/>
+							</sequence>
+							<attributeGroup ref="gml:AssociationAttributeGroup"/>
+						</extension>
+					</complexContent>
+				</complexType>
+			</element>
+			<element name="Appdragsgiver">
+				<complexType>
+					<complexContent>
+						<extension base="gml:AbstractFeatureMemberType">
+							<sequence minOccurs="0">
+								<element ref="fm:Oppdragsgiver"/>
+							</sequence>
+							<attributeGroup ref="gml:AssociationAttributeGroup"/>
+						</extension>
+					</complexContent>
+				</complexType>
+			</element>
+		</choice>
+	</complexType>
+	<complexType name="AnsvarPropertyType">
+		<sequence>
+			<element ref="fm:Ansvar"/>
+		</sequence>
+	</complexType>
+	<element name="Bestillingstype" type="fm:BestillingstypeType" substitutionGroup="gml:AbstractObject"/>
+	<complexType name="BestillingstypeType">
+		<sequence>
+			<element name="kontraktsform" type="gml:CodeType">
+				<annotation>
+					<appinfo>
+						<sc:targetCodeListURI>http://skjema.geonorge.no/legg_inn_riktig_url</sc:targetCodeListURI>
+					</appinfo>
+				</annotation>
+			</element>
+			<element name="konkurransegrunnlagsmal" type="gml:CodeType">
+				<annotation>
+					<appinfo>
+						<sc:targetCodeListURI>http://skjema.geonorge.no/legg_inn_riktig_url</sc:targetCodeListURI>
+					</appinfo>
+				</annotation>
+			</element>
+			<element name="konkurranseform" type="gml:CodeType">
+				<annotation>
+					<appinfo>
+						<sc:targetCodeListURI>http://skjema.geonorge.no/legg_inn_riktig_url</sc:targetCodeListURI>
+					</appinfo>
+				</annotation>
+			</element>
+		</sequence>
+	</complexType>
+	<complexType name="BestillingstypePropertyType">
+		<sequence>
+			<element ref="fm:Bestillingstype"/>
+		</sequence>
+	</complexType>
+	<element name="FellesmodulElement" type="fm:FellesmodulElementType" substitutionGroup="gml:AbstractFeature"/>
+	<complexType name="FellesmodulElementType">
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="beskrivelse" type="string"/>
+					<element name="navn" type="string"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="FellesmodulElementPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fm:FellesmodulElement"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Koordinatsystem" type="fm:KoordinatsystemType" substitutionGroup="gml:AbstractObject"/>
+	<complexType name="KoordinatsystemType">
+		<sequence>
+			<element name="syskode" type="gml:CodeType">
+				<annotation>
+					<appinfo>
+						<sc:targetCodeListURI>https://register.geonorge.no/epsg-koder</sc:targetCodeListURI>
+					</appinfo>
+				</annotation>
+			</element>
+			<element name="datum" type="string" minOccurs="0"/>
+			<element name="projeksjon" type="string" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="KoordinatsystemPropertyType">
+		<sequence>
+			<element ref="fm:Koordinatsystem"/>
+		</sequence>
+	</complexType>
+	<element name="Oppdragsgiver" type="fm:OppdragsgiverType" substitutionGroup="gml:AbstractFeature"/>
+	<complexType name="OppdragsgiverType">
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="rolle" type="gml:CodeType">
+						<annotation>
+							<appinfo>
+								<sc:targetCodeListURI>http://skjema.geonorge.no/legg_inn_riktig_url</sc:targetCodeListURI>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="organisasjonnavn" type="string"/>
+					<element name="person" type="fm:PersonPropertyType"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="OppdragsgiverPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fm:Oppdragsgiver"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Part" type="fm:PartType" substitutionGroup="gml:AbstractObject"/>
+	<complexType name="PartType">
+		<choice>
+			<element name="oppdragsgiver" type="gml:CodeType">
+				<annotation>
+					<appinfo>
+						<sc:targetCodeListURI>http://skjema.geonorge.no/legg_inn_riktig_url</sc:targetCodeListURI>
+					</appinfo>
+				</annotation>
+			</element>
+			<element name="raadgiver" type="gml:CodeType">
+				<annotation>
+					<appinfo>
+						<sc:targetCodeListURI>http://skjema.geonorge.no/legg_inn_riktig_url</sc:targetCodeListURI>
+					</appinfo>
+				</annotation>
+			</element>
+			<element name="entreprenoer" type="gml:CodeType">
+				<annotation>
+					<appinfo>
+						<sc:targetCodeListURI>http://skjema.geonorge.no/legg_inn_riktig_url</sc:targetCodeListURI>
+					</appinfo>
+				</annotation>
+			</element>
+			<element name="generisk" type="gml:CodeType">
+				<annotation>
+					<appinfo>
+						<sc:targetCodeListURI>http://skjema.geonorge.no/legg_inn_riktig_url</sc:targetCodeListURI>
+					</appinfo>
+				</annotation>
+			</element>
+		</choice>
+	</complexType>
+	<complexType name="PartPropertyType">
+		<sequence>
+			<element ref="fm:Part"/>
+		</sequence>
+	</complexType>
+	<element name="Person" type="fm:PersonType" substitutionGroup="gml:AbstractObject"/>
+	<complexType name="PersonType">
+		<sequence>
+			<element name="navn" type="string"/>
+			<element name="tel" type="integer"/>
+			<element name="e_post" type="integer"/>
+		</sequence>
+	</complexType>
+	<complexType name="PersonPropertyType">
+		<sequence>
+			<element ref="fm:Person"/>
+		</sequence>
+	</complexType>
+	<element name="PersonRolle" type="fm:PersonRolleType" substitutionGroup="gml:AbstractObject"/>
+	<complexType name="PersonRolleType">
+		<sequence>
+			<element name="rolle" type="fm:AktoerRolleKlassePropertyType"/>
+		</sequence>
+	</complexType>
+	<complexType name="PersonRollePropertyType">
+		<sequence>
+			<element ref="fm:PersonRolle"/>
+		</sequence>
+	</complexType>
+	<element name="ProsjektOrganisasjon" type="fm:ProsjektOrganisasjonType" substitutionGroup="gml:AbstractFeature"/>
+	<complexType name="ProsjektOrganisasjonType">
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="prosjektId" type="string"/>
+					<element name="prosjekttype" type="gml:CodeType">
+						<annotation>
+							<appinfo>
+								<sc:targetCodeListURI>http://skjema.geonorge.no/legg_inn_riktig_url</sc:targetCodeListURI>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="prosjektNavn" type="fm:ProsjektnavnStandardPropertyType"/>
+					<element name="fasestatus" type="gml:CodeType">
+						<annotation>
+							<appinfo>
+								<sc:targetCodeListURI>http://skjema.geonorge.no/legg_inn_riktig_url</sc:targetCodeListURI>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="roller" type="string"/>
+					<element name="bestillingstype" type="fm:BestillingstypePropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<element name="aktør" minOccurs="0" maxOccurs="unbounded">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="fm:Aktoer"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+					<element name="oppdragsgiver">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="fm:Oppdragsgiver"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="ProsjektOrganisasjonPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fm:ProsjektOrganisasjon"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="ProsjektnavnStandard" type="fm:ProsjektnavnStandardType" substitutionGroup="gml:AbstractObject"/>
+	<complexType name="ProsjektnavnStandardType">
+		<sequence>
+			<element name="vegnummer" type="gml:CodeType">
+				<annotation>
+					<appinfo>
+						<sc:targetCodeListURI>http://skjema.geonorge.no/legg_inn_riktig_url</sc:targetCodeListURI>
+					</appinfo>
+				</annotation>
+			</element>
+			<element name="startSted" type="string"/>
+			<element name="endSted" type="string"/>
+		</sequence>
+	</complexType>
+	<complexType name="ProsjektnavnStandardPropertyType">
+		<sequence>
+			<element ref="fm:ProsjektnavnStandard"/>
+		</sequence>
+	</complexType>
+	<element name="Prosjektomraade" type="fm:ProsjektomraadeType" substitutionGroup="gml:AbstractFeature"/>
+	<complexType name="ProsjektomraadeType">
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="prosjektomraade" type="gml:PolygonType"/>
+					<element name="inngrepssone" type="gml:PolygonType"/>
+					<element name="visualiseringssone" type="gml:PolygonType"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="ProsjektomraadePropertyType">
+		<sequence minOccurs="0">
+			<element ref="fm:Prosjektomraade"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Vegprosjekt" type="fm:VegprosjektType" substitutionGroup="gml:AbstractFeature"/>
+	<complexType name="VegprosjektType">
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="prosjektområde">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="fm:Prosjektomraade"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+					<element name="prosjektorganisasjon" minOccurs="0" maxOccurs="unbounded">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="fm:ProsjektOrganisasjon"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+					<element name="koordinatsystem" type="fm:KoordinatsystemPropertyType"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="VegprosjektPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fm:Vegprosjekt"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+</schema>

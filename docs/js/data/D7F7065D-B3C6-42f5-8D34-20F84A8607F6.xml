@@ -1,4 +1,4 @@
-tocTab[tocTab.length] = new Array("0.4.1.2.10.1.4:1", "", "Vegkropp Oversiktsdiagram", "EARoot/EA4/EA1/EA2/EA10/EA1/EA4/EA1058.htm", "175.png", "2071", "0", "", "Logical diagram0","{8E8D34D2-506D-40c6-A322-095AF89DEE94}");
-tocTab[tocTab.length] = new Array("0.4.1.2.10.1.4:2", "", "«featureType» VegkroppElement", "EARoot/EA4/EA1/EA2/EA10/EA1/EA4/EA1063.htm", "5.png", "E11681", "0", "", "Class0","{A3974C51-7BA8-4338-B943-2443CD88A156}");
-tocTab[tocTab.length] = new Array("0.4.1.2.10.1.4.1", "1", "Overbygning", "EARoot/EA4/EA1/EA2/EA10/EA1/EA4/EA1/EA1068.htm", "4.png", "", "", "{C9997928-4294-459b-ACE9-1A37B02FE54B}", "Package");
-tocTab[tocTab.length] = new Array("0.4.1.2.10.1.4.2", "1", "Underbygning", "EARoot/EA4/EA1/EA2/EA10/EA1/EA4/EA2/EA1086.htm", "4.png", "", "", "{67FF2E38-AF90-45e6-8DF5-B2C90AB24A99}", "Package");
+tocTab[tocTab.length] = new Array("0.4.1.2.12.1.4:1", "", "Vegkropp Oversiktsdiagram", "EARoot/EA4/EA1/EA2/EA12/EA1/EA4/EA1162.htm", "175.png", "2519", "0", "", "Logical diagram0","{8E8D34D2-506D-40c6-A322-095AF89DEE94}");
+tocTab[tocTab.length] = new Array("0.4.1.2.12.1.4:2", "", "«featureType» VegkroppElement", "EARoot/EA4/EA1/EA2/EA12/EA1/EA4/EA1167.htm", "5.png", "E14352", "0", "", "Class0","{A3974C51-7BA8-4338-B943-2443CD88A156}");
+tocTab[tocTab.length] = new Array("0.4.1.2.12.1.4.1", "1", "Overbygning", "EARoot/EA4/EA1/EA2/EA12/EA1/EA4/EA1/EA1172.htm", "4.png", "", "", "{C9997928-4294-459b-ACE9-1A37B02FE54B}", "Package");
+tocTab[tocTab.length] = new Array("0.4.1.2.12.1.4.2", "1", "Underbygning", "EARoot/EA4/EA1/EA2/EA12/EA1/EA4/EA2/EA1190.htm", "4.png", "", "", "{67FF2E38-AF90-45e6-8DF5-B2C90AB24A99}", "Package");
