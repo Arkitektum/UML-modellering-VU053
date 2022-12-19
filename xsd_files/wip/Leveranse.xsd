@@ -636,9 +636,9 @@ Kan (bør?) valideres mot prosjektkrav om hvilket koordinatsystem som er "valgt"
     <complexContent>
       <extension base="gml:AbstractFeatureType">
         <sequence>
-          <element name="prosjektomraade" type="gml:PolygonPropertyType"/>
-          <element name="inngrepssone" type="gml:PolygonPropertyType"/>
-          <element name="visualiseringssone" type="gml:PolygonPropertyType"/>
+          <element name="prosjektomraade" type="gml:PolygonType"/>
+          <element name="inngrepssone" type="gml:PolygonType"/>
+          <element name="visualiseringssone" type="gml:PolygonType"/>
         </sequence>
       </extension>
     </complexContent>
