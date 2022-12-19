@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:fmrek="https://skjema.atlas.vegvesen.no/r000/fagmodellrekkverk/0.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:lv="https://skjema.atlas.vegvesen.no/r000/leveranse/0.1" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:svvli="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/0.1" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/fagmodellrekkverk/0.1" version="0.1">
+  <import namespace="http://www.interactive-instruments.de/ShapeChange/AppInfo" schemaLocation="http://shapechange.net/resources/schema/ShapeChangeAppinfo.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/leveranse/0.1" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/wip/Leveranse.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/0.1" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/wip/SVV_Landinfra.xsd"/>
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="BruRekkverk" substitutionGroup="fmrek:RekkverkElement" type="fmrek:BruRekkverkType"/>
+  <complexType name="BruRekkverkType">
+    <complexContent>
+      <extension base="fmrek:RekkverkElementType">
+        <sequence>
+          <element minOccurs="0" name="plassering" type="fmrek:PlasseringPaaBruType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_PlasseringPaaBru.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="håndlist" type="boolean"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BruRekkverkPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmrek:BruRekkverk"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="FagmodellRekkverk" substitutionGroup="lv:Fagmodell" type="fmrek:FagmodellRekkverkType"/>
+  <complexType name="FagmodellRekkverkType">
+    <complexContent>
+      <extension base="lv:FagmodellType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="rekkverkElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmrek:FagmodellRekkverkElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element name="rekkverkElementSamling">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmrek:RekkverkElementSamling"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="FagmodellRekkverkPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmrek:FagmodellRekkverk"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="FagmodellRekkverkElement" substitutionGroup="svvli:VU053PhysicalElement" type="fmrek:FagmodellRekkverkElementType"/>
+  <complexType name="FagmodellRekkverkElementType">
+    <complexContent>
+      <extension base="svvli:VU053PhysicalElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="FagmodellRekkverkElementPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmrek:FagmodellRekkverkElement"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Overgang" substitutionGroup="fmrek:RekkverkElement" type="fmrek:OvergangType"/>
+  <complexType name="OvergangType">
+    <complexContent>
+      <extension base="fmrek:RekkverkElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="OvergangPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmrek:Overgang"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <simpleType name="PlasseringPaaBruType">
+    <annotation>
+      <documentation>Angir hvor på brua rekkverket er plassert</documentation>
+      <appinfo>
+        <sc:taggedValue tag="NVDB_ID">4665</sc:taggedValue>
+        <sc:taggedValue tag="NVDB_ID">4665</sc:taggedValue>
+        <sc:taggedValue tag="SOSI_navn">NVDB_PLASSERINGPÅBRU</sc:taggedValue>
+      </appinfo>
+    </annotation>
+    <union memberTypes="fmrek:PlasseringPaaBruEnumerationType fmrek:PlasseringPaaBruOtherType"/>
+  </simpleType>
+  <simpleType name="PlasseringPaaBruEnumerationType">
+    <annotation>
+      <documentation>Angir hvor på brua rekkverket er plassert</documentation>
+      <appinfo>
+        <sc:taggedValue tag="NVDB_ID">4665</sc:taggedValue>
+        <sc:taggedValue tag="NVDB_ID">4665</sc:taggedValue>
+        <sc:taggedValue tag="SOSI_navn">NVDB_PLASSERINGPÅBRU</sc:taggedValue>
+      </appinfo>
+    </annotation>
+    <restriction base="string">
+      <enumeration value="5728">
+        <annotation>
+          <documentation>Rekkverk på bru som er plassert langs bruas ytterkant (se figur 1.4 i Rekkverksnormal). Kilde: Rekkverksnormal.</documentation>
+          <appinfo>
+            <sc:taggedValue tag="NVDB_ID">5728</sc:taggedValue>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="5729">
+        <annotation>
+          <documentation>Rekkverk på bru som benyttes innenfor bruas ytterkanter med trafikk på en eller begge sider (se figur 1.4). Rekkverket kan f.eks. benyttes som:  rekkverk mellom kjørebaner, rekkverk mellom kjørebane og g/s veg eller som rekkverk mellom kjørebane og sikkerhetsrom for motorvegbruer.  Kilde: Rekkverksnormal.</documentation>
+          <appinfo>
+            <sc:taggedValue tag="NVDB_ID">5729</sc:taggedValue>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <simpleType name="PlasseringPaaBruOtherType">
+    <restriction base="string">
+      <pattern value="other: \w{2,}"/>
+    </restriction>
+  </simpleType>
+  <element name="Rekkverk" substitutionGroup="fmrek:RekkverkElementSamling" type="fmrek:RekkverkType">
+    <annotation>
+      <appinfo>
+        <sc:taggedValue tag="NVDB_ID">5</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="RekkverkType">
+    <complexContent>
+      <extension base="fmrek:RekkverkElementSamlingType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="rekverkElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmrek:RekkverkElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RekkverkPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmrek:Rekkverk"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="RekkverkElement" substitutionGroup="fmrek:FagmodellRekkverkElement" type="fmrek:RekkverkElementType"/>
+  <complexType abstract="true" name="RekkverkElementType">
+    <complexContent>
+      <extension base="fmrek:FagmodellRekkverkElementType">
+        <sequence>
+          <element name="stolpeavstand" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Stolpeavstand.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="lengde" type="double"/>
+          <element minOccurs="0" name="høyde" type="double"/>
+          <element name="rekkverktype" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Rekkverkstype.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="sikkerhetavstand" type="double"/>
+          <element name="bruksområde" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Bruksomraade.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="produktnavnTypegodkjenning" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="etableringsår" type="dateTime"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RekkverkElementPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmrek:RekkverkElement"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="RekkverkElementSamling" substitutionGroup="gml:AbstractFeature" type="fmrek:RekkverkElementSamlingType"/>
+  <complexType name="RekkverkElementSamlingType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RekkverkElementSamlingPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmrek:RekkverkElementSamling"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Rekkverksende" substitutionGroup="fmrek:RekkverkElementSamling" type="fmrek:RekkverksendeType"/>
+  <complexType name="RekkverksendeType">
+    <complexContent>
+      <extension base="fmrek:RekkverkElementSamlingType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="rekkverksendeElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmrek:RekkverksendeElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RekkverksendePropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmrek:Rekkverksende"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="RekkverksendeElement" substitutionGroup="fmrek:FagmodellRekkverkElement" type="fmrek:RekkverksendeElementType"/>
+  <complexType name="RekkverksendeElementType">
+    <complexContent>
+      <extension base="fmrek:FagmodellRekkverkElementType">
+        <sequence>
+          <element name="type" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_TypeRekkverksende.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="etableringsår" type="dateTime"/>
+          <element minOccurs="0" name="produktnavnTypegodkjenning" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="sikkerhetsklasse" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_SikkerhetsklasseType.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="energiabsorpsjon" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Energiabsorpsjon.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="bevegelsesklasse" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Bevegelsesklasse.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="skaderisiko" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Skaderisiko.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="utbøyningsklasse" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Utboeyningsklasse.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RekkverksendeElementPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmrek:RekkverksendeElement"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Skinne" substitutionGroup="fmrek:RekkverkElement" type="fmrek:SkinneType"/>
+  <complexType name="SkinneType">
+    <complexContent>
+      <extension base="fmrek:RekkverkElementType">
+        <sequence>
+          <element minOccurs="0" name="skinneutrustning" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Skinneutrustning.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="mcSkine" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_McSkine.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SkinnePropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmrek:Skinne"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Stolpe" substitutionGroup="fmrek:RekkverkElement" type="fmrek:StolpeType"/>
+  <complexType name="StolpeType">
+    <complexContent>
+      <extension base="fmrek:RekkverkElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="StolpePropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmrek:Stolpe"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="StøteputeElement" substitutionGroup="fmrek:FagmodellRekkverkElement" type="fmrek:StøteputeElementType"/>
+  <complexType name="StøteputeElementType">
+    <complexContent>
+      <extension base="fmrek:FagmodellRekkverkElementType">
+        <sequence>
+          <element minOccurs="0" name="produktnavnTypegodkjenning" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenningStoetpute.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="sikkerhetsklasse" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Sikkerhetsklasse.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="avledningsevne" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Avledningsevne.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="bevegelsesklasse" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Bevegelsesklasse.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="utbøyningsklasse" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Utboeyningsklasse.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="skaderisiko" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Skaderisiko.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="etableringsår" type="dateTime"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="StøteputeElementPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmrek:StøteputeElement"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Støtpute" substitutionGroup="fmrek:RekkverkElementSamling" type="fmrek:StøtputeType">
+    <annotation>
+      <appinfo>
+        <sc:taggedValue tag="NVDB_ID">542</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="StøtputeType">
+    <complexContent>
+      <extension base="fmrek:RekkverkElementSamlingType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="støteputeElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmrek:StøteputeElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="StøtputePropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmrek:Støtpute"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>

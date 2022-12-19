@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gmgru="https://skjema.atlas.vegvesen.no/r000/grunnlagsmodellgrunnforhold/0.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:lv="https://skjema.atlas.vegvesen.no/r000/leveranse/0.1" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:svvli="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/0.1" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/grunnlagsmodellgrunnforhold/0.1" version="0.1">
+  <import namespace="http://www.interactive-instruments.de/ShapeChange/AppInfo" schemaLocation="http://shapechange.net/resources/schema/ShapeChangeAppinfo.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/leveranse/0.1" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/wip/Leveranse.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/0.1" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_files/wip/SVV_Landinfra.xsd"/>
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="Bekk" substitutionGroup="gmgru:GrunnforholdElement" type="gmgru:BekkType"/>
+  <complexType name="BekkType">
+    <complexContent>
+      <extension base="gmgru:GrunnforholdElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BekkPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgru:Bekk"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="BergIDagen" substitutionGroup="gmgru:GrunnforholdElement" type="gmgru:BergIDagenType"/>
+  <complexType name="BergIDagenType">
+    <complexContent>
+      <extension base="gmgru:GrunnforholdElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BergIDagenPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgru:BergIDagen"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Bergartsgrense" substitutionGroup="gmgru:GrunnforholdElement" type="gmgru:BergartsgrenseType"/>
+  <complexType name="BergartsgrenseType">
+    <complexContent>
+      <extension base="gmgru:GrunnforholdElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BergartsgrensePropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgru:Bergartsgrense"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Bergoverflate" substitutionGroup="gmgru:GrunnforholdElement" type="gmgru:BergoverflateType"/>
+  <complexType name="BergoverflateType">
+    <complexContent>
+      <extension base="gmgru:GrunnforholdElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BergoverflatePropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgru:Bergoverflate"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Bergsblotning" substitutionGroup="gmgru:GrunnforholdElement" type="gmgru:BergsblotningType"/>
+  <complexType name="BergsblotningType">
+    <complexContent>
+      <extension base="gmgru:GrunnforholdElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BergsblotningPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgru:Bergsblotning"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Forkasting" substitutionGroup="gmgru:GrunnforholdElement" type="gmgru:ForkastingType"/>
+  <complexType name="ForkastingType">
+    <complexContent>
+      <extension base="gmgru:GrunnforholdElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ForkastingPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgru:Forkasting"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="GrunnforholdElement" substitutionGroup="svvli:VU053Feature" type="gmgru:GrunnforholdElementType"/>
+  <complexType name="GrunnforholdElementType">
+    <complexContent>
+      <extension base="svvli:VU053FeatureType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GrunnforholdElementPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgru:GrunnforholdElement"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="GrunnlagsmodellGrunnforhold" substitutionGroup="lv:Grunnlagsmodell" type="gmgru:GrunnlagsmodellGrunnforholdType">
+    <annotation>
+      <documentation>Grunnlagsmodellen “Grunnforhold” skal vise informasjon om geologiske- og geotekniske forhold på og under terrengoverflate og vann i prosjektområdet.</documentation>
+    </annotation>
+  </element>
+  <complexType name="GrunnlagsmodellGrunnforholdType">
+    <complexContent>
+      <extension base="lv:GrunnlagsmodellType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="grunnforholdElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="gmgru:GrunnforholdElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GrunnlagsmodellGrunnforholdPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgru:GrunnlagsmodellGrunnforhold"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Grunnundersoekelse" substitutionGroup="gmgru:GrunnforholdElement" type="gmgru:GrunnundersoekelseType"/>
+  <complexType name="GrunnundersoekelseType">
+    <complexContent>
+      <extension base="gmgru:GrunnforholdElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GrunnundersoekelsePropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgru:Grunnundersoekelse"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Jordart" substitutionGroup="gmgru:GrunnforholdElement" type="gmgru:JordartType"/>
+  <complexType name="JordartType">
+    <complexContent>
+      <extension base="gmgru:GrunnforholdElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="JordartPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgru:Jordart"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Loesmasse" substitutionGroup="gmgru:GrunnforholdElement" type="gmgru:LoesmasseType">
+    <annotation>
+      <documentation>areal bestående av en løsmassetype (jordart)</documentation>
+    </annotation>
+  </element>
+  <complexType name="LoesmasseType">
+    <complexContent>
+      <extension base="gmgru:GrunnforholdElementType">
+        <sequence>
+          <element name="losmassetype" type="gml:CodeType">
+            <annotation>
+              <documentation>kvartærgeologiske løsmassetyper (jordartstyper)</documentation>
+              <appinfo>
+                <sc:taggedValue tag="SOSI_navn">JORDART</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="infiltrasjonEvne" type="gml:CodeType">
+            <annotation>
+              <documentation>løsmassenes egenskaper til å infiltrere og rense avløpsvann</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="grunnvannPotensiale" type="gml:CodeType">
+            <annotation>
+              <documentation>løsmassenes potensiale til å inneholde grunnvannsressurser</documentation>
+              <appinfo>
+                <sc:taggedValue tag="SOSI_navn">GRUNNVANN</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="LoesmassePropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgru:Loesmasse"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Myr" substitutionGroup="gmgru:GrunnforholdElement" type="gmgru:MyrType"/>
+  <complexType name="MyrType">
+    <complexContent>
+      <extension base="gmgru:GrunnforholdElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="MyrPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgru:Myr"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Strukturmaaling" substitutionGroup="gmgru:GrunnforholdElement" type="gmgru:StrukturmaalingType"/>
+  <complexType name="StrukturmaalingType">
+    <complexContent>
+      <extension base="gmgru:GrunnforholdElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="StrukturmaalingPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgru:Strukturmaaling"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Svakhetssone" substitutionGroup="gmgru:GrunnforholdElement" type="gmgru:SvakhetssoneType"/>
+  <complexType name="SvakhetssoneType">
+    <complexContent>
+      <extension base="gmgru:GrunnforholdElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SvakhetssonePropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgru:Svakhetssone"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Vann" substitutionGroup="gmgru:GrunnforholdElement" type="gmgru:VannType"/>
+  <complexType name="VannType">
+    <complexContent>
+      <extension base="gmgru:GrunnforholdElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="VannPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgru:Vann"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>
