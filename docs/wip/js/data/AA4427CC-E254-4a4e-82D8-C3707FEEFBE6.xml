@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("0.4.1.1.1:1", "", "Grunnlagsdata", "EARoot/EA4/EA1/EA1/EA1/EA451.htm", "175.png", "2548", "0", "", "Logical diagram0","{09EEF667-8BE8-4bbc-BF1B-B4621546BED1}");
+tocTab[tocTab.length] = new Array("0.4.1.1.1:2", "", "Grunnlagsdata kodeliste", "EARoot/EA4/EA1/EA1/EA1/EA453.htm", "175.png", "2549", "0", "", "Logical diagram0","{8D2744F0-17EA-4fb8-8A41-B19D44891863}");
+tocTab[tocTab.length] = new Array("0.4.1.1.1:3", "", "«CodeList» kategori", "EARoot/EA4/EA1/EA1/EA1/EA456.htm", "5.png", "E14618", "0", "", "Class0","{4250F2AD-3A80-4634-A30E-076585A058B2}");
+tocTab[tocTab.length] = new Array("0.4.1.1.1:4", "", "«FeatureType» SoneElement", "EARoot/EA4/EA1/EA1/EA1/EA457.htm", "5.png", "E14621", "0", "", "Class0","{BA5F0B61-74C7-4d3f-A0BA-F7DB269C966D}");
