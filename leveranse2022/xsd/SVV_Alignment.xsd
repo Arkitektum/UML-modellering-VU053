@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:svval="https://skjema.atlas.vegvesen.no/r000/svvalignment/0.1" xmlns:svvli="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/0.1" targetNamespace="https://skjema.atlas.vegvesen.no/r000/svvalignment/0.1" elementFormDefault="qualified" version="0.1">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:lic="http://www.opengis.net/infragml/core/1.0" xmlns:lr="http://www.opengis.net/gml/3.3/lr" xmlns:svval="https://skjema.atlas.vegvesen.no/r000/svvalignment/1.0" xmlns:svvli="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0" targetNamespace="https://skjema.atlas.vegvesen.no/r000/svvalignment/1.0" elementFormDefault="qualified" version="1.0">
 	<import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
-	<import namespace="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/0.1" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_programtesting/v1.2/SVV_Landinfra.xsd"/>
+	<import namespace="http://www.opengis.net/gml/3.3/lr" schemaLocation="http://schemas.opengis.net/gml/3.3/linearRef.xsd"/>
+	<import namespace="http://www.opengis.net/infragml/core/1.0"/>
+	<import namespace="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/leveranse2022/xsd/SVV_Landinfra.xsd"/>
 	<!--XML Schema document created by ShapeChange - http://shapechange.net/-->
-	<element name="Alignment" type="svval:AlignmentType" substitutionGroup="svvli:VU053Feature">
+	<element name="Alignment" type="svval:AlignmentType" substitutionGroup="gml:AbstractFeature">
 		<annotation>
 			<documentation>PositioningElement which provides a Linear Referencing System for locating PhysicalElements.
 An Alignment shall be continuous, non-branching, and non-overlapping. If it is a Project Alignment, it is for a single alternative, as specified by its owning ProjectPart.</documentation>
@@ -11,7 +13,7 @@ An Alignment shall be continuous, non-branching, and non-overlapping. If it is a
 	</element>
 	<complexType name="AlignmentType">
 		<complexContent>
-			<extension base="svvli:VU053FeatureType">
+			<extension base="gml:AbstractFeatureType">
 				<sequence>
 					<element name="purpose" type="string" minOccurs="0"/>
 					<element name="designAlternative" type="string" minOccurs="0"/>
@@ -67,7 +69,13 @@ An Alignment shall be continuous, non-branching, and non-overlapping. If it is a
 					<documentation>describes where the alignment is located with respect to the owning road or rail segment, such as "roadway centerline"</documentation>
 				</annotation>
 			</element>
-			<element name="state" type="svval:StateType"/>
+			<element name="state" type="gml:CodeType">
+				<annotation>
+					<appinfo>
+						<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/svval_State.xml</defaultCodeSpace>
+					</appinfo>
+				</annotation>
+			</element>
 			<element name="linestring2DRepresentation" type="gml:LineStringType" minOccurs="0"/>
 			<element name="startDistanceAlong" type="gml:LengthType" minOccurs="0">
 				<annotation>
@@ -114,7 +122,13 @@ State distinguishes between existing ground surface vs. proposed design profile.
 				</annotation>
 			</element>
 			<element name="description" type="string"/>
-			<element name="state" type="svval:StateType"/>
+			<element name="state" type="gml:CodeType">
+				<annotation>
+					<appinfo>
+						<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/svval_State.xml</defaultCodeSpace>
+					</appinfo>
+				</annotation>
+			</element>
 			<element name="alignmentOffset" type="gml:LengthType" minOccurs="0"/>
 			<element name="segments" type="svval:Alignment2DVertSegmentPropertyType" maxOccurs="unbounded"/>
 		</sequence>
@@ -124,10 +138,10 @@ State distinguishes between existing ground surface vs. proposed design profile.
 			<element ref="svval:Alignment2DVertical"/>
 		</sequence>
 	</complexType>
-	<element name="AlignmentSet" type="svval:AlignmentSetType" substitutionGroup="svvli:VU053Set"/>
+	<element name="AlignmentSet" type="svval:AlignmentSetType" substitutionGroup="gml:AbstractFeature"/>
 	<complexType name="AlignmentSetType">
 		<complexContent>
-			<extension base="svvli:VU053SetType">
+			<extension base="gml:AbstractFeatureType">
 				<sequence>
 					<element name="alignment" maxOccurs="unbounded">
 						<complexType>
@@ -156,8 +170,8 @@ State distinguishes between existing ground surface vs. proposed design profile.
 	<complexType name="CurveSegment2DHorizontalType">
 		<choice>
 			<element name="lineSegment" type="gml:LineStringType"/>
-			<element name="circularArcSegment" type="gml:ArcStringType"/>
-			<element name="clothoidArcSegment" type="gml:ClothoidType"/>
+			<element name="circularArcSegment" type="gml:ArcStringPropertyType"/>
+			<element name="clothoidArcSegment" type="gml:ClothoidPropertyType"/>
 		</choice>
 	</complexType>
 	<complexType name="CurveSegment2DHorizontalPropertyType">
@@ -173,7 +187,7 @@ State distinguishes between existing ground surface vs. proposed design profile.
 					<complexContent>
 						<extension base="gml:AbstractMemberType">
 							<sequence minOccurs="0">
-								<element ref="svvli:DistanceExpression"/>
+								<element ref="lr:DistanceExpression"/>
 							</sequence>
 							<attributeGroup ref="gml:AssociationAttributeGroup"/>
 						</extension>
@@ -186,7 +200,7 @@ State distinguishes between existing ground surface vs. proposed design profile.
 					<complexContent>
 						<extension base="gml:AbstractMemberType">
 							<sequence minOccurs="0">
-								<element ref="svvli:Percentage"/>
+								<element ref="lic:Percentage"/>
 							</sequence>
 							<attributeGroup ref="gml:AssociationAttributeGroup"/>
 						</extension>
@@ -201,20 +215,6 @@ State distinguishes between existing ground surface vs. proposed design profile.
 			<element ref="svval:CurveSegment2DVert"/>
 		</sequence>
 	</complexType>
-	<simpleType name="StateType">
-		<union memberTypes="svval:StateEnumerationType svval:StateOtherType"/>
-	</simpleType>
-	<simpleType name="StateEnumerationType">
-		<restriction base="string">
-			<enumeration value="existing"/>
-			<enumeration value="proposed"/>
-		</restriction>
-	</simpleType>
-	<simpleType name="StateOtherType">
-		<restriction base="string">
-			<pattern value="other: \w{2,}"/>
-		</restriction>
-	</simpleType>
 	<element name="VertSegmentCircularArc" type="svval:VertSegmentCircularArcType" substitutionGroup="svval:CurveSegment2DVert"/>
 	<complexType name="VertSegmentCircularArcType">
 		<complexContent>
