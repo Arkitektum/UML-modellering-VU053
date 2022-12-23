@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>VegOgGateObjekter</title>
+<link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> VegOgGateObjekter </h1>
+			<!-- <img class="header_image" src="../../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../../EA3.htm">Vegprosjekt VU053 v1.0</a> / <a href="../../../EA442.htm">LeveranseVegprosjekt</a> / <a href="../../EA446.htm">Samordningsmodell</a> / <a href="../EA513.htm">Tverrfagligmodell</a> / <a href="EA1157.htm">FagmodellVeg</a> / <a href="./EA2/EA1239.htm">VegOgGateObjekter</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<li><img src="../../../../../images/175.png" alt="Diagram"/> <a href="./EA2/EA1235.htm">VegOgGateObjekter</a></li>
+<li><img src="../../../../../images/175.png" alt="Diagram"/> <a href="./EA2/EA1237.htm">VegOgGateObjekter Kodeliste</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1244.htm">Fartsdemper</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1249.htm">Hoeydehinder</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1258.htm">Skjerm</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1260.htm">Stroesandkasse</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1264.htm">Vegbom</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1266.htm">VegOgGateObjekter</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1267.htm">VegOgGateObjekterElement</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1268.htm">Ferist</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1269.htm">PortDoer</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1270.htm">Branndoer</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1271.htm">BruksomraadeSkjerm</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1272.htm">BruksomraadeVegbom</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1273.htm">EierFerist</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1274.htm">EierHoeydehinder</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1275.htm">EierStroesandkasse</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1276.htm">MaterialeBelegning</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1277.htm">BruksomraadePortDoer</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1278.htm">EierSkjerm</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1279.htm">EierVegbom</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1280.htm">PasseringVedFerist</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1281.htm">Profil</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1282.htm">VedlikeholdsansvarligHoeydehinder</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1283.htm">VedlikeholdsansvarligStroesandkasse</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1284.htm">EierPortDoer</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1285.htm">FjernesIVintersesong</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1286.htm">FundamenteringPlassering</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1287.htm">TypeFartsdemper</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1288.htm">TypeFerist</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1289.htm">FjernstyringVegbom</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1290.htm">Lydabsorberende</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1291.htm">MaterialePortDoer</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1292.htm">VedlikeholdsansvarligFerist</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1293.htm">MarkeringsskiltPaamontert</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1294.htm">MaterialeSkjerm</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1295.htm">NormalStillingPortDoer</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1296.htm">Vinterforberedelse</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1297.htm">MaterialeSoeyler</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1298.htm">MaterialtypeVegbom</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1299.htm">TypePortDoer</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1300.htm">OverflatebehandlingSkjerm</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1301.htm">TypeVegbom</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1302.htm">UtformingPortDoer</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1304.htm">TypeFundament</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1303.htm">TypeAapningLukking</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1305.htm">VedlikeholdsansvarligPortDoer</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1306.htm">TypeGjennomsiktigVegg</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1307.htm">VarselblinkPaamontert</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1308.htm">UtformingTopp</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1309.htm">VedlikeholdsansvarligVegbom</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="./EA2/EA1310.htm">VedlikeholdsansvarligSkjerm</a></li>
+</ul>
+
+					</td>
+					<td class="contentcell"><div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">VegOgGateObjekter  : Public   Package</span>
+	<table border="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">03.10.2022 13:57:05</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">05.10.2022 09:28:12</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">MatiasGonzalezTognon</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" >Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{AD6CB9A3-F06A-41e6-A400-140F93A46B25}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+	</table>
+	
+ </div>
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+
