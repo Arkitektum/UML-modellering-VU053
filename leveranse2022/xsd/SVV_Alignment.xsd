@@ -2,7 +2,7 @@
 <schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:lic="http://www.opengis.net/infragml/core/1.0" xmlns:lr="http://www.opengis.net/gml/3.3/lr" xmlns:svval="https://skjema.atlas.vegvesen.no/r000/svvalignment/1.0" xmlns:svvli="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0" targetNamespace="https://skjema.atlas.vegvesen.no/r000/svvalignment/1.0" elementFormDefault="qualified" version="1.0">
 	<import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
 	<import namespace="http://www.opengis.net/gml/3.3/lr" schemaLocation="http://schemas.opengis.net/gml/3.3/linearRef.xsd"/>
-	<import namespace="http://www.opengis.net/infragml/core/1.0"/>
+	<import namespace="http://www.opengis.net/infragml/core/1.0" schemaLocation="https://schemas.opengis.net/infragml/part0/1.0/core.xsd"/>
 	<import namespace="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/leveranse2022/xsd/SVV_Landinfra.xsd"/>
 	<!--XML Schema document created by ShapeChange - http://shapechange.net/-->
 	<element name="Alignment" type="svval:AlignmentType" substitutionGroup="gml:AbstractFeature">
@@ -170,8 +170,8 @@ State distinguishes between existing ground surface vs. proposed design profile.
 	<complexType name="CurveSegment2DHorizontalType">
 		<choice>
 			<element name="lineSegment" type="gml:LineStringType"/>
-			<element name="circularArcSegment" type="gml:ArcStringPropertyType"/>
-			<element name="clothoidArcSegment" type="gml:ClothoidPropertyType"/>
+			<element name="circularArcSegment" type="gml:ArcStringType"/>
+			<element name="clothoidArcSegment" type="gml:ClothoidType"/>
 		</choice>
 	</complexType>
 	<complexType name="CurveSegment2DHorizontalPropertyType">
