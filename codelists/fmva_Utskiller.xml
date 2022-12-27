@@ -1,0 +1,63 @@
+<?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Utskiller" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
+  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellvannogavloep/1.0">Utskiller</gml:identifier>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14487_41621">
+      <gml:description>(Oslo VAV Slamavskiller)&#13;
+&#13;
+Definisjonstekst: Enhet for fjerning av sedimenterbart stoff og flytestoffer fra avløpsvann. [NV]&#13;
+&#13;
+&#13;
+Nærmere beskrivelse/varianter:&#13;
+&#13;
+Slamavskiller har vanligvis flere kamre og volum for lagring av slam. Pga. hydraulisk dårlig utforming er det nødvendig med lang oppholdstid. Benyttes for spredt bebyggelse og mindre boligområder. [NV]</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Utskiller.xml">slamavskiller</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14487_41622">
+      <gml:description>(Oslo VAV Fettavskiller)&#13;
+&#13;
+Definisjonstekst: Komponent/konstruksjon for fjerning av fett fra avløpsvannet&#13;
+&#13;
+&#13;
+Nærmere beskrivelse/varianter:&#13;
+&#13;
+Komponent i tilknytning til ledningsnettet med formål å hindre/redusere fettholdig materiale fra abonnent å komme inn i ledningsnettet.</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Utskiller.xml">fettavskiller</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14487_41623">
+      <gml:description>(Oslo VAV Oljeutskiller)&#13;
+&#13;
+Definisjonstekst: Enhet for fjerning av olje fra avløpsvannet&#13;
+&#13;
+Nærmere beskrivelse/varianter:&#13;
+&#13;
+Som oftest knyttet til private anlegg.</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Utskiller.xml">oljeutskiller</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14487_41624">
+      <gml:description>(Oslo VAV Sluk med sandfang)&#13;
+&#13;
+Definisjonstekst: Kum, tank eller lignende hvor bunnen ligger 0,8 – 1,0 meter dypere enn dykket utløpsrør, slik at sand, slam og flytestoffer skal holdes tilbake fra hovedledningsnettet.&#13;
+&#13;
+Nærmere beskrivelse/varianter:&#13;
+&#13;
+Sandfang brukes til drenering av overflatevann fra gater og plasser og skal hindre at grus og sand kommer inn på ledningsnettet slik at det ikke skal danne seg avleiringer. Toppen av kummen er vanligvis utstyrt med slukrist (se sluk).</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Utskiller.xml">sandfang</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14487_41625">
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Utskiller.xml">ingen</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14487_41626">
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Utskiller.xml">annet</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

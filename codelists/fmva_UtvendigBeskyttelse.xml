@@ -1,0 +1,53 @@
+<?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="UtvendigBeskyttelse" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
+  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellvannogavloep/1.0">UtvendigBeskyttelse</gml:identifier>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14557_41766">
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_UtvendigBeskyttelse.xml">bitumen</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14557_41767">
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_UtvendigBeskyttelse.xml">sink</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14557_41768">
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_UtvendigBeskyttelse.xml">sinkAluminium</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14557_41769">
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_UtvendigBeskyttelse.xml">sinkBitumen</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14557_41770">
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_UtvendigBeskyttelse.xml">sink-epoksy</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14557_41771">
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_UtvendigBeskyttelse.xml">aluzinkOgEpoksy</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14557_41772">
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_UtvendigBeskyttelse.xml">sinkOgPE</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14557_41773">
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_UtvendigBeskyttelse.xml">sinkOgSementmørtel</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14557_41774">
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_UtvendigBeskyttelse.xml">PPKappe</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14557_41775">
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_UtvendigBeskyttelse.xml">PPKappeMedDiffusjonssperre</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

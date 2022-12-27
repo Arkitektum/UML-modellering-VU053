@@ -1,0 +1,18 @@
+<?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Side" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
+  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellveg/1.0">Side</gml:identifier>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14451_41546">
+      <gml:identifier codeSpace="http://skjema.geonorge.no/legg_inn_riktig_url">left</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14451_41547">
+      <gml:identifier codeSpace="http://skjema.geonorge.no/legg_inn_riktig_url">right</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14451_41548">
+      <gml:identifier codeSpace="http://skjema.geonorge.no/legg_inn_riktig_url">both</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

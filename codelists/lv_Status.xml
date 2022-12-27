@@ -1,0 +1,18 @@
+<?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Status" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
+  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/leveranse/1.0">Status</gml:identifier>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14117_40657">
+      <gml:identifier codeSpace="https://www.codelistURL.com">avvist</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14117_40658">
+      <gml:identifier codeSpace="https://www.codelistURL.com">godkjent</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14117_40659">
+      <gml:identifier codeSpace="https://www.codelistURL.com">tilBehandling</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

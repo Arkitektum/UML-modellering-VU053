@@ -1,156 +1,82 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="282635ea-52fd-457f-9906-cc143ee32844" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
-	<gml:metaDataDictionary>
-		<gml:GenericMetaData>
-			<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
-			<status xsi:type="gml:StringOrRefType">Sendt inn</status>
-			<kilde xsi:type="gml:StringOrRefType">Håndboka/NVDB/SOSI</kilde>
-		</gml:GenericMetaData>
-	</gml:metaDataDictionary>
-	<gml:description>Angir hva vegobjektet brukes til, hvilken funksjon det har, hva det skjermer mot.</gml:description>
-	<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Bruksomraade.xml">Bruksomraade</gml:identifier>
-	<gml:name>BruksområdeRekkverk</gml:name>
-	<gml:dictionaryEntry>
-		<gml:Definition gml:id="_2208_6626">
-			<gml:description></gml:description>
-			<gml:metaDataProperty>
-				<gml:GenericMetaData>
-					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
-				</gml:GenericMetaData>
-			</gml:metaDataProperty>
-			<gml:description>Skråning</gml:description>
-			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Bruksomraade.xml">Skråning</gml:identifier>
-			<gml:name>2393</gml:name>
-		</gml:Definition>
-	</gml:dictionaryEntry>
-	<gml:dictionaryEntry>
-		<gml:Definition gml:id="_2208_6627">
-			<gml:description></gml:description>
-			<gml:metaDataProperty>
-				<gml:GenericMetaData>
-					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
-				</gml:GenericMetaData>
-			</gml:metaDataProperty>
-			<gml:description>Rekkverk mot fjellskjæring</gml:description>
-			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Bruksomraade.xml">Fjell</gml:identifier>
-			<gml:name>4045</gml:name>
-		</gml:Definition>
-	</gml:dictionaryEntry>
-	<gml:dictionaryEntry>
-		<gml:Definition gml:id="_2208_6628">
-			<gml:description></gml:description>
-			<gml:metaDataProperty>
-				<gml:GenericMetaData>
-					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
-				</gml:GenericMetaData>
-			</gml:metaDataProperty>
-			<gml:description>Sikrer mot vann, sjø, elv</gml:description>
-			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Bruksomraade.xml">Vann</gml:identifier>
-			<gml:name>2396</gml:name>
-		</gml:Definition>
-	</gml:dictionaryEntry>
-	<gml:dictionaryEntry>
-		<gml:Definition gml:id="_2208_6629">
-			<gml:description></gml:description>
-			<gml:metaDataProperty>
-				<gml:GenericMetaData>
-					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
-				</gml:GenericMetaData>
-			</gml:metaDataProperty>
-			<gml:description>Rekkverk benyttet som sikring mot trafikk på veg/areal ved siden av vegen, f.eks skille mellom hovedveg og sideveg, i forbindelse med parkeringsområde eller andre trafikerte sideareal. Merk: For midtdelere, gang- og sykkelveg og jernbane skal det benyttes egne verdier</gml:description>
-			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Bruksomraade.xml">Trafikk</gml:identifier>
-			<gml:name>2394</gml:name>
-		</gml:Definition>
-	</gml:dictionaryEntry>
-	<gml:dictionaryEntry>
-		<gml:Definition gml:id="_2208_6630">
-			<gml:description></gml:description>
-			<gml:metaDataProperty>
-				<gml:GenericMetaData>
-					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
-				</gml:GenericMetaData>
-			</gml:metaDataProperty>
-			<gml:description>Rekkverket er plassert på midtdeler, dvs på areal som fysisk skiller trafikk i motsatte retninger.</gml:description>
-			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Bruksomraade.xml">Midtdeler</gml:identifier>
-			<gml:name>11789</gml:name>
-		</gml:Definition>
-	</gml:dictionaryEntry>
-	<gml:dictionaryEntry>
-		<gml:Definition gml:id="_2208_6631">
-			<gml:description></gml:description>
-			<gml:metaDataProperty>
-				<gml:GenericMetaData>
-					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
-				</gml:GenericMetaData>
-			</gml:metaDataProperty>
-			<gml:description>Rekkverket er eneste skille mellom motgående trafikk</gml:description>
-			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Bruksomraade.xml">Midtrekkverk</gml:identifier>
-			<gml:name>11788</gml:name>
-		</gml:Definition>
-	</gml:dictionaryEntry>
-	<gml:dictionaryEntry>
-		<gml:Definition gml:id="_2208_6632">
-			<gml:description></gml:description>
-			<gml:metaDataProperty>
-				<gml:GenericMetaData>
-					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
-				</gml:GenericMetaData>
-			</gml:metaDataProperty>
-			<gml:description>Rekkverk satt opp for beskytte mot trafikkfarlige element nær vegen, f.eks store trær, stolper, brupilarer</gml:description>
-			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Bruksomraade.xml">Naboelement</gml:identifier>
-			<gml:name>2395</gml:name>
-		</gml:Definition>
-	</gml:dictionaryEntry>
-	<gml:dictionaryEntry>
-		<gml:Definition gml:id="_2208_6633">
-			<gml:description></gml:description>
-			<gml:metaDataProperty>
-				<gml:GenericMetaData>
-					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
-				</gml:GenericMetaData>
-			</gml:metaDataProperty>
-			<gml:description>Gang/sykkelveg</gml:description>
-			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Bruksomraade.xml">Gang/sykkelveg</gml:identifier>
-			<gml:name>4044</gml:name>
-		</gml:Definition>
-	</gml:dictionaryEntry>
-	<gml:dictionaryEntry>
-		<gml:Definition gml:id="_2208_6634">
-			<gml:description></gml:description>
-			<gml:metaDataProperty>
-				<gml:GenericMetaData>
-					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
-				</gml:GenericMetaData>
-			</gml:metaDataProperty>
-			<gml:description>Rekkverk skjermer mot sideaktivitet nært inn mot vegen. Dette kan være næringsvirksomhet, privat/offentlig område, mm</gml:description>
-			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Bruksomraade.xml">Sideaktivitet</gml:identifier>
-			<gml:name>17369</gml:name>
-		</gml:Definition>
-	</gml:dictionaryEntry>
-	<gml:dictionaryEntry>
-		<gml:Definition gml:id="_2208_6635">
-			<gml:description></gml:description>
-			<gml:metaDataProperty>
-				<gml:GenericMetaData>
-					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
-				</gml:GenericMetaData>
-			</gml:metaDataProperty>
-			<gml:description>Jernbane</gml:description>
-			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Bruksomraade.xml">Jernbane</gml:identifier>
-			<gml:name>4591</gml:name>
-		</gml:Definition>
-	</gml:dictionaryEntry>
-	<gml:dictionaryEntry>
-		<gml:Definition gml:id="_2208_6636">
-			<gml:description></gml:description>
-			<gml:metaDataProperty>
-				<gml:GenericMetaData>
-					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
-				</gml:GenericMetaData>
-			</gml:metaDataProperty>
-			<gml:description>Gjelder rekkverk som benyttes for å hindre utforkjøring ved brukant eller stup</gml:description>
-			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Bruksomraade.xml">Brukant/stup</gml:identifier>
-			<gml:name>4667</gml:name>
-		</gml:Definition>
-	</gml:dictionaryEntry>
+<?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Bruksomraade" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
+  <gml:description>Angir hva vegobjektet brukes til, hvilken funksjon det har, hva det skjermer mot.</gml:description>
+  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellrekkverk/1.0">Bruksomraade</gml:identifier>
+  <gml:name>BruksområdeRekkverk</gml:name>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14942_43221">
+      <gml:description>Skråning</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Bruksomraade.xml">Skråning</gml:identifier>
+      <gml:name>2393</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14942_43222">
+      <gml:description>Rekkverk mot fjellskjæring</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Bruksomraade.xml">Fjell</gml:identifier>
+      <gml:name>4045</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14942_43223">
+      <gml:description>Sikrer mot vann, sjø, elv</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Bruksomraade.xml">Vann</gml:identifier>
+      <gml:name>2396</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14942_43224">
+      <gml:description>Rekkverk benyttet som sikring mot trafikk på veg/areal ved siden av vegen, f.eks skille mellom hovedveg og sideveg, i forbindelse med parkeringsområde eller andre trafikerte sideareal. Merk: For midtdelere, gang- og sykkelveg og jernbane skal det benyttes egne verdier</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Bruksomraade.xml">Trafikk</gml:identifier>
+      <gml:name>2394</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14942_43225">
+      <gml:description>Rekkverket er plassert på midtdeler, dvs på areal som fysisk skiller trafikk i motsatte retninger.</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Bruksomraade.xml">Midtdeler</gml:identifier>
+      <gml:name>11789</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14942_43226">
+      <gml:description>Rekkverket er eneste skille mellom motgående trafikk</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Bruksomraade.xml">Midtrekkverk</gml:identifier>
+      <gml:name>11788</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14942_43227">
+      <gml:description>Rekkverk satt opp for beskytte mot trafikkfarlige element nær vegen, f.eks store trær, stolper, brupilarer</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Bruksomraade.xml">Naboelement</gml:identifier>
+      <gml:name>2395</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14942_43228">
+      <gml:description>Gang/sykkelveg</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Bruksomraade.xml">Gang/sykkelveg</gml:identifier>
+      <gml:name>4044</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14942_43229">
+      <gml:description>Rekkverk skjermer mot sideaktivitet nært inn mot vegen. Dette kan være næringsvirksomhet, privat/offentlig område, mm</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Bruksomraade.xml">Sideaktivitet</gml:identifier>
+      <gml:name>17369</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14942_43230">
+      <gml:description>Jernbane</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Bruksomraade.xml">Jernbane</gml:identifier>
+      <gml:name>4591</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14942_43231">
+      <gml:description>Gjelder rekkverk som benyttes for å hindre utforkjøring ved brukant eller stup</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Bruksomraade.xml">Brukant/stup</gml:identifier>
+      <gml:name>4667</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
 </gml:Dictionary>

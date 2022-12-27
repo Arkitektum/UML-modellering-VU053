@@ -1,0 +1,18 @@
+<?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Prosjekttype" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
+  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fellesmoduler/1.0">Prosjekttype</gml:identifier>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14091_40568">
+      <gml:identifier codeSpace="https://www.codelistURL.com">delprosjekt</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14091_40569">
+      <gml:identifier codeSpace="https://www.codelistURL.com">hovedprosjekt</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14091_40570">
+      <gml:identifier codeSpace="https://www.codelistURL.com">samleprosjekt</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

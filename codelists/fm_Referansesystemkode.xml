@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Referansesystemkode" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
+  <gml:description>Angivelse av datum/projeksjon for stedfesting &#13;
+&#13;
+Kodelisten forvaltes eksternt og er tilgjengelig i geonorge.no https://register.geonorge.no/epsg-koder</gml:description>
+  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fellesmoduler/1.0">Referansesystemkode</gml:identifier>
+</gml:Dictionary>

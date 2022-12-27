@@ -1,0 +1,46 @@
+<?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="MaterialtypeVegbom" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
+  <gml:description>Angir materialtype.</gml:description>
+  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellveg/1.0">MaterialtypeVegbom</gml:identifier>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14401_41391">
+      <gml:description>Stål</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_MaterialtypeVegbom.xml">Stål</gml:identifier>
+      <gml:name>5535</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14401_41392">
+      <gml:description>Aluminium</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_MaterialtypeVegbom.xml">Aluminium</gml:identifier>
+      <gml:name>8189</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14401_41393">
+      <gml:description>Tre</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_MaterialtypeVegbom.xml">Tre</gml:identifier>
+      <gml:name>5537</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14401_41394">
+      <gml:description>Plast</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_MaterialtypeVegbom.xml">Plast</gml:identifier>
+      <gml:name>5536</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14401_41395">
+      <gml:description>Betong</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_MaterialtypeVegbom.xml">Betong</gml:identifier>
+      <gml:name>19818</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14401_41396">
+      <gml:description>Stein</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_MaterialtypeVegbom.xml">Stein</gml:identifier>
+      <gml:name>19819</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

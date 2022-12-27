@@ -1,116 +1,60 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="a9e9cf8f-3e89-4876-b623-25d4a0336ae7" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
-	<gml:metaDataDictionary>
-		<gml:GenericMetaData>
-			<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
-			<status xsi:type="gml:StringOrRefType">Sendt inn</status>
-			<kilde xsi:type="gml:StringOrRefType">Håndboka/NVDB/SOSI</kilde>
-		</gml:GenericMetaData>
-	</gml:metaDataDictionary>
-	<gml:description>Angir normal avstand mellom stolper</gml:description>
-	<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Stolpeavstand.xml">Stolpeavstand</gml:identifier>
-	<gml:dictionaryEntry>
-		<gml:Definition gml:id="_2206_6616">
-			<gml:description></gml:description>
-			<gml:metaDataProperty>
-				<gml:GenericMetaData>
-					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
-				</gml:GenericMetaData>
-			</gml:metaDataProperty>
-			<gml:description>4</gml:description>
-			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Stolpeavstand.xml">4,0</gml:identifier>
-			<gml:name>3998</gml:name>
-		</gml:Definition>
-	</gml:dictionaryEntry>
-	<gml:dictionaryEntry>
-		<gml:Definition gml:id="_2206_6617">
-			<gml:description></gml:description>
-			<gml:metaDataProperty>
-				<gml:GenericMetaData>
-					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
-				</gml:GenericMetaData>
-			</gml:metaDataProperty>
-			<gml:description>2</gml:description>
-			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Stolpeavstand.xml">2,0</gml:identifier>
-			<gml:name>3996</gml:name>
-		</gml:Definition>
-	</gml:dictionaryEntry>
-	<gml:dictionaryEntry>
-		<gml:Definition gml:id="_2206_6618">
-			<gml:description></gml:description>
-			<gml:metaDataProperty>
-				<gml:GenericMetaData>
-					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
-				</gml:GenericMetaData>
-			</gml:metaDataProperty>
-			<gml:description>1</gml:description>
-			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Stolpeavstand.xml">1,0</gml:identifier>
-			<gml:name>3995</gml:name>
-		</gml:Definition>
-	</gml:dictionaryEntry>
-	<gml:dictionaryEntry>
-		<gml:Definition gml:id="_2206_6619">
-			<gml:description></gml:description>
-			<gml:metaDataProperty>
-				<gml:GenericMetaData>
-					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
-				</gml:GenericMetaData>
-			</gml:metaDataProperty>
-			<gml:description>3</gml:description>
-			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Stolpeavstand.xml">3,0</gml:identifier>
-			<gml:name>3997</gml:name>
-		</gml:Definition>
-	</gml:dictionaryEntry>
-	<gml:dictionaryEntry>
-		<gml:Definition gml:id="_2206_6620">
-			<gml:description></gml:description>
-			<gml:metaDataProperty>
-				<gml:GenericMetaData>
-					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
-				</gml:GenericMetaData>
-			</gml:metaDataProperty>
-			<gml:description>6</gml:description>
-			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Stolpeavstand.xml">6,0</gml:identifier>
-			<gml:name>20070</gml:name>
-		</gml:Definition>
-	</gml:dictionaryEntry>
-	<gml:dictionaryEntry>
-		<gml:Definition gml:id="_2206_6621">
-			<gml:description></gml:description>
-			<gml:metaDataProperty>
-				<gml:GenericMetaData>
-					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
-				</gml:GenericMetaData>
-			</gml:metaDataProperty>
-			<gml:description>1,33</gml:description>
-			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Stolpeavstand.xml">1,33</gml:identifier>
-			<gml:name>13722</gml:name>
-		</gml:Definition>
-	</gml:dictionaryEntry>
-	<gml:dictionaryEntry>
-		<gml:Definition gml:id="_2206_6622">
-			<gml:description></gml:description>
-			<gml:metaDataProperty>
-				<gml:GenericMetaData>
-					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
-				</gml:GenericMetaData>
-			</gml:metaDataProperty>
-			<gml:description>1,8</gml:description>
-			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Stolpeavstand.xml">1,8</gml:identifier>
-			<gml:name>13723</gml:name>
-		</gml:Definition>
-	</gml:dictionaryEntry>
-	<gml:dictionaryEntry>
-		<gml:Definition gml:id="_2206_6623">
-			<gml:description></gml:description>
-			<gml:metaDataProperty>
-				<gml:GenericMetaData>
-					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
-				</gml:GenericMetaData>
-			</gml:metaDataProperty>
-			<gml:description>2,3</gml:description>
-			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Stolpeavstand.xml">2,3</gml:identifier>
-			<gml:name>13724</gml:name>
-		</gml:Definition>
-	</gml:dictionaryEntry>
+<?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Stolpeavstand" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
+  <gml:description>Angir normal avstand mellom stolper</gml:description>
+  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellrekkverk/1.0">Stolpeavstand</gml:identifier>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14940_43211">
+      <gml:description>4</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Stolpeavstand.xml">4,0</gml:identifier>
+      <gml:name>3998</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14940_43212">
+      <gml:description>2</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Stolpeavstand.xml">2,0</gml:identifier>
+      <gml:name>3996</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14940_43213">
+      <gml:description>1</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Stolpeavstand.xml">1,0</gml:identifier>
+      <gml:name>3995</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14940_43214">
+      <gml:description>3</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Stolpeavstand.xml">3,0</gml:identifier>
+      <gml:name>3997</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14940_43215">
+      <gml:description>6</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Stolpeavstand.xml">6,0</gml:identifier>
+      <gml:name>20070</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14940_43216">
+      <gml:description>1,33</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Stolpeavstand.xml">1,33</gml:identifier>
+      <gml:name>13722</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14940_43217">
+      <gml:description>1,8</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Stolpeavstand.xml">1,8</gml:identifier>
+      <gml:name>13723</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14940_43218">
+      <gml:description>2,3</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Stolpeavstand.xml">2,3</gml:identifier>
+      <gml:name>13724</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
 </gml:Dictionary>

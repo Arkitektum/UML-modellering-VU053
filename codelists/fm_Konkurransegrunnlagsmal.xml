@@ -1,0 +1,28 @@
+<?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Konkurransegrunnlagsmal" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
+  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fellesmoduler/1.0">Konkurransegrunnlagsmal</gml:identifier>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14077_40509">
+      <gml:identifier codeSpace="https://www.codelistURL.com">NS-8401_Prosjekteringsoppdrag</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14077_40510">
+      <gml:identifier codeSpace="https://www.codelistURL.com">NS-8402_Prosjekteringsoppdrag</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14077_40511">
+      <gml:identifier codeSpace="https://www.codelistURL.com">NS-8405_Utførelsesentreprise</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14077_40512">
+      <gml:identifier codeSpace="https://www.codelistURL.com">NS-8406_Utførelsesentreprise</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14077_40513">
+      <gml:identifier codeSpace="https://www.codelistURL.com">NS-8407_Totalentreprise</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

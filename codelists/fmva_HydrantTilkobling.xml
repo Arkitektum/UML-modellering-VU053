@@ -1,0 +1,22 @@
+<?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="HydrantTilkobling" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
+  <gml:description>brannslange-tilkobling&#13;
+Kilde: (SOSI Ledning 4.6)</gml:description>
+  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellvannogavloep/1.0">HydrantTilkobling</gml:identifier>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14530_41690">
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_HydrantTilkobling.xml">nor</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14530_41691">
+      <gml:description>Storz 2,5</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_HydrantTilkobling.xml">storz25</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14530_41692">
+      <gml:description>Storz 4</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_HydrantTilkobling.xml">storz4</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

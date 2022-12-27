@@ -1,0 +1,45 @@
+<?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Prosjektfase" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
+  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fellesmoduler/1.0">Prosjektfase</gml:identifier>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14068_40474">
+      <gml:identifier codeSpace="https://www.codelistURL.com">bygging</gml:identifier>
+      <gml:name>B</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14068_40475">
+      <gml:identifier codeSpace="https://www.codelistURL.com">KonkurransegrunnlagBygning</gml:identifier>
+      <gml:name>K</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14068_40476">
+      <gml:identifier codeSpace="https://www.codelistURL.com">oversiktsplanFylkesdelplan</gml:identifier>
+      <gml:name>OF</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14068_40477">
+      <gml:identifier codeSpace="https://www.codelistURL.com">oversiktsplanKommunedelplan</gml:identifier>
+      <gml:name>OK</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14068_40478">
+      <gml:identifier codeSpace="https://www.codelistURL.com">reguleringsplan</gml:identifier>
+      <gml:name>R</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14068_40479">
+      <gml:identifier codeSpace="https://www.codelistURL.com">statligPlan</gml:identifier>
+      <gml:name>S</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14068_40480">
+      <gml:identifier codeSpace="https://www.codelistURL.com">utredning</gml:identifier>
+      <gml:name>U</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

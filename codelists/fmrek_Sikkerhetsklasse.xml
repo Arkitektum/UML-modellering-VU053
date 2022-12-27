@@ -1,77 +1,39 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="02e22493-9221-42c6-80a3-198c9101637f" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
-	<gml:metaDataDictionary>
-		<gml:GenericMetaData>
-			<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
-			<status xsi:type="gml:StringOrRefType">Sendt inn</status>
-			<kilde xsi:type="gml:StringOrRefType">Håndboka/NVDB/SOSI</kilde>
-		</gml:GenericMetaData>
-	</gml:metaDataDictionary>
-	<gml:description>Angir hvilken sikkerhetsklasse støtpute er dimensjonert for. Jfr Rekkverksnormal HB N101 (231) kap 6.3.</gml:description>
-	<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Sikkerhetsklasse.xml">Sikkerhetsklasse</gml:identifier>
-	<gml:dictionaryEntry>
-		<gml:Definition gml:id="_2220_6928">
-			<gml:description></gml:description>
-			<gml:metaDataProperty>
-				<gml:GenericMetaData>
-					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
-				</gml:GenericMetaData>
-			</gml:metaDataProperty>
-			<gml:description>S-50</gml:description>
-			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Sikkerhetsklasse.xml">S-50</gml:identifier>
-			<gml:name>5701</gml:name>
-		</gml:Definition>
-	</gml:dictionaryEntry>
-	<gml:dictionaryEntry>
-		<gml:Definition gml:id="_2220_6929">
-			<gml:description></gml:description>
-			<gml:metaDataProperty>
-				<gml:GenericMetaData>
-					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
-				</gml:GenericMetaData>
-			</gml:metaDataProperty>
-			<gml:description>S-80</gml:description>
-			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Sikkerhetsklasse.xml">S-80</gml:identifier>
-			<gml:name>5702</gml:name>
-		</gml:Definition>
-	</gml:dictionaryEntry>
-	<gml:dictionaryEntry>
-		<gml:Definition gml:id="_2220_6930">
-			<gml:description></gml:description>
-			<gml:metaDataProperty>
-				<gml:GenericMetaData>
-					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
-				</gml:GenericMetaData>
-			</gml:metaDataProperty>
-			<gml:description>S-80-1</gml:description>
-			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Sikkerhetsklasse.xml">S-80-1</gml:identifier>
-			<gml:name>5703</gml:name>
-		</gml:Definition>
-	</gml:dictionaryEntry>
-	<gml:dictionaryEntry>
-		<gml:Definition gml:id="_2220_6931">
-			<gml:description></gml:description>
-			<gml:metaDataProperty>
-				<gml:GenericMetaData>
-					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
-				</gml:GenericMetaData>
-			</gml:metaDataProperty>
-			<gml:description>S-100</gml:description>
-			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Sikkerhetsklasse.xml">S-100</gml:identifier>
-			<gml:name>5704</gml:name>
-		</gml:Definition>
-	</gml:dictionaryEntry>
-	<gml:dictionaryEntry>
-		<gml:Definition gml:id="_2220_6932">
-			<gml:description></gml:description>
-			<gml:metaDataProperty>
-				<gml:GenericMetaData>
-					<NVDB_ID xsi:type="gml:StringOrRefType"></NVDB_ID>
-				</gml:GenericMetaData>
-			</gml:metaDataProperty>
-			<gml:description>S-110</gml:description>
-			<gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Sikkerhetsklasse.xml">S-110</gml:identifier>
-			<gml:name>5705</gml:name>
-		</gml:Definition>
-	</gml:dictionaryEntry>
+<?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Sikkerhetsklasse" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
+  <gml:description>Angir hvilken sikkerhetsklasse støtpute er dimensjonert for. Jfr Rekkverksnormal HB N101 (231) kap 6.3.</gml:description>
+  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellrekkverk/1.0">Sikkerhetsklasse</gml:identifier>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14955_43525">
+      <gml:description>S-50</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Sikkerhetsklasse.xml">S-50</gml:identifier>
+      <gml:name>5701</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14955_43526">
+      <gml:description>S-80</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Sikkerhetsklasse.xml">S-80</gml:identifier>
+      <gml:name>5702</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14955_43527">
+      <gml:description>S-80-1</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Sikkerhetsklasse.xml">S-80-1</gml:identifier>
+      <gml:name>5703</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14955_43528">
+      <gml:description>S-100</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Sikkerhetsklasse.xml">S-100</gml:identifier>
+      <gml:name>5704</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14955_43529">
+      <gml:description>S-110</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Sikkerhetsklasse.xml">S-110</gml:identifier>
+      <gml:name>5705</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
 </gml:Dictionary>

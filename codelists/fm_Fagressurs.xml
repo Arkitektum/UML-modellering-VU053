@@ -1,0 +1,68 @@
+<?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Fagressurs" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
+  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fellesmoduler/1.0">Fagressurs</gml:identifier>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14081_40524">
+      <gml:identifier codeSpace="https://www.codelistURL.com">arealplanlegging</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14081_40525">
+      <gml:identifier codeSpace="https://www.codelistURL.com">bru</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14081_40526">
+      <gml:identifier codeSpace="https://www.codelistURL.com">elektro</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14081_40527">
+      <gml:identifier codeSpace="https://www.codelistURL.com">geodesi</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14081_40528">
+      <gml:identifier codeSpace="https://www.codelistURL.com">geofag</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14081_40529">
+      <gml:identifier codeSpace="https://www.codelistURL.com">konstruksjoner</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14081_40530">
+      <gml:identifier codeSpace="https://www.codelistURL.com">landskapsarkitektur</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14081_40531">
+      <gml:identifier codeSpace="https://www.codelistURL.com">milijøvitenskap</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14081_40532">
+      <gml:identifier codeSpace="https://www.codelistURL.com">risiko</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14081_40533">
+      <gml:identifier codeSpace="https://www.codelistURL.com">trafikkstyring</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14081_40534">
+      <gml:identifier codeSpace="https://www.codelistURL.com">tunnel</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14081_40535">
+      <gml:identifier codeSpace="https://www.codelistURL.com">vann</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14081_40536">
+      <gml:identifier codeSpace="https://www.codelistURL.com">veg</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

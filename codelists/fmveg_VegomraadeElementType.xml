@@ -1,0 +1,126 @@
+<?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="VegomraadeElementType" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
+  <gml:description>Union VegdesignElementType er satt sammen av flere kodelister</gml:description>
+  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellveg/1.0">VegomraadeElementType</gml:identifier>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14452_41549">
+      <gml:description>Den del av vegen som er bestemt for vanlig kjøring.</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_VegomraadeElementType.xml">gateKjørebane</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14452_41550">
+      <gml:description>Gate for gående og syklende.</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_VegomraadeElementType.xml">gateSyklendeGående</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14452_41551">
+      <gml:description>Anlegg for gående som er skilt fra kjørebanen med kantstein.</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_VegomraadeElementType.xml">gateFortauSone</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14452_41552">
+      <gml:description>Stein som settes for å avgrense trafikkøyer, fortau, midtdelere etc. Vanlige materialer er granitt og betong.</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_VegomraadeElementType.xml">gateKantstein</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14452_41553">
+      <gml:description>Betegnelse på flate knyttet til gate som ikke dekkes av omforente betegnelser.</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_VegomraadeElementType.xml">gateTilleggselement</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14452_41554">
+      <gml:description>Den del av vegen som er bestemt for vanlig kjøring.</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_VegomraadeElementType.xml">vegKjørebane</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14452_41555">
+      <gml:description>Gang- og sykkelveg er en veg som ved offentlig trafikkskilt er bestemt for kombinert gang- og sykkel- trafikk. Vegen er skilt fra annen veg med gressplen, grøft, rekkverk, kantstein eller på annen måte.</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_VegomraadeElementType.xml">vegSyklendeGående</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14452_41556">
+      <gml:description>Betegnelse på flate knyttet til veg som ikke dekkes av omforente betegnelser.</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_VegomraadeElementType.xml">vegTilleggselement</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14452_41557">
+      <gml:description>- Sidegrøft - Terrenggrøfter - Nedføringsrenner  &#13;
+Sidegrøfter omfatter åpne/dype grøfter til drenering av vegkroppen og til bortledning av overvann, samt snødeponi, og åpne/grunne grøfter til snødeponi og bortledning av overvann der vegkroppen for øvrig dreneres gjennom dype/lukkede grøfter.</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_VegomraadeElementType.xml">rekkverkSideområde_GrøftÅpen</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14452_41558">
+      <gml:description>Lukket grøft er grøfter til drensledninger, overvannsledninger, stikkrenner/kulverter samt grøfter til installasjoner for andre etater (VA- ledninger, andre kommunale ledninger, mv.</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_VegomraadeElementType.xml">rekkverkSideområde_GrøftLukket</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14452_41559">
+      <gml:description>En voll er en oppfylling av terreng. En voll er et element som primært bør nyttes i mindre tett og spredt bebyggelse, mens den ikke hører hjemme i tett by.</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_VegomraadeElementType.xml">rekkverkSideområde_Voll</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14452_41560">
+      <gml:description>Areal eller fysisk skille mellom ulike trafikantgrupper.</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_VegomraadeElementType.xml">rekkverkSideområde_Trafikkdeler</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14452_41561">
+      <gml:description>Murer av naturstein, betong og gabioner &#13;
+For dimensjonering ihht. krav i avsnittet over vises til: - Håndbok N400 Bruprosjektering (Ref. 4) - Håndbok V220 Geoteknikk i vegbygging (Ref. 6) Det vises til Håndbok V270 Tørrmuring med maskin (Ref. 7) for faglige råd om tørrmuring.</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_VegomraadeElementType.xml">rekkverkSideområde_Mur</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14452_41562">
+      <gml:description>Areal langs veg utenfor fyllingsfot og skjæringstopp.</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_VegomraadeElementType.xml">rekkverkSideområde_Sideterreng</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14452_41563">
+      <gml:description>Fylling for veg over opprinnelig terreng. &#13;
+Skjæring: Utgraving i opprinnelig terreng begrenset av skjæringsskråning og vegens planum.</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_VegomraadeElementType.xml">fyllingSkjæring</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14452_41564">
+      <gml:description>Langsgående linjer, sperreområde eller fysisk midtdeler.</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_VegomraadeElementType.xml">skilleMellomKjøreretninger</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14452_41565">
+      <gml:description>Samlebetegnelse for ulike anlegg for stopp, som: &#13;
+ - Serviceanlegg/Rasteplass  &#13;
+ - Stopplomme  &#13;
+ - Kontrollplass/vektplass  &#13;
+ - Kollektivterminal (bussterminal)  &#13;
+ - Godsterminal  &#13;
+ - Parkeringsplass (inkl. samkjørselplass og oppstillingsplass)  &#13;
+ - Kjettingplass</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_VegomraadeElementType.xml">sideanlegg</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14452_41566">
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_VegomraadeElementType.xml">vegBuss</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14452_41567">
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_VegomraadeElementType.xml">gateBuss</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

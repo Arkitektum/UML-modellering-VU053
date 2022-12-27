@@ -1,0 +1,31 @@
+<?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Bassengtype" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
+  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellvannogavloep/1.0">Bassengtype</gml:identifier>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14498_41638">
+      <gml:description>(Oslo VAV Høydebasseng)&#13;
+&#13;
+Definisjonstekst: Et magasin/basseng for å lagre vann og etablere fast utgangstrykk på vannledningsnettet (vannforskyningsområde).&#13;
+&#13;
+Nærmere beskrivelse/varianter:&#13;
+&#13;
+Element i distribusjonsnett for drikkevann med et basseng/tank, en som ligger høyt i forhold til forbrukerne av drikkevannet slik at vannet kan overføres ved hjelp av gravitasjon. Hensikten med høydebassenget er å jevne ut variasjoner i vannforbruket for oppstrøms-ledninger, sørge for jevnt trykk i overføringsledninger og sørge for vannforsyning en viss tid ved stans i overføringene fra oppstrøms-ledninger (f.eks. ved strøm eller ledningsbrudd).</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Bassengtype.xml">høydebassengTårn</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14498_41639">
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Bassengtype.xml">magasin</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14498_41640">
+      <gml:description>(Oslo VAV Trykkreduksjonsbasseng)&#13;
+Definisjonstekst: Basseng for reduksjon av trykk i vannledningsnett på grunn av vannkildens beliggenhet i forhold til det aktuelle forsyningsområdet. Trykkreduksjonsbasseng tjener samtidig som utjevnings- og reservebasseng. Tilløpet reguleres med flottørventil.&#13;
+&#13;
+Nærmere beskrivelse/varianter:&#13;
+&#13;
+VANN: utjevningsbasseng benyttes for å kunne drive vannverk med jevn belastning ved varierende forbruk og for å dekke vannforbruk utover det normale, f.eks. ved brann. Fordrøyningsbasseng benyttes også for utjevning av de trykksvingninger som kommer av varierende forbruk. Jfr. trykkreduksjonsbasseng.</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Bassengtype.xml">trykkreduksjonsbasseng</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

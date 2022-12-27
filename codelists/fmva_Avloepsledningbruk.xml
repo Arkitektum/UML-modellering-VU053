@@ -1,0 +1,24 @@
+<?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Avloepsledningbruk" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
+  <gml:description>Lista ikke fullstendig</gml:description>
+  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellvannogavloep/1.0">Avloepsledningbruk</gml:identifier>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14546_41737">
+      <gml:description>(Oslo VAV AF-ledning)&#13;
+&#13;
+Definisjonstekst: Ledning for transport av avløpsvann som inneholder både spillvann og overvann. Jfr. spillvannsledning og overvannsledning.</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Avloepsledningsbruk.xml">fellesavløp</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14546_41738">
+      <gml:description>(Oslo VAV Spillvannsledning)&#13;
+&#13;
+Definisjonstekst: Ledning for transport av forurenset avløpsvann&#13;
+&#13;
+Nærmere beskrivelse/varianter:&#13;
+&#13;
+Spillvann er separert fra overvann, så spillvannsledninger skal i prinsippet ikke inneholde overvann. Overvannsledninger skal ikke tilkobles spillvannsledningen. Jfr. Avløp felles.</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Avloepsledningsbruk.xml">spillvann</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

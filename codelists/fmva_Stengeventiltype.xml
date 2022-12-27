@@ -1,0 +1,56 @@
+<?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Stengeventiltype" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
+  <gml:description>Kilde: (SOSI Ledning 4.6)</gml:description>
+  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellvannogavloep/1.0">Stengeventiltype</gml:identifier>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14534_41700">
+      <gml:description>(Oslo VAV Stengeventil sluse)&#13;
+&#13;
+Definisjonstekst: Innretting som gir mulighet for å stenge vannet på det aktuelle stedet. &#13;
+&#13;
+&#13;
+Nærmere beskrivelse/varianter:&#13;
+&#13;
+Slusen i røret skrus ut av vannstrømmen slik at tverrsnittet blir fritt.&#13;
+Kan også monteres med motor.</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Stengeventiltype.xml">sluseventil</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14534_41701">
+      <gml:description>(Oslo VAV Stengeventil spjeld)&#13;
+&#13;
+Definisjonstekst: Innretting som gir mulighet for å stenge vannet på det aktuelle stedet. &#13;
+&#13;
+Nærmere beskrivelse/varianter:&#13;
+&#13;
+Spjeldet står midt i vannstrømmen. Vil vanskeliggjøre bruk av renseplugg.&#13;
+Kan også monteres med motor.</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Stengeventiltype.xml">spjeldventil</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14534_41702">
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Stengeventiltype.xml">kuleventil</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14534_41703">
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Stengeventiltype.xml">seteventil</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14534_41704">
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Stengeventiltype.xml">skyvespjeld</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14534_41705">
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Stengeventiltype.xml">stoppekran</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14534_41706">
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Stengeventiltype.xml">nåleventil</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

@@ -1,0 +1,26 @@
+<?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Uttakstype" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
+  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellvannogavloep/1.0">Uttakstype</gml:identifier>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14486_41618">
+      <gml:description>(Oslo VAV Fontene??)&#13;
+&#13;
+Definisjonstekst: Drikkevannsfontene som et eget objekt  &#13;
+Fontene: kunst/skulptur fontene/plaskebasseng.</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Uttakstype.xml">fontene</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14486_41619">
+      <gml:description>(Oslo VAV Vannpost/Vannfylleri)&#13;
+&#13;
+Definisjonstekst: Nytt begrep: Vannfylleri.&#13;
+En installasjon der en kan ta ut større mengder med vann.  F.eks. til båter og spylebiler</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Uttakstype.xml">vannfylleri</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14486_41620">
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Uttakstype.xml">vannpost</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

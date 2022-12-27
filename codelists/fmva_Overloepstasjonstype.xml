@@ -1,0 +1,31 @@
+<?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Overloepstasjonstype" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
+  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellvannogavloep/1.0">Overloepstasjonstype</gml:identifier>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14508_41642">
+      <gml:description>(Oslo VAV Bjelkestengsel)&#13;
+&#13;
+Definisjonstekst: Regulering av vannstrøm. &#13;
+&#13;
+Nærmere beskrivelse/varianter:&#13;
+&#13;
+- På avløp, i forbindelse med overløpskummer. Styrer retningen på vannstrømmen.&#13;
+- Regulere vannspeilet i dammer.</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Overloepstasjonstype.xml">bjelkestengsel</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14508_41643">
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Overloepstasjonstype.xml">høytSideoverløp</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14508_41644">
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Overloepstasjonstype.xml">hvirveloverløp</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14508_41645">
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Overloepstasjonstype.xml">tverroverløp</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

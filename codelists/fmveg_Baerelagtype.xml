@@ -1,0 +1,158 @@
+<?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Baerelagtype" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
+  <gml:description>Angir hvilken type vegobjektet er av</gml:description>
+  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellveg/1.0">Baerelagtype</gml:identifier>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14364_41219">
+      <gml:description>Mekanisk stabiliserte materialer</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Baerelagtype.xml">Mekanisk stabiliserte materialer</gml:identifier>
+      <gml:name>3660</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14364_41220">
+      <gml:description>Mest aktuelle sorteringer: 16/56, 22/63, 22/90</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Baerelagtype.xml">Forkilt pukk</gml:identifier>
+      <gml:name>3665</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14364_41221">
+      <gml:description>Mest aktuelle sorteringer: 0/22, 0/32, 0/45, 0/63</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Baerelagtype.xml">Knust grus</gml:identifier>
+      <gml:name>6960</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14364_41222">
+      <gml:description>Knuste steinmaterialer. Mest aktuelle sorteringer: 0/32, 0/45, 0/63</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Baerelagtype.xml">Knust berg</gml:identifier>
+      <gml:name>6961</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14364_41223">
+      <gml:description>Benyttes ikke om dypfresing. Forutsetter at masser er tilført utenfra.</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Baerelagtype.xml">Knust asfalt</gml:identifier>
+      <gml:name>16134</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14364_41224">
+      <gml:description>Resultat av dypfresing av dekke/bærelag. Blandede masser mekanisk stabilisert</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Baerelagtype.xml">Dypfrest, mekanisk stabilisert</gml:identifier>
+      <gml:name>19018</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14364_41225">
+      <gml:description>Bitumenstabiliserte materialer</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Baerelagtype.xml">Bitumenstabiliserte materialer</gml:identifier>
+      <gml:name>3666</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14364_41226">
+      <gml:description>Asfaltert grus</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Baerelagtype.xml">Asfaltert grus</gml:identifier>
+      <gml:name>3667</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14364_41227">
+      <gml:description>Asfaltert pukk</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Baerelagtype.xml">Asfaltert pukk</gml:identifier>
+      <gml:name>3668</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14364_41228">
+      <gml:description>Penetrert pukk</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Baerelagtype.xml">Penetrert pukk</gml:identifier>
+      <gml:name>3669</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14364_41229">
+      <gml:description>Bitumesnstabilisert grus</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Baerelagtype.xml">Bitumenstabilisert grus</gml:identifier>
+      <gml:name>3671</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14364_41230">
+      <gml:description>Bitumenanriket grus</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Baerelagtype.xml">Bitumenanriket grus</gml:identifier>
+      <gml:name>19074</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14364_41231">
+      <gml:description>Emulsjonsgrus</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Baerelagtype.xml">Emulsjonsgrus</gml:identifier>
+      <gml:name>19075</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14364_41232">
+      <gml:description>Emulsjonspukk</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Baerelagtype.xml">Emulsjonspukk</gml:identifier>
+      <gml:name>19076</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14364_41233">
+      <gml:description>Skumgrus</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Baerelagtype.xml">Skumgrus</gml:identifier>
+      <gml:name>6957</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14364_41234">
+      <gml:description>Resultat av dypfresing av dekke/bærelag. Blandede masser stabilisert med med bitumen</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Baerelagtype.xml">Dypfrest, bitumenstabilisert</gml:identifier>
+      <gml:name>19022</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14364_41235">
+      <gml:description>Sementstabiliserte materialer</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Baerelagtype.xml">Sementstabiliserte materialer</gml:identifier>
+      <gml:name>3674</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14364_41236">
+      <gml:description>Sementstabilisert pukk</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Baerelagtype.xml">Sementstabilisert pukk</gml:identifier>
+      <gml:name>3675</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14364_41237">
+      <gml:description>Sementstabilisert grus</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Baerelagtype.xml">Sementstabilisert grus</gml:identifier>
+      <gml:name>3676</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14364_41238">
+      <gml:description>Gjenbruksbetong</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Baerelagtype.xml">Gjenbruksbetong</gml:identifier>
+      <gml:name>6962</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14364_41239">
+      <gml:description>Grus-/Steinmaterialer stabilisert med lignin</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Baerelagtype.xml">Ligninstabilert materiale</gml:identifier>
+      <gml:name>19020</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14364_41240">
+      <gml:description>Resultat av dypfresing av dekke/bærelag. Blandede masser stabilisert med lignin</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Baerelagtype.xml">Dypfrest, ligninstabilisert</gml:identifier>
+      <gml:name>19019</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

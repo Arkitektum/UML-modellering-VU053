@@ -1,0 +1,32 @@
+<?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="MaterialeBelegning" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
+  <gml:description>Angir hvilket materiale vegobjektet er laget av/ hvilken belegning som er brukt. Mest aktuelt for humper og puter.  Kan også være romlefelt f.eks av "stein, brostein"</gml:description>
+  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellveg/1.0">MaterialeBelegning</gml:identifier>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14385_41342">
+      <gml:description>Stein, brostein</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_MaterialeBelegning.xml">stein_Brostein</gml:identifier>
+      <gml:name>11634</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14385_41343">
+      <gml:description>Asfalt</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_MaterialeBelegning.xml">asfalt</gml:identifier>
+      <gml:name>11635</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14385_41344">
+      <gml:description>Betongstein</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_MaterialeBelegning.xml">betongstein</gml:identifier>
+      <gml:name>11636</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14385_41345">
+      <gml:description>Betong, prefabrikert</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_MaterialeBelegning.xml">betong_Prefabrikert</gml:identifier>
+      <gml:name>11637</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

@@ -1,0 +1,21 @@
+<?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Skjaeringtype" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
+  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellveg/1.0">Skjaeringtype</gml:identifier>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14457_41579">
+      <gml:identifier codeSpace="Skjaeringtype.xml">jordskjæring</gml:identifier>
+      <gml:name>2286</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14457_41580">
+      <gml:identifier codeSpace="Skjaeringtype.xml">bergskjæring</gml:identifier>
+      <gml:name>2325</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14457_41581">
+      <gml:identifier codeSpace="Skjaeringtype.xml">Kombinert jord- og bergskjæring</gml:identifier>
+      <gml:name>3283</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

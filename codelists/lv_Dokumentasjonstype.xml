@@ -1,0 +1,18 @@
+<?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Dokumentasjonstype" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
+  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/leveranse/1.0">Dokumentasjonstype</gml:identifier>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14110_40645">
+      <gml:identifier codeSpace="https://www.codelistURL.com">grunnlagsdata</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14110_40646">
+      <gml:identifier codeSpace="https://www.codelistURL.com">modell</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14110_40647">
+      <gml:identifier codeSpace="https://www.codelistURL.com">resultatdata</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

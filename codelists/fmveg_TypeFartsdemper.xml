@@ -1,0 +1,74 @@
+<?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="TypeFartsdemper" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
+  <gml:description>Angir hvilken type vegobjektet er av.</gml:description>
+  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellveg/1.0">TypeFartsdemper</gml:identifier>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14412_41444">
+      <gml:description>Fartshump</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_TypeFartsdemper.xml">Fartshump</gml:identifier>
+      <gml:name>3594</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14412_41445">
+      <gml:description>Fartsputer</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_TypeFartsdemper.xml">Fartsputer</gml:identifier>
+      <gml:name>5543</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14412_41446">
+      <gml:description>Busshump</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_TypeFartsdemper.xml">Busshump</gml:identifier>
+      <gml:name>3595</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14412_41447">
+      <gml:description>Trafikkøy</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_TypeFartsdemper.xml">Trafikkøy</gml:identifier>
+      <gml:name>7918</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14412_41448">
+      <gml:description>Innsnevring</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_TypeFartsdemper.xml">Innsnevring</gml:identifier>
+      <gml:name>7917</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14412_41449">
+      <gml:description>Sideforskyvning</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_TypeFartsdemper.xml">Sideforskyvning</gml:identifier>
+      <gml:name>7919</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14412_41450">
+      <gml:description>Både og</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_TypeFartsdemper.xml">Innsnevring og sideforskyvning</gml:identifier>
+      <gml:name>11778</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14412_41451">
+      <gml:description>Rumlefelt</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_TypeFartsdemper.xml">Rumlefelt</gml:identifier>
+      <gml:name>7920</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14412_41452">
+      <gml:description>Fortausutvidelse i kryss</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_TypeFartsdemper.xml">Fortausutvidelse i kryss</gml:identifier>
+      <gml:name>7921</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14412_41453">
+      <gml:description>Forsenkning i vegbanen</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_TypeFartsdemper.xml">Fartsdump</gml:identifier>
+      <gml:name>11652</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>
