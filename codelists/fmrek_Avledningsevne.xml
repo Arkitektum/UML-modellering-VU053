@@ -4,14 +4,14 @@
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14957_43530">
       <gml:description>Avledende</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/codeListNavn.xml">Avledende</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Avledningsevne.xml">Avledende</gml:identifier>
       <gml:name>5706</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14957_43531">
       <gml:description>Ikke avledende</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/codeListNavn.xml">Ikke avledende</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Avledningsevne.xml">Ikke avledende</gml:identifier>
       <gml:name>5707</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

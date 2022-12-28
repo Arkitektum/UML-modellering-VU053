@@ -4,15 +4,15 @@
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43251">
       <gml:description>Ikke lenger aktiv i database over typegodkjent vegutstyr. Tidligere link til utstyr: http ://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508484&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Active Block 450.0 - (N1-W5) U - MGT</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Active Block 450.0 - (N1-W5) U</gml:identifier>
       <gml:name>17944</gml:name>
-      <gml:name>17944-</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43252">
       <gml:description>Ikke lenger aktiv i database over typegodkjent vegutstyr. Tidligere link til utstyr: http ://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508485&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Active Block 450.1 - (H1-W5) U - 17945</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Active Block 450.1 - (H1-W5) U</gml:identifier>
+      <gml:name>17945</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
