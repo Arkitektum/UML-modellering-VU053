@@ -24,7 +24,7 @@
     <complexContent>
       <extension base="svvli:VU053FeatureType">
         <sequence>
-          <element name="grunnlagsdataBrukt">
+          <element minOccurs="0" name="grunnlagsdataBrukt">
             <complexType>
               <complexContent>
                 <extension base="gml:AbstractFeatureMemberType">
@@ -88,7 +88,7 @@
     <complexContent>
       <extension base="gmgrf:GrunnforholdElementType">
         <sequence>
-          <element name="losmassetype" type="gml:CodeType">
+          <element minOccurs="0" name="losmassetype" type="gml:CodeType">
             <annotation>
               <documentation>kvartærgeologiske løsmassetyper (jordartstyper)</documentation>
               <appinfo>
@@ -177,7 +177,7 @@
           <element name="type" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/</defaultCodeSpace>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_SonderingType.xml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -210,39 +210,39 @@
               </complexContent>
             </complexType>
           </element>
-          <element name="pavisningsType" type="gml:CodeType">
+          <element minOccurs="0" name="pavisningsType" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/</defaultCodeSpace>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolPavisningstype.xml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
-          <element name="antallPunkt"/>
-          <element name="geologiskAlder" type="gml:CodeType">
+          <element minOccurs="0" name="antallPunkt" type="integer"/>
+          <element minOccurs="0" name="geologiskAlder" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/</defaultCodeSpace>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
-          <element name="kvalitet" type="gml:CodeType">
+          <element minOccurs="0" name="kvalitet" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/</defaultCodeSpace>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_TemaKvalitet.xml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
-          <element name="dateringMetode" type="gml:CodeType">
+          <element minOccurs="0" name="dateringMetode" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/</defaultCodeSpace>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_DateringMetode.xml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
-          <element name="temaJustering" type="gml:CodeType">
+          <element minOccurs="0" name="temaJustering" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/</defaultCodeSpace>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolTemajustering.xml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -267,7 +267,7 @@
           <element minOccurs="0" name="verdi" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/</defaultCodeSpace>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolVerdivurdering.xml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
