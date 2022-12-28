@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Datafangstmetode" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
+  <gml:description>Metode for datafangst. Datafangstmetoden beskriver hvordan selve vektordataene er posisjonert fra et datagrunnlag (observasjoner med landmålingsutstyr, fotogrammetrisk stereomodell, digital terrengmodell etc.) og ikke prosessen med å innhente det bakenforliggende datagrunnlaget.</gml:description>
+  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/grunnlagsdata/0.1">Datafangstmetode</gml:identifier>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15139_45105">
+      <gml:description>Posisjonen er digitalisert fra ortofoto eller andre plane kartdata</gml:description>
+      <gml:identifier codeSpace="https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/datafangstmetode">Digitalisert</gml:identifier>
+      <gml:name>dig</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15139_45106">
+      <gml:description>Posisjonen er konstruert/generert fra en fotogrammetrisk stereomodell</gml:description>
+      <gml:identifier codeSpace="https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/datafangstmetode">Fotogrammetri</gml:identifier>
+      <gml:name>fot</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15139_45107">
+      <gml:description>Posisjonen er manuelt konstruert, eller generert ved maskinlæring eller annen type programvare, fra punktsky fra laserskanning, bildematching, sonar, andre typer sensordata eller kombinasjon av flere typer sensordata.</gml:description>
+      <gml:identifier codeSpace="https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/datafangstmetode">Generert</gml:identifier>
+      <gml:name>gen</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15139_45108">
+      <gml:description>Posisjonen er målt inn direkte med en landmålingsmetode. Aktuelle landmålingsmetoder kan være nivellering, vinkelmåling, avstandsmåling eller treghetsmåling. Kodeverdien brukes også for kombinasjoner av disse målemetodene eller der disse målemetodene kombineres med GNSS. Landmåling utføres normalt med overskytende målinger og utjevning av resultatet.</gml:description>
+      <gml:identifier codeSpace="https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/datafangstmetode">Landmålt</gml:identifier>
+      <gml:name>lan</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15139_45109">
+      <gml:description>Posisjonen er hentet plandata. Posisjonen er ikke verifisert med innmåling.</gml:description>
+      <gml:identifier codeSpace="https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/datafangstmetode">Plandata</gml:identifier>
+      <gml:name>pla</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15139_45110">
+      <gml:description>Posisjonen er målt inn direkte med GNSS (for posisjoner målt inn med GNSS i kombinasjon med andre landmålingsmetoder skal koden Landmåling benyttes)</gml:description>
+      <gml:identifier codeSpace="https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/datafangstmetode">Satellittmålt</gml:identifier>
+      <gml:name>sat</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15139_45111">
+      <gml:description>Posisjonen er hentet fra prosjekterte eller planlagte data, f.eks. fra en BIM-modell, som er verifisert som bygget ved innmålinger</gml:description>
+      <gml:identifier codeSpace="https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/datafangstmetode">Som bygget</gml:identifier>
+      <gml:name>byg</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15139_45112">
+      <gml:description>Ukjent eller uspesifisert datafangstmetode</gml:description>
+      <gml:identifier codeSpace="https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/datafangstmetode">Ukjent</gml:identifier>
+      <gml:name>ukj</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

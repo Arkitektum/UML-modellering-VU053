@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="GrunnvannPotensiale" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
+  <gml:description>løsmassenes potensiale til å inneholde grunnvannsressurser&#13;
+&#13;
+Merknad: Avledet tema basert på jordartens egenskaper</gml:description>
+  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/grunnlagsmodellgrunnforhold/0.1">GrunnvannPotensiale</gml:identifier>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15097_44728">
+      <gml:description>Grunnvannsressursen er påvist med godt resultat ved detaljundersøkelser (prøveboring).</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GrunnvannPotensiale.xml">Påvist betydelig grunnvannsressurs</gml:identifier>
+      <gml:name>1</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15097_44729">
+      <gml:description>Omfatter hovedsakelig Breelv- og elveavsetninger, samt enkelte mektige strandavsetninger hvor grunnvannet står i forbindelse med vassdrag/innsjø. Andre store breelv- og elveavsetninger med selvmatende grunnvannsmagasin kan også inngå.</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GrunnvannPotensiale.xml">Antatt betydelig grunnvannspotensial</gml:identifier>
+      <gml:name>2</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15097_44730">
+      <gml:description>Små grunnvannsuttak kan være mulig fra mindre breeelv- og elveavsetninger som ikke står i forbindelse med vassdrag/innsjø. Sand- og grusholdige morener, strandavsetninger og innsjø-/bresjøavsetninger med dominans av sand, samt skredmateriale kan også inngå.</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GrunnvannPotensiale.xml">Begrenset grunnvannspotensial</gml:identifier>
+      <gml:name>3</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15097_44731">
+      <gml:description>Omfatter hovedsakelig finkornige morener, hav- og fjordavsetninger eller tynne, usammenhengende løsmasseavsetninger, samt bart fjell og myr.</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GrunnvannPotensiale.xml">Ikke grunnvannspotensial i løsmassene</gml:identifier>
+      <gml:name>4</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15097_44732">
+      <gml:description>Grunnvannspotensialet er ikke klassifisert. Registreringen (løsmassekartleggingen) er ikke differensiert nok</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GrunnvannPotensiale.xml">Ikke klassifisert</gml:identifier>
+      <gml:name>5</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

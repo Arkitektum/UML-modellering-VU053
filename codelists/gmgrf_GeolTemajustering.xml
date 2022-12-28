@@ -1,0 +1,31 @@
+<?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="GeolTemajustering" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
+  <gml:description>justering/endring av en automatisk klassifikasjon av geologisk tema&#13;
+&#13;
+&#13;
+-- Definition - - &#13;
+adjustment/change of an automatic classification of geological themes/topics</gml:description>
+  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/grunnlagsmodellgrunnforhold/0.1">GeolTemajustering</gml:identifier>
+  <gml:name>GeolThematicAdjustment</gml:name>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15123_45069">
+      <gml:description>Avledet tema foreligger i henhold til standard for klassifisering av hovedtema&#13;
+&#13;
+-- Definition -- &#13;
+There are derived themes in accordance with standard classification of main theme</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Ikke justert tema</gml:identifier>
+      <gml:name>Non-adjusted themes</gml:name>
+      <gml:name>0</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15123_45070">
+      <gml:description>Avledet tema er justert i henhold til standard for klassifisering av hovedtema &#13;
+&#13;
+-- Definition -- &#13;
+Derived theme has been adjusted in accordance with standard classification of main theme</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Justert tema</gml:identifier>
+      <gml:name>Adjusted themes</gml:name>
+      <gml:name>1</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

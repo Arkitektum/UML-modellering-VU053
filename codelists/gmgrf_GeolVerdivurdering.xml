@@ -1,0 +1,51 @@
+<?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="GeolVerdivurdering" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
+  <gml:description>hvor viktig en geologisk ressurs eller registrering er med tanke på mulig økonomisk utnyttelse nå eller for framtiden&#13;
+&#13;
+&#13;
+-- Definition - - &#13;
+how important a geological resource or registration is with a view to potential economic utilisation now or in the future</gml:description>
+  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/grunnlagsmodellgrunnforhold/0.1">GeolVerdivurdering</gml:identifier>
+  <gml:name>GeolValueAssessment</gml:name>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15124_45071">
+      <gml:identifier codeSpace="https://www.codelistURL.com">Meget viktig forekomst</gml:identifier>
+      <gml:name>Very important occurrence </gml:name>
+      <gml:name>1</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15124_45072">
+      <gml:identifier codeSpace="https://www.codelistURL.com">Viktig forekomst</gml:identifier>
+      <gml:name>Important occurrence</gml:name>
+      <gml:name>2</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15124_45073">
+      <gml:identifier codeSpace="https://www.codelistURL.com">Deler av forekomsten er viktig</gml:identifier>
+      <gml:name>Parts of the occurrence are important</gml:name>
+      <gml:name>3</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15124_45074">
+      <gml:identifier codeSpace="https://www.codelistURL.com">Hele eller deler kan være viktig</gml:identifier>
+      <gml:name>The whole or parts may be important</gml:name>
+      <gml:name>4</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15124_45075">
+      <gml:identifier codeSpace="https://www.codelistURL.com">Lite viktig</gml:identifier>
+      <gml:name>Of little importance</gml:name>
+      <gml:name>5</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15124_45076">
+      <gml:identifier codeSpace="https://www.codelistURL.com">Ikke vurdert</gml:identifier>
+      <gml:name>Not assessed/classified</gml:name>
+      <gml:name>6</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

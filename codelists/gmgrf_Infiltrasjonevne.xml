@@ -1,0 +1,39 @@
+<?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Infiltrasjonevne" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
+  <gml:description>løsmassenes egenskaper til å infiltrere og rense avløpsvann</gml:description>
+  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/grunnlagsmodellgrunnforhold/0.1">Infiltrasjonevne</gml:identifier>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15098_44733">
+      <gml:description>Løsmassenes kornfordeling og permeabilitet, samt jorddybde og terrengforhold indikerer god infiltrasjonsevne. Tilstrekkelig tykkelse av sand og grus over grunnvannsnivået. Omfatter store breelv- og elveavsetninger, samt enkelte mektige strandavsetninger og sorterte partier i randmorener.</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Infiltrasjonevne.xml">Godt egnet</gml:identifier>
+      <gml:name>1</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15098_44734">
+      <gml:description>Løsmassenes kornfordeling og permeabilitet, samt jorddybde og terrengforhold indikerer middels infiltrasjonsevne. Begrenset tykkelse av sand og grus over grunnvannsnivået, eller større avsetninger med noe redusert infiltrasjonskapasitet. Omfatter hovedsakelig tykke sand- og grusrike moreneavsetninger, tykt/sammenhengende dekke av forvitringsmateriale, sandige strandavsetninger og bresjø-/innsjøavsetninger.</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Infiltrasjonevne.xml">Middels egnet</gml:identifier>
+      <gml:name>2</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15098_44735">
+      <gml:description>Løsmassenes kornfordeling og permeabilitet, samt jorddybde og terrengforhold indikerer dårlig infiltrasjonsevne. Små/grunne avsetninger, stedvis med noe infiltrasjonskapasitet eller tykke avsetninger med liten infiltrasjonskapasitet.</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Infiltrasjonevne.xml">Lite egnet</gml:identifier>
+      <gml:name>3</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15098_44736">
+      <gml:description>Løsmassenes kornfordeling og permeabilitet, samt jorddybde og terrengforhold indikerer meget dårlig eller ingen infiltrasjonsevne. Omfatter tette leirdominerte avsetninger, grovt blokk- og steinmateriale, myr, fyllmasser, tynne løsmasseavsetninger med liten infiltrasjonskapasitet, samt bart fjell.</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Infiltrasjonevne.xml">Uegnet</gml:identifier>
+      <gml:name>4</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15098_44737">
+      <gml:description>Infiltrasjonsevnen er ikke vurdert fordi tilstrekkelige data mangler.</gml:description>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Infiltrasjonevne.xml">Ikke klassifisert</gml:identifier>
+      <gml:name>5</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

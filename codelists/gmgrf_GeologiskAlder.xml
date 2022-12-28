@@ -1,0 +1,2025 @@
+<?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="GeologiskAlder" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
+  <gml:description>alderen av en bergart forteller hvor lang tid som er gått siden den ble dannet.  Navn på geologisk periode/epoke for det tidsrom en geologisk lagrekke ble dannet&#13;
+&#13;
+&#13;
+-- Definition - - &#13;
+the age of a rock tells how long ago it was formed. Name of geological period/epoch for the period of time in which a geological stratigraphic sequence was formed</gml:description>
+  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/grunnlagsmodellgrunnforhold/0.1">GeologiskAlder</gml:identifier>
+  <gml:name>GeologicAge</gml:name>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44865">
+      <gml:description>i dag - 2500 C14 år BP&#13;
+&#13;
+-- Definition -- &#13;
+present - 2500 C14 years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Subatlantisk</gml:identifier>
+      <gml:name>Subatlantic</gml:name>
+      <gml:name>1</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44866">
+      <gml:description>i dag - 2500 C14 år BP&#13;
+&#13;
+-- Definition -- &#13;
+present - 2500 C14 years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Sen Holocen</gml:identifier>
+      <gml:name>Late Holocene</gml:name>
+      <gml:name>5</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44867">
+      <gml:description>2500 - 5000 C14 år BP&#13;
+&#13;
+-- Definition -- &#13;
+2500 - 5000 C14 years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Subboreal</gml:identifier>
+      <gml:name>Sub-Boreal</gml:name>
+      <gml:name>10</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44868">
+      <gml:description>5000 - 8000 C14 år BP&#13;
+&#13;
+-- Definition -- &#13;
+5000 - 8000 C14 years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Atlantisk</gml:identifier>
+      <gml:name>Atlantic</gml:name>
+      <gml:name>15</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44869">
+      <gml:description>2500 - 8000 C14 år BP&#13;
+&#13;
+-- Definition -- &#13;
+2500 -  8000 C14 years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Midt Holocen</gml:identifier>
+      <gml:name>Middle Holocene</gml:name>
+      <gml:name>20</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44870">
+      <gml:description>8000 - 9000 C14 år BP&#13;
+&#13;
+-- Definition -- &#13;
+8000 - 9000 C14 years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Boreal</gml:identifier>
+      <gml:name>Boreal</gml:name>
+      <gml:name>25</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44871">
+      <gml:description>9000 - 10000 C14 år BP&#13;
+&#13;
+-- Definition -- &#13;
+9000 - 10000 C14 years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Preboreal</gml:identifier>
+      <gml:name>Pre-Boreal</gml:name>
+      <gml:name>30</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44872">
+      <gml:description>8000 - 10000 C14 år BP&#13;
+&#13;
+-- Definition -- &#13;
+8000 – 10000 C14 years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Tidlig Holocen</gml:identifier>
+      <gml:name>Early Holocene</gml:name>
+      <gml:name>35</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44873">
+      <gml:description>i dag - 10000 C14 år BP&#13;
+&#13;
+-- Definition -- &#13;
+present – 10000 years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Holocen</gml:identifier>
+      <gml:name>Holocene</gml:name>
+      <gml:name>40</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44874">
+      <gml:description>10000 - 11000 C14 år BP&#13;
+&#13;
+-- Definition -- &#13;
+10000 – 11000 C14 years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Yngre Dryas</gml:identifier>
+      <gml:name>Younger Dryas</gml:name>
+      <gml:name>45</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44875">
+      <gml:description>11000 - 12000 C14 år BP&#13;
+&#13;
+-- Definition -- &#13;
+11000 – 12000 C14 years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Allerød</gml:identifier>
+      <gml:name>Allerød</gml:name>
+      <gml:name>50</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44876">
+      <gml:description>12000 - 12200 C14 år BP&#13;
+&#13;
+-- Definition -- &#13;
+12000 – 12200 C14 years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Eldre Dryas</gml:identifier>
+      <gml:name>Elder Dryas</gml:name>
+      <gml:name>55</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44877">
+      <gml:description>12000 - 13000 C14 år BP&#13;
+&#13;
+-- Definition -- &#13;
+12000 – 13000 C14 years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Bølling</gml:identifier>
+      <gml:name>Bølling</gml:name>
+      <gml:name>60</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44878">
+      <gml:description>10000 - 24000 C14 år BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Sen Weichsel, C14 år BP</gml:identifier>
+      <gml:name>65</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44879">
+      <gml:description>11500 - 27000 Kalenderår BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Sen Weichsel, Kalenderår</gml:identifier>
+      <gml:name>70</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44880">
+      <gml:description>27000 - 74000 Kalenderår BP&#13;
+&#13;
+-- Definition -- &#13;
+27000 – 74000 calendar years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Midt Weichsel</gml:identifier>
+      <gml:name>Middle Weichselian</gml:name>
+      <gml:name>75</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44881">
+      <gml:description>74000 - 117000 Kalenderår BP&#13;
+&#13;
+-- Definition -- &#13;
+74000 –117000 calendar years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Tidlig Weichsel</gml:identifier>
+      <gml:name>Early Weichselian</gml:name>
+      <gml:name>80</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44882">
+      <gml:description>11500 - 117000 Kalenderår BP&#13;
+&#13;
+-- Definition -- &#13;
+11500 – 117000 calendar years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Weichselian</gml:identifier>
+      <gml:name>Weichselian</gml:name>
+      <gml:name>85</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44883">
+      <gml:description>117000 - 130000 Kalenderår BP&#13;
+&#13;
+-- Definition -- &#13;
+117000 – 130000 calendar years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Eemian</gml:identifier>
+      <gml:name>Eemian</gml:name>
+      <gml:name>90</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44884">
+      <gml:description>11500 - 130000 Kalenderår BP&#13;
+&#13;
+-- Definition -- &#13;
+11500 – 130000 calendar years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Sen Pelistocen</gml:identifier>
+      <gml:name>Late Pleistocene</gml:name>
+      <gml:name>95</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44885">
+      <gml:description>0.13 - 0.19 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+0.13 – 0.19 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Saale (Drenthe)</gml:identifier>
+      <gml:name>Saalian (Drenthe)</gml:name>
+      <gml:name>100</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44886">
+      <gml:description>0.19 - 0.25 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+0.19 – 0.25 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Wacken</gml:identifier>
+      <gml:name>Wacken</gml:name>
+      <gml:name>105</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44887">
+      <gml:description>0.25 - 0.30 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+0.25 – 0.30 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Fuhne</gml:identifier>
+      <gml:name>Fuhne</gml:name>
+      <gml:name>110</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44888">
+      <gml:description>0.30 - 0.34 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+0.30 – 0.34 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Reinsdorf</gml:identifier>
+      <gml:name>Reinsdorf</gml:name>
+      <gml:name>115</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44889">
+      <gml:description>0.34 - 0.35 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+0.34 – 0.35 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Kald fase</gml:identifier>
+      <gml:name>Cool phase</gml:name>
+      <gml:name>120</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44890">
+      <gml:description>0.35 - 0.43 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+0.35 – 0.43 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Holstein</gml:identifier>
+      <gml:name>Holstein</gml:name>
+      <gml:name>125</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44891">
+      <gml:description>0.43 - 0.56 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+0.43 – 0.56 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Elster 1, 2 og 3</gml:identifier>
+      <gml:name>Elster 1, 2 and 3</gml:name>
+      <gml:name>130</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44892">
+      <gml:description>0.56 - 0.73 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+0.56 – 0.73 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Cromerian</gml:identifier>
+      <gml:name>Cromerian</gml:name>
+      <gml:name>135</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44893">
+      <gml:description>0.13 - 0.73 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+0.13 – 0.73 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Midt Pleistocene</gml:identifier>
+      <gml:name>Middle Pleistocene</gml:name>
+      <gml:name>140</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44894">
+      <gml:description>0.73 - ca. 1.0 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+0.73 – approx. 1.0 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Bavelian</gml:identifier>
+      <gml:name>Bavelian</gml:name>
+      <gml:name>145</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44895">
+      <gml:description>1.0 - 1.1 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+1.0 – 1.1 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Menapian</gml:identifier>
+      <gml:name>Menapian</gml:name>
+      <gml:name>150</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44896">
+      <gml:description>1.1 - 1.3 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+1.1 – 1.3 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Waalian</gml:identifier>
+      <gml:name>Waalian</gml:name>
+      <gml:name>155</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44897">
+      <gml:description>1.3 - 1.7 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+1.3 – 1.7 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Eburonian</gml:identifier>
+      <gml:name>Eburonian</gml:name>
+      <gml:name>160</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44898">
+      <gml:description>1.7 - 2.2 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+1.7 – 2.2 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Tiglian</gml:identifier>
+      <gml:name>Tiglian</gml:name>
+      <gml:name>165</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44899">
+      <gml:description>2.2 - 2.5 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+2.2 – 2.5 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Praetiglian</gml:identifier>
+      <gml:name>Praetiglian</gml:name>
+      <gml:name>170</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44900">
+      <gml:description>0.73 - 2.5 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+0.73 – 2.5 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Tidlig Pleistocen</gml:identifier>
+      <gml:name>Early Pleistocene</gml:name>
+      <gml:name>175</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44901">
+      <gml:description>0.01 - 2.5 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+0.01 – 2.5 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Pleistocen</gml:identifier>
+      <gml:name>Pleistocene</gml:name>
+      <gml:name>180</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44902">
+      <gml:description>i dag - 2.5 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+present – 2.5 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">KVARTÆR</gml:identifier>
+      <gml:name>QUATERNARY</gml:name>
+      <gml:name>200</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44903">
+      <gml:description>1.64 - 3.6 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+1.64 - 3.6 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Piacenz</gml:identifier>
+      <gml:name>Piacenzian</gml:name>
+      <gml:name>205</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44904">
+      <gml:description>1.64 - 3.6 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+1.64 - 3.6 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Senpliocen</gml:identifier>
+      <gml:name>Late Pliocene</gml:name>
+      <gml:name>210</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44905">
+      <gml:description>3.6 - 5.3 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+3.6 - 5.3 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Zancle'</gml:identifier>
+      <gml:name>Zanclean</gml:name>
+      <gml:name>215</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44906">
+      <gml:description>3.4 - 5.3 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+3.4 - 5.3 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Tidligpliocen</gml:identifier>
+      <gml:name>Early Pliocene</gml:name>
+      <gml:name>220</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44907">
+      <gml:description>1.64 - 5.5 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+1.64 - 5.5 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">PLIOCEN</gml:identifier>
+      <gml:name>PLIOCENE</gml:name>
+      <gml:name>225</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44908">
+      <gml:description>5.3 - 7.1 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+5.3 - 7.1 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Messin</gml:identifier>
+      <gml:name>Messinian</gml:name>
+      <gml:name>230</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44909">
+      <gml:description>7.1 - 11.2 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+7.1 - 11.2 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Torton</gml:identifier>
+      <gml:name>Tortonian</gml:name>
+      <gml:name>235</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44910">
+      <gml:description>5.3 - 11.2 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+5.3 - 11.2 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Senmiocen</gml:identifier>
+      <gml:name>Late Miocene</gml:name>
+      <gml:name>240</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44911">
+      <gml:description>11.2 - 14.8 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+11.2 - 14.8 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Serravalle</gml:identifier>
+      <gml:name>Serravallian</gml:name>
+      <gml:name>245</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44912">
+      <gml:description>11.2 - 16.4 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+11.2 - 16.4 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Mellommiocen</gml:identifier>
+      <gml:name>Middle Miocene</gml:name>
+      <gml:name>250</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44913">
+      <gml:description>13.8 - 16 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+13.8 – 16 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Langh</gml:identifier>
+      <gml:name>Langhian</gml:name>
+      <gml:name>255</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44914">
+      <gml:description>16 - 20.04 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+ 16 - 20 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Burdigal</gml:identifier>
+      <gml:name>Burdigalian</gml:name>
+      <gml:name>260</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44915">
+      <gml:description>20.5 - 23.8 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+20.5 - 23.8 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Aquitan</gml:identifier>
+      <gml:name>Aquitanian</gml:name>
+      <gml:name>265</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44916">
+      <gml:description>16.4 - 23.8 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+16.4 - 23.8 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Tidligmiocen</gml:identifier>
+      <gml:name>Early Miocene</gml:name>
+      <gml:name>270</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44917">
+      <gml:description>5.3 - 23.8 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+5.3 - 23.8 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">MIOCEN</gml:identifier>
+      <gml:name>MIOCENE</gml:name>
+      <gml:name>275</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44918">
+      <gml:description>1.8 - 23.8 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+1.8 - 23.8 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">NEOGEN</gml:identifier>
+      <gml:name>NEOGENE</gml:name>
+      <gml:name>280</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44919">
+      <gml:description>23.8 - 28.5 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+23.8 - 28.5 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Chatt</gml:identifier>
+      <gml:name>Chattian</gml:name>
+      <gml:name>285</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44920">
+      <gml:description>23.8 - 28.5 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+23.8 - 28.5 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Senoligocen</gml:identifier>
+      <gml:name>Late Oligocene</gml:name>
+      <gml:name>290</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44921">
+      <gml:description>28.5 - 33.7 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+28.5 - 33.7 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Rupel</gml:identifier>
+      <gml:name>Rupelian</gml:name>
+      <gml:name>295</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44922">
+      <gml:description>28.5 - 33.7 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+28.5 - 33.7 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Tidligoligocen</gml:identifier>
+      <gml:name>Early Oligocene</gml:name>
+      <gml:name>300</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44923">
+      <gml:description>23.8 - 33.7 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+23.8 - 33.7 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">OLIGOCEN</gml:identifier>
+      <gml:name>OLIGOCENE</gml:name>
+      <gml:name>305</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44924">
+      <gml:description>33.7 - 37.0 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+33.7 - 37.0 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Priabon</gml:identifier>
+      <gml:name>Priabonian</gml:name>
+      <gml:name>310</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44925">
+      <gml:description>33.7 - 37.0 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+33.7 - 37.0 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Seneocen</gml:identifier>
+      <gml:name>Late Eocene</gml:name>
+      <gml:name>315</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44926">
+      <gml:description>37.0 - 41.3 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+37.0 - 41.3 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Barton</gml:identifier>
+      <gml:name>Bartonian</gml:name>
+      <gml:name>320</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44927">
+      <gml:description>41.3 - 49.0 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+41.3 - 49.0 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Lutet</gml:identifier>
+      <gml:name>Lutetian</gml:name>
+      <gml:name>325</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44928">
+      <gml:description>37.0 - 49.0 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+37.0 - 49.0 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Mellomeocen</gml:identifier>
+      <gml:name>Middle Eocene</gml:name>
+      <gml:name>330</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44929">
+      <gml:description>49.0 - 54.8 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+49.0 - 54.8 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Ypres</gml:identifier>
+      <gml:name>Ypresian</gml:name>
+      <gml:name>335</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44930">
+      <gml:description>49.0 - 54.8 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+49.0 - 54.8 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Tidligeocen</gml:identifier>
+      <gml:name>Early Eocene</gml:name>
+      <gml:name>340</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44931">
+      <gml:description>33.7 - 54.8 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+33.7 - 54.8 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">EOCEN</gml:identifier>
+      <gml:name>EOCENE</gml:name>
+      <gml:name>345</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44932">
+      <gml:description>54.8 - 57.9 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+54.8 - 57.9 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Thanet</gml:identifier>
+      <gml:name>Thanetian</gml:name>
+      <gml:name>350</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44933">
+      <gml:description>57.9 - 61.0 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+57.9 - 61.0 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Seland</gml:identifier>
+      <gml:name>Selandian</gml:name>
+      <gml:name>355</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44934">
+      <gml:description>54.8 - 65.5 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+54.8 - 65.5 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Senpaleocen</gml:identifier>
+      <gml:name>Late Paleocene</gml:name>
+      <gml:name>360</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44935">
+      <gml:description>61.0 - 65.0 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+61.0 - 65.0 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Dan</gml:identifier>
+      <gml:name>Danian</gml:name>
+      <gml:name>365</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44936">
+      <gml:description>61.0 - 65.0 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+61.0 - 65.0 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Tidligpaleocen</gml:identifier>
+      <gml:name>Early Paleocene</gml:name>
+      <gml:name>370</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44937">
+      <gml:description>54.8 - 65 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+54.8 - 65 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">PALEOCEN</gml:identifier>
+      <gml:name>PALEOCENE</gml:name>
+      <gml:name>375</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44938">
+      <gml:description>23.8 - 65 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+23.8 - 65 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Paleogen</gml:identifier>
+      <gml:name>Paleogene</gml:name>
+      <gml:name>380</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44939">
+      <gml:description>1.8 - 65 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+1.8 - 65 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">TERTIÆR</gml:identifier>
+      <gml:name>TERTIARY</gml:name>
+      <gml:name>385</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44940">
+      <gml:description>0.01 - 65.0 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+0.01 - 65.0 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">KENOZOIKUM</gml:identifier>
+      <gml:name>CENOZOIC</gml:name>
+      <gml:name>390</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44941">
+      <gml:description>65.0 - 71.3 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+65.0 - 71.3 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Maastricht</gml:identifier>
+      <gml:name>Maastrichtian</gml:name>
+      <gml:name>395</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44942">
+      <gml:description>71.3 - 83.5 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+71.3 - 83.5 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Campan</gml:identifier>
+      <gml:name>Campanian</gml:name>
+      <gml:name>400</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44943">
+      <gml:description>83.5 - 85.8 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+83.5 - 85.8 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Santon</gml:identifier>
+      <gml:name>Santonian</gml:name>
+      <gml:name>405</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44944">
+      <gml:description>85.8 - 89.0 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+85.8 - 89.0 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Coniac</gml:identifier>
+      <gml:name>Coniacian</gml:name>
+      <gml:name>410</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44945">
+      <gml:description>89.0 - 93.5 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+89.0 - 93.5 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Turon</gml:identifier>
+      <gml:name>Turonian</gml:name>
+      <gml:name>415</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44946">
+      <gml:description>93.5 - 98.9 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+93.5 - 98.9 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Cenoman</gml:identifier>
+      <gml:name>Cenomanian</gml:name>
+      <gml:name>420</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44947">
+      <gml:description>65.0 - 98.9 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+65.0 - 98.9 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Senkritt</gml:identifier>
+      <gml:name>Late Cretaceous</gml:name>
+      <gml:name>425</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44948">
+      <gml:description>98.9 - 112.2 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+98.9 - 112.2 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Alb</gml:identifier>
+      <gml:name>Albian</gml:name>
+      <gml:name>430</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44949">
+      <gml:description>112.2 - 121 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+112.2 - 121 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Apt</gml:identifier>
+      <gml:name>Aptian</gml:name>
+      <gml:name>435</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44950">
+      <gml:description>121 - 127 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+121 - 127 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Barreme</gml:identifier>
+      <gml:name>Barremian</gml:name>
+      <gml:name>440</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44951">
+      <gml:description>127 - 132 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+127 - 132 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Hauterive</gml:identifier>
+      <gml:name>Hauterivian</gml:name>
+      <gml:name>445</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44952">
+      <gml:description>132 - 136.5 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+132 - 136.5 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Valangin</gml:identifier>
+      <gml:name>Valanginian</gml:name>
+      <gml:name>450</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44953">
+      <gml:description>136.5 - 142 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+136.5 - 142 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Ryazan</gml:identifier>
+      <gml:name>Ryazan</gml:name>
+      <gml:name>455</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44954">
+      <gml:description>98.9 - 142 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+98.9 - 142 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Tidligkritt</gml:identifier>
+      <gml:name>Early Cretaceous</gml:name>
+      <gml:name>460</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44955">
+      <gml:description>65 - 142 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+65 - 142 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">KRITT</gml:identifier>
+      <gml:name>CRETACEOUS</gml:name>
+      <gml:name>465</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44956">
+      <gml:description>150.7 - 154.1 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+150.7 - 154.1 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Kimmeridge</gml:identifier>
+      <gml:name>Kimmeridgian</gml:name>
+      <gml:name>475</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44957">
+      <gml:description>154.1 - 159.4 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+154.1 - 159.4 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Oxford</gml:identifier>
+      <gml:name>Oxfordian</gml:name>
+      <gml:name>480</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44958">
+      <gml:description>142.0 - 159.4 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+142.0 - 159.4 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Senjura</gml:identifier>
+      <gml:name>Late Jurassic</gml:name>
+      <gml:name>485</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44959">
+      <gml:description>159.4 - 164.4 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+159.4 - 164.4 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Callov</gml:identifier>
+      <gml:name>Callovian</gml:name>
+      <gml:name>490</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44960">
+      <gml:description>164.4 - 169.2 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+164.4 - 169.2 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Bathon</gml:identifier>
+      <gml:name>Bathonian</gml:name>
+      <gml:name>495</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44961">
+      <gml:description>167.7 - 171.6 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+167.7 - 171.6 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Bajoc</gml:identifier>
+      <gml:name>Bajocian</gml:name>
+      <gml:name>500</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44962">
+      <gml:description>171.6 - 175.6 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+171.6 - 175.6 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Aalen</gml:identifier>
+      <gml:name>Aalenian</gml:name>
+      <gml:name>505</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44963">
+      <gml:description>159.4 - 180.1 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+159.4 - 180.1 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Mellomjura</gml:identifier>
+      <gml:name>Middle Jurassic</gml:name>
+      <gml:name>510</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44964">
+      <gml:description>180.1 - 189.6 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+180.1 - 189.6 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Toarc</gml:identifier>
+      <gml:name>Toarcian</gml:name>
+      <gml:name>515</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44965">
+      <gml:description>183 - 189.6  mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+183 – 189.6 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Pliensbach</gml:identifier>
+      <gml:name>Pliensbachian</gml:name>
+      <gml:name>520</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44966">
+      <gml:description>195.3 - 201.3 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+195.3 - 201.9 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Sinemur</gml:identifier>
+      <gml:name>Sinemurian</gml:name>
+      <gml:name>525</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44967">
+      <gml:description>201.9 - 205.7 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+201.9 - 205.7 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Hettang</gml:identifier>
+      <gml:name>Hettangian</gml:name>
+      <gml:name>530</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44968">
+      <gml:description>180.1 - 205.7 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+180.1 - 205.7 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Tidligjura</gml:identifier>
+      <gml:name>Early Jurassic</gml:name>
+      <gml:name>535</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44969">
+      <gml:description>142 - 205.7 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+142 - 205.7 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">JURA</gml:identifier>
+      <gml:name>JURASSIC</gml:name>
+      <gml:name>540</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44970">
+      <gml:description>205.7 - 209.6 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+205.7 - 209.6 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Rhæt</gml:identifier>
+      <gml:name>Rhaetian</gml:name>
+      <gml:name>545</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44971">
+      <gml:description>209.6 - 220.7 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+209.6 - 220.7 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Nor</gml:identifier>
+      <gml:name>Norian</gml:name>
+      <gml:name>550</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44972">
+      <gml:description>220.7 - 227.4 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+220.7 - 227.4 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Kam</gml:identifier>
+      <gml:name>Carnian</gml:name>
+      <gml:name>555</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44973">
+      <gml:description>205.7 - 227.4 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+205.7 - 227.4 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Sentrias</gml:identifier>
+      <gml:name>Late Triassic</gml:name>
+      <gml:name>560</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44974">
+      <gml:description>227.4 - 234.3 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+227.4 - 234.3 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Ladin</gml:identifier>
+      <gml:name>Ladinian</gml:name>
+      <gml:name>565</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44975">
+      <gml:description>234.3 - 241.7 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+234.3 - 241.7 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Anis</gml:identifier>
+      <gml:name>Anisian</gml:name>
+      <gml:name>570</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44976">
+      <gml:description>227.4 - 241.7 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+227.4 - 241.7 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Mellomtrias</gml:identifier>
+      <gml:name>Middle Triassic</gml:name>
+      <gml:name>575</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44977">
+      <gml:description>241.7 - 244.8 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+241.7 - 244.8 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Olenek</gml:identifier>
+      <gml:name>Olenekian</gml:name>
+      <gml:name>580</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44978">
+      <gml:description>244.8 - 248.2 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+244.8 - 248.2 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Indus</gml:identifier>
+      <gml:name>Induan</gml:name>
+      <gml:name>585</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44979">
+      <gml:description>241.7 - 248.2 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+241.7 - 248.2 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Tidligtrias</gml:identifier>
+      <gml:name>Early Triassic</gml:name>
+      <gml:name>590</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44980">
+      <gml:description>205.7 - 248.2 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+205.7 - 248.2 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">TRIAS</gml:identifier>
+      <gml:name>TRIASSIC</gml:name>
+      <gml:name>595</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44981">
+      <gml:description>65.0 - 248.2 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+65.0 - 248.2 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">MESOZOIKUM</gml:identifier>
+      <gml:name>MESOZOIC</gml:name>
+      <gml:name>600</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44982">
+      <gml:description>248.2 - 252.1 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+248.2 - 252.1 million years BP Unit name abandoned, see ICS 2004</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Tatar</gml:identifier>
+      <gml:name>Tatarian</gml:name>
+      <gml:name>605</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44983">
+      <gml:description>252.1 - 256.0 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+252.1 - 256.0 million years BP Unit name abandoned, see ICS 2004</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Ufim-Kazan</gml:identifier>
+      <gml:name>Ufimian-Kazanian</gml:name>
+      <gml:name>610</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44984">
+      <gml:description>248.2 - 256.0 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+248.2 - 256.0 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Senperm</gml:identifier>
+      <gml:name>Late Permian</gml:name>
+      <gml:name>615</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44985">
+      <gml:description>256 - 260 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+256 - 260 million years BP Unit name abandoned, see ICS 2004</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Kungur</gml:identifier>
+      <gml:name>Kungurian</gml:name>
+      <gml:name>620</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44986">
+      <gml:description>260 - 269 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+260 - 269 million years BP Unit name abandoned, see ICS 2004</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Artinsk</gml:identifier>
+      <gml:name>Artinskian</gml:name>
+      <gml:name>625</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44987">
+      <gml:description>284.4 - 294.6 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+284.4 – 294.6  million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Sakmar</gml:identifier>
+      <gml:name>Sakmarian</gml:name>
+      <gml:name>630</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44988">
+      <gml:description>282 - 290 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+282 - 290 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Assel</gml:identifier>
+      <gml:name>Asselian</gml:name>
+      <gml:name>635</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44989">
+      <gml:description>270 - 299 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+270 - 299 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Tidligperm</gml:identifier>
+      <gml:name>Early Permian</gml:name>
+      <gml:name>640</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44990">
+      <gml:description>248.5 - 290.0 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+248.5 - 290.0 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">PERM</gml:identifier>
+      <gml:name>PERMIAN</gml:name>
+      <gml:name>645</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44991">
+      <gml:description>290.0 - 296.5 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+290.0 - 296.5 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Gzel</gml:identifier>
+      <gml:name>Gzhelian</gml:name>
+      <gml:name>650</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44992">
+      <gml:description>296.5 - 303 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+296.5 - 303 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Kasimov</gml:identifier>
+      <gml:name>Kasimovian</gml:name>
+      <gml:name>655</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44993">
+      <gml:description>303 - 311 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+303 - 311 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Moskva</gml:identifier>
+      <gml:name>Moscovian</gml:name>
+      <gml:name>660</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44994">
+      <gml:description>311 - 323 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+311 - 323 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Bashkir</gml:identifier>
+      <gml:name>Bashkirian</gml:name>
+      <gml:name>665</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44995">
+      <gml:description>290 - 323 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+290 - 323 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Senkarbon</gml:identifier>
+      <gml:name>Carboniferous, Pennsylvanian</gml:name>
+      <gml:name>670</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44996">
+      <gml:description>323 - 327 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+323 - 327 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Serpukhov</gml:identifier>
+      <gml:name>Serpukhovian</gml:name>
+      <gml:name>675</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44997">
+      <gml:description>327 - 342 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+327 - 342 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Vise'</gml:identifier>
+      <gml:name>Viséan</gml:name>
+      <gml:name>680</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44998">
+      <gml:description>345.3 - 359.24 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+345.3 - 359.2 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Tournais</gml:identifier>
+      <gml:name>Tournaisian</gml:name>
+      <gml:name>685</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_44999">
+      <gml:description>323 - 354 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+323 - 354 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Tidligkarbon</gml:identifier>
+      <gml:name>Carboniferous, Mississippian</gml:name>
+      <gml:name>690</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45000">
+      <gml:description>290 - 354 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+290 - 354 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">KARBON</gml:identifier>
+      <gml:name>CARBONIFEROUS</gml:name>
+      <gml:name>695</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45001">
+      <gml:description>354 - 364 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+354 - 364 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Famenne</gml:identifier>
+      <gml:name>Famennian</gml:name>
+      <gml:name>700</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45002">
+      <gml:description>364 - 370 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+364 - 370 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Frasne</gml:identifier>
+      <gml:name>Frasnian</gml:name>
+      <gml:name>705</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45003">
+      <gml:description>254 - 370 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+254 - 370 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Sendevon</gml:identifier>
+      <gml:name>Late Devonian</gml:name>
+      <gml:name>710</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45004">
+      <gml:description>370 - 380 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+370 - 380 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Givet</gml:identifier>
+      <gml:name>Givetian</gml:name>
+      <gml:name>715</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45005">
+      <gml:description>380 - 391 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+380 - 391 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Eifel</gml:identifier>
+      <gml:name>Eifelian</gml:name>
+      <gml:name>720</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45006">
+      <gml:description>370 - 391 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+370 - 391 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Mellomdevon</gml:identifier>
+      <gml:name>Middle Devonian</gml:name>
+      <gml:name>725</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45007">
+      <gml:description>391 - 400 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+391 - 400 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Ems</gml:identifier>
+      <gml:name>Emsian</gml:name>
+      <gml:name>730</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45008">
+      <gml:description>400 - 412 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+400 - 412 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Prag</gml:identifier>
+      <gml:name>Pragian</gml:name>
+      <gml:name>735</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45009">
+      <gml:description>412 - 417 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+412 - 417 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Lochkov</gml:identifier>
+      <gml:name>Lochkovian</gml:name>
+      <gml:name>740</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45010">
+      <gml:description>391 - 417 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+391 - 417 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Tidligdevon</gml:identifier>
+      <gml:name>Early Devonian</gml:name>
+      <gml:name>745</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45011">
+      <gml:description>354 - 417 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+354 - 417 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">DEVON</gml:identifier>
+      <gml:name>DEVONIAN</gml:name>
+      <gml:name>750</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45012">
+      <gml:description>417 - 419 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+417 - 419 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Pridoli</gml:identifier>
+      <gml:name>Pridoli</gml:name>
+      <gml:name>755</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45013">
+      <gml:description>419 - 423 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+419 - 423 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Ludlow</gml:identifier>
+      <gml:name>Ludlow</gml:name>
+      <gml:name>760</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45014">
+      <gml:description>417 - 423 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+417 - 423 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Sensilur</gml:identifier>
+      <gml:name>Late Silurian</gml:name>
+      <gml:name>765</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45015">
+      <gml:description>423 - 428 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+423 - 428 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Wenlock</gml:identifier>
+      <gml:name>Wenlock</gml:name>
+      <gml:name>770</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45016">
+      <gml:description>428 - 443 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+428 - 443 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Llandovery</gml:identifier>
+      <gml:name>Llandovery</gml:name>
+      <gml:name>775</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45017">
+      <gml:description>428 - 443 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+428 - 443 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Tidligsilur</gml:identifier>
+      <gml:name>Early Silurian</gml:name>
+      <gml:name>780</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45018">
+      <gml:description>417 - 443 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+417 - 443 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">SILUR</gml:identifier>
+      <gml:name>SILURIAN</gml:name>
+      <gml:name>785</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45019">
+      <gml:description>443 - 449 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+443 - 449 million years BP Unit name abandoned, see ICS 2004</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Ashgill</gml:identifier>
+      <gml:name>Ashgill</gml:name>
+      <gml:name>790</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45020">
+      <gml:description>449 - 458 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+449 - 458 million years BP Unit name abandoned, see ICS 2004</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Caradoc</gml:identifier>
+      <gml:name>Caradocian</gml:name>
+      <gml:name>795</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45021">
+      <gml:description>443 - 458 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+443 - 458 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Senordovicium</gml:identifier>
+      <gml:name>Late Ordovician</gml:name>
+      <gml:name>800</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45022">
+      <gml:description>458 - 464 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+458 - 464 million years BP Unit name abandoned, see ICS 2004</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Llandeilo</gml:identifier>
+      <gml:name>Llandeilo  (now Darriwilian?)</gml:name>
+      <gml:name>805</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45023">
+      <gml:description>464 - 470 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+464 - 470 million years BP Unit name abandoned, see ICS 2004</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Llanvirn</gml:identifier>
+      <gml:name>Llanvirn (now Dapingian?)</gml:name>
+      <gml:name>810</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45024">
+      <gml:description>458 - 470 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+458 - 470 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Mellomordovicium</gml:identifier>
+      <gml:name>Middle Ordovician</gml:name>
+      <gml:name>815</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45025">
+      <gml:description>470 - 485 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+470 - 485 million years BP Unit name abandoned, see ICS 2004</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Arenig</gml:identifier>
+      <gml:name>Arenig</gml:name>
+      <gml:name>820</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45026">
+      <gml:description>485 - 495 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+485 - 495 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Tremadoc</gml:identifier>
+      <gml:name>Tremadocian</gml:name>
+      <gml:name>825</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45027">
+      <gml:description>470 - 495 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+470 - 495 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Tidligordovicium</gml:identifier>
+      <gml:name>Early Ordovician</gml:name>
+      <gml:name>830</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45028">
+      <gml:description>443 - 495 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+443 - 495 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">ORDOVICIUM</gml:identifier>
+      <gml:name>ORDOVICIAN</gml:name>
+      <gml:name>835</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45029">
+      <gml:description>495 - 505 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+495 - 505 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Senkambrium</gml:identifier>
+      <gml:name>Late Cambrian</gml:name>
+      <gml:name>840</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45030">
+      <gml:description>505 - 518 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+505 - 518 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Mellomkambrium</gml:identifier>
+      <gml:name>Middle Cambrian</gml:name>
+      <gml:name>845</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45031">
+      <gml:description>518 - 524 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+518 - 524 million years BP Unit name abandoned, see ICS 2004</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Lena</gml:identifier>
+      <gml:name>Lenian</gml:name>
+      <gml:name>850</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45032">
+      <gml:description>524 - 530 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+524 - 530 million years BP Unit name abandoned, see ICS 2004</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Atdaban</gml:identifier>
+      <gml:name>Atdabanian</gml:name>
+      <gml:name>855</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45033">
+      <gml:description>530 - 534 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+530 - 534 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Tommot</gml:identifier>
+      <gml:name>Tommotian</gml:name>
+      <gml:name>860</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45034">
+      <gml:description>534 - 545 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+534 - 545 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Nemakit-Daldyn</gml:identifier>
+      <gml:name>Nemakit-Daldynian</gml:name>
+      <gml:name>865</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45035">
+      <gml:description>518 - 545 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+518 - 545 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Tidligkambrium</gml:identifier>
+      <gml:name>Early Cambrian</gml:name>
+      <gml:name>870</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45036">
+      <gml:description>495 - 545 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+495 - 545 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">KAMBRIUM</gml:identifier>
+      <gml:name>CAMBRIAN</gml:name>
+      <gml:name>875</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45037">
+      <gml:description>248.5 - 545 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+248.5 - 545 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">PALEOZOIKUM</gml:identifier>
+      <gml:name>PALEOZOIC</gml:name>
+      <gml:name>880</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45038">
+      <gml:description>545 - 650 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+545 - 650 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">VENDIUM</gml:identifier>
+      <gml:name>VENDIAN</gml:name>
+      <gml:name>885</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45039">
+      <gml:description>650 - 1000 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+650 - 1000 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Senrifeikum</gml:identifier>
+      <gml:name>Late Riphean</gml:name>
+      <gml:name>890</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45040">
+      <gml:description>545 - 1000 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+545 - 1000 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Senproterozoikum</gml:identifier>
+      <gml:name>Neoproterozoic</gml:name>
+      <gml:name>895</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45041">
+      <gml:description>1000 - 1400 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+1000 - 1400 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Mellomrifeikum</gml:identifier>
+      <gml:name>Middle Riphean</gml:name>
+      <gml:name>900</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45042">
+      <gml:description>1600 - 2500 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+1600 - 2500 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Tidligproterozoikum</gml:identifier>
+      <gml:name>Paleoproterozoic</gml:name>
+      <gml:name>905</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45043">
+      <gml:description>650 - 1600 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+650 - 1600 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">RIFEIKUM</gml:identifier>
+      <gml:name>RIPHEAN</gml:name>
+      <gml:name>910</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45044">
+      <gml:description>1000 - 1600 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+1000 - 1600 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Mellomproterozoikum</gml:identifier>
+      <gml:name>Mesoproterozoic</gml:name>
+      <gml:name>915</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45045">
+      <gml:description>3400 - 4000 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+3400 - 4000 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">Tidligarkeikum</gml:identifier>
+      <gml:name>Early Archean</gml:name>
+      <gml:name>920</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45046">
+      <gml:description>2500 - 4000 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+2500 - 4000 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">ARKEIKUM</gml:identifier>
+      <gml:name>ARCHEAN</gml:name>
+      <gml:name>925</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45047">
+      <gml:description>4000 - 4500 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+4000 - 4500 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">PRISKOIKUM</gml:identifier>
+      <gml:name>PRISCOAN</gml:name>
+      <gml:name>930</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_15121_45048">
+      <gml:description>545 - 4500 mill. år BP&#13;
+&#13;
+-- Definition -- &#13;
+545 - 4500 million years BP</gml:description>
+      <gml:identifier codeSpace="https://www.codelistURL.com">PREKAMBRIUM</gml:identifier>
+      <gml:name>PRECAMBRIAN</gml:name>
+      <gml:name>935</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>
