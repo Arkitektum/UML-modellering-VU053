@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:svvge="https://skjema.atlas.vegvesen.no/r000/sosigenerelleegenskaper/0.1" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/sosigenerelleegenskaper/0.1" version="0.1">
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:svvge="https://skjema.atlas.vegvesen.no/r000/sosigenerelleegenskaper/1.0" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/sosigenerelleegenskaper/1.0" version="1.0">
   <annotation>
     <documentation>Pakke med generelle egenskaper fra SOSI Del 1 Generelle Typer og LandInfra</documentation>
   </annotation>

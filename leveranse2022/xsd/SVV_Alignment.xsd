@@ -72,7 +72,7 @@ An Alignment shall be continuous, non-branching, and non-overlapping. If it is a
 			<element name="state" type="gml:CodeType">
 				<annotation>
 					<appinfo>
-						<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/svval_State.xml</defaultCodeSpace>
+						<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/</defaultCodeSpace>
 					</appinfo>
 				</annotation>
 			</element>
@@ -125,7 +125,7 @@ State distinguishes between existing ground surface vs. proposed design profile.
 			<element name="state" type="gml:CodeType">
 				<annotation>
 					<appinfo>
-						<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/svval_State.xml</defaultCodeSpace>
+						<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/</defaultCodeSpace>
 					</appinfo>
 				</annotation>
 			</element>
