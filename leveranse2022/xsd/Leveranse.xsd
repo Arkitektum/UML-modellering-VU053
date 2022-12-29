@@ -590,7 +590,7 @@ Kan (bør?) valideres mot prosjektkrav om hvilket koordinatsystem som er "valgt"
 							</appinfo>
 						</annotation>
 					</element>
-					<element name="fullføringsgrad">
+					<element name="fullføringsgrad" minOccurs="0">
 						<complexType>
 							<complexContent>
 								<extension base="gml:AbstractFeatureMemberType">
