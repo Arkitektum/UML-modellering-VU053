@@ -4,13 +4,12 @@
 &#13;
 -- Definition - - &#13;
 with what certainty a geological object has been identified in the terrain, or on which method the identification/registration is based</gml:description>
-  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/grunnlagsmodellgrunnforhold/0.1">GeolPavisningstype</gml:identifier>
-  <gml:name>TypeOfGeolFindings</gml:name>
+  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/grunnlagsmodellgrunnforhold/0.1">TypeOfGeolFindings</gml:identifier>
+  <gml:name>GeolPavisningstype</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15122_45049">
-      <gml:identifier codeSpace="https://www.codelistURL.com">Ikke spesifisert</gml:identifier>
-      <gml:name>Not specified</gml:name>
-      <gml:name>0</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolPavisningstype.xml">Not specified</gml:identifier>
+      <gml:name>Ikke spesifisert</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
@@ -19,9 +18,8 @@ with what certainty a geological object has been identified in the terrain, or o
 &#13;
 -- Definition -- &#13;
 The delimitation or registration of the object has been identified or observed in the  field</gml:description>
-      <gml:identifier codeSpace="https://www.codelistURL.com">Sikker påvisning/observasjon</gml:identifier>
-      <gml:name>Certain identification/observation</gml:name>
-      <gml:name>1</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolPavisningstype.xml">Certain identification/observation</gml:identifier>
+      <gml:name>Sikker påvisning/observasjon</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
@@ -30,16 +28,15 @@ The delimitation or registration of the object has been identified or observed i
 &#13;
 -- Definition -- &#13;
 Not identified/observed; presumed delimitation/registration of object</gml:description>
-      <gml:identifier codeSpace="https://www.codelistURL.com">Usikker påvisning/observasjon</gml:identifier>
-      <gml:name>Uncertain identification/observation</gml:name>
-      <gml:name>2</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolPavisningstype.xml">Uncertain identification/observation</gml:identifier>
+      <gml:name>Usikker påvisning/observasjon</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15122_45052">
       <gml:description>Tilfeldig plassert avgrensning og meget usikker.  Benyttes blant annet under vann- eller breoverflater</gml:description>
-      <gml:identifier codeSpace="https://www.codelistURL.com">Konstruert avgrensing</gml:identifier>
-      <gml:name>3</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolPavisningstype.xml">3</gml:identifier>
+      <gml:name>Konstruert avgrensing</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
@@ -48,9 +45,8 @@ Not identified/observed; presumed delimitation/registration of object</gml:descr
 &#13;
 -- Definition -- &#13;
 Delimitation based upon geophysical indications</gml:description>
-      <gml:identifier codeSpace="https://www.codelistURL.com">Geofysisk tolket grense</gml:identifier>
-      <gml:name>Geophysically interpreted boundary</gml:name>
-      <gml:name>4</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolPavisningstype.xml">Geophysically interpreted boundary</gml:identifier>
+      <gml:name>Geofysisk tolket grense</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
@@ -59,9 +55,8 @@ Delimitation based upon geophysical indications</gml:description>
 &#13;
 -- Definition -- &#13;
 Based upon generalised interpretation of objects with small mutual variations (e.g., the distinction between a thin humus covering and exposed rock, or between two very similar types of rock</gml:description>
-      <gml:identifier codeSpace="https://www.codelistURL.com">Dårlig synlig avgrensning i terrenget</gml:identifier>
-      <gml:name>Delimitation with poor visibility in the terrain</gml:name>
-      <gml:name>5</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolPavisningstype.xml">Delimitation with poor visibility in the terrain</gml:identifier>
+      <gml:name>Dårlig synlig avgrensning i terrenget</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
@@ -70,51 +65,46 @@ Based upon generalised interpretation of objects with small mutual variations (e
 &#13;
 -- Definition -- &#13;
 Where there is a gradual transition between two types of rock, soil types, etc.</gml:description>
-      <gml:identifier codeSpace="https://www.codelistURL.com">Overgangsmessig grense</gml:identifier>
-      <gml:name>Transitional boundary</gml:name>
-      <gml:name>6</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolPavisningstype.xml">Transitional boundary</gml:identifier>
+      <gml:name>Overgangsmessig grense</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15122_45056">
       <gml:description>Avgrensinger av geologisk objekt eller delobjekt fremkomet ved generalisering, samtolkning eller aggregering</gml:description>
-      <gml:identifier codeSpace="https://www.codelistURL.com">Tolket avgrensing/registrering</gml:identifier>
-      <gml:name>7</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolPavisningstype.xml">7</gml:identifier>
+      <gml:name>Tolket avgrensing/registrering</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15122_45057">
-      <gml:identifier codeSpace="https://www.codelistURL.com">Flyfototolket objekt eller delobjekt</gml:identifier>
-      <gml:name>Object or part of object interpreted from aerial photos</gml:name>
-      <gml:name>8</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolPavisningstype.xml">Object or part of object interpreted from aerial photos</gml:identifier>
+      <gml:name>Flyfototolket objekt eller delobjekt</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15122_45058">
-      <gml:identifier codeSpace="https://www.codelistURL.com">Observasjon med usikker geografisk beliggenhet</gml:identifier>
-      <gml:name>Observation with uncertain geographic location</gml:name>
-      <gml:name>9</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolPavisningstype.xml">Observation with uncertain geographic location</gml:identifier>
+      <gml:name>Observasjon med usikker geografisk beliggenhet</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15122_45059">
       <gml:description>Der f.eks. en administrativ grense eller kystkontur har bidratt til avgrensing av et geologisk objekt</gml:description>
-      <gml:identifier codeSpace="https://www.codelistURL.com">Avgrensing ikke basert på geologi</gml:identifier>
-      <gml:name>10</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolPavisningstype.xml">10</gml:identifier>
+      <gml:name>Avgrensing ikke basert på geologi</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15122_45060">
-      <gml:identifier codeSpace="https://www.codelistURL.com">Avgrensning basert på prøvetaking</gml:identifier>
-      <gml:name>Delimitation based upon/bounded by  sampling</gml:name>
-      <gml:name>21</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolPavisningstype.xml">Delimitation based upon/bounded by  sampling</gml:identifier>
+      <gml:name>Avgrensning basert på prøvetaking</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15122_45061">
-      <gml:identifier codeSpace="https://www.codelistURL.com">Avgrensning basert på seismikk</gml:identifier>
-      <gml:name>Delimitation based upon/bounded by  seismic data</gml:name>
-      <gml:name>22</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolPavisningstype.xml">Delimitation based upon/bounded by  seismic data</gml:identifier>
+      <gml:name>Avgrensning basert på seismikk</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
@@ -123,50 +113,44 @@ Where there is a gradual transition between two types of rock, soil types, etc.<
 &#13;
 -- Definition -- &#13;
 Delimitation by using a multi-beam echo sounder and/or interferometric sonar</gml:description>
-      <gml:identifier codeSpace="https://www.codelistURL.com">Avgrensning basert på detaljerte dybdedata</gml:identifier>
-      <gml:name>Delimitation based upon/bounded by detailed depth data</gml:name>
-      <gml:name>23</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolPavisningstype.xml">Delimitation based upon/bounded by detailed depth data</gml:identifier>
+      <gml:name>Avgrensning basert på detaljerte dybdedata</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15122_45063">
-      <gml:identifier codeSpace="https://www.codelistURL.com">Avgrensning basert på backscatter data/sidescan.sonar</gml:identifier>
-      <gml:name>Delimitation based upon/bounded by  backscatter data/sidescan sonar</gml:name>
-      <gml:name>24</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolPavisningstype.xml">Delimitation based upon/bounded by  backscatter data/sidescan sonar</gml:identifier>
+      <gml:name>Avgrensning basert på backscatter data/sidescan.sonar</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15122_45064">
-      <gml:identifier codeSpace="https://www.codelistURL.com">Avgrensning basert på prøvetaking og akustiske data/metoder</gml:identifier>
-      <gml:name>Delimitation based upon/bounded by  sampling and acoustic data/methods</gml:name>
-      <gml:name>25</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolPavisningstype.xml">Delimitation based upon/bounded by  sampling and acoustic data/methods</gml:identifier>
+      <gml:name>Avgrensning basert på prøvetaking og akustiske data/metoder</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15122_45065">
-      <gml:identifier codeSpace="https://www.codelistURL.com">Avgrensning basert på akustiske data/metoder</gml:identifier>
-      <gml:name>Delimitation based upon/bounded by  acoustic data/methods</gml:name>
-      <gml:name>26</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolPavisningstype.xml">Delimitation based upon/bounded by  acoustic data/methods</gml:identifier>
+      <gml:name>Avgrensning basert på akustiske data/metoder</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15122_45066">
-      <gml:identifier codeSpace="https://www.codelistURL.com">Avgrensning basert på flere metoder/datatyper</gml:identifier>
-      <gml:name>Delimitation based upon/bounded by  more than one method/data types</gml:name>
-      <gml:name>27</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolPavisningstype.xml">Delimitation based upon/bounded by  more than one method/data types</gml:identifier>
+      <gml:name>Avgrensning basert på flere metoder/datatyper</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15122_45067">
-      <gml:identifier codeSpace="https://www.codelistURL.com">Avgrensning basert på undervannsfoto og/eller -video</gml:identifier>
-      <gml:name>Delimitation based upon/bounded by  underwater still photography and/or video</gml:name>
-      <gml:name>28</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolPavisningstype.xml">Delimitation based upon/bounded by  underwater still photography and/or video</gml:identifier>
+      <gml:name>Avgrensning basert på undervannsfoto og/eller -video</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15122_45068">
-      <gml:identifier codeSpace="https://www.codelistURL.com">Avgrensning basert på akustiske data/metoder verifisert ved prøvetaking, foto o.l</gml:identifier>
-      <gml:name>29</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolPavisningstype.xml">29</gml:identifier>
+      <gml:name>Avgrensning basert på akustiske data/metoder verifisert ved prøvetaking, foto o.l</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

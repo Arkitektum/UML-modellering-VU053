@@ -1,18 +1,22 @@
 <?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Partstype" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
   <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fellesmoduler/1.0">Partstype</gml:identifier>
+  <gml:name>Partstype</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14078_40514">
       <gml:identifier codeSpace="https://www.codelistURL.com">entreprenør</gml:identifier>
+      <gml:name>entreprenør</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14078_40515">
       <gml:identifier codeSpace="https://www.codelistURL.com">generisk</gml:identifier>
+      <gml:name>generisk</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14078_40516">
       <gml:identifier codeSpace="https://www.codelistURL.com">rådgiver</gml:identifier>
+      <gml:name>rådgiver</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

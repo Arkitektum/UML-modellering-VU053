@@ -1,6 +1,7 @@
 <?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Maalertype" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
   <gml:description>Kilde: (SOSI Ledning 4.6)</gml:description>
   <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellvannogavloep/1.0">Maalertype</gml:identifier>
+  <gml:name>Maalertype</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14510_41646">
       <gml:description>(Oslo VAV Trykkmåler)&#13;
@@ -13,6 +14,7 @@ Er montert i alle kummer som er i fjernkontrollen (målekummer, reduksjonskummer
 &#13;
 Sitter før og etter pumpa, reduksjonsventilen osv. Trykkmålere bør også være i stand til å måle og registrere trykkstøt.</gml:description>
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Maalertype.xml">trykkmåler</gml:identifier>
+      <gml:name>trykkmåler</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
@@ -26,26 +28,31 @@ Nærmere beskrivelse/varianter:&#13;
 &#13;
 Måler vannmengden som blir brukt.  Vannmengde utover det normale kan indikere lekkasje.</gml:description>
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Maalertype.xml">mengdemåler</gml:identifier>
+      <gml:name>mengdemåler</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14510_41648">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Maalertype.xml">nivåmåler</gml:identifier>
+      <gml:name>nivåmåler</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14510_41649">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Maalertype.xml">temperaturmåler</gml:identifier>
+      <gml:name>temperaturmåler</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14510_41650">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Maalertype.xml">klorrestmåler</gml:identifier>
+      <gml:name>klorrestmåler</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14510_41651">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Maalertype.xml">annenMålertype</gml:identifier>
+      <gml:name>annenMålertype</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
@@ -54,11 +61,13 @@ Måler vannmengden som blir brukt.  Vannmengde utover det normale kan indikere l
 &#13;
 Definisjonstekst: En åpen renne som er utformet slik at den kan måle hastighet og mengden på vannet. Sensor.</gml:description>
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Maalertype.xml">målerenne</gml:identifier>
+      <gml:name>målerenne</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14510_41653">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Maalertype.xml">lydlogger</gml:identifier>
+      <gml:name>lydlogger</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

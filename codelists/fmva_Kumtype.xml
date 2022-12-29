@@ -1,5 +1,6 @@
 <?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Kumtype" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
   <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellvannogavloep/1.0">Kumtype</gml:identifier>
+  <gml:name>Kumtype</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14488_41627">
       <gml:description>(Oslo VAV Kum (Vanlig))&#13;
@@ -10,6 +11,7 @@ Nærmere beskrivelse/varianter:&#13;
 &#13;
 De mest vanlige kumtypene som er brukt i VAV</gml:description>
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Kumtype.xml">kum</gml:identifier>
+      <gml:name>kum</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
@@ -24,6 +26,7 @@ Er fallet på vannet høyt, ligger dette normalt inne i rør slik at man forhind
 &#13;
 Fallkummer brukes normalt til terrengtilpasninger, men en fallkum kan også brukes for å bremse opp vannet.</gml:description>
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Kumtype.xml">avløpFallkum</gml:identifier>
+      <gml:name>avløpFallkum</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
@@ -36,6 +39,7 @@ Nærmere beskrivelse/varianter:&#13;
 &#13;
 I noen sammenheng kan man velge å bygge en fallkum der man bruker vannets fall i kummen for å bremse opp vannføringen.</gml:description>
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Kumtype.xml">avløpBremsekum</gml:identifier>
+      <gml:name>avløpBremsekum</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
@@ -47,6 +51,7 @@ Blir ofte brukt som innløpskum til et fordrøyningsbasseng.&#13;
 &#13;
 Jfr. overløp og fordrøyningsbasseng</gml:description>
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Kumtype.xml">avløpFordelingskum</gml:identifier>
+      <gml:name>avløpFordelingskum</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
@@ -57,6 +62,7 @@ Definisjonstekst: Spesiell kumtype med stigerør. Ikke beregnet på nedstigning,
 Har vanlig (standard) kumlokk på overflaten.&#13;
 Stigerørets dimensjon kan variere fra kum til kum.</gml:description>
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Kumtype.xml">minikum</gml:identifier>
+      <gml:name>minikum</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
@@ -72,6 +78,7 @@ Nærmere beskrivelse/varianter:&#13;
 &#13;
 Er i ofte i forbindelse med pumpestasjoner</gml:description>
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Kumtype.xml">avløpSandfang</gml:identifier>
+      <gml:name>avløpSandfang</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
@@ -82,6 +89,7 @@ Definisjonstekst: Kum med en konstruksjon for å hindre større objekter (stein)
 Konstruksjonen består vanligvis i en forsenkning (kammer) på avløpsledningen.&#13;
 Kammeret (steinfanget) må tømmes med jevne mellomrom for opprettholde effekten.</gml:description>
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Kumtype.xml">avløpSteinfang</gml:identifier>
+      <gml:name>avløpSteinfang</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
@@ -91,17 +99,20 @@ Kammeret (steinfanget) må tømmes med jevne mellomrom for opprettholde effekten
 Definisjonstekst: Kum på en vannledning som markerer horisontal og/eller vertikal retnings-forandring.&#13;
 Har stigerør og standard kumlokk. Kumlokk er normalt ikke større enn 600mm.</gml:description>
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Kumtype.xml">vannMarkeringskum</gml:identifier>
+      <gml:name>vannMarkeringskum</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14488_41635">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Kumtype.xml">trykkavløpPumpekum</gml:identifier>
+      <gml:name>trykkavløpPumpekum</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14488_41636">
       <gml:description>er et resultat av diskusjoner om sluk, rist, kumlokk, etc.</gml:description>
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Kumtype.xml">hjelpesluk</gml:identifier>
+      <gml:name>hjelpesluk</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

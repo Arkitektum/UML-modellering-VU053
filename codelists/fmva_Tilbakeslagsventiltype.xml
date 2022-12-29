@@ -1,19 +1,23 @@
 <?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Tilbakeslagsventiltype" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
   <gml:description>Kilde: (SOSI Ledning 4.6)</gml:description>
   <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellvannogavloep/1.0">Tilbakeslagsventiltype</gml:identifier>
+  <gml:name>Tilbakeslagsventiltype</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14535_41707">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Tilbakeslagsventiltype.xml">klaff</gml:identifier>
+      <gml:name>klaff</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14535_41708">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Tilbakeslagsventiltype.xml">kule</gml:identifier>
+      <gml:name>kule</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14535_41709">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Tilbakeslagsventiltype.xml">membran</gml:identifier>
+      <gml:name>membran</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

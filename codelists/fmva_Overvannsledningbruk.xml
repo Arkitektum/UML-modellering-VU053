@@ -1,8 +1,10 @@
 <?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Overvannsledningbruk" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
   <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellvannogavloep/1.0">Overvannsledningbruk</gml:identifier>
+  <gml:name>Overvannsledningbruk</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14551_41749">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Overvannsledningsbruk.xml">overvannOverflatevann</gml:identifier>
+      <gml:name>overvannOverflatevann</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
@@ -16,12 +18,14 @@ Nærmere beskrivelse/varianter:&#13;
 &#13;
 Formålet er å lede bort vann som ville skapt utvendig trykk på en konstruksjon.</gml:description>
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Overvannsledningsbruk.xml">drensvann</gml:identifier>
+      <gml:name>drensvann</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14551_41751">
       <gml:description>Avrenning fra avfallsdeponi ol</gml:description>
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Overvannsledningsbruk.xml">sigevann</gml:identifier>
+      <gml:name>sigevann</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

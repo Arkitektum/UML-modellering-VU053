@@ -1,75 +1,76 @@
 <?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="FyllingMaterial" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
   <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellveg/1.0">FyllingMaterial</gml:identifier>
+  <gml:name>FyllingMaterial</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14372_41287">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_FyllingMaterial.xml">Leire</gml:identifier>
-      <gml:name>19598</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_FyllingMaterial.xml">19598</gml:identifier>
+      <gml:name>Leire</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14372_41288">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_FyllingMaterial.xml">sand</gml:identifier>
-      <gml:name>19599</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_FyllingMaterial.xml">19599</gml:identifier>
+      <gml:name>sand</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14372_41289">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_FyllingMaterial.xml">grus</gml:identifier>
-      <gml:name>19600</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_FyllingMaterial.xml">19600</gml:identifier>
+      <gml:name>grus</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14372_41290">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_FyllingMaterial.xml">knustStein</gml:identifier>
-      <gml:name>19601</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_FyllingMaterial.xml">19601</gml:identifier>
+      <gml:name>knustStein</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14372_41291">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_FyllingMaterial.xml">sprengtStein</gml:identifier>
-      <gml:name>19602</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_FyllingMaterial.xml">19602</gml:identifier>
+      <gml:name>sprengtStein</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14372_41292">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_FyllingMaterial.xml">knustBetong</gml:identifier>
-      <gml:name>19603</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_FyllingMaterial.xml">19603</gml:identifier>
+      <gml:name>knustBetong</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14372_41293">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_FyllingMaterial.xml">annenTypeLetteMasser</gml:identifier>
-      <gml:name>19604</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_FyllingMaterial.xml">19604</gml:identifier>
+      <gml:name>annenTypeLetteMasser</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14372_41294">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_FyllingMaterial.xml">skumglass</gml:identifier>
-      <gml:name>19605</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_FyllingMaterial.xml">19605</gml:identifier>
+      <gml:name>skumglass</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14372_41295">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_FyllingMaterial.xml">lettklinker</gml:identifier>
-      <gml:name>19606</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_FyllingMaterial.xml">19606</gml:identifier>
+      <gml:name>lettklinker</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14372_41296">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_FyllingMaterial.xml">blandedeMasser</gml:identifier>
-      <gml:name>19608</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_FyllingMaterial.xml">19608</gml:identifier>
+      <gml:name>blandedeMasser</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14372_41297">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_FyllingMaterial.xml">ekspandertpolysteren</gml:identifier>
-      <gml:name>19607</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_FyllingMaterial.xml">19607</gml:identifier>
+      <gml:name>ekspandertpolysteren</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14372_41298">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_FyllingMaterial.xml">morenemasser</gml:identifier>
-      <gml:name>19609</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_FyllingMaterial.xml">19609</gml:identifier>
+      <gml:name>morenemasser</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

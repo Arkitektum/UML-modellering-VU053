@@ -2,40 +2,41 @@
   <gml:description>For å unngå misforståelser ved angivelse av trykklasse benyttes SDR- verdien for entydig å angi hva slags rør det er snakk om. SDR-verdien kommer fram ved å dividere utvendig diameter med godstykkelsen. SDR = D/e. Høy trykklasse gir lav SDR-verdi.&#13;
 (Kilde: www.pipelife.no)</gml:description>
   <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellvannogavloep/1.0">SDR</gml:identifier>
+  <gml:name>SDR</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14565_41809">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_SDR.xml">11</gml:identifier>
-      <gml:name>A</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_SDR.xml">A</gml:identifier>
+      <gml:name>11</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14565_41810">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_SDR.xml">13,6</gml:identifier>
-      <gml:name>B</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_SDR.xml">B</gml:identifier>
+      <gml:name>13,6</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14565_41811">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_SDR.xml">17,6</gml:identifier>
-      <gml:name>C</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_SDR.xml">C</gml:identifier>
+      <gml:name>17,6</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14565_41812">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_SDR.xml">21</gml:identifier>
-      <gml:name>D</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_SDR.xml">D</gml:identifier>
+      <gml:name>21</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14565_41813">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_SDR.xml">26</gml:identifier>
-      <gml:name>E</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_SDR.xml">E</gml:identifier>
+      <gml:name>26</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14565_41814">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_SDR.xml">34,6</gml:identifier>
-      <gml:name>F</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_SDR.xml">F</gml:identifier>
+      <gml:name>34,6</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

@@ -1,69 +1,70 @@
 <?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Steinstoerrelse" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
   <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellveg/1.0">Steinstoerrelse</gml:identifier>
+  <gml:name>Steinstoerrelse</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14358_41189">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Steinstoerrelse.xml">2</gml:identifier>
-      <gml:name>4134</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Steinstoerrelse.xml">4134</gml:identifier>
+      <gml:name>2</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14358_41190">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Steinstoerrelse.xml">4</gml:identifier>
-      <gml:name>4135</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Steinstoerrelse.xml">4135</gml:identifier>
+      <gml:name>4</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14358_41191">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Steinstoerrelse.xml">8</gml:identifier>
-      <gml:name>4136</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Steinstoerrelse.xml">4136</gml:identifier>
+      <gml:name>8</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14358_41192">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Steinstoerrelse.xml">11</gml:identifier>
-      <gml:name>4137</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Steinstoerrelse.xml">4137</gml:identifier>
+      <gml:name>11</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14358_41193">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Steinstoerrelse.xml">12</gml:identifier>
-      <gml:name>4138</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Steinstoerrelse.xml">4138</gml:identifier>
+      <gml:name>12</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14358_41194">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Steinstoerrelse.xml">14</gml:identifier>
-      <gml:name>4139</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Steinstoerrelse.xml">4139</gml:identifier>
+      <gml:name>14</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14358_41195">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Steinstoerrelse.xml">16</gml:identifier>
-      <gml:name>4140</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Steinstoerrelse.xml">4140</gml:identifier>
+      <gml:name>16</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14358_41196">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Steinstoerrelse.xml">22</gml:identifier>
-      <gml:name>4141</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Steinstoerrelse.xml">4141</gml:identifier>
+      <gml:name>22</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14358_41197">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Steinstoerrelse.xml">28</gml:identifier>
-      <gml:name>4142</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Steinstoerrelse.xml">4142</gml:identifier>
+      <gml:name>28</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14358_41198">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Steinstoerrelse.xml">32</gml:identifier>
-      <gml:name>4143</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Steinstoerrelse.xml">4143</gml:identifier>
+      <gml:name>32</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14358_41199">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Steinstoerrelse.xml">6</gml:identifier>
-      <gml:name>6726</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Steinstoerrelse.xml">6726</gml:identifier>
+      <gml:name>6</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

@@ -1,123 +1,124 @@
 <?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Profil" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
   <gml:description>Angir hvilket humpprofil som er benyttet. Jfr kategorisering i Håndbok V128 (072). Fartsdempende tiltak.</gml:description>
   <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellveg/1.0">Profil</gml:identifier>
+  <gml:name>Profil</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14418_41481">
       <gml:description>Profil 1, sirkel-30</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Profil.xml">Profil 1, sirkel-30</gml:identifier>
-      <gml:name>11641</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Profil.xml">11641</gml:identifier>
+      <gml:name>Profil 1, sirkel-30</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14418_41482">
       <gml:description>Profil 2, sirkel-40</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Profil.xml">Profil 2, sirkel-40</gml:identifier>
-      <gml:name>11642</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Profil.xml">11642</gml:identifier>
+      <gml:name>Profil 2, sirkel-40</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14418_41483">
       <gml:description>Profil 3, sirkel-50</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Profil.xml">Profil 3, sirkel-50</gml:identifier>
-      <gml:name>11643</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Profil.xml">11643</gml:identifier>
+      <gml:name>Profil 3, sirkel-50</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14418_41484">
       <gml:description>Profil 4, modifisert sirkel-30</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Profil.xml">Profil 4, modifisert sirkel-30</gml:identifier>
-      <gml:name>11644</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Profil.xml">11644</gml:identifier>
+      <gml:name>Profil 4, modifisert sirkel-30</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14418_41485">
       <gml:description>Profil 5, modifisert sirkel-40</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Profil.xml">Profil 5, modifisert sirkel-40</gml:identifier>
-      <gml:name>11645</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Profil.xml">11645</gml:identifier>
+      <gml:name>Profil 5, modifisert sirkel-40</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14418_41486">
       <gml:description>Profil 6, modifisert sirkel-50</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Profil.xml">Profil 6, modifisert sirkel-50</gml:identifier>
-      <gml:name>11646</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Profil.xml">11646</gml:identifier>
+      <gml:name>Profil 6, modifisert sirkel-50</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14418_41487">
       <gml:description>Profil 7, trapes-30</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Profil.xml">Profil 7, trapes-30</gml:identifier>
-      <gml:name>11647</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Profil.xml">11647</gml:identifier>
+      <gml:name>Profil 7, trapes-30</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14418_41488">
       <gml:description>Profil 8, trapes-40</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Profil.xml">Profil 8, trapes-40</gml:identifier>
-      <gml:name>11648</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Profil.xml">11648</gml:identifier>
+      <gml:name>Profil 8, trapes-40</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14418_41489">
       <gml:description>Profil 9, trapes-50</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Profil.xml">Profil 9, trapes-50</gml:identifier>
-      <gml:name>11649</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Profil.xml">11649</gml:identifier>
+      <gml:name>Profil 9, trapes-50</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14418_41490">
       <gml:description>Pute-30</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Profil.xml">Pute-30</gml:identifier>
-      <gml:name>11741</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Profil.xml">11741</gml:identifier>
+      <gml:name>Pute-30</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14418_41491">
       <gml:description>Pute-40</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Profil.xml">Pute-40</gml:identifier>
-      <gml:name>11742</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Profil.xml">11742</gml:identifier>
+      <gml:name>Pute-40</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14418_41492">
       <gml:description>Jfr Vedlegg 3 i Håndbok V128</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Profil.xml">Pute-50</gml:identifier>
-      <gml:name>21019</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Profil.xml">21019</gml:identifier>
+      <gml:name>Pute-50</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14418_41493">
       <gml:description>Kuleflate</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Profil.xml">Kuleflate</gml:identifier>
-      <gml:name>11779</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Profil.xml">11779</gml:identifier>
+      <gml:name>Kuleflate</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14418_41494">
       <gml:description>Sopp</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Profil.xml">Sopp</gml:identifier>
-      <gml:name>11780</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Profil.xml">11780</gml:identifier>
+      <gml:name>Sopp</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14418_41495">
       <gml:description>H-hump</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Profil.xml">H-hump</gml:identifier>
-      <gml:name>11781</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Profil.xml">11781</gml:identifier>
+      <gml:name>H-hump</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14418_41496">
       <gml:description>S-Hump</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Profil.xml">S-Hump</gml:identifier>
-      <gml:name>11782</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Profil.xml">11782</gml:identifier>
+      <gml:name>S-Hump</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14418_41497">
       <gml:description>Dobbel hump</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Profil.xml">Dobbel hump</gml:identifier>
-      <gml:name>11783</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Profil.xml">11783</gml:identifier>
+      <gml:name>Dobbel hump</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

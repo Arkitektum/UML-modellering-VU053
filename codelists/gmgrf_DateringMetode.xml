@@ -4,13 +4,12 @@
 &#13;
 -- Definition - - &#13;
 method used to determine the age of rocks, sediments, minerals and organic material</gml:description>
-  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/grunnlagsmodellgrunnforhold/0.1">DateringMetode</gml:identifier>
-  <gml:name>DatingMethod</gml:name>
+  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/grunnlagsmodellgrunnforhold/0.1">DatingMethod</gml:identifier>
+  <gml:name>DateringMetode</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15120_44846">
-      <gml:identifier codeSpace="https://www.codelistURL.com">Uspesifisert</gml:identifier>
-      <gml:name>Unspecified</gml:name>
-      <gml:name>1</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_DateringMetode.xml">Unspecified</gml:identifier>
+      <gml:name>Uspesifisert</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
@@ -19,9 +18,8 @@ method used to determine the age of rocks, sediments, minerals and organic mater
 &#13;
 -- Definition -- &#13;
 The argon/argon method</gml:description>
-      <gml:identifier codeSpace="https://www.codelistURL.com">Ar40/Ar39</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_DateringMetode.xml">Ar40/Ar39</gml:identifier>
       <gml:name>Ar40/Ar39</gml:name>
-      <gml:name>10</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
@@ -30,9 +28,8 @@ The argon/argon method</gml:description>
 &#13;
 -- Definition -- &#13;
 The potassium/argon method</gml:description>
-      <gml:identifier codeSpace="https://www.codelistURL.com">K/Ar</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_DateringMetode.xml">K/Ar</gml:identifier>
       <gml:name>K/Ar</gml:name>
-      <gml:name>11</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
@@ -41,16 +38,15 @@ The potassium/argon method</gml:description>
 &#13;
 -- Definition -- &#13;
 The osmium/renium method</gml:description>
-      <gml:identifier codeSpace="https://www.codelistURL.com">Os/Re</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_DateringMetode.xml">Os/Re</gml:identifier>
       <gml:name>Os/Re</gml:name>
-      <gml:name>12</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15120_44850">
       <gml:description>Bly/bly-metoden</gml:description>
-      <gml:identifier codeSpace="https://www.codelistURL.com">Pb/Pb</gml:identifier>
-      <gml:name>13</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_DateringMetode.xml">13</gml:identifier>
+      <gml:name>Pb/Pb</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
@@ -59,9 +55,8 @@ The osmium/renium method</gml:description>
 &#13;
 -- Definition -- &#13;
 The rubidium/strontium method</gml:description>
-      <gml:identifier codeSpace="https://www.codelistURL.com">Rb/Sr</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_DateringMetode.xml">Rb/Sr</gml:identifier>
       <gml:name>Rb/Sr</gml:name>
-      <gml:name>14</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
@@ -70,9 +65,8 @@ The rubidium/strontium method</gml:description>
 &#13;
 -- Definition -- &#13;
 The samarium/neodynum method</gml:description>
-      <gml:identifier codeSpace="https://www.codelistURL.com">Sm/Nd</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_DateringMetode.xml">Sm/Nd</gml:identifier>
       <gml:name>Sm/Nd</gml:name>
-      <gml:name>15</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
@@ -81,9 +75,8 @@ The samarium/neodynum method</gml:description>
 &#13;
 -- Definition -- &#13;
 The uranium/lead method</gml:description>
-      <gml:identifier codeSpace="https://www.codelistURL.com">U/Pb</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_DateringMetode.xml">U/Pb</gml:identifier>
       <gml:name>U/Pb</gml:name>
-      <gml:name>16</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
@@ -92,9 +85,8 @@ The uranium/lead method</gml:description>
 &#13;
 -- Definition -- &#13;
 The uranium/thorium method</gml:description>
-      <gml:identifier codeSpace="https://www.codelistURL.com">U/Th</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_DateringMetode.xml">U/Th</gml:identifier>
       <gml:name>U/Th</gml:name>
-      <gml:name>17</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
@@ -103,9 +95,8 @@ The uranium/thorium method</gml:description>
 &#13;
 -- Definition -- &#13;
 14C dating (radiocarbon dating)</gml:description>
-      <gml:identifier codeSpace="https://www.codelistURL.com">14C</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_DateringMetode.xml">14C</gml:identifier>
       <gml:name>14C</gml:name>
-      <gml:name>18</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
@@ -114,9 +105,8 @@ The uranium/thorium method</gml:description>
 &#13;
 -- Definition -- &#13;
 The cesium-137 method</gml:description>
-      <gml:identifier codeSpace="https://www.codelistURL.com">Cs137</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_DateringMetode.xml">Cs137</gml:identifier>
       <gml:name>Cs137</gml:name>
-      <gml:name>19</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
@@ -125,9 +115,8 @@ The cesium-137 method</gml:description>
 &#13;
 -- Definition -- &#13;
 The lead-210 method</gml:description>
-      <gml:identifier codeSpace="https://www.codelistURL.com">Pb210</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_DateringMetode.xml">Pb210</gml:identifier>
       <gml:name>Pb210</gml:name>
-      <gml:name>20</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
@@ -136,9 +125,8 @@ The lead-210 method</gml:description>
 &#13;
 -- Definition -- &#13;
 Dating by the fact that radioactive minerals decay and produce fission tracks in surrounding minerals/material</gml:description>
-      <gml:identifier codeSpace="https://www.codelistURL.com">Fission trac</gml:identifier>
-      <gml:name>Fission track</gml:name>
-      <gml:name>30</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_DateringMetode.xml">Fission track</gml:identifier>
+      <gml:name>Fission trac</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
@@ -147,9 +135,8 @@ Dating by the fact that radioactive minerals decay and produce fission tracks in
 &#13;
 -- Definition -- &#13;
 Lead fossil</gml:description>
-      <gml:identifier codeSpace="https://www.codelistURL.com">Fossil</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_DateringMetode.xml">Fossil</gml:identifier>
       <gml:name>Fossil</gml:name>
-      <gml:name>40</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
@@ -158,9 +145,8 @@ Lead fossil</gml:description>
 &#13;
 -- Definition -- &#13;
 Dating by means of fossils</gml:description>
-      <gml:identifier codeSpace="https://www.codelistURL.com">Biostratigrafi</gml:identifier>
-      <gml:name>Biostratigraphy</gml:name>
-      <gml:name>41</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_DateringMetode.xml">Biostratigraphy</gml:identifier>
+      <gml:name>Biostratigrafi</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
@@ -169,9 +155,8 @@ Dating by means of fossils</gml:description>
 &#13;
 -- Definition -- &#13;
 Paleomagnetism</gml:description>
-      <gml:identifier codeSpace="https://www.codelistURL.com">Paleomag</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_DateringMetode.xml">Paleomag</gml:identifier>
       <gml:name>Paleomag</gml:name>
-      <gml:name>50</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
@@ -180,9 +165,8 @@ Paleomagnetism</gml:description>
 &#13;
 -- Definition -- &#13;
 Dating based upon measurement of flaws in the lattice structure of the crystals</gml:description>
-      <gml:identifier codeSpace="https://www.codelistURL.com">Termoluminescens</gml:identifier>
-      <gml:name>Thermoluminescence</gml:name>
-      <gml:name>60</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_DateringMetode.xml">Thermoluminescence</gml:identifier>
+      <gml:name>Termoluminescens</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
@@ -191,16 +175,14 @@ Dating based upon measurement of flaws in the lattice structure of the crystals<
 &#13;
 -- Definition -- &#13;
 Optically stimulated luminiscence</gml:description>
-      <gml:identifier codeSpace="https://www.codelistURL.com">OSL</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_DateringMetode.xml">OSL</gml:identifier>
       <gml:name>OSL</gml:name>
-      <gml:name>70</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15120_44864">
-      <gml:identifier codeSpace="https://www.codelistURL.com">Tephrakronologi</gml:identifier>
-      <gml:name>Tephrochronology</gml:name>
-      <gml:name>80</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_DateringMetode.xml">Tephrochronology</gml:identifier>
+      <gml:name>Tephrakronologi</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

@@ -1,32 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Bevegelsesklasse" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
   <gml:description>Angir bevegelsesklasse.</gml:description>
   <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellrekkverk/1.0">Bevegelsesklasse</gml:identifier>
+  <gml:name>Bevegelsesklasse</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14927_43187">
       <gml:description>Z1</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Bevegelsesklasse.xml">Z1</gml:identifier>
-      <gml:name>5708</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Bevegelsesklasse.xml">5708</gml:identifier>
+      <gml:name>Z1</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14927_43188">
       <gml:description>Z2</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Bevegelsesklasse.xml">Z2</gml:identifier>
-      <gml:name>5709</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Bevegelsesklasse.xml">5709</gml:identifier>
+      <gml:name>Z2</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14927_43189">
       <gml:description>Z3</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Bevegelsesklasse.xml">Z3</gml:identifier>
-      <gml:name>5710</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Bevegelsesklasse.xml">5710</gml:identifier>
+      <gml:name>Z3</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14927_43190">
       <gml:description>Z4</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Bevegelsesklasse.xml">Z4</gml:identifier>
-      <gml:name>5711</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Bevegelsesklasse.xml">5711</gml:identifier>
+      <gml:name>Z4</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

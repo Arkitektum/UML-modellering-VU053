@@ -1,25 +1,26 @@
 <?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="TypeFerist" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
   <gml:description>Angir hvilken type vegobjektet er av</gml:description>
   <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellveg/1.0">TypeFerist</gml:identifier>
+  <gml:name>TypeFerist</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14416_41475">
       <gml:description>Rør</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_TypeFerist.xml">rør</gml:identifier>
-      <gml:name>2492</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_TypeFerist.xml">2492</gml:identifier>
+      <gml:name>rør</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14416_41476">
       <gml:description>H/i-bjelker</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_TypeFerist.xml">HI_Bjelker</gml:identifier>
-      <gml:name>2493</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_TypeFerist.xml">2493</gml:identifier>
+      <gml:name>HI_Bjelker</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14416_41477">
       <gml:description>Elektrisk</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_TypeFerist.xml">elektrisk</gml:identifier>
-      <gml:name>2494</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_TypeFerist.xml">2494</gml:identifier>
+      <gml:name>elektrisk</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

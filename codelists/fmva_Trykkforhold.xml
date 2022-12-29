@@ -1,13 +1,16 @@
 <?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Trykkforhold" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
   <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellvannogavloep/1.0">Trykkforhold</gml:identifier>
+  <gml:name>Trykkforhold</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14552_41752">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Trykkforhold.xml">selvfall</gml:identifier>
+      <gml:name>selvfall</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14552_41753">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Trykkforhold.xml">trykk</gml:identifier>
+      <gml:name>trykk</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
@@ -20,6 +23,7 @@ Selvfallsledning under trykk pga. fall.&#13;
 &#13;
 Brukes når ledningen går (dykker) under elv/bekk/vei/bane osv.</gml:description>
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Trykkforhold.xml">dykkerledning</gml:identifier>
+      <gml:name>dykkerledning</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

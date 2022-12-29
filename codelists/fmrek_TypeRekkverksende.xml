@@ -1,95 +1,96 @@
 <?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="TypeRekkverksende" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
   <gml:description>Angir hvilken type rekkverksavslutning/overgangselemet det er tale om</gml:description>
   <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellrekkverk/1.0">TypeRekkverksende</gml:identifier>
+  <gml:name>TypeRekkverksende</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14954_43512">
       <gml:description>Rekkverket forankres i sideterreng, mur, tunnelportal ol i full rekkverkshøyde.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_TypeRekkverksende.xml">Sideforankring</gml:identifier>
-      <gml:name>5733</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_TypeRekkverksende.xml">5733</gml:identifier>
+      <gml:name>Sideforankring</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14954_43513">
       <gml:description>Rekkverket forankres i fjellskjæring i full rekkverkshøyde.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_TypeRekkverksende.xml">Sideforankring i fjellskjæring</gml:identifier>
-      <gml:name>5723</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_TypeRekkverksende.xml">5723</gml:identifier>
+      <gml:name>Sideforankring i fjellskjæring</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14954_43514">
       <gml:description>Rekkverket forankres i jordskjæring i full rekkverkshøyde.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_TypeRekkverksende.xml">Sideforankring i jordskjæring</gml:identifier>
-      <gml:name>5724</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_TypeRekkverksende.xml">5724</gml:identifier>
+      <gml:name>Sideforankring i jordskjæring</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14954_43515">
       <gml:description>Rekkverket forankres i mur i full rekkverkshøyde.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_TypeRekkverksende.xml">Sideforankring i mur</gml:identifier>
-      <gml:name>5725</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_TypeRekkverksende.xml">5725</gml:identifier>
+      <gml:name>Sideforankring i mur</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14954_43516">
       <gml:description>Rekkverket forankres i tunnelportal i full rekkverkshøyde.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_TypeRekkverksende.xml">Sideforankring i tunnelportal</gml:identifier>
-      <gml:name>5726</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_TypeRekkverksende.xml">5726</gml:identifier>
+      <gml:name>Sideforankring i tunnelportal</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14954_43517">
       <gml:description>Rekkverket forankres i naboelement i full rekkverkshøyde.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_TypeRekkverksende.xml">Sideforankring i naboelement</gml:identifier>
-      <gml:name>5727</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_TypeRekkverksende.xml">5727</gml:identifier>
+      <gml:name>Sideforankring i naboelement</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14954_43518">
       <gml:description>Rekkverksende er konstruert slik at den gir etter/klapper sammen ved påkjøring. Type/produkt kan angis under egenskapstype 10724</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_TypeRekkverksende.xml">Ettergivende</gml:identifier>
-      <gml:name>5734</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_TypeRekkverksende.xml">5734</gml:identifier>
+      <gml:name>Ettergivende</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14954_43519">
       <gml:description>Rekkverket er forankret ned i bakken, men er ikke avbøyd sideveis</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_TypeRekkverksende.xml">Nedføring i bakken uten utsvinging</gml:identifier>
-      <gml:name>2458</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_TypeRekkverksende.xml">2458</gml:identifier>
+      <gml:name>Nedføring i bakken uten utsvinging</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14954_43520">
       <gml:description>Rekkverket er forankret ned i bakken og avbøyd sideveis, men avsluttes innenfor vegens sikkerhetssone</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_TypeRekkverksende.xml">Nedføring i bakken og utsvinget</gml:identifier>
-      <gml:name>2459</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_TypeRekkverksende.xml">2459</gml:identifier>
+      <gml:name>Nedføring i bakken og utsvinget</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14954_43521">
       <gml:description>Rekkverket avsluttes i full høyde med avrundings/avslutningselement. Rekkverket er ikke  utsvingning sidevegs. Rekkverksende er ikke ettergivende.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_TypeRekkverksende.xml">Avslutning i full høyde uten utsvingning</gml:identifier>
-      <gml:name>5735</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_TypeRekkverksende.xml">5735</gml:identifier>
+      <gml:name>Avslutning i full høyde uten utsvingning</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14954_43522">
       <gml:description>Rekkverket avsluttes i full høyde med avrundings/avslutningselement og er avbøyd sidevegs, men avsluttes innenfor vegens sikkerhetssone. Rekkverksende er ikke ettergivende.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_TypeRekkverksende.xml">Avslutning i full høyde og utsvinget</gml:identifier>
-      <gml:name>13721</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_TypeRekkverksende.xml">13721</gml:identifier>
+      <gml:name>Avslutning i full høyde og utsvinget</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14954_43523">
       <gml:description>Rekkverk avbøyes og avsluttes utenfor vegens sikkerhetssone (Håndokb 231, kap. 4.3.1, måte 5)</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_TypeRekkverksende.xml">Rekkverk avsluttet utenfor sikkerhetssonen</gml:identifier>
-      <gml:name>13720</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_TypeRekkverksende.xml">13720</gml:identifier>
+      <gml:name>Rekkverk avsluttet utenfor sikkerhetssonen</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14954_43524">
       <gml:description>Rekkverket avsluttes/forankres i annet vegobjekt.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_TypeRekkverksende.xml">Avslutning i annet vegobjekt</gml:identifier>
-      <gml:name>2460</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_TypeRekkverksende.xml">2460</gml:identifier>
+      <gml:name>Avslutning i annet vegobjekt</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

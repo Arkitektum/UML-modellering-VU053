@@ -1,21 +1,22 @@
 <?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Fyllingtype" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
   <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellveg/1.0">Fyllingtype</gml:identifier>
+  <gml:name>Fyllingtype</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14373_41299">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Fyllingtype.xml">hovedfylling</gml:identifier>
-      <gml:name>19592</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Fyllingtype.xml">19592</gml:identifier>
+      <gml:name>hovedfylling</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14373_41300">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Fyllingtype.xml">motfylling</gml:identifier>
-      <gml:name>19593</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Fyllingtype.xml">19593</gml:identifier>
+      <gml:name>motfylling</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14373_41301">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Fyllingtype.xml">massedeponi</gml:identifier>
-      <gml:name>19594</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Fyllingtype.xml">19594</gml:identifier>
+      <gml:name>massedeponi</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

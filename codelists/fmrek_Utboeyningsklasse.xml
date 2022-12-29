@@ -1,60 +1,61 @@
 <?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Utboeyningsklasse" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
   <gml:description>Angir utbøyningsklasse.</gml:description>
   <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellrekkverk/1.0">Utboeyningsklasse</gml:identifier>
+  <gml:name>Utboeyningsklasse</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14928_43191">
       <gml:description>D1</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Utboeyningsklasse.xml">D1</gml:identifier>
-      <gml:name>5712</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Utboeyningsklasse.xml">5712</gml:identifier>
+      <gml:name>D1</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14928_43192">
       <gml:description>D2</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Utboeyningsklasse.xml">D2</gml:identifier>
-      <gml:name>5713</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Utboeyningsklasse.xml">5713</gml:identifier>
+      <gml:name>D2</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14928_43193">
       <gml:description>D3</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Utboeyningsklasse.xml">D3</gml:identifier>
-      <gml:name>5714</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Utboeyningsklasse.xml">5714</gml:identifier>
+      <gml:name>D3</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14928_43194">
       <gml:description>D4</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Utboeyningsklasse.xml">D4</gml:identifier>
-      <gml:name>5715</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Utboeyningsklasse.xml">5715</gml:identifier>
+      <gml:name>D4</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14928_43195">
       <gml:description>D5</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Utboeyningsklasse.xml">D5</gml:identifier>
-      <gml:name>5716</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Utboeyningsklasse.xml">5716</gml:identifier>
+      <gml:name>D5</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14928_43196">
       <gml:description>D6</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Utboeyningsklasse.xml">D6</gml:identifier>
-      <gml:name>5719</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Utboeyningsklasse.xml">5719</gml:identifier>
+      <gml:name>D6</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14928_43197">
       <gml:description>D7</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Utboeyningsklasse.xml">D7</gml:identifier>
-      <gml:name>5720</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Utboeyningsklasse.xml">5720</gml:identifier>
+      <gml:name>D7</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14928_43198">
       <gml:description>D8</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Utboeyningsklasse.xml">D8</gml:identifier>
-      <gml:name>5721</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Utboeyningsklasse.xml">5721</gml:identifier>
+      <gml:name>D8</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

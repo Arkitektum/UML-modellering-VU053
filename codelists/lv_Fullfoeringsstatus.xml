@@ -1,58 +1,70 @@
 <?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Fullfoeringsstatus" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
   <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/leveranse/1.0">Fullfoeringsstatus</gml:identifier>
+  <gml:name>Fullfoeringsstatus</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14104_40599">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/lv_Fullfoeringsstatus.xml">0</gml:identifier>
+      <gml:name>0</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14104_40600">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/lv_Fullfoeringsstatus.xml">10</gml:identifier>
+      <gml:name>10</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14104_40601">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/lv_Fullfoeringsstatus.xml">100</gml:identifier>
+      <gml:name>100</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14104_40602">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/lv_Fullfoeringsstatus.xml">20</gml:identifier>
+      <gml:name>20</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14104_40603">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/lv_Fullfoeringsstatus.xml">30</gml:identifier>
+      <gml:name>30</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14104_40604">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/lv_Fullfoeringsstatus.xml">40</gml:identifier>
+      <gml:name>40</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14104_40605">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/lv_Fullfoeringsstatus.xml">50</gml:identifier>
+      <gml:name>50</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14104_40606">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/lv_Fullfoeringsstatus.xml">60</gml:identifier>
+      <gml:name>60</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14104_40607">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/lv_Fullfoeringsstatus.xml">70</gml:identifier>
+      <gml:name>70</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14104_40608">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/lv_Fullfoeringsstatus.xml">80</gml:identifier>
+      <gml:name>80</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14104_40609">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/lv_Fullfoeringsstatus.xml">90</gml:identifier>
+      <gml:name>90</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

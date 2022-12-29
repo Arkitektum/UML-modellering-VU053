@@ -1,18 +1,19 @@
 <?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="UtformingPortDoer" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
   <gml:description>Angir hvilken utforming port/dør har.</gml:description>
   <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellveg/1.0">UtformingPortDoer</gml:identifier>
+  <gml:name>UtformingPortDoer</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14399_41382">
       <gml:description>Enkel</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_UtformingPortDoer.xml">Enkel</gml:identifier>
-      <gml:name>2455</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_UtformingPortDoer.xml">2455</gml:identifier>
+      <gml:name>Enkel</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14399_41383">
       <gml:description>Todelt</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_UtformingPortDoer.xml">Todelt</gml:identifier>
-      <gml:name>2456</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_UtformingPortDoer.xml">2456</gml:identifier>
+      <gml:name>Todelt</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

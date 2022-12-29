@@ -1,13 +1,16 @@
 <?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Vannledningsbruk" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
   <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellvannogavloep/1.0">Vannledningsbruk</gml:identifier>
+  <gml:name>Vannledningsbruk</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14548_41744">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Vannledningsbruk.xml">vann</gml:identifier>
+      <gml:name>vann</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14548_41745">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Vannledningsbruk.xml">råvann</gml:identifier>
+      <gml:name>råvann</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

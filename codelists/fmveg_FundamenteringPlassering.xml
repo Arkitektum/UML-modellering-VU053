@@ -1,60 +1,61 @@
 <?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="FundamenteringPlassering" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
   <gml:description>Angir hva skjermen er fundamentert/plassert på.</gml:description>
   <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellveg/1.0">FundamenteringPlassering</gml:identifier>
+  <gml:name>FundamenteringPlassering</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14374_41302">
       <gml:description>Fundamentering på berg</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_FundamenteringPlassering.xml">På berg</gml:identifier>
-      <gml:name>15974</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_FundamenteringPlassering.xml">15974</gml:identifier>
+      <gml:name>På berg</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14374_41303">
       <gml:description>Fundamentering på jord/fylling</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_FundamenteringPlassering.xml">På jord/fylling</gml:identifier>
-      <gml:name>15975</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_FundamenteringPlassering.xml">15975</gml:identifier>
+      <gml:name>På jord/fylling</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14374_41304">
       <gml:description>Fundamentering varierer mellom på berg og på jord/fylling</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_FundamenteringPlassering.xml">På berg og jord/fylling</gml:identifier>
-      <gml:name>15976</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_FundamenteringPlassering.xml">15976</gml:identifier>
+      <gml:name>På berg og jord/fylling</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14374_41305">
       <gml:description>Skjerm er fundamentert/plassert på bru</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_FundamenteringPlassering.xml">På bru</gml:identifier>
-      <gml:name>15995</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_FundamenteringPlassering.xml">15995</gml:identifier>
+      <gml:name>På bru</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14374_41306">
       <gml:description>Skjerm er fundamentert/plassert på topp av voll</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_FundamenteringPlassering.xml">På voll</gml:identifier>
-      <gml:name>15998</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_FundamenteringPlassering.xml">15998</gml:identifier>
+      <gml:name>På voll</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14374_41307">
       <gml:description>Skjerm er plassert oppå mur av naturstein.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_FundamenteringPlassering.xml">På mur av naturstein</gml:identifier>
-      <gml:name>17438</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_FundamenteringPlassering.xml">17438</gml:identifier>
+      <gml:name>På mur av naturstein</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14374_41308">
       <gml:description>Skjerm er plassert oppå betongmur.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_FundamenteringPlassering.xml">På mur av betong</gml:identifier>
-      <gml:name>17437</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_FundamenteringPlassering.xml">17437</gml:identifier>
+      <gml:name>På mur av betong</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14374_41309">
       <gml:description>Skjerm er fundamentert/plassert på topp betongrekkverk.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_FundamenteringPlassering.xml">På betongrekkverk</gml:identifier>
-      <gml:name>15999</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_FundamenteringPlassering.xml">15999</gml:identifier>
+      <gml:name>På betongrekkverk</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

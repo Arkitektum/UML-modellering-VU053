@@ -1,13 +1,16 @@
 <?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Roeroppbygging" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
   <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellvannogavloep/1.0">Roeroppbygging</gml:identifier>
+  <gml:name>Roeroppbygging</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14573_41876">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Roeroppbygging.xml">dobbeltvegget</gml:identifier>
+      <gml:name>dobbeltvegget</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14573_41877">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Roeroppbygging.xml">korrugert</gml:identifier>
+      <gml:name>korrugert</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

@@ -1,51 +1,52 @@
 <?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Helning" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
   <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellveg/1.0">Helning</gml:identifier>
+  <gml:name>Helning</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14459_41587">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmvsg_Heling.xml">brattere enn 1:1,25</gml:identifier>
-      <gml:name>19584</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmvsg_Heling.xml">19584</gml:identifier>
+      <gml:name>brattere enn 1:1,25</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14459_41588">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmvsg_Heling.xml">1:1,25</gml:identifier>
-      <gml:name>19585</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmvsg_Heling.xml">19585</gml:identifier>
+      <gml:name>1:1,25</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14459_41589">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmvsg_Heling.xml">1:1,5</gml:identifier>
-      <gml:name>19586</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmvsg_Heling.xml">19586</gml:identifier>
+      <gml:name>1:1,5</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14459_41590">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmvsg_Heling.xml">1:2</gml:identifier>
-      <gml:name>19587</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmvsg_Heling.xml">19587</gml:identifier>
+      <gml:name>1:2</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14459_41591">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmvsg_Heling.xml">1:3</gml:identifier>
-      <gml:name>19588</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmvsg_Heling.xml">19588</gml:identifier>
+      <gml:name>1:3</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14459_41592">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmvsg_Heling.xml">1:4</gml:identifier>
-      <gml:name>19589</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmvsg_Heling.xml">19589</gml:identifier>
+      <gml:name>1:4</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14459_41593">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmvsg_Heling.xml">1:5</gml:identifier>
-      <gml:name>19590</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmvsg_Heling.xml">19590</gml:identifier>
+      <gml:name>1:5</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14459_41594">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmvsg_Heling.xml">slakere enn 1:5</gml:identifier>
-      <gml:name>19591</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmvsg_Heling.xml">19591</gml:identifier>
+      <gml:name>slakere enn 1:5</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

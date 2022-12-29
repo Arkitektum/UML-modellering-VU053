@@ -1,18 +1,22 @@
 <?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Godkjennignstype" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
   <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/leveranse/1.0">Godkjennignstype</gml:identifier>
+  <gml:name>Godkjennignstype</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14123_40666">
       <gml:identifier codeSpace="https://www.codelistURL.com">somPlanlagt</gml:identifier>
+      <gml:name>somPlanlagt</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14123_40667">
       <gml:identifier codeSpace="https://www.codelistURL.com">somProsjektert</gml:identifier>
+      <gml:name>somProsjektert</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14123_40668">
       <gml:identifier codeSpace="https://www.codelistURL.com">somUtført</gml:identifier>
+      <gml:name>somUtført</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

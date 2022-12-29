@@ -3,4 +3,5 @@
 &#13;
 Kodelisten forvaltes eksternt og er tilgjengelig i geonorge.no https://register.geonorge.no/epsg-koder</gml:description>
   <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fellesmoduler/1.0">Referansesystemkode</gml:identifier>
+  <gml:name>Referansesystemkode</gml:name>
 </gml:Dictionary>

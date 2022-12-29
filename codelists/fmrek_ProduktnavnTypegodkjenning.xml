@@ -1,1663 +1,1664 @@
 <?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="ProduktnavnTypegodkjenning" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
   <gml:description>Refererer til produktnavn og typegodkjenning (samsvarsgodkjenning) for rekkverk godkjent  av Statens vegvesen.Jfr:  http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master</gml:description>
   <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellrekkverk/1.0">ProduktnavnTypegodkjenning</gml:identifier>
+  <gml:name>ProduktnavnTypegodkjenning</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43251">
       <gml:description>Ikke lenger aktiv i database over typegodkjent vegutstyr. Tidligere link til utstyr: http ://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508484&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Active Block 450.0 - (N1-W5) U</gml:identifier>
-      <gml:name>17944</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">17944</gml:identifier>
+      <gml:name>Active Block 450.0 - (N1-W5) U</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43252">
       <gml:description>Ikke lenger aktiv i database over typegodkjent vegutstyr. Tidligere link til utstyr: http ://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508485&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Active Block 450.1 - (H1-W5) U</gml:identifier>
-      <gml:name>17945</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">17945</gml:identifier>
+      <gml:name>Active Block 450.1 - (H1-W5) U</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43253">
       <gml:description>Ikke lenger aktiv i database over typegodkjent vegutstyr. Tidligere link til utstyr: http ://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508486&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Active Block 450.1 - (N2-W4) U</gml:identifier>
-      <gml:name>17946</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">17946</gml:identifier>
+      <gml:name>Active Block 450.1 - (N2-W4) U</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43254">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=759725&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">BD Veg P140 - (N2-W7)</gml:identifier>
-      <gml:name>17947</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">17947</gml:identifier>
+      <gml:name>BD Veg P140 - (N2-W7)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43255">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=759710&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">BD Veg-Sigma CC2  - (N2-W4)</gml:identifier>
-      <gml:name>17948</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">17948</gml:identifier>
+      <gml:name>BD Veg-Sigma CC2  - (N2-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43256">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=759724&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">BD Veg-Sigma CC4 - (N2-W5)</gml:identifier>
-      <gml:name>17949</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">17949</gml:identifier>
+      <gml:name>BD Veg-Sigma CC4 - (N2-W5)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43257">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=759706&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">BD Veg-Sigma/BS CC1  - (H2-W5)</gml:identifier>
-      <gml:name>17950</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">17950</gml:identifier>
+      <gml:name>BD Veg-Sigma/BS CC1  - (H2-W5)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43258">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=759700&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">BD Veg-Sigma/BS CC2 - (N2-W3)</gml:identifier>
-      <gml:name>17951</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">17951</gml:identifier>
+      <gml:name>BD Veg-Sigma/BS CC2 - (N2-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43259">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2685572&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">BDID - (N2-W4)</gml:identifier>
-      <gml:name>20344</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20344</gml:identifier>
+      <gml:name>BDID - (N2-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43260">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2685569&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">BDID - (N2-W5)</gml:identifier>
-      <gml:name>20345</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20345</gml:identifier>
+      <gml:name>BDID - (N2-W5)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43261">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=1093960&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">BDM veg CC2 - H1 - (H1-W3)</gml:identifier>
-      <gml:name>17952</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">17952</gml:identifier>
+      <gml:name>BDM veg CC2 - H1 - (H1-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43262">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=1110332&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">BDM veg CC2 - N2 - (N2-W2)</gml:identifier>
-      <gml:name>17953</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">17953</gml:identifier>
+      <gml:name>BDM veg CC2 - N2 - (N2-W2)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43263">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=1110336&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">BDM veg CC4 - N2 - (N2-W4)</gml:identifier>
-      <gml:name>17954</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">17954</gml:identifier>
+      <gml:name>BDM veg CC4 - N2 - (N2-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43264">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=523590&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Birsta 1P - (H1-W5)</gml:identifier>
-      <gml:name>17956</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">17956</gml:identifier>
+      <gml:name>Birsta 1P - (H1-W5)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43265">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=523578&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Birsta 1P - (N2-W4)</gml:identifier>
-      <gml:name>17955</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">17955</gml:identifier>
+      <gml:name>Birsta 1P - (N2-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43266">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=1265144&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Birsta 3P - (H4B-W3)</gml:identifier>
-      <gml:name>17957</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">17957</gml:identifier>
+      <gml:name>Birsta 3P - (H4B-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43267">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2449783&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">BLINDN2R0 - (N2-W5)</gml:identifier>
-      <gml:name>20346</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20346</gml:identifier>
+      <gml:name>BLINDN2R0 - (N2-W5)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43268">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2872257&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">BMIDH1C2 - (H1-W3)</gml:identifier>
-      <gml:name>20347</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20347</gml:identifier>
+      <gml:name>BMIDH1C2 - (H1-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43269">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508010&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Bri-Flex - (H2-W4)</gml:identifier>
-      <gml:name>17958</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">17958</gml:identifier>
+      <gml:name>Bri-Flex - (H2-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43270">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508567&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Britpave CSB  - (H2-W1)</gml:identifier>
-      <gml:name>17959</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">17959</gml:identifier>
+      <gml:name>Britpave CSB  - (H2-W1)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43271">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2687456&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">CARN2BL3 - (N2-W3)</gml:identifier>
-      <gml:name>20348</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20348</gml:identifier>
+      <gml:name>CARN2BL3 - (N2-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43272">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=1201254&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">CC4-BT1 - (H2-W4)</gml:identifier>
-      <gml:name>17960</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">17960</gml:identifier>
+      <gml:name>CC4-BT1 - (H2-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43273">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=1201256&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">CC4-BT2 - (H2-W1)</gml:identifier>
-      <gml:name>17961</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">17961</gml:identifier>
+      <gml:name>CC4-BT2 - (H2-W1)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43274">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=908521&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">CC4-RH2-1 - (H2-W4)</gml:identifier>
-      <gml:name>17962</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">17962</gml:identifier>
+      <gml:name>CC4-RH2-1 - (H2-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43275">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=908520&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">CC4-RH2-2 - (N2-W3)</gml:identifier>
-      <gml:name>17963</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">17963</gml:identifier>
+      <gml:name>CC4-RH2-2 - (N2-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43276">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=908518&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">CC4-RP4 - (N2-W7)</gml:identifier>
-      <gml:name>17964</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">17964</gml:identifier>
+      <gml:name>CC4-RP4 - (N2-W7)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43277">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=908517&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">CC4-RS-2 - (N2-W4)</gml:identifier>
-      <gml:name>17965</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">17965</gml:identifier>
+      <gml:name>CC4-RS-2 - (N2-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43278">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=908519&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">CC4-RS-4  - (N2-W5)</gml:identifier>
-      <gml:name>17966</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">17966</gml:identifier>
+      <gml:name>CC4-RS-4  - (N2-W5)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43279">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=1822939&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">CESVV2 - (H2-W1)</gml:identifier>
-      <gml:name>20349</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20349</gml:identifier>
+      <gml:name>CESVV2 - (H2-W1)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43280">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508168&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">DB 65S - (H1-W6)</gml:identifier>
-      <gml:name>17983</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">17983</gml:identifier>
+      <gml:name>DB 65S - (H1-W6)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43281">
       <gml:description>Ikke lenger aktiv i database over typegodkjent vegutstyr. Tidligere link til utstyr: http ://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508447&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">DB 100 K340 - (H4B-W7) U</gml:identifier>
-      <gml:name>17973</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">17973</gml:identifier>
+      <gml:name>DB 100 K340 - (H4B-W7) U</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43282">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2318118&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">DB 100AS-R - K280 - (H4B-W5)</gml:identifier>
-      <gml:name>20442</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20442</gml:identifier>
+      <gml:name>DB 100AS-R - K280 - (H4B-W5)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43283">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508453&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">DB 100S K150 - (H1-W5)</gml:identifier>
-      <gml:name>17974</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">17974</gml:identifier>
+      <gml:name>DB 100S K150 - (H1-W5)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43284">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508456&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">DB 100S K150 (Double) - (H4B-W7)</gml:identifier>
-      <gml:name>17975</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">17975</gml:identifier>
+      <gml:name>DB 100S K150 (Double) - (H4B-W7)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43285">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508455&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">DB 100S K220 - (H2-W5)</gml:identifier>
-      <gml:name>17976</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">17976</gml:identifier>
+      <gml:name>DB 100S K220 - (H2-W5)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43286">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2316356&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">DB 100S K220 - (N2-W3)</gml:identifier>
-      <gml:name>20350</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20350</gml:identifier>
+      <gml:name>DB 100S K220 - (N2-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43287">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2318247&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">DB 80 - T180S - (H2-W5)</gml:identifier>
-      <gml:name>20351</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20351</gml:identifier>
+      <gml:name>DB 80 - T180S - (H2-W5)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43288">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2318245&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">DB 80 - T180S - (N2-W4)</gml:identifier>
-      <gml:name>20352</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20352</gml:identifier>
+      <gml:name>DB 80 - T180S - (N2-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43289">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508187&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">DB 80 K150 - (H1-W4)</gml:identifier>
-      <gml:name>17985</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">17985</gml:identifier>
+      <gml:name>DB 80 K150 - (H1-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43290">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508183&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">DB 80 K150 - (N2-W3)</gml:identifier>
-      <gml:name>17984</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">17984</gml:identifier>
+      <gml:name>DB 80 K150 - (N2-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43291">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508189&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">DB 80 K150 (Double) - (H2-W7)</gml:identifier>
-      <gml:name>17986</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">17986</gml:identifier>
+      <gml:name>DB 80 K150 (Double) - (H2-W7)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43292">
       <gml:description>Ikke lenger aktiv i database over typegodkjent vegutstyr. Tidligere link til utstyr: http ://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508180&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">DB 80 K220 - (H1-W6) U</gml:identifier>
-      <gml:name>17990</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">17990</gml:identifier>
+      <gml:name>DB 80 K220 - (H1-W6) U</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43293">
       <gml:description>Ikke lenger aktiv i database over typegodkjent vegutstyr. Tidligere link til utstyr: http ://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508182&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">DB 80 K220 - (N1-W4) U</gml:identifier>
-      <gml:name>17991</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">17991</gml:identifier>
+      <gml:name>DB 80 K220 - (N1-W4) U</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43294">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2318292&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">DB 80AS-A - K120S - (H2-W1)</gml:identifier>
-      <gml:name>20443</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20443</gml:identifier>
+      <gml:name>DB 80AS-A - K120S - (H2-W1)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43295">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2318324&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">DB 80AS-E - K180S med 30 cm back - (H2-W2)</gml:identifier>
-      <gml:name>20353</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20353</gml:identifier>
+      <gml:name>DB 80AS-E - K180S med 30 cm back - (H2-W2)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43296">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2318348&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">DB 80AS-E - K180S med 40 cm back - (H2-W1)</gml:identifier>
-      <gml:name>20354</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20354</gml:identifier>
+      <gml:name>DB 80AS-E - K180S med 40 cm back - (H2-W1)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43297">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2318409&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">DB 80AS-R - K180 - (H2-W4)</gml:identifier>
-      <gml:name>20444</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20444</gml:identifier>
+      <gml:name>DB 80AS-R - K180 - (H2-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43298">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2318564&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">DB 80E - K150S - (H2-W1)</gml:identifier>
-      <gml:name>20355</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20355</gml:identifier>
+      <gml:name>DB 80E - K150S - (H2-W1)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43299">
       <gml:description>Ikke lenger aktiv i database over typegodkjent vegutstyr. Tidligere link til utstyr: http ://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508192&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">DB 100 K250  - (H2-W7) U</gml:identifier>
-      <gml:name>17969</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">17969</gml:identifier>
+      <gml:name>DB 100 K250  - (H2-W7) U</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43300">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508449&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">DB 100 K280 - (H4B-W6)</gml:identifier>
-      <gml:name>17970</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">17970</gml:identifier>
+      <gml:name>DB 100 K280 - (H4B-W6)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43301">
       <gml:description>Ikke lenger aktiv i database over typegodkjent vegutstyr. Tidligere link til utstyr: http ://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508194&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">DB 100 K340 - (H1-W5) U</gml:identifier>
-      <gml:name>17971</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">17971</gml:identifier>
+      <gml:name>DB 100 K340 - (H1-W5) U</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43302">
       <gml:description>Ikke lenger aktiv i database over typegodkjent vegutstyr. Tidligere link til utstyr: http ://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508443&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">DB 100 K340 - (H2-W6) U</gml:identifier>
-      <gml:name>17972</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">17972</gml:identifier>
+      <gml:name>DB 100 K340 - (H2-W6) U</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43303">
       <gml:description>Ikke lenger aktiv i database over typegodkjent vegutstyr. Tidligere link til utstyr: http ://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508095&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Duo-Rail KAB - (H1-W5) U</gml:identifier>
-      <gml:name>17997</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">17997</gml:identifier>
+      <gml:name>Duo-Rail KAB - (H1-W5) U</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43304">
       <gml:description>Ikke lenger aktiv i database over typegodkjent vegutstyr. Tidligere link til utstyr: http ://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508129&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Duo-Rail KAB - (H2-W7) U</gml:identifier>
-      <gml:name>17996</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">17996</gml:identifier>
+      <gml:name>Duo-Rail KAB - (H2-W7) U</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43305">
       <gml:description>Ikke lenger aktiv i database over typegodkjent vegutstyr. Tidligere link til utstyr: http ://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508093&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Duo-Rail KAB - (N2-W4) U</gml:identifier>
-      <gml:name>17995</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">17995</gml:identifier>
+      <gml:name>Duo-Rail KAB - (N2-W4) U</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43306">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2064696&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Duo-Rail KAV - (H2-W3)</gml:identifier>
-      <gml:name>20356</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20356</gml:identifier>
+      <gml:name>Duo-Rail KAV - (H2-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43307">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508028&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Ellips Z E2 - (N2-W5)</gml:identifier>
-      <gml:name>20357</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20357</gml:identifier>
+      <gml:name>Ellips Z E2 - (N2-W5)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43308">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2063330&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Ellips Z E3 - (H1-W5)</gml:identifier>
-      <gml:name>20359</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20359</gml:identifier>
+      <gml:name>Ellips Z E3 - (H1-W5)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43309">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2063319&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Ellips Z E3 - (N2-W3)</gml:identifier>
-      <gml:name>20358</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20358</gml:identifier>
+      <gml:name>Ellips Z E3 - (N2-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43310">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508011&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Ellips ZE1 2 - (N2-W5)</gml:identifier>
-      <gml:name>18136</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18136</gml:identifier>
+      <gml:name>Ellips ZE1 2 - (N2-W5)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43311">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508020&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Ellips ZE2 2 - (N2-W3)</gml:identifier>
-      <gml:name>18137</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18137</gml:identifier>
+      <gml:name>Ellips ZE2 2 - (N2-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43312">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508026&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Ellips ZE2 3 - (N2-W3)</gml:identifier>
-      <gml:name>18138</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18138</gml:identifier>
+      <gml:name>Ellips ZE2 3 - (N2-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43313">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508028&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Ellips ZE2 4 - (N2-W4)</gml:identifier>
-      <gml:name>18139</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18139</gml:identifier>
+      <gml:name>Ellips ZE2 4 - (N2-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43314">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508031&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Ellips ZE2 5 - (N2-W5)</gml:identifier>
-      <gml:name>18140</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18140</gml:identifier>
+      <gml:name>Ellips ZE2 5 - (N2-W5)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43315">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508034&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Ellips ZE2 6 - (N2-W5)</gml:identifier>
-      <gml:name>18141</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18141</gml:identifier>
+      <gml:name>Ellips ZE2 6 - (N2-W5)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43316">
       <gml:description>Ikke lenger aktiv i database over typegodkjent vegutstyr. Tidligere link til utstyr: http ://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=1333921&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">FlexBeam DS - (N2-W2) U</gml:identifier>
-      <gml:name>18005</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18005</gml:identifier>
+      <gml:name>FlexBeam DS - (N2-W2) U</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43317">
       <gml:description>Ikke lenger aktiv i database over typegodkjent vegutstyr. Tidligere link til utstyr: http ://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=1333946&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">FlexBeam DS - (N2-W3) U</gml:identifier>
-      <gml:name>18003</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18003</gml:identifier>
+      <gml:name>FlexBeam DS - (N2-W3) U</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43318">
       <gml:description>Ikke lenger aktiv i database over typegodkjent vegutstyr. Tidligere link til utstyr: http ://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508004&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">FlexBeam DS - (N2-W4) U</gml:identifier>
-      <gml:name>18004</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18004</gml:identifier>
+      <gml:name>FlexBeam DS - (N2-W4) U</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43319">
       <gml:description>Ikke lenger aktiv i database over typegodkjent vegutstyr. Tidligere link til utstyr: http ://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508001&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">FlexBeam PLUS - (H1-W4) U</gml:identifier>
-      <gml:name>18007</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18007</gml:identifier>
+      <gml:name>FlexBeam PLUS - (H1-W4) U</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43320">
       <gml:description>Ikke lenger aktiv i database over typegodkjent vegutstyr. Tidligere link til utstyr: http ://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=691901&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">FlexBeam PLUS - (H2-W5) U</gml:identifier>
-      <gml:name>18006</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18006</gml:identifier>
+      <gml:name>FlexBeam PLUS - (H2-W5) U</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43321">
       <gml:description>Ikke lenger aktiv i database over typegodkjent vegutstyr. Tidligere link til utstyr: http ://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=507997&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">FlexBeam SS - (N2-W5-1) U</gml:identifier>
-      <gml:name>18008</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18008</gml:identifier>
+      <gml:name>FlexBeam SS - (N2-W5-1) U</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43322">
       <gml:description>Ikke lenger aktiv i database over typegodkjent vegutstyr. Tidligere link til utstyr: http ://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=507998&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">FlexBeam SS - (N2-W5-2) U</gml:identifier>
-      <gml:name>18009</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18009</gml:identifier>
+      <gml:name>FlexBeam SS - (N2-W5-2) U</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43323">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=1355419&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">FlexSafe - (H2-W2)</gml:identifier>
-      <gml:name>18010</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18010</gml:identifier>
+      <gml:name>FlexSafe - (H2-W2)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43324">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2213904&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">FlexSafe 1400 - (H2-W2)</gml:identifier>
-      <gml:name>20360</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20360</gml:identifier>
+      <gml:name>FlexSafe 1400 - (H2-W2)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43325">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=526179&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">FMK EU2 - (N2-W4)</gml:identifier>
-      <gml:name>18001</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18001</gml:identifier>
+      <gml:name>FMK EU2 - (N2-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43326">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=526176&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">FMK EU4 - (N2-W5)</gml:identifier>
-      <gml:name>18002</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18002</gml:identifier>
+      <gml:name>FMK EU4 - (N2-W5)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43327">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=507989&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">FMK-B1 - (H2-W3)</gml:identifier>
-      <gml:name>18011</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18011</gml:identifier>
+      <gml:name>FMK-B1 - (H2-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43328">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=507989&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">FMK-B1 bru 1,2m - (H2-W3)</gml:identifier>
-      <gml:name>20361</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20361</gml:identifier>
+      <gml:name>FMK-B1 bru 1,2m - (H2-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43329">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2549081&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">FMK-B1 bru 1,4m - (H2-W3)</gml:identifier>
-      <gml:name>20362</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20362</gml:identifier>
+      <gml:name>FMK-B1 bru 1,4m - (H2-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43330">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2058367&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">FMK-C1 - (H1-W4)</gml:identifier>
-      <gml:name>20363</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20363</gml:identifier>
+      <gml:name>FMK-C1 - (H1-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43331">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2058366&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">FMK-C1 - (N2-W4)</gml:identifier>
-      <gml:name>20364</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20364</gml:identifier>
+      <gml:name>FMK-C1 - (N2-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43332">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=507987&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">FMK-VE3 - (N2-W3)</gml:identifier>
-      <gml:name>18012</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18012</gml:identifier>
+      <gml:name>FMK-VE3 - (N2-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43333">
       <gml:description>Ikke lenger aktiv i database over typegodkjent vegutstyr. Tidligere link til utstyr: http ://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=717776&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">GPLINK 1.5 - (N2-W5-1) U</gml:identifier>
-      <gml:name>18014</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18014</gml:identifier>
+      <gml:name>GPLINK 1.5 - (N2-W5-1) U</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43334">
       <gml:description>Ikke lenger aktiv i database over typegodkjent vegutstyr. Tidligere link til utstyr: http ://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508458&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">GPLINK 1.5 - (N2-W5-2) U</gml:identifier>
-      <gml:name>18013</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18013</gml:identifier>
+      <gml:name>GPLINK 1.5 - (N2-W5-2) U</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43335">
       <gml:description>Ikke lenger aktiv i database over typegodkjent vegutstyr. Tidligere link til utstyr: http ://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508596&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Linebloc LB90 - (N2-W4) U</gml:identifier>
-      <gml:name>18015</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18015</gml:identifier>
+      <gml:name>Linebloc LB90 - (N2-W4) U</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43336">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508590&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">LT 100 D - (H2-W1)</gml:identifier>
-      <gml:name>18016</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18016</gml:identifier>
+      <gml:name>LT 100 D - (H2-W1)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43337">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508589&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">LT 100 E - (H2-W1)</gml:identifier>
-      <gml:name>18017</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18017</gml:identifier>
+      <gml:name>LT 100 E - (H2-W1)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43338">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=1201295&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">LT 101 bru - (H2-W2)</gml:identifier>
-      <gml:name>18018</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18018</gml:identifier>
+      <gml:name>LT 101 bru - (H2-W2)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43339">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=1201296&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">LT 102 veg - (H2-W1)</gml:identifier>
-      <gml:name>18019</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18019</gml:identifier>
+      <gml:name>LT 102 veg - (H2-W1)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43340">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=1201304&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">LT 103 veg - (H2-W2)</gml:identifier>
-      <gml:name>18020</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18020</gml:identifier>
+      <gml:name>LT 103 veg - (H2-W2)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43341">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=1201306&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">LT 104 veg-bru - (H2-W2)</gml:identifier>
-      <gml:name>18021</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18021</gml:identifier>
+      <gml:name>LT 104 veg-bru - (H2-W2)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43342">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=1201314&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">LT 104 veg-bru - (H4B-W2)</gml:identifier>
-      <gml:name>18022</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18022</gml:identifier>
+      <gml:name>LT 104 veg-bru - (H4B-W2)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43343">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=507962&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Monoline - (N2-W4)</gml:identifier>
-      <gml:name>18028</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18028</gml:identifier>
+      <gml:name>Monoline - (N2-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43344">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=507964&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Monoline - (N2-W5)</gml:identifier>
-      <gml:name>20368</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20368</gml:identifier>
+      <gml:name>Monoline - (N2-W5)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43345">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2446473&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">NB100/300 - (H2-W4)</gml:identifier>
-      <gml:name>20369</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20369</gml:identifier>
+      <gml:name>NB100/300 - (H2-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43346">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2549129&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Nordic M N2 - (N2-W4)</gml:identifier>
-      <gml:name>20370</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20370</gml:identifier>
+      <gml:name>Nordic M N2 - (N2-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43347">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2553714&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Nordic R H2 High - (H2-W2)</gml:identifier>
-      <gml:name>20371</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20371</gml:identifier>
+      <gml:name>Nordic R H2 High - (H2-W2)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43348">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2553646&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Nordic R N2 - (N2-W3)</gml:identifier>
-      <gml:name>20372</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20372</gml:identifier>
+      <gml:name>Nordic R N2 - (N2-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43349">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2553497&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Nordic W H2 High - (H2-W2)</gml:identifier>
-      <gml:name>20373</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20373</gml:identifier>
+      <gml:name>Nordic W H2 High - (H2-W2)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43350">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2553577&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Nordic W N2 - (N2-W4)</gml:identifier>
-      <gml:name>20374</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20374</gml:identifier>
+      <gml:name>Nordic W N2 - (N2-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43351">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2553555&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Nordic W N2 - (N2-W5)</gml:identifier>
-      <gml:name>20375</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20375</gml:identifier>
+      <gml:name>Nordic W N2 - (N2-W5)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43352">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=974857&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Oppland SVV1 - (H2-W4)</gml:identifier>
-      <gml:name>18032</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18032</gml:identifier>
+      <gml:name>Oppland SVV1 - (H2-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43353">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=974855&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Oppland SVV2  - (H2-W1)</gml:identifier>
-      <gml:name>18033</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18033</gml:identifier>
+      <gml:name>Oppland SVV2  - (H2-W1)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43354">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=1712770&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Passco H2 - (H2-W3)</gml:identifier>
-      <gml:name>20376</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20376</gml:identifier>
+      <gml:name>Passco H2 - (H2-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43355">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=1712798&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Passco H4b - (H4B-W1)</gml:identifier>
-      <gml:name>20377</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20377</gml:identifier>
+      <gml:name>Passco H4b - (H4B-W1)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43356">
       <gml:description>Ikke lenger aktiv i database over typegodkjent vegutstyr. Tidligere link til utstyr: http ://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=727881&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Passco L1 - (H1-W3) U</gml:identifier>
-      <gml:name>18034</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18034</gml:identifier>
+      <gml:name>Passco L1 - (H1-W3) U</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43357">
       <gml:description>Ikke lenger aktiv i database over typegodkjent vegutstyr. Tidligere link til utstyr: http ://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=727887&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Passco L1 - (H1-W4) U</gml:identifier>
-      <gml:name>18036</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18036</gml:identifier>
+      <gml:name>Passco L1 - (H1-W4) U</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43358">
       <gml:description>Ikke lenger aktiv i database over typegodkjent vegutstyr. Tidligere link til utstyr: http ://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=727880&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Passco L1 - (N2-W2) U</gml:identifier>
-      <gml:name>18037</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18037</gml:identifier>
+      <gml:name>Passco L1 - (N2-W2) U</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43359">
       <gml:description>Ikke lenger aktiv i database over typegodkjent vegutstyr. Tidligere link til utstyr: http ://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=727883&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Passco L1 - (N2-W3) U</gml:identifier>
-      <gml:name>18035</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18035</gml:identifier>
+      <gml:name>Passco L1 - (N2-W3) U</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43360">
       <gml:description>Ikke lenger aktiv i database over typegodkjent vegutstyr. Tidligere link til utstyr: http ://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508603&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Peis 100 - (H2-W3) U</gml:identifier>
-      <gml:name>18038</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18038</gml:identifier>
+      <gml:name>Peis 100 - (H2-W3) U</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43361">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508489&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">RB100 - (H2-W5)</gml:identifier>
-      <gml:name>18050</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18050</gml:identifier>
+      <gml:name>RB100 - (H2-W5)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43362">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508496&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">RB100 - (H4B-W6)</gml:identifier>
-      <gml:name>18051</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18051</gml:identifier>
+      <gml:name>RB100 - (H4B-W6)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43363">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2320000&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">RB100A - (H2-W1)</gml:identifier>
-      <gml:name>20379</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20379</gml:identifier>
+      <gml:name>RB100A - (H2-W1)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43364">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2446427&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">RB100SF - (H4B-W4)</gml:identifier>
-      <gml:name>20380</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20380</gml:identifier>
+      <gml:name>RB100SF - (H4B-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43365">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2446452&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">RB100SFS - (H4B-W5)</gml:identifier>
-      <gml:name>20381</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20381</gml:identifier>
+      <gml:name>RB100SFS - (H4B-W5)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43366">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508501&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">RB80 - (H1-W4)</gml:identifier>
-      <gml:name>18056</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18056</gml:identifier>
+      <gml:name>RB80 - (H1-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43367">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508499&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">RB80 - (N2-W3)</gml:identifier>
-      <gml:name>18055</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18055</gml:identifier>
+      <gml:name>RB80 - (N2-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43368">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=1982191&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">RB80A - (H2-W1)</gml:identifier>
-      <gml:name>20390</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20390</gml:identifier>
+      <gml:name>RB80A - (H2-W1)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43369">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2446407&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">RB80AS - (H2-W3)</gml:identifier>
-      <gml:name>20391</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20391</gml:identifier>
+      <gml:name>RB80AS - (H2-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43370">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=1915911&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">RB80H - (H2-W5)</gml:identifier>
-      <gml:name>20392</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20392</gml:identifier>
+      <gml:name>RB80H - (H2-W5)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43371">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2446392&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">RB80L - (N2-W4)</gml:identifier>
-      <gml:name>20393</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20393</gml:identifier>
+      <gml:name>RB80L - (N2-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43372">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2320080&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">RB84XEAL - (H2-W1)</gml:identifier>
-      <gml:name>20395</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20395</gml:identifier>
+      <gml:name>RB84XEAL - (H2-W1)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43373">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2852104&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">RB85BF (dobbel rad) - (H2-W5)</gml:identifier>
-      <gml:name>20399</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20399</gml:identifier>
+      <gml:name>RB85BF (dobbel rad) - (H2-W5)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43374">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=737891&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">RSS 2m/cc - (N2-W4)</gml:identifier>
-      <gml:name>18057</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18057</gml:identifier>
+      <gml:name>RSS 2m/cc - (N2-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43375">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=737894&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">RSS 4m/cc - (N2-W5)</gml:identifier>
-      <gml:name>18058</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18058</gml:identifier>
+      <gml:name>RSS 4m/cc - (N2-W5)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43376">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2553908&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">RSS Bru 1 - (H2-W4)</gml:identifier>
-      <gml:name>20400</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20400</gml:identifier>
+      <gml:name>RSS Bru 1 - (H2-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43377">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2553909&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">RSS Bru 2 - (H2-W1)</gml:identifier>
-      <gml:name>20401</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20401</gml:identifier>
+      <gml:name>RSS Bru 2 - (H2-W1)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43378">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=737895&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">RSS BSB 1m/cc  - (H2-W4)</gml:identifier>
-      <gml:name>18059</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18059</gml:identifier>
+      <gml:name>RSS BSB 1m/cc  - (H2-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43379">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=737899&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">RSS BSB 2m/cc - (N2-W3)</gml:identifier>
-      <gml:name>18060</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18060</gml:identifier>
+      <gml:name>RSS BSB 2m/cc - (N2-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43380">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=737900&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">RSS PP - (N2-W7)</gml:identifier>
-      <gml:name>18061</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18061</gml:identifier>
+      <gml:name>RSS PP - (N2-W7)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43381">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508598&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Safeline Parapet - (H2-W2)</gml:identifier>
-      <gml:name>18062</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18062</gml:identifier>
+      <gml:name>Safeline Parapet - (H2-W2)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43382">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508599&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Safeline Parapet 1,4 - (H2-W3)</gml:identifier>
-      <gml:name>18063</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18063</gml:identifier>
+      <gml:name>Safeline Parapet 1,4 - (H2-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43383">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=974638&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Safeline veg (dobbeltsidig) - (N2-W5)</gml:identifier>
-      <gml:name>18064</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18064</gml:identifier>
+      <gml:name>Safeline veg (dobbeltsidig) - (N2-W5)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43384">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=974636&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Safeline veg (ensidig) - (N2-W5)</gml:identifier>
-      <gml:name>18065</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18065</gml:identifier>
+      <gml:name>Safeline veg (ensidig) - (N2-W5)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43385">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2749444&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">SafeLine-M - (H1-W3)</gml:identifier>
-      <gml:name>20404</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20404</gml:identifier>
+      <gml:name>SafeLine-M - (H1-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43386">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2749442&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">SafeLine-M - (N2-W4-3)</gml:identifier>
-      <gml:name>20403</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20403</gml:identifier>
+      <gml:name>SafeLine-M - (N2-W4-3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43387">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2749441&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">SafeLine-M - (N2-W4-6)</gml:identifier>
-      <gml:name>20402</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20402</gml:identifier>
+      <gml:name>SafeLine-M - (N2-W4-6)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43388">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2780285&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">SafeLine-R H2 - (H2-W5)</gml:identifier>
-      <gml:name>20405</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20405</gml:identifier>
+      <gml:name>SafeLine-R H2 - (H2-W5)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43389">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2780274&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">SafeLine-R N2 - (N2-W3)</gml:identifier>
-      <gml:name>20407</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20407</gml:identifier>
+      <gml:name>SafeLine-R N2 - (N2-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43390">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2780278&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">SafeLine-R N2 - (N2-W4)</gml:identifier>
-      <gml:name>20406</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20406</gml:identifier>
+      <gml:name>SafeLine-R N2 - (N2-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43391">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508558&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Safetybaer H2 D90 - (H2-W1)</gml:identifier>
-      <gml:name>18066</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18066</gml:identifier>
+      <gml:name>Safetybaer H2 D90 - (H2-W1)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43392">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508561&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Safetybaer H2 E80 - (H2-W1)</gml:identifier>
-      <gml:name>18067</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18067</gml:identifier>
+      <gml:name>Safetybaer H2 E80 - (H2-W1)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43393">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508559&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Safetybaer H2 E90 - (H2-W1)</gml:identifier>
-      <gml:name>18068</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18068</gml:identifier>
+      <gml:name>Safetybaer H2 E90 - (H2-W1)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43394">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508134&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Secura 700/4000 lås 250 - (N1-W4)</gml:identifier>
-      <gml:name>18074</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18074</gml:identifier>
+      <gml:name>Secura 700/4000 lås 250 - (N1-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43395">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508132&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Secura 900/4000 lås 250 - (N2-W4)</gml:identifier>
-      <gml:name>18076</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18076</gml:identifier>
+      <gml:name>Secura 900/4000 lås 250 - (N2-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43396">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=1416586&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Secura 900/4000 lås 330 - (H1-W4)</gml:identifier>
-      <gml:name>18077</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18077</gml:identifier>
+      <gml:name>Secura 900/4000 lås 330 - (H1-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43397">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=507945&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Sicuro-Arc  - (H2-W2)</gml:identifier>
-      <gml:name>18078</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18078</gml:identifier>
+      <gml:name>Sicuro-Arc  - (H2-W2)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43398">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=507949&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Sicuro-Classic - (N2-W4)</gml:identifier>
-      <gml:name>18080</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18080</gml:identifier>
+      <gml:name>Sicuro-Classic - (N2-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43399">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=507957&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Sicuro-Classic - (N2-W6)</gml:identifier>
-      <gml:name>18079</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18079</gml:identifier>
+      <gml:name>Sicuro-Classic - (N2-W6)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43400">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2749399&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Smart Rail 1.33 Plus - (H2-W4)</gml:identifier>
-      <gml:name>20412</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20412</gml:identifier>
+      <gml:name>Smart Rail 1.33 Plus - (H2-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43401">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2749117&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">SP-05 - (N2-W5)</gml:identifier>
-      <gml:name>20413</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20413</gml:identifier>
+      <gml:name>SP-05 - (N2-W5)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43402">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2750098&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">SP-07 - (H1-W6)</gml:identifier>
-      <gml:name>20414</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20414</gml:identifier>
+      <gml:name>SP-07 - (H1-W6)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43403">
       <gml:description>Ikke lenger aktiv i database over typegodkjent vegutstyr. Tidligere link til utstyr: http ://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=602122&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">SP-11 - (H1-W5) U</gml:identifier>
-      <gml:name>18081</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18081</gml:identifier>
+      <gml:name>SP-11 - (H1-W5) U</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43404">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=602192&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">SP-15 - (N2-W6)</gml:identifier>
-      <gml:name>18082</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18082</gml:identifier>
+      <gml:name>SP-15 - (N2-W6)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43405">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=602208&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">SP-15W - (N2-W4)</gml:identifier>
-      <gml:name>18083</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18083</gml:identifier>
+      <gml:name>SP-15W - (N2-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43406">
       <gml:description>Ikke lenger aktiv i database over typegodkjent vegutstyr. Tidligere link til utstyr: http ://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=602217&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">SP-15W - (N2-W5) U</gml:identifier>
-      <gml:name>18084</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18084</gml:identifier>
+      <gml:name>SP-15W - (N2-W5) U</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43407">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=602239&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">SP-17 - (H1-W6)</gml:identifier>
-      <gml:name>18085</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18085</gml:identifier>
+      <gml:name>SP-17 - (H1-W6)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43408">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=1822832&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">SPR4 - (N2-W4)</gml:identifier>
-      <gml:name>20415</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20415</gml:identifier>
+      <gml:name>SPR4 - (N2-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43409">
       <gml:description>Ikke lenger aktiv i database over typegodkjent vegutstyr. Tidligere link til utstyr: http ://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=1261089&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">StalPro Rail d  - (N2-W4) U</gml:identifier>
-      <gml:name>18087</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18087</gml:identifier>
+      <gml:name>StalPro Rail d  - (N2-W4) U</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43410">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=1261073&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">StalPro Rail dn  - (H2-W4)</gml:identifier>
-      <gml:name>18086</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18086</gml:identifier>
+      <gml:name>StalPro Rail dn  - (H2-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43411">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=1261029&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">StalPro Rail hd  - (H1-W3)</gml:identifier>
-      <gml:name>18088</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18088</gml:identifier>
+      <gml:name>StalPro Rail hd  - (H1-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43412">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=1261040&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">StalPro Rail hd  - (H2-W4)</gml:identifier>
-      <gml:name>18089</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18089</gml:identifier>
+      <gml:name>StalPro Rail hd  - (H2-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43413">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2691278&amp;method=produktnavn&amp;produkttype=12621&amp;query=stal</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">StalPro Rail sl  - (N2 W4)</gml:identifier>
-      <gml:name>20072</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20072</gml:identifier>
+      <gml:name>StalPro Rail sl  - (N2 W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43414">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=1261412&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">StalPro Rail su - (H1-W3)</gml:identifier>
-      <gml:name>18093</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18093</gml:identifier>
+      <gml:name>StalPro Rail su - (H1-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43415">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=1261403&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">StalPro Rail su - (N2-W2)</gml:identifier>
-      <gml:name>18092</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18092</gml:identifier>
+      <gml:name>StalPro Rail su - (N2-W2)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43416">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=1261187&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">StalPro Rail sx - (H1-W4)</gml:identifier>
-      <gml:name>18091</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18091</gml:identifier>
+      <gml:name>StalPro Rail sx - (H1-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43417">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=1261100&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">StalPro Rail sx - (N2-W3)</gml:identifier>
-      <gml:name>18090</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18090</gml:identifier>
+      <gml:name>StalPro Rail sx - (N2-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43418">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2749338&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">STP-11M - (H1-W1)</gml:identifier>
-      <gml:name>20416</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20416</gml:identifier>
+      <gml:name>STP-11M - (H1-W1)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43419">
       <gml:description>Ikke lenger aktiv i database over typegodkjent vegutstyr. Tidligere link til utstyr: http ://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=507934&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Super-Rail - (H4B-W7) U</gml:identifier>
-      <gml:name>18094</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18094</gml:identifier>
+      <gml:name>Super-Rail - (H4B-W7) U</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43420">
       <gml:description>Ikke lenger aktiv i database over typegodkjent vegutstyr. Tidligere link til utstyr: http ://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=507936&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Super-Rail Plus - (H4B-W7) U</gml:identifier>
-      <gml:name>18095</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18095</gml:identifier>
+      <gml:name>Super-Rail Plus - (H4B-W7) U</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43421">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=507585&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Svelvik Ellipsen - (N1-W1)</gml:identifier>
-      <gml:name>18096</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18096</gml:identifier>
+      <gml:name>Svelvik Ellipsen - (N1-W1)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43422">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=507582&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">SVS-Betong - (H2-W1)</gml:identifier>
-      <gml:name>18097</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18097</gml:identifier>
+      <gml:name>SVS-Betong - (H2-W1)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43423">
       <gml:description>Ikke lenger aktiv i database over typegodkjent vegutstyr. Tidligere link til utstyr: http ://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=507592&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">SVS-T - (N1-W4) U</gml:identifier>
-      <gml:name>18100</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18100</gml:identifier>
+      <gml:name>SVS-T - (N1-W4) U</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43424">
       <gml:description>Ikke lenger aktiv i database over typegodkjent vegutstyr. Tidligere link til utstyr: http ://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=507589&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">SVS-T - (N1-W6) U</gml:identifier>
-      <gml:name>18099</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18099</gml:identifier>
+      <gml:name>SVS-T - (N1-W6) U</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43425">
       <gml:description>Ikke lenger aktiv i database over typegodkjent vegutstyr. Tidligere link til utstyr: http ://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=507588&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">SVS-T - (N2-W7) U</gml:identifier>
-      <gml:name>18098</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18098</gml:identifier>
+      <gml:name>SVS-T - (N2-W7) U</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43426">
       <gml:description>Ikke lenger aktiv i database over typegodkjent vegutstyr. Tidligere link til utstyr: http ://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=507587&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">SVS-T/P - (N2-W6) U</gml:identifier>
-      <gml:name>18101</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18101</gml:identifier>
+      <gml:name>SVS-T/P - (N2-W6) U</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43427">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508577&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">T18 - 4M - (N2-W7)</gml:identifier>
-      <gml:name>18102</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18102</gml:identifier>
+      <gml:name>T18 - 4M - (N2-W7)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43428">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508573&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">T18 - 4MS2 - (N2-W5)</gml:identifier>
-      <gml:name>18103</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18103</gml:identifier>
+      <gml:name>T18 - 4MS2 - (N2-W5)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43429">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508581&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">T22 - (N2-W6)</gml:identifier>
-      <gml:name>18104</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18104</gml:identifier>
+      <gml:name>T22 - (N2-W6)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43430">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508586&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">T40 - (H2-W4)</gml:identifier>
-      <gml:name>18106</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18106</gml:identifier>
+      <gml:name>T40 - (H2-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43431">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508583&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">T40 - (N2-W3)</gml:identifier>
-      <gml:name>18105</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18105</gml:identifier>
+      <gml:name>T40 - (N2-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43432">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=1823082&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">TLC18 - (N1-W5)</gml:identifier>
-      <gml:name>20417</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20417</gml:identifier>
+      <gml:name>TLC18 - (N1-W5)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43433">
       <gml:description>Ikke lenger aktiv i database over typegodkjent vegutstyr. Tidligere link til utstyr: http ://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508037&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">TRS BoxBeam - (N2-W4) U</gml:identifier>
-      <gml:name>18108</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18108</gml:identifier>
+      <gml:name>TRS BoxBeam - (N2-W4) U</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43434">
       <gml:description>Ikke lenger aktiv i database over typegodkjent vegutstyr. Tidligere link til utstyr: http ://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508040&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">TRS BoxBeam - (N2-W5-1) U</gml:identifier>
-      <gml:name>18107</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18107</gml:identifier>
+      <gml:name>TRS BoxBeam - (N2-W5-1) U</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43435">
       <gml:description>Ikke lenger aktiv i database over typegodkjent vegutstyr. Tidligere link til utstyr: http ://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508042&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">TRS BoxBeam - (N2-W5-2) U</gml:identifier>
-      <gml:name>18109</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18109</gml:identifier>
+      <gml:name>TRS BoxBeam - (N2-W5-2) U</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43436">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=1982116&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Vik 2mm - (N2-W4-2)</gml:identifier>
-      <gml:name>20418</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20418</gml:identifier>
+      <gml:name>Vik 2mm - (N2-W4-2)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43437">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=507606&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Vik 2mm - (N2-W4-4)</gml:identifier>
-      <gml:name>18117</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18117</gml:identifier>
+      <gml:name>Vik 2mm - (N2-W4-4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43438">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=510160&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Vik CC2 - (N2-W4)</gml:identifier>
-      <gml:name>18118</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18118</gml:identifier>
+      <gml:name>Vik CC2 - (N2-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43439">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=510156&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Vik CC4 - (N2-W5)</gml:identifier>
-      <gml:name>18119</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18119</gml:identifier>
+      <gml:name>Vik CC4 - (N2-W5)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43440">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2010839&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">VIK H1 - (H1-W4)</gml:identifier>
-      <gml:name>20419</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20419</gml:identifier>
+      <gml:name>VIK H1 - (H1-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43441">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2010876&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">VIK H1 midtrekkverk - (H1-W4)</gml:identifier>
-      <gml:name>20420</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20420</gml:identifier>
+      <gml:name>VIK H1 midtrekkverk - (H1-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43442">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=620921&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Vik P - (N2-W7)</gml:identifier>
-      <gml:name>18120</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18120</gml:identifier>
+      <gml:name>Vik P - (N2-W7)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43443">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=620770&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Vik SVV1 - (H2-W4)</gml:identifier>
-      <gml:name>18121</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18121</gml:identifier>
+      <gml:name>Vik SVV1 - (H2-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43444">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=620812&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Vik SVV2  - (H2-W1)</gml:identifier>
-      <gml:name>18122</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18122</gml:identifier>
+      <gml:name>Vik SVV2  - (H2-W1)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43445">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=621756&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Vik Veg CC1  - (H2-W4)</gml:identifier>
-      <gml:name>18123</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18123</gml:identifier>
+      <gml:name>Vik Veg CC1  - (H2-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43446">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=621801&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Vik Veg CC2  - (N2-W3)</gml:identifier>
-      <gml:name>18124</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18124</gml:identifier>
+      <gml:name>Vik Veg CC2  - (N2-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43447">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=979608&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Vik W3 cc2 - (N2-W3)</gml:identifier>
-      <gml:name>18125</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18125</gml:identifier>
+      <gml:name>Vik W3 cc2 - (N2-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43448">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=979629&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Vik W3 cc4 - (N2-W3)</gml:identifier>
-      <gml:name>18126</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18126</gml:identifier>
+      <gml:name>Vik W3 cc4 - (N2-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43449">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2135775&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">VIK-EP - (H1-W3)</gml:identifier>
-      <gml:name>20421</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20421</gml:identifier>
+      <gml:name>VIK-EP - (H1-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43450">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2135784&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">VIK-EP - (N2-W2)</gml:identifier>
-      <gml:name>20422</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20422</gml:identifier>
+      <gml:name>VIK-EP - (N2-W2)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43451">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2690093&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">VIK-EP - (N2-W4)</gml:identifier>
-      <gml:name>20423</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20423</gml:identifier>
+      <gml:name>VIK-EP - (N2-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43452">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508049&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Vik-midtdeler - (N2-W5)</gml:identifier>
-      <gml:name>18127</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18127</gml:identifier>
+      <gml:name>Vik-midtdeler - (N2-W5)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43453">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=507600&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Vik-P - (N1-W4)</gml:identifier>
-      <gml:name>18128</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18128</gml:identifier>
+      <gml:name>Vik-P - (N1-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43454">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2319645&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">VS-H2-D90 - (H2-W1)</gml:identifier>
-      <gml:name>20424</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20424</gml:identifier>
+      <gml:name>VS-H2-D90 - (H2-W1)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43455">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2319646&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">VS-H2-E80 - (H2-W1)</gml:identifier>
-      <gml:name>20425</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20425</gml:identifier>
+      <gml:name>VS-H2-E80 - (H2-W1)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43456">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2319647&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">VS-H2-E90 - (H2-W1)</gml:identifier>
-      <gml:name>20426</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20426</gml:identifier>
+      <gml:name>VS-H2-E90 - (H2-W1)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43457">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2553786&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Z B5-3 - (H2-W3)</gml:identifier>
-      <gml:name>20427</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20427</gml:identifier>
+      <gml:name>Z B5-3 - (H2-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43458">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2553787&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Z B5-4 - (H2-W3)</gml:identifier>
-      <gml:name>20428</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20428</gml:identifier>
+      <gml:name>Z B5-4 - (H2-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43459">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2553806&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Z B5-5 - (H2-W3)</gml:identifier>
-      <gml:name>20429</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20429</gml:identifier>
+      <gml:name>Z B5-5 - (H2-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43460">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2553807&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Z B5-6 - (H2-W3)</gml:identifier>
-      <gml:name>20430</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20430</gml:identifier>
+      <gml:name>Z B5-6 - (H2-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43461">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=536073&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Z R1 - (N2-W2)</gml:identifier>
-      <gml:name>18130</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18130</gml:identifier>
+      <gml:name>Z R1 - (N2-W2)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43462">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=508036&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Z R1 - (N2-W5)</gml:identifier>
-      <gml:name>18129</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18129</gml:identifier>
+      <gml:name>Z R1 - (N2-W5)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43463">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=536791&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Z R1 4D - (N2-W5)</gml:identifier>
-      <gml:name>18131</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18131</gml:identifier>
+      <gml:name>Z R1 4D - (N2-W5)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43464">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=507991&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Z R2 - (N2-W3)</gml:identifier>
-      <gml:name>18133</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18133</gml:identifier>
+      <gml:name>Z R2 - (N2-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43465">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=507993&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Z R2 - (N2-W4)</gml:identifier>
-      <gml:name>18132</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18132</gml:identifier>
+      <gml:name>Z R2 - (N2-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43466">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=1260925&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">ZB4-1 - (H2-W3)</gml:identifier>
-      <gml:name>18134</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18134</gml:identifier>
+      <gml:name>ZB4-1 - (H2-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43467">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2248229&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">ZB4-12+ - (H2-W2)</gml:identifier>
-      <gml:name>20431</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20431</gml:identifier>
+      <gml:name>ZB4-12+ - (H2-W2)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43468">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2248335&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">ZB4-13 - (H2-W3)</gml:identifier>
-      <gml:name>20432</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20432</gml:identifier>
+      <gml:name>ZB4-13 - (H2-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43469">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2248284&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">ZB4-14+ - (H2-W2)</gml:identifier>
-      <gml:name>20433</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20433</gml:identifier>
+      <gml:name>ZB4-14+ - (H2-W2)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43470">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2248368&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">ZB4-15 - (H2-W3)</gml:identifier>
-      <gml:name>20434</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20434</gml:identifier>
+      <gml:name>ZB4-15 - (H2-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43471">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2247994&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">ZB4-16 - (H2-W3)</gml:identifier>
-      <gml:name>20435</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20435</gml:identifier>
+      <gml:name>ZB4-16 - (H2-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43472">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2248062&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">ZB4-17 - (H2-W3)</gml:identifier>
-      <gml:name>20436</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20436</gml:identifier>
+      <gml:name>ZB4-17 - (H2-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43473">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=537638&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">ZB4-2 - (H2-W2)</gml:identifier>
-      <gml:name>18135</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18135</gml:identifier>
+      <gml:name>ZB4-2 - (H2-W2)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43474">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=1949560&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">ZB4-4 - (H2-W3)</gml:identifier>
-      <gml:name>20437</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20437</gml:identifier>
+      <gml:name>ZB4-4 - (H2-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43475">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=1951353&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">ZB4-4+ - (H2-W3)</gml:identifier>
-      <gml:name>20438</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20438</gml:identifier>
+      <gml:name>ZB4-4+ - (H2-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43476">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2247987&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">ZB4-5 - (H2-W3)</gml:identifier>
-      <gml:name>20439</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20439</gml:identifier>
+      <gml:name>ZB4-5 - (H2-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43477">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2248031&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">ZB4-6 - (H2-W3)</gml:identifier>
-      <gml:name>20440</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20440</gml:identifier>
+      <gml:name>ZB4-6 - (H2-W3)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43478">
       <gml:description>https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=1712300&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">ZB4-7 - (H2-W2)</gml:identifier>
-      <gml:name>20441</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">20441</gml:identifier>
+      <gml:name>ZB4-7 - (H2-W2)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43479">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=626819&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">ZK1  - (N2-W6)</gml:identifier>
-      <gml:name>18143</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18143</gml:identifier>
+      <gml:name>ZK1  - (N2-W6)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43480">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=626804&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">ZK1 - (N2-W5)</gml:identifier>
-      <gml:name>18142</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18142</gml:identifier>
+      <gml:name>ZK1 - (N2-W5)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43481">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=588475&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">ZW1 - (N2-W4)</gml:identifier>
-      <gml:name>18150</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18150</gml:identifier>
+      <gml:name>ZW1 - (N2-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43482">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=626949&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">ZW1 - (N2-W5)</gml:identifier>
-      <gml:name>18151</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18151</gml:identifier>
+      <gml:name>ZW1 - (N2-W5)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43483">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=626376&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">ZW1 EM - (N2-W4)</gml:identifier>
-      <gml:name>18153</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18153</gml:identifier>
+      <gml:name>ZW1 EM - (N2-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43484">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=626379&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">ZW1 EM - (N2-W5)</gml:identifier>
-      <gml:name>18152</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18152</gml:identifier>
+      <gml:name>ZW1 EM - (N2-W5)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43485">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=626333&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">ZW2 - (N2-W4)</gml:identifier>
-      <gml:name>18154</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18154</gml:identifier>
+      <gml:name>ZW2 - (N2-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43486">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=507982&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Ørsta-Bru - (H2-W2)</gml:identifier>
-      <gml:name>18155</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18155</gml:identifier>
+      <gml:name>Ørsta-Bru - (H2-W2)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14945_43487">
       <gml:description>http://www.vegvesen.no/fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=507966&amp;method=alle&amp;produkttype=12621</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">Ørsta-Veg CC3 - (N2-W4)</gml:identifier>
-      <gml:name>18156</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml">18156</gml:identifier>
+      <gml:name>Ørsta-Veg CC3 - (N2-W4)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

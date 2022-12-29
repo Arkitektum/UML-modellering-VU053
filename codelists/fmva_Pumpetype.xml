@@ -1,12 +1,14 @@
 <?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Pumpetype" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
   <gml:description>Kilde: (SOSI Ledning 4.6)</gml:description>
   <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellvannogavloep/1.0">Pumpetype</gml:identifier>
+  <gml:name>Pumpetype</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14519_41679">
       <gml:description>Sirkulasjons-pumpe, våtløper&#13;
 &#13;
 Kilde: NS3420, tabell UN2:2</gml:description>
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_pumpetype.xml">sirkulasjonspumpeVåtløper</gml:identifier>
+      <gml:name>sirkulasjonspumpeVåtløper</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
@@ -15,42 +17,49 @@ Kilde: NS3420, tabell UN2:2</gml:description>
 &#13;
 Kilde: NS3420, tabell UN2:2</gml:description>
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_pumpetype.xml">sirkulasjonspumpeTørrløper</gml:identifier>
+      <gml:name>sirkulasjonspumpeTørrløper</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14519_41681">
       <gml:description>Kilde: NS3420, tabell UN2:2</gml:description>
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_pumpetype.xml">sentrifugalpumpe</gml:identifier>
+      <gml:name>sentrifugalpumpe</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14519_41682">
       <gml:description>Kilde: NS3420, tabell UN2:2</gml:description>
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_pumpetype.xml">sidekanalpumpe</gml:identifier>
+      <gml:name>sidekanalpumpe</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14519_41683">
       <gml:description>Kilde: NS3420, tabell UN2:2</gml:description>
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_pumpetype.xml">fortrengningspumpe</gml:identifier>
+      <gml:name>fortrengningspumpe</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14519_41684">
       <gml:description>Kilde: NS3420, tabell UN2:2</gml:description>
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_pumpetype.xml">eksenter-skruepumpe</gml:identifier>
+      <gml:name>eksenter-skruepumpe</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14519_41685">
       <gml:description>Kilde: NS3420, tabell UN2:2</gml:description>
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_pumpetype.xml">stempelpumpe</gml:identifier>
+      <gml:name>stempelpumpe</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14519_41686">
       <gml:description>Kilde: NS3420, tabell UN2:2</gml:description>
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_pumpetype.xml">lamellpumpe</gml:identifier>
+      <gml:name>lamellpumpe</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
@@ -59,18 +68,21 @@ Kilde: NS3420, tabell UN2:2</gml:description>
 &#13;
 Kilde: NS3420, tabell UN2:2</gml:description>
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_pumpetype.xml">rotodynamiskPumpe</gml:identifier>
+      <gml:name>rotodynamiskPumpe</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14519_41688">
       <gml:description>Kilde: NS3420, tabell UN2:2</gml:description>
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_pumpetype.xml">vakuumpumpe</gml:identifier>
+      <gml:name>vakuumpumpe</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14519_41689">
       <gml:description>Kilde: NS3420, tabell UN2:2</gml:description>
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_pumpetype.xml">annenPumpetype</gml:identifier>
+      <gml:name>annenPumpetype</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

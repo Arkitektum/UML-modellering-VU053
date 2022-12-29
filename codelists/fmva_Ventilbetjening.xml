@@ -1,29 +1,35 @@
 <?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Ventilbetjening" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
   <gml:description>Kilde: (SOSI Ledning 4.6)</gml:description>
   <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellvannogavloep/1.0">Ventilbetjening</gml:identifier>
+  <gml:name>Ventilbetjening</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14532_41694">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Ventilbetjening.xml">manuell</gml:identifier>
+      <gml:name>manuell</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14532_41695">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Ventilbetjening.xml">motordrevet</gml:identifier>
+      <gml:name>motordrevet</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14532_41696">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Ventilbetjening.xml">hydraulisk</gml:identifier>
+      <gml:name>hydraulisk</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14532_41697">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Ventilbetjening.xml">pneumatisk</gml:identifier>
+      <gml:name>pneumatisk</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14532_41698">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Ventilbetjening.xml">fallvekt</gml:identifier>
+      <gml:name>fallvekt</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

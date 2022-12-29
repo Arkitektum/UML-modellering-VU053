@@ -1,43 +1,52 @@
 <?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="AktoerRolle" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
   <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fellesmoduler/1.0">AktoerRolle</gml:identifier>
+  <gml:name>AktoerRolle</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14084_40547">
       <gml:identifier codeSpace="https://www.codelistURL.com">byggeleder</gml:identifier>
+      <gml:name>byggeleder</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14084_40548">
       <gml:identifier codeSpace="https://www.codelistURL.com">grunnervervsleder</gml:identifier>
+      <gml:name>grunnervervsleder</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14084_40549">
       <gml:identifier codeSpace="https://www.codelistURL.com">kontrollingeniør</gml:identifier>
+      <gml:name>kontrollingeniør</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14084_40550">
       <gml:identifier codeSpace="https://www.codelistURL.com">planleggingsleder</gml:identifier>
+      <gml:name>planleggingsleder</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14084_40551">
       <gml:identifier codeSpace="https://www.codelistURL.com">prosjekteringsleder</gml:identifier>
+      <gml:name>prosjekteringsleder</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14084_40552">
       <gml:identifier codeSpace="https://www.codelistURL.com">prosjektleder</gml:identifier>
+      <gml:name>prosjektleder</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14084_40553">
       <gml:identifier codeSpace="https://www.codelistURL.com">SHA-Koordinator</gml:identifier>
+      <gml:name>SHA-Koordinator</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14084_40554">
       <gml:identifier codeSpace="https://www.codelistURL.com">YM-Koordinator</gml:identifier>
+      <gml:name>YM-Koordinator</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

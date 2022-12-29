@@ -1,18 +1,19 @@
 <?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Skaderisiko" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
   <gml:description>Angir skaderisiko.</gml:description>
   <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellrekkverk/1.0">Skaderisiko</gml:identifier>
+  <gml:name>Skaderisiko</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14930_43199">
       <gml:description>A</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Skaderisiko.xml">A</gml:identifier>
-      <gml:name>5717</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Skaderisiko.xml">5717</gml:identifier>
+      <gml:name>A</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14930_43200">
       <gml:description>B</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Skaderisiko.xml">B</gml:identifier>
-      <gml:name>5718</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Skaderisiko.xml">5718</gml:identifier>
+      <gml:name>B</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

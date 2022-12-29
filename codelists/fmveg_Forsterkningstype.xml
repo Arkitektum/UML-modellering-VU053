@@ -1,21 +1,22 @@
 <?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Forsterkningstype" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
   <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellveg/1.0">Forsterkningstype</gml:identifier>
+  <gml:name>Forsterkningstype</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14357_41186">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Forsterkningstype.xml">sandGrus</gml:identifier>
-      <gml:name>3677</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Forsterkningstype.xml">3677</gml:identifier>
+      <gml:name>sandGrus</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14357_41187">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Forsterkningstype.xml">knusteSteinmaterialer</gml:identifier>
-      <gml:name>3679</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Forsterkningstype.xml">3679</gml:identifier>
+      <gml:name>knusteSteinmaterialer</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14357_41188">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Forsterkningstype.xml">gjenbruksbetongTegl</gml:identifier>
-      <gml:name>19023</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Forsterkningstype.xml">19023</gml:identifier>
+      <gml:name>gjenbruksbetongTegl</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

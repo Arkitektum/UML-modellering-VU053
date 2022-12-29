@@ -1,10 +1,12 @@
 <?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="VentilTilkobling" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
   <gml:description>Kilde: (SOSI Ledning 4.6)</gml:description>
   <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellvannogavloep/1.0">VentilTilkobling</gml:identifier>
+  <gml:name>VentilTilkobling</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14536_41710">
       <gml:description>Ref NS3420 / Skjøtemetode 4</gml:description>
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_VentilTilkobling.xml">flens</gml:identifier>
+      <gml:name>flens</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
@@ -13,23 +15,27 @@
 &#13;
 Samme som muffe?</gml:description>
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_VentilTilkobling.xml">gjengeskjøt</gml:identifier>
+      <gml:name>gjengeskjøt</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14536_41712">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_VentilTilkobling.xml">flensemuffe</gml:identifier>
+      <gml:name>flensemuffe</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14536_41713">
       <gml:description>Ref NS3420 / Skjøtemetode 2</gml:description>
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_VentilTilkobling.xml">sveiseskjøt</gml:identifier>
+      <gml:name>sveiseskjøt</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14536_41714">
       <gml:description>Ref NS3420 / Skjøtemetode 3</gml:description>
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_VentilTilkobling.xml">loddeskjøt</gml:identifier>
+      <gml:name>loddeskjøt</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

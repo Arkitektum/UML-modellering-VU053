@@ -1,25 +1,30 @@
 <?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Ledningsform" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
   <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellvannogavloep/1.0">Ledningsform</gml:identifier>
+  <gml:name>Ledningsform</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14554_41758">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Ledningsform.xml">rør</gml:identifier>
+      <gml:name>rør</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14554_41759">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Ledningsform.xml">eggformetRør</gml:identifier>
+      <gml:name>eggformetRør</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14554_41760">
       <gml:description>vannet renner fritt i tunnel</gml:description>
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Ledningsform.xml">tunnel</gml:identifier>
+      <gml:name>tunnel</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14554_41761">
       <gml:description>vannet renne fritt i kanal</gml:description>
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Ledningsform.xml">kanal</gml:identifier>
+      <gml:name>kanal</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

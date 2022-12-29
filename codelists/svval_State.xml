@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="State" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
   <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/svvalignment/1.0">State</gml:identifier>
+  <gml:name>State</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14605_41924">
       <gml:identifier codeSpace="https://www.codelistURL.com">existing</gml:identifier>
+      <gml:name>existing</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14605_41925">
       <gml:identifier codeSpace="https://www.codelistURL.com">proposed</gml:identifier>
+      <gml:name>proposed</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

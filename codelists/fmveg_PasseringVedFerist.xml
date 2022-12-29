@@ -1,18 +1,19 @@
 <?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="PasseringVedFerist" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
   <gml:description>Angir om det er mulighet for passering for fotgjengere utenom ferist</gml:description>
   <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellveg/1.0">PasseringVedFerist</gml:identifier>
+  <gml:name>PasseringVedFerist</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14410_41439">
       <gml:description>Ja</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_PasseringVedFerist.xml">ja</gml:identifier>
-      <gml:name>3516</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_PasseringVedFerist.xml">3516</gml:identifier>
+      <gml:name>ja</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14410_41440">
       <gml:description>Nei</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_PasseringVedFerist.xml">nei</gml:identifier>
-      <gml:name>3554</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_PasseringVedFerist.xml">3554</gml:identifier>
+      <gml:name>nei</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

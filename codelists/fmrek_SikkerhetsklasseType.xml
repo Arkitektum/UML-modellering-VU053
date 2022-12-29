@@ -1,23 +1,28 @@
 <?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="SikkerhetsklasseType" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
   <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellrekkverk/1.0">SikkerhetsklasseType</gml:identifier>
+  <gml:name>SikkerhetsklasseType</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14953_43508">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_SikkerhetsklasseType.xml">P1</gml:identifier>
+      <gml:name>P1</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14953_43509">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_SikkerhetsklasseType.xml">P2</gml:identifier>
+      <gml:name>P2</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14953_43510">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_SikkerhetsklasseType.xml">P3</gml:identifier>
+      <gml:name>P3</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14953_43511">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_SikkerhetsklasseType.xml">P4</gml:identifier>
+      <gml:name>P4</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

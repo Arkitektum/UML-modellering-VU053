@@ -6,52 +6,51 @@ Merknad: Tematisk oppløsning/generaliseringsgrad kan være styrt av temaets sam
 &#13;
 -- Definition - - &#13;
 the quality of the registration/mapping of a geological thematic subject validated in relation to the actual conditions in nature, position accuracy and the preferred scale of the cartographic representation.</gml:description>
-  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/grunnlagsmodellgrunnforhold/0.1">TemaKvalitet</gml:identifier>
-  <gml:name>ThematicQuality</gml:name>
+  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/grunnlagsmodellgrunnforhold/0.1">ThematicQuality</gml:identifier>
+  <gml:name>TemaKvalitet</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15125_45077">
       <gml:description>Den geologiske observasjonen/registreringen er stedfestet med høyest mulig posisjonell og tematisk nøyaktighet for direkte bruk i kommunenes reguleringsplaner (Målestokk under 1:20.000)&#13;
 &#13;
 -- Definition -- &#13;
 The geological observation/registration is georeferenced with the highest possible positional and thematic accuracy for direct use in municipal development plans (Scale under 1:20.000)</gml:description>
-      <gml:identifier codeSpace="https://www.codelistURL.com">Høyest mulig posisjonell og tematisk nøyaktighet</gml:identifier>
-      <gml:name>Highest possible positional and thematic accuracy</gml:name>
-      <gml:name>Særdeles god</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_TemaKvalitet.xml">Highest possible positional and thematic accuracy</gml:identifier>
+      <gml:name>Høyest mulig posisjonell og tematisk nøyaktighet</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15125_45078">
       <gml:description>Registrering basert på det som for naturinformasjon må anses å være av høy posisjonell- og tematisk nøyaktighet (+/- 20 m). Høy oppløsning og lite generalisering. Kan anvendes i kommuneplanens arealdel. Minste arealenhet er 0.5-1 dekar (~M 1: 20.000)</gml:description>
-      <gml:identifier codeSpace="https://www.codelistURL.com">Høy posisjonell- og tematisk nøyaktighet, høy oppløsning, lite generalisering</gml:identifier>
-      <gml:name>Meget god</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_TemaKvalitet.xml">Meget god</gml:identifier>
+      <gml:name>Høy posisjonell- og tematisk nøyaktighet, høy oppløsning, lite generalisering</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15125_45079">
       <gml:description>Registrering stedfestet med nøyaktighet i terrenget på +/- 50m, akseptabelt for oversiktsinformasjon på kommunenivå (arealplan). Minste arealenhet er ca. 2 dekar for viktige tema, ca. 5 dekar for øvrige (~M 1:50.000)</gml:description>
-      <gml:identifier codeSpace="https://www.codelistURL.com">God posisjonell- og tematisk nøyaktighet, god oppløsning, noe generalisert</gml:identifier>
-      <gml:name>God</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_TemaKvalitet.xml">God</gml:identifier>
+      <gml:name>God posisjonell- og tematisk nøyaktighet, god oppløsning, noe generalisert</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15125_45080">
       <gml:description>Registrering med lav oppløsning (+/- 100 m) og hvor det er gjort generalisering, ofte basert på flyfototolkning. Minste gjengitte arealenhet ca. 10 dekar for viktige tema, ca 20 dekar for de øvrige. Kan med forbehold benyttes som oversiktsinformasjon på kommunenivå (~M 1:100.000)</gml:description>
-      <gml:identifier codeSpace="https://www.codelistURL.com">Lav posisjonell- og tematisk nøyaktighet, lav oppløsning, med generalisering</gml:identifier>
-      <gml:name>Nokså god</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_TemaKvalitet.xml">Nokså god</gml:identifier>
+      <gml:name>Lav posisjonell- og tematisk nøyaktighet, lav oppløsning, med generalisering</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15125_45081">
       <gml:description>Registrering basert på oversiktskartlegging i liten målestokk. Meget lav oppløsning (+/- 250 m) og kan inneholde stor grad av generalisering. Minste arealenhet er ca. 60 dekar. Bør kun anvendes til regionale oversikter (~M 1:250.000)</gml:description>
-      <gml:identifier codeSpace="https://www.codelistURL.com">Meget lav posisjonell- og tematisk nøyaktighet, meget lav oppløsning, stor grad generalisert</gml:identifier>
-      <gml:name>Noe dårlig</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_TemaKvalitet.xml">Noe dårlig</gml:identifier>
+      <gml:name>Meget lav posisjonell- og tematisk nøyaktighet, meget lav oppløsning, stor grad generalisert</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15125_45082">
       <gml:description>Beregnet for oversiktskart i meget små målestokker. Minste arealenhet er ca. 1000 dekar. Anvendelsesområdet er landsoversikter og oversikt over store regioner (~M &gt; 250.000).</gml:description>
-      <gml:identifier codeSpace="https://www.codelistURL.com">Meget lav posisjonell- og tematisk nøyaktighet, sterkt generalisert</gml:identifier>
-      <gml:name>Dårlig</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_TemaKvalitet.xml">Dårlig</gml:identifier>
+      <gml:name>Meget lav posisjonell- og tematisk nøyaktighet, sterkt generalisert</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

@@ -1,21 +1,22 @@
 <?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Skraaningtype" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
   <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellveg/1.0">Skraaningtype</gml:identifier>
+  <gml:name>Skraaningtype</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14462_41600">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Skjaeringtype.xml">Kombinert jordskråning og bergvegg</gml:identifier>
-      <gml:name>2584</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Skjaeringtype.xml">2584</gml:identifier>
+      <gml:name>Kombinert jordskråning og bergvegg</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14462_41601">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Skjaeringtype.xml">bergvegg</gml:identifier>
-      <gml:name>2586</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Skjaeringtype.xml">2586</gml:identifier>
+      <gml:name>bergvegg</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14462_41602">
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Skjaeringtype.xml">jordskråning</gml:identifier>
-      <gml:name>2588</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Skjaeringtype.xml">2588</gml:identifier>
+      <gml:name>jordskråning</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

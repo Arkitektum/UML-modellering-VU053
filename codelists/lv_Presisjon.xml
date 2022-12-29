@@ -1,31 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Presisjon" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
   <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/leveranse/1.0">Presisjon</gml:identifier>
+  <gml:name>Presisjon</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14095_40574">
       <gml:description>+/- 3-6 cm</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/lv_Presisjon.xml">god</gml:identifier>
-      <gml:name>3-6</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/lv_Presisjon.xml">3-6</gml:identifier>
+      <gml:name>god</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14095_40575">
       <gml:description>&lt;/= +/-  2 cm</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/lv_Presisjon.xml">høy</gml:identifier>
-      <gml:name>2</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/lv_Presisjon.xml">2</gml:identifier>
+      <gml:name>høy</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14095_40576">
       <gml:description>&gt; 20 cm</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/lv_Presisjon.xml">lav</gml:identifier>
-      <gml:name>20</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/lv_Presisjon.xml">20</gml:identifier>
+      <gml:name>lav</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14095_40577">
       <gml:description>+/- 6-20 cm</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/lv_Presisjon.xml">middels</gml:identifier>
-      <gml:name>6-20</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/lv_Presisjon.xml">6-20</gml:identifier>
+      <gml:name>middels</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

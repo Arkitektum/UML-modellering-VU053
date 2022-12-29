@@ -1,28 +1,34 @@
 <?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Fagmodelltype" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
   <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/leveranse/1.0">Fagmodelltype</gml:identifier>
+  <gml:name>Fagmodelltype</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14105_40610">
       <gml:identifier codeSpace="https://www.codelistURL.com">belysning</gml:identifier>
+      <gml:name>belysning</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14105_40611">
       <gml:identifier codeSpace="https://www.codelistURL.com">bru</gml:identifier>
+      <gml:name>bru</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14105_40612">
       <gml:identifier codeSpace="https://www.codelistURL.com">eliktrisitetsanlegg</gml:identifier>
+      <gml:name>eliktrisitetsanlegg</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14105_40613">
       <gml:identifier codeSpace="https://www.codelistURL.com">ferjekai</gml:identifier>
+      <gml:name>ferjekai</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14105_40614">
       <gml:identifier codeSpace="https://www.codelistURL.com">gatemøbler</gml:identifier>
+      <gml:name>gatemøbler</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

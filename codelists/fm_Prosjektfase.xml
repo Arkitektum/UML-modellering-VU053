@@ -1,45 +1,46 @@
 <?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Prosjektfase" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
   <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fellesmoduler/1.0">Prosjektfase</gml:identifier>
+  <gml:name>Prosjektfase</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14068_40474">
-      <gml:identifier codeSpace="https://www.codelistURL.com">bygging</gml:identifier>
-      <gml:name>B</gml:name>
+      <gml:identifier codeSpace="https://www.codelistURL.com">B</gml:identifier>
+      <gml:name>bygging</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14068_40475">
-      <gml:identifier codeSpace="https://www.codelistURL.com">KonkurransegrunnlagBygning</gml:identifier>
-      <gml:name>K</gml:name>
+      <gml:identifier codeSpace="https://www.codelistURL.com">K</gml:identifier>
+      <gml:name>KonkurransegrunnlagBygning</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14068_40476">
-      <gml:identifier codeSpace="https://www.codelistURL.com">oversiktsplanFylkesdelplan</gml:identifier>
-      <gml:name>OF</gml:name>
+      <gml:identifier codeSpace="https://www.codelistURL.com">OF</gml:identifier>
+      <gml:name>oversiktsplanFylkesdelplan</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14068_40477">
-      <gml:identifier codeSpace="https://www.codelistURL.com">oversiktsplanKommunedelplan</gml:identifier>
-      <gml:name>OK</gml:name>
+      <gml:identifier codeSpace="https://www.codelistURL.com">OK</gml:identifier>
+      <gml:name>oversiktsplanKommunedelplan</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14068_40478">
-      <gml:identifier codeSpace="https://www.codelistURL.com">reguleringsplan</gml:identifier>
-      <gml:name>R</gml:name>
+      <gml:identifier codeSpace="https://www.codelistURL.com">R</gml:identifier>
+      <gml:name>reguleringsplan</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14068_40479">
-      <gml:identifier codeSpace="https://www.codelistURL.com">statligPlan</gml:identifier>
-      <gml:name>S</gml:name>
+      <gml:identifier codeSpace="https://www.codelistURL.com">S</gml:identifier>
+      <gml:name>statligPlan</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14068_40480">
-      <gml:identifier codeSpace="https://www.codelistURL.com">utredning</gml:identifier>
-      <gml:name>U</gml:name>
+      <gml:identifier codeSpace="https://www.codelistURL.com">U</gml:identifier>
+      <gml:name>utredning</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

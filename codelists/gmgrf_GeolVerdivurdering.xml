@@ -4,48 +4,42 @@
 &#13;
 -- Definition - - &#13;
 how important a geological resource or registration is with a view to potential economic utilisation now or in the future</gml:description>
-  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/grunnlagsmodellgrunnforhold/0.1">GeolVerdivurdering</gml:identifier>
-  <gml:name>GeolValueAssessment</gml:name>
+  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/grunnlagsmodellgrunnforhold/0.1">GeolValueAssessment</gml:identifier>
+  <gml:name>GeolVerdivurdering</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15124_45071">
-      <gml:identifier codeSpace="https://www.codelistURL.com">Meget viktig forekomst</gml:identifier>
-      <gml:name>Very important occurrence </gml:name>
-      <gml:name>1</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolVerdivurdering.xml">Very important occurrence </gml:identifier>
+      <gml:name>Meget viktig forekomst</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15124_45072">
-      <gml:identifier codeSpace="https://www.codelistURL.com">Viktig forekomst</gml:identifier>
-      <gml:name>Important occurrence</gml:name>
-      <gml:name>2</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolVerdivurdering.xml">Important occurrence</gml:identifier>
+      <gml:name>Viktig forekomst</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15124_45073">
-      <gml:identifier codeSpace="https://www.codelistURL.com">Deler av forekomsten er viktig</gml:identifier>
-      <gml:name>Parts of the occurrence are important</gml:name>
-      <gml:name>3</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolVerdivurdering.xml">Parts of the occurrence are important</gml:identifier>
+      <gml:name>Deler av forekomsten er viktig</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15124_45074">
-      <gml:identifier codeSpace="https://www.codelistURL.com">Hele eller deler kan være viktig</gml:identifier>
-      <gml:name>The whole or parts may be important</gml:name>
-      <gml:name>4</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolVerdivurdering.xml">The whole or parts may be important</gml:identifier>
+      <gml:name>Hele eller deler kan være viktig</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15124_45075">
-      <gml:identifier codeSpace="https://www.codelistURL.com">Lite viktig</gml:identifier>
-      <gml:name>Of little importance</gml:name>
-      <gml:name>5</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolVerdivurdering.xml">Of little importance</gml:identifier>
+      <gml:name>Lite viktig</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15124_45076">
-      <gml:identifier codeSpace="https://www.codelistURL.com">Ikke vurdert</gml:identifier>
-      <gml:name>Not assessed/classified</gml:name>
-      <gml:name>6</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolVerdivurdering.xml">Not assessed/classified</gml:identifier>
+      <gml:name>Ikke vurdert</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

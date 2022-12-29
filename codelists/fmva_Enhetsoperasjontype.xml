@@ -4,14 +4,17 @@
 Må spesifiseres videre, men dette var så langt vi kom nå.&#13;
 Kilde: (SOSI Ledning 4.6)</gml:description>
   <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellvannogavloep/1.0">Enhetsoperasjontype</gml:identifier>
+  <gml:name>Enhetsoperasjontype</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14515_41659">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Enhetsoperasjonstype.xml">marmorfilter</gml:identifier>
+      <gml:name>marmorfilter</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14515_41660">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Enhetsoperasjonstype.xml">UVRensepunkt</gml:identifier>
+      <gml:name>UVRensepunkt</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
@@ -22,83 +25,99 @@ Kilde: (SOSI Ledning 4.6)</gml:description>
 &#13;
 Definisjonstekst: Trykkforsterkningsanlegg.  Hovedsakelig på private anlegg med trykktank.</gml:description>
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Enhetsoperasjonstype.xml">hydrofor</gml:identifier>
+      <gml:name>hydrofor</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14515_41662">
       <gml:description>2012-10-31: Grovpartikkel-filter??</gml:description>
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Enhetsoperasjonstype.xml">filtrering</gml:identifier>
+      <gml:name>filtrering</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14515_41663">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Enhetsoperasjonstype.xml">lufting</gml:identifier>
+      <gml:name>lufting</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14515_41664">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Enhetsoperasjonstype.xml">aktivtKull</gml:identifier>
+      <gml:name>aktivtKull</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14515_41665">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Enhetsoperasjonstype.xml">flotasjon</gml:identifier>
+      <gml:name>flotasjon</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14515_41666">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Enhetsoperasjonstype.xml">trykksil</gml:identifier>
+      <gml:name>trykksil</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14515_41667">
       <gml:description>Enkelttank, som kan inngå (sammen med flere enkelttanker) i f.eks. et høydebasseng</gml:description>
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Enhetsoperasjonstype.xml">vanntankBasseng</gml:identifier>
+      <gml:name>vanntankBasseng</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14515_41668">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Enhetsoperasjonstype.xml">klordoseringspunkt</gml:identifier>
+      <gml:name>klordoseringspunkt</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14515_41669">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Enhetsoperasjonstype.xml">tettTank</gml:identifier>
+      <gml:name>tettTank</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14515_41670">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Enhetsoperasjonstype.xml">vannglassdoseringspunkt</gml:identifier>
+      <gml:name>vannglassdoseringspunkt</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14515_41671">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Enhetsoperasjonstype.xml">sandfangFettfang</gml:identifier>
+      <gml:name>sandfangFettfang</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14515_41672">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Enhetsoperasjonstype.xml">rist</gml:identifier>
+      <gml:name>rist</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14515_41673">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Enhetsoperasjonstype.xml">fellingSedimentasjon</gml:identifier>
+      <gml:name>fellingSedimentasjon</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14515_41674">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Enhetsoperasjonstype.xml">biologiskRensetrinn</gml:identifier>
+      <gml:name>biologiskRensetrinn</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14515_41675">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Enhetsoperasjonstype.xml">kjemiskRensetrinn</gml:identifier>
+      <gml:name>kjemiskRensetrinn</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14515_41676">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Enhetsoperasjonstype.xml">annenRenseprosess</gml:identifier>
+      <gml:name>annenRenseprosess</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

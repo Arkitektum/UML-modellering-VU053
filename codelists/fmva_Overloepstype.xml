@@ -1,19 +1,23 @@
 <?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Overloepstype" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
   <gml:description>Kilde: (SOSI Ledning 4.6)</gml:description>
   <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellvannogavloep/1.0">Overloepstype</gml:identifier>
+  <gml:name>Overloepstype</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14512_41655">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Overloepstype.xml">tverroverløp</gml:identifier>
+      <gml:name>tverroverløp</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14512_41656">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Overloepstype.xml">høytSideoverløp</gml:identifier>
+      <gml:name>høytSideoverløp</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14512_41657">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Overloepstype.xml">hvirveloverløp</gml:identifier>
+      <gml:name>hvirveloverløp</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

@@ -4,17 +4,16 @@
 &#13;
 -- Definition - - &#13;
 adjustment/change of an automatic classification of geological themes/topics</gml:description>
-  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/grunnlagsmodellgrunnforhold/0.1">GeolTemajustering</gml:identifier>
-  <gml:name>GeolThematicAdjustment</gml:name>
+  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/grunnlagsmodellgrunnforhold/0.1">GeolThematicAdjustment</gml:identifier>
+  <gml:name>GeolTemajustering</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15123_45069">
       <gml:description>Avledet tema foreligger i henhold til standard for klassifisering av hovedtema&#13;
 &#13;
 -- Definition -- &#13;
 There are derived themes in accordance with standard classification of main theme</gml:description>
-      <gml:identifier codeSpace="https://www.codelistURL.com">Ikke justert tema</gml:identifier>
-      <gml:name>Non-adjusted themes</gml:name>
-      <gml:name>0</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolTemajustering.xml">Non-adjusted themes</gml:identifier>
+      <gml:name>Ikke justert tema</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
@@ -23,9 +22,8 @@ There are derived themes in accordance with standard classification of main them
 &#13;
 -- Definition -- &#13;
 Derived theme has been adjusted in accordance with standard classification of main theme</gml:description>
-      <gml:identifier codeSpace="https://www.codelistURL.com">Justert tema</gml:identifier>
-      <gml:name>Adjusted themes</gml:name>
-      <gml:name>1</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolTemajustering.xml">Adjusted themes</gml:identifier>
+      <gml:name>Justert tema</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

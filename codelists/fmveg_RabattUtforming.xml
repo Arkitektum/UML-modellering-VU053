@@ -1,18 +1,22 @@
 <?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="RabattUtforming" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
   <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellveg/1.0">RabattUtforming</gml:identifier>
+  <gml:name>RabattUtforming</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14346_41172">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_RabattUtforming.xml">grøft</gml:identifier>
+      <gml:name>grøft</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14346_41173">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_RabattUtforming.xml">voll</gml:identifier>
+      <gml:name>voll</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14346_41174">
       <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_RabattUtforming.xml">kantstein</gml:identifier>
+      <gml:name>kantstein</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

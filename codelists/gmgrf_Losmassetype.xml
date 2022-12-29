@@ -3,641 +3,642 @@
 &#13;
 Merknad: Nærmere forklaring til definisjoner og dannelsesmåte er å finne i heftet; Kvartærgeologisk kart over Norge, 1:1 mill., tema jordarter (Thoresen M, Norges geologiske undersøkelse, 1991) og i NGU intern-rapport 2001.018 (Bergstrøm m.fl.).</gml:description>
   <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/grunnlagsmodellgrunnforhold/0.1">Losmassetype</gml:identifier>
+  <gml:name>Losmassetype</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44738">
       <gml:description>Brukes for en avsetning der genetisk opprinnelse ikke er påvist, og det er heller ikke bestemt  om sedimentet er av marin opprinnelse.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Løsmasser/berggrunn under vann, uspesifisert</gml:identifier>
-      <gml:name>1</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">1</gml:identifier>
+      <gml:name>Løsmasser/berggrunn under vann, uspesifisert</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44739">
       <gml:description>Materiale plukket opp, transportert og avsatt av isbreer. Det er vanligvis, dårlig sortert og kan inneholde alt fra leir til stein og blokk. Mektighet, morenetype og overflateform kan variere. Benyttes ved kartframstilling i svært små målestokker.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Morenemateriale, uspesifisert</gml:identifier>
-      <gml:name>10</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">10</gml:identifier>
+      <gml:name>Morenemateriale, uspesifisert</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44740">
       <gml:description>Materiale plukket opp, transportert og avsatt av isbreer, vanligvis hardt sammenpakket, dårlig sortert og kan inneholde alt fra leir til stein og blokk. Moreneavsetninger med tykkelse fra 0,5 m til flere ti-talls meter. Det er få eller ingen fjellblotninger i området.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Morenemateriale, sammenhengende dekke, stedvis med stor mektighet</gml:identifier>
-      <gml:name>11</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">11</gml:identifier>
+      <gml:name>Morenemateriale, sammenhengende dekke, stedvis med stor mektighet</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44741">
       <gml:description>Materiale plukket opp, transportert og avsatt av isbreer. Det er vanligvis hardt sammenpakket, dårlig sortert og kan inneholde alt fra leir til stein og blokk. Områder med grunnlendte moreneavsetninger/hyppige fjellblotninger. Tykkelsen på avsetningene er normalt mindre enn 0,5 m, men den kan helt lokalt være noe mer.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Morenemateriale, usammenhengende eller tynt dekke over berggrunnen</gml:identifier>
-      <gml:name>12</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">12</gml:identifier>
+      <gml:name>Morenemateriale, usammenhengende eller tynt dekke over berggrunnen</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44742">
       <gml:description>Morenemateriale med særlig høyt leir- og siltinnhold, oftest meget kompakt.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Moreneleire</gml:identifier>
-      <gml:name>13</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">13</gml:identifier>
+      <gml:name>Moreneleire</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44743">
       <gml:description>Hauger og rygger med løst lagret, delvis vannbehandlet og noe sortert morenemateriale avsatt fra stagnerende breer (dødis). Terrenget er preget av haug- og ryggformer med vekslende orientering.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Avsmeltningsmorene (Ablasjonsmorene)</gml:identifier>
-      <gml:name>14</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">14</gml:identifier>
+      <gml:name>Avsmeltningsmorene (Ablasjonsmorene)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44744">
       <gml:description>Rygger eller belter av morenemateriale som er skjøvet opp foran brefronten. Materialet er usortert og inneholder alle kornstørrelser fra leir til blokk. Noen steder kan morenematerialet finnes i veksling med breelvmateriale.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Randmorene/randmorenebelte</gml:identifier>
-      <gml:name>15</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">15</gml:identifier>
+      <gml:name>Randmorene/randmorenebelte</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44745">
       <gml:description>Langstrakt, rettlinjet morenerygg dannet langs isbevegelsesretningen i bunnen av en bre. Ofte stor tykkelse, avrundet form og lengden kan være opp til noen km.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Drumlin</gml:identifier>
-      <gml:name>16</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">16</gml:identifier>
+      <gml:name>Drumlin</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44746">
       <gml:description>Rygger av morenemateriale, orientert på tvers av brebevegelsen.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Rogenmorene</gml:identifier>
-      <gml:name>17</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">17</gml:identifier>
+      <gml:name>Rogenmorene</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44747">
       <gml:description>Materiale transportert og avsatt av breelver. Sedimentet består av sorterte, ofte skråstilte lag av forskjellig kornstørrelse fra fin sand til stein og blokk. Breelvavsetninger har ofte klare overflateformer som terrasser, rygger og vifter. Mektigheten er ofte flere ti-talls meter.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Breelvavsetning (Glasifluvial avsetning)</gml:identifier>
-      <gml:name>20</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">20</gml:identifier>
+      <gml:name>Breelvavsetning (Glasifluvial avsetning)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44748">
       <gml:description>Materiale transportert og avsatt av elver eller breelver. Sedimentet består av sorterte lag av forskjellig kornstørrelse fra fin sand til grus og stein. Det er ikke skilt mellom breelv- og elveavsetninger. Brukes kun i spesielle tilfeller.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Breelv- og elveavsetning</gml:identifier>
-      <gml:name>21</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">21</gml:identifier>
+      <gml:name>Breelv- og elveavsetning</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44749">
       <gml:description>Sortert og lagdelt materiale, vesentlig sand og grus, avsatt i tunneler eller sprekker i breen. Der avsetningen er stor nok til å danne figur på kartet brukes fargen for breelvavsetninger til å angi utbredelsen og eskersymbolet til å angi ryggformen.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Ryggformet breelvavsetning (Esker)</gml:identifier>
-      <gml:name>22</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">22</gml:identifier>
+      <gml:name>Ryggformet breelvavsetning (Esker)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44750">
       <gml:description>Materiale avsatt av smeltevann i hulrom i breen. Store avsetninger gis fargen for breelvavsetninger i kombinasjon med symbol for kame.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Haugformet breelvavsetning (Kame)</gml:identifier>
-      <gml:name>23</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">23</gml:identifier>
+      <gml:name>Haugformet breelvavsetning (Kame)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44751">
       <gml:description>Finkornig materiale avsatt i bresjø eller vannfylt brekammer hvor tykkelsen er mer enn 0,5 m og arealdekningen er stor nok til å danne figur på kartet. Mektigheten kan være flere ti-talls meter.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Bresjø-/eller brekammeravsetning (Glasilakustrin avsetning)</gml:identifier>
-      <gml:name>30</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">30</gml:identifier>
+      <gml:name>Bresjø-/eller brekammeravsetning (Glasilakustrin avsetning)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44752">
       <gml:description>Materiale avsatt av breelv eller i bredemte sjøer/brekammer. Det er ikke skilt mellom breelv- og bresjø-/kammeravsetninger.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Breelv- og bresjø-/brekammeravsetning (Glasifluvial og glasilakustrin avsetning)</gml:identifier>
-      <gml:name>31</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">31</gml:identifier>
+      <gml:name>Breelv- og bresjø-/brekammeravsetning (Glasifluvial og glasilakustrin avsetning)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44753">
       <gml:description>Materiale avsatt i innsjøer hvor tykkelsen er mer enn 0,5 m.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Innsjøavsetning (Lakustrin avsetning)</gml:identifier>
-      <gml:name>35</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">35</gml:identifier>
+      <gml:name>Innsjøavsetning (Lakustrin avsetning)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44754">
       <gml:description>Benyttes hvis en ønsker å slå sammen de to avsetningstypene. I tilfelle brukes ikke separate farger for bresjø og innsjø på det samme kartbladet.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Bresjø-/brekammer og innsjøavsetning (Glasilakustrin og lakustrin avsetning)</gml:identifier>
-      <gml:name>36</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">36</gml:identifier>
+      <gml:name>Bresjø-/brekammer og innsjøavsetning (Glasilakustrin og lakustrin avsetning)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44755">
       <gml:description>Strandvaskede sedimenter med mektighet større enn 0,5 m, dannet ved bølgeaktivitet i ferskvann. Materialet er ofte rundet og godt sortert. Kornstørrelsen varierer, men sand og grus er vanligst.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Strandavsetning, innsjø og/eller bresjø</gml:identifier>
-      <gml:name>37</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">37</gml:identifier>
+      <gml:name>Strandavsetning, innsjø og/eller bresjø</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44756">
       <gml:description>Benyttes ved kartframstilling i svært små målestokker der en ikke skiller etter mektighet.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Hav- og fjordavsetning, uspesifisert</gml:identifier>
-      <gml:name>40</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">40</gml:identifier>
+      <gml:name>Hav- og fjordavsetning, uspesifisert</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44757">
       <gml:description>Finkornige, marine avsetninger med mektighet fra 0,5 m til flere ti-tall meter. Avsetningstypen omfatter også skredmasser fra kvikkleireskred, ofte angitt med tilleggssymbol. Det er få eller ingen fjellblotninger i området.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Hav- og fjordavsetning, sammenhengende dekke, ofte med stor mektighet</gml:identifier>
-      <gml:name>41</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">41</gml:identifier>
+      <gml:name>Hav- og fjordavsetning, sammenhengende dekke, ofte med stor mektighet</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44758">
       <gml:description>Marine strandvaskede sedimenter med mektighet større enn 0,5 m, dannet av bølge- og strømaktivitet i strandsonen, stedvis som strandvoller. Materialet er ofte rundet og godt sortert. Kornstørrelsen varierer fra sand til blokk, men sand og grus er vanligst. Strandavsetninger ligger som et forholdsvis tynt dekke over berggrunn eller andre sedimenter.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Marin strandavsetning, sammenhengende dekke</gml:identifier>
-      <gml:name>42</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">42</gml:identifier>
+      <gml:name>Marin strandavsetning, sammenhengende dekke</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44759">
       <gml:description>Grunnlendte områder/hyppige fjellblotninger. Tykkelsen på avsetningene er normalt mindre enn 0,5 m, men den kan helt lokalt være noe større. Det er ikke skilt mellom hav-, fjord- og strandavsetning. Kornstørrelser angis normalt ikke, men kan være alt fra leir til blokk.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Hav- og fjordavsetning  og strandavsetning, usammenhengende eller tynt dekke over berggrunnen</gml:identifier>
-      <gml:name>43</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">43</gml:identifier>
+      <gml:name>Hav- og fjordavsetning  og strandavsetning, usammenhengende eller tynt dekke over berggrunnen</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44760">
       <gml:description>Avsetning som i stor grad består av knuste skall av kalkutskillende organismer. Er en type av bioklastisk materiale. Kornstørrelse varierer fra nesten hele skall til sand. Det kan være ansamlet store mengder av skjellsand i umiddelbar nærhet av gode skjellvekstområder.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Skjellsand</gml:identifier>
-      <gml:name>44</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">44</gml:identifier>
+      <gml:name>Skjellsand</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44761">
       <gml:description>Avsetning som består av finkornig materiale, silt og leir med høyt organisk innhold. Det organiske materialet er primærprodusert i vannmassene. Marin gytje finnes i områder hvor det er liten materialtransport fra land. Brukes sjelden.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Marin gytje</gml:identifier>
-      <gml:name>45</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">45</gml:identifier>
+      <gml:name>Marin gytje</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44762">
       <gml:description>Materiale som er transportert og avsatt av elver og bekker. De mest typiske formene er elvesletter, terrasser og vifter. Sand og grus dominerer, og materialet er sortert og rundet. Mektigheten varierer fra 0,5 til mer enn 10 m.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Elve- og bekkeavsetning (Fluvial avsetning)</gml:identifier>
-      <gml:name>50</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">50</gml:identifier>
+      <gml:name>Elve- og bekkeavsetning (Fluvial avsetning)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44763">
       <gml:description>Materiale som er transportert og avsatt av elver og bekker. De mest typiske formene er elvesletter, terrasser og vifter. Sand og grus dominerer, og materialet er sortert og rundet. Brukes kun i spesielle tilfeller.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Elveavsetning, sammenhengende dekke</gml:identifier>
-      <gml:name>51</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">51</gml:identifier>
+      <gml:name>Elveavsetning, sammenhengende dekke</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44764">
       <gml:description>Grunnlendte områder med elveavsetninger. Brukes kun i spesielle tilfeller.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Elveavsetning, usammenhengende/tynt dekke</gml:identifier>
-      <gml:name>52</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">52</gml:identifier>
+      <gml:name>Elveavsetning, usammenhengende/tynt dekke</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44765">
       <gml:description>Brukes for spesielle sedimenter avsatt ved plutselig uttapning av bresjøer.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Flomavsetning (uspesifisert)</gml:identifier>
-      <gml:name>53</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">53</gml:identifier>
+      <gml:name>Flomavsetning (uspesifisert)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44766">
       <gml:description>Brukes for spesielle sedimenter avsatt ved plutselig uttapning av bresjøer.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Flomavsetning, sammenhengende</gml:identifier>
-      <gml:name>54</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">54</gml:identifier>
+      <gml:name>Flomavsetning, sammenhengende</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44767">
       <gml:description>Brukes for spesielle sedimenter avsatt ved plutselig uttapning av bresjøer. Tykkelse mindre enn 0,5 m.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Flomavsetning, usammenhengende/tynt</gml:identifier>
-      <gml:name>55</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">55</gml:identifier>
+      <gml:name>Flomavsetning, usammenhengende/tynt</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44768">
       <gml:description>Flygesand med tykkelse mer enn 0,5 m.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Vindavsetning (Eolisk avsetning)</gml:identifier>
-      <gml:name>60</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">60</gml:identifier>
+      <gml:name>Vindavsetning (Eolisk avsetning)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44769">
       <gml:description>Løsmasser dannet på stedet ved fysisk eller kjemisk nedbryting av berggrunnen. Gradvis overgang til underliggende fast fjell. Brukes når en ikke skiller mellom sammenhengende og usammenhengende dekke av denne avsetningstypen.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Forvitringsmateriale, ikke inndelt etter mektighet</gml:identifier>
-      <gml:name>70</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">70</gml:identifier>
+      <gml:name>Forvitringsmateriale, ikke inndelt etter mektighet</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44770">
       <gml:description>Løsmasser dannet på stedet ved fysisk eller kjemisk nedbryting av berggrunnen. Tykkelsen er mer enn 0,5 m.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Forvitringsmateriale, sammenhengende dekke</gml:identifier>
-      <gml:name>71</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">71</gml:identifier>
+      <gml:name>Forvitringsmateriale, sammenhengende dekke</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44771">
       <gml:description>Løsmasser dannet på stedet ved fysisk eller kjemisk nedbryting av berggrunnen. Grunnlendt område med tallrike fjellblotninger.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Forvitringsmateriale, usammenhengende eller tynt dekke over berggrunnen</gml:identifier>
-      <gml:name>72</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">72</gml:identifier>
+      <gml:name>Forvitringsmateriale, usammenhengende eller tynt dekke over berggrunnen</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44772">
       <gml:description>Blokkhav, oftest i fjellområder.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Forvitringsmateriale, stein- og blokkrikt, dannet ved frostsprengning</gml:identifier>
-      <gml:name>73</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">73</gml:identifier>
+      <gml:name>Forvitringsmateriale, stein- og blokkrikt, dannet ved frostsprengning</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44773">
       <gml:description>Avsetninger dannet ved steinsprang, fjellskred, snø- eller løsmasseskred fra bratte dalsider. Uspesifisert tykkelse.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Skredmateriale, ikke inndelt etter mektighet</gml:identifier>
-      <gml:name>80</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">80</gml:identifier>
+      <gml:name>Skredmateriale, ikke inndelt etter mektighet</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44774">
       <gml:description>Avsetninger dannet ved steinsprang, fjellskred, snøskred eller løsmasseskred fra bratte dalsider. Symbol viser dominerende skredtype. Tykkelsen er mer enn 0,5 m og det er få fjellblotninger i området.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Skredmateriale, sammenhengende dekke, stedvis med stor mektighet</gml:identifier>
-      <gml:name>81</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">81</gml:identifier>
+      <gml:name>Skredmateriale, sammenhengende dekke, stedvis med stor mektighet</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44775">
       <gml:description>Grunnlendte områder med avsetninger fra steinsprang, fjellskred, snø- og løsmasseskred fra bratte dalsider. Symbol viser dominerende skredtype. Tykkelse mindre enn 0,5 m.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Skredmateriale, usammenhengende eller tynt dekke over berggrunnen</gml:identifier>
-      <gml:name>82</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">82</gml:identifier>
+      <gml:name>Skredmateriale, usammenhengende eller tynt dekke over berggrunnen</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44776">
       <gml:description>Steinur som inneholder/har inneholdt is og derfor er i bevegelse/har vært i bevegelse som en vanlig bre. Avsetningstypen dannes under permafrostforhold.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Steinbreavsetning</gml:identifier>
-      <gml:name>88</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">88</gml:identifier>
+      <gml:name>Steinbreavsetning</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44777">
       <gml:description>Organisk jord dannet av døde planterester, med mektigheter større enn 0,5 m. Det skilles ikke mellom ulike torvtyper.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Torv og myr (Organisk materiale)</gml:identifier>
-      <gml:name>90</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">90</gml:identifier>
+      <gml:name>Torv og myr (Organisk materiale)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44778">
       <gml:description>Områder hvor humusdekket ligger rett på berggrunnen. Mektigheten av humusdekket er vanligvis 0,2 - 0,5 m, men kan lokalt være tykkere. Fjellblotninger opptrer hyppig innen slike områder. Fjellblotninger opptrer hyppig innen slike områder.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Humusdekke/tynt torvdekke over berggrunn</gml:identifier>
-      <gml:name>100</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">100</gml:identifier>
+      <gml:name>Humusdekke/tynt torvdekke over berggrunn</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44779">
       <gml:description>Forskjellige sedimenter som danner et tynt eller usammenhengende dekke over berggrunnen. Denne betegnelsen brukes bare i spesielle tilfeller når en ikke velger å skille mellom ulike typer av løsmasser.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Usammenhengende eller tynt løsmassedekke over berggrunnen, flere løsmassetyper, uspesifisert</gml:identifier>
-      <gml:name>101</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">101</gml:identifier>
+      <gml:name>Usammenhengende eller tynt løsmassedekke over berggrunnen, flere løsmassetyper, uspesifisert</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44780">
       <gml:description>Vanligvis skredmateriale med morenemateriale, forvitringsmateriale, torv og humus sterkt blanda ved skråningsprosesser. Brukes kun i spesielle tilfeller der det er meget vanskelig å skille mellom opprinnelige løsmassetyper.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Sammenhengende løsmassedekke av flere jordarter</gml:identifier>
-      <gml:name>102</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">102</gml:identifier>
+      <gml:name>Sammenhengende løsmassedekke av flere jordarter</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44781">
       <gml:description>Brukes når en ikke velger å skille mellom bart fjell og humusdekke eller tynt torvdekke over berggrunnen.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Bart fjell/fjell med tynt torvdekke, uspesifisert</gml:identifier>
-      <gml:name>110</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">110</gml:identifier>
+      <gml:name>Bart fjell/fjell med tynt torvdekke, uspesifisert</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44782">
       <gml:description>Løsmasser tilført eller sterkt påvirket av menneskers aktivitet, vesentlig i urbane områder.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Fyllmasse (antropogent materiale)</gml:identifier>
-      <gml:name>120</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">120</gml:identifier>
+      <gml:name>Fyllmasse (antropogent materiale)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44783">
       <gml:description>Tilførte steinmasser.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Steintipp</gml:identifier>
-      <gml:name>121</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">121</gml:identifier>
+      <gml:name>Steintipp</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44784">
       <gml:description>Dominerende stedegne masser, omarbeidet i overflaten.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Menneskepåvirket materiale, ikke nærmere spesifisert</gml:identifier>
-      <gml:name>122</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">122</gml:identifier>
+      <gml:name>Menneskepåvirket materiale, ikke nærmere spesifisert</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44785">
       <gml:description>Brukes om områder som stort sett mangler løsmasser, mer enn 50 % av arealet er fjell i dagen.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Bart fjell</gml:identifier>
-      <gml:name>130</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">130</gml:identifier>
+      <gml:name>Bart fjell</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44786">
       <gml:description>Brukes på oversiktskart der bart fjell slås sammen med alle typer tynt eller usammenhengende løsmassedekke.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Bart fjell/fjell med usammenhengende eller  tynt løsmassedekke</gml:identifier>
-      <gml:name>140</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">140</gml:identifier>
+      <gml:name>Bart fjell/fjell med usammenhengende eller  tynt løsmassedekke</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44787">
       <gml:description>Finkornige (leire, silt) sedimenter transportert og avsatt fra suspensjon. Draperer vanligvis underliggende sedimenter eller fjell og er oftest lagdelt.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Marin suspensjonsavsetning</gml:identifier>
-      <gml:name>200</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">200</gml:identifier>
+      <gml:name>Marin suspensjonsavsetning</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44788">
       <gml:description>Sedimenter som består av sand og grus transportert og avsatt fra bunnstrømmer. Dekker bunnen av undersjøiske kanaler laget av bunnstrømmer. Har ofte kryss-sjiktet og lentikulær- sjiktet indre struktur.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Marin bunnstrømavsetning</gml:identifier>
-      <gml:name>201</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">201</gml:identifier>
+      <gml:name>Marin bunnstrømavsetning</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44789">
       <gml:description>Hovedsakelig finkornige suspensjonsavsetninger (silt, leire) avsatt i nærhet av is/isbreer. Kan være påvirket av bunnstrømmer og utjevner topografien mer enn draperer. Forekommer i mektige lag i områder på kontinentalhyllen langs kysten og i fjorder</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Glasimarin avsetning</gml:identifier>
-      <gml:name>202</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">202</gml:identifier>
+      <gml:name>Glasimarin avsetning</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44790">
       <gml:description>Sedimenter avsatt i kontakt med is. Kan være morene, glasifluvialt materiale, eller en blanding av glasialt avsatte sedimenter. Kornstørrelsen veksler mellom leire og grus alt etter hvilke prosesser som virket.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Iskontaktavsetning</gml:identifier>
-      <gml:name>203</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">203</gml:identifier>
+      <gml:name>Iskontaktavsetning</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44791">
       <gml:description>Sedimenter bestående av sand, grus og bergartsfragmenter etter at finstoffet er vasket vekk av bølger og strøm. Danner et dekkende lag over morene eller andre jordarter med stor variasjon i kornstørrelser.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Utvaskingslag</gml:identifier>
-      <gml:name>204</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">204</gml:identifier>
+      <gml:name>Utvaskingslag</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44792">
       <gml:description>Sedimenter transportert av breelver og avsatt i hav, bresjø eller innsjø.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Glasifluvial deltaavsetning (marin)</gml:identifier>
-      <gml:name>205</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">205</gml:identifier>
+      <gml:name>Glasifluvial deltaavsetning (marin)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44793">
       <gml:description>Sedimenter avsatt ved utløpet av en elv i en fjord, innsjø eller i havet. Kornstørrelsen er ofte i sandfraksjonen nær elveutløpet og mer finkornig på dypere vann. Har typisk skrålaging med helling i strømretningen.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Fluvial deltaavsetning</gml:identifier>
-      <gml:name>206</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">206</gml:identifier>
+      <gml:name>Fluvial deltaavsetning</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44794">
       <gml:description>Avsetning dannet i kystnære områder ved tidevannstransport. Sedimentene er sandige til leirholdige med typiske strukturer som sanddyner, rifler, kryss-sjikting, mikro-kryss-sjikting, flasersjikting og lentikulær sjikting.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Tidevannsavsetning</gml:identifier>
-      <gml:name>207</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">207</gml:identifier>
+      <gml:name>Tidevannsavsetning</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44795">
       <gml:description>Et sediment avsatt i brakkvann i et estuarie. Sedimentet er karakterisert av finkornig materiale (silt, leire) av marin og fluvial opprinnelse blandet med en høy andel rester av terrestrisk organisk materiale.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Estuarin avsetning</gml:identifier>
-      <gml:name>208</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">208</gml:identifier>
+      <gml:name>Estuarin avsetning</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44796">
       <gml:description>Avsetning dannet som en forhøyning av sedimenter langs en eller begge sidene  av en undersjøisk kanal (kløft, viftedal eller dyphavskanal). Avsetningen kan ha varierende kornstørrelse, fra finkornig (leir) til nokså grovt materiale (sand).</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Levé avsetning (marin)</gml:identifier>
-      <gml:name>209</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">209</gml:identifier>
+      <gml:name>Levé avsetning (marin)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44797">
       <gml:description>Sedimenter avsatt i turbulent grunt marint miljø der det fineste materialet er vasket ut og transportert til dypere vann av strømmer og bølger. Består av sand, grus og stein. I områder med mye sand kan sandbølger bygges med en karakteristisk kryss-sjikting og skrålaging.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Grunnmarin avsetning</gml:identifier>
-      <gml:name>210</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">210</gml:identifier>
+      <gml:name>Grunnmarin avsetning</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44798">
       <gml:description>Klastiske sedimenter transportert og avsatt av kontur-strømmer langs egga kanten. Består av fint, velsortert materiale (silt og leir). Avsetningene har vanligvis horisontal- eller kryss-sjiktning og normal- eller omvendt gradering.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Konturittavsetning</gml:identifier>
-      <gml:name>211</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">211</gml:identifier>
+      <gml:name>Konturittavsetning</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44799">
       <gml:description>Avsetninger dannet ved sedimenttransport og utfelling fra en turbidittstrøm.  Består av materiale i kornstørrelse fra leire til sand og er ofte karakterisert ved normalgradert lagning og moderat til dårlig sortering. Finnes oftest ved foten av skråninger med stor mektighet av løse sedimenter (for eksempel langs kontinentalskråningen).</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Turbitittavsetning</gml:identifier>
-      <gml:name>212</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">212</gml:identifier>
+      <gml:name>Turbitittavsetning</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44800">
       <gml:description>Avsetning fra en flytende masse av stein, jord og slam. Den består av usortert materiale der mer enn halvparten av partiklene er større enn sandstørrelse.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Debrisstrømavsetning</gml:identifier>
-      <gml:name>213</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">213</gml:identifier>
+      <gml:name>Debrisstrømavsetning</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44801">
       <gml:description>En konisk eller vifteformet avsetning beliggende ved munningen av en undersjøisk kløft. Består for det meste av fine sedimenter (leire, silt). Viften har en finlaget indre struktur med en svak helling av lagene mot dyphavet.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Undersjøisk vifteavsetning</gml:identifier>
-      <gml:name>214</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">214</gml:identifier>
+      <gml:name>Undersjøisk vifteavsetning</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44802">
       <gml:description>Sedimenter avsatt i en kanal. Avsetningene vil vanligvis bestå av relativt grove sedimenter (sand, grus)</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Kanalsavsetning</gml:identifier>
-      <gml:name>215</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">215</gml:identifier>
+      <gml:name>Kanalsavsetning</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44803">
       <gml:description>Samlebetegnelse på dyphavssedimenter. Kan være både konturittisk, hemipelagisk, eupelagisk osv. Dette er fine sedimenter bunnfelt utenfor kontinentalmarginen. Består i stor grad av leire og rester av pelagiske organismer.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Dypmarin avsetning</gml:identifier>
-      <gml:name>216</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">216</gml:identifier>
+      <gml:name>Dypmarin avsetning</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44804">
       <gml:description>Sediment som for en stor del består av små partikler av biologisk opprinnelse (skjell, korall). Kornstørrelsen kan variere fra sand til hele skjell eller korallkolonier. Forekommer i begrensete områder der vekstforholdene har vært optimale over lengre tid og mengden av annet klastisk materiale liten.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Bioklastisk avsetning</gml:identifier>
-      <gml:name>217</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">217</gml:identifier>
+      <gml:name>Bioklastisk avsetning</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44805">
       <gml:description>Avsetning som består av materiale av vulkansk opprinnelse. Alt etter kornstørrelse kan sedimentene deles inn i vulkansk aske, lapilli (2-64 mm) og breksje (&gt;64mm).</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Vulkanosedimentær avsetning</gml:identifier>
-      <gml:name>218</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">218</gml:identifier>
+      <gml:name>Vulkanosedimentær avsetning</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44806">
       <gml:description>Lagdelte sedimenter (&gt;1m) over debrisstrømavsetning.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Lagdelte sedimenter (&gt;1 m) over debrisstrøm</gml:identifier>
-      <gml:name>219</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">219</gml:identifier>
+      <gml:name>Lagdelte sedimenter (&gt;1 m) over debrisstrøm</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44807">
       <gml:description>Skredmateriale, dekket av yngre sedimenter</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Skredmateriale, dekket av yngre sedimenter</gml:identifier>
-      <gml:name>240</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">240</gml:identifier>
+      <gml:name>Skredmateriale, dekket av yngre sedimenter</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44808">
       <gml:description>Skredmateriale, delvis dekket av yngre sedimenter</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Skredmateriale, delvis dekket av yngre sedimenter</gml:identifier>
-      <gml:name>241</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">241</gml:identifier>
+      <gml:name>Skredmateriale, delvis dekket av yngre sedimenter</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44809">
       <gml:description>Veksling mellom skredavsetninger og hemipelagiske avsetninger. Hemipelagiske avsetninger består stort sett av finkornet materiale, delvis produsert i vannmassene lokalt, og delvis tilført utenifra.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Skredmateriale og hemipelagiske avsetninger</gml:identifier>
-      <gml:name>242</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">242</gml:identifier>
+      <gml:name>Skredmateriale og hemipelagiske avsetninger</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44810">
       <gml:description>Marin avsetning med ukjent opprinnelse.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Uspesifisert marin avsetning</gml:identifier>
-      <gml:name>250</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">250</gml:identifier>
+      <gml:name>Uspesifisert marin avsetning</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44811">
       <gml:description>Avsetning som dannes når løsmasser i bratt terreng løsner og raser nedover. Danner ofte karakteristiske vifte- eller tungelignende former.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Jordskredavsetning, sammenhengende dekke, stedvis med stor mektighet</gml:identifier>
-      <gml:name>301</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">301</gml:identifier>
+      <gml:name>Jordskredavsetning, sammenhengende dekke, stedvis med stor mektighet</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44812">
       <gml:description>Grunnlendt avsetning som dannes når løsmasser i bratt terreng løsner og raser nedover.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Jordskredavsetning, usammenhengende eller tynt dekke</gml:identifier>
-      <gml:name>302</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">302</gml:identifier>
+      <gml:name>Jordskredavsetning, usammenhengende eller tynt dekke</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44813">
       <gml:description>Avsetning som dannes når leirholdige sedimenter løsner og glir ut.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Leirskredavsetning, sammenhengende dekke, stedvis med stor mektighet</gml:identifier>
-      <gml:name>303</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">303</gml:identifier>
+      <gml:name>Leirskredavsetning, sammenhengende dekke, stedvis med stor mektighet</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44814">
       <gml:description>Avsetning som dannes når leirholdige sedimenter løsner og glir ut.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Leirskredavsetning, usammenhengende eller tynt dekke over berggrunnen</gml:identifier>
-      <gml:name>304</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">304</gml:identifier>
+      <gml:name>Leirskredavsetning, usammenhengende eller tynt dekke over berggrunnen</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44815">
       <gml:description>Dannes når store fjellparti løsner og med kolossal kraft går ned i daler og fjorder. Består mest av kantete blokker.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Fjellskredavsetning, sammenhengende dekke, stedvis med stor mektighet</gml:identifier>
-      <gml:name>305</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">305</gml:identifier>
+      <gml:name>Fjellskredavsetning, sammenhengende dekke, stedvis med stor mektighet</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44816">
       <gml:description>Grunnlendte områder med fjellskredmateriale.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Fjellskredavsetning, usammenhengende eller tynt dekke</gml:identifier>
-      <gml:name>306</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">306</gml:identifier>
+      <gml:name>Fjellskredavsetning, usammenhengende eller tynt dekke</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44817">
       <gml:description>Materiale som har løsnet fra fast fjell og over tid akkumulert som bratte urer ved foten av skråninger. Materialet varierer fra sand til blokk, med økende kornstørrelse nedover skråningen.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Steinsprangavsetning, sammenhengende dekke, stedvis med stor mektighet</gml:identifier>
-      <gml:name>307</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">307</gml:identifier>
+      <gml:name>Steinsprangavsetning, sammenhengende dekke, stedvis med stor mektighet</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44818">
       <gml:description>Grunnlendte områder med steinsprangmateriale.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Steinsprangavsetning, usammenhengende eller tynt dekke</gml:identifier>
-      <gml:name>308</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">308</gml:identifier>
+      <gml:name>Steinsprangavsetning, usammenhengende eller tynt dekke</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44819">
       <gml:description>Dannes i områder med gjentatte snøskred og har ofte vifteform.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Snøskredavsetning, sammenhengende dekke, stedvis med stor mektighet</gml:identifier>
-      <gml:name>309</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">309</gml:identifier>
+      <gml:name>Snøskredavsetning, sammenhengende dekke, stedvis med stor mektighet</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44820">
       <gml:description>Grunnlendte områder med snøskredmateriale.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Snøskredavsetning, usammenhengende eller tynt dekke</gml:identifier>
-      <gml:name>310</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">310</gml:identifier>
+      <gml:name>Snøskredavsetning, usammenhengende eller tynt dekke</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44821">
       <gml:description>Materiale bestående av steinblokker fra større fjellparti som har løsnet og rast ned. Består hovedsakelig av usortert grovt materiale (stein og blokk) og finnes oftest ved foten av skrenter/fjellsider.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Fjellskred-/steinsprangavsetning, sammenhengende dekke, stedvis med stor mektighet</gml:identifier>
-      <gml:name>311</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">311</gml:identifier>
+      <gml:name>Fjellskred-/steinsprangavsetning, sammenhengende dekke, stedvis med stor mektighet</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44822">
       <gml:description>Grunnlendte områder med fjellskred-/steinsprangmateriale.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Fjellskred-/steinsprangavsetning, usammenhengende eller tynt dekke</gml:identifier>
-      <gml:name>312</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">312</gml:identifier>
+      <gml:name>Fjellskred-/steinsprangavsetning, usammenhengende eller tynt dekke</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44823">
       <gml:description>Dannes i områder med vekslende snø- og jordskred.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Snø- og jordskredavsetning, sammenhengende dekke</gml:identifier>
-      <gml:name>313</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">313</gml:identifier>
+      <gml:name>Snø- og jordskredavsetning, sammenhengende dekke</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44824">
       <gml:description>Grunnlendte områder med snøskredmateriale og jordskredmateriale.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Snø- og jordskredavsetning, usammenhengende eller tynt dekke</gml:identifier>
-      <gml:name>314</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">314</gml:identifier>
+      <gml:name>Snø- og jordskredavsetning, usammenhengende eller tynt dekke</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44825">
       <gml:description>Dannes i bratt terreng der både jordskred og steinsprang forekommer.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Jordskred- og steinsprangavsetning, sammenhengende dekke</gml:identifier>
-      <gml:name>315</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">315</gml:identifier>
+      <gml:name>Jordskred- og steinsprangavsetning, sammenhengende dekke</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44826">
       <gml:description>Grunnlendte områder med jordskred- og steinsprangmateriale.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Jordskred- og steinsprangavsetning, usammenhengende eller tynt dekke</gml:identifier>
-      <gml:name>316</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">316</gml:identifier>
+      <gml:name>Jordskred- og steinsprangavsetning, usammenhengende eller tynt dekke</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44827">
       <gml:description>Sterkt frostpåvirket blandingsmateriale som beveger seg sakte nedover slake skråninger, dannet fra en eller flere opprinnelig finstoffholdige løsmassetyper.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Finkornig organiskholdig sigejord</gml:identifier>
-      <gml:name>320</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">320</gml:identifier>
+      <gml:name>Finkornig organiskholdig sigejord</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15099_44828">
       <gml:description>Grovkornig frostpåvirket blandingsmateriale som beveger seg sakte nedover skråninger, dannet fra forvitret fjell, skråningsmateriale eller morenemateriale.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">Steinrikt sigende skråningsmateriale</gml:identifier>
-      <gml:name>321</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml">321</gml:identifier>
+      <gml:name>Steinrikt sigende skråningsmateriale</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

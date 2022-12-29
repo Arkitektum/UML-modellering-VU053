@@ -1,39 +1,40 @@
 <?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="MaterialeSoeyler" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
   <gml:description>Angir hvilken type søyler skjermen har.</gml:description>
   <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellveg/1.0">MaterialeSoeyler</gml:identifier>
+  <gml:name>MaterialeSoeyler</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14403_41408">
       <gml:description>Tre</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_MaterialeSoeyler.xml">Tre</gml:identifier>
-      <gml:name>3347</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_MaterialeSoeyler.xml">3347</gml:identifier>
+      <gml:name>Tre</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14403_41409">
       <gml:description>Betong</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_MaterialeSoeyler.xml">Betong</gml:identifier>
-      <gml:name>3798</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_MaterialeSoeyler.xml">3798</gml:identifier>
+      <gml:name>Betong</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14403_41410">
       <gml:description>Stål</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_MaterialeSoeyler.xml">Stål</gml:identifier>
-      <gml:name>3800</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_MaterialeSoeyler.xml">3800</gml:identifier>
+      <gml:name>Stål</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14403_41411">
       <gml:description>Aluminium</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_MaterialeSoeyler.xml">Aluminium</gml:identifier>
-      <gml:name>3799</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_MaterialeSoeyler.xml">3799</gml:identifier>
+      <gml:name>Aluminium</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14403_41412">
       <gml:description>Plast</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_MaterialeSoeyler.xml">Plast</gml:identifier>
-      <gml:name>3349</gml:name>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_MaterialeSoeyler.xml">3349</gml:identifier>
+      <gml:name>Plast</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>
