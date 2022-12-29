@@ -31,4 +31,136 @@
       <gml:name>gatemøbler</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14105_45993">
+      <gml:identifier codeSpace="https://www.codelistURL.com">bygninger</gml:identifier>
+      <gml:name>bygninger</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14105_45994">
+      <gml:identifier codeSpace="https://www.codelistURL.com">elektro</gml:identifier>
+      <gml:name>elektro</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14105_45995">
+      <gml:identifier codeSpace="https://www.codelistURL.com">geologi</gml:identifier>
+      <gml:name>geologi</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14105_45996">
+      <gml:identifier codeSpace="https://www.codelistURL.com">geoteknikk</gml:identifier>
+      <gml:name>geoteknikk</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14105_45997">
+      <gml:identifier codeSpace="https://www.codelistURL.com">grunnerverv</gml:identifier>
+      <gml:name>grunnerverv</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14105_45998">
+      <gml:identifier codeSpace="https://www.codelistURL.com">konstruksjoner</gml:identifier>
+      <gml:name>konstruksjoner</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14105_45999">
+      <gml:identifier codeSpace="https://www.codelistURL.com">kulturminnevern</gml:identifier>
+      <gml:name>kulturminnevern</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14105_46000">
+      <gml:identifier codeSpace="https://www.codelistURL.com">massehåndtering</gml:identifier>
+      <gml:name>massehåndtering</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14105_46001">
+      <gml:identifier codeSpace="https://www.codelistURL.com">naturvern</gml:identifier>
+      <gml:name>naturvern</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14105_46002">
+      <gml:identifier codeSpace="https://www.codelistURL.com">overvann</gml:identifier>
+      <gml:name>overvann</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14105_46003">
+      <gml:identifier codeSpace="https://www.codelistURL.com">planfag</gml:identifier>
+      <gml:name>planfag</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14105_46004">
+      <gml:identifier codeSpace="https://www.codelistURL.com">rekkverk</gml:identifier>
+      <gml:name>rekkverk</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14105_46005">
+      <gml:identifier codeSpace="https://www.codelistURL.com">risikoreduksjon</gml:identifier>
+      <gml:name>risikoreduksjon</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14105_46006">
+      <gml:identifier codeSpace="https://www.codelistURL.com">signal</gml:identifier>
+      <gml:name>signal</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14105_46007">
+      <gml:identifier codeSpace="https://www.codelistURL.com">skilt</gml:identifier>
+      <gml:name>skilt</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14105_46008">
+      <gml:identifier codeSpace="https://www.codelistURL.com">steinsetting</gml:identifier>
+      <gml:name>steinsetting</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14105_46009">
+      <gml:identifier codeSpace="https://www.codelistURL.com">terrengforming</gml:identifier>
+      <gml:name>terrengforming</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14105_46010">
+      <gml:identifier codeSpace="https://www.codelistURL.com">tunnel</gml:identifier>
+      <gml:name>tunnel</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14105_46011">
+      <gml:identifier codeSpace="https://www.codelistURL.com">va</gml:identifier>
+      <gml:name>vannOgAvløp</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14105_46012">
+      <gml:identifier codeSpace="https://www.codelistURL.com">veg</gml:identifier>
+      <gml:name>veg</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14105_46013">
+      <gml:identifier codeSpace="https://www.codelistURL.com">vegetasjon</gml:identifier>
+      <gml:name>vegetasjon</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_14105_46014">
+      <gml:identifier codeSpace="https://www.codelistURL.com">vegoppmerking</gml:identifier>
+      <gml:name>vegoppmerking</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
 </gml:Dictionary>

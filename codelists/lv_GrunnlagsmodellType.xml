@@ -3,61 +3,61 @@
   <gml:name>GrunnlagsmodellType</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14108_40623">
-      <gml:identifier codeSpace="https://www.codelistURL.com">8.1</gml:identifier>
+      <gml:identifier codeSpace="https://www.codelistURL.com">befolkning</gml:identifier>
       <gml:name>befolkning</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14108_40624">
-      <gml:identifier codeSpace="https://www.codelistURL.com">8.2</gml:identifier>
+      <gml:identifier codeSpace="https://www.codelistURL.com">bygg</gml:identifier>
       <gml:name>bygg</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14108_40625">
-      <gml:identifier codeSpace="https://www.codelistURL.com">8.3</gml:identifier>
+      <gml:identifier codeSpace="https://www.codelistURL.com">eiendom</gml:identifier>
       <gml:name>eiendom</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14108_40626">
-      <gml:identifier codeSpace="https://www.codelistURL.com">8.4</gml:identifier>
+      <gml:identifier codeSpace="https://www.codelistURL.com">forurensning</gml:identifier>
       <gml:name>forurensning</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14108_40627">
-      <gml:identifier codeSpace="https://www.codelistURL.com">8.5</gml:identifier>
+      <gml:identifier codeSpace="https://www.codelistURL.com">friluftsliv</gml:identifier>
       <gml:name>friluftsliv</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14108_40628">
-      <gml:identifier codeSpace="https://www.codelistURL.com">8.6</gml:identifier>
+      <gml:identifier codeSpace="https://www.codelistURL.com">grunnforhold</gml:identifier>
       <gml:name>grunnforhold</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14108_40629">
-      <gml:identifier codeSpace="https://www.codelistURL.com">8.7</gml:identifier>
+      <gml:identifier codeSpace="https://www.codelistURL.com">kulturarv</gml:identifier>
       <gml:name>kulturarv</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14108_40630">
-      <gml:identifier codeSpace="https://www.codelistURL.com">8.8</gml:identifier>
+      <gml:identifier codeSpace="https://www.codelistURL.com">landskap</gml:identifier>
       <gml:name>landskap</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14108_40631">
-      <gml:identifier codeSpace="https://www.codelistURL.com">8.9</gml:identifier>
+      <gml:identifier codeSpace="https://www.codelistURL.com">naturmangforhold</gml:identifier>
       <gml:name>naturmangforhold</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14108_40632">
-      <gml:identifier codeSpace="https://www.codelistURL.com">8.10</gml:identifier>
+      <gml:identifier codeSpace="https://www.codelistURL.com">naturressurser</gml:identifier>
       <gml:name>naturressurser</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

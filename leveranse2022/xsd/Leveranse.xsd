@@ -581,27 +581,7 @@ Kan (bør?) valideres mot prosjektkrav om hvilket koordinatsystem som er "valgt"
               </appinfo>
             </annotation>
           </element>
-          <element minOccurs="0" name="modeltype" type="gml:CodeType">
-            <annotation>
-              <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/lv_Modelltype.xml</defaultCodeSpace>
-              </appinfo>
-            </annotation>
-          </element>
-          <element minOccurs="0" name="grunnlagmodelltype" type="gml:CodeType">
-            <annotation>
-              <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/lv_GrunnlagsmodellType.xml</defaultCodeSpace>
-              </appinfo>
-            </annotation>
-          </element>
-          <element minOccurs="0" name="fagmodelltype" type="gml:CodeType">
-            <annotation>
-              <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/lv_Fagmodelltype.xml</defaultCodeSpace>
-              </appinfo>
-            </annotation>
-          </element>
+          <element maxOccurs="2" minOccurs="0" name="modeltype" type="lv:ModelltypePropertyType"/>
           <element minOccurs="0" name="prosjekttype" type="gml:CodeType">
             <annotation>
               <appinfo>
@@ -732,6 +712,30 @@ Kan (bør?) valideres mot prosjektkrav om hvilket koordinatsystem som er "valgt"
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Modelltype" substitutionGroup="gml:AbstractObject" type="lv:ModelltypeType"/>
+  <complexType name="ModelltypeType">
+    <choice>
+      <element maxOccurs="unbounded" minOccurs="0" name="grunnlagmodelltype" type="gml:CodeType">
+        <annotation>
+          <appinfo>
+            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/lv_GrunnlagsmodellType.xml</defaultCodeSpace>
+          </appinfo>
+        </annotation>
+      </element>
+      <element maxOccurs="unbounded" minOccurs="0" name="fagmodelltype" type="gml:CodeType">
+        <annotation>
+          <appinfo>
+            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/lv_Fagmodelltype.xml</defaultCodeSpace>
+          </appinfo>
+        </annotation>
+      </element>
+    </choice>
+  </complexType>
+  <complexType name="ModelltypePropertyType">
+    <sequence>
+      <element ref="lv:Modelltype"/>
+    </sequence>
   </complexType>
   <element name="Overrekkelse" substitutionGroup="gml:AbstractFeature" type="lv:OverrekkelseType"/>
   <complexType name="OverrekkelseType">
