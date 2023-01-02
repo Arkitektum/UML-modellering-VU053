@@ -6,7 +6,7 @@ Merknad: Tematisk oppløsning/generaliseringsgrad kan være styrt av temaets sam
 &#13;
 -- Definition - - &#13;
 the quality of the registration/mapping of a geological thematic subject validated in relation to the actual conditions in nature, position accuracy and the preferred scale of the cartographic representation.</gml:description>
-  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/grunnlagsmodellgrunnforhold/0.1">ThematicQuality</gml:identifier>
+  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/grunnlagsmodellgrunnforhold/0.1">TemaKvalitet</gml:identifier>
   <gml:name>TemaKvalitet</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15125_45077">
@@ -14,7 +14,7 @@ the quality of the registration/mapping of a geological thematic subject validat
 &#13;
 -- Definition -- &#13;
 The geological observation/registration is georeferenced with the highest possible positional and thematic accuracy for direct use in municipal development plans (Scale under 1:20.000)</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_TemaKvalitet.xml">Highest possible positional and thematic accuracy</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_TemaKvalitet.xml">Særdeles god</gml:identifier>
       <gml:name>Høyest mulig posisjonell og tematisk nøyaktighet</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

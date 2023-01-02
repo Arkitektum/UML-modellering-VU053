@@ -4,7 +4,7 @@
 &#13;
 -- Definition - - &#13;
 the age of a rock tells how long ago it was formed. Name of geological period/epoch for the period of time in which a geological stratigraphic sequence was formed</gml:description>
-  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/grunnlagsmodellgrunnforhold/0.1">GeologicAge</gml:identifier>
+  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/grunnlagsmodellgrunnforhold/0.1">GeologiskAlder</gml:identifier>
   <gml:name>GeologiskAlder</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_15121_44865">
@@ -12,7 +12,7 @@ the age of a rock tells how long ago it was formed. Name of geological period/ep
 &#13;
 -- Definition -- &#13;
 present - 2500 C14 years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Subatlantic</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">1</gml:identifier>
       <gml:name>Subatlantisk</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -22,7 +22,7 @@ present - 2500 C14 years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 present - 2500 C14 years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Late Holocene</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">5</gml:identifier>
       <gml:name>Sen Holocen</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -32,7 +32,7 @@ present - 2500 C14 years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 2500 - 5000 C14 years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Sub-Boreal</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">10</gml:identifier>
       <gml:name>Subboreal</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -42,7 +42,7 @@ present - 2500 C14 years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 5000 - 8000 C14 years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Atlantic</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">15</gml:identifier>
       <gml:name>Atlantisk</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -52,7 +52,7 @@ present - 2500 C14 years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 2500 -  8000 C14 years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Middle Holocene</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">20</gml:identifier>
       <gml:name>Midt Holocen</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -62,7 +62,7 @@ present - 2500 C14 years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 8000 - 9000 C14 years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Boreal</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">25</gml:identifier>
       <gml:name>Boreal</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -72,7 +72,7 @@ present - 2500 C14 years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 9000 - 10000 C14 years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Pre-Boreal</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">30</gml:identifier>
       <gml:name>Preboreal</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -82,7 +82,7 @@ present - 2500 C14 years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 8000 – 10000 C14 years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Early Holocene</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">35</gml:identifier>
       <gml:name>Tidlig Holocen</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -92,7 +92,7 @@ present - 2500 C14 years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 present – 10000 years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Holocene</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">40</gml:identifier>
       <gml:name>Holocen</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -102,7 +102,7 @@ present – 10000 years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 10000 – 11000 C14 years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Younger Dryas</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">45</gml:identifier>
       <gml:name>Yngre Dryas</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -112,7 +112,7 @@ present – 10000 years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 11000 – 12000 C14 years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Allerød</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">50</gml:identifier>
       <gml:name>Allerød</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -122,7 +122,7 @@ present – 10000 years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 12000 – 12200 C14 years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Elder Dryas</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">55</gml:identifier>
       <gml:name>Eldre Dryas</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -132,7 +132,7 @@ present – 10000 years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 12000 – 13000 C14 years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Bølling</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">60</gml:identifier>
       <gml:name>Bølling</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -156,7 +156,7 @@ present – 10000 years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 27000 – 74000 calendar years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Middle Weichselian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">75</gml:identifier>
       <gml:name>Midt Weichsel</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -166,7 +166,7 @@ present – 10000 years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 74000 –117000 calendar years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Early Weichselian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">80</gml:identifier>
       <gml:name>Tidlig Weichsel</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -176,7 +176,7 @@ present – 10000 years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 11500 – 117000 calendar years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Weichselian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">85</gml:identifier>
       <gml:name>Weichselian</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -186,7 +186,7 @@ present – 10000 years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 117000 – 130000 calendar years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Eemian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">90</gml:identifier>
       <gml:name>Eemian</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -196,7 +196,7 @@ present – 10000 years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 11500 – 130000 calendar years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Late Pleistocene</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">95</gml:identifier>
       <gml:name>Sen Pelistocen</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -206,7 +206,7 @@ present – 10000 years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 0.13 – 0.19 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Saalian (Drenthe)</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">100</gml:identifier>
       <gml:name>Saale (Drenthe)</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -216,7 +216,7 @@ present – 10000 years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 0.19 – 0.25 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Wacken</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">105</gml:identifier>
       <gml:name>Wacken</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -226,7 +226,7 @@ present – 10000 years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 0.25 – 0.30 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Fuhne</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">110</gml:identifier>
       <gml:name>Fuhne</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -236,7 +236,7 @@ present – 10000 years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 0.30 – 0.34 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Reinsdorf</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">115</gml:identifier>
       <gml:name>Reinsdorf</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -246,7 +246,7 @@ present – 10000 years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 0.34 – 0.35 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Cool phase</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">120</gml:identifier>
       <gml:name>Kald fase</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -256,7 +256,7 @@ present – 10000 years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 0.35 – 0.43 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Holstein</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">125</gml:identifier>
       <gml:name>Holstein</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -266,7 +266,7 @@ present – 10000 years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 0.43 – 0.56 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Elster 1, 2 and 3</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">130</gml:identifier>
       <gml:name>Elster 1, 2 og 3</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -276,7 +276,7 @@ present – 10000 years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 0.56 – 0.73 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Cromerian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">135</gml:identifier>
       <gml:name>Cromerian</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -286,7 +286,7 @@ present – 10000 years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 0.13 – 0.73 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Middle Pleistocene</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">140</gml:identifier>
       <gml:name>Midt Pleistocene</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -296,7 +296,7 @@ present – 10000 years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 0.73 – approx. 1.0 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Bavelian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">145</gml:identifier>
       <gml:name>Bavelian</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -306,7 +306,7 @@ present – 10000 years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 1.0 – 1.1 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Menapian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">150</gml:identifier>
       <gml:name>Menapian</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -316,7 +316,7 @@ present – 10000 years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 1.1 – 1.3 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Waalian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">155</gml:identifier>
       <gml:name>Waalian</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -326,7 +326,7 @@ present – 10000 years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 1.3 – 1.7 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Eburonian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">160</gml:identifier>
       <gml:name>Eburonian</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -336,7 +336,7 @@ present – 10000 years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 1.7 – 2.2 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Tiglian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">165</gml:identifier>
       <gml:name>Tiglian</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -346,7 +346,7 @@ present – 10000 years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 2.2 – 2.5 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Praetiglian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">170</gml:identifier>
       <gml:name>Praetiglian</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -356,7 +356,7 @@ present – 10000 years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 0.73 – 2.5 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Early Pleistocene</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">175</gml:identifier>
       <gml:name>Tidlig Pleistocen</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -366,7 +366,7 @@ present – 10000 years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 0.01 – 2.5 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Pleistocene</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">180</gml:identifier>
       <gml:name>Pleistocen</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -376,7 +376,7 @@ present – 10000 years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 present – 2.5 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">QUATERNARY</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">200</gml:identifier>
       <gml:name>KVARTÆR</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -386,7 +386,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 1.64 - 3.6 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Piacenzian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">205</gml:identifier>
       <gml:name>Piacenz</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -396,7 +396,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 1.64 - 3.6 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Late Pliocene</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">210</gml:identifier>
       <gml:name>Senpliocen</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -406,7 +406,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 3.6 - 5.3 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Zanclean</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">215</gml:identifier>
       <gml:name>Zancle'</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -416,7 +416,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 3.4 - 5.3 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Early Pliocene</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">220</gml:identifier>
       <gml:name>Tidligpliocen</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -426,7 +426,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 1.64 - 5.5 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">PLIOCENE</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">225</gml:identifier>
       <gml:name>PLIOCEN</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -436,7 +436,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 5.3 - 7.1 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Messinian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">230</gml:identifier>
       <gml:name>Messin</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -446,7 +446,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 7.1 - 11.2 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Tortonian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">235</gml:identifier>
       <gml:name>Torton</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -456,7 +456,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 5.3 - 11.2 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Late Miocene</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">240</gml:identifier>
       <gml:name>Senmiocen</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -466,7 +466,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 11.2 - 14.8 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Serravallian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">245</gml:identifier>
       <gml:name>Serravalle</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -476,7 +476,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 11.2 - 16.4 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Middle Miocene</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">250</gml:identifier>
       <gml:name>Mellommiocen</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -486,7 +486,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 13.8 – 16 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Langhian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">255</gml:identifier>
       <gml:name>Langh</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -496,7 +496,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
  16 - 20 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Burdigalian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">260</gml:identifier>
       <gml:name>Burdigal</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -506,7 +506,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 20.5 - 23.8 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Aquitanian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">265</gml:identifier>
       <gml:name>Aquitan</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -516,7 +516,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 16.4 - 23.8 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Early Miocene</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">270</gml:identifier>
       <gml:name>Tidligmiocen</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -526,7 +526,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 5.3 - 23.8 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">MIOCENE</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">275</gml:identifier>
       <gml:name>MIOCEN</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -536,7 +536,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 1.8 - 23.8 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">NEOGENE</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">280</gml:identifier>
       <gml:name>NEOGEN</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -546,7 +546,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 23.8 - 28.5 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Chattian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">285</gml:identifier>
       <gml:name>Chatt</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -556,7 +556,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 23.8 - 28.5 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Late Oligocene</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">290</gml:identifier>
       <gml:name>Senoligocen</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -566,7 +566,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 28.5 - 33.7 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Rupelian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">295</gml:identifier>
       <gml:name>Rupel</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -576,7 +576,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 28.5 - 33.7 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Early Oligocene</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">300</gml:identifier>
       <gml:name>Tidligoligocen</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -586,7 +586,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 23.8 - 33.7 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">OLIGOCENE</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">305</gml:identifier>
       <gml:name>OLIGOCEN</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -596,7 +596,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 33.7 - 37.0 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Priabonian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">310</gml:identifier>
       <gml:name>Priabon</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -606,7 +606,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 33.7 - 37.0 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Late Eocene</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">315</gml:identifier>
       <gml:name>Seneocen</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -616,7 +616,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 37.0 - 41.3 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Bartonian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">320</gml:identifier>
       <gml:name>Barton</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -626,7 +626,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 41.3 - 49.0 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Lutetian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">325</gml:identifier>
       <gml:name>Lutet</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -636,7 +636,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 37.0 - 49.0 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Middle Eocene</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">330</gml:identifier>
       <gml:name>Mellomeocen</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -646,7 +646,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 49.0 - 54.8 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Ypresian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">335</gml:identifier>
       <gml:name>Ypres</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -656,7 +656,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 49.0 - 54.8 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Early Eocene</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">340</gml:identifier>
       <gml:name>Tidligeocen</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -666,7 +666,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 33.7 - 54.8 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">EOCENE</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">345</gml:identifier>
       <gml:name>EOCEN</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -676,7 +676,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 54.8 - 57.9 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Thanetian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">350</gml:identifier>
       <gml:name>Thanet</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -686,7 +686,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 57.9 - 61.0 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Selandian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">355</gml:identifier>
       <gml:name>Seland</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -696,7 +696,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 54.8 - 65.5 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Late Paleocene</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">360</gml:identifier>
       <gml:name>Senpaleocen</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -706,7 +706,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 61.0 - 65.0 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Danian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">365</gml:identifier>
       <gml:name>Dan</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -716,7 +716,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 61.0 - 65.0 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Early Paleocene</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">370</gml:identifier>
       <gml:name>Tidligpaleocen</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -726,7 +726,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 54.8 - 65 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">PALEOCENE</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">375</gml:identifier>
       <gml:name>PALEOCEN</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -736,7 +736,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 23.8 - 65 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Paleogene</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">380</gml:identifier>
       <gml:name>Paleogen</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -746,7 +746,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 1.8 - 65 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">TERTIARY</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">385</gml:identifier>
       <gml:name>TERTIÆR</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -756,7 +756,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 0.01 - 65.0 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">CENOZOIC</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">390</gml:identifier>
       <gml:name>KENOZOIKUM</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -766,7 +766,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 65.0 - 71.3 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Maastrichtian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">395</gml:identifier>
       <gml:name>Maastricht</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -776,7 +776,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 71.3 - 83.5 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Campanian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">400</gml:identifier>
       <gml:name>Campan</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -786,7 +786,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 83.5 - 85.8 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Santonian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">405</gml:identifier>
       <gml:name>Santon</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -796,7 +796,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 85.8 - 89.0 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Coniacian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">410</gml:identifier>
       <gml:name>Coniac</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -806,7 +806,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 89.0 - 93.5 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Turonian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">415</gml:identifier>
       <gml:name>Turon</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -816,7 +816,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 93.5 - 98.9 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Cenomanian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">420</gml:identifier>
       <gml:name>Cenoman</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -826,7 +826,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 65.0 - 98.9 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Late Cretaceous</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">425</gml:identifier>
       <gml:name>Senkritt</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -836,7 +836,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 98.9 - 112.2 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Albian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">430</gml:identifier>
       <gml:name>Alb</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -846,7 +846,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 112.2 - 121 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Aptian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">435</gml:identifier>
       <gml:name>Apt</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -856,7 +856,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 121 - 127 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Barremian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">440</gml:identifier>
       <gml:name>Barreme</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -866,7 +866,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 127 - 132 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Hauterivian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">445</gml:identifier>
       <gml:name>Hauterive</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -876,7 +876,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 132 - 136.5 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Valanginian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">450</gml:identifier>
       <gml:name>Valangin</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -886,7 +886,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 136.5 - 142 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Ryazan</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">455</gml:identifier>
       <gml:name>Ryazan</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -896,7 +896,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 98.9 - 142 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Early Cretaceous</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">460</gml:identifier>
       <gml:name>Tidligkritt</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -906,7 +906,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 65 - 142 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">CRETACEOUS</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">465</gml:identifier>
       <gml:name>KRITT</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -916,7 +916,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 150.7 - 154.1 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Kimmeridgian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">475</gml:identifier>
       <gml:name>Kimmeridge</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -926,7 +926,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 154.1 - 159.4 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Oxfordian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">480</gml:identifier>
       <gml:name>Oxford</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -936,7 +936,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 142.0 - 159.4 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Late Jurassic</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">485</gml:identifier>
       <gml:name>Senjura</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -946,7 +946,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 159.4 - 164.4 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Callovian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">490</gml:identifier>
       <gml:name>Callov</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -956,7 +956,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 164.4 - 169.2 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Bathonian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">495</gml:identifier>
       <gml:name>Bathon</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -966,7 +966,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 167.7 - 171.6 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Bajocian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">500</gml:identifier>
       <gml:name>Bajoc</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -976,7 +976,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 171.6 - 175.6 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Aalenian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">505</gml:identifier>
       <gml:name>Aalen</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -986,7 +986,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 159.4 - 180.1 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Middle Jurassic</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">510</gml:identifier>
       <gml:name>Mellomjura</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -996,7 +996,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 180.1 - 189.6 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Toarcian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">515</gml:identifier>
       <gml:name>Toarc</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1006,7 +1006,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 183 – 189.6 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Pliensbachian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">520</gml:identifier>
       <gml:name>Pliensbach</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1016,7 +1016,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 195.3 - 201.9 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Sinemurian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">525</gml:identifier>
       <gml:name>Sinemur</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1026,7 +1026,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 201.9 - 205.7 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Hettangian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">530</gml:identifier>
       <gml:name>Hettang</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1036,7 +1036,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 180.1 - 205.7 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Early Jurassic</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">535</gml:identifier>
       <gml:name>Tidligjura</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1046,7 +1046,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 142 - 205.7 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">JURASSIC</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">540</gml:identifier>
       <gml:name>JURA</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1056,7 +1056,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 205.7 - 209.6 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Rhaetian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">545</gml:identifier>
       <gml:name>Rhæt</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1066,7 +1066,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 209.6 - 220.7 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Norian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">550</gml:identifier>
       <gml:name>Nor</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1076,7 +1076,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 220.7 - 227.4 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Carnian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">555</gml:identifier>
       <gml:name>Kam</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1086,7 +1086,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 205.7 - 227.4 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Late Triassic</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">560</gml:identifier>
       <gml:name>Sentrias</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1096,7 +1096,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 227.4 - 234.3 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Ladinian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">565</gml:identifier>
       <gml:name>Ladin</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1106,7 +1106,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 234.3 - 241.7 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Anisian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">570</gml:identifier>
       <gml:name>Anis</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1116,7 +1116,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 227.4 - 241.7 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Middle Triassic</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">575</gml:identifier>
       <gml:name>Mellomtrias</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1126,7 +1126,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 241.7 - 244.8 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Olenekian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">580</gml:identifier>
       <gml:name>Olenek</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1136,7 +1136,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 244.8 - 248.2 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Induan</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">585</gml:identifier>
       <gml:name>Indus</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1146,7 +1146,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 241.7 - 248.2 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Early Triassic</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">590</gml:identifier>
       <gml:name>Tidligtrias</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1156,7 +1156,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 205.7 - 248.2 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">TRIASSIC</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">595</gml:identifier>
       <gml:name>TRIAS</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1166,7 +1166,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 65.0 - 248.2 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">MESOZOIC</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">600</gml:identifier>
       <gml:name>MESOZOIKUM</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1176,7 +1176,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 248.2 - 252.1 million years BP Unit name abandoned, see ICS 2004</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Tatarian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">605</gml:identifier>
       <gml:name>Tatar</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1186,7 +1186,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 252.1 - 256.0 million years BP Unit name abandoned, see ICS 2004</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Ufimian-Kazanian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">610</gml:identifier>
       <gml:name>Ufim-Kazan</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1196,7 +1196,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 248.2 - 256.0 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Late Permian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">615</gml:identifier>
       <gml:name>Senperm</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1206,7 +1206,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 256 - 260 million years BP Unit name abandoned, see ICS 2004</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Kungurian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">620</gml:identifier>
       <gml:name>Kungur</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1216,7 +1216,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 260 - 269 million years BP Unit name abandoned, see ICS 2004</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Artinskian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">625</gml:identifier>
       <gml:name>Artinsk</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1226,7 +1226,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 284.4 – 294.6  million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Sakmarian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">630</gml:identifier>
       <gml:name>Sakmar</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1236,7 +1236,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 282 - 290 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Asselian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">635</gml:identifier>
       <gml:name>Assel</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1246,7 +1246,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 270 - 299 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Early Permian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">640</gml:identifier>
       <gml:name>Tidligperm</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1256,7 +1256,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 248.5 - 290.0 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">PERMIAN</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">645</gml:identifier>
       <gml:name>PERM</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1266,7 +1266,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 290.0 - 296.5 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Gzhelian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">650</gml:identifier>
       <gml:name>Gzel</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1276,7 +1276,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 296.5 - 303 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Kasimovian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">655</gml:identifier>
       <gml:name>Kasimov</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1286,7 +1286,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 303 - 311 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Moscovian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">660</gml:identifier>
       <gml:name>Moskva</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1296,7 +1296,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 311 - 323 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Bashkirian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">665</gml:identifier>
       <gml:name>Bashkir</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1306,7 +1306,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 290 - 323 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Carboniferous, Pennsylvanian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">670</gml:identifier>
       <gml:name>Senkarbon</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1316,7 +1316,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 323 - 327 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Serpukhovian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">675</gml:identifier>
       <gml:name>Serpukhov</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1326,7 +1326,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 327 - 342 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Viséan</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">680</gml:identifier>
       <gml:name>Vise'</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1336,7 +1336,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 345.3 - 359.2 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Tournaisian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">685</gml:identifier>
       <gml:name>Tournais</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1346,7 +1346,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 323 - 354 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Carboniferous, Mississippian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">690</gml:identifier>
       <gml:name>Tidligkarbon</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1356,7 +1356,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 290 - 354 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">CARBONIFEROUS</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">695</gml:identifier>
       <gml:name>KARBON</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1366,7 +1366,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 354 - 364 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Famennian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">700</gml:identifier>
       <gml:name>Famenne</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1376,7 +1376,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 364 - 370 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Frasnian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">705</gml:identifier>
       <gml:name>Frasne</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1386,7 +1386,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 254 - 370 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Late Devonian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">710</gml:identifier>
       <gml:name>Sendevon</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1396,7 +1396,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 370 - 380 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Givetian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">715</gml:identifier>
       <gml:name>Givet</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1406,7 +1406,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 380 - 391 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Eifelian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">720</gml:identifier>
       <gml:name>Eifel</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1416,7 +1416,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 370 - 391 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Middle Devonian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">725</gml:identifier>
       <gml:name>Mellomdevon</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1426,7 +1426,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 391 - 400 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Emsian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">730</gml:identifier>
       <gml:name>Ems</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1436,7 +1436,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 400 - 412 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Pragian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">735</gml:identifier>
       <gml:name>Prag</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1446,7 +1446,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 412 - 417 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Lochkovian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">740</gml:identifier>
       <gml:name>Lochkov</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1456,7 +1456,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 391 - 417 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Early Devonian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">745</gml:identifier>
       <gml:name>Tidligdevon</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1466,7 +1466,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 354 - 417 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">DEVONIAN</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">750</gml:identifier>
       <gml:name>DEVON</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1476,7 +1476,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 417 - 419 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Pridoli</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">755</gml:identifier>
       <gml:name>Pridoli</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1486,7 +1486,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 419 - 423 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Ludlow</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">760</gml:identifier>
       <gml:name>Ludlow</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1496,7 +1496,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 417 - 423 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Late Silurian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">765</gml:identifier>
       <gml:name>Sensilur</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1506,7 +1506,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 423 - 428 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Wenlock</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">770</gml:identifier>
       <gml:name>Wenlock</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1516,7 +1516,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 428 - 443 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Llandovery</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">775</gml:identifier>
       <gml:name>Llandovery</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1526,7 +1526,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 428 - 443 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Early Silurian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">780</gml:identifier>
       <gml:name>Tidligsilur</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1536,7 +1536,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 417 - 443 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">SILURIAN</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">785</gml:identifier>
       <gml:name>SILUR</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1546,7 +1546,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 443 - 449 million years BP Unit name abandoned, see ICS 2004</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Ashgill</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">790</gml:identifier>
       <gml:name>Ashgill</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1556,7 +1556,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 449 - 458 million years BP Unit name abandoned, see ICS 2004</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Caradocian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">795</gml:identifier>
       <gml:name>Caradoc</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1566,7 +1566,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 443 - 458 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Late Ordovician</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">800</gml:identifier>
       <gml:name>Senordovicium</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1576,7 +1576,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 458 - 464 million years BP Unit name abandoned, see ICS 2004</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Llandeilo  (now Darriwilian?)</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">805</gml:identifier>
       <gml:name>Llandeilo</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1586,7 +1586,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 464 - 470 million years BP Unit name abandoned, see ICS 2004</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Llanvirn (now Dapingian?)</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">810</gml:identifier>
       <gml:name>Llanvirn</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1596,7 +1596,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 458 - 470 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Middle Ordovician</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">815</gml:identifier>
       <gml:name>Mellomordovicium</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1606,7 +1606,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 470 - 485 million years BP Unit name abandoned, see ICS 2004</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Arenig</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">820</gml:identifier>
       <gml:name>Arenig</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1616,7 +1616,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 485 - 495 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Tremadocian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">825</gml:identifier>
       <gml:name>Tremadoc</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1626,7 +1626,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 470 - 495 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Early Ordovician</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">830</gml:identifier>
       <gml:name>Tidligordovicium</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1636,7 +1636,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 443 - 495 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">ORDOVICIAN</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">835</gml:identifier>
       <gml:name>ORDOVICIUM</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1646,7 +1646,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 495 - 505 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Late Cambrian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">840</gml:identifier>
       <gml:name>Senkambrium</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1656,7 +1656,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 505 - 518 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Middle Cambrian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">845</gml:identifier>
       <gml:name>Mellomkambrium</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1666,7 +1666,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 518 - 524 million years BP Unit name abandoned, see ICS 2004</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Lenian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">850</gml:identifier>
       <gml:name>Lena</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1676,7 +1676,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 524 - 530 million years BP Unit name abandoned, see ICS 2004</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Atdabanian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">855</gml:identifier>
       <gml:name>Atdaban</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1686,7 +1686,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 530 - 534 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Tommotian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">860</gml:identifier>
       <gml:name>Tommot</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1696,7 +1696,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 534 - 545 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Nemakit-Daldynian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">865</gml:identifier>
       <gml:name>Nemakit-Daldyn</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1706,7 +1706,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 518 - 545 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Early Cambrian</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">870</gml:identifier>
       <gml:name>Tidligkambrium</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1716,7 +1716,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 495 - 545 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">CAMBRIAN</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">875</gml:identifier>
       <gml:name>KAMBRIUM</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1726,7 +1726,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 248.5 - 545 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">PALEOZOIC</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">880</gml:identifier>
       <gml:name>PALEOZOIKUM</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1736,7 +1736,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 545 - 650 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">VENDIAN</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">885</gml:identifier>
       <gml:name>VENDIUM</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1746,7 +1746,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 650 - 1000 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Late Riphean</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">890</gml:identifier>
       <gml:name>Senrifeikum</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1756,7 +1756,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 545 - 1000 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Neoproterozoic</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">895</gml:identifier>
       <gml:name>Senproterozoikum</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1766,7 +1766,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 1000 - 1400 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Middle Riphean</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">900</gml:identifier>
       <gml:name>Mellomrifeikum</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1776,7 +1776,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 1600 - 2500 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Paleoproterozoic</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">905</gml:identifier>
       <gml:name>Tidligproterozoikum</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1786,7 +1786,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 650 - 1600 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">RIPHEAN</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">910</gml:identifier>
       <gml:name>RIFEIKUM</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1796,7 +1796,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 1000 - 1600 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Mesoproterozoic</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">915</gml:identifier>
       <gml:name>Mellomproterozoikum</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1806,7 +1806,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 3400 - 4000 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">Early Archean</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">920</gml:identifier>
       <gml:name>Tidligarkeikum</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1816,7 +1816,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 2500 - 4000 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">ARCHEAN</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">925</gml:identifier>
       <gml:name>ARKEIKUM</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1826,7 +1826,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 4000 - 4500 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">PRISCOAN</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">930</gml:identifier>
       <gml:name>PRISKOIKUM</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -1836,7 +1836,7 @@ present – 2.5 million years BP</gml:description>
 &#13;
 -- Definition -- &#13;
 545 - 4500 million years BP</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">PRECAMBRIAN</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml">935</gml:identifier>
       <gml:name>PREKAMBRIUM</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

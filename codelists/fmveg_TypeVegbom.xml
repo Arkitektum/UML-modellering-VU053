@@ -5,49 +5,49 @@
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14413_41454">
       <gml:description>Heve-/senkebommer åpnes og lukkes ved å heve/senke vegbommen.  Heve-/senkebom kan sperre hele eller deler av vegbanen. Merknad: I tilfeller med heve-/senkebommer på begge side av vegen i samme snitt skal det registreres to forekomster av vegbom.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_TypeVegbom.xml">2498</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_TypeVegbom.xml">Heve-/senkebom</gml:identifier>
       <gml:name>Heve-/senkebom</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14413_41455">
       <gml:description>Svingbommer åpnes og lukkes ved at de svinges til side.  Svingbommer kan sperre hele eller deler av vegbanen.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_TypeVegbom.xml">2501</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_TypeVegbom.xml">Svingbom</gml:identifier>
       <gml:name>Svingbom</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14413_41456">
       <gml:description>En eller flere stolper, pullerter eller kjegler satt opp på rekke med innbyrdes avstand slik at veg sperres for biltrafikk. Kan være permanent, fjernes manuelt eller fjernes ved automatisk nedsenkning. Informasjon om dette angis under ET 3839 "Type åpning/lukking"</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_TypeVegbom.xml">5486</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_TypeVegbom.xml">Stolpe/pullert/kjegle</gml:identifier>
       <gml:name>Stolpe/pullert/kjegle</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14413_41457">
       <gml:description>Disse vegbommene kan være sammensatt av en eller flere deler, f,eks som to parallellle sideforskyvde gelender/trafikkgjerder med passasje for myke trafikanter mellom. Denne type vegbom må normalt løftes til side eller demonteres for å åpne for biltrafik.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_TypeVegbom.xml">5487</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_TypeVegbom.xml">Rørgelender</gml:identifier>
       <gml:name>Rørgelender</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14413_41458">
       <gml:description>En eller flere steinblokker plassert på tvers av veg. Normalt mulig for myke trafikanter å passere</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_TypeVegbom.xml">5488</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_TypeVegbom.xml">Steinblokk</gml:identifier>
       <gml:name>Steinblokk</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14413_41459">
       <gml:description>En eller flere New-Jersy/betongblokker plassert på tvers av veg. Normalt mulig for myke trafikanter å passere</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_TypeVegbom.xml">5489</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_TypeVegbom.xml">New jersey</gml:identifier>
       <gml:name>New jersey</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14413_41460">
       <gml:description>Benyttes om vegbommerr/sperringer som ikke dekkes av de øvrige verdiene. Beskrivelse skal angis under tilleggsinformasjon</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_TypeVegbom.xml">5490</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_TypeVegbom.xml">Annen type vegbom/sperring</gml:identifier>
       <gml:name>Annen type vegbom/sperring</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

@@ -5,42 +5,42 @@
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14406_41419">
       <gml:description>Skjerm er fundamentert på sammenhengende støpt såle/bankett</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_TypeFundament.xml">15989</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_TypeFundament.xml">Betong, bankett</gml:identifier>
       <gml:name>Betong, bankett</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14406_41420">
       <gml:description>Skjerm er fundamentert på støpte punnktfundamenter.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_TypeFundament.xml">15991</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_TypeFundament.xml">Betong, punktfundamenter</gml:identifier>
       <gml:name>Betong, punktfundamenter</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14406_41421">
       <gml:description>Skjerm er fundamentert på betongpeler</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_TypeFundament.xml">17846</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_TypeFundament.xml">Betong, peler</gml:identifier>
       <gml:name>Betong, peler</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14406_41422">
       <gml:description>Søyler er funamentert direkte i jordmasser</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_TypeFundament.xml">17847</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_TypeFundament.xml">Direktefundamentert søyle</gml:identifier>
       <gml:name>Direktefundamentert søyle</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14406_41423">
       <gml:description>Søyler er fundamentert på spydspiss som er stukket ned i jord.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_TypeFundament.xml">17848</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_TypeFundament.xml">Stålspyd</gml:identifier>
       <gml:name>Stålspyd</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14406_41424">
       <gml:description>Skjerm er festet direkte på konstruksjon som f.eks mur, bru, mm</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_TypeFundament.xml">17849</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_TypeFundament.xml">På konstruksjon</gml:identifier>
       <gml:name>På konstruksjon</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

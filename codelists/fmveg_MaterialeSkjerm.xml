@@ -5,77 +5,77 @@
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14402_41397">
       <gml:description>Tre</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_MaterialeSkjerm.xml">2181</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_MaterialeSkjerm.xml">Tre</gml:identifier>
       <gml:name>Tre</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14402_41398">
       <gml:description>Betong</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_MaterialeSkjerm.xml">3321</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_MaterialeSkjerm.xml">Betong</gml:identifier>
       <gml:name>Betong</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14402_41399">
       <gml:description>Betongstein</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_MaterialeSkjerm.xml">3339</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_MaterialeSkjerm.xml">Betongstein</gml:identifier>
       <gml:name>Betongstein</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14402_41400">
       <gml:description>Tegl</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_MaterialeSkjerm.xml">3350</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_MaterialeSkjerm.xml">Tegl</gml:identifier>
       <gml:name>Tegl</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14402_41401">
       <gml:description>Metall</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_MaterialeSkjerm.xml">2222</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_MaterialeSkjerm.xml">Metall</gml:identifier>
       <gml:name>Metall</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14402_41402">
       <gml:description>Plast</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_MaterialeSkjerm.xml">2261</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_MaterialeSkjerm.xml">Plast</gml:identifier>
       <gml:name>Plast</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14402_41403">
       <gml:description>Kunststoff</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_MaterialeSkjerm.xml">2359</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_MaterialeSkjerm.xml">Kunststoff</gml:identifier>
       <gml:name>Kunststoff</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14402_41404">
       <gml:description>Pleksiglass</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_MaterialeSkjerm.xml">2367</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_MaterialeSkjerm.xml">Pleksiglass</gml:identifier>
       <gml:name>Pleksiglass</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14402_41405">
       <gml:description>Herdet glass</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_MaterialeSkjerm.xml">17393</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_MaterialeSkjerm.xml">Herdet glass</gml:identifier>
       <gml:name>Herdet glass</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14402_41406">
       <gml:description>Skjerm som er bygd opp med torv og fremstår som gressdekket.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_MaterialeSkjerm.xml">17223</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_MaterialeSkjerm.xml">Torvmur med gress</gml:identifier>
       <gml:name>Torvmur med gress</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14402_41407">
       <gml:description>Naturstein</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_MaterialeSkjerm.xml">4963</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_MaterialeSkjerm.xml">Naturstein</gml:identifier>
       <gml:name>Naturstein</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

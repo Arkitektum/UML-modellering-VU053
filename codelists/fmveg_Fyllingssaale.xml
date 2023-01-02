@@ -1,25 +1,25 @@
 <?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Fyllingssaale" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
   <gml:description>Angir om det er etablert fyllingssåle i henhold til kravene gitt i HB N200 kap 254,.</gml:description>
-  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellveg/1.0">11532</gml:identifier>
+  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellveg/1.0">Fyllingssaale</gml:identifier>
   <gml:name>Fyllingssaale</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14463_41603">
       <gml:description>Ja</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Fyllingssaale.xml">19595</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Fyllingssaale.xml">Ja</gml:identifier>
       <gml:name>Ja</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14463_41604">
       <gml:description>Nei</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Fyllingssaale.xml">19596</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Fyllingssaale.xml">Nei</gml:identifier>
       <gml:name>Nei</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14463_41605">
       <gml:description>Ukjent</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Fyllingssaale.xml">19597</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Fyllingssaale.xml">Ukjent</gml:identifier>
       <gml:name>Ukjent</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

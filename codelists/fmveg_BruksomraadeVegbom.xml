@@ -5,56 +5,56 @@
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14415_41467">
       <gml:description>Vegbom benyttes til å stenge vegstrekning som karakteriseres som høyfjellsstrekning. Dette er strekninger som er ekstra utsatt for snø og vind.  De behøver ikke ligge høyt over havet, men er over tregrensen.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_BruksomraadeVegbom.xml">2495</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_BruksomraadeVegbom.xml">Høyfjellsovergang</gml:identifier>
       <gml:name>Høyfjellsovergang</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14415_41468">
       <gml:description>Vegbom benyttes for å stenge veg i tunnel. Merknad: Slike vegbommer kan være plassert utenfor selve tunnelen. Vegbommer med bruksområde tunnel skal knyttes til Tunnelløp.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_BruksomraadeVegbom.xml">2753</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_BruksomraadeVegbom.xml">Tunnel</gml:identifier>
       <gml:name>Tunnel</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14415_41469">
       <gml:description>Vegbom benyttes for å stenge vanlig vegstrekning. Kan f.eks være i forbindelse med skredutsatt veg eller værutsatt veg.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_BruksomraadeVegbom.xml">2496</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_BruksomraadeVegbom.xml">Vanlig vegstrekning</gml:identifier>
       <gml:name>Vanlig vegstrekning</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14415_41470">
       <gml:description>Vegbom benyttes i forbindelse med bomstasjon. Åpnes når betaling er ok.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_BruksomraadeVegbom.xml">2497</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_BruksomraadeVegbom.xml">Bomstasjon</gml:identifier>
       <gml:name>Bomstasjon</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14415_41471">
       <gml:description>Bom som stenger ferjelem. Merknad: Disse skal knyttes til Ferjeleie</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_BruksomraadeVegbom.xml">10247</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_BruksomraadeVegbom.xml">Ferjekai</gml:identifier>
       <gml:name>Ferjekai</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14415_41472">
       <gml:description>Vegbom benyttes på eller i tilknytning til gang-/sykkelveg. eller fortau.  Vegbommene er   plassert slik at de stenger for biltrafikk, men har åpning for at myke trafikanter kan passere (sluses gjennom).</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_BruksomraadeVegbom.xml">5485</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_BruksomraadeVegbom.xml">Gang-/sykkelveg, sluse</gml:identifier>
       <gml:name>Gang-/sykkelveg, sluse</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14415_41473">
       <gml:description>Vegbom i tilknytning til jernbane. F.eks ved jernbanekryssing.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_BruksomraadeVegbom.xml">19817</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_BruksomraadeVegbom.xml">Jernbane</gml:identifier>
       <gml:name>Jernbane</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14415_41474">
       <gml:description>Ingen av de øvrige bruksområdene er beskrivende. Det skal angis nærmere beskrivelse av bruksområde under egenskapstype "Tilleggsinformasjon"</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_BruksomraadeVegbom.xml">19821</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_BruksomraadeVegbom.xml">Annet bruksområde</gml:identifier>
       <gml:name>Annet bruksområde</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

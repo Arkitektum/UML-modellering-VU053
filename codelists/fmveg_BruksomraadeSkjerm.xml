@@ -1,18 +1,18 @@
 <?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="BruksomraadeSkjerm" xsi:schemaLocation="http://www.opengis.net/gml/3.2 null">
   <gml:description>Angir hva vegobjektet brukes til, hvilken funksjon det har.</gml:description>
-  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellveg/1.0">1247</gml:identifier>
+  <gml:identifier codeSpace="https://skjema.atlas.vegvesen.no/r000/fagmodellveg/1.0">BruksomraadeSkjerm</gml:identifier>
   <gml:name>BruksomraadeSkjerm</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14378_41310">
       <gml:description>Skjerm benyttes primært for å skjerme omgivelser mot støy</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_BruksomraadeSkjerm.xml">1994</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_BruksomraadeSkjerm.xml">Støyskjerm</gml:identifier>
       <gml:name>Støyskjerm</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_14378_41311">
       <gml:description>Skjerm som primært er benyttet for å skjerme omgivelser mot sprut/støv fra veg, snø fra brøyting, innsyn, skjerming mot jernbane, vind etc.og samtidig ikke har funksjon i forhold til støyskjerming.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_BruksomraadeSkjerm.xml">3287</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_BruksomraadeSkjerm.xml">Leskjerm/sikringsskjerm</gml:identifier>
       <gml:name>Leskjerm/sikringsskjerm</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
