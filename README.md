@@ -20,7 +20,7 @@ Om eksterne kodelister
 ----------------------
 Hensikten med eksterne kodelister er å kunne oppdatere kodelistene uten å måtte endre xsd-modellene. Slik sett er kodelistene uavhengige av xsd-filene.
 Likevel er det slik at xsd-filene "peker på" kodelister.
-Etter litt testing er dette reglene som brukes:
+I prosjektet er det viktig å følge allerede definerte prinsipper for håndtering av eksterne kodelister. Dette har vært en utfordring, da prinsippene er til dels dårlig  dokumentert. Etter litt testing er dette reglene som brukes:
 - kodelistene forvaltes midlertidig (i prosjekt-sammenheng) i et Arkitektum/Github-repository. 
 - alle kodelister legges ut som gml dictionary-filer. Dette er et relativ primitivt kodeliste-format, definert i GML-standarden, men vil virke.
 - kodelistene gis filtype .gml, for å markere at det er gml dictionary-filer. I tidlige 2022-versjoner finnes også slike filer med extension .xml. Disse to 
