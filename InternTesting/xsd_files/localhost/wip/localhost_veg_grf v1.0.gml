@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <wfs:FeatureCollection xmlns:wfs="http://www.opengis.net/wfs/2.0" timeStamp="2021-10-26T12:00:00" numberMatched="unknown" numberReturned="0"
-    xmlns:lv="https://skjema.atlas.vegvesen.no/r000/leveranse/0.1"
-    xmlns:fmveg="https://skjema.atlas.vegvesen.no/r000/fagmodellveg/0.1"
-    xmlns:fmfel="https://skjema.atlas.vegvesen.no/r000/fagmodellfelles/0.1"
-    xmlns:svvge="https://skjema.atlas.vegvesen.no/r000/sosigenerelleegenskaper/0.1"
-    xmlns:svvli="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/0.1"
-    xsi:schemaLocation="https://skjema.atlas.vegvesen.no/r000/fagmodellveg/0.1 FagmodellVeg.xsd"
+    xmlns:lv="https://skjema.atlas.vegvesen.no/r000/leveranse/1.0"
+    xmlns:fmveg="https://skjema.atlas.vegvesen.no/r000/fagmodellveg/1.0"
+    xmlns:fmfel="https://skjema.atlas.vegvesen.no/r000/fagmodellfelles/1.0"
+    xmlns:svvge="https://skjema.atlas.vegvesen.no/r000/sosigenerelleegenskaper/1.0"
+    xmlns:svvli="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0"
+     xmlns:gmgru="https://skjema.atlas.vegvesen.no/r000/grunnlagsmodellgrunnforhold/0.1"
+    xsi:schemaLocation="https://skjema.atlas.vegvesen.no/r000/fagmodellveg/1.0 FagmodellVeg.xsd https://skjema.atlas.vegvesen.no/r000/grunnlagsmodellgrunnforhold/0.1 GrunnlagsmodellGrunnforhold.xsd"
     xmlns:gml="http://www.opengis.net/gml/3.2"
     xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -31,20 +32,29 @@
     </wfs:boundedBy>
     <wfs:member>
         <lv:LeveranseDokumentasjon gml:id="_5cad98ef-8c94-4f36-aaca-fae328e658f0">
-            <lv:dokumentasjonstype>Dokumentasjonstype</lv:dokumentasjonstype>
-            <lv:modeltype>Modelltype</lv:modeltype>
-            <lv:grunnlagmodelltype>Grunnlagmodelltype</lv:grunnlagmodelltype>
-            <lv:fagmodelltype>Fagmodelltype</lv:fagmodelltype>
-            <lv:prosjekttype>Prosjekttype</lv:prosjekttype>
-            <lv:fullføringsgrad></lv:fullføringsgrad>
+			<lv:modeltype>modell</lv:modeltype>
+			<lv:fagmodelltype>nokorar</lv:fagmodelltype>
+			<lv:prosjekttype></lv:prosjekttype>
+			<lv:fullføringsgrad></lv:fullføringsgrad>
         </lv:LeveranseDokumentasjon>
     </wfs:member>
     <wfs:member>
         <lv:Leveranse gml:id="_22de65f4-cade-4df5-a8a6-a19ff1688b0a">
-            <lv:fagmodell xlink:href="#_c8106075-be1f-4181-80c3-69a2635da86a"/>
+            <lv:fagmodell xlink:href="#_c8106075-be1f-4181-80c3-69a2635da86a"></lv:fagmodell>
+			<lv:grunnlagsmodell xlink:href="#_lv01"/>
             <lv:leveransedokumentasjon xlink:href="#_5cad98ef-8c94-4f36-aaca-fae328e658f0"/>
         </lv:Leveranse>
     </wfs:member>
+	<wfs:member>
+			<gmgru:GrunnlagsmodellGrunnforhold gml:id="_lv01">
+				<gmgru:grunnforholdElement>
+					<gmgru:Loesmasse>
+						<gmgru:grunnlagsdataBrukt></gmgru:grunnlagsdataBrukt>
+						<gmgru:losmassetype>11</gmgru:losmassetype>
+					</gmgru:Loesmasse>
+				</gmgru:grunnforholdElement>
+			</gmgru:GrunnlagsmodellGrunnforhold>
+	</wfs:member>
     <wfs:member>
         <fmveg:FagmodellVeg gml:id="_c8106075-be1f-4181-80c3-69a2635da86a">
             <fmveg:vegElement xlink:href="#_9aac757b-67d4-445b-8d70-2a28186524b1"/>
@@ -62,9 +72,9 @@
     </wfs:member>
     <wfs:member>
         <fmveg:BaerelagNedre>
-            <fmveg:nedreNominelleSteinstørrelse>8</fmveg:nedreNominelleSteinstørrelse>
             <fmveg:øvreNominelleSteinstørrelse>12</fmveg:øvreNominelleSteinstørrelse>
-            <fmveg:bæretype>Forkilt pukk</fmveg:bæretype>
+			<fmveg:bæretype>Forkilt pukk</fmveg:bæretype>
+			<fmveg:nedreNominelleSteinstørrelse>8</fmveg:nedreNominelleSteinstørrelse>
         </fmveg:BaerelagNedre>
     </wfs:member>    
     <wfs:member>
