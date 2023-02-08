@@ -34,3 +34,7 @@ Om knyttingen mellom xsd og kodelister:
 ---------------------------------------
 Dette gjøres ved i UML-modellene å bruke to tagged values: codeList og defaultCodeSpace. Disse peker på repository, kodelistenavn og type. defaultCodeSpace-verdien følger med til xsd-filene, og heter der også defaultCodeSpace. I gml-kodeliste-filene brukes codeSpace.
 
+Om filtype i codelist/codeSpace
+-------------------------------
+Fordi vi holder oss til gml dictionary-formatet på eksterne kodelister, har vi valgt å ta med .gml i codeSpace og codeList-verdiene i UML/XSD-modellene. i SOSI-standrard for UML-modellering er det anbefalt å utelate filtype i disse. Det forventes at dette valget revurderes når (hvis?) når annen kodeliste-forvaltning tas i bruk.
+
