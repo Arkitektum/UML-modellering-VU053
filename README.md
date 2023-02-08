@@ -32,6 +32,5 @@ Etter at modellerings-prosjektet er avslutta, forventes en oppfølgings-aktivite
 
 Om knyttingen mellom xsd og kodelister:
 ---------------------------------------
-Dette gjøres ved i UML-modellene å bruke to tagged values: codeList og codeSpace. Disse peker på repository, kodelistenavn og type. codeSpace-verdien følger med
-til xsd-filene, og heter der defaultCodeSpace. I gml-kodeliste-filene brukes codeSpace.
+Dette gjøres ved i UML-modellene å bruke to tagged values: codeList og defaultCodeSpace. Disse peker på repository, kodelistenavn og type. defaultCodeSpace-verdien følger med til xsd-filene, og heter der også defaultCodeSpace. I gml-kodeliste-filene brukes codeSpace.
 
