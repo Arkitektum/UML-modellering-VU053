@@ -1,0 +1,671 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Risiko::Skredpunkt</title>
+<link href="../../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Risiko::Skredpunkt </h1>
+			<!-- <img class="header_image" src="../../../../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../../../../EA3.htm">Vegprosjekt VU053 v1.0</a> / <a href="../../../../../EA439.htm">LeveranseVegprosjekt</a> / <a href="../../../../EA443.htm">Samordningsmodell</a> / <a href="../../../EA448.htm">Situasjonsmodell</a> / <a href="../../EA468.htm">GrunnlagsmodellGrunnforhold</a> / <a href="../EA492.htm">GrunnUndersoekelser</a> / <a href="EA507.htm">Risiko</a> / <a href="EA509.htm">Skredpunkt</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<a href="EA507.htm">Risiko</a></ul>
+
+					</td>
+					<td class="contentcell"><div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">Skredpunkt 824 : Public  &lt;&lt;FeatureType&gt;&gt; Class</span>
+	<table border="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">28.02.2023 15:47:10</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">28.02.2023 15:48:32</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Dakat</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">2.28</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Implemented</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" >Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{EA1B709B-559A-43b9-A140-5821C8DF7275}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="EA505.htm">Risiko</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">Strekning som er utsatt for skred fra naturlig sideterreng og hvor det er aktuelt å gjennomføre sikringstiltak. Det skal normalt opprettes et skredpunkt per skredløp, men der skredløpene vanskelig kan sikres uten å berøre neste skredløp kan man vurdere å slå sammen flere skredløp i samme skredpunkt&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="toggleItem('Constraints');" id="ConstraintsTitle">Constraints</li>
+			<li onClick="toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
+			<li onClick="toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Attribute</td>
+			<td width="25%" class="TableHeading">Scope</td>
+			<td width="25%" class="TableHeading">Type</td>
+		</tr>
+						<tr>
+				<td width="50%" class="TableRow">
+					navn
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					CharacterString
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					KORTN_EGENSKAPSTYPE=navn<br>NVDB_ID=9342<br>NVDB_navn=Navn<br>SOSI_datatype=T<br>SOSI_lengde=50<br>SOSI_navn=NVDB_NAVN<br>SOSINVDB_navn=Navn_9342<br>Viktighet=Påkrevd i database<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Navn på skredpunkt.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					ÅDT
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					Integer
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					KORTN_EGENSKAPSTYPE=aadt<br>NVDB_ID=9362<br>NVDB_navn=ÅDT<br>SOSI_datatype=H<br>SOSI_lengde=6<br>SOSI_navn=NVDB_ÅDT<br>SOSINVDB_navn=ÅDT_9362<br>Viktighet=Påkrevd ved nyregistrering<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Angir hvilken ÅDT-verdi som er benyttet i beregning. Blir hentet automatisk fra Trafikkmengderegisteret i NVDB.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					ÅDTÅr
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					Integer
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					ANTALL_DESIMALER=0<br>KORTN_EGENSKAPSTYPE=aadtAar<br>NVDB_ID=9363<br>NVDB_navn=ÅDT år<br>SOSI_datatype=H<br>SOSI_lengde=4<br>SOSI_navn=NVDB_ÅDTÅR<br>SOSINVDB_navn=ÅDTÅr_9363<br>Viktighet=Påkrevd ved nyregistrering<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Angir hvilket år ÅDT-verdien gjelder for. Blir hentet automatisk fra Trafikkmengderegisteret i NVDB.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					omkjøring
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					<a href="EA512.htm">Omkjøring</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					defaultCodeSpace=<a href="https://raw.githubusercontent.com/vegvesen/NVDB-Datakatalogen/master/GMLOmkjøring" target="_blank" >https://raw.githubusercontent.com/vegvesen/NVDB-Datakatalogen/master/GMLOmkjøring</a><br>KORTN_EGENSKAPSTYPE=omkjing<br>NVDB_ID=9392<br>NVDB_navn=Omkjøring<br>SOSI_datatype=T<br>SOSI_lengde=30<br>SOSI_navn=NVDB_OMKJØRING<br>SOSINVDB_navn=Omkjøring_9392<br>Viktighet=Påkrevd ved nyregistrering<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Beregnet omkjøringstid (inkl fergetid) hvis vegen er stengt ved skredpunktet. Brukes ved beregning av F3 Omkjøringsfaktor.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					stengningsfrekvens_Skred
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					Real
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					ANTALL_DESIMALER=2<br>KORTN_EGENSKAPSTYPE=stengFr1<br>NVDB_ID=9365<br>NVDB_navn=Stengningsfrekvens, skred<br>SOSI_datatype=D<br>SOSI_lengde=5<br>SOSI_navn=NVDB_STENGNINGSFREKVENS_SKRED<br>SOSINVDB_navn=StengningsfrekvensSkr_9365<br>Viktighet=Påkrevd ved nyregistrering<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Angir hvor mange ganger per år vegen i gjennomsnitt er stengt på grunn av skred. Tar ikke hensyn til varighet av stengningen. Brukes ved beregning av F4 Stengningsfaktor.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					stengningdøgn_Skredfare
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					Real
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					ANTALL_DESIMALER=2<br>KORTN_EGENSKAPSTYPE=stengFr2<br>NVDB_ID=9366<br>NVDB_navn=Stengningdøgn, skredfare<br>SOSI_datatype=D<br>SOSI_lengde=5<br>SOSI_navn=NVDB_STENGNINGDØGN_SKREDFARE<br>SOSINVDB_navn=StengningdøgnSkredfar_9366<br>Viktighet=Påkrevd ved nyregistrering<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Angir hvor mange døgn per år vegen i gjennomsnitt er stengt på grunn av skredfare. Benyttes kun når omkjøringstid er over 2 timer. Brukes i beregning av F5 Skredfarestengningsfaktor.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					naboskred
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					<a href="EA511.htm">Naboskred</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					defaultCodeSpace=<a href="https://raw.githubusercontent.com/vegvesen/NVDB-Datakatalogen/master/GMLNaboskred" target="_blank" >https://raw.githubusercontent.com/vegvesen/NVDB-Datakatalogen/master/GMLNaboskred</a><br>KORTN_EGENSKAPSTYPE=naboskr<br>NVDB_ID=9367<br>NVDB_navn=Naboskred<br>SOSI_datatype=T<br>SOSI_lengde=35<br>SOSI_navn=NVDB_NABOSKRED<br>SOSINVDB_navn=Naboskred_9367<br>Viktighet=Påkrevd ved nyregistrering<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Angir i hvilken grad det er fare for naboskred på strekningen, dvs om ventende biler på grunn av skred kan treffes av nytt skred. Brukes i beregning av F6 Naboskredfaktor.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					F1_Trafikkmengde_Faktor
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					Real
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					ANTALL_DESIMALER=2<br>KORTN_EGENSKAPSTYPE=F1Trafik<br>NVDB_ID=9374<br>NVDB_navn=F1 Trafikkmengde-faktor<br>SOSI_datatype=D<br>SOSI_lengde=5<br>SOSI_navn=NVDB_F1_TRAFIKKMENGDE_FAKTOR<br>SOSINVDB_navn=F1Trafikkmengde-fakto_9374<br>Viktighet=Påkrevd ved nyregistrering<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Beregnet faktor som gir uttrykk for hvor mye trafikkmengde virker inn på skredfaktoren for gitt skredpunkt.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					F2_Skredfarefaktor
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					Real
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					ANTALL_DESIMALER=2<br>KORTN_EGENSKAPSTYPE=F2Skred<br>NVDB_ID=9375<br>NVDB_navn=F2 Skredfarefaktor<br>SOSI_datatype=D<br>SOSI_lengde=5<br>SOSI_navn=NVDB_F2_SKREDFAREFAKTOR<br>SOSINVDB_navn=F2Skredfarefaktor_9375<br>Viktighet=Påkrevd ved nyregistrering<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Beregnet faktor som gir uttrykk for hvor mye skredfrekvens og skredbredde virker inn&#160;&#160;på skredfaktoren for gitt skredpunkt.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					F3_Omkjøringsfaktor
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					Real
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					ANTALL_DESIMALER=2<br>KORTN_EGENSKAPSTYPE=F3omkjF<br>NVDB_ID=9376<br>NVDB_navn=F3 Omkjøringsfaktor<br>SOSI_datatype=D<br>SOSI_lengde=5<br>SOSI_navn=NVDB_F3_OMKJØRINGSFAKTOR<br>SOSINVDB_navn=F3Omkjøringsfaktor_9376<br>Viktighet=Påkrevd ved nyregistrering<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Beregnet faktor som gir uttrykk for hvor mye omkjøringstiden virker inn på skredfaktoren for gitt skredpunkt.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					F4_Stengningsfaktor
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					Real
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					ANTALL_DESIMALER=2<br>KORTN_EGENSKAPSTYPE=F4<br>NVDB_ID=9368<br>NVDB_navn=F4 Stengningsfaktor<br>SOSI_datatype=D<br>SOSI_lengde=5<br>SOSI_navn=NVDB_F4_STENGNINGSFAKTOR<br>SOSINVDB_navn=F4Stengningsfaktor_9368<br>Viktighet=Påkrevd ved nyregistrering<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Beregnet faktor som gir uttrykk for hvor mye vegens stengningsfrekvens virker inn på skredpunktets skredfaktor.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					F5_Skredfarestengningsfaktor
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					Real
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					ANTALL_DESIMALER=2<br>KORTN_EGENSKAPSTYPE=F5SkredF<br>NVDB_ID=9377<br>NVDB_navn=F5 Skredfarestengningsfaktor<br>SOSI_datatype=D<br>SOSI_lengde=5<br>SOSI_navn=NVDB_F5_SKREDFARESTENGNINGSFAKTOR<br>SOSINVDB_navn=F5Skredfarestengnings_9377<br>Viktighet=Påkrevd ved nyregistrering<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Beregnet faktor som gir uttrykk for hvor mye stengning av vegen pga skredfare virker inn på skredfaktoren for gitt skredpunkt.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					F6_Naboskredfaktor
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					Real
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					ANTALL_DESIMALER=2<br>KORTN_EGENSKAPSTYPE=F6NaboF<br>NVDB_ID=9378<br>NVDB_navn=F6 Naboskredfaktor<br>SOSI_datatype=D<br>SOSI_lengde=5<br>SOSI_navn=NVDB_F6_NABOSKREDFAKTOR<br>SOSINVDB_navn=F6Naboskredfaktor_9378<br>Viktighet=Påkrevd ved nyregistrering<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Beregnet faktor som gir uttrykk for hvor mye fare for naboskred virker inn på skredfaktoren for gitt skredpunkt.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					skredfaktor
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					Real
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					ANTALL_DESIMALER=2<br>KORTN_EGENSKAPSTYPE=skredFak<br>NVDB_ID=9379<br>NVDB_navn=Skredfaktor<br>SOSI_datatype=D<br>SOSI_lengde=5<br>SOSI_navn=NVDB_SKREDFAKTOR<br>SOSINVDB_navn=Skredfaktor_9379<br>Viktighet=Påkrevd ved nyregistrering<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Beregnet tall som brukes for sammenligning mellom ulike skredutsatte punkt, basert på faktorene F1-F6.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					skredfaktorkategori
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					<a href="EA514.htm">Skredfaktorkategori</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					defaultCodeSpace=<a href="https://raw.githubusercontent.com/vegvesen/NVDB-Datakatalogen/master/GMLSkredfaktorkategori" target="_blank" >https://raw.githubusercontent.com/vegvesen/NVDB-Datakatalogen/master/GMLSkredfaktorkategori</a><br>KORTN_EGENSKAPSTYPE=SkrfaKat<br>NVDB_ID=9380<br>NVDB_navn=Skredfaktorkategori<br>SOSI_datatype=T<br>SOSI_lengde=20<br>SOSI_navn=NVDB_SKREDFAKTORKATEGORI<br>SOSINVDB_navn=Skredfaktorkategori_9380<br>Viktighet=Påkrevd ved nyregistrering<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Angir hvilken kategori skredpunktet tilhører. Beregnes fra skredfaktor.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>
+	</table>
+</div>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Tag</td>
+			<td width="50%" class="TableHeading">Value</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">kilde</td>
+				<td width="50%" class="TableRow" valign="top">NVDB</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					Details:
+						<div class="ObjectDetailsNotes">Values: Håndboka,NVDB,SOSI,Annet<br /></div>
+
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">referanse</td>
+				<td width="50%" class="TableRow" valign="top">824</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					Details:
+						&nbsp;
+				</td>
+			</tr>
+	</table>
+</div>		<div class="ItemBody" id="ConstraintsTable">
+			<table class="Table ea_table">
+			  	<tr>
+					<td width="80%" class="TableHeading">Constraint</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Status</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">Må ha minst en av stedfestingene lineærPosisjon og senterlinje</td>
+					<td width="10%" class="TableRow">OCL</td>
+					<td width="10%" class="TableRow">Proposed</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed" colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints1004" /></button>Details:
+							<div id="detailsDIVConstraints1004" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">inv:count(self.senterlinje)+count(self.lineærposisjon)#gt;0&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="CustomPropertiesTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Property</td>
+					<td width="70%" class="TableHeading">Value</td>
+				</tr>
+			<tr>
+				<td width="30%" class="TableRow">isFinalSpecialization:</td>
+				<td width="70%" class="TableRow">0</td>
+			</tr>
+
+
+			</table>
+		</div>		<div class="ItemBody" id="LinksTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA508.htm">«FeatureType» RisikoElement</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+ </div>
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

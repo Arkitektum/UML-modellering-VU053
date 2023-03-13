@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>TIN</title>
+<title>MovedFron_Land_feature::SoftBreak</title>
 <link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script language="JavaScript" src="../../../../../../js/displayToc.js" type="text/javascript"></script>
 <script>
@@ -64,12 +64,12 @@
 <div class="section group" >
 
 		<div class="col span_2_of_2 header_frame">
-			<h1> TIN </h1>
+			<h1> MovedFron_Land_feature::SoftBreak </h1>
 			<!-- <img class="header_image" src="../../../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
 			<img class="header_image" src="../../../../../../images/ea-banner.png" align="right" alt="Header Image" />
 		</div>
 		<div class="col span_2_of_2 breadcrumb_frame">
-			<p><a href="../../../../../EA3.htm">Vegprosjekt VU053 v0.1.2</a> / <a href="../../../../EA8.htm">Eksterne_UML-deler</a> / <a href="../../../EA194.htm">SupportingPackages</a> / <a href="../../EA203.htm">GML</a> / <a href="../EA232.htm">3.3_TIN</a> / <a href="EA237.htm">MovedFron_Land_feature</a> / <a href="EA249.htm">TIN</a></p>
+			<p><a href="../../../../../EA3.htm">Vegprosjekt VU053 v1.0</a> / <a href="../../../../EA8.htm">Eksterne_UML-deler</a> / <a href="../../../EA196.htm">SupportingPackages</a> / <a href="../../EA205.htm">GML</a> / <a href="../EA234.htm">3.3_TIN</a> / <a href="EA239.htm">MovedFron_Land_feature</a> / <a href="EA249.htm">SoftBreak</a></p>
 		</div>
 			
 		<table class="contentmaintable">
@@ -84,12 +84,12 @@
 					<td class="indexcell">
 						<div class="projectBrowserTitle">Project: </div>
 						<ul>
-<a href="EA237.htm">MovedFron_Land_feature</a></ul>
+<a href="EA239.htm">MovedFron_Land_feature</a></ul>
 
 					</td>
 					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<span class="ObjectTitle">TIN  : Public   Class</span>
+	<span class="ObjectTitle">SoftBreak  : Public   Class</span>
 	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -110,7 +110,7 @@
 		</tr>
 		<tr id="proj01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
-			<td class="ObjectDetailsValue">0.1</td>
+			<td class="ObjectDetailsValue">0.3</td>
 		</tr>
 		<tr id="proj02" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
@@ -142,14 +142,14 @@
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{C9DE2987-2238-49e4-858C-308058BFA901}</td>
+			<td class="ObjectDetailsValue">{15FCE749-9406-4443-983A-577B4CDB424C}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue">GeometryTypes, <a href="EA235.htm">TIN</a></td>
+			<td class="ObjectDetailsValue"><a href="EA237.htm">TIN</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">subtype of PolyhedralSurface composed of contiguous triangle surfaces (Triangle) connected along their common boundary linestrings. This differs from PolyhedralSurface in the restriction on the types of surface patches &lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">behaves as a breakline except that countour lines generated for the surface can be smoothed where they cross soft breaks&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -166,13 +166,13 @@
 		</tr>
 						<tr>
 				<td width="50%" class="TableRow">
-					patch
+					elementType
 				</td>
 				<td width="25%" class="TableRow">
 					Public 
 				</td>
 				<td width="25%" class="TableRow">
-					<a href="EA246.htm">SimpleTriangle</a>
+					<a href="EA253.htm">TINElementType</a>
 				</td>
 			</tr>
 			<tr>
@@ -183,36 +183,29 @@
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow">
-					element
+					elementGeometry
 				</td>
 				<td width="25%" class="TableRow">
 					Public 
 				</td>
 				<td width="25%" class="TableRow">
-					<a href="EA250.htm">TINElement</a>
+					LineString
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="3">										
 					
-						&nbsp;
-						
-				</td>
-			</tr>			<tr>
-				<td width="50%" class="TableRow">
-					maxSideLength
-				</td>
-				<td width="25%" class="TableRow">
-					Public 
-				</td>
-				<td width="25%" class="TableRow">
-					Number
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="3">										
-					
-						&nbsp;
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			3D&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
 						
 				</td>
 			</tr>
@@ -241,7 +234,7 @@
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top">PolyhedralSurface</td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA252.htm">TINElement</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">To</td>

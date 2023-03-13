@@ -1,0 +1,336 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>VU053 Nettverk og lineære referanser::LineærReferanseMetode</title>
+<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> VU053 Nettverk og lineære referanser::LineærReferanseMetode </h1>
+			<!-- <img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../EA3.htm">Vegprosjekt VU053 v1.0</a> / <a href="../../EA8.htm">Eksterne_UML-deler</a> / <a href="../EA83.htm">Nettverk og linearReferenser</a> / <a href="EA97.htm">VU053 Nettverk og lineære referanser</a> / <a href="EA103.htm">LineærReferanseMetode</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<a href="EA97.htm">VU053 Nettverk og lineære referanser</a></ul>
+
+					</td>
+					<td class="contentcell"><div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">LineærReferanseMetode  : Public  &lt;&lt;codeList&gt;&gt; Class</span>
+	<table border="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">23.10.2022 19:56:19</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">23.10.2022 19:56:19</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">knjetl</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" >Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{35CBDC7C-CD80-4214-B4F8-5E7F41ACA775}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="EA91.htm">Hoveddiagram</a>, <a href="EA93.htm">Lineære referansemetoder</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">Metode brukt for lineære referanser&lt;br/&gt;&lt;br/&gt;Merknad:&lt;br/&gt;&lt;br/&gt;Dersom offset er i bruk så angis også positiv offsetretning til side (høyre eller venstre) og vertikalt (opp/ned). &lt;br/&gt;Felles for alle metoder i Norge:&lt;br/&gt;&lt;ul&gt;<br /> &lt;li&gt;offsetUnits: &quot;meter&quot; &lt;/li&gt; &lt;li&gt;positiveLateralOffsetDirection: &quot;right&quot; &lt;/li&gt;&lt;/ul&gt;<br />positiveVerticalOffsetDirection: &quot;up&quot;&lt;br/&gt;&lt;br/&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;Dette er en kodeliste basert på en forenkling av ISO19148: LR_LinearReferencingMethod, som benytter 4 attributter&lt;/font&gt;&lt;br/&gt;&lt;ul&gt;<br /> &lt;li&gt;navn &lt;/li&gt; &lt;li&gt;type (absolutt, relativ eller interpolert) &lt;/li&gt; &lt;li&gt;måleenhet &lt;/li&gt; &lt;li&gt;restriksjoner/regler (constraints) &lt;/li&gt;&lt;/ul&gt;&lt;p/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Attribute</td>
+			<td width="25%" class="TableHeading">Scope</td>
+			<td width="25%" class="TableHeading">Type</td>
+		</tr>
+						<tr>
+				<td width="50%" class="TableRow">
+					metrering
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					SOSI_verdi=1<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			posisjon fra start av nettverkselementet (lenken), angitt i meter&lt;br/&gt;&lt;br/&gt;Merknad: Kan ta utgangspunkt i en angitt startverdi for nettverkselementet.&lt;br/&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;ISO19148: LR_LinearReferencingMethod:&lt;/font&gt;&lt;br/&gt;&lt;ul&gt;<br /> &lt;li&gt;type: &quot;absolute&quot;&#160;&#160;&lt;/li&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br /> &lt;li&gt;units: &quot;meter&quot;&#160;&#160;&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					kilometrering
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					SOSI_verdi=2<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			posisjon fra start av nettverkselementet, angitt i kilometer. &lt;br/&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;Merknad: &lt;/font&gt;Kan ta utgangspunkt i en angitt startverdi for nettverkselementet (lenken).&lt;br/&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;ISO19148: LR_LinearReferencingMethod:&lt;/font&gt;&lt;br/&gt;&lt;ul&gt;<br /> &lt;li&gt;type: &quot;absolute&quot; &lt;/li&gt; &lt;li&gt;units: &quot;kilometer&quot; &lt;/li&gt;&lt;/ul&gt;&lt;p/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					normalisert
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					SOSI_verdi=3<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			posisjon fra start av nettverkselementet, angitt som et desimaltall mellom 0 og 1, i forhold til start (0) og slutt (1) på nettverkselementet (lenken)&lt;br/&gt;&lt;br/&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;Merknad: &lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;ISO19148: LR_LinearReferencingMethod:&lt;/font&gt;&lt;br/&gt;&lt;ul&gt;<br /> &lt;li&gt;type: &quot;Interpolative&quot;&#160;&#160;&lt;/li&gt; &lt;li&gt;units: &quot;0..1&quot;&#160;&#160;&lt;/li&gt;&lt;/ul&gt;&lt;p/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					prosent
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					SOSI_verdi=5<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			posisjon fra start av nettverkselementet, angitt i prosent av lengden på nettverkselementet (lenken)&lt;br/&gt;&lt;br/&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;Merknad: &lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;ISO19148: LR_LinearReferencingMethod:&lt;/font&gt;&lt;br/&gt;&lt;ul&gt;<br /> &lt;li&gt;type: &quot;Interpolative&quot;&#160;&#160;&lt;/li&gt; &lt;li&gt;units: &quot;percent&quot;&#160;&#160;&lt;/li&gt;&lt;/ul&gt;&lt;p/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>
+	</table>
+</div>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Tag</td>
+			<td width="50%" class="TableHeading">Value</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">SOSI_datatype</td>
+				<td width="50%" class="TableRow" valign="top">T</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					Details:
+						&nbsp;
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">SOSI_lengde</td>
+				<td width="50%" class="TableRow" valign="top">20</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					Details:
+						&nbsp;
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">SOSI_navn</td>
+				<td width="50%" class="TableRow" valign="top">LRLRM</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					Details:
+						&nbsp;
+				</td>
+			</tr>
+	</table>
+</div>		<div class="ItemBody" id="CustomPropertiesTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Property</td>
+					<td width="70%" class="TableHeading">Value</td>
+				</tr>
+			<tr>
+				<td width="30%" class="TableRow">isFinalSpecialization:</td>
+				<td width="70%" class="TableRow">0</td>
+			</tr>
+
+
+			</table>
+		</div>	</div>
+ </div>
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

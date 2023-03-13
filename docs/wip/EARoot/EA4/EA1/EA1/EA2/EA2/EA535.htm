@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>LagiGrunn</title>
+<link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> LagiGrunn </h1>
+			<!-- <img class="header_image" src="../../../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../../../EA3.htm">Vegprosjekt VU053 v1.0</a> / <a href="../../../../EA439.htm">LeveranseVegprosjekt</a> / <a href="../../../EA443.htm">Samordningsmodell</a> / <a href="../../EA448.htm">Situasjonsmodell</a> / <a href="../EA468.htm">GrunnlagsmodellGrunnforhold</a> / <a href="EA537.htm">LagiGrunn</a> / <a href="EA535.htm">LagiGrunn</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<li><img src="../../../../../../images/175.png" alt="Diagram"/> <a href="EA535.htm">LagiGrunn</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA538.htm">Bergoverflate</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA539.htm">LagIGrunnElement</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA540.htm">matjord</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA541.htm">Svakhetssoner</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA542.htm">utkiftingsmasser</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA543.htm">vegetasjondekke</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA544.htm">Skred</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA545.htm">AntattHovedaarsak</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA546.htm">Bilder</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA547.htm">BlokkertGangSykkelveg</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA548.htm">BlokkertVeglengde</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA549.htm">HoeydeforskjellVegUtloesningssted</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA550.htm">Loesmasse</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA551.htm">Loesneomraade</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA552.htm">SkadePaaBru</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA553.htm">SkadePaaDrenering</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA554.htm">SkadePaaKjoeretoey</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA555.htm">GrunnvannPotensiale</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA556.htm">SkadePaaPerson</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA557.htm">Infiltrasjonevne</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA558.htm">SkadePaaRekkverk</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA559.htm">SkadePaaVegdekkeVegkropp</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA560.htm">Losmassetype</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA561.htm">Stengning</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA562.htm">TypeSkred</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA563.htm">VesentligeSkader</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA564.htm">VolumAvSkredmasserPaaVeg</a></li>
+</ul>
+
+					</td>
+					<td class="contentcell"><div class="PageBody">
+	<div class=diagram_image> 
+<img src="EA536.png" usemap="#EA536" border="0" />
+
+<MAP NAME="EA536">
+<area shape="rect" coords="1464,429,1713,569" href="EA542.htm" target="_self">
+<area shape="rect" coords="1137,429,1386,569" href="EA540.htm" target="_self">
+<area shape="rect" coords="792,429,1041,569" href="EA543.htm" target="_self">
+<area shape="rect" coords="2425,523,2555,647" href="EA564.htm" target="_self">
+<area shape="rect" coords="2610,341,2700,411" href="EA563.htm" target="_self">
+<area shape="rect" coords="2832,343,3003,454" href="EA561.htm" target="_self">
+<area shape="rect" coords="90,303,416,492" href="EA560.htm" target="_self">
+<area shape="rect" coords="2634,498,2763,568" href="EA559.htm" target="_self">
+<area shape="rect" coords="2610,266,2700,336" href="EA558.htm" target="_self">
+<area shape="rect" coords="244,111,417,225" href="EA557.htm" target="_self">
+<area shape="rect" coords="2718,268,2808,338" href="EA556.htm" target="_self">
+<area shape="rect" coords="10,111,213,225" href="EA555.htm" target="_self">
+<area shape="rect" coords="2718,420,2808,490" href="EA554.htm" target="_self">
+<area shape="rect" coords="2718,344,2808,414" href="EA553.htm" target="_self">
+<area shape="rect" coords="2610,416,2700,486" href="EA552.htm" target="_self">
+<area shape="rect" coords="2199,362,2358,486" href="EA551.htm" target="_self">
+<area shape="rect" coords="2203,511,2355,661" href="EA549.htm" target="_self">
+<area shape="rect" coords="2832,192,3087,329" href="EA548.htm" target="_self">
+<area shape="rect" coords="2709,192,2815,262" href="EA547.htm" target="_self">
+<area shape="rect" coords="2610,191,2700,261" href="EA546.htm" target="_self">
+<area shape="rect" coords="2378,192,2605,498" href="EA545.htm" target="_self">
+<area shape="rect" coords="2193,192,2363,342" href="EA562.htm" target="_self">
+<area shape="rect" coords="956,210,1205,353" href="EA541.htm" target="_self">
+<area shape="rect" coords="616,210,865,353" href="EA538.htm" target="_self">
+<area shape="rect" coords="751,10,925,110" href="../EA481.htm" target="_self">
+<area shape="rect" coords="1189,32,1370,88" href="EA539.htm" target="_self">
+<area shape="rect" coords="1722,193,2049,570" href="EA544.htm" target="_self">
+<area shape="rect" coords="1273,209,1522,391" href="EA550.htm" target="_self">
+</MAP>
+ </div>
+	<div class="ObjectTitle">LagiGrunn : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">13.02.2023 14:57:22</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">09.03.2023 11:27:59</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">MatiasGonzalezTognoni</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{6FA12CBE-8519-4a94-863F-074B8C0291F8}</td>
+		</tr>
+	</table>
+	
+</div>
+
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+
