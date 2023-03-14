@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gmgld="https://skjema.atlas.vegvesen.no/r000/grunnlagsdata/0.1" xmlns:gmgrf="https://skjema.atlas.vegvesen.no/r000/grunnlagsmodellgrunnforhold/0.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:lv="https://skjema.atlas.vegvesen.no/r000/leveranse/1.0" xmlns:svvli="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/grunnlagsmodellgrunnforhold/0.1" version="0.1">
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/grunnlagsdata/0.1" schemaLocation="Grunnlagsdata.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/leveranse/1.0" schemaLocation="Leveranse.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0" schemaLocation="SVV_Landinfra.xsd"/>
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="CPTU" substitutionGroup="gmgrf:UndersoekelseElement" type="gmgrf:CPTUType"/>
+  <complexType name="CPTUType">
+    <complexContent>
+      <extension base="gmgrf:UndersoekelseElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="CPTUPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgrf:CPTU"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="GrunnforholdElement" substitutionGroup="svvli:VU053Feature" type="gmgrf:GrunnforholdElementType"/>
+  <complexType name="GrunnforholdElementType">
+    <complexContent>
+      <extension base="svvli:VU053FeatureType">
+        <sequence>
+          <element minOccurs="0" name="grunnlagsdataBrukt">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="gmgld:GrunnlagsdataBrukt"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GrunnforholdElementPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgrf:GrunnforholdElement"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="GrunnlagsmodellGrunnforhold" substitutionGroup="lv:Grunnlagsmodell" type="gmgrf:GrunnlagsmodellGrunnforholdType">
+    <annotation>
+      <documentation>Grunnlagsmodellen “Grunnforhold” skal vise informasjon om geologiske- og geotekniske forhold på og under terrengoverflate og vann i prosjektområdet.</documentation>
+    </annotation>
+  </element>
+  <complexType name="GrunnlagsmodellGrunnforholdType">
+    <complexContent>
+      <extension base="lv:GrunnlagsmodellType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="grunnforholdElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="gmgrf:GrunnforholdElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GrunnlagsmodellGrunnforholdPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgrf:GrunnlagsmodellGrunnforhold"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Loesmasse" substitutionGroup="gmgrf:GrunnforholdElement" type="gmgrf:LoesmasseType">
+    <annotation>
+      <documentation>areal bestående av en løsmassetype (jordart)</documentation>
+    </annotation>
+  </element>
+  <complexType name="LoesmasseType">
+    <complexContent>
+      <extension base="gmgrf:GrunnforholdElementType">
+        <sequence>
+          <element minOccurs="0" name="losmassetype" type="gml:CodeType">
+            <annotation>
+              <documentation>kvartærgeologiske løsmassetyper (jordartstyper)</documentation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="infiltrasjonEvne" type="gml:CodeType">
+            <annotation>
+              <documentation>løsmassenes egenskaper til å infiltrere og rense avløpsvann</documentation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Infiltrasjonevne.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="grunnvannPotensiale" type="gml:CodeType">
+            <annotation>
+              <documentation>løsmassenes potensiale til å inneholde grunnvannsressurser</documentation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GrunnvannPotensiale.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="LoesmassePropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgrf:Loesmasse"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Poretrykksmaaling" substitutionGroup="gmgrf:UndersoekelseElement" type="gmgrf:PoretrykksmaalingType"/>
+  <complexType name="PoretrykksmaalingType">
+    <complexContent>
+      <extension base="gmgrf:UndersoekelseElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="PoretrykksmaalingPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgrf:Poretrykksmaaling"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Proevegraving" substitutionGroup="gmgrf:UndersoekelseElement" type="gmgrf:ProevegravingType"/>
+  <complexType name="ProevegravingType">
+    <complexContent>
+      <extension base="gmgrf:UndersoekelseElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ProevegravingPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgrf:Proevegraving"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Proevetaking" substitutionGroup="gmgrf:UndersoekelseElement" type="gmgrf:ProevetakingType"/>
+  <complexType name="ProevetakingType">
+    <complexContent>
+      <extension base="gmgrf:UndersoekelseElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ProevetakingPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgrf:Proevetaking"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Sondering" substitutionGroup="gmgrf:UndersoekelseElement" type="gmgrf:SonderingType"/>
+  <complexType name="SonderingType">
+    <complexContent>
+      <extension base="gmgrf:UndersoekelseElementType">
+        <sequence>
+          <element name="stoppkode" type="string"/>
+          <element name="type" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_SonderingType.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="boringIBerg" type="boolean"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SonderingPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgrf:Sondering"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="UndersoekelseElement" substitutionGroup="gmgrf:GrunnforholdElement" type="gmgrf:UndersoekelseElementType"/>
+  <complexType name="UndersoekelseElementType">
+    <complexContent>
+      <extension base="gmgrf:GrunnforholdElementType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="punkt">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="gmgrf:UndersoekelsePunkt"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="pavisningsType" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolPavisningstype.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="antallPunkt" type="integer"/>
+          <element minOccurs="0" name="geologiskAlder" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="kvalitet" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_TemaKvalitet.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="dateringMetode" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_DateringMetode.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="temaJustering" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolTemajustering.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="UndersoekelseElementPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgrf:UndersoekelseElement"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="UndersoekelsePunkt" substitutionGroup="gml:AbstractFeature" type="gmgrf:UndersoekelsePunktType"/>
+  <complexType name="UndersoekelsePunktType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element minOccurs="0" name="dybdde" type="integer"/>
+          <element minOccurs="0" name="terrengkote" type="integer"/>
+          <element minOccurs="0" name="verdi" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolVerdivurdering.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="UndersoekelsePunktPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgrf:UndersoekelsePunkt"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Vingeboring" substitutionGroup="gmgrf:UndersoekelseElement" type="gmgrf:VingeboringType"/>
+  <complexType name="VingeboringType">
+    <complexContent>
+      <extension base="gmgrf:UndersoekelseElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="VingeboringPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgrf:Vingeboring"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>
