@@ -1,4 +1,4 @@
-tocTab[tocTab.length] = new Array("0.4.1.2.9.1:1", "", "Produkt-info", "EARoot/EA4/EA1/EA2/EA9/EA1/EA1174.htm", "175.png", "2698", "0", "", "Logical diagram0","{E287EC04-1517-4808-895A-A6EA1D74B2C1}");
-tocTab[tocTab.length] = new Array("0.4.1.2.9.1:2", "", "«dataType» Komponentdatering", "EARoot/EA4/EA1/EA2/EA9/EA1/EA1177.htm", "5.png", "E16201", "0", "", "Class0","{88BC142F-A1DD-43c3-916C-DD9F80D7AA6D}");
-tocTab[tocTab.length] = new Array("0.4.1.2.9.1:3", "", "«dataType» Produktinformasjon", "EARoot/EA4/EA1/EA2/EA9/EA1/EA1178.htm", "5.png", "E16200", "0", "", "Class0","{4D657B83-94B6-4340-BF44-EE15B6262DE6}");
-tocTab[tocTab.length] = new Array("0.4.1.2.9.1:4", "", "«codeList» Ledningsalderreferanse", "EARoot/EA4/EA1/EA2/EA9/EA1/EA1179.htm", "5.png", "E16199", "0", "", "Class0","{46D68DF5-527E-4434-80DA-E79F6C217DD5}");
+tocTab[tocTab.length] = new Array("0.4.1.2.9.1:1", "", "Produkt-info", "EARoot/EA4/EA1/EA2/EA9/EA1/EA1189.htm", "175.png", "2698", "0", "", "Logical diagram0","{E287EC04-1517-4808-895A-A6EA1D74B2C1}");
+tocTab[tocTab.length] = new Array("0.4.1.2.9.1:2", "", "«dataType» Komponentdatering", "EARoot/EA4/EA1/EA2/EA9/EA1/EA1192.htm", "5.png", "E16201", "0", "", "Class0","{88BC142F-A1DD-43c3-916C-DD9F80D7AA6D}");
+tocTab[tocTab.length] = new Array("0.4.1.2.9.1:3", "", "«dataType» Produktinformasjon", "EARoot/EA4/EA1/EA2/EA9/EA1/EA1193.htm", "5.png", "E16200", "0", "", "Class0","{4D657B83-94B6-4340-BF44-EE15B6262DE6}");
+tocTab[tocTab.length] = new Array("0.4.1.2.9.1:4", "", "«codeList» Ledningsalderreferanse", "EARoot/EA4/EA1/EA2/EA9/EA1/EA1194.htm", "5.png", "E16199", "0", "", "Class0","{46D68DF5-527E-4434-80DA-E79F6C217DD5}");

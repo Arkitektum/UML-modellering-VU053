@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>FagmodellRekkverk Kodeliste</title>
+<link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> FagmodellRekkverk Kodeliste </h1>
+			<!-- <img class="header_image" src="../../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../../EA3.htm">Vegprosjekt VU053 v1.0</a> / <a href="../../../EA439.htm">LeveranseVegprosjekt</a> / <a href="../../EA443.htm">Samordningsmodell</a> / <a href="../EA597.htm">Tverrfagligmodell</a> / <a href="EA1022.htm">FagmodellRekkverk</a> / <a href="EA1020.htm">FagmodellRekkverk Kodeliste</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<li><img src="../../../../../images/4.png" alt="Package"/> <a href="./EA1/EA1037.htm">Rekkverk</a></li>
+<li><img src="../../../../../images/4.png" alt="Package"/> <a href="./EA2/EA1053.htm">Rekkverksende</a></li>
+<li><img src="../../../../../images/4.png" alt="Package"/> <a href="./EA3/EA1061.htm">Støtpute</a></li>
+<li><img src="../../../../../images/175.png" alt="Diagram"/> <a href="EA1018.htm">FagmodellRekkverk</a></li>
+<li><img src="../../../../../images/175.png" alt="Diagram"/> <a href="EA1020.htm">FagmodellRekkverk Kodeliste</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1023.htm">FagmodellRekkverk</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1024.htm">FagmodellRekkverkElement</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1027.htm">RekkverkElementSamling</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1032.htm">Bevegelsesklasse</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1033.htm">Skaderisiko</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1034.htm">Utboeyningsklasse</a></li>
+</ul>
+
+					</td>
+					<td class="contentcell"><div class="PageBody">
+	<div class=diagram_image> 
+<img src="EA1021.png" usemap="#EA1021" border="0" />
+
+<MAP NAME="EA1021">
+<area shape="rect" coords="841,521,928,603" href="./EA1/EA1039.htm" target="_self">
+<area shape="rect" coords="264,323,343,486" href="EA1034.htm" target="_self">
+<area shape="rect" coords="63,382,152,480" href="EA1032.htm" target="_self">
+<area shape="rect" coords="172,395,234,467" href="EA1033.htm" target="_self">
+<area shape="rect" coords="1043,297,1143,460" href="./EA1/EA1050.htm" target="_self">
+<area shape="rect" coords="829,214,1025,507" href="./EA1/EA1048.htm" target="_self">
+<area shape="rect" coords="509,71,753,115" href="./EA1/EA1047.htm" target="_self">
+<area shape="rect" coords="1037,477,1148,557" href="./EA1/EA1046.htm" target="_self">
+<area shape="rect" coords="1033,93,1166,282" href="./EA1/EA1045.htm" target="_self">
+<area shape="rect" coords="829,80,1007,204" href="./EA1/EA1049.htm" target="_self">
+<area shape="rect" coords="320,67,416,182" href="./EA2/EA1057.htm" target="_self">
+<area shape="rect" coords="300,196,430,281" href="./EA2/EA1054.htm" target="_self">
+<area shape="rect" coords="40,47,274,262" href="./EA2/EA1058.htm" target="_self">
+<area shape="rect" coords="57,521,234,1009" href="./EA3/EA1065.htm" target="_self">
+<area shape="rect" coords="244,522,362,602" href="./EA3/EA1064.htm" target="_self">
+<area shape="rect" coords="253,618,353,742" href="./EA3/EA1066.htm" target="_self">
+<area shape="rect" coords="36,307,384,1090" href="EA1030.htm" target="_self">
+<area shape="rect" coords="10,10,792,499" href="EA1029.htm" target="_self">
+<area shape="rect" coords="496,48,1185,644" href="EA1026.htm" target="_self">
+</MAP>
+ </div>
+	<div class="ObjectTitle">FagmodellRekkverk Kodeliste : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">27.09.2022 13:25:15</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">27.12.2022 13:24:25</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">MatiasGonzalezTognoni</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{81E55B22-9513-4161-8412-32EE20C13E10}</td>
+		</tr>
+	</table>
+	
+</div>
+
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

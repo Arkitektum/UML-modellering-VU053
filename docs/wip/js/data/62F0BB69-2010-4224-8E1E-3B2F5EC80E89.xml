@@ -1,9 +1,6 @@
-tocTab[tocTab.length] = new Array("0.4.1.2.6.2:1", "", "VannHaandtering", "EARoot/EA4/EA1/EA2/EA6/EA2/EA963.htm", "175.png", "2683", "0", "", "Logical diagram0","{51B83984-E9B2-4253-A33B-FABCC13A5AF0}");
-tocTab[tocTab.length] = new Array("0.4.1.2.6.2:2", "", "«FeatureType» VannHaandtering", "EARoot/EA4/EA1/EA2/EA6/EA2/EA969.htm", "5.png", "E16031", "0", "", "Class0","{22D1899C-696D-4e3f-B60D-CA0E50666AD0}");
-tocTab[tocTab.length] = new Array("0.4.1.2.6.2:3", "", "«CodeList» VannHaandteringRetning", "EARoot/EA4/EA1/EA2/EA6/EA2/EA970.htm", "5.png", "E16030", "0", "", "Class0","{3C8FF921-12B8-4c33-9E98-C3DEADB30542}");
-tocTab[tocTab.length] = new Array("0.4.1.2.6.2:4", "", "«featureType» VannHaandteringElement", "EARoot/EA4/EA1/EA2/EA6/EA2/EA973.htm", "5.png", "E14913", "0", "", "Class0","{F0908503-0F5B-4869-A824-F06615DF2C0B}");
-tocTab[tocTab.length] = new Array("0.4.1.2.6.2.1", "1", "Kopling", "EARoot/EA4/EA1/EA2/EA6/EA2/EA1/EA976.htm", "4.png", "", "", "{A5590E49-0E4C-4143-82D3-EE33D8253084}", "Package");
-tocTab[tocTab.length] = new Array("0.4.1.2.6.2.2", "1", "Ledning", "EARoot/EA4/EA1/EA2/EA6/EA2/EA2/EA979.htm", "4.png", "", "", "{51192D56-9C0C-4150-BF3D-D7F0786489AB}", "Package");
-tocTab[tocTab.length] = new Array("0.4.1.2.6.2.3", "1", "Rensetiltak", "EARoot/EA4/EA1/EA2/EA6/EA2/EA3/EA982.htm", "4.png", "", "", "{A8E7CE03-8F5F-4020-B816-4C28C7C84C26}", "Package");
-tocTab[tocTab.length] = new Array("0.4.1.2.6.2.4", "1", "Aapen", "EARoot/EA4/EA1/EA2/EA6/EA2/EA4/EA986.htm", "4.png", "", "", "{436C9DD9-6AD7-4221-864A-78983D8F6C0B}", "Package");
-tocTab[tocTab.length] = new Array("0.4.1.2.6.2.5", "1", "Lukket", "EARoot/EA4/EA1/EA2/EA6/EA2/EA5/EA998.htm", "4.png", "", "", "{22D2DE99-3E91-4760-9F70-361EA3D01D79}", "Package");
+tocTab[tocTab.length] = new Array("0.4.1.2.6.2:1", "", "VannHaandtering", "EARoot/EA4/EA1/EA2/EA6/EA2/EA969.htm", "175.png", "2683", "0", "", "Logical diagram0","{51B83984-E9B2-4253-A33B-FABCC13A5AF0}");
+tocTab[tocTab.length] = new Array("0.4.1.2.6.2:2", "", "«CodeList» VannHaandteringRetning", "EARoot/EA4/EA1/EA2/EA6/EA2/EA973.htm", "5.png", "E16030", "0", "", "Class0","{3C8FF921-12B8-4c33-9E98-C3DEADB30542}");
+tocTab[tocTab.length] = new Array("0.4.1.2.6.2:3", "", "«featureType» VannHaandteringElement", "EARoot/EA4/EA1/EA2/EA6/EA2/EA976.htm", "5.png", "E14913", "0", "", "Class0","{F0908503-0F5B-4869-A824-F06615DF2C0B}");
+tocTab[tocTab.length] = new Array("0.4.1.2.6.2.1", "1", "Rensetiltak", "EARoot/EA4/EA1/EA2/EA6/EA2/EA1/EA979.htm", "4.png", "", "", "{A8E7CE03-8F5F-4020-B816-4C28C7C84C26}", "Package");
+tocTab[tocTab.length] = new Array("0.4.1.2.6.2.2", "1", "Aapen", "EARoot/EA4/EA1/EA2/EA6/EA2/EA2/EA983.htm", "4.png", "", "", "{436C9DD9-6AD7-4221-864A-78983D8F6C0B}", "Package");
+tocTab[tocTab.length] = new Array("0.4.1.2.6.2.3", "1", "Lukket", "EARoot/EA4/EA1/EA2/EA6/EA2/EA3/EA1009.htm", "4.png", "", "", "{22D2DE99-3E91-4760-9F70-361EA3D01D79}", "Package");
