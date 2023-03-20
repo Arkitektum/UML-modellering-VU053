@@ -1,0 +1,1346 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:fmva="https://skjema.atlas.vegvesen.no/r000/fagmodellvannogavloep/1.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:lv="https://skjema.atlas.vegvesen.no/r000/leveranse/1.0" xmlns:svvli="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/fagmodellvannogavloep/1.0" version="1.0">
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/leveranse/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/InternTesting/xsd_files/2023/v1_0_0/Leveranse.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/InternTesting/xsd_files/2023/v1_0_0/SVV_Landinfra.xsd"/>
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="Anboring" substitutionGroup="fmva:Roerdel" type="fmva:AnboringType"/>
+  <complexType name="AnboringType">
+    <complexContent>
+      <extension base="fmva:RoerdelType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AnboringPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Anboring"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Avloepsledning" substitutionGroup="fmva:LedningElement" type="fmva:AvloepsledningType"/>
+  <complexType name="AvloepsledningType">
+    <complexContent>
+      <extension base="fmva:LedningElementType">
+        <sequence>
+          <element minOccurs="0" name="bruk" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Avloepsledningsbruk.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AvloepsledningPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Avloepsledning"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Avloepsrensing" substitutionGroup="fmva:Nettstasjon" type="fmva:AvloepsrensingType"/>
+  <complexType name="AvloepsrensingType">
+    <complexContent>
+      <extension base="fmva:NettstasjonType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AvloepsrensingPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Avloepsrensing"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Basseng" substitutionGroup="fmva:Nettstasjon" type="fmva:BassengType"/>
+  <complexType name="BassengType">
+    <complexContent>
+      <extension base="fmva:NettstasjonType">
+        <sequence>
+          <element name="bassengtype" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Bassengtype.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BassengPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Basseng"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Bekkeinntak" substitutionGroup="fmva:KoplingElement" type="fmva:BekkeinntakType"/>
+  <complexType name="BekkeinntakType">
+    <complexContent>
+      <extension base="fmva:KoplingElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BekkeinntakPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Bekkeinntak"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Bend" substitutionGroup="fmva:Roerdel" type="fmva:BendType"/>
+  <complexType name="BendType">
+    <complexContent>
+      <extension base="fmva:RoerdelType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BendPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Bend"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Blindflens" substitutionGroup="fmva:Roerdel" type="fmva:BlindflensType"/>
+  <complexType name="BlindflensType">
+    <complexContent>
+      <extension base="fmva:RoerdelType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BlindflensPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Blindflens"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Brannventil" substitutionGroup="fmva:Ventil" type="fmva:BrannventilType"/>
+  <complexType name="BrannventilType">
+    <complexContent>
+      <extension base="fmva:VentilType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BrannventilPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Brannventil"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Enhetsoperasjon" substitutionGroup="fmva:Prosess" type="fmva:EnhetsoperasjonType"/>
+  <complexType name="EnhetsoperasjonType">
+    <complexContent>
+      <extension base="fmva:ProsessType">
+        <sequence>
+          <element minOccurs="0" name="prosesstype" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Enhetsoperasjonstype.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="EnhetsoperasjonPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Enhetsoperasjon"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="FagmodellVannOgAvloep" substitutionGroup="lv:Fagmodell" type="fmva:FagmodellVannOgAvloepType"/>
+  <complexType name="FagmodellVannOgAvloepType">
+    <complexContent>
+      <extension base="lv:FagmodellType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="elementSamling">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmva:VannOgAvloepElementSamling"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="vannOgAvloepElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmva:VannOgAvloepElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="FagmodellVannOgAvloepPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:FagmodellVannOgAvloep"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Fordroeyninsanlegg" substitutionGroup="fmva:Nettstasjon" type="fmva:FordroeyninsanleggType"/>
+  <complexType name="FordroeyninsanleggType">
+    <complexContent>
+      <extension base="fmva:NettstasjonType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="FordroeyninsanleggPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Fordroeyninsanlegg"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Grenroer" substitutionGroup="fmva:Roerdel" type="fmva:GrenroerType"/>
+  <complexType name="GrenroerType">
+    <complexContent>
+      <extension base="fmva:RoerdelType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GrenroerPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Grenroer"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Hydrant" substitutionGroup="fmva:Ventil" type="fmva:HydrantType"/>
+  <complexType name="HydrantType">
+    <complexContent>
+      <extension base="fmva:VentilType">
+        <sequence>
+          <element minOccurs="0" name="hydrantTilkobling" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_HydrantTilkobling.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="HydrantPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Hydrant"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Infiltrasjonsanlegg" substitutionGroup="fmva:Nettstasjon" type="fmva:InfiltrasjonsanleggType"/>
+  <complexType name="InfiltrasjonsanleggType">
+    <complexContent>
+      <extension base="fmva:NettstasjonType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="InfiltrasjonsanleggPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Infiltrasjonsanlegg"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Kammer" substitutionGroup="fmva:Prosess" type="fmva:KammerType"/>
+  <complexType name="KammerType">
+    <complexContent>
+      <extension base="fmva:ProsessType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="KammerPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Kammer"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Kopling" substitutionGroup="fmva:VannOgAvloepElementSamling" type="fmva:KoplingType"/>
+  <complexType name="KoplingType">
+    <complexContent>
+      <extension base="fmva:VannOgAvloepElementSamlingType">
+        <sequence>
+          <element minOccurs="0" name="trykklasse" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Trykklasse.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="koplingElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmva:KoplingElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="KoplingPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Kopling"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="KoplingElement" substitutionGroup="fmva:VannOgAvloepElement" type="fmva:KoplingElementType"/>
+  <complexType name="KoplingElementType">
+    <complexContent>
+      <extension base="fmva:VannOgAvloepElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="KoplingElementPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:KoplingElement"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Kryss" substitutionGroup="fmva:Roerdel" type="fmva:KryssType"/>
+  <complexType name="KryssType">
+    <complexContent>
+      <extension base="fmva:RoerdelType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="KryssPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Kryss"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Kum" substitutionGroup="fmva:KoplingElement" type="fmva:KumType"/>
+  <complexType name="KumType">
+    <complexContent>
+      <extension base="fmva:KoplingElementType">
+        <sequence>
+          <element minOccurs="0" name="kumtype" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Kumtype.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="utskiller" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Utskiller.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="KumPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Kum"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Ledning" substitutionGroup="fmva:VannOgAvloepElementSamling" type="fmva:LedningType"/>
+  <complexType name="LedningType">
+    <complexContent>
+      <extension base="fmva:VannOgAvloepElementSamlingType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="ledningElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmva:LedningElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="LedningPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Ledning"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="LedningElement" substitutionGroup="fmva:VannOgAvloepElement" type="fmva:LedningElementType"/>
+  <complexType name="LedningElementType">
+    <complexContent>
+      <extension base="fmva:VannOgAvloepElementType">
+        <sequence>
+          <element minOccurs="0" name="konstruksjon" type="fmva:RoerkonstruksjonPropertyType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Roerkonstruksjon.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="ledningsform" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Ledningsform.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="nettnivå" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Nettnivaa.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="rehabilitering" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_LedningRehab.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="trykkforhold" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Trykkforhold.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="trykklasse" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Trykklasse.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="funksjon" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Ledningsfunksjon.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="diameter" type="double">
+            <annotation>
+              <documentation>enhet [mm]</documentation>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="LedningElementPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:LedningElement"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Ledningslokk" substitutionGroup="fmva:Roerdel" type="fmva:LedningslokkType"/>
+  <complexType name="LedningslokkType">
+    <complexContent>
+      <extension base="fmva:RoerdelType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="LedningslokkPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Ledningslokk"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Luftventil" substitutionGroup="fmva:Ventil" type="fmva:LuftventilType"/>
+  <complexType name="LuftventilType">
+    <complexContent>
+      <extension base="fmva:VentilType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="LuftventilPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Luftventil"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Maaler" substitutionGroup="fmva:Prosess" type="fmva:MaalerType"/>
+  <complexType name="MaalerType">
+    <complexContent>
+      <extension base="fmva:ProsessType">
+        <sequence>
+          <element minOccurs="0" name="måletype" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Maalertype.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="MaalerPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Maaler"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Maalestasjon" substitutionGroup="fmva:Nettstasjon" type="fmva:MaalestasjonType"/>
+  <complexType name="MaalestasjonType">
+    <complexContent>
+      <extension base="fmva:NettstasjonType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="MaalestasjonPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Maalestasjon"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Mellongring" substitutionGroup="fmva:Roerdel" type="fmva:MellongringType"/>
+  <complexType name="MellongringType">
+    <complexContent>
+      <extension base="fmva:RoerdelType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="MellongringPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Mellongring"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Nettstasjon" substitutionGroup="fmva:KoplingElement" type="fmva:NettstasjonType"/>
+  <complexType name="NettstasjonType">
+    <complexContent>
+      <extension base="fmva:KoplingElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="NettstasjonPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Nettstasjon"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Overgang" substitutionGroup="fmva:Roerdel" type="fmva:OvergangType"/>
+  <complexType name="OvergangType">
+    <complexContent>
+      <extension base="fmva:RoerdelType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="OvergangPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Overgang"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Overloep" substitutionGroup="fmva:Prosess" type="fmva:OverloepType"/>
+  <complexType name="OverloepType">
+    <complexContent>
+      <extension base="fmva:ProsessType">
+        <sequence>
+          <element minOccurs="0" name="type" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Overloepstype.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="OverloepPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Overloep"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Overloepstasjon" substitutionGroup="fmva:Nettstasjon" type="fmva:OverloepstasjonType"/>
+  <complexType name="OverloepstasjonType">
+    <complexContent>
+      <extension base="fmva:NettstasjonType">
+        <sequence>
+          <element name="overløpstype" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Overloepstasjonstype.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="OverloepstasjonPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Overloepstasjon"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Overvannsledning" substitutionGroup="fmva:LedningElement" type="fmva:OvervannsledningType"/>
+  <complexType name="OvervannsledningType">
+    <complexContent>
+      <extension base="fmva:LedningElementType">
+        <sequence>
+          <element minOccurs="0" name="bruk" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Overvannsledningbruk.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="OvervannsledningPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Overvannsledning"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Paaslippskum" substitutionGroup="fmva:Nettstasjon" type="fmva:PaaslippskumType"/>
+  <complexType name="PaaslippskumType">
+    <complexContent>
+      <extension base="fmva:NettstasjonType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="PaaslippskumPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Paaslippskum"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="Prosess" substitutionGroup="fmva:KoplingElement" type="fmva:ProsessType"/>
+  <complexType abstract="true" name="ProsessType">
+    <complexContent>
+      <extension base="fmva:KoplingElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ProsessPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Prosess"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Pumper" substitutionGroup="fmva:Prosess" type="fmva:PumperType"/>
+  <complexType name="PumperType">
+    <complexContent>
+      <extension base="fmva:ProsessType">
+        <sequence>
+          <element minOccurs="0" name="pumpetype" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_pumpetype.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="PumperPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Pumper"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Pumpestasjon" substitutionGroup="fmva:Nettstasjon" type="fmva:PumpestasjonType"/>
+  <complexType name="PumpestasjonType">
+    <complexContent>
+      <extension base="fmva:NettstasjonType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="PumpestasjonPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Pumpestasjon"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Reduksjonskum" substitutionGroup="fmva:Nettstasjon" type="fmva:ReduksjonskumType"/>
+  <complexType name="ReduksjonskumType">
+    <complexContent>
+      <extension base="fmva:NettstasjonType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ReduksjonskumPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Reduksjonskum"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Reguleringsventil" substitutionGroup="fmva:Ventil" type="fmva:ReguleringsventilType"/>
+  <complexType name="ReguleringsventilType">
+    <complexContent>
+      <extension base="fmva:VentilType">
+        <sequence>
+          <element name="reguleringsventiltype" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Reguleringsventiltype.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ReguleringsventilPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Reguleringsventil"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Reparasjonsmuffe" substitutionGroup="fmva:Roerdel" type="fmva:ReparasjonsmuffeType"/>
+  <complexType name="ReparasjonsmuffeType">
+    <complexContent>
+      <extension base="fmva:RoerdelType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ReparasjonsmuffePropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Reparasjonsmuffe"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="Roerdel" substitutionGroup="fmva:KoplingElement" type="fmva:RoerdelType"/>
+  <complexType abstract="true" name="RoerdelType">
+    <complexContent>
+      <extension base="fmva:KoplingElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RoerdelPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Roerdel"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Roerkonstruksjon" substitutionGroup="gml:AbstractObject" type="fmva:RoerkonstruksjonType"/>
+  <complexType name="RoerkonstruksjonType">
+    <sequence>
+      <element minOccurs="0" name="materiale" type="gml:CodeType">
+        <annotation>
+          <appinfo>
+            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_RoermaterialeAlle.xml</defaultCodeSpace>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="skjøtemetode" type="gml:CodeType">
+        <annotation>
+          <appinfo>
+            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_SkjoetemetodeAlle.xml</defaultCodeSpace>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="støpjernsklasse" type="gml:CodeType">
+        <annotation>
+          <documentation>skal bare brukes på støpjernsrør</documentation>
+          <appinfo>
+            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Stoepjernsroerklasse.xml</defaultCodeSpace>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="sdrVerdi" type="gml:CodeType">
+        <annotation>
+          <appinfo>
+            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_SDR.xml</defaultCodeSpace>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="ringstivhet" type="gml:CodeType">
+        <annotation>
+          <appinfo>
+            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Ringstivhet.xml</defaultCodeSpace>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="innvendigBeskyttelse" type="gml:CodeType">
+        <annotation>
+          <documentation>brukes bare på betongrør</documentation>
+          <appinfo>
+            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_InnvendingBeskyttelse.xml</defaultCodeSpace>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="utvendigBeskyttelse" type="gml:CodeType">
+        <annotation>
+          <documentation>brukes bare på betongrør</documentation>
+          <appinfo>
+            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_UtvendigBeskyttelse.xml</defaultCodeSpace>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="oppbygging" type="gml:CodeType">
+        <annotation>
+          <documentation>forklaring på hvordan røret er bygget opp</documentation>
+          <appinfo>
+            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Roeroppbygging.xml</defaultCodeSpace>
+          </appinfo>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="RoerkonstruksjonPropertyType">
+    <sequence>
+      <element ref="fmva:Roerkonstruksjon"/>
+    </sequence>
+  </complexType>
+  <simpleType name="RoermaterialeBetongroerType">
+    <union memberTypes="fmva:RoermaterialeBetongroerEnumerationType fmva:RoermaterialeBetongroerOtherType"/>
+  </simpleType>
+  <simpleType name="RoermaterialeBetongroerEnumerationType">
+    <restriction base="string">
+      <enumeration value="armertBetongrør"/>
+      <enumeration value="uarmertBetongrør"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="RoermaterialeBetongroerOtherType">
+    <restriction base="string">
+      <pattern value="other: \w{2,}"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="RoermaterialeFellesType">
+    <union memberTypes="fmva:RoermaterialeFellesEnumerationType fmva:RoermaterialeFellesOtherType"/>
+  </simpleType>
+  <simpleType name="RoermaterialeFellesEnumerationType">
+    <restriction base="string">
+      <enumeration value="støpjern"/>
+      <enumeration value="PE"/>
+      <enumeration value="PP"/>
+      <enumeration value="PVC"/>
+      <enumeration value="asbest"/>
+      <enumeration value="betongrør"/>
+      <enumeration value="stål"/>
+      <enumeration value="kobber"/>
+      <enumeration value="fjell">
+        <annotation>
+          <documentation>Råsprengt tunnel</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="betongkanal"/>
+      <enumeration value="GRP">
+        <annotation>
+          <documentation>glassfiberarmert umettet polyester eller på engelsk Glassfibre reinforced polyester</documentation>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <simpleType name="RoermaterialeFellesOtherType">
+    <restriction base="string">
+      <pattern value="other: \w{2,}"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="RoermaterialeKobberType">
+    <union memberTypes="fmva:RoermaterialeKobberEnumerationType fmva:RoermaterialeKobberOtherType"/>
+  </simpleType>
+  <simpleType name="RoermaterialeKobberEnumerationType">
+    <restriction base="string">
+      <enumeration value="korrugertKobber"/>
+      <enumeration value="glattKobber"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="RoermaterialeKobberOtherType">
+    <restriction base="string">
+      <pattern value="other: \w{2,}"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="RoermaterialePEType">
+    <union memberTypes="fmva:RoermaterialePEEnumerationType fmva:RoermaterialePEOtherType"/>
+  </simpleType>
+  <simpleType name="RoermaterialePEEnumerationType">
+    <restriction base="string">
+      <enumeration value="PEL"/>
+      <enumeration value="PEM"/>
+      <enumeration value="PEH"/>
+      <enumeration value="PE32"/>
+      <enumeration value="PE50"/>
+      <enumeration value="PE80"/>
+      <enumeration value="PE100"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="RoermaterialePEOtherType">
+    <restriction base="string">
+      <pattern value="other: \w{2,}"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="RoermaterialeStaalType">
+    <union memberTypes="fmva:RoermaterialeStaalEnumerationType fmva:RoermaterialeStaalOtherType"/>
+  </simpleType>
+  <simpleType name="RoermaterialeStaalEnumerationType">
+    <restriction base="string">
+      <enumeration value="legertStål"/>
+      <enumeration value="rustfrittStål"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="RoermaterialeStaalOtherType">
+    <restriction base="string">
+      <pattern value="other: \w{2,}"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="RoermaterialeStoepejernType">
+    <union memberTypes="fmva:RoermaterialeStoepejernEnumerationType fmva:RoermaterialeStoepejernOtherType"/>
+  </simpleType>
+  <simpleType name="RoermaterialeStoepejernEnumerationType">
+    <restriction base="string">
+      <enumeration value="gråttStøpjern"/>
+      <enumeration value="duktiltStøpjern"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="RoermaterialeStoepejernOtherType">
+    <restriction base="string">
+      <pattern value="other: \w{2,}"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="SkjoetemetodeBetongType">
+    <union memberTypes="fmva:SkjoetemetodeBetongEnumerationType fmva:SkjoetemetodeBetongOtherType"/>
+  </simpleType>
+  <simpleType name="SkjoetemetodeBetongEnumerationType">
+    <restriction base="string">
+      <enumeration value="muffeskjøt"/>
+      <enumeration value="muffeskjøtMedInnstøptPakning">
+        <annotation>
+          <documentation>Muffeskjøt med innstøpt pakning</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="falsMedPakning">
+        <annotation>
+          <documentation>Fals med pakning</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="fals"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="SkjoetemetodeBetongOtherType">
+    <restriction base="string">
+      <pattern value="other: \w{2,}"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="SkjoetemetodeFellesType">
+    <union memberTypes="fmva:SkjoetemetodeFellesEnumerationType fmva:SkjoetemetodeFellesOtherType"/>
+  </simpleType>
+  <simpleType name="SkjoetemetodeFellesEnumerationType">
+    <restriction base="string">
+      <enumeration value="sveis"/>
+      <enumeration value="skrumuffe"/>
+      <enumeration value="flens"/>
+      <enumeration value="muffeskjøt"/>
+      <enumeration value="speilsveis"/>
+      <enumeration value="elMuffe"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="SkjoetemetodeFellesOtherType">
+    <restriction base="string">
+      <pattern value="other: \w{2,}"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="SkjoetemetodeKobberType">
+    <union memberTypes="fmva:SkjoetemetodeKobberEnumerationType fmva:SkjoetemetodeKobberOtherType"/>
+  </simpleType>
+  <simpleType name="SkjoetemetodeKobberEnumerationType">
+    <restriction base="string">
+      <enumeration value="sveis"/>
+      <enumeration value="muffe"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="SkjoetemetodeKobberOtherType">
+    <restriction base="string">
+      <pattern value="other: \w{2,}"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="SkjoetemetodePEType">
+    <union memberTypes="fmva:SkjoetemetodePEEnumerationType fmva:SkjoetemetodePEOtherType"/>
+  </simpleType>
+  <simpleType name="SkjoetemetodePEEnumerationType">
+    <restriction base="string">
+      <enumeration value="speilsveis"/>
+      <enumeration value="el-muffe"/>
+      <enumeration value="skrumuffe"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="SkjoetemetodePEOtherType">
+    <restriction base="string">
+      <pattern value="other: \w{2,}"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="SkjoetemetodePPType">
+    <union memberTypes="fmva:SkjoetemetodePPEnumerationType fmva:SkjoetemetodePPOtherType"/>
+  </simpleType>
+  <simpleType name="SkjoetemetodePPEnumerationType">
+    <restriction base="string">
+      <enumeration value="speilsveis"/>
+      <enumeration value="el-muffe"/>
+      <enumeration value="muffeskjøt"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="SkjoetemetodePPOtherType">
+    <restriction base="string">
+      <pattern value="other: \w{2,}"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="SkjoetemetodePVCType">
+    <union memberTypes="fmva:SkjoetemetodePVCEnumerationType fmva:SkjoetemetodePVCOtherType"/>
+  </simpleType>
+  <simpleType name="SkjoetemetodePVCEnumerationType">
+    <restriction base="string">
+      <enumeration value="innskyvningsmuffe"/>
+      <enumeration value="muffeskjøt"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="SkjoetemetodePVCOtherType">
+    <restriction base="string">
+      <pattern value="other: \w{2,}"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="SkjoetemetodeStaalType">
+    <union memberTypes="fmva:SkjoetemetodeStaalEnumerationType fmva:SkjoetemetodeStaalOtherType"/>
+  </simpleType>
+  <simpleType name="SkjoetemetodeStaalEnumerationType">
+    <restriction base="string">
+      <enumeration value="sveis"/>
+      <enumeration value="flens"/>
+      <enumeration value="muffeskjøtStrekkfast"/>
+      <enumeration value="muffeskjøtIkkeStrekkfast"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="SkjoetemetodeStaalOtherType">
+    <restriction base="string">
+      <pattern value="other: \w{2,}"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="SkjoetemetodeStoepjernType">
+    <union memberTypes="fmva:SkjoetemetodeStoepjernEnumerationType fmva:SkjoetemetodeStoepjernOtherType"/>
+  </simpleType>
+  <simpleType name="SkjoetemetodeStoepjernEnumerationType">
+    <restriction base="string">
+      <enumeration value="muffeStrekkkfastMedLåsering">
+        <annotation>
+          <documentation>Muffe stekkkfast med låsering</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="muffeStrekkkfastMedGummipakningOgMetallforankring">
+        <annotation>
+          <documentation>Muffe stekkkfast med gummipakning og metallforankring</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="muffeIkkeStrekkfast"/>
+      <enumeration value="boltmuffe"/>
+      <enumeration value="skrumuffe"/>
+      <enumeration value="blymuffe"/>
+      <enumeration value="flens"/>
+      <enumeration value="sveis"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="SkjoetemetodeStoepjernOtherType">
+    <restriction base="string">
+      <pattern value="other: \w{2,}"/>
+    </restriction>
+  </simpleType>
+  <element name="Stengeventil" substitutionGroup="fmva:Ventil" type="fmva:StengeventilType"/>
+  <complexType name="StengeventilType">
+    <complexContent>
+      <extension base="fmva:VentilType">
+        <sequence>
+          <element minOccurs="0" name="stengeventiltype" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Stengeventiltype.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="betjening" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Ventilbetjening.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="StengeventilPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Stengeventil"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Tilbakeslagsventil" substitutionGroup="fmva:Ventil" type="fmva:TilbakeslagsventilType"/>
+  <complexType name="TilbakeslagsventilType">
+    <complexContent>
+      <extension base="fmva:VentilType">
+        <sequence>
+          <element minOccurs="0" name="tilbakeventiltype" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Tilbakeslagsventiltype.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="TilbakeslagsventilPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Tilbakeslagsventil"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Ujevningsbasseng" substitutionGroup="fmva:Nettstasjon" type="fmva:UjevningsbassengType"/>
+  <complexType name="UjevningsbassengType">
+    <complexContent>
+      <extension base="fmva:NettstasjonType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="UjevningsbassengPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Ujevningsbasseng"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="UtloepUtslipp" substitutionGroup="fmva:KoplingElement" type="fmva:UtloepUtslippType"/>
+  <complexType name="UtloepUtslippType">
+    <complexContent>
+      <extension base="fmva:KoplingElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="UtloepUtslippPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:UtloepUtslipp"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Uttak" substitutionGroup="fmva:KoplingElement" type="fmva:UttakType"/>
+  <complexType name="UttakType">
+    <complexContent>
+      <extension base="fmva:KoplingElementType">
+        <sequence>
+          <element minOccurs="0" name="uttakstype" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Uttakstype.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="UttakPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Uttak"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="VannOgAvloepElement" substitutionGroup="svvli:VU053Feature" type="fmva:VannOgAvloepElementType"/>
+  <complexType name="VannOgAvloepElementType">
+    <complexContent>
+      <extension base="svvli:VU053FeatureType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="VannOgAvloepElementPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:VannOgAvloepElement"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="VannOgAvloepElementSamling" substitutionGroup="gml:AbstractFeature" type="fmva:VannOgAvloepElementSamlingType"/>
+  <complexType abstract="true" name="VannOgAvloepElementSamlingType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="VannOgAvloepElementSamlingPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:VannOgAvloepElementSamling"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Vannbehandling" substitutionGroup="fmva:Nettstasjon" type="fmva:VannbehandlingType"/>
+  <complexType name="VannbehandlingType">
+    <complexContent>
+      <extension base="fmva:NettstasjonType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="VannbehandlingPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Vannbehandling"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Vanninntak" substitutionGroup="fmva:KoplingElement" type="fmva:VanninntakType"/>
+  <complexType name="VanninntakType">
+    <complexContent>
+      <extension base="fmva:KoplingElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="VanninntakPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Vanninntak"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Vannledning" substitutionGroup="fmva:LedningElement" type="fmva:VannledningType"/>
+  <complexType name="VannledningType">
+    <complexContent>
+      <extension base="fmva:LedningElementType">
+        <sequence>
+          <element minOccurs="0" name="bruk" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Vannledningsbruk.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="VannledningPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Vannledning"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="Ventil" substitutionGroup="fmva:KoplingElement" type="fmva:VentilType"/>
+  <complexType abstract="true" name="VentilType">
+    <complexContent>
+      <extension base="fmva:KoplingElementType">
+        <sequence>
+          <element minOccurs="0" name="tilkobling" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_VentilTilkobling.xml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="VentilPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Ventil"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Ventilkammer" substitutionGroup="fmva:Nettstasjon" type="fmva:VentilkammerType"/>
+  <complexType name="VentilkammerType">
+    <complexContent>
+      <extension base="fmva:NettstasjonType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="VentilkammerPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmva:Ventilkammer"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>

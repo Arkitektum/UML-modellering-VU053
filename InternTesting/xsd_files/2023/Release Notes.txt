@@ -1,0 +1,14 @@
+
+v1_0_0
+Grunnlagsmodell 
+* Terreng
+	* Xsd from terreng modell
+	* Kodeliste
+* Grunnforhold
+	* Oppdatering av hovedstruktur
+	* Nye Kodelister i GML format
+Fagmodell
+	* Vann og Avløp (VA)
+		* Oppdaterte kodelister, nå bruker vi GML-Dictionary kodeliste, alle kodelister som tilhører VA starter med "fmva_" i Github 
+		* SchemaChanges
+			* Relasjunter i VannOgAvloepElementSamling
