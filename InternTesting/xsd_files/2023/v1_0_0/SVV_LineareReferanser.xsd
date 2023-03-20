@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:svvge="https://skjema.atlas.vegvesen.no/r000/sosigenerelleegenskaper/1.0" xmlns:svvlr="https://skjema.atlas.vegvesen.no/r000/svvlinearereferanser/1.0" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/svvlinearereferanser/1.0" version="1.0">
   <import namespace="http://www.interactive-instruments.de/ShapeChange/AppInfo" schemaLocation="http://shapechange.net/resources/schema/ShapeChangeAppinfo.xsd"/>
   <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
-  <import namespace="https://skjema.atlas.vegvesen.no/r000/sosigenerelleegenskaper/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/InternTesting/xsd_files/2023/v1_0_0/SOSI_GenerelleEgenskaper.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/sosigenerelleegenskaper/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/InternTesting/xsd_files/2023/v1_0_0/SOSI_GenerelleEgenskaper.xsd"/>
   <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
   <element name="LinearElement" substitutionGroup="gml:AbstractFeature" type="svvlr:LinearElementType"/>
   <complexType name="LinearElementType">

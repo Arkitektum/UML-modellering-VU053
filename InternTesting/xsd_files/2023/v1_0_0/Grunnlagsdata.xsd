@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:fm="https://skjema.atlas.vegvesen.no/r000/fellesmoduler/1.0" xmlns:gmgld="https://skjema.atlas.vegvesen.no/r000/grunnlagsdata/0.1" xmlns:gml="http://www.opengis.net/gml/3.2" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/grunnlagsdata/0.1" version="0.1">
   <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
-  <import namespace="https://skjema.atlas.vegvesen.no/r000/fellesmoduler/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/InternTesting/xsd_files/2023/v1_0_0/Fellesmoduler.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/fellesmoduler/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/InternTesting/xsd_files/2023/v1_0_0/Fellesmoduler.xsd"/>
   <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
   <element name="Datakilde" substitutionGroup="gml:AbstractObject" type="gmgld:DatakildeType"/>
   <complexType name="DatakildeType">

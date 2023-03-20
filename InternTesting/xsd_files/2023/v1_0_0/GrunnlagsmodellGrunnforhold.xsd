@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gmgld="https://skjema.atlas.vegvesen.no/r000/grunnlagsdata/0.1" xmlns:gmgrf="https://skjema.atlas.vegvesen.no/r000/grunnlagsmodellgrunnforhold/0.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:lv="https://skjema.atlas.vegvesen.no/r000/leveranse/1.0" xmlns:svvli="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/grunnlagsmodellgrunnforhold/0.1" version="0.1">
   <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
-  <import namespace="https://skjema.atlas.vegvesen.no/r000/grunnlagsdata/0.1" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/InternTesting/xsd_files/2023/v1_0_0/Grunnlagsdata.xsd"/>
-  <import namespace="https://skjema.atlas.vegvesen.no/r000/leveranse/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/InternTesting/xsd_files/2023/v1_0_0/Leveranse.xsd"/>
-  <import namespace="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/InternTesting/xsd_files/2023/v1_0_0/SVV_Landinfra.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/grunnlagsdata/0.1" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/InternTesting/xsd_files/2023/v1_0_0/Grunnlagsdata.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/leveranse/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/InternTesting/xsd_files/2023/v1_0_0/Leveranse.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/InternTesting/xsd_files/2023/v1_0_0/SVV_Landinfra.xsd"/>
   <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
   <element name="CPTU" substitutionGroup="gmgrf:UndersoekelseElement" type="gmgrf:CPTUType"/>
   <complexType name="CPTUType">
