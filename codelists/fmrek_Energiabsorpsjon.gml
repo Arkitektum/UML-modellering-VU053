@@ -7,18 +7,18 @@
     </gml:GenericMetaData>
   </gml:metaDataProperty>
   <gml:description></gml:description>
-  <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_Energiabsorpsjon.gml">Energiabsorpsjon</gml:identifier>
+  <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Energiabsorpsjon.gml">Energiabsorpsjon</gml:identifier>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="Energiabsorpsjon.energiabsorberende">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_Energiabsorpsjon.gml#Energiabsorpsjon.energiabsorberende">energiabsorberende</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Energiabsorpsjon.gml#Energiabsorpsjon.energiabsorberende">energiabsorberende</gml:identifier>
       <gml:name>energiabsorberende</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="Energiabsorpsjon.ikkeEnergiabsorberende">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_Energiabsorpsjon.gml#Energiabsorpsjon.ikkeEnergiabsorberende">ikkeEnergiabsorberende</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Energiabsorpsjon.gml#Energiabsorpsjon.ikkeEnergiabsorberende">ikkeEnergiabsorberende</gml:identifier>
       <gml:name>ikkeEnergiabsorberende</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

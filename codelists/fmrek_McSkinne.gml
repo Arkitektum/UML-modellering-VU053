@@ -9,18 +9,18 @@
     </gml:GenericMetaData>
   </gml:metaDataProperty>
   <gml:description></gml:description>
-  <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_McSkinne.gml">McSkinne</gml:identifier>
+  <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_McSkinne.gml">McSkinne</gml:identifier>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="McSkinne.13811">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_McSkinne.gml#McSkinne.13811">13811</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_McSkinne.gml#McSkinne.13811">13811</gml:identifier>
       <gml:name>Ja</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="McSkinne.13812">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_McSkinne.gml#McSkinne.13812">13812</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_McSkinne.gml#McSkinne.13812">13812</gml:identifier>
       <gml:name>Nei</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

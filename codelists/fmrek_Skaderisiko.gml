@@ -9,18 +9,18 @@
     </gml:GenericMetaData>
   </gml:metaDataProperty>
   <gml:description>Angir skaderisiko.</gml:description>
-  <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_Skaderisiko.gmlhttps://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_Skaderisiko.gml">Skaderisiko</gml:identifier>
+  <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Skaderisiko.gmlhttps://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Skaderisiko.gml">Skaderisiko</gml:identifier>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="Skaderisiko.5717">
       <gml:description>A</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_Skaderisiko.gmlhttps://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_Skaderisiko.gml#Skaderisiko.5717">5717</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Skaderisiko.gmlhttps://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Skaderisiko.gml#Skaderisiko.5717">5717</gml:identifier>
       <gml:name>A</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="Skaderisiko.5718">
       <gml:description>B</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_Skaderisiko.gmlhttps://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_Skaderisiko.gml#Skaderisiko.5718">5718</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Skaderisiko.gmlhttps://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Skaderisiko.gml#Skaderisiko.5718">5718</gml:identifier>
       <gml:name>B</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
