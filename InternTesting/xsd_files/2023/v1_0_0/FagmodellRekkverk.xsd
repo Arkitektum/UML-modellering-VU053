@@ -12,7 +12,8 @@
           <element minOccurs="0" name="plassering" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_PlasseringPaaBru.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_PlasseringPaaBru.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_PlasseringPaaBru.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -98,17 +99,35 @@
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
-  <element name="Rekkverk" substitutionGroup="fmrek:RekkverkElementSamling" type="fmrek:RekkverkType">
-    <annotation>
-      <appinfo>
-        <sc:taggedValue tag="NVDB_ID">5</sc:taggedValue>
-      </appinfo>
-    </annotation>
-  </element>
+  <element name="Rekkverk" substitutionGroup="fmrek:RekkverkElementSamling" type="fmrek:RekkverkType"/>
   <complexType name="RekkverkType">
     <complexContent>
       <extension base="fmrek:RekkverkElementSamlingType">
         <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="støteputeElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmrek:StoeteputeElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="rekkverksendeElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmrek:RekkverksendeElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
           <element maxOccurs="unbounded" minOccurs="0" name="rekverkElement">
             <complexType>
               <complexContent>
@@ -137,38 +156,42 @@
     <complexContent>
       <extension base="fmrek:FagmodellRekkverkElementType">
         <sequence>
-          <element name="stolpeavstand" type="gml:CodeType">
+          <element minOccurs="0" name="stolpeavstand" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Stolpeavstand.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_Stolpeavstand.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_Stolpeavstand.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
-          <element name="lengde" type="double"/>
+          <element minOccurs="0" name="lengde" type="double"/>
           <element minOccurs="0" name="høyde" type="double"/>
-          <element name="rekkverktype" type="gml:CodeType">
+          <element minOccurs="0" name="rekkverkstype" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Rekkverkstype.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_Rekkverkstype.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_Rekkverkstype.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
-          <element minOccurs="0" name="sikkerhetavstand" type="double"/>
-          <element name="bruksområde" type="gml:CodeType">
+          <element minOccurs="0" name="sikkerhetsavstand" type="double"/>
+          <element minOccurs="0" name="bruksområde" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Bruksomraade.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_Bruksomraade.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_Bruksomraade.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
-          <element name="produktnavnTypegodkjenning" type="gml:CodeType">
+          <element minOccurs="0" name="produktnavnTypegodkjenning" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_ProduktnavnTypegodkjenning.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_ProduktnavnTypegodkjenning.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
-          <element name="etableringsår" type="dateTime"/>
+          <element minOccurs="0" name="etableringsår" type="dateTime"/>
         </sequence>
       </extension>
     </complexContent>
@@ -180,10 +203,10 @@
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
-  <element name="RekkverkElementSamling" substitutionGroup="gml:AbstractFeature" type="fmrek:RekkverkElementSamlingType"/>
+  <element name="RekkverkElementSamling" substitutionGroup="svvli:VU053ElementSamling" type="fmrek:RekkverkElementSamlingType"/>
   <complexType name="RekkverkElementSamlingType">
     <complexContent>
-      <extension base="gml:AbstractFeatureType">
+      <extension base="svvli:VU053ElementSamlingType">
         <sequence/>
       </extension>
     </complexContent>
@@ -191,34 +214,6 @@
   <complexType name="RekkverkElementSamlingPropertyType">
     <sequence minOccurs="0">
       <element ref="fmrek:RekkverkElementSamling"/>
-    </sequence>
-    <attributeGroup ref="gml:AssociationAttributeGroup"/>
-    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
-  </complexType>
-  <element name="Rekkverksende" substitutionGroup="fmrek:RekkverkElementSamling" type="fmrek:RekkverksendeType"/>
-  <complexType name="RekkverksendeType">
-    <complexContent>
-      <extension base="fmrek:RekkverkElementSamlingType">
-        <sequence>
-          <element maxOccurs="unbounded" minOccurs="0" name="rekkverksendeElement">
-            <complexType>
-              <complexContent>
-                <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="fmrek:RekkverksendeElement"/>
-                  </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
-                </extension>
-              </complexContent>
-            </complexType>
-          </element>
-        </sequence>
-      </extension>
-    </complexContent>
-  </complexType>
-  <complexType name="RekkverksendePropertyType">
-    <sequence minOccurs="0">
-      <element ref="fmrek:Rekkverksende"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
@@ -231,7 +226,8 @@
           <element name="type" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_TypeRekkverksende.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_TypeRekkverksende.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_TypeRekkverksende.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -239,42 +235,48 @@
           <element minOccurs="0" name="produktnavnTypegodkjenning" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenning.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_ProduktnavnTypegodkjenning.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_ProduktnavnTypegodkjenning.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
           <element minOccurs="0" name="sikkerhetsklasse" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_SikkerhetsklasseType.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_SikkerhetsklasseType.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_SikkerhetsklasseType.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
           <element minOccurs="0" name="energiabsorpsjon" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Energiabsorpsjon.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_Energiabsorpsjon.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_Energiabsorpsjon.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
           <element minOccurs="0" name="bevegelsesklasse" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Bevegelsesklasse.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_Bevegelsesklasse.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_Bevegelsesklasse.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
           <element minOccurs="0" name="skaderisiko" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Skaderisiko.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_Skaderisiko.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_Skaderisiko.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
           <element minOccurs="0" name="utbøyningsklasse" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Utboeyningsklasse.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_Utboeyningsklasse.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_Utboeyningsklasse.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -297,14 +299,16 @@
           <element minOccurs="0" name="skinneutrustning" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Skinneutrustning.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_Skinneutrustning.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_Skinneutrustning.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
-          <element minOccurs="0" name="mcSkine" type="gml:CodeType">
+          <element minOccurs="0" name="mcSkinne" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_McSkine.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_McSkinne.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_McSkinne.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -327,42 +331,48 @@
           <element minOccurs="0" name="produktnavnTypegodkjenning" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenningStoetpute.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_ProduktnavnTypegodkjenningStoetpute.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_ProduktnavnTypegodkjenningStoetpute.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
           <element minOccurs="0" name="sikkerhetsklasse" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Sikkerhetsklasse.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_Sikkerhetsklasse.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_Sikkerhetsklasse.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
           <element minOccurs="0" name="avledningsevne" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Avledningsevne.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_Avledningsevne.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_Avledningsevne.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
           <element minOccurs="0" name="bevegelsesklasse" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Bevegelsesklasse.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_Bevegelsesklasse.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_Bevegelsesklasse.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
           <element minOccurs="0" name="utbøyningsklasse" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Utboeyningsklasse.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_Utboeyningsklasse.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_Utboeyningsklasse.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
           <element minOccurs="0" name="skaderisiko" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Skaderisiko.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_Skaderisiko.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/gmlCodeList/fmrek_Skaderisiko.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -389,40 +399,6 @@
   <complexType name="StolpePropertyType">
     <sequence minOccurs="0">
       <element ref="fmrek:Stolpe"/>
-    </sequence>
-    <attributeGroup ref="gml:AssociationAttributeGroup"/>
-    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
-  </complexType>
-  <element name="Støtpute" substitutionGroup="fmrek:RekkverkElementSamling" type="fmrek:StøtputeType">
-    <annotation>
-      <appinfo>
-        <sc:taggedValue tag="NVDB_ID">542</sc:taggedValue>
-      </appinfo>
-    </annotation>
-  </element>
-  <complexType name="StøtputeType">
-    <complexContent>
-      <extension base="fmrek:RekkverkElementSamlingType">
-        <sequence>
-          <element maxOccurs="unbounded" minOccurs="0" name="støteputeElement">
-            <complexType>
-              <complexContent>
-                <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="fmrek:StoeteputeElement"/>
-                  </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
-                </extension>
-              </complexContent>
-            </complexType>
-          </element>
-        </sequence>
-      </extension>
-    </complexContent>
-  </complexType>
-  <complexType name="StøtputePropertyType">
-    <sequence minOccurs="0">
-      <element ref="fmrek:Støtpute"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>

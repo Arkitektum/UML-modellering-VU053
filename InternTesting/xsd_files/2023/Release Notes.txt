@@ -1,6 +1,9 @@
 
 v1_0_0
-Grunnlagsmodell 
+Main Structure
+	* VU053 LandInfra
+		* ny feature "VU053ElementSamling", har et attributt for å lage en liste for de forskjellige systemer
+Grunnlagsmodell
 * Terreng
 	* Xsd from terreng modell
 	* Kodeliste
@@ -12,3 +15,8 @@ Fagmodell
 		* Oppdaterte kodelister, nå bruker vi GML-Dictionary kodeliste, alle kodelister som tilhører VA starter med "fmva_" i Github 
 		* SchemaChanges
 			* Relasjunter i VannOgAvloepElementSamling
+		* Endre type til class "LedningRehab"
+	* Rekkverk
+	* Oppdaterte kodelister, nå bruker vi GML-Dictionary kodeliste, alle kodelister som tilhører VA starter med "fmva_" i Github 
+		* SchemaChanges
+			*Relasjunter i "RekkverkElementSamling" til "Rekkverk"
