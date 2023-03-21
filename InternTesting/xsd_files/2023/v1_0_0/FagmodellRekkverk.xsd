@@ -46,7 +46,7 @@
               </complexContent>
             </complexType>
           </element>
-          <element name="rekkverkElementSamling">
+          <element maxOccurs="unbounded" minOccurs="0" name="rekkverkElementSamling">
             <complexType>
               <complexContent>
                 <extension base="gml:AbstractFeatureMemberType">
@@ -203,8 +203,8 @@
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
-  <element name="RekkverkElementSamling" substitutionGroup="svvli:VU053ElementSamling" type="fmrek:RekkverkElementSamlingType"/>
-  <complexType name="RekkverkElementSamlingType">
+  <element abstract="true" name="RekkverkElementSamling" substitutionGroup="svvli:VU053ElementSamling" type="fmrek:RekkverkElementSamlingType"/>
+  <complexType abstract="true" name="RekkverkElementSamlingType">
     <complexContent>
       <extension base="svvli:VU053ElementSamlingType">
         <sequence/>
