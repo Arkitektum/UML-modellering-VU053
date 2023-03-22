@@ -3,7 +3,7 @@
   <gml:metaDataProperty>
     <gml:GenericMetaData>
       <status>submitted</status>
-      <lastUpdated>2023-03-21T10:43:07</lastUpdated>
+      <lastUpdated>2023-03-22T10:38:03</lastUpdated>
       <kilde>NVDB</kilde>
       <referense>1089</referense>
     </gml:GenericMetaData>

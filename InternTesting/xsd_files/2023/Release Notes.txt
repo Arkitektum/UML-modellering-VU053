@@ -16,7 +16,9 @@ Fagmodell
 		* SchemaChanges
 			* Relasjunter i VannOgAvloepElementSamling
 		* Endre type til class "LedningRehab"
+		* Ny Feature 'Kumlokk'
 	* Rekkverk
-	* Oppdaterte kodelister, nå bruker vi GML-Dictionary kodeliste, alle kodelister som tilhører VA starter med "fmva_" i Github 
+		* Oppdaterte kodelister, nå bruker vi GML-Dictionary kodeliste, alle kodelister som tilhører Rekkverk starter med "fmrek_" i Github 
 		* SchemaChanges
 			*Relasjunter i "RekkverkElementSamling" til "Rekkverk"
+		* Flytte Attributter fra RekkverksElement til "Rekkverk"
