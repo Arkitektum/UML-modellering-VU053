@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:fmva="https://skjema.atlas.vegvesen.no/r000/fagmodellvannogavloep/1.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:lv="https://skjema.atlas.vegvesen.no/r000/leveranse/1.0" xmlns:svvli="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/fagmodellvannogavloep/1.0" version="1.0">
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:fmva="https://skjema.atlas.vegvesen.no/r000/fagmodellvannogavloep/1.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:lv="https://skjema.atlas.vegvesen.no/r000/leveranse/1.0" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:svvli="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/fagmodellvannogavloep/1.0" version="1.0">
+  <import namespace="http://www.interactive-instruments.de/ShapeChange/AppInfo" schemaLocation="http://shapechange.net/resources/schema/ShapeChangeAppinfo.xsd"/>
   <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
   <import namespace="https://skjema.atlas.vegvesen.no/r000/leveranse/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/InternTesting/xsd_files/2023/v1_0_0/Leveranse.xsd"/>
   <import namespace="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/InternTesting/xsd_files/2023/v1_0_0/SVV_Landinfra.xsd"/>
@@ -26,7 +27,8 @@
           <element minOccurs="0" name="bruk" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Avloepsledningsbruk.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Avloepsledningbruk.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Avloepsledningbruk.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -64,7 +66,8 @@
           <element name="bassengtype" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Bassengtype.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Bassengtype.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Bassengtype.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -147,7 +150,8 @@
           <element minOccurs="0" name="prosesstype" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Enhetsoperasjonstype.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Enhetsoperasjontype.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Enhetsoperasjontype.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -240,7 +244,8 @@
           <element minOccurs="0" name="hydrantTilkobling" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_HydrantTilkobling.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_HydrantTilkobling.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_HydrantTilkobling.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -285,24 +290,17 @@
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
-  <element name="Kopling" substitutionGroup="fmva:VannOgAvloepElementSamling" type="fmva:KoplingType"/>
-  <complexType name="KoplingType">
+  <element name="KoplingElement" substitutionGroup="fmva:VannOgAvloepElement" type="fmva:KoplingElementType"/>
+  <complexType name="KoplingElementType">
     <complexContent>
-      <extension base="fmva:VannOgAvloepElementSamlingType">
+      <extension base="fmva:VannOgAvloepElementType">
         <sequence>
-          <element minOccurs="0" name="trykklasse" type="gml:CodeType">
-            <annotation>
-              <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Trykklasse.xml</defaultCodeSpace>
-              </appinfo>
-            </annotation>
-          </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="koplingElement">
+          <element maxOccurs="unbounded" minOccurs="0" name="ledningElement">
             <complexType>
               <complexContent>
                 <extension base="gml:AbstractFeatureMemberType">
                   <sequence minOccurs="0">
-                    <element ref="fmva:KoplingElement"/>
+                    <element ref="fmva:LedningElement"/>
                   </sequence>
                   <attributeGroup ref="gml:AssociationAttributeGroup"/>
                 </extension>
@@ -310,21 +308,6 @@
             </complexType>
           </element>
         </sequence>
-      </extension>
-    </complexContent>
-  </complexType>
-  <complexType name="KoplingPropertyType">
-    <sequence minOccurs="0">
-      <element ref="fmva:Kopling"/>
-    </sequence>
-    <attributeGroup ref="gml:AssociationAttributeGroup"/>
-    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
-  </complexType>
-  <element name="KoplingElement" substitutionGroup="fmva:VannOgAvloepElement" type="fmva:KoplingElementType"/>
-  <complexType name="KoplingElementType">
-    <complexContent>
-      <extension base="fmva:VannOgAvloepElementType">
-        <sequence/>
       </extension>
     </complexContent>
   </complexType>
@@ -358,16 +341,30 @@
           <element minOccurs="0" name="kumtype" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Kumtype.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Kumtype.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Kumtype.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
           <element minOccurs="0" name="utskiller" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Utskiller.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/codeListNavn.xml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Utskiller.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="kumlokk">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmva:Kumlokk"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
           </element>
         </sequence>
       </extension>
@@ -380,92 +377,119 @@
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
-  <element name="Ledning" substitutionGroup="fmva:VannOgAvloepElementSamling" type="fmva:LedningType"/>
-  <complexType name="LedningType">
+  <element name="Kumlokk" substitutionGroup="fmva:KoplingElement" type="fmva:KumlokkType"/>
+  <complexType name="KumlokkType">
     <complexContent>
-      <extension base="fmva:VannOgAvloepElementSamlingType">
+      <extension base="fmva:KoplingElementType">
         <sequence>
-          <element maxOccurs="unbounded" minOccurs="0" name="ledningElement">
-            <complexType>
-              <complexContent>
-                <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="fmva:LedningElement"/>
-                  </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
-                </extension>
-              </complexContent>
-            </complexType>
+          <element name="type" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_LokkRistType.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_LokkRistType.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="kumlokkform" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Kumlokkform.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Kumlokkform.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
           </element>
         </sequence>
       </extension>
     </complexContent>
   </complexType>
-  <complexType name="LedningPropertyType">
+  <complexType name="KumlokkPropertyType">
     <sequence minOccurs="0">
-      <element ref="fmva:Ledning"/>
+      <element ref="fmva:Kumlokk"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
-  <element name="LedningElement" substitutionGroup="fmva:VannOgAvloepElement" type="fmva:LedningElementType"/>
+  <element name="LedningElement" substitutionGroup="fmva:VannOgAvloepElement" type="fmva:LedningElementType">
+    <annotation>
+      <documentation>Utvikler av VA_ledning fra SOSI 4.6 og NVDB 77 'Rørledning'</documentation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">VU053</sc:taggedValue>
+        <sc:taggedValue tag="referanse">VU053_UML 2023</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
   <complexType name="LedningElementType">
     <complexContent>
       <extension base="fmva:VannOgAvloepElementType">
         <sequence>
-          <element minOccurs="0" name="konstruksjon" type="fmva:RoerkonstruksjonPropertyType">
-            <annotation>
-              <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Roerkonstruksjon.xml</defaultCodeSpace>
-              </appinfo>
-            </annotation>
-          </element>
+          <element minOccurs="0" name="konstruksjon" type="fmva:RoerkonstruksjonPropertyType"/>
           <element minOccurs="0" name="ledningsform" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Ledningsform.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Ledningsform.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Ledningsform.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
           <element minOccurs="0" name="nettnivå" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Nettnivaa.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Nettnivaa.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Nettnivaa.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
-          <element minOccurs="0" name="rehabilitering" type="gml:CodeType">
+          <element minOccurs="0" name="rehabilitering" type="fmva:LedningRehabPropertyType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_LedningRehab.xml</defaultCodeSpace>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_LedningRehab.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
           <element minOccurs="0" name="trykkforhold" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Trykkforhold.xml</defaultCodeSpace>
-              </appinfo>
-            </annotation>
-          </element>
-          <element minOccurs="0" name="trykklasse" type="gml:CodeType">
-            <annotation>
-              <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Trykklasse.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Trykkforhold.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Trykkforhold.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
           <element minOccurs="0" name="funksjon" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Ledningsfunksjon.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Ledningsfunksjon.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Ledningsfunksjon.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
-          <element name="diameter" type="double">
+          <element minOccurs="0" name="diameter" type="double">
             <annotation>
               <documentation>enhet [mm]</documentation>
             </annotation>
+          </element>
+          <element minOccurs="0" name="helningFall" type="double">
+            <annotation>
+              <documentation>Angir fall på rørledning i lengderetning.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="tykkelse" type="double">
+            <annotation>
+              <documentation>Angir standard tykkelse av godset i rørledningen.
+
+enhet [mm]</documentation>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="koplingElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmva:KoplingElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
           </element>
         </sequence>
       </extension>
@@ -477,6 +501,26 @@
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="LedningRehab" substitutionGroup="gml:AbstractObject" type="fmva:LedningRehabType"/>
+  <complexType name="LedningRehabType">
+    <sequence>
+      <element name="tidspunkt" type="dateTime">
+        <annotation>
+          <documentation>tidsunkt når rehabiliteringen var ferdig</documentation>
+        </annotation>
+      </element>
+      <element name="beskrivelse" type="string">
+        <annotation>
+          <documentation>beskrivelse av hva slags rehabilitering som er utført</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="LedningRehabPropertyType">
+    <sequence>
+      <element ref="fmva:LedningRehab"/>
+    </sequence>
   </complexType>
   <element name="Ledningslokk" substitutionGroup="fmva:Roerdel" type="fmva:LedningslokkType"/>
   <complexType name="LedningslokkType">
@@ -516,7 +560,8 @@
           <element minOccurs="0" name="måletype" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Maalertype.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Maalertype.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Maalertype.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -599,7 +644,8 @@
           <element minOccurs="0" name="type" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Overloepstype.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Overloepstype.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Overloepstype.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -622,7 +668,8 @@
           <element name="overløpstype" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Overloepstasjonstype.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Overloepstasjonstype.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Overloepstasjonstype.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -645,7 +692,8 @@
           <element minOccurs="0" name="bruk" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Overvannsledningbruk.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Overvannsledningbruk.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Overvannsledningbruk.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -698,7 +746,8 @@
           <element minOccurs="0" name="pumpetype" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_pumpetype.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Pumpetype.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Pumpetype.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -751,7 +800,8 @@
           <element name="reguleringsventiltype" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Reguleringsventiltype.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Reguleringsventiltype.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Reguleringsventiltype.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -802,14 +852,16 @@
       <element minOccurs="0" name="materiale" type="gml:CodeType">
         <annotation>
           <appinfo>
-            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_RoermaterialeAlle.xml</defaultCodeSpace>
+            <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_RoermaterialeAlle.gml</sc:targetCodeListURI>
+            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_RoermaterialeAlle.gml</defaultCodeSpace>
           </appinfo>
         </annotation>
       </element>
       <element minOccurs="0" name="skjøtemetode" type="gml:CodeType">
         <annotation>
           <appinfo>
-            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_SkjoetemetodeAlle.xml</defaultCodeSpace>
+            <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_SkjoetemetodeAlle.gml</sc:targetCodeListURI>
+            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_SkjoetemetodeAlle.gml</defaultCodeSpace>
           </appinfo>
         </annotation>
       </element>
@@ -817,21 +869,24 @@
         <annotation>
           <documentation>skal bare brukes på støpjernsrør</documentation>
           <appinfo>
-            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Stoepjernsroerklasse.xml</defaultCodeSpace>
+            <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Stoepjernsroerklasse.gml</sc:targetCodeListURI>
+            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Stoepjernsroerklasse.gml</defaultCodeSpace>
           </appinfo>
         </annotation>
       </element>
       <element minOccurs="0" name="sdrVerdi" type="gml:CodeType">
         <annotation>
           <appinfo>
-            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_SDR.xml</defaultCodeSpace>
+            <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_SDR.gml</sc:targetCodeListURI>
+            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_SDR.gml</defaultCodeSpace>
           </appinfo>
         </annotation>
       </element>
       <element minOccurs="0" name="ringstivhet" type="gml:CodeType">
         <annotation>
           <appinfo>
-            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Ringstivhet.xml</defaultCodeSpace>
+            <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Ringstivhet.gml</sc:targetCodeListURI>
+            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Ringstivhet.gml</defaultCodeSpace>
           </appinfo>
         </annotation>
       </element>
@@ -839,7 +894,8 @@
         <annotation>
           <documentation>brukes bare på betongrør</documentation>
           <appinfo>
-            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_InnvendingBeskyttelse.xml</defaultCodeSpace>
+            <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_InnvendigBeskyttelse.gml</sc:targetCodeListURI>
+            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_InnvendigBeskyttelse.gml</defaultCodeSpace>
           </appinfo>
         </annotation>
       </element>
@@ -847,7 +903,8 @@
         <annotation>
           <documentation>brukes bare på betongrør</documentation>
           <appinfo>
-            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_UtvendigBeskyttelse.xml</defaultCodeSpace>
+            <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_UtvendigBeskyttelse.gml</sc:targetCodeListURI>
+            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_UtvendigBeskyttelse.gml</defaultCodeSpace>
           </appinfo>
         </annotation>
       </element>
@@ -855,7 +912,8 @@
         <annotation>
           <documentation>forklaring på hvordan røret er bygget opp</documentation>
           <appinfo>
-            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Roeroppbygging.xml</defaultCodeSpace>
+            <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Roeroppbygging.gml</sc:targetCodeListURI>
+            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Roeroppbygging.gml</defaultCodeSpace>
           </appinfo>
         </annotation>
       </element>
@@ -866,256 +924,6 @@
       <element ref="fmva:Roerkonstruksjon"/>
     </sequence>
   </complexType>
-  <simpleType name="RoermaterialeBetongroerType">
-    <union memberTypes="fmva:RoermaterialeBetongroerEnumerationType fmva:RoermaterialeBetongroerOtherType"/>
-  </simpleType>
-  <simpleType name="RoermaterialeBetongroerEnumerationType">
-    <restriction base="string">
-      <enumeration value="armertBetongrør"/>
-      <enumeration value="uarmertBetongrør"/>
-    </restriction>
-  </simpleType>
-  <simpleType name="RoermaterialeBetongroerOtherType">
-    <restriction base="string">
-      <pattern value="other: \w{2,}"/>
-    </restriction>
-  </simpleType>
-  <simpleType name="RoermaterialeFellesType">
-    <union memberTypes="fmva:RoermaterialeFellesEnumerationType fmva:RoermaterialeFellesOtherType"/>
-  </simpleType>
-  <simpleType name="RoermaterialeFellesEnumerationType">
-    <restriction base="string">
-      <enumeration value="støpjern"/>
-      <enumeration value="PE"/>
-      <enumeration value="PP"/>
-      <enumeration value="PVC"/>
-      <enumeration value="asbest"/>
-      <enumeration value="betongrør"/>
-      <enumeration value="stål"/>
-      <enumeration value="kobber"/>
-      <enumeration value="fjell">
-        <annotation>
-          <documentation>Råsprengt tunnel</documentation>
-        </annotation>
-      </enumeration>
-      <enumeration value="betongkanal"/>
-      <enumeration value="GRP">
-        <annotation>
-          <documentation>glassfiberarmert umettet polyester eller på engelsk Glassfibre reinforced polyester</documentation>
-        </annotation>
-      </enumeration>
-    </restriction>
-  </simpleType>
-  <simpleType name="RoermaterialeFellesOtherType">
-    <restriction base="string">
-      <pattern value="other: \w{2,}"/>
-    </restriction>
-  </simpleType>
-  <simpleType name="RoermaterialeKobberType">
-    <union memberTypes="fmva:RoermaterialeKobberEnumerationType fmva:RoermaterialeKobberOtherType"/>
-  </simpleType>
-  <simpleType name="RoermaterialeKobberEnumerationType">
-    <restriction base="string">
-      <enumeration value="korrugertKobber"/>
-      <enumeration value="glattKobber"/>
-    </restriction>
-  </simpleType>
-  <simpleType name="RoermaterialeKobberOtherType">
-    <restriction base="string">
-      <pattern value="other: \w{2,}"/>
-    </restriction>
-  </simpleType>
-  <simpleType name="RoermaterialePEType">
-    <union memberTypes="fmva:RoermaterialePEEnumerationType fmva:RoermaterialePEOtherType"/>
-  </simpleType>
-  <simpleType name="RoermaterialePEEnumerationType">
-    <restriction base="string">
-      <enumeration value="PEL"/>
-      <enumeration value="PEM"/>
-      <enumeration value="PEH"/>
-      <enumeration value="PE32"/>
-      <enumeration value="PE50"/>
-      <enumeration value="PE80"/>
-      <enumeration value="PE100"/>
-    </restriction>
-  </simpleType>
-  <simpleType name="RoermaterialePEOtherType">
-    <restriction base="string">
-      <pattern value="other: \w{2,}"/>
-    </restriction>
-  </simpleType>
-  <simpleType name="RoermaterialeStaalType">
-    <union memberTypes="fmva:RoermaterialeStaalEnumerationType fmva:RoermaterialeStaalOtherType"/>
-  </simpleType>
-  <simpleType name="RoermaterialeStaalEnumerationType">
-    <restriction base="string">
-      <enumeration value="legertStål"/>
-      <enumeration value="rustfrittStål"/>
-    </restriction>
-  </simpleType>
-  <simpleType name="RoermaterialeStaalOtherType">
-    <restriction base="string">
-      <pattern value="other: \w{2,}"/>
-    </restriction>
-  </simpleType>
-  <simpleType name="RoermaterialeStoepejernType">
-    <union memberTypes="fmva:RoermaterialeStoepejernEnumerationType fmva:RoermaterialeStoepejernOtherType"/>
-  </simpleType>
-  <simpleType name="RoermaterialeStoepejernEnumerationType">
-    <restriction base="string">
-      <enumeration value="gråttStøpjern"/>
-      <enumeration value="duktiltStøpjern"/>
-    </restriction>
-  </simpleType>
-  <simpleType name="RoermaterialeStoepejernOtherType">
-    <restriction base="string">
-      <pattern value="other: \w{2,}"/>
-    </restriction>
-  </simpleType>
-  <simpleType name="SkjoetemetodeBetongType">
-    <union memberTypes="fmva:SkjoetemetodeBetongEnumerationType fmva:SkjoetemetodeBetongOtherType"/>
-  </simpleType>
-  <simpleType name="SkjoetemetodeBetongEnumerationType">
-    <restriction base="string">
-      <enumeration value="muffeskjøt"/>
-      <enumeration value="muffeskjøtMedInnstøptPakning">
-        <annotation>
-          <documentation>Muffeskjøt med innstøpt pakning</documentation>
-        </annotation>
-      </enumeration>
-      <enumeration value="falsMedPakning">
-        <annotation>
-          <documentation>Fals med pakning</documentation>
-        </annotation>
-      </enumeration>
-      <enumeration value="fals"/>
-    </restriction>
-  </simpleType>
-  <simpleType name="SkjoetemetodeBetongOtherType">
-    <restriction base="string">
-      <pattern value="other: \w{2,}"/>
-    </restriction>
-  </simpleType>
-  <simpleType name="SkjoetemetodeFellesType">
-    <union memberTypes="fmva:SkjoetemetodeFellesEnumerationType fmva:SkjoetemetodeFellesOtherType"/>
-  </simpleType>
-  <simpleType name="SkjoetemetodeFellesEnumerationType">
-    <restriction base="string">
-      <enumeration value="sveis"/>
-      <enumeration value="skrumuffe"/>
-      <enumeration value="flens"/>
-      <enumeration value="muffeskjøt"/>
-      <enumeration value="speilsveis"/>
-      <enumeration value="elMuffe"/>
-    </restriction>
-  </simpleType>
-  <simpleType name="SkjoetemetodeFellesOtherType">
-    <restriction base="string">
-      <pattern value="other: \w{2,}"/>
-    </restriction>
-  </simpleType>
-  <simpleType name="SkjoetemetodeKobberType">
-    <union memberTypes="fmva:SkjoetemetodeKobberEnumerationType fmva:SkjoetemetodeKobberOtherType"/>
-  </simpleType>
-  <simpleType name="SkjoetemetodeKobberEnumerationType">
-    <restriction base="string">
-      <enumeration value="sveis"/>
-      <enumeration value="muffe"/>
-    </restriction>
-  </simpleType>
-  <simpleType name="SkjoetemetodeKobberOtherType">
-    <restriction base="string">
-      <pattern value="other: \w{2,}"/>
-    </restriction>
-  </simpleType>
-  <simpleType name="SkjoetemetodePEType">
-    <union memberTypes="fmva:SkjoetemetodePEEnumerationType fmva:SkjoetemetodePEOtherType"/>
-  </simpleType>
-  <simpleType name="SkjoetemetodePEEnumerationType">
-    <restriction base="string">
-      <enumeration value="speilsveis"/>
-      <enumeration value="el-muffe"/>
-      <enumeration value="skrumuffe"/>
-    </restriction>
-  </simpleType>
-  <simpleType name="SkjoetemetodePEOtherType">
-    <restriction base="string">
-      <pattern value="other: \w{2,}"/>
-    </restriction>
-  </simpleType>
-  <simpleType name="SkjoetemetodePPType">
-    <union memberTypes="fmva:SkjoetemetodePPEnumerationType fmva:SkjoetemetodePPOtherType"/>
-  </simpleType>
-  <simpleType name="SkjoetemetodePPEnumerationType">
-    <restriction base="string">
-      <enumeration value="speilsveis"/>
-      <enumeration value="el-muffe"/>
-      <enumeration value="muffeskjøt"/>
-    </restriction>
-  </simpleType>
-  <simpleType name="SkjoetemetodePPOtherType">
-    <restriction base="string">
-      <pattern value="other: \w{2,}"/>
-    </restriction>
-  </simpleType>
-  <simpleType name="SkjoetemetodePVCType">
-    <union memberTypes="fmva:SkjoetemetodePVCEnumerationType fmva:SkjoetemetodePVCOtherType"/>
-  </simpleType>
-  <simpleType name="SkjoetemetodePVCEnumerationType">
-    <restriction base="string">
-      <enumeration value="innskyvningsmuffe"/>
-      <enumeration value="muffeskjøt"/>
-    </restriction>
-  </simpleType>
-  <simpleType name="SkjoetemetodePVCOtherType">
-    <restriction base="string">
-      <pattern value="other: \w{2,}"/>
-    </restriction>
-  </simpleType>
-  <simpleType name="SkjoetemetodeStaalType">
-    <union memberTypes="fmva:SkjoetemetodeStaalEnumerationType fmva:SkjoetemetodeStaalOtherType"/>
-  </simpleType>
-  <simpleType name="SkjoetemetodeStaalEnumerationType">
-    <restriction base="string">
-      <enumeration value="sveis"/>
-      <enumeration value="flens"/>
-      <enumeration value="muffeskjøtStrekkfast"/>
-      <enumeration value="muffeskjøtIkkeStrekkfast"/>
-    </restriction>
-  </simpleType>
-  <simpleType name="SkjoetemetodeStaalOtherType">
-    <restriction base="string">
-      <pattern value="other: \w{2,}"/>
-    </restriction>
-  </simpleType>
-  <simpleType name="SkjoetemetodeStoepjernType">
-    <union memberTypes="fmva:SkjoetemetodeStoepjernEnumerationType fmva:SkjoetemetodeStoepjernOtherType"/>
-  </simpleType>
-  <simpleType name="SkjoetemetodeStoepjernEnumerationType">
-    <restriction base="string">
-      <enumeration value="muffeStrekkkfastMedLåsering">
-        <annotation>
-          <documentation>Muffe stekkkfast med låsering</documentation>
-        </annotation>
-      </enumeration>
-      <enumeration value="muffeStrekkkfastMedGummipakningOgMetallforankring">
-        <annotation>
-          <documentation>Muffe stekkkfast med gummipakning og metallforankring</documentation>
-        </annotation>
-      </enumeration>
-      <enumeration value="muffeIkkeStrekkfast"/>
-      <enumeration value="boltmuffe"/>
-      <enumeration value="skrumuffe"/>
-      <enumeration value="blymuffe"/>
-      <enumeration value="flens"/>
-      <enumeration value="sveis"/>
-    </restriction>
-  </simpleType>
-  <simpleType name="SkjoetemetodeStoepjernOtherType">
-    <restriction base="string">
-      <pattern value="other: \w{2,}"/>
-    </restriction>
-  </simpleType>
   <element name="Stengeventil" substitutionGroup="fmva:Ventil" type="fmva:StengeventilType"/>
   <complexType name="StengeventilType">
     <complexContent>
@@ -1124,14 +932,16 @@
           <element minOccurs="0" name="stengeventiltype" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Stengeventiltype.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Stengeventiltype.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Stengeventiltype.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
           <element minOccurs="0" name="betjening" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Ventilbetjening.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Ventilbetjening.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Ventilbetjening.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -1154,7 +964,8 @@
           <element minOccurs="0" name="tilbakeventiltype" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Tilbakeslagsventiltype.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Tilbakeslagsventiltype.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Tilbakeslagsventiltype.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -1207,7 +1018,8 @@
           <element minOccurs="0" name="uttakstype" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Uttakstype.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Uttakstype.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Uttakstype.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -1226,7 +1038,16 @@
   <complexType name="VannOgAvloepElementType">
     <complexContent>
       <extension base="svvli:VU053FeatureType">
-        <sequence/>
+        <sequence>
+          <element minOccurs="0" name="trykklasse" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Trykklasse.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Trykklasse.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
       </extension>
     </complexContent>
   </complexType>
@@ -1241,7 +1062,40 @@
   <complexType abstract="true" name="VannOgAvloepElementSamlingType">
     <complexContent>
       <extension base="gml:AbstractFeatureType">
-        <sequence/>
+        <sequence>
+          <element minOccurs="0" name="trykklasse" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Trykklasse.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Trykklasse.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="ledningElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmva:LedningElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="koplingElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmva:KoplingElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
       </extension>
     </complexContent>
   </complexType>
@@ -1290,7 +1144,8 @@
           <element minOccurs="0" name="bruk" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Vannledningsbruk.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Vannledningsbruk.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Vannledningsbruk.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -1313,7 +1168,8 @@
           <element minOccurs="0" name="tilkobling" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_VentilTilkobling.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_VentilTilkobling.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_VentilTilkobling.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
