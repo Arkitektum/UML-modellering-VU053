@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Sikringspunkt</title>
+<title>Skiltpunkt</title>
 <link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script language="JavaScript" src="../../../../../js/displayToc.js" type="text/javascript"></script>
 <script>
@@ -64,12 +64,12 @@
 <div class="section group" >
 
 		<div class="col span_2_of_2 header_frame">
-			<h1> Sikringspunkt </h1>
+			<h1> Skiltpunkt </h1>
 			<!-- <img class="header_image" src="../../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
 			<img class="header_image" src="../../../../../images/ea-banner.png" align="right" alt="Header Image" />
 		</div>
 		<div class="col span_2_of_2 breadcrumb_frame">
-			<p><a href="../../../../EA3.htm">Vegprosjekt VU053 v1.0</a> / <a href="../../../EA441.htm">LeveranseVegprosjekt</a> / <a href="../../EA445.htm">Samordningsmodell</a> / <a href="../EA556.htm">Tverrfagligmodell</a> / <a href="EA1145.htm">FagmodellSkilt</a> / <a href="EA1183.htm">Sikringspunkt</a></p>
+			<p><a href="../../../../EA3.htm">Vegprosjekt VU053 v1.0</a> / <a href="../../../EA455.htm">LeveranseVegprosjekt</a> / <a href="../../EA459.htm">Samordningsmodell</a> / <a href="../EA570.htm">Tverrfagligmodell</a> / <a href="EA1140.htm">FagmodellSkilt</a> / <a href="EA1183.htm">Skiltpunkt</a></p>
 		</div>
 			
 		<table class="contentmaintable">
@@ -84,20 +84,20 @@
 					<td class="indexcell">
 						<div class="projectBrowserTitle">Project: </div>
 						<ul>
-<a href="EA1145.htm">FagmodellSkilt</a></ul>
+<a href="EA1140.htm">FagmodellSkilt</a></ul>
 
 					</td>
 					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<span class="ObjectTitle">Sikringspunkt  : Public  &lt;&lt;FeatureType&gt;&gt; Class</span>
+	<span class="ObjectTitle">Skiltpunkt  : Public  &lt;&lt;FeatureType&gt;&gt; Class</span>
 	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">16.02.2023 12:55:54</td>
+			<td width="85%" class="ObjectDetailsValue">14.11.2022 14:23:29</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">16.02.2023 12:56:00</td>
+			<td class="ObjectDetailsValue">16.03.2023 08:00:25</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -142,19 +142,22 @@
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{154FC1FB-239F-4a9e-A427-52DE4BE830FF}</td>
+			<td class="ObjectDetailsValue">{A86729A1-1929-49e7-B8C5-1AD662FC8D63}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA1137.htm">FagmodellSkilt</a></td>
+			<td class="ObjectDetailsValue"><a href="EA1132.htm">FagmodellSkilt</a>, <a href="EA1138.htm">SkiltElement</a></td>
 		</tr>
 	</table>
-	
+	<div class="ObjectDetailsNotes">Skiltpunkt er en sammensetning av skiltplater, stolper og stolpefundament m.m.&lt;br/&gt;</div>
+
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
 			<li onClick="toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
 			<li onClick="toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
+			<li onClick="toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 <div class="ItemBody" id="AttributesTable">
 	<table border="0" cellspacing="0" cellpadding="0" class="Table">
@@ -165,30 +168,13 @@
 		</tr>
 						<tr>
 				<td width="50%" class="TableRow">
-					posisjon
+					antallFundament
 				</td>
 				<td width="25%" class="TableRow">
 					Public 
 				</td>
 				<td width="25%" class="TableRow">
-					<a href="EA1180.htm">PosisjonSikringspunkt</a>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="3">										
-					defaultCodeSpace=<a href="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_PosisjonSikringspunkt.gml" target="_blank" >https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_PosisjonSikringspunkt.gml</a><br>
-						&nbsp;
-						
-				</td>
-			</tr>			<tr>
-				<td width="50%" class="TableRow">
-					koordinater
-				</td>
-				<td width="25%" class="TableRow">
-					Public 
-				</td>
-				<td width="25%" class="TableRow">
-					GM_Point
+					Integer
 				</td>
 			</tr>
 			<tr>
@@ -197,9 +183,388 @@
 						&nbsp;
 						
 				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					antallOppsettingsutstyr
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					Integer
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					antallStøttestolper
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					Integer
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					bebyggelse
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					<a href="EA1191.htm">Bebyggelse</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					defaultCodeSpace=<a href="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Bebyggelse.gml" target="_blank" >https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Bebyggelse.gml</a><br>
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					bøyle
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					<a href="EA1194.htm">Boeyle</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					defaultCodeSpace=<a href="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Boeyle.gml" target="_blank" >https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Boeyle.gml</a><br>
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					eier
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					<a href="EA1197.htm">Eier</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					defaultCodeSpace=<a href="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Eier.gml" target="_blank" >https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Eier.gml</a><br>
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					fundamentering
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					<a href="EA1200.htm">FundamenteringSignalstolpe</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					defaultCodeSpace=<a href="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_FundamenteringSignalstolpe.gml" target="_blank" >https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_FundamenteringSignalstolpe.gml</a><br>
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					høydeOverVegkant
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					Real
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					kampanjeEgnet
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					<a href="EA1203.htm">KampanjeEgnet</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					defaultCodeSpace=<a href="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_KampanjeEgnet.gml" target="_blank" >https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_KampanjeEgnet.gml</a><br>
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					kampanjePågående
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					<a href="EA1206.htm">KampanjePaagaaende</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					defaultCodeSpace=<a href="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_KampanjePaagaaende.gml" target="_blank" >https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_KampanjePaagaaende.gml</a><br>
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					kampanjeperiode
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					Character
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					klima
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					<a href="EA1209.htm">Klima</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					defaultCodeSpace=<a href="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Klima.gml" target="_blank" >https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Klima.gml</a><br>
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					miljø
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					<a href="EA1211.htm">Miljoe</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					defaultCodeSpace=<a href="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Miljoe.gml" target="_blank" >https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Miljoe.gml</a><br>
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					produktnavnSkiltmast
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					<a href="EA1214.htm">ProduktnavnSkiltmast</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					defaultCodeSpace=<a href="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_ProduktnavnSkiltmast.gml" target="_blank" >https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_ProduktnavnSkiltmast.gml</a><br>
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					prosjektInternObjektID
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					Character
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					prosjektreferanse
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					Character
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					avskjæringsledd
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					<a href="EA1152.htm">Avskjaeringsledd</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					defaultCodeSpace=<a href="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Avskjaeringsledd.gml" target="_blank" >https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Avskjaeringsledd.gml</a><br>
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					vedlikeholdsansvarlig
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					<a href="EA1219.htm">Vedlikeholdsansvarlig</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					defaultCodeSpace=<a href="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Vedlikeholdsansvarlig.gml" target="_blank" >https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Vedlikeholdsansvarlig.gml</a><br>
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					brakett
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					<a href="EA1193.htm">Brakett</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					defaultCodeSpace=<a href="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Brakett.gml" target="_blank" >https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Brakett.gml</a><br>
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					skiltholder
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					<a href="EA1216.htm">Skiltholder</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					defaultCodeSpace=<a href="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Skiltholder.gml" target="_blank" >https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Skiltholder.gml</a><br>
+						&nbsp;
+						
+				</td>
 			</tr>
 	</table>
 </div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA1162.htm">«FeatureType» Oppsettingsutstyr</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> oppsettingsutstyr<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> punkt<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink5322" /></button>Details:
+							<div id="detailsDIVLink5322" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA1173.htm">«FeatureType» Plate</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> plate<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> punkt<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink5323" /></button>Details:
+							<div id="detailsDIVLink5323" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
 <div class="ItemBody" id="TaggedValTable">
 	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
 		<tr>
@@ -208,7 +573,7 @@
 		</tr>
 					<tr>
 				<td width="50%" class="TableRow" valign="top">kilde</td>
-				<td width="50%" class="TableRow" valign="top">Håndboka</td>
+				<td width="50%" class="TableRow" valign="top">NVDB</td>
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
@@ -217,8 +582,17 @@
 
 				</td>
 			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">NVDB_ID</td>
+				<td width="50%" class="TableRow" valign="top">95</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					Details:
+						&nbsp;
+				</td>
+			</tr>			<tr>
 				<td width="50%" class="TableRow" valign="top">referanse</td>
-				<td width="50%" class="TableRow" valign="top">V320</td>
+				<td width="50%" class="TableRow" valign="top">95</td>
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
@@ -240,7 +614,40 @@
 
 
 			</table>
-		</div>	</div>
+		</div>		<div class="ItemBody" id="LinksTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA1162.htm">«FeatureType» Oppsettingsutstyr</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Weak</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA1179.htm">«FeatureType» SkiltElement</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA1173.htm">«FeatureType» Plate</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Strong</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
  </div>
  </td>
 				</tr>

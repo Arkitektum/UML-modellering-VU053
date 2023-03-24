@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Feature</title>
+<title>Alignment</title>
 <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script language="JavaScript" src="../../../../js/displayToc.js" type="text/javascript"></script>
 <script>
@@ -64,12 +64,12 @@
 <div class="section group" >
 
 		<div class="col span_2_of_2 header_frame">
-			<h1> Feature </h1>
+			<h1> Alignment </h1>
 			<!-- <img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
 			<img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />
 		</div>
 		<div class="col span_2_of_2 breadcrumb_frame">
-			<p><a href="../../../EA3.htm">Vegprosjekt VU053 v1.0</a> / <a href="../../EA8.htm">Eksterne_UML-deler</a> / <a href="../EA108.htm">Plassholdere_for_Original</a> / <a href="EA115.htm">LandInfra_part0_Core</a> / <a href="EA117.htm">Feature</a></p>
+			<p><a href="../../../EA3.htm">Vegprosjekt VU053 v1.0</a> / <a href="../../EA8.htm">Eksterne_UML-deler</a> / <a href="../EA109.htm">Plassholdere_for_Original</a> / <a href="EA116.htm">LandInfra_part0_Core</a> / <a href="EA117.htm">Alignment</a></p>
 		</div>
 			
 		<table class="contentmaintable">
@@ -84,12 +84,12 @@
 					<td class="indexcell">
 						<div class="projectBrowserTitle">Project: </div>
 						<ul>
-<a href="EA115.htm">LandInfra_part0_Core</a></ul>
+<a href="EA116.htm">LandInfra_part0_Core</a></ul>
 
 					</td>
 					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<span class="ObjectTitle">Feature  : Public  &lt;&lt;FeatureType&gt;&gt; Class</span>
+	<span class="ObjectTitle">Alignment  : Public  &lt;&lt;featureType&gt;&gt; Class</span>
 	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -110,7 +110,7 @@
 		</tr>
 		<tr id="proj01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
-			<td class="ObjectDetailsValue">1.0</td>
+			<td class="ObjectDetailsValue">0.4</td>
 		</tr>
 		<tr id="proj02" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
@@ -142,17 +142,19 @@
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{0FAA0CAF-686A-4caf-9631-F6BCA18F303A}</td>
+			<td class="ObjectDetailsValue">{49B04072-B070-4c3c-ABD2-380FD204EDAD}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA113.htm">LandInfra_part0_Core</a>, <a href="../../EA7/EA3/EA1/EA280.htm">Added_EO</a>, <a href="../../EA3/EA1/EA58.htm">LandInfra_Realisering</a>, <a href="../../EA3/EA1/EA60.htm">VU053_LandInfra</a></td>
+			<td class="ObjectDetailsValue"><a href="EA114.htm">LandInfra_part0_Core</a>, <a href="../../EA2/EA1/EA27.htm">3DAlignment</a></td>
 		</tr>
 	</table>
-	
+	<div class="ObjectDetailsNotes">PositioningElement which provides a Linear Referencing System for locating PhysicalElements.&lt;br/&gt;An Alignment shall be continuous, non-branching, and non-overlapping. If it is a Project Alignment, it is for a single alternative, as specified by its owning ProjectPart.&lt;br/&gt;</div>
+
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
 			<li onClick="toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
 			<li onClick="toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
@@ -165,7 +167,24 @@
 		</tr>
 						<tr>
 				<td width="50%" class="TableRow">
-					name
+					alignmentID
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					ID
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					purpose
 				</td>
 				<td width="25%" class="TableRow">
 					Public 
@@ -182,7 +201,7 @@
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow">
-					description
+					designAlternative
 				</td>
 				<td width="25%" class="TableRow">
 					Public 
@@ -199,13 +218,13 @@
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow">
-					spatialRepresentation
+					linestring2DRepresentation
 				</td>
 				<td width="25%" class="TableRow">
 					Public 
 				</td>
 				<td width="25%" class="TableRow">
-					<a href="EA124.htm">SpatialRepresentation</a>
+					LineString
 				</td>
 			</tr>
 			<tr>
@@ -216,13 +235,13 @@
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow">
-					linearlyReferencedLocation
+					linestring3DRepresentation
 				</td>
 				<td width="25%" class="TableRow">
 					Public 
 				</td>
 				<td width="25%" class="TableRow">
-					<a href="EA118.htm">LinearlyReferencedLocation</a>
+					LineString
 				</td>
 			</tr>
 			<tr>
@@ -234,7 +253,45 @@
 			</tr>
 	</table>
 </div>
-		<div class="ItemBody" id="CustomPropertiesTable">
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Tag</td>
+			<td width="50%" class="TableHeading">Value</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">byValuePropertyType</td>
+				<td width="50%" class="TableRow" valign="top">false</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					Details:
+						<div class="ObjectDetailsNotes">Values: true,false<br />Default: false<br /></div>
+
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">isCollection</td>
+				<td width="50%" class="TableRow" valign="top">false</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					Details:
+						<div class="ObjectDetailsNotes">Values: true,false<br />Default: false<br /></div>
+
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">noPropertyType</td>
+				<td width="50%" class="TableRow" valign="top">false</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					Details:
+						<div class="ObjectDetailsNotes">Values: true,false<br />Default: false<br /></div>
+
+				</td>
+			</tr>
+	</table>
+</div>		<div class="ItemBody" id="CustomPropertiesTable">
 			<table class="Table ea_table">
 				<tr>
 					<td width="30%" class="TableHeading">Property</td>
@@ -257,31 +314,17 @@
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA116.htm">«featureType» Alignment</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../EA2/EA129.htm">«FeatureType» PhysicalElement</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA7/EA3/EA1/EA284.htm">«featureType» AbstractFeature</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA3/EA1/EA76.htm">«featureType» VU053Feature</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA1/EA45.htm">«featureType» Alignment</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Realization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA118.htm">«FeatureType» Feature</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 

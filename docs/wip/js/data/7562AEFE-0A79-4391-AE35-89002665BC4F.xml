@@ -1,4 +1,7 @@
-tocTab[tocTab.length] = new Array("0.1.8:1", "", "Hoveddiagram Generelle egenskaper", "EARoot/EA1/EA8/EA298.htm", "175.png", "2737", "0", "", "Logical diagram0","{8813436B-7ED5-4582-BBCE-27FDBC3F2D7A}");
-tocTab[tocTab.length] = new Array("0.1.8:2", "", "«FeatureType» SOSIFeature", "EARoot/EA1/EA8/EA301.htm", "5.png", "E16345", "0", "", "Class0","{14DCFDED-D609-4ca7-9AA9-698DA27040C8}");
-tocTab[tocTab.length] = new Array("0.1.8:3", "", "«featureType» GenerelleEgenskaper", "EARoot/EA1/EA8/EA302.htm", "5.png", "E16347", "0", "", "Class0","{95C18DC6-364C-49d2-87D5-EF4DAFCE0521}");
-tocTab[tocTab.length] = new Array("0.1.8:4", "", "«dataType» Identifikasjon", "EARoot/EA1/EA8/EA303.htm", "5.png", "E16346", "0", "", "Class0","{1BAA1118-FE2A-43c3-9002-576B007DF7C2}");
+tocTab[tocTab.length] = new Array("0.1.9:1", "", "Hoveddiagram Generelle egenskaper", "EARoot/EA1/EA9/EA311.htm", "175.png", "2897", "0", "", "Logical diagram0","{8813436B-7ED5-4582-BBCE-27FDBC3F2D7A}");
+tocTab[tocTab.length] = new Array("0.1.9:2", "", "«dataType» Koordinatsystem", "EARoot/EA1/EA9/EA314.htm", "5.png", "E17593", "0", "", "Class0","{B7F55058-E38F-4be5-A61A-E46BF94C9074}");
+tocTab[tocTab.length] = new Array("0.1.9:3", "", "«CodeList» Referansesystemkode", "EARoot/EA1/EA9/EA315.htm", "5.png", "E17590", "0", "", "Class0","{33178FDE-5AAA-477a-A924-F3EF9DF9A4A2}");
+tocTab[tocTab.length] = new Array("0.1.9:4", "", "«FeatureType» SOSIFeature", "EARoot/EA1/EA9/EA316.htm", "5.png", "E17588", "0", "", "Class0","{14DCFDED-D609-4ca7-9AA9-698DA27040C8}");
+tocTab[tocTab.length] = new Array("0.1.9:5", "", "«featureType» GenerelleEgenskaper", "EARoot/EA1/EA9/EA317.htm", "5.png", "E17592", "0", "", "Class0","{95C18DC6-364C-49d2-87D5-EF4DAFCE0521}");
+tocTab[tocTab.length] = new Array("0.1.9:6", "", "«dataType» Identifikasjon", "EARoot/EA1/EA9/EA318.htm", "5.png", "E17589", "0", "", "Class0","{1BAA1118-FE2A-43c3-9002-576B007DF7C2}");
+tocTab[tocTab.length] = new Array("0.1.9:7", "", "«dataType» Posisjonskvalitet", "EARoot/EA1/EA9/EA319.htm", "5.png", "E17591", "0", "", "Class0","{90DD1A53-9010-4e9c-8C98-8D671FA1C436}");

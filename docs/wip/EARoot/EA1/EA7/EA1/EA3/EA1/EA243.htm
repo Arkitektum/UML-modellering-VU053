@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Breakline</title>
+<title>Boundary</title>
 <link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script language="JavaScript" src="../../../../../../js/displayToc.js" type="text/javascript"></script>
 <script>
@@ -64,12 +64,12 @@
 <div class="section group" >
 
 		<div class="col span_2_of_2 header_frame">
-			<h1> Breakline </h1>
+			<h1> Boundary </h1>
 			<!-- <img class="header_image" src="../../../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
 			<img class="header_image" src="../../../../../../images/ea-banner.png" align="right" alt="Header Image" />
 		</div>
 		<div class="col span_2_of_2 breadcrumb_frame">
-			<p><a href="../../../../../EA3.htm">Vegprosjekt VU053 v1.0</a> / <a href="../../../../EA8.htm">Eksterne_UML-deler</a> / <a href="../../../EA198.htm">SupportingPackages</a> / <a href="../../EA207.htm">GML</a> / <a href="../EA236.htm">3.3_TIN</a> / <a href="EA241.htm">MovedFron_Land_feature</a> / <a href="EA243.htm">Breakline</a></p>
+			<p><a href="../../../../../EA3.htm">Vegprosjekt VU053 v1.0</a> / <a href="../../../../EA8.htm">Eksterne_UML-deler</a> / <a href="../../../EA199.htm">SupportingPackages</a> / <a href="../../EA208.htm">GML</a> / <a href="../EA237.htm">3.3_TIN</a> / <a href="EA242.htm">MovedFron_Land_feature</a> / <a href="EA243.htm">Boundary</a></p>
 		</div>
 			
 		<table class="contentmaintable">
@@ -84,12 +84,12 @@
 					<td class="indexcell">
 						<div class="projectBrowserTitle">Project: </div>
 						<ul>
-<a href="EA241.htm">MovedFron_Land_feature</a></ul>
+<a href="EA242.htm">MovedFron_Land_feature</a></ul>
 
 					</td>
 					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<span class="ObjectTitle">Breakline  : Public   Class</span>
+	<span class="ObjectTitle">Boundary  : Public   Class</span>
 	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -142,14 +142,14 @@
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{6A974D3C-0E35-43ac-83FA-FFC529D29817}</td>
+			<td class="ObjectDetailsValue">{90D0E36E-62BC-4cdb-8460-4DA7AAC37B01}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA239.htm">TIN</a></td>
+			<td class="ObjectDetailsValue"><a href="EA240.htm">TIN</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">reprrepresents a local ridge or depression in the TIN surface.&#160;&#160;When a breakline is specified for a &lt;i&gt;TIN&lt;/i&gt; value, triangles in the &lt;i&gt;Patches&lt;/i&gt; attribute of the &lt;i&gt;TIN&lt;/i&gt; value must be adjusted so that no triangle is crossed by the breakline. The elevation along the breakline takes precedence over the elevation of the original TIN surface for the entire length of the breakline.&lt;br/&gt;During (re)triangulation, &lt;i&gt;Triangle &lt;/i&gt;values in the vicinity of each breakline are adjusted so that, if the &lt;i&gt;Triangle&lt;/i&gt; value intersects the &lt;i&gt;LineString&lt;/i&gt; breakline&#160;&#160;value, then either:&lt;br/&gt;a) one of the &lt;i&gt;Point&lt;/i&gt;&#160;&#160;values in the &lt;i&gt;ExteriorRing&lt;/i&gt; attribute value of the &lt;i&gt;Triangle&lt;/i&gt; value is spatially 3D equal to one of the &lt;i&gt;Point &lt;/i&gt;values in the &lt;i&gt;Points&lt;/i&gt; attribute of the &lt;i&gt;ST_LineString&lt;/i&gt; value of the breakline, or&lt;br/&gt;b) two of the &lt;i&gt;Point&lt;/i&gt; values in the &lt;i&gt;ExteriorRing&lt;/i&gt; attribute of the &lt;i&gt;Triangle&lt;/i&gt; value are spatially 3D equal to two consecutive &lt;i&gt;Point&lt;/i&gt; values in the &lt;i&gt;Points&lt;/i&gt; triangle lies along the breakline.&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">used to define the boundary in the resulting &lt;i&gt;TIN&lt;/i&gt; value the TIN surface value is clipped to the &lt;i&gt;Polygon&lt;/i&gt; value.&#160;&#160;There can be at most only one such element for each &lt;i&gt;TIN&lt;/i&gt; value.&#160;&#160;Interior boundaries may be supported.&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -172,7 +172,7 @@
 					Public 
 				</td>
 				<td width="25%" class="TableRow">
-					<a href="EA255.htm">TINElementType</a>
+					<a href="EA256.htm">TINElementType</a>
 				</td>
 			</tr>
 			<tr>
@@ -189,7 +189,7 @@
 					Public 
 				</td>
 				<td width="25%" class="TableRow">
-					LineString
+					Polygon
 				</td>
 			</tr>
 			<tr>
@@ -201,7 +201,7 @@
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			3D&lt;br/&gt;
+			3D polygon&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -234,7 +234,7 @@
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA254.htm">TINElement</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA255.htm">TINElement</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">To</td>

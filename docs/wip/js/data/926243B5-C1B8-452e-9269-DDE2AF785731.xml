@@ -1,0 +1,9 @@
+tocTab[tocTab.length] = new Array("0.1.8:1", "", "LeveranseMetadata", "EARoot/EA1/EA8/EA299.htm", "175.png", "2862", "0", "", "Logical diagram0","{F61950A1-3926-4804-8D15-B3F6362AF678}");
+tocTab[tocTab.length] = new Array("0.1.8:2", "", "Datafangstinfo", "EARoot/EA1/EA8/EA303.htm", "230.png", "E17471", "0", "", "DataType0","{06907FBA-C20B-4e26-9BC3-C046C4869551}");
+tocTab[tocTab.length] = new Array("0.1.8:3", "", "Datakvalitetinfo", "EARoot/EA1/EA8/EA304.htm", "230.png", "E17473", "0", "", "DataType0","{25A28BE5-6EDD-4be1-B1D1-ECD69E6A525B}");
+tocTab[tocTab.length] = new Array("0.1.8:4", "", "LeveranseKontakt", "EARoot/EA1/EA8/EA305.htm", "230.png", "E17476", "0", "", "DataType0","{749196B7-2938-4dad-A4DD-765ABA97395C}");
+tocTab[tocTab.length] = new Array("0.1.8:5", "", "«featureType» Leveranseomraade", "EARoot/EA1/EA8/EA306.htm", "5.png", "E17474", "0", "", "Class0","{48C52DD0-0B27-42fd-9922-99BE27F78385}");
+tocTab[tocTab.length] = new Array("0.1.8:6", "", "«codeList» LeveranseRolle", "EARoot/EA1/EA8/EA307.htm", "5.png", "E17477", "0", "", "Class0","{7977088E-0727-4150-81DA-8797E9DE4657}");
+tocTab[tocTab.length] = new Array("0.1.8:7", "", "VU053_LeveranseMetadata", "EARoot/EA1/EA8/EA308.htm", "5.png", "E17472", "0", "", "Class0","{1EFB6E34-1A66-4968-9767-F6FE6FAD79D8}");
+tocTab[tocTab.length] = new Array("0.1.8:8", "", "«dataType» Prosjektreferanse", "EARoot/EA1/EA8/EA309.htm", "5.png", "E17478", "0", "", "Class0","{B700BD2B-F2EC-4241-A6B4-EEBD7B5921C5}");
+tocTab[tocTab.length] = new Array("0.1.8:9", "", "«dataType» LeveranseKoordinatsystem", "EARoot/EA1/EA8/EA310.htm", "5.png", "E17475", "0", "", "Class0","{6F30F95E-E3F0-4c20-91A1-C66BFE29B790}");

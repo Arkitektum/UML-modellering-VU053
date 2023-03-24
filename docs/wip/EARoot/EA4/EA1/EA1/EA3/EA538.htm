@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>GrunnlagsmodellSamferdsel</title>
+<link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> GrunnlagsmodellSamferdsel </h1>
+			<!-- <img class="header_image" src="../../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../../EA3.htm">Vegprosjekt VU053 v1.0</a> / <a href="../../../EA455.htm">LeveranseVegprosjekt</a> / <a href="../../EA459.htm">Samordningsmodell</a> / <a href="../EA464.htm">Situasjonsmodell</a> / <a href="EA540.htm">GrunnlagsmodellSamferdsel</a> / <a href="EA538.htm">GrunnlagsmodellSamferdsel</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<li><img src="../../../../../images/4.png" alt="Package"/> <a href="./EA1/EA549.htm">Infrastruktur</a></li>
+<li><img src="../../../../../images/4.png" alt="Package"/> <a href="./EA2/EA552.htm">Rute</a></li>
+<li><img src="../../../../../images/175.png" alt="Diagram"/> <a href="EA538.htm">GrunnlagsmodellSamferdsel</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA542.htm">GrunnlagsmodellSamferdsel</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA544.htm">InfrastrukturElement</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA546.htm">RuteElement</a></li>
+</ul>
+
+					</td>
+					<td class="contentcell"><div class="PageBody">
+	<div class=diagram_image> 
+<img src="EA539.png" usemap="#EA539" border="0" />
+
+<MAP NAME="EA539">
+<area shape="rect" coords="485,351,656,396" href="EA544.htm" target="_self">
+<area shape="rect" coords="43,36,238,176" href="../../../../EA3/EA389.htm" target="_self">
+<area shape="rect" coords="550,60,676,119" href="../../../../EA3/EA386.htm" target="_self">
+<area shape="rect" coords="306,59,446,131" href="../../../../EA3/EA4/EA444.htm" target="_self">
+<area shape="rect" coords="157,343,352,396" href="EA546.htm" target="_self">
+<area shape="rect" coords="283,201,470,276" href="EA542.htm" target="_self">
+<area shape="rect" coords="1169,520,1381,605" href="EA541.htm" target="_self">
+<area shape="rect" coords="8,7,691,184" href="../EA2/EA502.htm" target="_self">
+</MAP>
+ </div>
+	<div class="ObjectTitle">GrunnlagsmodellSamferdsel : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">06.03.2023 13:23:34</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">10.03.2023 10:31:25</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">ilypal</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{7BF69FD5-EA0F-4a4f-A4A1-8D9AE7CC3EBD}</td>
+		</tr>
+	</table>
+	
+</div>
+
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

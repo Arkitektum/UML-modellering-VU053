@@ -1,5 +1,5 @@
-tocTab[tocTab.length] = new Array("0.1.5:1", "", "Plassholdere_for_Original_InfraGML", "EARoot/EA1/EA5/EA106.htm", "175.png", "2706", "0", "", "Logical diagram0","{283C25D0-F569-4dfc-BA18-854122794CEE}");
-tocTab[tocTab.length] = new Array("0.1.5.1", "1", "LandInfra_part0_Core", "EARoot/EA1/EA5/EA1/EA115.htm", "4.png", "", "", "{B57208FA-A4FD-42c9-9056-898640990E4D}", "Package");
-tocTab[tocTab.length] = new Array("0.1.5.2", "1", "LandInfra_Part2_Facility", "EARoot/EA1/EA5/EA2/EA128.htm", "4.png", "", "", "{60B2CCCE-F2C7-4986-8004-6EE9ED4129B3}", "Package");
-tocTab[tocTab.length] = new Array("0.1.5.3", "1", "SOSI Nettverk og lineære referanser 5.0", "EARoot/EA1/EA5/EA3/EA158.htm", "4.png", "", "", "{4F701CE8-791C-44e5-90B2-7F2892C1942D}", "Package");
-tocTab[tocTab.length] = new Array("0.1.5.4", "1", "WFS", "EARoot/EA1/EA5/EA4/EA179.htm", "4.png", "", "", "{89F41674-6A4E-4fd4-BD15-516EC3428CF9}", "Package");
+tocTab[tocTab.length] = new Array("0.1.5:1", "", "Plassholdere_for_Original_InfraGML", "EARoot/EA1/EA5/EA107.htm", "175.png", "2866", "0", "", "Logical diagram0","{283C25D0-F569-4dfc-BA18-854122794CEE}");
+tocTab[tocTab.length] = new Array("0.1.5.1", "1", "LandInfra_part0_Core", "EARoot/EA1/EA5/EA1/EA116.htm", "4.png", "", "", "{B57208FA-A4FD-42c9-9056-898640990E4D}", "Package");
+tocTab[tocTab.length] = new Array("0.1.5.2", "1", "LandInfra_Part2_Facility", "EARoot/EA1/EA5/EA2/EA129.htm", "4.png", "", "", "{60B2CCCE-F2C7-4986-8004-6EE9ED4129B3}", "Package");
+tocTab[tocTab.length] = new Array("0.1.5.3", "1", "SOSI Nettverk og lineære referanser 5.0", "EARoot/EA1/EA5/EA3/EA159.htm", "4.png", "", "", "{4F701CE8-791C-44e5-90B2-7F2892C1942D}", "Package");
+tocTab[tocTab.length] = new Array("0.1.5.4", "1", "WFS", "EARoot/EA1/EA5/EA4/EA180.htm", "4.png", "", "", "{89F41674-6A4E-4fd4-BD15-516EC3428CF9}", "Package");

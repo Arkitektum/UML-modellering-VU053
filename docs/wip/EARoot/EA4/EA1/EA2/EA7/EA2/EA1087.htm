@@ -1,0 +1,807 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>ProduktnavnTypegodkjenningRekkverksende</title>
+<link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> ProduktnavnTypegodkjenningRekkverksende </h1>
+			<!-- <img class="header_image" src="../../../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../../../EA3.htm">Vegprosjekt VU053 v1.0</a> / <a href="../../../../EA455.htm">LeveranseVegprosjekt</a> / <a href="../../../EA459.htm">Samordningsmodell</a> / <a href="../../EA570.htm">Tverrfagligmodell</a> / <a href="../EA1051.htm">FagmodellRekkverk</a> / <a href="EA1083.htm">Rekkverksende</a> / <a href="EA1087.htm">ProduktnavnTypegodkjenningRekkverksende</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<a href="EA1083.htm">Rekkverksende</a></ul>
+
+					</td>
+					<td class="contentcell"><div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">ProduktnavnTypegodkjenningRekkverksende 10724 : Public  &lt;&lt;CodeList&gt;&gt; Class</span>
+	<table border="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">22.03.2023 10:09:35</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">22.03.2023 10:38:50</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Arkitektum</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">2.28</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Implemented</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" >Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{F1EC57A8-14DB-49f5-AFCA-ADB747D9BBCF}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="EA1081.htm">Rekkverksende</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">Refererer til produktnavn og typegodkjenning (samsvarsgodkjenning) for rekkverksender godkjent av Statens vegvesen. Se http://www.vegvesen.no/Fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt. Aktuelt for ettergivende rekkverksender.&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Attribute</td>
+			<td width="25%" class="TableHeading">Scope</td>
+			<td width="25%" class="TableHeading">Type</td>
+		</tr>
+						<tr>
+				<td width="50%" class="TableRow">
+					ABC-Terminal - P2
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					KORTN_TILLATT_VERDI=1<br>NVDB_ID=17321<br>NVDB_navn=ABC-Terminal - P2<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Mer informasjon om produkt finnes på vegvesen.no:&#160;&#160;http://www.vegvesen.no/Fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=512254&method=alle&produkttype=12622&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					ABC-Terminal - P3
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					KORTN_TILLATT_VERDI=2<br>NVDB_ID=17320<br>NVDB_navn=ABC-Terminal - P3<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Mer informasjon om produkt finnes på vegvesen.no:&#160;&#160;http://www.vegvesen.no/Fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=512257&method=alle&produkttype=12622&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					ABC-Terminal - P4
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					KORTN_TILLATT_VERDI=3<br>NVDB_ID=17319<br>NVDB_navn=ABC-Terminal - P4<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Mer informasjon om produkt finnes på vegvesen.no:&#160;&#160;http://www.vegvesen.no/Fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=512261&method=alle&produkttype=12622&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					ESPEN - P4
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					KORTN_TILLATT_VERDI=5<br>NVDB_ID=17322<br>NVDB_navn=ESPEN - P4<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Mer informasjon om produkt finnes på vegvesen.no:&#160;&#160;http://www.vegvesen.no/Fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=511712&method=alle&produkttype=12622&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					Euro ET - P4
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					KORTN_TILLATT_VERDI=6<br>NVDB_ID=17323<br>NVDB_navn=Euro ET - P4<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Mer informasjon om produkt finnes på vegvesen.no:&#160;&#160;http://www.vegvesen.no/Fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=511735&method=alle&produkttype=12622&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					MCG-TE-P4 - P4
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					KORTN_TILLATT_VERDI=7<br>NVDB_ID=17324<br>NVDB_navn=MCG-TE-P4 - P4<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Mer informasjon om produkt finnes på vegvesen.no:&#160;&#160;http://www.vegvesen.no/Fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=974999&method=alle&produkttype=12622&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					Primus P2
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					KORTN_TILLATT_VERDI=8<br>NVDB_ID=17325<br>NVDB_navn=Primus P2<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Mer informasjon om produkt finnes på vegvesen.no:&#160;&#160;http://www.vegvesen.no/Fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=512362&method=alle&produkttype=12622&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					SafeEnd - P2
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					KORTN_TILLATT_VERDI=9<br>NVDB_ID=18507<br>NVDB_navn=SafeEnd - P2<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Mer informasjon om produkt finnes på vegvesen.no:&#160;&#160;http://www.vegvesen.no/Fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=1414206&method=alle&produkttype=12622&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					SafeEnd - P4
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					KORTN_TILLATT_VERDI=10<br>NVDB_ID=17326<br>NVDB_navn=SafeEnd - P4<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Mer informasjon om produkt finnes på vegvesen.no:&#160;&#160;http://www.vegvesen.no/Fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=694845&method=alle&produkttype=12622&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					SafeEnd 80T-NO - Tunnel
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					KORTN_TILLATT_VERDI=11<br>NVDB_ID=18510<br>NVDB_navn=SafeEnd 80T-NO - Tunnel<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Mer informasjon om produkt finnes på vegvesen.no:&#160;&#160;http://www.vegvesen.no/Fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=1975435&method=alle&produkttype=12622&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					SMA T1
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					KORTN_TILLATT_VERDI=14<br>NVDB_ID=20343<br>NVDB_navn=SMA T1<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Mer informasjon om produkt finnes på vegvesen.no:&#160;&#160;https://www.vegvesen.no/fag/teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=2690011&method=alle&produkttype=12622&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					SMA T2
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					KORTN_TILLATT_VERDI=15<br>NVDB_ID=18508<br>NVDB_navn=SMA T2<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Mer informasjon om produkt finnes på vegvesen.no:&#160;&#160;http://www.vegvesen.no/Fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=1093849&method=alle&produkttype=12622&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					SMA T4
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					KORTN_TILLATT_VERDI=16<br>NVDB_ID=18509<br>NVDB_navn=SMA T4<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Mer informasjon om produkt finnes på vegvesen.no:&#160;&#160;http://www.vegvesen.no/Fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=1093697&method=alle&produkttype=12622&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					Trend DS - P2
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					KORTN_TILLATT_VERDI=21<br>NVDB_ID=17327<br>NVDB_navn=Trend DS - P2<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Mer informasjon om produkt finnes på vegvesen.no:&#160;&#160;http://www.vegvesen.no/Fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=512348&method=alle&produkttype=12622&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					Trend DS - P4
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					KORTN_TILLATT_VERDI=22<br>NVDB_ID=17328<br>NVDB_navn=Trend DS - P4<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Mer informasjon om produkt finnes på vegvesen.no:&#160;&#160;http://www.vegvesen.no/Fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=512349&method=alle&produkttype=12622&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					Trend SS - P2
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					KORTN_TILLATT_VERDI=23<br>NVDB_ID=17330<br>NVDB_navn=Trend SS - P2<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Mer informasjon om produkt finnes på vegvesen.no:&#160;&#160;http://www.vegvesen.no/Fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=512327&method=alle&produkttype=12622&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					Trend SS - P4
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					KORTN_TILLATT_VERDI=24<br>NVDB_ID=17329<br>NVDB_navn=Trend SS - P4<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Mer informasjon om produkt finnes på vegvesen.no:&#160;&#160;http://www.vegvesen.no/Fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=512330&method=alle&produkttype=12622&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					XT 110 - P4
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					KORTN_TILLATT_VERDI=25<br>NVDB_ID=17331<br>NVDB_navn=XT 110 - P4<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Mer informasjon om produkt finnes på vegvesen.no:&#160;&#160;http://www.vegvesen.no/Fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=512292&method=alle&produkttype=12622&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					XTD 110 - P4
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					KORTN_TILLATT_VERDI=26<br>NVDB_ID=17332<br>NVDB_navn=XTD 110 - P4<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Mer informasjon om produkt finnes på vegvesen.no:&#160;&#160;http://www.vegvesen.no/Fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=512295&method=alle&produkttype=12622&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					ZT1 - P4
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					KORTN_TILLATT_VERDI=27<br>NVDB_ID=17333<br>NVDB_navn=ZT1 - P4<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Mer informasjon om produkt finnes på vegvesen.no:&#160;&#160;http://www.vegvesen.no/Fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=627947&method=alle&produkttype=12622&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					ZT2 - P4
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					KORTN_TILLATT_VERDI=28<br>NVDB_ID=17334<br>NVDB_navn=ZT2 - P4<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Mer informasjon om produkt finnes på vegvesen.no:&#160;&#160;http://www.vegvesen.no/Fag/Teknologi/Rekkverk+og+master/Sok+etter+godkjent+produkt/Vegutstyr?key=576154&method=alle&produkttype=12622&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>
+	</table>
+</div>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Tag</td>
+			<td width="50%" class="TableHeading">Value</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">asDictionary</td>
+				<td width="50%" class="TableRow" valign="top">true</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					Details:
+						<div class="ObjectDetailsNotes">Values: true,false<br />Default: true<br />Description: true if codelist is externally managed, else false<br /></div>
+
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">codeList</td>
+				<td width="50%" class="TableRow" valign="top"><a href="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenningRekkverksende.gml" target="_blank" >https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_ProduktnavnTypegodkjenningRekkverksende.gml</a></td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					Details:
+						<div class="ObjectDetailsNotes">Default: https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/codeListNavn.xml<br /></div>
+
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">kilde</td>
+				<td width="50%" class="TableRow" valign="top">NVDB</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					Details:
+						<div class="ObjectDetailsNotes">Values: Håndboka,NVDB,SOSI,VU053,Miljødirektoratet,Annet<br /></div>
+
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">referanse</td>
+				<td width="50%" class="TableRow" valign="top">10724</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					Details:
+						&nbsp;
+				</td>
+			</tr>
+	</table>
+</div>		<div class="ItemBody" id="CustomPropertiesTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Property</td>
+					<td width="70%" class="TableHeading">Value</td>
+				</tr>
+			<tr>
+				<td width="30%" class="TableRow">isFinalSpecialization:</td>
+				<td width="70%" class="TableRow">0</td>
+			</tr>
+
+
+			</table>
+		</div>	</div>
+ </div>
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+
