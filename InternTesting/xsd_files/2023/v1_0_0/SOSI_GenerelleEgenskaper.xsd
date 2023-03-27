@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:svvge="https://skjema.atlas.vegvesen.no/r000/sosigenerelleegenskaper/1.0" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/sosigenerelleegenskaper/1.0" version="1.0">
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:svvge="https://skjema.atlas.vegvesen.no/r000/sosigenerelleegenskaper/1.0" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/sosigenerelleegenskaper/1.0" version="1.0">
   <annotation>
     <documentation>Pakke med generelle egenskaper fra SOSI Del 1 Generelle Typer og LandInfra</documentation>
   </annotation>
+  <import namespace="http://www.interactive-instruments.de/ShapeChange/AppInfo" schemaLocation="http://shapechange.net/resources/schema/ShapeChangeAppinfo.xsd"/>
   <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
   <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
   <element name="GenerelleEgenskaper" substitutionGroup="gml:AbstractFeature" type="svvge:GenerelleEgenskaperType">
@@ -28,6 +29,7 @@
               <documentation>Tilsvarer LandInfra/AbstractData/description</documentation>
             </annotation>
           </element>
+          <element minOccurs="0" name="posisjonskvalitet" type="svvge:PosisjonskvalitetPropertyType"/>
         </sequence>
       </extension>
     </complexContent>
@@ -72,6 +74,91 @@ Merknad : Verdien for nanverom vil eies av den dataprodusent som har ansvar for 
   <complexType name="IdentifikasjonPropertyType">
     <sequence>
       <element ref="svvge:Identifikasjon"/>
+    </sequence>
+  </complexType>
+  <element name="Koordinatsystem" substitutionGroup="gml:AbstractObject" type="svvge:KoordinatsystemType"/>
+  <complexType name="KoordinatsystemType">
+    <sequence>
+      <element name="syskode" type="gml:CodeType">
+        <annotation>
+          <appinfo>
+            <sc:targetCodeListURI>https://register.geonorge.no/epsg-koder</sc:targetCodeListURI>
+            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://register.geonorge.no/epsg-koder</defaultCodeSpace>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="datum" type="string"/>
+      <element minOccurs="0" name="projeksjon" type="string"/>
+    </sequence>
+  </complexType>
+  <complexType name="KoordinatsystemPropertyType">
+    <sequence>
+      <element ref="svvge:Koordinatsystem"/>
+    </sequence>
+  </complexType>
+  <element name="Posisjonskvalitet" substitutionGroup="gml:AbstractObject" type="svvge:PosisjonskvalitetType">
+    <annotation>
+      <documentation>beskrivelse av kvaliteten på stedfestingen.
+
+Merknad: Posisjonskvalitet er ikke konform med  kvalitetsmodellen i ISO slik den er defineret i ISO19157:2013, men er en videreføring av tildligere brukte kvalitetsegenskaper i SOSI.</documentation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">SOSI</sc:taggedValue>
+        <sc:taggedValue tag="referanse">generelleKonsepter 5.0</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="PosisjonskvalitetType">
+    <sequence>
+      <element name="målemetode" type="gml:CodeType">
+        <annotation>
+          <documentation>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</documentation>
+          <appinfo>
+            <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/svvge_Maalemetode.gml</sc:targetCodeListURI>
+            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/svvge_Maalemetode.gml</defaultCodeSpace>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="nøyaktighet" type="integer">
+        <annotation>
+          <documentation>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer
+
+Merknad:
+Oppgitt i cm</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="synbarhet" type="gml:CodeType">
+        <annotation>
+          <documentation>hvor godt den kartlagte detalj var synbar ved kartleggingen</documentation>
+          <appinfo>
+            <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/svvge_Synbarhet.gml</sc:targetCodeListURI>
+            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/svvge_Synbarhet.gml</defaultCodeSpace>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="målemetodeHøyde" type="gml:CodeType">
+        <annotation>
+          <documentation>metode for å måle høyden</documentation>
+          <appinfo>
+            <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/svvge_MaalemetodeHoeyde.gml</sc:targetCodeListURI>
+            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/svvge_MaalemetodeHoeyde.gml</defaultCodeSpace>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="nøyaktighetHøyde" type="integer">
+        <annotation>
+          <documentation>nøyaktighet for høyden i cm</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="maksimaltAvvik" type="integer">
+        <annotation>
+          <documentation>absolutt toleranse for geometriske avvik</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="PosisjonskvalitetPropertyType">
+    <sequence>
+      <element ref="svvge:Posisjonskvalitet"/>
     </sequence>
   </complexType>
   <element abstract="true" name="SOSIFeature" substitutionGroup="svvge:GenerelleEgenskaper" type="svvge:SOSIFeatureType"/>

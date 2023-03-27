@@ -3,6 +3,9 @@ v1_0_0
 Main Structure
 	* VU053 LandInfra
 		* ny feature "VU053ElementSamling", har et attributt for å lage en liste for de forskjellige systemer
+	* SOSI GenrelleEgenskaper
+		* ny klasse "Posisjonskvalitet"
+		* ny attributti SOSI GenerelleEgenskaper (element)
 Grunnlagsmodell
 * Terreng
 	* Xsd from terreng modell
