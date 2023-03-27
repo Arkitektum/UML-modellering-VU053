@@ -6,6 +6,9 @@ Main Structure
 	* SOSI GenrelleEgenskaper
 		* ny klasse "Posisjonskvalitet"
 		* ny attributti SOSI GenerelleEgenskaper (element)
+	* Ny pake "VU053_Metadata
+	* Koble VU053_LeveranseMetadata til leveranse 
+	
 Grunnlagsmodell
 * Terreng
 	* Xsd from terreng modell
