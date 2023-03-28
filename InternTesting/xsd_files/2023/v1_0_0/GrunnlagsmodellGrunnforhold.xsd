@@ -1,9 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gmgld="https://skjema.atlas.vegvesen.no/r000/grunnlagsdata/0.1" xmlns:gmgrf="https://skjema.atlas.vegvesen.no/r000/grunnlagsmodellgrunnforhold/0.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:lv="https://skjema.atlas.vegvesen.no/r000/leveranse/1.0" xmlns:svvli="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/grunnlagsmodellgrunnforhold/0.1" version="0.1">
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gmgld="https://skjema.atlas.vegvesen.no/r000/grunnlagsdata/0.1" xmlns:gmgrf="https://skjema.atlas.vegvesen.no/r000/grunnlagsmodellgrunnforhold/0.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:lv="https://skjema.atlas.vegvesen.no/r000/leveranse/1.0" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:svvli="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/grunnlagsmodellgrunnforhold/0.1" version="0.1">
+  <import namespace="http://www.interactive-instruments.de/ShapeChange/AppInfo" schemaLocation="http://shapechange.net/resources/schema/ShapeChangeAppinfo.xsd"/>
   <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
   <import namespace="https://skjema.atlas.vegvesen.no/r000/grunnlagsdata/0.1" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/InternTesting/xsd_files/2023/v1_0_0/Grunnlagsdata.xsd"/>
   <import namespace="https://skjema.atlas.vegvesen.no/r000/leveranse/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/InternTesting/xsd_files/2023/v1_0_0/Leveranse.xsd"/>
   <import namespace="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/InternTesting/xsd_files/2023/v1_0_0/SVV_Landinfra.xsd"/>
   <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="BergIDag" substitutionGroup="gmgrf:ObservasjonElement" type="gmgrf:BergIDagType"/>
+  <complexType name="BergIDagType">
+    <complexContent>
+      <extension base="gmgrf:ObservasjonElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BergIDagPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgrf:BergIDag"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
   <element name="CPTU" substitutionGroup="gmgrf:UndersoekelseElement" type="gmgrf:CPTUType"/>
   <complexType name="CPTUType">
     <complexContent>
@@ -19,8 +35,8 @@
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
-  <element name="GrunnforholdElement" substitutionGroup="svvli:VU053Feature" type="gmgrf:GrunnforholdElementType"/>
-  <complexType name="GrunnforholdElementType">
+  <element name="GrunnUndersoekelserElement" substitutionGroup="svvli:VU053Feature" type="gmgrf:GrunnUndersoekelserElementType"/>
+  <complexType name="GrunnUndersoekelserElementType">
     <complexContent>
       <extension base="svvli:VU053FeatureType">
         <sequence>
@@ -40,9 +56,49 @@
       </extension>
     </complexContent>
   </complexType>
-  <complexType name="GrunnforholdElementPropertyType">
+  <complexType name="GrunnUndersoekelserElementPropertyType">
     <sequence minOccurs="0">
-      <element ref="gmgrf:GrunnforholdElement"/>
+      <element ref="gmgrf:GrunnUndersoekelserElement"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="GrunnUndersoekelserElementSamling" substitutionGroup="gml:AbstractFeature" type="gmgrf:GrunnUndersoekelserElementSamlingType"/>
+  <complexType name="GrunnUndersoekelserElementSamlingType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="undersoekelseElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="gmgrf:UndersoekelseElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="observasjonElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="gmgrf:ObservasjonElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GrunnUndersoekelserElementSamlingPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgrf:GrunnUndersoekelserElementSamling"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
@@ -56,12 +112,24 @@
     <complexContent>
       <extension base="lv:GrunnlagsmodellType">
         <sequence>
-          <element maxOccurs="unbounded" minOccurs="0" name="grunnforholdElement">
+          <element maxOccurs="unbounded" minOccurs="0" name="grunnUndersoekelserElementSamling">
             <complexType>
               <complexContent>
                 <extension base="gml:AbstractFeatureMemberType">
                   <sequence minOccurs="0">
-                    <element ref="gmgrf:GrunnforholdElement"/>
+                    <element ref="gmgrf:GrunnUndersoekelserElementSamling"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="grunnUndersoekelserElementElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="gmgrf:GrunnUndersoekelserElement"/>
                   </sequence>
                   <attributeGroup ref="gml:AssociationAttributeGroup"/>
                 </extension>
@@ -79,46 +147,17 @@
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
-  <element name="Loesmasse" substitutionGroup="gmgrf:GrunnforholdElement" type="gmgrf:LoesmasseType">
-    <annotation>
-      <documentation>areal bestående av en løsmassetype (jordart)</documentation>
-    </annotation>
-  </element>
-  <complexType name="LoesmasseType">
+  <element name="ObservasjonElement" substitutionGroup="gmgrf:GrunnUndersoekelserElement" type="gmgrf:ObservasjonElementType"/>
+  <complexType name="ObservasjonElementType">
     <complexContent>
-      <extension base="gmgrf:GrunnforholdElementType">
-        <sequence>
-          <element minOccurs="0" name="losmassetype" type="gml:CodeType">
-            <annotation>
-              <documentation>kvartærgeologiske løsmassetyper (jordartstyper)</documentation>
-              <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Losmassetype.xml</defaultCodeSpace>
-              </appinfo>
-            </annotation>
-          </element>
-          <element minOccurs="0" name="infiltrasjonEvne" type="gml:CodeType">
-            <annotation>
-              <documentation>løsmassenes egenskaper til å infiltrere og rense avløpsvann</documentation>
-              <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Infiltrasjonevne.xml</defaultCodeSpace>
-              </appinfo>
-            </annotation>
-          </element>
-          <element minOccurs="0" name="grunnvannPotensiale" type="gml:CodeType">
-            <annotation>
-              <documentation>løsmassenes potensiale til å inneholde grunnvannsressurser</documentation>
-              <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GrunnvannPotensiale.xml</defaultCodeSpace>
-              </appinfo>
-            </annotation>
-          </element>
-        </sequence>
+      <extension base="gmgrf:GrunnUndersoekelserElementType">
+        <sequence/>
       </extension>
     </complexContent>
   </complexType>
-  <complexType name="LoesmassePropertyType">
+  <complexType name="ObservasjonElementPropertyType">
     <sequence minOccurs="0">
-      <element ref="gmgrf:Loesmasse"/>
+      <element ref="gmgrf:ObservasjonElement"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
@@ -168,6 +207,37 @@
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
+  <element name="Skraaning" substitutionGroup="gmgrf:ObservasjonElement" type="gmgrf:SkraaningType">
+    <annotation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+        <sc:taggedValue tag="referanse">270</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="SkraaningType">
+    <complexContent>
+      <extension base="gmgrf:ObservasjonElementType">
+        <sequence>
+          <element minOccurs="0" name="type" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_TypeSkråning.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_TypeSkråning.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SkraaningPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgrf:Skraaning"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
   <element name="Sondering" substitutionGroup="gmgrf:UndersoekelseElement" type="gmgrf:SonderingType"/>
   <complexType name="SonderingType">
     <complexContent>
@@ -177,7 +247,8 @@
           <element name="type" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_SonderingType.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_SonderingType.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_SonderingType.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -193,10 +264,10 @@
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
-  <element name="UndersoekelseElement" substitutionGroup="gmgrf:GrunnforholdElement" type="gmgrf:UndersoekelseElementType"/>
+  <element name="UndersoekelseElement" substitutionGroup="gmgrf:GrunnUndersoekelserElement" type="gmgrf:UndersoekelseElementType"/>
   <complexType name="UndersoekelseElementType">
     <complexContent>
-      <extension base="gmgrf:GrunnforholdElementType">
+      <extension base="gmgrf:GrunnUndersoekelserElementType">
         <sequence>
           <element maxOccurs="unbounded" minOccurs="0" name="punkt">
             <complexType>
@@ -213,7 +284,8 @@
           <element minOccurs="0" name="pavisningsType" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolPavisningstype.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolPavisningstype.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolPavisningstype.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -221,28 +293,32 @@
           <element minOccurs="0" name="geologiskAlder" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
           <element minOccurs="0" name="kvalitet" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_TemaKvalitet.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_TemaKvalitet.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_TemaKvalitet.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
           <element minOccurs="0" name="dateringMetode" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_DateringMetode.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_DateringMetode.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_DateringMetode.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
           <element minOccurs="0" name="temaJustering" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolTemajustering.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolTemajustering.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolTemajustering.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
@@ -267,7 +343,8 @@
           <element minOccurs="0" name="verdi" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolVerdivurdering.xml</defaultCodeSpace>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolVerdivurdering.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolVerdivurdering.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
