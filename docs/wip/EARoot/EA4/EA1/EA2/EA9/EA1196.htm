@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>FjernstyringVariabelt</title>
+<title>Brakett</title>
 <link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script language="JavaScript" src="../../../../../js/displayToc.js" type="text/javascript"></script>
 <script>
@@ -64,12 +64,12 @@
 <div class="section group" >
 
 		<div class="col span_2_of_2 header_frame">
-			<h1> FjernstyringVariabelt </h1>
+			<h1> Brakett </h1>
 			<!-- <img class="header_image" src="../../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
 			<img class="header_image" src="../../../../../images/ea-banner.png" align="right" alt="Header Image" />
 		</div>
 		<div class="col span_2_of_2 breadcrumb_frame">
-			<p><a href="../../../../EA3.htm">Vegprosjekt VU053 v1.0</a> / <a href="../../../EA455.htm">LeveranseVegprosjekt</a> / <a href="../../EA459.htm">Samordningsmodell</a> / <a href="../EA570.htm">Tverrfagligmodell</a> / <a href="EA1140.htm">FagmodellSkilt</a> / <a href="EA1196.htm">FjernstyringVariabelt</a></p>
+			<p><a href="../../../../EA3.htm">Vegprosjekt VU053 v1.0</a> / <a href="../../../EA458.htm">LeveranseVegprosjekt</a> / <a href="../../EA462.htm">Samordningsmodell</a> / <a href="../EA573.htm">Tverrfagligmodell</a> / <a href="EA1143.htm">FagmodellSkilt</a> / <a href="EA1196.htm">Brakett</a></p>
 		</div>
 			
 		<table class="contentmaintable">
@@ -84,16 +84,16 @@
 					<td class="indexcell">
 						<div class="projectBrowserTitle">Project: </div>
 						<ul>
-<a href="EA1140.htm">FagmodellSkilt</a></ul>
+<a href="EA1143.htm">FagmodellSkilt</a></ul>
 
 					</td>
 					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<span class="ObjectTitle">FjernstyringVariabelt  : Public  &lt;&lt;CodeList&gt;&gt; Class</span>
+	<span class="ObjectTitle">Brakett 11199 : Public  &lt;&lt;CodeList&gt;&gt; Class</span>
 	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">14.02.2023 14:02:50</td>
+			<td width="85%" class="ObjectDetailsValue">14.11.2022 14:37:31</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
@@ -110,7 +110,7 @@
 		</tr>
 		<tr id="proj01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
-			<td class="ObjectDetailsValue">2.28</td>
+			<td class="ObjectDetailsValue">2.30</td>
 		</tr>
 		<tr id="proj02" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
@@ -142,14 +142,14 @@
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{032C309E-3F59-45bd-A2A8-81985B615FD9}</td>
+			<td class="ObjectDetailsValue">{34E47DD6-43B9-4f17-8770-C54F53460718}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA1132.htm">FagmodellSkilt</a>, <a href="EA1136.htm">FagmodellSkilt Kodelister Skiltplater</a></td>
+			<td class="ObjectDetailsValue"><a href="EA1135.htm">FagmodellSkilt</a>, <a href="EA1137.htm">FagmodellSkilt Kodelister</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">Angir om vegobjektet kan fjernstyres.&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">Angir om det er benyttet brakett for festing av skiltet. Brakett benyttes gjerne for skiltpunkt som er festet på vegg, bru, m.m.&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -177,7 +177,7 @@
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="3">										
-					KORTN_TILLATT_VERDI=j<br>NVDB_ID=3518<br>NVDB_navn=Ja<br>
+					KORTN_TILLATT_VERDI=J<br>NVDB_ID=18493<br>NVDB_navn=Ja<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
@@ -204,7 +204,7 @@
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="3">										
-					KORTN_TILLATT_VERDI=n<br>NVDB_ID=3556<br>NVDB_navn=Nei<br>
+					KORTN_TILLATT_VERDI=N<br>NVDB_ID=18494<br>NVDB_navn=Nei<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
@@ -234,7 +234,8 @@
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
 					Details:
-						&nbsp;
+						<div class="ObjectDetailsNotes">Values: true,false<br />Default: true<br />Description: true if codelist is externally managed, else false<br /></div>
+
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow" valign="top">asDictionary</td>
@@ -243,12 +244,11 @@
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
 					Details:
-						<div class="ObjectDetailsNotes">Values: true,false<br />Default: true<br />Description: true if codelist is externally managed, else false<br /></div>
-
+						&nbsp;
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow" valign="top">codeList</td>
-				<td width="50%" class="TableRow" valign="top"><a href="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_FjernstyringVariabelt.gml" target="_blank" >https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_FjernstyringVariabelt.gml</a></td>
+				<td width="50%" class="TableRow" valign="top"><a href="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Brakett.gml" target="_blank" >https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Brakett.gml</a></td>
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
@@ -268,7 +268,7 @@
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow" valign="top">referanse</td>
-				<td width="50%" class="TableRow" valign="top">1739</td>
+				<td width="50%" class="TableRow" valign="top">11199</td>
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">

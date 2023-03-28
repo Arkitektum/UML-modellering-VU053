@@ -1,6 +1,6 @@
-tocTab[tocTab.length] = new Array("0.2.1:1", "", "Oversiktsdiagram Prosjektinformasjon", "EARoot/EA2/EA1/EA335.htm", "175.png", "2900", "0", "", "Logical diagram0","{FAAAFF5C-C5CF-407e-9EDD-A7C8E40307EB}");
-tocTab[tocTab.length] = new Array("0.2.1:2", "", "«CodeList» Prosjektfase", "EARoot/EA2/EA1/EA338.htm", "5.png", "E17604", "0", "", "Class0","{38C8F5B7-F403-42ea-8D75-5FC8C58FF1EF}");
-tocTab[tocTab.length] = new Array("0.2.1:3", "", "«dataType» ProsjektnavnStandard", "EARoot/EA2/EA1/EA339.htm", "5.png", "E17605", "0", "", "Class0","{3A48DDD3-CD05-49be-A01B-44988F153839}");
-tocTab[tocTab.length] = new Array("0.2.1:4", "", "«featureType» Prosjektomraade", "EARoot/EA2/EA1/EA340.htm", "5.png", "E17606", "0", "", "Class0","{7CE4663F-436E-4940-B443-2C1C8977E380}");
-tocTab[tocTab.length] = new Array("0.2.1:5", "", "«featureType» ProsjektOrganisasjon", "EARoot/EA2/EA1/EA341.htm", "5.png", "E17607", "0", "", "Class0","{A2662FDE-2C1A-4826-86B5-541DB4159F0E}");
-tocTab[tocTab.length] = new Array("0.2.1:6", "", "«CodeList» Vegnummer", "EARoot/EA2/EA1/EA342.htm", "5.png", "E17608", "0", "", "Class0","{A8603C3F-BFAA-41cf-878D-45322B1F0367}");
+tocTab[tocTab.length] = new Array("0.2.1:1", "", "Oversiktsdiagram Prosjektinformasjon", "EARoot/EA2/EA1/EA338.htm", "175.png", "2983", "0", "", "Logical diagram0","{FAAAFF5C-C5CF-407e-9EDD-A7C8E40307EB}");
+tocTab[tocTab.length] = new Array("0.2.1:2", "", "«CodeList» Prosjektfase", "EARoot/EA2/EA1/EA341.htm", "5.png", "E18052", "0", "", "Class0","{38C8F5B7-F403-42ea-8D75-5FC8C58FF1EF}");
+tocTab[tocTab.length] = new Array("0.2.1:3", "", "«dataType» ProsjektnavnStandard", "EARoot/EA2/EA1/EA342.htm", "5.png", "E18053", "0", "", "Class0","{3A48DDD3-CD05-49be-A01B-44988F153839}");
+tocTab[tocTab.length] = new Array("0.2.1:4", "", "«featureType» Prosjektomraade", "EARoot/EA2/EA1/EA343.htm", "5.png", "E18054", "0", "", "Class0","{7CE4663F-436E-4940-B443-2C1C8977E380}");
+tocTab[tocTab.length] = new Array("0.2.1:5", "", "«featureType» ProsjektOrganisasjon", "EARoot/EA2/EA1/EA344.htm", "5.png", "E18055", "0", "", "Class0","{A2662FDE-2C1A-4826-86B5-541DB4159F0E}");
+tocTab[tocTab.length] = new Array("0.2.1:6", "", "«CodeList» Vegnummer", "EARoot/EA2/EA1/EA345.htm", "5.png", "E18056", "0", "", "Class0","{A8603C3F-BFAA-41cf-878D-45322B1F0367}");

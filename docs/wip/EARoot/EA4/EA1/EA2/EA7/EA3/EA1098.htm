@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Avledningsevne</title>
+<title>Sikkerhetsklasse</title>
 <link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script language="JavaScript" src="../../../../../../js/displayToc.js" type="text/javascript"></script>
 <script>
@@ -64,12 +64,12 @@
 <div class="section group" >
 
 		<div class="col span_2_of_2 header_frame">
-			<h1> Avledningsevne </h1>
+			<h1> Sikkerhetsklasse </h1>
 			<!-- <img class="header_image" src="../../../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
 			<img class="header_image" src="../../../../../../images/ea-banner.png" align="right" alt="Header Image" />
 		</div>
 		<div class="col span_2_of_2 breadcrumb_frame">
-			<p><a href="../../../../../EA3.htm">Vegprosjekt VU053 v1.0</a> / <a href="../../../../EA441.htm">LeveranseVegprosjekt</a> / <a href="../../../EA445.htm">Samordningsmodell</a> / <a href="../../EA556.htm">Tverrfagligmodell</a> / <a href="../EA1056.htm">FagmodellRekkverk</a> / <a href="EA1096.htm">Stoetpute</a> / <a href="EA1098.htm">Avledningsevne</a></p>
+			<p><a href="../../../../../EA3.htm">Vegprosjekt VU053 v1.0</a> / <a href="../../../../EA458.htm">LeveranseVegprosjekt</a> / <a href="../../../EA462.htm">Samordningsmodell</a> / <a href="../../EA573.htm">Tverrfagligmodell</a> / <a href="../EA1054.htm">FagmodellRekkverk</a> / <a href="EA1094.htm">Stoetpute</a> / <a href="EA1098.htm">Sikkerhetsklasse</a></p>
 		</div>
 			
 		<table class="contentmaintable">
@@ -84,12 +84,12 @@
 					<td class="indexcell">
 						<div class="projectBrowserTitle">Project: </div>
 						<ul>
-<a href="EA1096.htm">Stoetpute</a></ul>
+<a href="EA1094.htm">Stoetpute</a></ul>
 
 					</td>
 					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<span class="ObjectTitle">Avledningsevne  : Public  &lt;&lt;CodeList&gt;&gt; Class</span>
+	<span class="ObjectTitle">Sikkerhetsklasse  : Public  &lt;&lt;CodeList&gt;&gt; Class</span>
 	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -142,14 +142,14 @@
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{5A5202FF-38D9-4ac6-8816-53F7B78877EE}</td>
+			<td class="ObjectDetailsValue">{07BBE9BB-4558-4432-A1FC-D4C79BE41C5F}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA1054.htm">FagmodellRekkverk Kodeliste</a>, <a href="EA1094.htm">Stoetpute</a></td>
+			<td class="ObjectDetailsValue"><a href="../EA1050.htm">FagmodellRekkverk</a>, <a href="../EA1052.htm">FagmodellRekkverk Kodeliste</a>, <a href="EA1092.htm">Stoetpute</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">Støtputer deles inn i to typer etter deres evne til å fange opp og stanse eller avlede kjøretøyet ved en sidepåkjørsel. Kilde: Rekkverksnormal HB N101 (231).&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">Angir hvilken sikkerhetsklasse støtpute er dimensjonert for. Jfr Rekkverksnormal HB N101 (231) kap 6.3.&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -166,7 +166,7 @@
 		</tr>
 						<tr>
 				<td width="50%" class="TableRow">
-					Avledende
+					S-50
 				</td>
 				<td width="25%" class="TableRow">
 					Public 
@@ -177,14 +177,14 @@
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="3">										
-					KORTN_TILLATT_VERDI=a<br>
+					KORTN_TILLATT_VERDI=50<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Avledende&lt;br/&gt;
+			S-50&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -193,7 +193,7 @@
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow">
-					Ikke avledende
+					S-80
 				</td>
 				<td width="25%" class="TableRow">
 					Public 
@@ -204,14 +204,95 @@
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="3">										
-					KORTN_TILLATT_VERDI=ia<br>
+					KORTN_TILLATT_VERDI=80<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Ikke avledende&lt;br/&gt;
+			S-80&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					S-80-1
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					KORTN_TILLATT_VERDI=81<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			S-80-1&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					S-100
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					KORTN_TILLATT_VERDI=100<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			S-100&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					S-110
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					KORTN_TILLATT_VERDI=110<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			S-110&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -239,7 +320,7 @@
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow" valign="top">codeList</td>
-				<td width="50%" class="TableRow" valign="top"><a href="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Avledningsevne.gml" target="_blank" >https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Avledningsevne.gml</a></td>
+				<td width="50%" class="TableRow" valign="top"><a href="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Sikkerhetsklasse.gml" target="_blank" >https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_Sikkerhetsklasse.gml</a></td>
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
@@ -259,7 +340,7 @@
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow" valign="top">referanse</td>
-				<td width="50%" class="TableRow" valign="top">4654</td>
+				<td width="50%" class="TableRow" valign="top">4653</td>
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
