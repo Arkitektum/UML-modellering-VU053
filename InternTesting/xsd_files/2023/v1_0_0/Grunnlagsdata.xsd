@@ -10,8 +10,8 @@
       <element minOccurs="0" name="datafangstmetoder" type="gml:CodeType">
         <annotation>
           <appinfo>
-            <sc:targetCodeListURI>https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/datafangstmetode</sc:targetCodeListURI>
-            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgld_Datafangstmetode.xml</defaultCodeSpace>
+            <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgld_Datafangstmetode.gml</sc:targetCodeListURI>
+            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgld_Datafangstmetode.gml</defaultCodeSpace>
           </appinfo>
         </annotation>
       </element>
@@ -38,12 +38,13 @@
     <complexContent>
       <extension base="gml:AbstractFeatureType">
         <sequence>
-          <element name="datakilde" type="gmgld:DatakildePropertyType"/>
-          <element name="kildevurdering" type="string"/>
-          <element name="dataKildevurdering" type="gml:CodeType">
+          <element minOccurs="0" name="datakilde" type="gmgld:DatakildePropertyType"/>
+          <element minOccurs="0" name="kildevurdering" type="string"/>
+          <element minOccurs="0" name="dataKildevurdering" type="gml:CodeType">
             <annotation>
               <appinfo>
-                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/codeListNavn.xml</sc:targetCodeListURI>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgld_DataKildevurdering.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgld_DataKildevurdering.gml</defaultCodeSpace>
               </appinfo>
             </annotation>
           </element>
