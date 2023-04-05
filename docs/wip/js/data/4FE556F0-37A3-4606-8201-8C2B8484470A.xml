@@ -6,4 +6,4 @@ tocTab[tocTab.length] = new Array("0.1.5", "1", "Plassholdere_for_Original", "EA
 tocTab[tocTab.length] = new Array("0.1.6", "1", "PolyfaceMesh_Main", "EARoot/EA1/EA6/EA183.htm", "4.png", "", "", "{7FC0DE0F-2EE2-4860-8101-DC647C7FCABC}", "Package");
 tocTab[tocTab.length] = new Array("0.1.7", "1", "SupportingPackages", "EARoot/EA1/EA7/EA199.htm", "4.png", "", "", "{BDA047A8-67BE-44dd-972C-2DD93F227536}", "Package");
 tocTab[tocTab.length] = new Array("0.1.8", "1", "«ApplicationSchema» VU053_Metadata", "EARoot/EA1/EA8/EA301.htm", "4.png", "", "", "{926243B5-C1B8-452e-9269-DDE2AF785731}", "Package");
-tocTab[tocTab.length] = new Array("0.1.9", "1", "«ApplicationSchema» SOSI_GenerelleEgenskaper", "EARoot/EA1/EA9/EA313.htm", "4.png", "", "", "{7562AEFE-0A79-4391-AE35-89002665BC4F}", "Package");
+tocTab[tocTab.length] = new Array("0.1.9", "1", "«ApplicationSchema» SOSI_GenerelleEgenskaper", "EARoot/EA1/EA9/EA330.htm", "4.png", "", "", "{7562AEFE-0A79-4391-AE35-89002665BC4F}", "Package");

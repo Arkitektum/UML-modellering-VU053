@@ -1,5 +1,6 @@
-tocTab[tocTab.length] = new Array("0.4.1.1.1:1", "", "Grunnlagsdata", "EARoot/EA4/EA1/EA1/EA1/EA473.htm", "175.png", "3024", "0", "", "Logical diagram0","{09EEF667-8BE8-4bbc-BF1B-B4621546BED1}");
-tocTab[tocTab.length] = new Array("0.4.1.1.1:2", "", "Grunnlagsdata kodeliste", "EARoot/EA4/EA1/EA1/EA1/EA475.htm", "175.png", "3025", "0", "", "Logical diagram0","{8D2744F0-17EA-4fb8-8A41-B19D44891863}");
-tocTab[tocTab.length] = new Array("0.4.1.1.1:3", "", "«DataType» Datakilde", "EARoot/EA4/EA1/EA1/EA1/EA478.htm", "5.png", "E18223", "0", "", "Class0","{215FC1D0-DFE6-4fea-8CF2-86F867C102A6}");
-tocTab[tocTab.length] = new Array("0.4.1.1.1:4", "", "«FeatureType» GrunnlagsdataBrukt", "EARoot/EA4/EA1/EA1/EA1/EA479.htm", "5.png", "E18222", "0", "", "Class0","{12BA23FF-E2F2-43de-8833-A06CF15DD74C}");
-tocTab[tocTab.length] = new Array("0.4.1.1.1:5", "", "«CodeList» Datafangstmetode", "EARoot/EA4/EA1/EA1/EA1/EA480.htm", "5.png", "E18224", "0", "", "Class0","{B8EC8CE7-0CF8-45e3-9789-390E4DB6FE87}");
+tocTab[tocTab.length] = new Array("0.2.1.1.1:1", "", "Grunnlagsdata", "EARoot/EA2/EA1/EA1/EA1/EA359.htm", "175.png", "3281", "0", "", "Logical diagram0","{09EEF667-8BE8-4bbc-BF1B-B4621546BED1}");
+tocTab[tocTab.length] = new Array("0.2.1.1.1:2", "", "Grunnlagsdata kodeliste", "EARoot/EA2/EA1/EA1/EA1/EA361.htm", "175.png", "3282", "0", "", "Logical diagram0","{8D2744F0-17EA-4fb8-8A41-B19D44891863}");
+tocTab[tocTab.length] = new Array("0.2.1.1.1:3", "", "«DataType» Datakilde", "EARoot/EA2/EA1/EA1/EA1/EA364.htm", "5.png", "E19906", "0", "", "Class0","{215FC1D0-DFE6-4fea-8CF2-86F867C102A6}");
+tocTab[tocTab.length] = new Array("0.2.1.1.1:4", "", "«CodeList» DataKildevurdering", "EARoot/EA2/EA1/EA1/EA1/EA365.htm", "5.png", "E20850", "0", "", "Class0","{30752E81-1C20-4c18-885B-1003A6013E8C}");
+tocTab[tocTab.length] = new Array("0.2.1.1.1:5", "", "«FeatureType» GrunnlagsdataBrukt", "EARoot/EA2/EA1/EA1/EA1/EA366.htm", "5.png", "E19905", "0", "", "Class0","{12BA23FF-E2F2-43de-8833-A06CF15DD74C}");
+tocTab[tocTab.length] = new Array("0.2.1.1.1:6", "", "«CodeList» Datafangstmetode", "EARoot/EA2/EA1/EA1/EA1/EA367.htm", "5.png", "E19907", "0", "", "Class0","{B8EC8CE7-0CF8-45e3-9789-390E4DB6FE87}");

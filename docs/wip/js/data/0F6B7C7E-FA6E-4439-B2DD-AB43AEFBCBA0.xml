@@ -1,5 +1,5 @@
-tocTab[tocTab.length] = new Array("0.4.1.2.7.3:1", "", "Stoetpute", "EARoot/EA4/EA1/EA2/EA7/EA3/EA1092.htm", "175.png", "3062", "0", "", "Logical diagram0","{107275DC-553D-4690-813B-6D858772C0AD}");
-tocTab[tocTab.length] = new Array("0.4.1.2.7.3:2", "", "«featureType» StoetputeElement", "EARoot/EA4/EA1/EA2/EA7/EA3/EA1095.htm", "5.png", "E18742", "0", "", "Class0","{C34E3238-5846-4e47-9E65-9975181F9641}");
-tocTab[tocTab.length] = new Array("0.4.1.2.7.3:3", "", "«CodeList» Avledningsevne", "EARoot/EA4/EA1/EA2/EA7/EA3/EA1096.htm", "5.png", "E18740", "0", "", "Class0","{5A5202FF-38D9-4ac6-8816-53F7B78877EE}");
-tocTab[tocTab.length] = new Array("0.4.1.2.7.3:4", "", "«CodeList» ProduktnavnTypegodkjenningStoetpute", "EARoot/EA4/EA1/EA2/EA7/EA3/EA1097.htm", "5.png", "E18741", "0", "", "Class0","{B94E8417-3301-4e94-9A3C-EB7EAEAE8F68}");
-tocTab[tocTab.length] = new Array("0.4.1.2.7.3:5", "", "«CodeList» Sikkerhetsklasse", "EARoot/EA4/EA1/EA2/EA7/EA3/EA1098.htm", "5.png", "E18739", "0", "", "Class0","{07BBE9BB-4558-4432-A1FC-D4C79BE41C5F}");
+tocTab[tocTab.length] = new Array("0.2.1.2.7.3:1", "", "Stoetpute", "EARoot/EA2/EA1/EA2/EA7/EA3/EA1063.htm", "175.png", "3319", "0", "", "Logical diagram0","{107275DC-553D-4690-813B-6D858772C0AD}");
+tocTab[tocTab.length] = new Array("0.2.1.2.7.3:2", "", "«featureType» StoetputeElement", "EARoot/EA2/EA1/EA2/EA7/EA3/EA1066.htm", "5.png", "E20429", "0", "", "Class0","{C34E3238-5846-4e47-9E65-9975181F9641}");
+tocTab[tocTab.length] = new Array("0.2.1.2.7.3:3", "", "«CodeList» Avledningsevne", "EARoot/EA2/EA1/EA2/EA7/EA3/EA1067.htm", "5.png", "E20427", "0", "", "Class0","{5A5202FF-38D9-4ac6-8816-53F7B78877EE}");
+tocTab[tocTab.length] = new Array("0.2.1.2.7.3:4", "", "«CodeList» ProduktnavnTypegodkjenningStoetpute", "EARoot/EA2/EA1/EA2/EA7/EA3/EA1068.htm", "5.png", "E20428", "0", "", "Class0","{B94E8417-3301-4e94-9A3C-EB7EAEAE8F68}");
+tocTab[tocTab.length] = new Array("0.2.1.2.7.3:5", "", "«CodeList» Sikkerhetsklasse", "EARoot/EA2/EA1/EA2/EA7/EA3/EA1069.htm", "5.png", "E20426", "0", "", "Class0","{07BBE9BB-4558-4432-A1FC-D4C79BE41C5F}");
