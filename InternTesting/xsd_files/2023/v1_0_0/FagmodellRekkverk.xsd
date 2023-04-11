@@ -104,7 +104,14 @@
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
-  <element name="Rekkverk" substitutionGroup="fmrek:RekkverkElementSamling" type="fmrek:RekkverkType"/>
+  <element name="Rekkverk" substitutionGroup="fmrek:RekkverkElementSamling" type="fmrek:RekkverkType">
+    <annotation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+        <sc:taggedValue tag="referanse">5</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
   <complexType name="RekkverkType">
     <complexContent>
       <extension base="fmrek:RekkverkElementSamlingType">

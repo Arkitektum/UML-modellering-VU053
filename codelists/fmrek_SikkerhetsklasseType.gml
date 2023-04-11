@@ -9,30 +9,30 @@
   <gml:description></gml:description>
   <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_SikkerhetsklasseType.gml">SikkerhetsklasseType</gml:identifier>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="SikkerhetsklasseType.P1">
+    <gml:Definition gml:id="SikkerhetsklasseType.p1">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_SikkerhetsklasseType.gml#SikkerhetsklasseType.P1">P1</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_SikkerhetsklasseType.gml#SikkerhetsklasseType.p1">p1</gml:identifier>
       <gml:name>P1</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="SikkerhetsklasseType.P2">
+    <gml:Definition gml:id="SikkerhetsklasseType.p2">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_SikkerhetsklasseType.gml#SikkerhetsklasseType.P2">P2</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_SikkerhetsklasseType.gml#SikkerhetsklasseType.p2">p2</gml:identifier>
       <gml:name>P2</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="SikkerhetsklasseType.P3">
+    <gml:Definition gml:id="SikkerhetsklasseType.p3">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_SikkerhetsklasseType.gml#SikkerhetsklasseType.P3">P3</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_SikkerhetsklasseType.gml#SikkerhetsklasseType.p3">p3</gml:identifier>
       <gml:name>P3</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="SikkerhetsklasseType.P4">
+    <gml:Definition gml:id="SikkerhetsklasseType.p4">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_SikkerhetsklasseType.gml#SikkerhetsklasseType.P4">P4</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_SikkerhetsklasseType.gml#SikkerhetsklasseType.p4">p4</gml:identifier>
       <gml:name>P4</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
