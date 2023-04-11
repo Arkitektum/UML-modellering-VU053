@@ -10,9 +10,9 @@
   <gml:description></gml:description>
   <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_RabattUtforming.gml">RabattUtforming</gml:identifier>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="RabattUtforming.grøft">
+    <gml:Definition gml:id="RabattUtforming.groeft">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_RabattUtforming.gml#RabattUtforming.grøft">grøft</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_RabattUtforming.gml#RabattUtforming.groeft">groeft</gml:identifier>
       <gml:name>grøft</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

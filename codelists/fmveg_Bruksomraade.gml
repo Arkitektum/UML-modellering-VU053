@@ -24,16 +24,16 @@
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="Bruksomraade.GS-veg">
+    <gml:Definition gml:id="Bruksomraade.gSVeg">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Bruksomraade.gml#Bruksomraade.GS-veg">GS-veg</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Bruksomraade.gml#Bruksomraade.gSVeg">gSVeg</gml:identifier>
       <gml:name>GS-veg</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="Bruksomraade.trafikkøy">
+    <gml:Definition gml:id="Bruksomraade.trafikkoey">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Bruksomraade.gml#Bruksomraade.trafikkøy">trafikkøy</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Bruksomraade.gml#Bruksomraade.trafikkoey">trafikkoey</gml:identifier>
       <gml:name>trafikkøy</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

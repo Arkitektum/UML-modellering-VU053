@@ -220,7 +220,14 @@
 		<attributeGroup ref="gml:AssociationAttributeGroup"/>
 		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
 	</complexType>
-	<element name="Fartsdemper" type="fmveg:FartsdemperType" substitutionGroup="fmveg:VegOgGateObjekterElement"/>
+	<element name="Fartsdemper" type="fmveg:FartsdemperType" substitutionGroup="fmveg:VegOgGateObjekterElement">
+		<annotation>
+			<appinfo>
+				<sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+				<sc:taggedValue tag="referanse">103</sc:taggedValue>
+			</appinfo>
+		</annotation>
+	</element>
 	<complexType name="FartsdemperType">
 		<complexContent>
 			<extension base="fmveg:VegOgGateObjekterElementType">
@@ -263,6 +270,10 @@
 	<element name="Ferist" type="fmveg:FeristType" substitutionGroup="fmveg:VegOgGateObjekterElement">
 		<annotation>
 			<documentation>Konstruksjon med rist eller gitter som er innbygd i vegbanen, og som hindrer krøtter i å komme over. (jfr bokmålsordboka)</documentation>
+			<appinfo>
+				<sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+				<sc:taggedValue tag="referanse">22</sc:taggedValue>
+			</appinfo>
 		</annotation>
 	</element>
 	<complexType name="FeristType">
@@ -645,6 +656,10 @@
 	<element name="PortDoer" type="fmveg:PortDoerType" substitutionGroup="fmveg:VegOgGateObjekterElement">
 		<annotation>
 			<documentation>Åpning til/fra et rom/område. Kan åpnes og lukkes med dør eller port.</documentation>
+			<appinfo>
+				<sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+				<sc:taggedValue tag="referanse">13</sc:taggedValue>
+			</appinfo>
 		</annotation>
 	</element>
 	<complexType name="PortDoerType">

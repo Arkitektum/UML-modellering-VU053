@@ -31,9 +31,9 @@
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="Material.gatestein / heller">
+    <gml:Definition gml:id="Material.gatesteinHeller">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Material.gml#Material.gatestein / heller">gatestein / heller</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmveg_Material.gml#Material.gatesteinHeller">gatesteinHeller</gml:identifier>
       <gml:name>gatestein / heller</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
