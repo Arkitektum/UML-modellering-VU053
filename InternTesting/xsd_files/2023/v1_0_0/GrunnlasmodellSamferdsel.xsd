@@ -1,0 +1,1711 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:fmveg="https://skjema.atlas.vegvesen.no/r000/fagmodellveg/1.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gmsfd="https://skjema.atlas.vegvesen.no/r000/gmsamferdsel/0.1" xmlns:lv="https://skjema.atlas.vegvesen.no/r000/svvleveranse/1.0" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:svvli="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0" xmlns:svvlr="https://skjema.atlas.vegvesen.no/r000/svvlinearereferanser/1.0" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/gmsamferdsel/0.1" version="0.1">
+  <import namespace="http://www.interactive-instruments.de/ShapeChange/AppInfo" schemaLocation="http://shapechange.net/resources/schema/ShapeChangeAppinfo.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/fagmodellveg/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/InternTesting/xsd_files/2023/v1_0_0/FagmodellVeg.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/InternTesting/xsd_files/2023/v1_0_0/SVV_Landinfra.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/svvleveranse/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/InternTesting/xsd_files/2023/v1_0_0/SVV_Leveranse.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/svvlinearereferanser/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/InternTesting/xsd_files/2023/v1_0_0/SVV_LineareReferanser.xsd"/>
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="Baatrute" substitutionGroup="gmsfd:RuteElement" type="gmsfd:BaatruteType"/>
+  <complexType name="BaatruteType">
+    <complexContent>
+      <extension base="gmsfd:RuteElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BaatrutePropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmsfd:Baatrute"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Bane" substitutionGroup="gmsfd:Banelenke" type="gmsfd:BaneType">
+    <annotation>
+      <documentation>RailLine: teoretisk linje som representerer ett enkelt eller flere parallelle spor
+
+
+-- Definition -- 
+theoretical line which represents a single or several parallel tracks</documentation>
+    </annotation>
+  </element>
+  <complexType name="BaneType">
+    <complexContent>
+      <extension base="gmsfd:BanelenkeType">
+        <sequence>
+          <element minOccurs="0" name="sporantall" type="gml:CodeType">
+            <annotation>
+              <documentation>numberOfTracks: skille mellom ett eller flere spor
+
+-- Definition -- 
+distinction between single and multiple tracks</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_Sporantall.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_Sporantall.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BanePropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmsfd:Bane"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="BaneElementSamling" substitutionGroup="gmsfd:InfrastrukturElementSamling" type="gmsfd:BaneElementSamlingType"/>
+  <complexType name="BaneElementSamlingType">
+    <complexContent>
+      <extension base="gmsfd:InfrastrukturElementSamlingType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="jembanenode">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="gmsfd:Jernbanenode"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="jernbanelenken">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="gmsfd:Jernbanelenke"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="frittstaandeElementer">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="gmsfd:FrittstaaendeElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BaneElementSamlingPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmsfd:BaneElementSamling"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="BaneRute" substitutionGroup="gmsfd:RuteElement" type="gmsfd:BaneRuteType">
+    <annotation>
+      <documentation>RailwayLink: teoretisk linje som representerer ett enkelt eller flere parallelle spor som del av en banestrekning
+
+
+-- Definition -- 
+theoretical line which represents a single or several parallel tracks as part of a railway line
+
+
+-- INSPIRE --
+Maps to RailwayLink</documentation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">SOSI</sc:taggedValue>
+        <sc:taggedValue tag="referanse">Samferdsel 5.0 - N50</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="BaneRuteType">
+    <complexContent>
+      <extension base="gmsfd:RuteElementType">
+        <sequence>
+          <element minOccurs="0" name="sporantall" type="gml:CodeType">
+            <annotation>
+              <documentation>numberOfTracks: skille mellom ett eller flere spor
+
+-- Definition -- 
+distinction between single and multiple tracks</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_Sporantall.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_Sporantall.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="type" type="gml:CodeType">
+            <annotation>
+              <documentation>klassifisering i hht. konstruksjon/dimensjonering</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_Jernbanetype.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_Jernbanetype.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BaneRutePropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmsfd:BaneRute"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Baneavgrening" substitutionGroup="gmsfd:Banenode" type="gmsfd:BaneavgreningType">
+    <annotation>
+      <documentation>RailBranch: knutepunkt der baner møtes eller skilles
+
+
+-- Definition -- 
+junction where rail lines meet or divide</documentation>
+    </annotation>
+  </element>
+  <complexType name="BaneavgreningType">
+    <complexContent>
+      <extension base="gmsfd:BanenodeType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BaneavgreningPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmsfd:Baneavgrening"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Baneende" substitutionGroup="gmsfd:Banenode" type="gmsfd:BaneendeType">
+    <annotation>
+      <documentation>EndOfRailLine: punkt der bane opphører
+
+
+-- Definition -- 
+point where a rail line ends</documentation>
+    </annotation>
+  </element>
+  <complexType name="BaneendeType">
+    <complexContent>
+      <extension base="gmsfd:BanenodeType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BaneendePropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmsfd:Baneende"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="Banelenke" substitutionGroup="gmsfd:Jernbanelenke" type="gmsfd:BanelenkeType">
+    <annotation>
+      <documentation>RailLink: forbindelse mellom banenoder
+
+merknad: 
+abstrakt nivå av Bane
+
+
+-- Definition -- 
+connection between rail nodes. Note: abstract level of Rail line</documentation>
+    </annotation>
+  </element>
+  <complexType abstract="true" name="BanelenkeType">
+    <complexContent>
+      <extension base="gmsfd:JernbanelenkeType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BanelenkePropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmsfd:Banelenke"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="Banenode" substitutionGroup="gmsfd:Jernbanenode" type="gmsfd:BanenodeType">
+    <annotation>
+      <documentation>RailNode: knutepunkt mellom banelenker
+
+merknad: 
+abstrakt nivå av Baneavgrening og Baneende
+
+
+-- Definition -- 
+node (junction) between rail links. Note: abstract level of Rail branch and End of rail</documentation>
+    </annotation>
+  </element>
+  <complexType abstract="true" name="BanenodeType">
+    <complexContent>
+      <extension base="gmsfd:JernbanenodeType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BanenodePropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmsfd:Banenode"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Barmarksloeype" substitutionGroup="gmsfd:RuteElement" type="gmsfd:BarmarksloeypeType">
+    <annotation>
+      <documentation>SnowlessGroundTrail: tradisjonelle kjørespor/traktorveger i utmark hvor motorisert ferdsel på barmark er tillatt for allmennheten, etter forskrift gitt av Fylkesmannen
+
+
+-- Definition -- 
+traditional driving tracks/tractor roads on uncultivated land where motor traffic for the general public is permitted on snowless ground in accordance with the regulations laid down by the County governor</documentation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">SOSI</sc:taggedValue>
+        <sc:taggedValue tag="referanse">samferdsel-generell-4.5</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="BarmarksloeypeType">
+    <complexContent>
+      <extension base="gmsfd:RuteElementType">
+        <sequence>
+          <element minOccurs="0" name="merking" type="gml:CodeType">
+            <annotation>
+              <documentation>marking: rute eller løype er merket, eller evt. type merking
+
+-- Definition -- 
+route or track is marked, or type of marking Kommentar-tillegg</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_RuteMerking.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_RuteMerking.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="åpnesDato" type="date">
+            <annotation>
+              <documentation>openingDate: dato for når en løype tidligst kan åpnes/benyttes
+
+Merknad:
+datoen inkluderer angitt dato, dvs. fra og med.
+
+-- Definition -- 
+earliest date on which a track may be opened/be used   Note: the date includes designated date, i.e. from and including.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="stengesDato" type="date">
+            <annotation>
+              <documentation>closingDate: dato for når en løype senest må stenges/ ikke benyttes
+
+Merknad: 
+dato inkluderer angitt dato, dvs. fra og med.
+
+-- Definition -- 
+latest date on which a track must be closed down/not in use   Note: date includes designated date, i.e. from and including.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="følger" type="gml:CodeType">
+            <annotation>
+              <documentation>follows: type trase løypen følger
+
+-- Definition -- 
+type of route the track follows Kommentar-tillegg</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_RuteFoelger.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_RuteFoelger.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="vedlikeholdsansvarlig" type="string">
+            <annotation>
+              <documentation>responsibleForMaintenance: institusjon eller andre som har ansvar for vedlikehold av området
+
+-- Definition -- 
+institution or others responsible for maintenance of area</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="hjemmelsgrunnlag" type="string">
+            <annotation>
+              <documentation>statutoryBasis: URL-adresse under www.lovdata.no til lov/forskrift som kjøring langs løypa er hjemlet i
+
+-- Definition -- 
+URL address on www.lovdata.no for act/regulations that driving along the trail is founded on</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="løypetype" type="gml:CodeType">
+            <annotation>
+              <documentation>typeOfTrack: type løype
+
+-- Definition -- 
+type of track</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_BarmarksloeypeType.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_BarmarksloeypeType.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BarmarksloeypePropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmsfd:Barmarksloeype"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Ferjekai" substitutionGroup="gmsfd:InfrastrukturElement" type="gmsfd:FerjekaiType">
+    <annotation>
+      <documentation>64: Sted med en eller flere ferjelemmer hvor ferje anløper for å ta om bord og slippe av kjøretøy og passasjerer. Inkluderer også område for kjøretøyoppstilling og oppholdsareal for reisende.</documentation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+        <sc:taggedValue tag="referanse">64</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="FerjekaiType">
+    <complexContent>
+      <extension base="gmsfd:InfrastrukturElementType">
+        <sequence>
+          <element minOccurs="0" name="driftsstatus" type="gml:CodeType">
+            <annotation>
+              <documentation>9229: Angir driftsstatus til ferjekai.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_Driftsstatus.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_Driftsstatus.gml</defaultCodeSpace>
+                <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="antallFerjelemmer" type="integer">
+            <annotation>
+              <documentation>9491: Angir antall ferjelemmer på ferjekai.</documentation>
+              <appinfo>
+                <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="NSR_Stopplace_ID" type="string">
+            <annotation>
+              <documentation>10727: Unikt nummer på stoppestedet som ferjekai tilhører. Forbeholdt nummer som benyttes i Nasjonalt Stoppestedregister (NSR). Benytes for datautveksling mellom NVDB og NSR. Skal skrives slik "NSR:StopPlace:xxxxx" der xxxxx selve nummeret.</documentation>
+              <appinfo>
+                <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="arealTotaltØvrig" type="integer">
+            <annotation>
+              <documentation>9487: Angir øvrig areal på ferjekaia. Dvs. samme areal som øvrig kjørbart areal, samt annet areal i tilknytning til ferjeleiet som eier har ansvar for.</documentation>
+              <appinfo>
+                <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="arealKjørbartØvrig" type="integer">
+            <annotation>
+              <documentation>9488: Angir øvrig kjørbart areal på ferjekaia. Dvs. kjørbart areal som kommer i tillegg til areal av oppstillingsområde, parkeringområde og areal av veger med eget vegnett.</documentation>
+              <appinfo>
+                <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="egenGangbaneTilFerje" type="gml:CodeType">
+            <annotation>
+              <documentation>9493: Angir om det er egen gangbane for gående for ombordstigning til ferje.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_EgenGangbaneTilFerje.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_EgenGangbaneTilFerje.gml</defaultCodeSpace>
+                <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="kaikantsikring" type="gml:CodeType">
+            <annotation>
+              <documentation>9492: Beskriver om ferjekaia har en form for sikring mot vann.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_Kaikantsikring.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_Kaikantsikring.gml</defaultCodeSpace>
+                <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="venterom" type="gml:CodeType">
+            <annotation>
+              <documentation>10729: Angir om det er venterom i tilknytning til ferjekaia.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_Venterom.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_Venterom.gml</defaultCodeSpace>
+                <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="etableringsår" type="integer">
+            <annotation>
+              <documentation>10291: Angir hvilket år vegobjektet ble etablert på stedet.</documentation>
+              <appinfo>
+                <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="tilleggsinformasjon" type="string">
+            <annotation>
+              <documentation>9228: Supplerende informasjon om vegobjektet som ikke framkommer direkte av andre egenskapstyper.</documentation>
+              <appinfo>
+                <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="eierFerjeleie" type="gml:CodeType">
+            <annotation>
+              <documentation>7559: Angir hvem som eier vegobjektet.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_EierFerjeleie.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_EierFerjeleie.gml</defaultCodeSpace>
+                <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="vedlikeholdsansvarligFerjeleie" type="gml:CodeType">
+            <annotation>
+              <documentation>7560: Angir hvem som er ansvarlig for vedlikehold av vegobjektet.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_VedlikeholdsansvarligFerjeleie.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_VedlikeholdsansvarligFerjeleie.gml</defaultCodeSpace>
+                <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="FerjekaiPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmsfd:Ferjekai"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Flyrute" substitutionGroup="gmsfd:Luftrute" type="gmsfd:FlyruteType">
+    <annotation>
+      <documentation>AirplaneRoute: fast strekning for flygning med fly 
+
+
+-- Definition -- 
+permanent airplane route</documentation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">SOSI</sc:taggedValue>
+        <sc:taggedValue tag="referanse">Samferdsel 4.5</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="FlyruteType">
+    <complexContent>
+      <extension base="gmsfd:LuftruteType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="FlyrutePropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmsfd:Flyrute"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="FrittstaaendeElement" substitutionGroup="gmsfd:InfrastrukturElement" type="gmsfd:FrittstaaendeElementType"/>
+  <complexType name="FrittstaaendeElementType">
+    <complexContent>
+      <extension base="gmsfd:InfrastrukturElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="FrittstaaendeElementPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmsfd:FrittstaaendeElement"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="GrunnlagsmodellSamferdsel" substitutionGroup="lv:Grunnlagsmodell" type="gmsfd:GrunnlagsmodellSamferdselType"/>
+  <complexType name="GrunnlagsmodellSamferdselType">
+    <complexContent>
+      <extension base="lv:GrunnlagsmodellType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="infrastrukturElementSamling">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="gmsfd:InfrastrukturElementSamling"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="infrastrukturElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="gmsfd:InfrastrukturElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="ruteElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="gmsfd:RuteElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GrunnlagsmodellSamferdselPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmsfd:GrunnlagsmodellSamferdsel"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Helikoptertrasé" substitutionGroup="gmsfd:Luftrute" type="gmsfd:HelikoptertraséType">
+    <annotation>
+      <documentation>HelicopterRoute: trafikkrute for helikoptertrafikk mellom oljeinstallasjoner og fastland
+
+
+-- Definition -- 
+route for helicopter traffic between oil installations and the mainland.</documentation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">SOSI</sc:taggedValue>
+        <sc:taggedValue tag="referanse">Samferdsel 4.5</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="HelikoptertraséType">
+    <complexContent>
+      <extension base="gmsfd:LuftruteType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="HelikoptertraséPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmsfd:Helikoptertrasé"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="InfrastrukturElement" substitutionGroup="svvli:VU053Feature" type="gmsfd:InfrastrukturElementType"/>
+  <complexType name="InfrastrukturElementType">
+    <complexContent>
+      <extension base="svvli:VU053FeatureType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="InfrastrukturElementPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmsfd:InfrastrukturElement"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="InfrastrukturElementSamling" substitutionGroup="svvli:VU053ElementSamling" type="gmsfd:InfrastrukturElementSamlingType"/>
+  <complexType name="InfrastrukturElementSamlingType">
+    <complexContent>
+      <extension base="svvli:VU053ElementSamlingType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="ferjekai">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="gmsfd:Ferjekai"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="lufthavn">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="gmsfd:Lufthavn"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="InfrastrukturElementSamlingPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmsfd:InfrastrukturElementSamling"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="Jernbanelenke" substitutionGroup="gmsfd:InfrastrukturElement" type="gmsfd:JernbanelenkeType">
+    <annotation>
+      <documentation>RailwayLink: forbindelse mellom jernbanenoder
+
+merknad: 
+abstrakt nivå av Banelenke og Sporlenke
+
+
+-- Definition -- 
+connection between railway nodes. Note:  abstract level of Rail link and Track link</documentation>
+    </annotation>
+  </element>
+  <complexType abstract="true" name="JernbanelenkeType">
+    <complexContent>
+      <extension base="gmsfd:InfrastrukturElementType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="anleggstype" type="gml:CodeType">
+            <annotation>
+              <documentation>klassifisering i hht. konstruksjon/dimensjonering</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_Jernbanetype.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_Jernbanetype.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="anleggseier" type="gml:CodeType">
+            <annotation>
+              <documentation>innehaver av (jernbane-)anlegget</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_Jernbaneeier.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_Jernbaneeier.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="2" minOccurs="0" name="node">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="gmsfd:Jernbanenode"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="JernbanelenkePropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmsfd:Jernbanelenke"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="Jernbanenode" substitutionGroup="gmsfd:InfrastrukturElement" type="gmsfd:JernbanenodeType">
+    <annotation>
+      <documentation>RailwayNode: knutepunkt for jernbanelenker
+
+merknad: 
+abstrakt nivå av Banenode og Spornode
+
+
+-- Definition -- 
+junction for railway links. Note: abstract level of Rail node and Track node</documentation>
+    </annotation>
+  </element>
+  <complexType abstract="true" name="JernbanenodeType">
+    <complexContent>
+      <extension base="gmsfd:InfrastrukturElementType">
+        <sequence>
+          <element minOccurs="0" name="anleggstype" type="gml:CodeType">
+            <annotation>
+              <documentation>klassifisering av jernbaneanlegg i hht. konstruksjon/dimensjonering</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_Jernbanetype.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_Jernbanetype.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="anleggseier" type="gml:CodeType">
+            <annotation>
+              <documentation>innehaver av (jernbane-)anlegget</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_Jernbaneeier.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_Jernbaneeier.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="4" minOccurs="0" name="lenke">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="gmsfd:Jernbanelenke"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="JernbanenodePropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmsfd:Jernbanenode"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Jernbaneplattform" substitutionGroup="gmsfd:FrittstaaendeElement" type="gmsfd:JernbaneplattformType">
+    <annotation>
+      <documentation>RailwayPlatformEdge: yttergrense av konstruksjon til bruk ved av-/påstigning for passasjerer eller ved av-/pålasting av gods
+
+
+-- Definition -- 
+outer edge of construction used for passengers boarding/exiting or fo loading and unloading freight</documentation>
+    </annotation>
+  </element>
+  <complexType name="JernbaneplattformType">
+    <complexContent>
+      <extension base="gmsfd:FrittstaaendeElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="JernbaneplattformPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmsfd:Jernbaneplattform"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Kilometerskilt" substitutionGroup="gmsfd:FrittstaaendeElement" type="gmsfd:KilometerskiltType">
+    <annotation>
+      <documentation>KilometreSign: merke som angir kilometer, oppført på egne stolper langs sporet 
+
+
+-- Definition -- 
+sign stating kilometres, mounted on separate poles along the track</documentation>
+    </annotation>
+  </element>
+  <complexType name="KilometerskiltType">
+    <complexContent>
+      <extension base="gmsfd:FrittstaaendeElementType">
+        <sequence>
+          <element minOccurs="0" name="sporkilometer" type="double">
+            <annotation>
+              <documentation>trackKilometres: jernbanefaglig posisjonsangivelse fra definert nullpunkt
+
+-- Definition -- 
+railway position specified in relation to a defined zero-point</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="strekningsnummer" type="integer">
+            <annotation>
+              <documentation>sectionNumber: identifikator for den strekning der objektet inngår
+
+-- Definition -- 
+identifier for the section where the object is located</documentation>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="KilometerskiltPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmsfd:Kilometerskilt"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Kjedebrudd" substitutionGroup="gmsfd:Spornode" type="gmsfd:KjedebruddType">
+    <annotation>
+      <documentation>ChainageDiscontinuity: diskontinuitet i kilometer
+
+
+-- Definition -- 
+discontinuity in kilometres</documentation>
+    </annotation>
+  </element>
+  <complexType name="KjedebruddType">
+    <complexContent>
+      <extension base="gmsfd:SpornodeType">
+        <sequence>
+          <element minOccurs="0" name="bruddlengde" type="double">
+            <annotation>
+              <documentation>breakingLength: størrelsen på diskontinuitet i kilometer
+
+-- Definition -- 
+the size of discontinuity in kilometres</documentation>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="KjedebruddPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmsfd:Kjedebrudd"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Lufthavn" substitutionGroup="gmsfd:InfrastrukturElement" type="gmsfd:LufthavnType">
+    <annotation>
+      <documentation>land- eller sjøområde (med bygninger, installasjoner og utstyr) som helt eller delvis brukes for luftfartøyers avgang, landing og annen manøvrering på bakken</documentation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">SOSI</sc:taggedValue>
+        <sc:taggedValue tag="referanse">Lufthavn-4.5</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="LufthavnType">
+    <complexContent>
+      <extension base="gmsfd:InfrastrukturElementType">
+        <sequence>
+          <element minOccurs="0" name="lufthavntype" type="gml:CodeType">
+            <annotation>
+              <documentation>angivelse av type lufthavn</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_Lufthavntype.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_Lufthavntype.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="lufthavnArealer" type="gml:CodeType">
+            <annotation>
+              <documentation>areal på lufthavnen med spesielle egenskaper</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_LufthavnArealer.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_LufthavnArealer.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="trafikktype" type="gml:CodeType">
+            <annotation>
+              <documentation>beskrivelse av rutetrafikk</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_Trafikktype.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_Trafikktype.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="IATAKode" type="gml:CodeType">
+            <annotation>
+              <documentation>unik kode for lufthavner. 
+
+Merknad1: Ikke alle lufthavner har IATA kode.
+Merknad 2: Bare norske lufthavner er tatt med her.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_IATAKode.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_IATAKode.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="ICAOKode" type="gml:CodeType">
+            <annotation>
+              <documentation>angivelse av lufthavn ved kode på fire &amp;&amp;alfanumeriske tegn. 
+
+Merknad: Den første bokstaven tilordnes etter kontinent og angir et land eller en gruppe land på det samme kontinentet. Den andre bokstaven angir landet og de to siste angir lufthavn.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_ICAOKode.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_ICAOKode.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="lufthavneier" type="string">
+            <annotation>
+              <documentation>eier av lufthavn</documentation>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="LufthavnPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmsfd:Lufthavn"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="Luftrute" substitutionGroup="gmsfd:RuteElement" type="gmsfd:LuftruteType"/>
+  <complexType abstract="true" name="LuftruteType">
+    <complexContent>
+      <extension base="gmsfd:RuteElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="LuftrutePropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmsfd:Luftrute"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Lysloeype" substitutionGroup="gmsfd:RuteElement" type="gmsfd:LysloeypeType">
+    <annotation>
+      <documentation>LitTrail: løypetrasé som har belysning
+
+
+-- Definition -- 
+trail route with lighting</documentation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">SOSI</sc:taggedValue>
+        <sc:taggedValue tag="referanse">samferdsel-generell-4.5</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="LysloeypeType">
+    <complexContent>
+      <extension base="gmsfd:RuteElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="LysloeypePropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmsfd:Lysloeype"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="RuteElement" substitutionGroup="svvli:VU053Feature" type="gmsfd:RuteElementType"/>
+  <complexType abstract="true" name="RuteElementType">
+    <complexContent>
+      <extension base="svvli:VU053FeatureType">
+        <sequence>
+          <element minOccurs="0" name="lineærPosisjon" type="svvlr:LineærPosisjonStrekningPropertyType"/>
+          <element minOccurs="0" name="senterlinje" type="gml:CurvePropertyType">
+            <annotation>
+              <documentation>centerline: forløp som følger objektets sentrale del
+
+-- Definition -- 
+cource follwed by the central part of the object</documentation>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RuteElementPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmsfd:RuteElement"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Snoescooterloeype" substitutionGroup="gmsfd:RuteElement" type="gmsfd:SnoescooterloeypeType">
+    <annotation>
+      <documentation>SnowScooterTrail: merka løyper for kjøring med snøskuter, åpne for allmennheten. Løypene hjemlet ved forskrifter gitt av Fylkesmannen
+
+
+-- Definition -- 
+marked trails for snow scooter driving, open to the general public. Trails founded on the regulations laid down by the County governor</documentation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">SOSI</sc:taggedValue>
+        <sc:taggedValue tag="referanse">samferdsel-generell-4.5</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="SnoescooterloeypeType">
+    <complexContent>
+      <extension base="gmsfd:RuteElementType">
+        <sequence>
+          <element minOccurs="0" name="løypetype" type="gml:CodeType">
+            <annotation>
+              <documentation>typeOfTrack: ulike typer snøskuterløyper som tillates med hjemmel i Lov om motorferdsel i utmark og vassdrag med forskrifter
+
+-- Definition -- 
+various types of snowscooter routes that can be used pursuant to the Act relating to motor traffic on uncultivated land and in watercourses with regulations</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_SnoescooterloeypeType.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_SnoescooterloeypeType.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="merking" type="gml:CodeType">
+            <annotation>
+              <documentation>marking: rute eller løype er merket, eller evt. type merking
+
+-- Definition -- 
+route or track is marked, or type of marking Kommentar-tillegg</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_RuteMerking.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_RuteMerking.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="åpnesDato" type="date">
+            <annotation>
+              <documentation>openingDate: dato for når en løype tidligst kan åpnes/benyttes
+
+Merknad:
+datoen inkluderer angitt dato, dvs. fra og med.
+
+-- Definition -- 
+earliest date on which a track may be opened/be used   Note: the date includes designated date, i.e. from and including.</documentation>
+            </annotation>
+          </element>
+          <element name="stengesDato" type="date">
+            <annotation>
+              <documentation>closingDate: dato for når en løype senest må stenges/ ikke benyttes
+
+Merknad: 
+dato inkluderer angitt dato, dvs. fra og med.
+
+-- Definition -- 
+latest date on which a track must be closed down/not in use   Note: date includes designated date, i.e. from and including.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="følger" type="gml:CodeType">
+            <annotation>
+              <documentation>follows: type trase løypen følger
+
+-- Definition -- 
+type of route the track follows Kommentar-tillegg</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_RuteFoelger.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_RuteFoelger.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="vedlikeholdsansvarlig" type="string">
+            <annotation>
+              <documentation>responsibleForMaintenance: institusjon eller andre som har ansvar for vedlikehold av området
+
+-- Definition -- 
+institution or others responsible for maintenance of area</documentation>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SnoescooterloeypePropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmsfd:Snoescooterloeype"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Sporavgrening" substitutionGroup="gmsfd:Spornode" type="gmsfd:SporavgreningType">
+    <annotation>
+      <documentation>TrackBranch: knutepunkt der spor skilles/møtes
+
+merknad: 
+a) sporveksel: konstruksjon som gjør det mulig å velge mellom to eller flere spor
+b) sporkryss: konstruksjon som benyttes der to spor skal krysse hverandre
+c) kryssveksel: kombinasjon av a og b
+
+
+-- Definition -- 
+junction where tracks separate/meet. Note: a) points:  construction making it possible to choose between two or more tracks  b) crossing of tracks: construction used where two tracks are to cross each other  c) slip: combination of a and b</documentation>
+    </annotation>
+  </element>
+  <complexType name="SporavgreningType">
+    <complexContent>
+      <extension base="gmsfd:SpornodeType">
+        <sequence>
+          <element minOccurs="0" name="sporavgreningstype" type="gml:CodeType">
+            <annotation>
+              <documentation>typeOfTrackBranch: klassifisering av konstruksjoner for sporavgrening
+
+-- Definition -- 
+classification of structures for track branch</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_Sporavgreningstype.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_Sporavgreningstype.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="sporavgreningsnummer" type="string">
+            <annotation>
+              <documentation>trackBranchNumber: dentifikator for sporavgrening
+
+-- Definition -- 
+identifier for track branch</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="stasjonsnummer" type="integer">
+            <annotation>
+              <documentation>stationNumber: identifikator som relaterer objektet til en bestemt stasjon
+
+-- Definition -- 
+identifier relating the object to a specific station</documentation>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="punktPåSporavgrening">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="gmsfd:Sporavgreningspunkt"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SporavgreningPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmsfd:Sporavgrening"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Sporavgreningspunkt" substitutionGroup="gml:AbstractFeature" type="gmsfd:SporavgreningspunktType">
+    <annotation>
+      <documentation>TrackBranchPoint: punkt på konstruksjonen sporavgrening
+
+merknad:
+Bakkant: kobling mellom spor og Sporavgrening
+Langsville: jernbanesville som ligger under to avgrenende spor i en Sporavgrening
+
+
+-- Definition -- 
+point on the construction Track branch. Note: Trailing edge: connection between track and Track branch Long sleeper: railway sleeper located under two branched tracks in a Track branch</documentation>
+    </annotation>
+  </element>
+  <complexType name="SporavgreningspunktType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element minOccurs="0" name="sporavgreningspunkttype" type="gml:CodeType">
+            <annotation>
+              <documentation>typeOfTrackBranchPoint: klassifisering av punkter i konstruksjoner for sporavgrening
+
+-- Definition -- 
+classification of points in structures for track branch</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_Sporavgreningspunkttype.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_Sporavgreningspunkttype.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="sporavgreningspunktnummer" type="string">
+            <annotation>
+              <documentation>trackBranchPointNumber: identifikator for sporavgreningspunkt
+
+-- Definition -- 
+identifier of track branch points</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="grunnrissreferanse" type="gml:CodeType">
+            <annotation>
+              <documentation>horizontalReference: objektet i sporet som grunnrisskoordinatene refereres til
+
+-- Definition -- 
+the object on the track to which the horizontal coordinates refer</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_GrunnrissreferanseSpor.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_GrunnrissreferanseSpor.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="høydereferanse" type="gml:CodeType">
+            <annotation>
+              <documentation>heightReference: objektet i sporet som høydekoordinatene refereres til
+
+-- Definition -- 
+the object on the track to which the height coordinates refer</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_HøydereferanseSpor.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_HøydereferanseSpor.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SporavgreningspunktPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmsfd:Sporavgreningspunkt"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Sporende" substitutionGroup="gmsfd:Spornode" type="gmsfd:SporendeType">
+    <annotation>
+      <documentation>EndOfTrack: punkt der et spor opphører
+
+
+-- Definition -- 
+point where a track ends</documentation>
+    </annotation>
+  </element>
+  <complexType name="SporendeType">
+    <complexContent>
+      <extension base="gmsfd:SpornodeType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SporendePropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmsfd:Sporende"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="Sporlenke" substitutionGroup="gmsfd:Jernbanelenke" type="gmsfd:SporlenkeType">
+    <annotation>
+      <documentation>TrackLink: forbindelse mellom spornoder
+
+merknad: abstrakt nivå av Spormidt
+
+
+-- Definition -- 
+connection between rail nodes. Note:  abstract level of MiddleOfTrack</documentation>
+    </annotation>
+  </element>
+  <complexType abstract="true" name="SporlenkeType">
+    <complexContent>
+      <extension base="gmsfd:JernbanelenkeType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="punktpåspor">
+            <annotation>
+              <appinfo>
+                <reversePropertyName xmlns="http://www.opengis.net/gml/3.2">gmsfd:lenke</reversePropertyName>
+              </appinfo>
+            </annotation>
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="gmsfd:Sporpunkt"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SporlenkePropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmsfd:Sporlenke"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Spormidt" substitutionGroup="gmsfd:Sporlenke" type="gmsfd:SpormidtType">
+    <annotation>
+      <documentation>TrackCentreLine: teoretisk linje midt mellom skinnestrengene
+
+
+-- Definition -- 
+theoretical line in between the rails</documentation>
+    </annotation>
+  </element>
+  <complexType name="SpormidtType">
+    <complexContent>
+      <extension base="gmsfd:SporlenkeType">
+        <sequence>
+          <element minOccurs="0" name="sportype" type="gml:CodeType">
+            <annotation>
+              <documentation>typeOfTrack: klassifisering av jernbanespor ut fra sporets funksjon
+
+-- Definition -- 
+classification of railway tracks based on the track's function</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_Sportype.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_Sportype.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="spornummer" type="string">
+            <annotation>
+              <documentation>trackNumber: identifikator for spor
+
+-- Definition -- 
+identifier for track</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="delstrekningsnummer" type="string">
+            <annotation>
+              <documentation>partialSectionNumber: identifikator som relaterer objektet til en bestemt delstrekning
+
+-- Definition -- 
+identifier relating the object to a specific partial section</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="primærstrekningsnummer" type="integer">
+            <annotation>
+              <documentation>PrimarySectionNumber: identifikator som relaterer objektet til overordnet jernbanestrekning
+
+-- Definition -- 
+identifier relating the object to the superior section of the line</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="sekundærstrekningsnummer" type="integer">
+            <annotation>
+              <documentation>secondarySectionNumber: identifikator der to overordnede jernbanestrekninger overlapper hverandre
+
+-- Definition -- 
+identifier where two superior railway sections overlap</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="fraSpornodeKilometer" type="double">
+            <annotation>
+              <documentation>fromTrackNodeKilometre: jernbanefaglig posisjonsangivelse for den noden der objektet begynner
+
+-- Definition -- 
+specification of railway position of the node where the object ends</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="tilSpornodeKilometer" type="double">
+            <annotation>
+              <documentation>toTrackNodeKilometre: jernbanefaglig posisjonsangivelse for den noden der objektet slutter
+
+-- Definition -- 
+specification of railway position of the node where the object ends</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="fraSpornodetype" type="string">
+            <annotation>
+              <documentation>fromTrackNodeType: jernbanefaglig klassifisering av den noden der objektet begynner
+
+-- Definition -- 
+railway classification of the node where the object starts</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="tilSpornodetype" type="string">
+            <annotation>
+              <documentation>toTrackNodeType: jernbanefaglig klassifisering av den noden der objektet slutter
+
+-- Definition -- 
+railway classification of the node where the object ends</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="fraSpornodetekst" type="string">
+            <annotation>
+              <documentation>fromTrackNodeText: beskrivelse av den node der objektet begynner
+
+-- Definition -- 
+description of the node where the object starts</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="tilSpornodetekst" type="string">
+            <annotation>
+              <documentation>toTrackNodeText: beskrivelse av den node der objektet slutter
+
+-- Definition -- 
+description of the node where the object ends</documentation>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SpormidtPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmsfd:Spormidt"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="Spornode" substitutionGroup="gmsfd:Jernbanenode" type="gmsfd:SpornodeType">
+    <annotation>
+      <documentation>TrackNode: knutepunkt mellom sporlenker
+
+merknad: abstrakt nivå av Sporavgrening, Sporende, Stasjonsende og Kjedebrudd
+
+
+-- Definition -- 
+junction between track links. Note:  abstract level of Track branch, End of track, Station end and Chaining discontinuity</documentation>
+    </annotation>
+  </element>
+  <complexType abstract="true" name="SpornodeType">
+    <complexContent>
+      <extension base="gmsfd:JernbanenodeType">
+        <sequence>
+          <element minOccurs="0" name="sporkilometer" type="double">
+            <annotation>
+              <documentation>jernbanefaglig posisjonsangivelse fra definert nullpunkt</documentation>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SpornodePropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmsfd:Spornode"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Sporpunkt" substitutionGroup="gml:AbstractFeature" type="gmsfd:SporpunktType">
+    <annotation>
+      <documentation>TrackPoint: punkt på skinnestreng eller midt mellom skinnestrengene
+
+
+-- Definition -- 
+point on rails or in between rails</documentation>
+    </annotation>
+  </element>
+  <complexType name="SporpunktType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element minOccurs="0" name="sporpunkttype" type="gml:CodeType">
+            <annotation>
+              <documentation>typeOfTrackPoint: klassifisering av endringer i sporgeometri
+
+-- Definition -- 
+classification of changes to the track geometry</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_Sporpunkttype.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_Sporpunkttype.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="sporpunktnummer" type="string">
+            <annotation>
+              <documentation>trackPointNumber: identifikator  for sporpunkt
+
+-- Definition -- 
+identifier of trackpoint</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="grunnrissreferanse" type="gml:CodeType">
+            <annotation>
+              <documentation>horizontalReference: objektet i sporet som grunnrisskoordinatene refereres til
+
+-- Definition -- 
+the object on the track to which the horizontal coordinates refer</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_GrunnrissreferanseSpor.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_GrunnrissreferanseSpor.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="høydereferanse" type="gml:CodeType">
+            <annotation>
+              <documentation>heightReference: angivelse av om registreringen er utført på topp eller bunn av et element- f.eks. en skråning- mur osv.
+
+-- Definition -- 
+indication of whether the registration has been carried out at the top or bottom of an element; e.g. a slope, a wall, etc.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_HøydereferanseSpor.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_HøydereferanseSpor.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="lenke" type="gmsfd:SporlenkePropertyType">
+            <annotation>
+              <appinfo>
+                <reversePropertyName xmlns="http://www.opengis.net/gml/3.2">gmsfd:punktpåspor</reversePropertyName>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SporpunktPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmsfd:Sporpunkt"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Stasjon" substitutionGroup="gmsfd:FrittstaaendeElement" type="gmsfd:StasjonType">
+    <annotation>
+      <documentation>Station: representasjonspunkt for stasjon, holdeplass eller godsterminal
+
+
+-- Definition -- 
+representation point for station, stopping place or freight terminal</documentation>
+    </annotation>
+  </element>
+  <complexType name="StasjonType">
+    <complexContent>
+      <extension base="gmsfd:FrittstaaendeElementType">
+        <sequence>
+          <element minOccurs="0" name="stasjonsnavn" type="string">
+            <annotation>
+              <documentation>stationName: navn på stasjon
+
+-- Definition -- 
+name of a station</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="stasjonsnummer" type="string">
+            <annotation>
+              <documentation>stationNumber: identifikator som relaterer objektet til en bestemt stasjon
+
+-- Definition -- 
+identifier relating the object to a specific station</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="stasjonstype" type="gml:CodeType">
+            <annotation>
+              <documentation>typeOfStation: skille mellom signaltekniske stasjoner og ikke-signaltekniske stasjoner
+
+-- Definition -- 
+distinction between signal technical stations and non-signal technical stations</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_Stasjonstype.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_Stasjonstype.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="stasjonsformål" type="gml:CodeType">
+            <annotation>
+              <documentation>stationFunction: objektets bruksområde/funksjon
+
+-- Definition -- 
+the application/function of the object</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_Stasjonsformål.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmsfd_Stasjonsformål.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="sporkilometer" type="double">
+            <annotation>
+              <documentation>trackKilometre: jernbanefaglig posisjonsangivelse fra definert nullpunkt
+
+-- Definition -- 
+railway position specified in relation to a defined zero-point</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="strekningsnummer" type="integer">
+            <annotation>
+              <documentation>sectionNumber: identifikator for den strekning der objektet inngår
+
+-- Definition -- 
+identifier for the section where the object is located</documentation>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="StasjonPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmsfd:Stasjon"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Stasjonsende" substitutionGroup="gmsfd:Spornode" type="gmsfd:StasjonsendeType">
+    <annotation>
+      <documentation>StationEnd: punkt i spormidt rett ut for signalet for innkjøring til stasjonen
+
+
+-- Definition -- 
+point on middle of track straight out from the approach to station signal</documentation>
+    </annotation>
+  </element>
+  <complexType name="StasjonsendeType">
+    <complexContent>
+      <extension base="gmsfd:SpornodeType">
+        <sequence>
+          <element minOccurs="0" name="signalnummer" type="string">
+            <annotation>
+              <documentation>signalNumber: identifikator for signal
+
+-- Definition -- 
+identifier for signal</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="stasjonsnummer" type="integer">
+            <annotation>
+              <documentation>stationNumber: identifikator som relaterer objektet til en bestemt stasjon
+
+-- Definition -- 
+identifier relating the object to a specific station</documentation>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="StasjonsendePropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmsfd:Stasjonsende"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="VegInfrastrukture" substitutionGroup="gmsfd:InfrastrukturElementSamling" type="gmsfd:VegInfrastruktureType"/>
+  <complexType name="VegInfrastruktureType">
+    <complexContent>
+      <extension base="gmsfd:InfrastrukturElementSamlingType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="vegElementSamling">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmveg:VegElementSamling"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="vegElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmveg:VegElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="VegInfrastrukturePropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmsfd:VegInfrastrukture"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>
