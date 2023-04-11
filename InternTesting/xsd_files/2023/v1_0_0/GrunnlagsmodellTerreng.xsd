@@ -22,6 +22,18 @@
               </complexContent>
             </complexType>
           </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="terrengElementSamling">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="gmter:TerrengElementSamling"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
         </sequence>
       </extension>
     </complexContent>
@@ -66,6 +78,58 @@
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
+  <element name="TerrengElementSamling" substitutionGroup="svvli:VU053ElementSamling" type="gmter:TerrengElementSamlingType"/>
+  <complexType name="TerrengElementSamlingType">
+    <complexContent>
+      <extension base="svvli:VU053ElementSamlingType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="terrengOverflate">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="gmter:TerrengOverflate"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="terrenglinje">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="gmter:Terrenglinje"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="terrengpunkt">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="gmter:Terrengpunkt"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="TerrengElementSamlingPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmter:TerrengElementSamling"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
   <element name="TerrengOverflate" substitutionGroup="gmter:TerrengElement" type="gmter:TerrengOverflateType"/>
   <complexType name="TerrengOverflateType">
     <complexContent>
@@ -86,6 +150,108 @@
   <complexType name="TerrengOverflatePropertyType">
     <sequence minOccurs="0">
       <element ref="gmter:TerrengOverflate"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Terrenglinje" substitutionGroup="gmter:TerrengElement" type="gmter:TerrenglinjeType">
+    <annotation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">SOSI</sc:taggedValue>
+        <sc:taggedValue tag="referanse">Terreng 4.0</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="TerrenglinjeType">
+    <complexContent>
+      <extension base="gmter:TerrengElementType">
+        <sequence>
+          <element name="høyde" type="integer">
+            <annotation>
+              <documentation>height: angivelse av høydekurvens høyde over høydereferansen i meter- og oppgis som et desimalt tall hvis nødvendig
+
+-- Definition -- 
+indication of the depression curve's height above the height reference in metres - to be given with decimals if necessary</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="medium" type="gml:CodeType">
+            <annotation>
+              <documentation>medium: objektets beliggenhet i forhold til jordoverflaten
+
+-- Definition -- 
+the location of the object relative to the earth's surface</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmter_Medium.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmter_Medium.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="type" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmter_TerrenglinjeType.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmter_TerrenglinjeType.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="TerrenglinjePropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmter:Terrenglinje"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Terrengpunkt" substitutionGroup="gmter:TerrengElement" type="gmter:TerrengpunktType">
+    <annotation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">SOSI</sc:taggedValue>
+        <sc:taggedValue tag="referanse">Terreng 4.0</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="TerrengpunktType">
+    <complexContent>
+      <extension base="gmter:TerrengElementType">
+        <sequence>
+          <element name="høyde" type="integer">
+            <annotation>
+              <documentation>height: angivelse av høydekurvens høyde over høydereferansen i meter- og oppgis som et desimalt tall hvis nødvendig
+
+-- Definition -- 
+indication of the depression curve's height above the height reference in metres - to be given with decimals if necessary</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="medium" type="gml:CodeType">
+            <annotation>
+              <documentation>medium: objektets beliggenhet i forhold til jordoverflaten
+
+-- Definition -- 
+the location of the object relative to the earth's surface</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmter_Medium.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmter_Medium.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="type" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmter_terrengpunktType.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmter_terrengpunktType.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="TerrengpunktPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmter:Terrengpunkt"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
