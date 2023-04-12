@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>TerrengElement</title>
+<title>terrengpunktType</title>
 <link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script language="JavaScript" src="../../../../../js/displayToc.js" type="text/javascript"></script>
 <script>
@@ -64,12 +64,12 @@
 <div class="section group" >
 
 		<div class="col span_2_of_2 header_frame">
-			<h1> TerrengElement </h1>
+			<h1> terrengpunktType </h1>
 			<!-- <img class="header_image" src="../../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
 			<img class="header_image" src="../../../../../images/ea-banner.png" align="right" alt="Header Image" />
 		</div>
 		<div class="col span_2_of_2 breadcrumb_frame">
-			<p><a href="../../../../EA3.htm">Vegprosjekt VU053 v1.0</a> / <a href="../../../EA344.htm">LeveranseVegprosjekt</a> / <a href="../../EA348.htm">Samordningsmodell</a> / <a href="../EA353.htm">Situasjonsmodell</a> / <a href="EA528.htm">GrunnlagsmodellTerreng</a> / <a href="EA533.htm">TerrengElement</a></p>
+			<p><a href="../../../../EA3.htm">Vegprosjekt VU053 v1.0</a> / <a href="../../../EA344.htm">LeveranseVegprosjekt</a> / <a href="../../EA348.htm">Samordningsmodell</a> / <a href="../EA353.htm">Situasjonsmodell</a> / <a href="EA528.htm">GrunnlagsmodellTerreng</a> / <a href="EA533.htm">terrengpunktType</a></p>
 		</div>
 			
 		<table class="contentmaintable">
@@ -89,15 +89,15 @@
 					</td>
 					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<span class="ObjectTitle">TerrengElement  : Public abstract &lt;&lt;FeatureType&gt;&gt; Class</span>
+	<span class="ObjectTitle">terrengpunktType  : Public  &lt;&lt;CodeList&gt;&gt; Class</span>
 	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">27.09.2022 13:25:12</td>
+			<td width="85%" class="ObjectDetailsValue">11.04.2023 11:16:02</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">14.03.2023 13:20:51</td>
+			<td class="ObjectDetailsValue">11.04.2023 12:26:29</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -106,7 +106,7 @@
 		</tr>
 		<tr id="proj00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
-			<td class="ObjectDetailsValue">MatiasGonzalezTognon</td>
+			<td class="ObjectDetailsValue">Arkitektum</td>
 		</tr>
 		<tr id="proj01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
@@ -142,20 +142,19 @@
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{9F80BFED-8943-40fe-8F89-5B62BBE46AFD}</td>
+			<td class="ObjectDetailsValue">{5BB80CA1-5790-4c6b-AD94-52ECCB9A7B77}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA526.htm">Terrengmodell</a></td>
+			<td class="ObjectDetailsValue"><a href="EA526.htm">Terrengmodell</a>, <a href="EA524.htm">GrunnlagsmodellTerreng kodeliste</a></td>
 		</tr>
 	</table>
 	
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
-			<li onClick="toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
 			<li onClick="toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
-			<li onClick="toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 <div class="ItemBody" id="AttributesTable">
 	<table border="0" cellspacing="0" cellpadding="0" class="Table">
@@ -166,13 +165,13 @@
 		</tr>
 						<tr>
 				<td width="50%" class="TableRow">
-					verifiseringsdato
+					Terrengpunkt
 				</td>
 				<td width="25%" class="TableRow">
 					Public 
 				</td>
 				<td width="25%" class="TableRow">
-					DateTime
+					
 				</td>
 			</tr>
 			<tr>
@@ -184,7 +183,7 @@
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Den datoen at terrengmodellen er godkjent av geomatikk i forhold til beste tilgjengelige data i prosjektet&lt;br/&gt;
+			punkt i terrenget med m&#229;lt h&#248;ydeverdi som brukes for &#229; angi h&#248;yde p&#229; markerte flater i terrenget som for eksempel sadler og store flater, i veg- og gatekryss og andre kryss mellom samferdselslinjer, p&#229; g&#229;rdsplasser utenfor hovedinnganger og p&#229; parkeringsplasser&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;&lt;br/&gt;point in the terrain with a measured height value used to indicate the height on pronounced surfaces in the terrain, such as saddles and large surfaces, in road and street intersections and other intersections between transportation lines, in courtyards outside main entrances and in car parks&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -193,58 +192,163 @@
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow">
-					grunnlagsdataBruk
+					DTM punkt
 				</td>
 				<td width="25%" class="TableRow">
 					Public 
 				</td>
 				<td width="25%" class="TableRow">
-					<a href="../EA1/EA366.htm">GrunnlagsdataBrukt</a>
+					
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="3">										
 					
-						&nbsp;
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			h&#248;ydeb&#230;rende punkt som beskriver terrengets overflate i forhold til angitt referanseniv&#229;. Punktene kan v&#230;re plassert i et regelmessig (kvadratisk eller rektangul&#230;rt) eller uregelmessig nett&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;Merknad 1: Kan benyttes alene eller som et supplement utover andre h&#248;ydeb&#230;rende objekttyper slik at de til sammen gir nok h&#248;ydeb&#230;rende informasjon til &#229; beskrive terrengets form innenfor de kvalitetskrav som er satt.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;Merknad 2: Tidligere kalt Nett, f&#248;r dette Grid&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					Toppunkt
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			punkt med m&#229;lt h&#248;ydeverdi som ligger p&#229; en markert forh&#248;yning eller topp i terrenget&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;&lt;br/&gt;point with a measured height value located on a pronounced elevation or peak in the terrain&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					Dybdepunkt
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			punkt i vann (ferskvann/saltvann) med verdi (z-verdi) som angir dybden p&#229; et sted i forhold til angitt referanseniv&#229;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;&lt;br/&gt;a point in water (freshwater/saltwater) with a value (z value) which indicates the depth at a specific point in relation to the designated reference level&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					Forsenkningspunkt
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			punkt med m&#229;lt h&#248;ydeverdi som ligger i en markert forsenkning i terrenget&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;&lt;br/&gt;a point with a measured height value, located in a pronounced depression in the terrain&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
 						
 				</td>
 			</tr>
 	</table>
 </div>
-		<div class="ItemBody" id="AssociationsToTable">
-			<table class="Table ea_table">
-				<tr>
-					<td width="40%" class="TableHeading">Element</td>
-					<td width="30%" class="TableHeading">Source Role</td>
-					<td width="30%" class="TableHeading">Target Role</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA531.htm">«FeatureType» GrunnlagsmodellTerreng</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> terrengElement<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1730" /></button>Details:
-							<div id="detailsDIVLink1730" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Tag</td>
+			<td width="50%" class="TableHeading">Value</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">asDictionary</td>
+				<td width="50%" class="TableRow" valign="top">true</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					Details:
+						<div class="ObjectDetailsNotes">Values: true,false<br />Default: true<br />Description: true if codelist is externally managed, else false<br /></div>
 
-			</table>
-		</div>
-		<div class="ItemBody" id="CustomPropertiesTable">
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">codeList</td>
+				<td width="50%" class="TableRow" valign="top"><a href="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmter_terrengpunktType.gml" target="_blank" >https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmter_terrengpunktType.gml</a></td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					Details:
+						<div class="ObjectDetailsNotes">Default: https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/codeListNavn.xml<br /></div>
+
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">kilde</td>
+				<td width="50%" class="TableRow" valign="top">SOSI</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					Details:
+						<div class="ObjectDetailsNotes">Values: Håndboka,NVDB,SOSI,VU053,Miljødirektoratet,Annet<br /></div>
+
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">referanse</td>
+				<td width="50%" class="TableRow" valign="top">Terreng 4.0</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					Details:
+						&nbsp;
+				</td>
+			</tr>
+	</table>
+</div>		<div class="ItemBody" id="CustomPropertiesTable">
 			<table class="Table ea_table">
 				<tr>
 					<td width="30%" class="TableHeading">Property</td>
@@ -257,40 +361,7 @@
 
 
 			</table>
-		</div>		<div class="ItemBody" id="LinksTable">
-			<table class="Table ea_table">
-				<tr>
-					<td width="30%" class="TableHeading">Object</td>
-					<td width="10%" class="TableHeading">Type</td>
-					<td width="10%" class="TableHeading">Connection</td>
-					<td width="10%" class="TableHeading">Direction</td>
-					<td width="40%" class="TableHeading">Notes</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA531.htm">«FeatureType» GrunnlagsmodellTerreng</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Weak</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../../../EA1/EA3/EA1/EA77.htm">«featureType» VU053Feature</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA534.htm">«FeatureType» TerrengOverflate</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-
-			</table>
-		</div>
-	</div>
+		</div>	</div>
  </div>
  </td>
 				</tr>

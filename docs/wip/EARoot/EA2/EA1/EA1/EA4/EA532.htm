@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Sone</title>
+<title>Terrengpunkt</title>
 <link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script language="JavaScript" src="../../../../../js/displayToc.js" type="text/javascript"></script>
 <script>
@@ -64,12 +64,12 @@
 <div class="section group" >
 
 		<div class="col span_2_of_2 header_frame">
-			<h1> Sone </h1>
+			<h1> Terrengpunkt </h1>
 			<!-- <img class="header_image" src="../../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
 			<img class="header_image" src="../../../../../images/ea-banner.png" align="right" alt="Header Image" />
 		</div>
 		<div class="col span_2_of_2 breadcrumb_frame">
-			<p><a href="../../../../EA3.htm">Vegprosjekt VU053 v1.0</a> / <a href="../../../EA344.htm">LeveranseVegprosjekt</a> / <a href="../../EA348.htm">Samordningsmodell</a> / <a href="../EA353.htm">Situasjonsmodell</a> / <a href="EA528.htm">GrunnlagsmodellTerreng</a> / <a href="EA532.htm">Sone</a></p>
+			<p><a href="../../../../EA3.htm">Vegprosjekt VU053 v1.0</a> / <a href="../../../EA344.htm">LeveranseVegprosjekt</a> / <a href="../../EA348.htm">Samordningsmodell</a> / <a href="../EA353.htm">Situasjonsmodell</a> / <a href="EA528.htm">GrunnlagsmodellTerreng</a> / <a href="EA532.htm">Terrengpunkt</a></p>
 		</div>
 			
 		<table class="contentmaintable">
@@ -89,15 +89,15 @@
 					</td>
 					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<span class="ObjectTitle">Sone  : Public  &lt;&lt;CodeList&gt;&gt; Class</span>
+	<span class="ObjectTitle">Terrengpunkt  : Public  &lt;&lt;FeatureType&gt;&gt; Class</span>
 	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">14.03.2023 13:15:18</td>
+			<td width="85%" class="ObjectDetailsValue">11.04.2023 10:42:36</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">14.03.2023 13:15:30</td>
+			<td class="ObjectDetailsValue">11.04.2023 11:15:13</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -106,7 +106,7 @@
 		</tr>
 		<tr id="proj00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
-			<td class="ObjectDetailsValue">MatiasGonzalezTognoni</td>
+			<td class="ObjectDetailsValue">Arkitektum</td>
 		</tr>
 		<tr id="proj01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
@@ -142,7 +142,7 @@
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{58BA8B56-9C4B-4c4f-BA12-32DD835C3756}</td>
+			<td class="ObjectDetailsValue">{31860705-BEAD-45cd-B64E-F5E647BD921C}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
@@ -153,8 +153,10 @@
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
 			<li onClick="toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
 			<li onClick="toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
+			<li onClick="toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 <div class="ItemBody" id="AttributesTable">
 	<table border="0" cellspacing="0" cellpadding="0" class="Table">
@@ -165,41 +167,111 @@
 		</tr>
 						<tr>
 				<td width="50%" class="TableRow">
-					Inngreps sone
+					høyde
 				</td>
 				<td width="25%" class="TableRow">
 					Public 
 				</td>
 				<td width="25%" class="TableRow">
-					
+					Integer
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="3">										
 					
-						&nbsp;
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			angivelse av høydekurvens høyde over høydereferansen i meter- og oppgis som et desimalt tall hvis nødvendig&lt;br/&gt;&lt;br/&gt;-- Definition -- &lt;br/&gt;indication of the depression curve&#39;s height above the height reference in metres - to be given with decimals if necessary&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
 						
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow">
-					Visualiserings sone
+					medium
 				</td>
 				<td width="25%" class="TableRow">
 					Public 
 				</td>
 				<td width="25%" class="TableRow">
-					
+					<a href="EA540.htm">Medium</a>
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="3">										
-					
+					defaultCodeSpace=<a href="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmter_Medium.gml" target="_blank" >https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmter_Medium.gml</a><br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			objektets beliggenhet i forhold til jordoverflaten&lt;br/&gt;&lt;br/&gt;-- Definition -- &lt;br/&gt;the location of the object relative to the earth&#39;s surface&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					punkttype
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					<a href="EA533.htm">terrengpunktType</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					defaultCodeSpace=<a href="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmter_terrengpunktType.gml" target="_blank" >https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmter_terrengpunktType.gml</a><br>
 						&nbsp;
 						
 				</td>
 			</tr>
 	</table>
 </div>
+		<div class="ItemBody" id="AssociationsToTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA529.htm">«FeatureType» TerrengElementSamling</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> terrengpunkt<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1723" /></button>Details:
+							<div id="detailsDIVLink1723" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
 <div class="ItemBody" id="TaggedValTable">
 	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
 		<tr>
@@ -207,28 +279,8 @@
 			<td width="50%" class="TableHeading">Value</td>
 		</tr>
 					<tr>
-				<td width="50%" class="TableRow" valign="top">asDictionary</td>
-				<td width="50%" class="TableRow" valign="top">true</td>
-			</tr>	
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="2">
-					Details:
-						<div class="ObjectDetailsNotes">Values: true,false<br />Default: true<br />Description: true if codelist is externally managed, else false<br /></div>
-
-				</td>
-			</tr>			<tr>
-				<td width="50%" class="TableRow" valign="top">codeList</td>
-				<td width="50%" class="TableRow" valign="top"><a href="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmter_Sone.gml" target="_blank" >https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmter_Sone.gml</a></td>
-			</tr>	
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="2">
-					Details:
-						<div class="ObjectDetailsNotes">Default: https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/codeListNavn.xml<br /></div>
-
-				</td>
-			</tr>			<tr>
 				<td width="50%" class="TableRow" valign="top">kilde</td>
-				<td width="50%" class="TableRow" valign="top">VU053</td>
+				<td width="50%" class="TableRow" valign="top">SOSI</td>
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
@@ -238,7 +290,7 @@
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow" valign="top">referanse</td>
-				<td width="50%" class="TableRow" valign="top">2023 GM_Terreng</td>
+				<td width="50%" class="TableRow" valign="top">Terreng 4.0</td>
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
@@ -260,7 +312,33 @@
 
 
 			</table>
-		</div>	</div>
+		</div>		<div class="ItemBody" id="LinksTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA529.htm">«FeatureType» TerrengElementSamling</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Weak</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA538.htm">«FeatureType» TerrengElement</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
  </div>
  </td>
 				</tr>

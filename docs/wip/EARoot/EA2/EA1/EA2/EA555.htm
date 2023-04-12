@@ -1,0 +1,319 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>FagmodellSkilt</title>
+<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> FagmodellSkilt </h1>
+			<!-- <img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../EA3.htm">Vegprosjekt VU053 v1.0</a> / <a href="../../EA344.htm">LeveranseVegprosjekt</a> / <a href="../EA348.htm">Samordningsmodell</a> / <a href="EA546.htm">Tverrfagligmodell</a> / <a href="./EA9/EA1120.htm">FagmodellSkilt</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<li><img src="../../../../images/4.png" alt="Package"/> <a href="./EA9/EA1/EA1198.htm">Produkt-info</a></li>
+<li><img src="../../../../images/175.png" alt="Diagram"/> <a href="./EA9/EA1112.htm">FagmodellSkilt</a></li>
+<li><img src="../../../../images/175.png" alt="Diagram"/> <a href="./EA9/EA1114.htm">FagmodellSkilt Kodelister</a></li>
+<li><img src="../../../../images/175.png" alt="Diagram"/> <a href="./EA9/EA1116.htm">FagmodellSkilt Kodelister Skiltplater</a></li>
+<li><img src="../../../../images/175.png" alt="Diagram"/> <a href="./EA9/EA1118.htm">SkiltElement</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1131.htm">AnnetOppsettingsutsyr</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1132.htm">Avskjaeringsledd</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1133.htm">BoltegruppeFraKonstruksjon</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1134.htm">BrakettFraKonstruksjon</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1135.htm">BruksomraadePlate</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1136.htm">EtterlysendeSkiltplate</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1137.htm">FagmodellSkilt</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1138.htm">FastSkilplate</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1139.htm">Fjellfeste</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1140.htm">Fylling</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1141.htm">Objektreferanse</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1142.htm">Oppsettingsutstyr</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1144.htm">OppsettingsutstyrIkkeSelveid</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1145.htm">OppsettingsutstyrLysmast</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1146.htm">OppsettingsutstyrRekkverkStoetpute</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1147.htm">OppsettingsutstyrSelveid</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1148.htm">OppsettingsutstyrSignalstolpe</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1149.htm">OppsettingsutstyrTunnelvegg</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1150.htm">OppsettingsutstyrTverrbjelkeITunnel</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1152.htm">Planum</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1153.htm">Plate</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1157.htm">SkiltElement</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1158.htm">SkiltnummerEtterlysende</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1162.htm">Skiltstolpe</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1163.htm">Terrengarbeid</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1164.htm">UtkragerFraVegg</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1165.htm">VariabeltSkiltplate</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1166.htm">AnsiktssideRettetMot</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1167.htm">Bebyggelse</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1168.htm">Belysning</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1169.htm">Brakett</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1170.htm">Boeyle</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1171.htm">Farge</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1172.htm">FjernstyringVariabelt</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1173.htm">Eier</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1174.htm">Folieklasse</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1175.htm">SkiftingAvBudskap</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1176.htm">Fundamentering</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1177.htm">Himmelretning</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1178.htm">SkiltnummerOrdinaerVisning</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1179.htm">KampanjeEgnet</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1180.htm">Klappskilt</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1181.htm">TypeVariabeltSkilt</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1182.htm">KampanjePaagaaende</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1183.htm">Leverandoer</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1184.htm">Variasjon</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1185.htm">Klima</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1186.htm">Refleksleverandoer</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1187.htm">Miljoe</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1188.htm">Skiltform</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1189.htm">Skiltnummer</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1190.htm">ProduktnavnSkiltmast</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1191.htm">Stoerrelse</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1192.htm">Skiltholder</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1193.htm">TekstSymbolhoeyde</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1194.htm">TosidigPlateMedUlikeMotiv</a></li>
+<li><img src="../../../../images/5.png" alt="Class"/> <a href="./EA9/EA1195.htm">Vedlikeholdsansvarlig</a></li>
+</ul>
+
+					</td>
+					<td class="contentcell"><div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">FagmodellSkilt  : Public  &lt;&lt;ApplicationSchema&gt;&gt; Package</span>
+	<table border="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">03.11.2022 13:46:16</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">04.04.2023 13:12:06</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">MatiasGonzalezTognoni</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" >Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{536F3935-6587-49da-801C-33DE189244F6}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+	</table>
+	
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Tag</td>
+			<td width="50%" class="TableHeading">Value</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">targetNamespace</td>
+				<td width="50%" class="TableRow" valign="top"><a href="https://skjema.atlas.vegvesen.no/r000/fagmodellskilt/0.1" target="_blank" >https://skjema.atlas.vegvesen.no/r000/fagmodellskilt/0.1</a></td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					Details:
+						<div class="ObjectDetailsNotes">Default: http://skjema.geonorge.no/package_URL<br /></div>
+
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">version</td>
+				<td width="50%" class="TableRow" valign="top">0.1</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					Details:
+						&nbsp;
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">xmlns</td>
+				<td width="50%" class="TableRow" valign="top">fmskl</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					Details:
+						&nbsp;
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">xsdDocument</td>
+				<td width="50%" class="TableRow" valign="top">FagmodellSkilt.xsd</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					Details:
+						<div class="ObjectDetailsNotes">Default: packageName.xsd<br />Description: Navn på xsd fila! (test)<br /></div>
+
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">xsdEncodingRule</td>
+				<td width="50%" class="TableRow" valign="top">sosi</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					Details:
+						<div class="ObjectDetailsNotes">Values: sosi,iso19136_2007,iso19136_2007_ShapeChange_1.0_Extensions,iso19136_2007_INSPIRE_Extensions,iso19139_2007,gml33,citygml-ade,metadata-profile,gsip<br />Default: sosi<br /></div>
+
+				</td>
+			</tr>
+	</table>
+</div>		<div class="ItemBody" id="LinksTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="./EA1/EA565.htm">«ApplicationSchema» FagmodellElektro</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="./EA7/EA1031.htm">«ApplicationSchema» FagmodellRekkverk</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="./EA8/EA1080.htm">«ApplicationSchema» FagmodellSignal</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+ </div>
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+
