@@ -11,65 +11,65 @@
   <gml:description></gml:description>
   <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Stoepjernsroerklasse.gml">Stoepjernsroerklasse</gml:identifier>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="Stoepjernsroerklasse.K8">
+    <gml:Definition gml:id="Stoepjernsroerklasse.k8">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Stoepjernsroerklasse.gml#Stoepjernsroerklasse.K8">K8</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Stoepjernsroerklasse.gml#Stoepjernsroerklasse.k8">k8</gml:identifier>
       <gml:name>K8</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="Stoepjernsroerklasse.K9">
+    <gml:Definition gml:id="Stoepjernsroerklasse.k9">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Stoepjernsroerklasse.gml#Stoepjernsroerklasse.K9">K9</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Stoepjernsroerklasse.gml#Stoepjernsroerklasse.k9">k9</gml:identifier>
       <gml:name>K9</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="Stoepjernsroerklasse.K10">
+    <gml:Definition gml:id="Stoepjernsroerklasse.k10">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Stoepjernsroerklasse.gml#Stoepjernsroerklasse.K10">K10</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Stoepjernsroerklasse.gml#Stoepjernsroerklasse.k10">k10</gml:identifier>
       <gml:name>K10</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="Stoepjernsroerklasse.C25">
+    <gml:Definition gml:id="Stoepjernsroerklasse.c25">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Stoepjernsroerklasse.gml#Stoepjernsroerklasse.C25">C25</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Stoepjernsroerklasse.gml#Stoepjernsroerklasse.c25">c25</gml:identifier>
       <gml:name>C25</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="Stoepjernsroerklasse.C30">
+    <gml:Definition gml:id="Stoepjernsroerklasse.c30">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Stoepjernsroerklasse.gml#Stoepjernsroerklasse.C30">C30</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Stoepjernsroerklasse.gml#Stoepjernsroerklasse.c30">c30</gml:identifier>
       <gml:name>C30</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="Stoepjernsroerklasse.C40">
+    <gml:Definition gml:id="Stoepjernsroerklasse.c40">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Stoepjernsroerklasse.gml#Stoepjernsroerklasse.C40">C40</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Stoepjernsroerklasse.gml#Stoepjernsroerklasse.c40">c40</gml:identifier>
       <gml:name>C40</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="Stoepjernsroerklasse.C50">
+    <gml:Definition gml:id="Stoepjernsroerklasse.c50">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Stoepjernsroerklasse.gml#Stoepjernsroerklasse.C50">C50</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Stoepjernsroerklasse.gml#Stoepjernsroerklasse.c50">c50</gml:identifier>
       <gml:name>C50</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="Stoepjernsroerklasse.C64">
+    <gml:Definition gml:id="Stoepjernsroerklasse.c64">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Stoepjernsroerklasse.gml#Stoepjernsroerklasse.C64">C64</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Stoepjernsroerklasse.gml#Stoepjernsroerklasse.c64">c64</gml:identifier>
       <gml:name>C64</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="Stoepjernsroerklasse.C100">
+    <gml:Definition gml:id="Stoepjernsroerklasse.c100">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Stoepjernsroerklasse.gml#Stoepjernsroerklasse.C100">C100</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Stoepjernsroerklasse.gml#Stoepjernsroerklasse.c100">c100</gml:identifier>
       <gml:name>C100</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

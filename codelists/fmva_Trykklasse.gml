@@ -11,37 +11,37 @@
   <gml:description></gml:description>
   <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Trykklasse.gmlhttps://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Trykklasse.gml">Trykklasse</gml:identifier>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="Trykklasse.PN6">
+    <gml:Definition gml:id="Trykklasse.pN6">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Trykklasse.gmlhttps://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Trykklasse.gml#Trykklasse.PN6">PN6</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Trykklasse.gmlhttps://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Trykklasse.gml#Trykklasse.pN6">pN6</gml:identifier>
       <gml:name>PN6</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="Trykklasse.PN10">
+    <gml:Definition gml:id="Trykklasse.pN10">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Trykklasse.gmlhttps://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Trykklasse.gml#Trykklasse.PN10">PN10</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Trykklasse.gmlhttps://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Trykklasse.gml#Trykklasse.pN10">pN10</gml:identifier>
       <gml:name>PN10</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="Trykklasse.PN16">
+    <gml:Definition gml:id="Trykklasse.pN16">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Trykklasse.gmlhttps://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Trykklasse.gml#Trykklasse.PN16">PN16</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Trykklasse.gmlhttps://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Trykklasse.gml#Trykklasse.pN16">pN16</gml:identifier>
       <gml:name>PN16</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="Trykklasse.PN20">
+    <gml:Definition gml:id="Trykklasse.pN20">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Trykklasse.gmlhttps://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Trykklasse.gml#Trykklasse.PN20">PN20</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Trykklasse.gmlhttps://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Trykklasse.gml#Trykklasse.pN20">pN20</gml:identifier>
       <gml:name>PN20</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="Trykklasse.PN25">
+    <gml:Definition gml:id="Trykklasse.pN25">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Trykklasse.gmlhttps://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Trykklasse.gml#Trykklasse.PN25">PN25</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Trykklasse.gmlhttps://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Trykklasse.gml#Trykklasse.pN25">pN25</gml:identifier>
       <gml:name>PN25</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

@@ -18,11 +18,11 @@
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="VentilTilkobling.gjengeskjøt">
+    <gml:Definition gml:id="VentilTilkobling.gjengeskjoet">
       <gml:description>Ref NS3420 / Skjøtemetode 1
 
 Samme som muffe?</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_VentilTilkobling.gml#VentilTilkobling.gjengeskjøt">gjengeskjøt</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_VentilTilkobling.gml#VentilTilkobling.gjengeskjoet">gjengeskjoet</gml:identifier>
       <gml:name>gjengeskjøt</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -34,16 +34,16 @@ Samme som muffe?</gml:description>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="VentilTilkobling.sveiseskjøt">
+    <gml:Definition gml:id="VentilTilkobling.sveiseskjoet">
       <gml:description>Ref NS3420 / Skjøtemetode 2</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_VentilTilkobling.gml#VentilTilkobling.sveiseskjøt">sveiseskjøt</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_VentilTilkobling.gml#VentilTilkobling.sveiseskjoet">sveiseskjoet</gml:identifier>
       <gml:name>sveiseskjøt</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="VentilTilkobling.loddeskjøt">
+    <gml:Definition gml:id="VentilTilkobling.loddeskjoet">
       <gml:description>Ref NS3420 / Skjøtemetode 3</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_VentilTilkobling.gml#VentilTilkobling.loddeskjøt">loddeskjøt</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_VentilTilkobling.gml#VentilTilkobling.loddeskjoet">loddeskjoet</gml:identifier>
       <gml:name>loddeskjøt</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

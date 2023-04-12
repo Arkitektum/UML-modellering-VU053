@@ -18,16 +18,16 @@
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="SkjoetemetodePP.el-muffe">
+    <gml:Definition gml:id="SkjoetemetodePP.elMuffe">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="#SkjoetemetodePP.el-muffe">el-muffe</gml:identifier>
+      <gml:identifier codeSpace="#SkjoetemetodePP.elMuffe">elMuffe</gml:identifier>
       <gml:name>el-muffe</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="SkjoetemetodePP.muffeskjøt">
+    <gml:Definition gml:id="SkjoetemetodePP.muffeskjoet">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="#SkjoetemetodePP.muffeskjøt">muffeskjøt</gml:identifier>
+      <gml:identifier codeSpace="#SkjoetemetodePP.muffeskjoet">muffeskjoet</gml:identifier>
       <gml:name>muffeskjøt</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

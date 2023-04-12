@@ -11,51 +11,51 @@
   <gml:description></gml:description>
   <gml:identifier codeSpace="">RoermaterialePE</gml:identifier>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="RoermaterialePE.PEL">
+    <gml:Definition gml:id="RoermaterialePE.pEL">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="#RoermaterialePE.PEL">PEL</gml:identifier>
+      <gml:identifier codeSpace="#RoermaterialePE.pEL">pEL</gml:identifier>
       <gml:name>PEL</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="RoermaterialePE.PEM">
+    <gml:Definition gml:id="RoermaterialePE.pEM">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="#RoermaterialePE.PEM">PEM</gml:identifier>
+      <gml:identifier codeSpace="#RoermaterialePE.pEM">pEM</gml:identifier>
       <gml:name>PEM</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="RoermaterialePE.PEH">
+    <gml:Definition gml:id="RoermaterialePE.pEH">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="#RoermaterialePE.PEH">PEH</gml:identifier>
+      <gml:identifier codeSpace="#RoermaterialePE.pEH">pEH</gml:identifier>
       <gml:name>PEH</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="RoermaterialePE.PE32">
+    <gml:Definition gml:id="RoermaterialePE.pE32">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="#RoermaterialePE.PE32">PE32</gml:identifier>
+      <gml:identifier codeSpace="#RoermaterialePE.pE32">pE32</gml:identifier>
       <gml:name>PE32</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="RoermaterialePE.PE50">
+    <gml:Definition gml:id="RoermaterialePE.pE50">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="#RoermaterialePE.PE50">PE50</gml:identifier>
+      <gml:identifier codeSpace="#RoermaterialePE.pE50">pE50</gml:identifier>
       <gml:name>PE50</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="RoermaterialePE.PE80">
+    <gml:Definition gml:id="RoermaterialePE.pE80">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="#RoermaterialePE.PE80">PE80</gml:identifier>
+      <gml:identifier codeSpace="#RoermaterialePE.pE80">pE80</gml:identifier>
       <gml:name>PE80</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="RoermaterialePE.PE100">
+    <gml:Definition gml:id="RoermaterialePE.pE100">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="#RoermaterialePE.PE100">PE100</gml:identifier>
+      <gml:identifier codeSpace="#RoermaterialePE.pE100">pE100</gml:identifier>
       <gml:name>PE100</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

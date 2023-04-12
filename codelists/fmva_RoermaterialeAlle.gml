@@ -11,16 +11,16 @@
   <gml:description></gml:description>
   <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_RoermaterialeAlle.gml">RoermaterialeAlle</gml:identifier>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="RoermaterialeAlle.armertBetongrør">
+    <gml:Definition gml:id="RoermaterialeAlle.armertBetongroer">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_RoermaterialeAlle.gml#RoermaterialeAlle.armertBetongrør">armertBetongrør</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_RoermaterialeAlle.gml#RoermaterialeAlle.armertBetongroer">armertBetongroer</gml:identifier>
       <gml:name>armertBetongrør</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="RoermaterialeAlle.duktiltStøpjern">
+    <gml:Definition gml:id="RoermaterialeAlle.duktiltStoepjern">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_RoermaterialeAlle.gml#RoermaterialeAlle.duktiltStøpjern">duktiltStøpjern</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_RoermaterialeAlle.gml#RoermaterialeAlle.duktiltStoepjern">duktiltStoepjern</gml:identifier>
       <gml:name>duktiltStøpjern</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -32,9 +32,9 @@
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="RoermaterialeAlle.gråttStøpjern">
+    <gml:Definition gml:id="RoermaterialeAlle.graattStoepjern">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_RoermaterialeAlle.gml#RoermaterialeAlle.gråttStøpjern">gråttStøpjern</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_RoermaterialeAlle.gml#RoermaterialeAlle.graattStoepjern">graattStoepjern</gml:identifier>
       <gml:name>gråttStøpjern</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -46,100 +46,100 @@
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="RoermaterialeAlle.legertStål">
+    <gml:Definition gml:id="RoermaterialeAlle.legertStaal">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_RoermaterialeAlle.gml#RoermaterialeAlle.legertStål">legertStål</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_RoermaterialeAlle.gml#RoermaterialeAlle.legertStaal">legertStaal</gml:identifier>
       <gml:name>legertStål</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="RoermaterialeAlle.PE100">
+    <gml:Definition gml:id="RoermaterialeAlle.pE100">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_RoermaterialeAlle.gml#RoermaterialeAlle.PE100">PE100</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_RoermaterialeAlle.gml#RoermaterialeAlle.pE100">pE100</gml:identifier>
       <gml:name>PE100</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="RoermaterialeAlle.PE32">
+    <gml:Definition gml:id="RoermaterialeAlle.pE32">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_RoermaterialeAlle.gml#RoermaterialeAlle.PE32">PE32</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_RoermaterialeAlle.gml#RoermaterialeAlle.pE32">pE32</gml:identifier>
       <gml:name>PE32</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="RoermaterialeAlle.PE50">
+    <gml:Definition gml:id="RoermaterialeAlle.pE50">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_RoermaterialeAlle.gml#RoermaterialeAlle.PE50">PE50</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_RoermaterialeAlle.gml#RoermaterialeAlle.pE50">pE50</gml:identifier>
       <gml:name>PE50</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="RoermaterialeAlle.PE80">
+    <gml:Definition gml:id="RoermaterialeAlle.pE80">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_RoermaterialeAlle.gml#RoermaterialeAlle.PE80">PE80</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_RoermaterialeAlle.gml#RoermaterialeAlle.pE80">pE80</gml:identifier>
       <gml:name>PE80</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="RoermaterialeAlle.PEH">
+    <gml:Definition gml:id="RoermaterialeAlle.pEH">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_RoermaterialeAlle.gml#RoermaterialeAlle.PEH">PEH</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_RoermaterialeAlle.gml#RoermaterialeAlle.pEH">pEH</gml:identifier>
       <gml:name>PEH</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="RoermaterialeAlle.PEL">
+    <gml:Definition gml:id="RoermaterialeAlle.pEL">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_RoermaterialeAlle.gml#RoermaterialeAlle.PEL">PEL</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_RoermaterialeAlle.gml#RoermaterialeAlle.pEL">pEL</gml:identifier>
       <gml:name>PEL</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="RoermaterialeAlle.PEM">
+    <gml:Definition gml:id="RoermaterialeAlle.pEM">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_RoermaterialeAlle.gml#RoermaterialeAlle.PEM">PEM</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_RoermaterialeAlle.gml#RoermaterialeAlle.pEM">pEM</gml:identifier>
       <gml:name>PEM</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="RoermaterialeAlle.rustfrittStål">
+    <gml:Definition gml:id="RoermaterialeAlle.rustfrittStaal">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_RoermaterialeAlle.gml#RoermaterialeAlle.rustfrittStål">rustfrittStål</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_RoermaterialeAlle.gml#RoermaterialeAlle.rustfrittStaal">rustfrittStaal</gml:identifier>
       <gml:name>rustfrittStål</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="RoermaterialeAlle.støpjern">
+    <gml:Definition gml:id="RoermaterialeAlle.stoepjern">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_RoermaterialeAlle.gml#RoermaterialeAlle.støpjern">støpjern</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_RoermaterialeAlle.gml#RoermaterialeAlle.stoepjern">stoepjern</gml:identifier>
       <gml:name>støpjern</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="RoermaterialeAlle.uarmertBetongrør">
+    <gml:Definition gml:id="RoermaterialeAlle.uarmertBetongroer">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_RoermaterialeAlle.gml#RoermaterialeAlle.uarmertBetongrør">uarmertBetongrør</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_RoermaterialeAlle.gml#RoermaterialeAlle.uarmertBetongroer">uarmertBetongroer</gml:identifier>
       <gml:name>uarmertBetongrør</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="RoermaterialeAlle.PE">
+    <gml:Definition gml:id="RoermaterialeAlle.pE">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_RoermaterialeAlle.gml#RoermaterialeAlle.PE">PE</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_RoermaterialeAlle.gml#RoermaterialeAlle.pE">pE</gml:identifier>
       <gml:name>PE</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="RoermaterialeAlle.PP">
+    <gml:Definition gml:id="RoermaterialeAlle.pP">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_RoermaterialeAlle.gml#RoermaterialeAlle.PP">PP</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_RoermaterialeAlle.gml#RoermaterialeAlle.pP">pP</gml:identifier>
       <gml:name>PP</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="RoermaterialeAlle.PVC">
+    <gml:Definition gml:id="RoermaterialeAlle.pVC">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_RoermaterialeAlle.gml#RoermaterialeAlle.PVC">PVC</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_RoermaterialeAlle.gml#RoermaterialeAlle.pVC">pVC</gml:identifier>
       <gml:name>PVC</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -151,16 +151,16 @@
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="RoermaterialeAlle.betongrør">
+    <gml:Definition gml:id="RoermaterialeAlle.betongroer">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_RoermaterialeAlle.gml#RoermaterialeAlle.betongrør">betongrør</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_RoermaterialeAlle.gml#RoermaterialeAlle.betongroer">betongroer</gml:identifier>
       <gml:name>betongrør</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="RoermaterialeAlle.stål">
+    <gml:Definition gml:id="RoermaterialeAlle.staal">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_RoermaterialeAlle.gml#RoermaterialeAlle.stål">stål</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_RoermaterialeAlle.gml#RoermaterialeAlle.staal">staal</gml:identifier>
       <gml:name>stål</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -186,9 +186,9 @@
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="RoermaterialeAlle.GRP">
+    <gml:Definition gml:id="RoermaterialeAlle.gRP">
       <gml:description>glassfiberarmert umettet polyester eller på engelsk Glassfibre reinforced polyester</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_RoermaterialeAlle.gml#RoermaterialeAlle.GRP">GRP</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_RoermaterialeAlle.gml#RoermaterialeAlle.gRP">gRP</gml:identifier>
       <gml:name>GRP</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

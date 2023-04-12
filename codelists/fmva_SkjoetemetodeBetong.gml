@@ -11,16 +11,16 @@
   <gml:description></gml:description>
   <gml:identifier codeSpace="">SkjoetemetodeBetong</gml:identifier>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="SkjoetemetodeBetong.muffeskjøt">
+    <gml:Definition gml:id="SkjoetemetodeBetong.muffeskjoet">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="#SkjoetemetodeBetong.muffeskjøt">muffeskjøt</gml:identifier>
+      <gml:identifier codeSpace="#SkjoetemetodeBetong.muffeskjoet">muffeskjoet</gml:identifier>
       <gml:name>muffeskjøt</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="SkjoetemetodeBetong.muffeskjøtMedInnstøptPakning">
+    <gml:Definition gml:id="SkjoetemetodeBetong.muffeskjoetMedInnstoeptPakning">
       <gml:description>Muffeskjøt med innstøpt pakning</gml:description>
-      <gml:identifier codeSpace="#SkjoetemetodeBetong.muffeskjøtMedInnstøptPakning">muffeskjøtMedInnstøptPakning</gml:identifier>
+      <gml:identifier codeSpace="#SkjoetemetodeBetong.muffeskjoetMedInnstoeptPakning">muffeskjoetMedInnstoeptPakning</gml:identifier>
       <gml:name>muffeskjøtMedInnstøptPakning</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

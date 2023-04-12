@@ -11,16 +11,16 @@
   <gml:description></gml:description>
   <gml:identifier codeSpace="">RoermaterialeBetongroer</gml:identifier>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="RoermaterialeBetongroer.armertBetongrør">
+    <gml:Definition gml:id="RoermaterialeBetongroer.armertBetongroer">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="#RoermaterialeBetongroer.armertBetongrør">armertBetongrør</gml:identifier>
+      <gml:identifier codeSpace="#RoermaterialeBetongroer.armertBetongroer">armertBetongroer</gml:identifier>
       <gml:name>armertBetongrør</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="RoermaterialeBetongroer.uarmertBetongrør">
+    <gml:Definition gml:id="RoermaterialeBetongroer.uarmertBetongroer">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="#RoermaterialeBetongroer.uarmertBetongrør">uarmertBetongrør</gml:identifier>
+      <gml:identifier codeSpace="#RoermaterialeBetongroer.uarmertBetongroer">uarmertBetongroer</gml:identifier>
       <gml:name>uarmertBetongrør</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

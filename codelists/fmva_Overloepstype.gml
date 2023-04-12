@@ -11,23 +11,23 @@
   <gml:description>Kilde: (SOSI Ledning 4.6)</gml:description>
   <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Overloepstype.gml">Overloepstype</gml:identifier>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="Overloepstype.tverroverløp">
+    <gml:Definition gml:id="Overloepstype.tverroverloep">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Overloepstype.gml#Overloepstype.tverroverløp">tverroverløp</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Overloepstype.gml#Overloepstype.tverroverloep">tverroverloep</gml:identifier>
       <gml:name>tverroverløp</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="Overloepstype.høytSideoverløp">
+    <gml:Definition gml:id="Overloepstype.hoeytSideoverloep">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Overloepstype.gml#Overloepstype.høytSideoverløp">høytSideoverløp</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Overloepstype.gml#Overloepstype.hoeytSideoverloep">hoeytSideoverloep</gml:identifier>
       <gml:name>høytSideoverløp</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="Overloepstype.hvirveloverløp">
+    <gml:Definition gml:id="Overloepstype.hvirveloverloep">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Overloepstype.gml#Overloepstype.hvirveloverløp">hvirveloverløp</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Overloepstype.gml#Overloepstype.hvirveloverloep">hvirveloverloep</gml:identifier>
       <gml:name>hvirveloverløp</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

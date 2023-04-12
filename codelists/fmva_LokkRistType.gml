@@ -23,9 +23,9 @@
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="LokkRistType.kuppelristHøy">
+    <gml:Definition gml:id="LokkRistType.kuppelristHoey">
       <gml:description>Kuppelrist, høy</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_LokkRistType.gml#LokkRistType.kuppelristHøy">kuppelristHøy</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_LokkRistType.gml#LokkRistType.kuppelristHoey">kuppelristHoey</gml:identifier>
       <gml:name>kuppelristHøy</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -37,9 +37,9 @@
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="LokkRistType.skrårist">
+    <gml:Definition gml:id="LokkRistType.skraarist">
       <gml:description>Skrårist</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_LokkRistType.gml#LokkRistType.skrårist">skrårist</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_LokkRistType.gml#LokkRistType.skraarist">skraarist</gml:identifier>
       <gml:name>skrårist</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -58,16 +58,16 @@
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="LokkRistType.støpjernslokkMHalvRist">
+    <gml:Definition gml:id="LokkRistType.stoepjernslokkMHalvRist">
       <gml:description>Støpjernslokk m halv rist</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_LokkRistType.gml#LokkRistType.støpjernslokkMHalvRist">støpjernslokkMHalvRist</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_LokkRistType.gml#LokkRistType.stoepjernslokkMHalvRist">stoepjernslokkMHalvRist</gml:identifier>
       <gml:name>støpjernslokkMHalvRist</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="LokkRistType.støpjernslokkMHelRist">
+    <gml:Definition gml:id="LokkRistType.stoepjernslokkMHelRist">
       <gml:description>Støpjernslokk m hel rist</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_LokkRistType.gml#LokkRistType.støpjernslokkMHelRist">støpjernslokkMHelRist</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_LokkRistType.gml#LokkRistType.stoepjernslokkMHelRist">stoepjernslokkMHelRist</gml:identifier>
       <gml:name>støpjernslokkMHelRist</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -79,9 +79,9 @@
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="LokkRistType.tettLokkStøpjern">
+    <gml:Definition gml:id="LokkRistType.tettLokkStoepjern">
       <gml:description>Tett lokk, støpjern</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_LokkRistType.gml#LokkRistType.tettLokkStøpjern">tettLokkStøpjern</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_LokkRistType.gml#LokkRistType.tettLokkStoepjern">tettLokkStoepjern</gml:identifier>
       <gml:name>tettLokkStøpjern</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -93,9 +93,9 @@
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="LokkRistType.åpen">
+    <gml:Definition gml:id="LokkRistType.aapen">
       <gml:description>Åpen</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_LokkRistType.gml#LokkRistType.åpen">åpen</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_LokkRistType.gml#LokkRistType.aapen">aapen</gml:identifier>
       <gml:name>åpen</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

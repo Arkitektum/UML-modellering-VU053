@@ -25,16 +25,16 @@
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="SkjoetemetodeStaal.muffeskjøtStrekkfast">
+    <gml:Definition gml:id="SkjoetemetodeStaal.muffeskjoetStrekkfast">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="#SkjoetemetodeStaal.muffeskjøtStrekkfast">muffeskjøtStrekkfast</gml:identifier>
+      <gml:identifier codeSpace="#SkjoetemetodeStaal.muffeskjoetStrekkfast">muffeskjoetStrekkfast</gml:identifier>
       <gml:name>muffeskjøtStrekkfast</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="SkjoetemetodeStaal.muffeskjøtIkkeStrekkfast">
+    <gml:Definition gml:id="SkjoetemetodeStaal.muffeskjoetIkkeStrekkfast">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="#SkjoetemetodeStaal.muffeskjøtIkkeStrekkfast">muffeskjøtIkkeStrekkfast</gml:identifier>
+      <gml:identifier codeSpace="#SkjoetemetodeStaal.muffeskjoetIkkeStrekkfast">muffeskjoetIkkeStrekkfast</gml:identifier>
       <gml:name>muffeskjøtIkkeStrekkfast</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

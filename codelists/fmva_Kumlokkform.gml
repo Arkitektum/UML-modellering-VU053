@@ -30,9 +30,9 @@
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="Kumlokkform.rektangulær">
+    <gml:Definition gml:id="Kumlokkform.rektangulaer">
       <gml:description>rektangulær</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Kumlokkform.gml#Kumlokkform.rektangulær">rektangulær</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Kumlokkform.gml#Kumlokkform.rektangulaer">rektangulaer</gml:identifier>
       <gml:name>rektangulær</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

@@ -18,9 +18,9 @@
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="Vannledningsbruk.råvann">
+    <gml:Definition gml:id="Vannledningsbruk.raavann">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Vannledningsbruk.gml#Vannledningsbruk.råvann">råvann</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Vannledningsbruk.gml#Vannledningsbruk.raavann">raavann</gml:identifier>
       <gml:name>råvann</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

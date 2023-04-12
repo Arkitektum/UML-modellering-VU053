@@ -11,11 +11,11 @@
   <gml:description>Lista ikke fullstendig</gml:description>
   <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Avloepsledningbruk.gml">Avloepsledningbruk</gml:identifier>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="Avloepsledningbruk.fellesavløp">
+    <gml:Definition gml:id="Avloepsledningbruk.fellesavloep">
       <gml:description>(Oslo VAV AF-ledning)
 
 Definisjonstekst: Ledning for transport av avløpsvann som inneholder både spillvann og overvann. Jfr. spillvannsledning og overvannsledning.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Avloepsledningbruk.gml#Avloepsledningbruk.fellesavløp">fellesavløp</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Avloepsledningbruk.gml#Avloepsledningbruk.fellesavloep">fellesavloep</gml:identifier>
       <gml:name>fellesavløp</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

@@ -25,16 +25,16 @@
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="InnvendigBeskyttelse.filtstrømpe">
+    <gml:Definition gml:id="InnvendigBeskyttelse.filtstroempe">
       <gml:description>brukes på avløpsrør</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_InnvendigBeskyttelse.gml#InnvendigBeskyttelse.filtstrømpe">filtstrømpe</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_InnvendigBeskyttelse.gml#InnvendigBeskyttelse.filtstroempe">filtstroempe</gml:identifier>
       <gml:name>filtstrømpe</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="InnvendigBeskyttelse.glassfiberarmertStrømpe">
+    <gml:Definition gml:id="InnvendigBeskyttelse.glassfiberarmertStroempe">
       <gml:description>brukes på avløpsrør</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_InnvendigBeskyttelse.gml#InnvendigBeskyttelse.glassfiberarmertStrømpe">glassfiberarmertStrømpe</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_InnvendigBeskyttelse.gml#InnvendigBeskyttelse.glassfiberarmertStroempe">glassfiberarmertStroempe</gml:identifier>
       <gml:name>glassfiberarmertStrømpe</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

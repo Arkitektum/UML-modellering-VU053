@@ -11,16 +11,16 @@
   <gml:description></gml:description>
   <gml:identifier codeSpace="">RoermaterialeStaal</gml:identifier>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="RoermaterialeStaal.legertStål">
+    <gml:Definition gml:id="RoermaterialeStaal.legertStaal">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="#RoermaterialeStaal.legertStål">legertStål</gml:identifier>
+      <gml:identifier codeSpace="#RoermaterialeStaal.legertStaal">legertStaal</gml:identifier>
       <gml:name>legertStål</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="RoermaterialeStaal.rustfrittStål">
+    <gml:Definition gml:id="RoermaterialeStaal.rustfrittStaal">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="#RoermaterialeStaal.rustfrittStål">rustfrittStål</gml:identifier>
+      <gml:identifier codeSpace="#RoermaterialeStaal.rustfrittStaal">rustfrittStaal</gml:identifier>
       <gml:name>rustfrittStål</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

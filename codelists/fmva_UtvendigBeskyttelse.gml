@@ -39,9 +39,9 @@
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="UtvendigBeskyttelse.sink-epoksy">
+    <gml:Definition gml:id="UtvendigBeskyttelse.sinkEpoksy">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_UtvendigBeskyttelse.gml#UtvendigBeskyttelse.sink-epoksy">sink-epoksy</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_UtvendigBeskyttelse.gml#UtvendigBeskyttelse.sinkEpoksy">sinkEpoksy</gml:identifier>
       <gml:name>sink-epoksy</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -60,23 +60,23 @@
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="UtvendigBeskyttelse.sinkOgSementmørtel">
+    <gml:Definition gml:id="UtvendigBeskyttelse.sinkOgSementmoertel">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_UtvendigBeskyttelse.gml#UtvendigBeskyttelse.sinkOgSementmørtel">sinkOgSementmørtel</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_UtvendigBeskyttelse.gml#UtvendigBeskyttelse.sinkOgSementmoertel">sinkOgSementmoertel</gml:identifier>
       <gml:name>sinkOgSementmørtel</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="UtvendigBeskyttelse.PPKappe">
+    <gml:Definition gml:id="UtvendigBeskyttelse.pPKappe">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_UtvendigBeskyttelse.gml#UtvendigBeskyttelse.PPKappe">PPKappe</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_UtvendigBeskyttelse.gml#UtvendigBeskyttelse.pPKappe">pPKappe</gml:identifier>
       <gml:name>PPKappe</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="UtvendigBeskyttelse.PPKappeMedDiffusjonssperre">
+    <gml:Definition gml:id="UtvendigBeskyttelse.pPKappeMedDiffusjonssperre">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_UtvendigBeskyttelse.gml#UtvendigBeskyttelse.PPKappeMedDiffusjonssperre">PPKappeMedDiffusjonssperre</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_UtvendigBeskyttelse.gml#UtvendigBeskyttelse.pPKappeMedDiffusjonssperre">pPKappeMedDiffusjonssperre</gml:identifier>
       <gml:name>PPKappeMedDiffusjonssperre</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

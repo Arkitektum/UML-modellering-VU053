@@ -68,9 +68,9 @@ Kan også monteres med motor.</gml:description>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="Stengeventiltype.nåleventil">
+    <gml:Definition gml:id="Stengeventiltype.naaleventil">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Stengeventiltype.gml#Stengeventiltype.nåleventil">nåleventil</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Stengeventiltype.gml#Stengeventiltype.naaleventil">naaleventil</gml:identifier>
       <gml:name>nåleventil</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

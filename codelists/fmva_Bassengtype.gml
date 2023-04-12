@@ -11,7 +11,7 @@
   <gml:description></gml:description>
   <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Bassengtype.gml">Bassengtype</gml:identifier>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="Bassengtype.høydebassengTårn">
+    <gml:Definition gml:id="Bassengtype.hoeydebassengTaarn">
       <gml:description>(Oslo VAV Høydebasseng)
 
 Definisjonstekst: Et magasin/basseng for å lagre vann og etablere fast utgangstrykk på vannledningsnettet (vannforskyningsområde).
@@ -19,7 +19,7 @@ Definisjonstekst: Et magasin/basseng for å lagre vann og etablere fast utgangst
 Nærmere beskrivelse/varianter:
 
 Element i distribusjonsnett for drikkevann med et basseng/tank, en som ligger høyt i forhold til forbrukerne av drikkevannet slik at vannet kan overføres ved hjelp av gravitasjon. Hensikten med høydebassenget er å jevne ut variasjoner i vannforbruket for oppstrøms-ledninger, sørge for jevnt trykk i overføringsledninger og sørge for vannforsyning en viss tid ved stans i overføringene fra oppstrøms-ledninger (f.eks. ved strøm eller ledningsbrudd).</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Bassengtype.gml#Bassengtype.høydebassengTårn">høydebassengTårn</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Bassengtype.gml#Bassengtype.hoeydebassengTaarn">hoeydebassengTaarn</gml:identifier>
       <gml:name>høydebassengTårn</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

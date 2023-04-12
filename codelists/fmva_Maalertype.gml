@@ -11,7 +11,7 @@
   <gml:description>Kilde: (SOSI Ledning 4.6)</gml:description>
   <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Maalertype.gml">Maalertype</gml:identifier>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="Maalertype.trykkmåler">
+    <gml:Definition gml:id="Maalertype.trykkmaaler">
       <gml:description>(Oslo VAV Trykkmåler)
 
 Definisjonstekst: Installeres på ledninger der man ønsker å kjenne til trykket.
@@ -21,12 +21,12 @@ Nærmere beskrivelse/varianter:
 Er montert i alle kummer som er i fjernkontrollen (målekummer, reduksjonskummer, pumpestasjoner mm).
 
 Sitter før og etter pumpa, reduksjonsventilen osv. Trykkmålere bør også være i stand til å måle og registrere trykkstøt.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Maalertype.gml#Maalertype.trykkmåler">trykkmåler</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Maalertype.gml#Maalertype.trykkmaaler">trykkmaaler</gml:identifier>
       <gml:name>trykkmåler</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="Maalertype.mengdemåler">
+    <gml:Definition gml:id="Maalertype.mengdemaaler">
       <gml:description>(Oslo VAV Mengdemåler)
 
 Definisjonstekst: Installasjon for å måle vannføringen på ledningsnettet.
@@ -35,44 +35,44 @@ Definisjonstekst: Installasjon for å måle vannføringen på ledningsnettet.
 Nærmere beskrivelse/varianter:
 
 Måler vannmengden som blir brukt.  Vannmengde utover det normale kan indikere lekkasje.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Maalertype.gml#Maalertype.mengdemåler">mengdemåler</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Maalertype.gml#Maalertype.mengdemaaler">mengdemaaler</gml:identifier>
       <gml:name>mengdemåler</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="Maalertype.nivåmåler">
+    <gml:Definition gml:id="Maalertype.nivaamaaler">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Maalertype.gml#Maalertype.nivåmåler">nivåmåler</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Maalertype.gml#Maalertype.nivaamaaler">nivaamaaler</gml:identifier>
       <gml:name>nivåmåler</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="Maalertype.temperaturmåler">
+    <gml:Definition gml:id="Maalertype.temperaturmaaler">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Maalertype.gml#Maalertype.temperaturmåler">temperaturmåler</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Maalertype.gml#Maalertype.temperaturmaaler">temperaturmaaler</gml:identifier>
       <gml:name>temperaturmåler</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="Maalertype.klorrestmåler">
+    <gml:Definition gml:id="Maalertype.klorrestmaaler">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Maalertype.gml#Maalertype.klorrestmåler">klorrestmåler</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Maalertype.gml#Maalertype.klorrestmaaler">klorrestmaaler</gml:identifier>
       <gml:name>klorrestmåler</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="Maalertype.annenMålertype">
+    <gml:Definition gml:id="Maalertype.annenMaalertype">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Maalertype.gml#Maalertype.annenMålertype">annenMålertype</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Maalertype.gml#Maalertype.annenMaalertype">annenMaalertype</gml:identifier>
       <gml:name>annenMålertype</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="Maalertype.målerenne">
+    <gml:Definition gml:id="Maalertype.maalerenne">
       <gml:description>(Oslo VAV Målerenne)
 
 Definisjonstekst: En åpen renne som er utformet slik at den kan måle hastighet og mengden på vannet. Sensor.</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Maalertype.gml#Maalertype.målerenne">målerenne</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Maalertype.gml#Maalertype.maalerenne">maalerenne</gml:identifier>
       <gml:name>målerenne</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

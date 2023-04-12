@@ -18,9 +18,9 @@
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="SkjoetemetodePVC.muffeskjøt">
+    <gml:Definition gml:id="SkjoetemetodePVC.muffeskjoet">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="#SkjoetemetodePVC.muffeskjøt">muffeskjøt</gml:identifier>
+      <gml:identifier codeSpace="#SkjoetemetodePVC.muffeskjoet">muffeskjoet</gml:identifier>
       <gml:name>muffeskjøt</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

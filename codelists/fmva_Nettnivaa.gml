@@ -11,9 +11,9 @@
   <gml:description></gml:description>
   <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Nettnivaa.gml">Nettnivaa</gml:identifier>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="Nettnivaa.overføringsledning">
+    <gml:Definition gml:id="Nettnivaa.overfoeringsledning">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Nettnivaa.gml#Nettnivaa.overføringsledning">overføringsledning</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Nettnivaa.gml#Nettnivaa.overfoeringsledning">overfoeringsledning</gml:identifier>
       <gml:name>overføringsledning</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

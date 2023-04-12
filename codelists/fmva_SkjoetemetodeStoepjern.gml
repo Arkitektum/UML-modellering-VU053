@@ -11,9 +11,9 @@
   <gml:description></gml:description>
   <gml:identifier codeSpace="">SkjoetemetodeStoepjern</gml:identifier>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="SkjoetemetodeStoepjern.muffeStrekkkfastMedLåsering">
+    <gml:Definition gml:id="SkjoetemetodeStoepjern.muffeStrekkkfastMedLaasering">
       <gml:description>Muffe stekkkfast med låsering</gml:description>
-      <gml:identifier codeSpace="#SkjoetemetodeStoepjern.muffeStrekkkfastMedLåsering">muffeStrekkkfastMedLåsering</gml:identifier>
+      <gml:identifier codeSpace="#SkjoetemetodeStoepjern.muffeStrekkkfastMedLaasering">muffeStrekkkfastMedLaasering</gml:identifier>
       <gml:name>muffeStrekkkfastMedLåsering</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

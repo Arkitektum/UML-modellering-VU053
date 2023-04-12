@@ -11,16 +11,16 @@
   <gml:description></gml:description>
   <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Ledningsform.gml">Ledningsform</gml:identifier>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="Ledningsform.rør">
+    <gml:Definition gml:id="Ledningsform.roer">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Ledningsform.gml#Ledningsform.rør">rør</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Ledningsform.gml#Ledningsform.roer">roer</gml:identifier>
       <gml:name>rør</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="Ledningsform.eggformetRør">
+    <gml:Definition gml:id="Ledningsform.eggformetRoer">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Ledningsform.gml#Ledningsform.eggformetRør">eggformetRør</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Ledningsform.gml#Ledningsform.eggformetRoer">eggformetRoer</gml:identifier>
       <gml:name>eggformetRør</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

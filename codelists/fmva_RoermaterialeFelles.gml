@@ -11,30 +11,30 @@
   <gml:description></gml:description>
   <gml:identifier codeSpace="">RoermaterialeFelles</gml:identifier>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="RoermaterialeFelles.støpjern">
+    <gml:Definition gml:id="RoermaterialeFelles.stoepjern">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="#RoermaterialeFelles.støpjern">støpjern</gml:identifier>
+      <gml:identifier codeSpace="#RoermaterialeFelles.stoepjern">stoepjern</gml:identifier>
       <gml:name>støpjern</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="RoermaterialeFelles.PE">
+    <gml:Definition gml:id="RoermaterialeFelles.pE">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="#RoermaterialeFelles.PE">PE</gml:identifier>
+      <gml:identifier codeSpace="#RoermaterialeFelles.pE">pE</gml:identifier>
       <gml:name>PE</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="RoermaterialeFelles.PP">
+    <gml:Definition gml:id="RoermaterialeFelles.pP">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="#RoermaterialeFelles.PP">PP</gml:identifier>
+      <gml:identifier codeSpace="#RoermaterialeFelles.pP">pP</gml:identifier>
       <gml:name>PP</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="RoermaterialeFelles.PVC">
+    <gml:Definition gml:id="RoermaterialeFelles.pVC">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="#RoermaterialeFelles.PVC">PVC</gml:identifier>
+      <gml:identifier codeSpace="#RoermaterialeFelles.pVC">pVC</gml:identifier>
       <gml:name>PVC</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -46,16 +46,16 @@
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="RoermaterialeFelles.betongrør">
+    <gml:Definition gml:id="RoermaterialeFelles.betongroer">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="#RoermaterialeFelles.betongrør">betongrør</gml:identifier>
+      <gml:identifier codeSpace="#RoermaterialeFelles.betongroer">betongroer</gml:identifier>
       <gml:name>betongrør</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="RoermaterialeFelles.stål">
+    <gml:Definition gml:id="RoermaterialeFelles.staal">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="#RoermaterialeFelles.stål">stål</gml:identifier>
+      <gml:identifier codeSpace="#RoermaterialeFelles.staal">staal</gml:identifier>
       <gml:name>stål</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -81,9 +81,9 @@
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="RoermaterialeFelles.GRP">
+    <gml:Definition gml:id="RoermaterialeFelles.gRP">
       <gml:description>glassfiberarmert umettet polyester eller på engelsk Glassfibre reinforced polyester</gml:description>
-      <gml:identifier codeSpace="#RoermaterialeFelles.GRP">GRP</gml:identifier>
+      <gml:identifier codeSpace="#RoermaterialeFelles.gRP">gRP</gml:identifier>
       <gml:name>GRP</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

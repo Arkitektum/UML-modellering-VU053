@@ -18,9 +18,9 @@
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="Enhetsoperasjontype.UVRensepunkt">
+    <gml:Definition gml:id="Enhetsoperasjontype.uVRensepunkt">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Enhetsoperasjontype.gml#Enhetsoperasjontype.UVRensepunkt">UVRensepunkt</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Enhetsoperasjontype.gml#Enhetsoperasjontype.uVRensepunkt">uVRensepunkt</gml:identifier>
       <gml:name>UVRensepunkt</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

@@ -32,9 +32,9 @@
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="SkjoetemetodeFelles.muffeskjøt">
+    <gml:Definition gml:id="SkjoetemetodeFelles.muffeskjoet">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="#SkjoetemetodeFelles.muffeskjøt">muffeskjøt</gml:identifier>
+      <gml:identifier codeSpace="#SkjoetemetodeFelles.muffeskjoet">muffeskjoet</gml:identifier>
       <gml:name>muffeskjøt</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

@@ -60,16 +60,16 @@
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="SkjoetemetodeAlle.muffeskjøtMedInnstøptPakning">
+    <gml:Definition gml:id="SkjoetemetodeAlle.muffeskjoetMedInnstoeptPakning">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_SkjoetemetodeAlle.gml#SkjoetemetodeAlle.muffeskjøtMedInnstøptPakning">muffeskjøtMedInnstøptPakning</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_SkjoetemetodeAlle.gml#SkjoetemetodeAlle.muffeskjoetMedInnstoeptPakning">muffeskjoetMedInnstoeptPakning</gml:identifier>
       <gml:name>muffeskjøtMedInnstøptPakning</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="SkjoetemetodeAlle.muffeskjøtStrekkfast">
+    <gml:Definition gml:id="SkjoetemetodeAlle.muffeskjoetStrekkfast">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_SkjoetemetodeAlle.gml#SkjoetemetodeAlle.muffeskjøtStrekkfast">muffeskjøtStrekkfast</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_SkjoetemetodeAlle.gml#SkjoetemetodeAlle.muffeskjoetStrekkfast">muffeskjoetStrekkfast</gml:identifier>
       <gml:name>muffeskjøtStrekkfast</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -81,9 +81,9 @@
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="SkjoetemetodeAlle.muffeStrekkfastMedLåsering">
+    <gml:Definition gml:id="SkjoetemetodeAlle.muffeStrekkfastMedLaasering">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_SkjoetemetodeAlle.gml#SkjoetemetodeAlle.muffeStrekkfastMedLåsering">muffeStrekkfastMedLåsering</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_SkjoetemetodeAlle.gml#SkjoetemetodeAlle.muffeStrekkfastMedLaasering">muffeStrekkfastMedLaasering</gml:identifier>
       <gml:name>muffeStrekkfastMedLåsering</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -109,9 +109,9 @@
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="SkjoetemetodeAlle.muffeskjøt">
+    <gml:Definition gml:id="SkjoetemetodeAlle.muffeskjoet">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_SkjoetemetodeAlle.gml#SkjoetemetodeAlle.muffeskjøt">muffeskjøt</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_SkjoetemetodeAlle.gml#SkjoetemetodeAlle.muffeskjoet">muffeskjoet</gml:identifier>
       <gml:name>muffeskjøt</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

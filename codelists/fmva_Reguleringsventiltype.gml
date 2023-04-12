@@ -33,9 +33,9 @@ Trykkavlastningsventil er en form for sikkerhetsventil som skal avlastes ved plu
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="Reguleringsventiltype.flotørventil">
+    <gml:Definition gml:id="Reguleringsventiltype.flotoerventil">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Reguleringsventiltype.gml#Reguleringsventiltype.flotørventil">flotørventil</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Reguleringsventiltype.gml#Reguleringsventiltype.flotoerventil">flotoerventil</gml:identifier>
       <gml:name>flotørventil</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -47,9 +47,9 @@ Trykkavlastningsventil er en form for sikkerhetsventil som skal avlastes ved plu
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="Reguleringsventiltype.rørbruddsventil">
+    <gml:Definition gml:id="Reguleringsventiltype.roerbruddsventil">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Reguleringsventiltype.gml#Reguleringsventiltype.rørbruddsventil">rørbruddsventil</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Reguleringsventiltype.gml#Reguleringsventiltype.roerbruddsventil">roerbruddsventil</gml:identifier>
       <gml:name>rørbruddsventil</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

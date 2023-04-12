@@ -11,20 +11,20 @@
   <gml:description>Kilde: (SOSI Ledning 4.6)</gml:description>
   <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Pumpetype.gml">Pumpetype</gml:identifier>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="Pumpetype.sirkulasjonspumpeVåtløper">
+    <gml:Definition gml:id="Pumpetype.sirkulasjonspumpeVaatloeper">
       <gml:description>Sirkulasjons-pumpe, våtløper
 
 Kilde: NS3420, tabell UN2:2</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Pumpetype.gml#Pumpetype.sirkulasjonspumpeVåtløper">sirkulasjonspumpeVåtløper</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Pumpetype.gml#Pumpetype.sirkulasjonspumpeVaatloeper">sirkulasjonspumpeVaatloeper</gml:identifier>
       <gml:name>sirkulasjonspumpeVåtløper</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="Pumpetype.sirkulasjonspumpeTørrløper">
+    <gml:Definition gml:id="Pumpetype.sirkulasjonspumpeToerrloeper">
       <gml:description>Sirkulasjons-pumpe, tørrløper
 
 Kilde: NS3420, tabell UN2:2</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Pumpetype.gml#Pumpetype.sirkulasjonspumpeTørrløper">sirkulasjonspumpeTørrløper</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Pumpetype.gml#Pumpetype.sirkulasjonspumpeToerrloeper">sirkulasjonspumpeToerrloeper</gml:identifier>
       <gml:name>sirkulasjonspumpeTørrløper</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -50,9 +50,9 @@ Kilde: NS3420, tabell UN2:2</gml:description>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="Pumpetype.eksenter-skruepumpe">
+    <gml:Definition gml:id="Pumpetype.eksenterSkruepumpe">
       <gml:description>Kilde: NS3420, tabell UN2:2</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Pumpetype.gml#Pumpetype.eksenter-skruepumpe">eksenter-skruepumpe</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Pumpetype.gml#Pumpetype.eksenterSkruepumpe">eksenterSkruepumpe</gml:identifier>
       <gml:name>eksenter-skruepumpe</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

@@ -11,16 +11,16 @@
   <gml:description></gml:description>
   <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Ringstivhet.gml">Ringstivhet</gml:identifier>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="Ringstivhet.SN4">
+    <gml:Definition gml:id="Ringstivhet.sN4">
       <gml:description>Røret har en minimum ringstivhet 4,0 kN/m&lt;sup&gt;2&lt;/sup&gt;</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Ringstivhet.gml#Ringstivhet.SN4">SN4</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Ringstivhet.gml#Ringstivhet.sN4">sN4</gml:identifier>
       <gml:name>SN4</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="Ringstivhet.SN8">
+    <gml:Definition gml:id="Ringstivhet.sN8">
       <gml:description>Røret har en minimum ringstivhet 8,0 kN/m&lt;sup&gt;2&lt;/sup&gt;</gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Ringstivhet.gml#Ringstivhet.SN8">SN8</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Ringstivhet.gml#Ringstivhet.sN8">sN8</gml:identifier>
       <gml:name>SN8</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

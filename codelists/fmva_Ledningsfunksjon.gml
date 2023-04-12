@@ -11,9 +11,9 @@
   <gml:description></gml:description>
   <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Ledningsfunksjon.gml">Ledningsfunksjon</gml:identifier>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="Ledningsfunksjon.overløp">
+    <gml:Definition gml:id="Ledningsfunksjon.overloep">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Ledningsfunksjon.gml#Ledningsfunksjon.overløp">overløp</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Ledningsfunksjon.gml#Ledningsfunksjon.overloep">overloep</gml:identifier>
       <gml:name>overløp</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
@@ -39,9 +39,9 @@
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="Ledningsfunksjon.tømming">
+    <gml:Definition gml:id="Ledningsfunksjon.toemming">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Ledningsfunksjon.gml#Ledningsfunksjon.tømming">tømming</gml:identifier>
+      <gml:identifier codeSpace="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_Ledningsfunksjon.gml#Ledningsfunksjon.toemming">toemming</gml:identifier>
       <gml:name>tømming</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

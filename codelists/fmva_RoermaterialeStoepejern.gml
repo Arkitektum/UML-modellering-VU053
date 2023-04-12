@@ -11,16 +11,16 @@
   <gml:description></gml:description>
   <gml:identifier codeSpace="">RoermaterialeStoepejern</gml:identifier>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="RoermaterialeStoepejern.gråttStøpjern">
+    <gml:Definition gml:id="RoermaterialeStoepejern.graattStoepjern">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="#RoermaterialeStoepejern.gråttStøpjern">gråttStøpjern</gml:identifier>
+      <gml:identifier codeSpace="#RoermaterialeStoepejern.graattStoepjern">graattStoepjern</gml:identifier>
       <gml:name>gråttStøpjern</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="RoermaterialeStoepejern.duktiltStøpjern">
+    <gml:Definition gml:id="RoermaterialeStoepejern.duktiltStoepjern">
       <gml:description></gml:description>
-      <gml:identifier codeSpace="#RoermaterialeStoepejern.duktiltStøpjern">duktiltStøpjern</gml:identifier>
+      <gml:identifier codeSpace="#RoermaterialeStoepejern.duktiltStoepjern">duktiltStoepjern</gml:identifier>
       <gml:name>duktiltStøpjern</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
