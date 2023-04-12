@@ -67,6 +67,14 @@
               </complexContent>
             </complexType>
           </element>
+          <element minOccurs="0" name="sone" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmter_Sone.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmter_Sone.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
         </sequence>
       </extension>
     </complexContent>
@@ -134,16 +142,7 @@
   <complexType name="TerrengOverflateType">
     <complexContent>
       <extension base="gmter:TerrengElementType">
-        <sequence>
-          <element minOccurs="0" name="sone" type="gml:CodeType">
-            <annotation>
-              <appinfo>
-                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmter_Sone.gml</sc:targetCodeListURI>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmter_Sone.gml</defaultCodeSpace>
-              </appinfo>
-            </annotation>
-          </element>
-        </sequence>
+        <sequence/>
       </extension>
     </complexContent>
   </complexType>
