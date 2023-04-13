@@ -1,6 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:fmva="https://skjema.atlas.vegvesen.no/r000/fagmodellvannogavloep/1.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:lv="https://skjema.atlas.vegvesen.no/r000/svvleveranse/1.0" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:svvli="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/fagmodellvannogavloep/1.0" version="1.0">
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:ffv="https://skjema.atlas.vegvesen.no/r000/framfoeringsvei/0.1" xmlns:fmva="https://skjema.atlas.vegvesen.no/r000/fagmodellvannogavloep/1.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:lv="https://skjema.atlas.vegvesen.no/r000/svvleveranse/1.0" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:svvli="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/fagmodellvannogavloep/1.0" version="1.0">
   <import namespace="http://www.interactive-instruments.de/ShapeChange/AppInfo" schemaLocation="http://shapechange.net/resources/schema/ShapeChangeAppinfo.xsd"/>
   <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/framfoeringsvei/0.1" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/InternTesting/xsd_files/2023/v1_0_0/SVV_Framfoeringsvei.xsd"/>
   <import namespace="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/InternTesting/xsd_files/2023/v1_0_0/SVV_Landinfra.xsd"/>
   <import namespace="https://skjema.atlas.vegvesen.no/r000/svvleveranse/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/InternTesting/xsd_files/2023/v1_0_0/SVV_Leveranse.xsd"/>
   <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
@@ -219,18 +220,6 @@
               </complexContent>
             </complexType>
           </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="framfoeringsveiElement">
-            <complexType>
-              <complexContent>
-                <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="fmva:FramfoeringsveiElement"/>
-                  </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
-                </extension>
-              </complexContent>
-            </complexType>
-          </element>
         </sequence>
       </extension>
     </complexContent>
@@ -238,35 +227,6 @@
   <complexType name="FagmodellVannOgAvloepPropertyType">
     <sequence minOccurs="0">
       <element ref="fmva:FagmodellVannOgAvloep"/>
-    </sequence>
-    <attributeGroup ref="gml:AssociationAttributeGroup"/>
-    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
-  </complexType>
-  <element name="FiberdukGroeft" substitutionGroup="svvli:VU053PhysicalElement" type="fmva:FiberdukGroeftType">
-    <annotation>
-      <appinfo>
-        <sc:taggedValue tag="kilde">Håndboka</sc:taggedValue>
-        <sc:taggedValue tag="referanse">R761 42.13</sc:taggedValue>
-      </appinfo>
-    </annotation>
-  </element>
-  <complexType name="FiberdukGroeftType">
-    <complexContent>
-      <extension base="svvli:VU053PhysicalElementType">
-        <sequence>
-          <element name="areal" type="double">
-            <annotation>
-              <documentation>Fra HB R761: Mengden måles som prosjektert areal belagt med fiberduk. Overlapp i skjøter
-måles ikke for oppgjør. Enhet: m2</documentation>
-            </annotation>
-          </element>
-        </sequence>
-      </extension>
-    </complexContent>
-  </complexType>
-  <complexType name="FiberdukGroeftPropertyType">
-    <sequence minOccurs="0">
-      <element ref="fmva:FiberdukGroeft"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
@@ -286,21 +246,6 @@ måles ikke for oppgjør. Enhet: m2</documentation>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
-  <element name="FramfoeringsveiElement" substitutionGroup="svvli:VU053Feature" type="fmva:FramfoeringsveiElementType"/>
-  <complexType name="FramfoeringsveiElementType">
-    <complexContent>
-      <extension base="svvli:VU053FeatureType">
-        <sequence/>
-      </extension>
-    </complexContent>
-  </complexType>
-  <complexType name="FramfoeringsveiElementPropertyType">
-    <sequence minOccurs="0">
-      <element ref="fmva:FramfoeringsveiElement"/>
-    </sequence>
-    <attributeGroup ref="gml:AssociationAttributeGroup"/>
-    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
-  </complexType>
   <element name="Grenroer" substitutionGroup="fmva:Roerdel" type="fmva:GrenroerType"/>
   <complexType name="GrenroerType">
     <complexContent>
@@ -316,17 +261,24 @@ måles ikke for oppgjør. Enhet: m2</documentation>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
-  <element name="Groeft" substitutionGroup="fmva:FramfoeringsveiElement" type="fmva:GroeftType"/>
+  <element name="Groeft" substitutionGroup="fmva:VannOgAvloepElementSamling" type="fmva:GroeftType">
+    <annotation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">Håndboka</sc:taggedValue>
+        <sc:taggedValue tag="referanse">R761 42</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
   <complexType name="GroeftType">
     <complexContent>
-      <extension base="fmva:FramfoeringsveiElementType">
+      <extension base="fmva:VannOgAvloepElementSamlingType">
         <sequence>
-          <element maxOccurs="unbounded" minOccurs="0" name="fiberduk">
+          <element maxOccurs="unbounded" minOccurs="0" name="lukkaGroeft">
             <complexType>
               <complexContent>
                 <extension base="gml:AbstractFeatureMemberType">
                   <sequence minOccurs="0">
-                    <element ref="fmva:FiberdukGroeft"/>
+                    <element ref="ffv:LukkaGroeft"/>
                   </sequence>
                   <attributeGroup ref="gml:AssociationAttributeGroup"/>
                 </extension>
@@ -599,7 +551,6 @@ enhet [mm]</documentation>
               </complexContent>
             </complexType>
           </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="iGroeft" type="fmva:FramfoeringsveiElementPropertyType"/>
         </sequence>
       </extension>
     </complexContent>
@@ -682,49 +633,6 @@ enhet [mm]</documentation>
   <complexType name="LuftventilPropertyType">
     <sequence minOccurs="0">
       <element ref="fmva:Luftventil"/>
-    </sequence>
-    <attributeGroup ref="gml:AssociationAttributeGroup"/>
-    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
-  </complexType>
-  <element name="LukkaGroeft" substitutionGroup="fmva:VannOgAvloepElementSamling" type="fmva:LukkaGroeftType">
-    <annotation>
-      <appinfo>
-        <sc:taggedValue tag="kilde">Håndboka</sc:taggedValue>
-        <sc:taggedValue tag="referanse">R761 42</sc:taggedValue>
-      </appinfo>
-    </annotation>
-  </element>
-  <complexType name="LukkaGroeftType">
-    <complexContent>
-      <extension base="fmva:VannOgAvloepElementSamlingType">
-        <sequence>
-          <element minOccurs="0" name="type" type="gml:CodeType">
-            <annotation>
-              <appinfo>
-                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_LukkaRoerGroeftType.gml</sc:targetCodeListURI>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmva_LukkaRoerGroeftType.gml</defaultCodeSpace>
-              </appinfo>
-            </annotation>
-          </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="framfoeringsveiElement">
-            <complexType>
-              <complexContent>
-                <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="fmva:FramfoeringsveiElement"/>
-                  </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
-                </extension>
-              </complexContent>
-            </complexType>
-          </element>
-        </sequence>
-      </extension>
-    </complexContent>
-  </complexType>
-  <complexType name="LukkaGroeftPropertyType">
-    <sequence minOccurs="0">
-      <element ref="fmva:LukkaGroeft"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
