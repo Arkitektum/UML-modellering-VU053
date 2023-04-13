@@ -165,7 +165,7 @@
     <complexContent>
       <extension base="gmter:TerrengElementType">
         <sequence>
-          <element name="høyde" type="integer">
+          <element minOccurs="0" name="høyde" type="integer">
             <annotation>
               <documentation>height: angivelse av høydekurvens høyde over høydereferansen i meter- og oppgis som et desimalt tall hvis nødvendig
 
@@ -173,7 +173,7 @@
 indication of the depression curve's height above the height reference in metres - to be given with decimals if necessary</documentation>
             </annotation>
           </element>
-          <element name="linjeType" type="gml:CodeType">
+          <element minOccurs="0" name="linjeType" type="gml:CodeType">
             <annotation>
               <appinfo>
                 <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmter_TerrenglinjeType.gml</sc:targetCodeListURI>
@@ -216,7 +216,7 @@ the location of the object relative to the earth's surface</documentation>
     <complexContent>
       <extension base="gmter:TerrengElementType">
         <sequence>
-          <element name="høyde" type="integer">
+          <element minOccurs="0" name="høyde" type="integer">
             <annotation>
               <documentation>height: angivelse av høydekurvens høyde over høydereferansen i meter- og oppgis som et desimalt tall hvis nødvendig
 
@@ -236,7 +236,7 @@ the location of the object relative to the earth's surface</documentation>
               </appinfo>
             </annotation>
           </element>
-          <element name="punkttype" type="gml:CodeType">
+          <element minOccurs="0" name="punkttype" type="gml:CodeType">
             <annotation>
               <appinfo>
                 <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmter_terrengpunktType.gml</sc:targetCodeListURI>
