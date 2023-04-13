@@ -1,0 +1,986 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:fmele="https://skjema.atlas.vegvesen.no/r000/0.1/fagmodellelektro" xmlns:fmrek="https://skjema.atlas.vegvesen.no/r000/fagmodellrekkverk/1.0" 
+ xmlns:fmskl="https://skjema.atlas.vegvesen.no/r000/fagmodellskilt/0.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:lv="https://skjema.atlas.vegvesen.no/r000/svvleveranse/1.0" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:svvli="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0" targetNamespace="https://skjema.atlas.vegvesen.no/r000/fagmodellskilt/0.1" elementFormDefault="qualified" version="0.1">
+	<import namespace="http://www.interactive-instruments.de/ShapeChange/AppInfo" schemaLocation="http://shapechange.net/resources/schema/ShapeChangeAppinfo.xsd"/>
+	<import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+	<import namespace="https://skjema.atlas.vegvesen.no/r000/0.1/fagmodellelektro"/>
+	<import namespace="https://skjema.atlas.vegvesen.no/r000/fagmodellrekkverk/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_programtesting/v2.0_20230413/FagmodellRekkverk.xsd"/>
+	<import namespace="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_programtesting/v2.0_20230413/SVV_Landinfra.xsd"/>
+	<import namespace="https://skjema.atlas.vegvesen.no/r000/svvleveranse/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_programtesting/v2.0_20230413/SVV_Leveranse.xsd"/>
+	<!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+	<element name="AnnetOppsettingsutsyr" type="fmskl:AnnetOppsettingsutsyrType" substitutionGroup="fmskl:OppsettingsutstyrSelveid">
+		<annotation>
+			<appinfo>
+				<sc:taggedValue tag="kilde">VU053</sc:taggedValue>
+				<sc:taggedValue tag="referanse">UML 2023</sc:taggedValue>
+			</appinfo>
+		</annotation>
+	</element>
+	<complexType name="AnnetOppsettingsutsyrType">
+		<complexContent>
+			<extension base="fmskl:OppsettingsutstyrSelveidType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="AnnetOppsettingsutsyrPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmskl:AnnetOppsettingsutsyr"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="BoltegruppeFraKonstruksjon" type="fmskl:BoltegruppeFraKonstruksjonType" substitutionGroup="fmskl:OppsettingsutstyrIkkeSelveid">
+		<annotation>
+			<appinfo>
+				<sc:taggedValue tag="kilde">VU053</sc:taggedValue>
+				<sc:taggedValue tag="referanse">UML 2023</sc:taggedValue>
+			</appinfo>
+		</annotation>
+	</element>
+	<complexType name="BoltegruppeFraKonstruksjonType">
+		<complexContent>
+			<extension base="fmskl:OppsettingsutstyrIkkeSelveidType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="BoltegruppeFraKonstruksjonPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmskl:BoltegruppeFraKonstruksjon"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="BrakettFraKonstruksjon" type="fmskl:BrakettFraKonstruksjonType" substitutionGroup="fmskl:OppsettingsutstyrIkkeSelveid">
+		<annotation>
+			<appinfo>
+				<sc:taggedValue tag="kilde">VU053</sc:taggedValue>
+				<sc:taggedValue tag="referanse">UML 2023</sc:taggedValue>
+			</appinfo>
+		</annotation>
+	</element>
+	<complexType name="BrakettFraKonstruksjonType">
+		<complexContent>
+			<extension base="fmskl:OppsettingsutstyrIkkeSelveidType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="BrakettFraKonstruksjonPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmskl:BrakettFraKonstruksjon"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="EtterlysendeSkiltplate" type="fmskl:EtterlysendeSkiltplateType" substitutionGroup="fmskl:Plate">
+		<annotation>
+			<documentation>Tunnel 570.2-skilt</documentation>
+			<appinfo>
+				<sc:taggedValue tag="kilde">Håndboka</sc:taggedValue>
+				<sc:taggedValue tag="referanse">V320</sc:taggedValue>
+			</appinfo>
+		</annotation>
+	</element>
+	<complexType name="EtterlysendeSkiltplateType">
+		<complexContent>
+			<extension base="fmskl:PlateType">
+				<sequence>
+					<element name="tekst" type="string" minOccurs="0"/>
+					<element name="skiltnummer" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<appinfo>
+								<sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_SkiltnummerEtterlysende.gml</sc:targetCodeListURI>
+								<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_SkiltnummerEtterlysende.gml</defaultCodeSpace>
+							</appinfo>
+						</annotation>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="EtterlysendeSkiltplatePropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmskl:EtterlysendeSkiltplate"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="FagmodellSkilt" type="fmskl:FagmodellSkiltType" substitutionGroup="lv:Fagmodell"/>
+	<complexType name="FagmodellSkiltType">
+		<complexContent>
+			<extension base="lv:FagmodellType">
+				<sequence>
+					<element name="skiltElement" minOccurs="0" maxOccurs="unbounded">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="fmskl:SkiltElement"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="FagmodellSkiltPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmskl:FagmodellSkilt"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="FastSkilplate" type="fmskl:FastSkilplateType" substitutionGroup="fmskl:Plate">
+		<annotation>
+			<appinfo>
+				<sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+				<sc:taggedValue tag="referanse">96</sc:taggedValue>
+			</appinfo>
+		</annotation>
+	</element>
+	<complexType name="FastSkilplateType">
+		<complexContent>
+			<extension base="fmskl:PlateType">
+				<sequence>
+					<element name="breddeMålt" type="double" minOccurs="0"/>
+					<element name="farge" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<appinfo>
+								<sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Farge.gml</sc:targetCodeListURI>
+								<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Farge.gml</defaultCodeSpace>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="folieklasse" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<appinfo>
+								<sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Folieklasse.gml</sc:targetCodeListURI>
+								<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Folieklasse.gml</defaultCodeSpace>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="himmelretning" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<appinfo>
+								<sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Himmelretning.gml</sc:targetCodeListURI>
+								<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Himmelretning.gml</defaultCodeSpace>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="høydeEgen" type="double" minOccurs="0"/>
+					<element name="klappskilt" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<appinfo>
+								<sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Klappskilt.gml</sc:targetCodeListURI>
+								<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Klappskilt.gml</defaultCodeSpace>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="oppsettingsdato" type="integer" minOccurs="0"/>
+					<element name="refleksleverandør" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<appinfo>
+								<sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Refleksleverandoer.gml</sc:targetCodeListURI>
+								<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Refleksleverandoer.gml</defaultCodeSpace>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="skiftetDato" type="integer" minOccurs="0"/>
+					<element name="skiltform" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<appinfo>
+								<sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Skiltform.gml</sc:targetCodeListURI>
+								<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Skiltform.gml</defaultCodeSpace>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="skiltnummer" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<appinfo>
+								<sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Skiltnummer.gml</sc:targetCodeListURI>
+								<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Skiltnummer.gml</defaultCodeSpace>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="skiltutforming" type="string" minOccurs="0"/>
+					<element name="tekst" type="string" minOccurs="0"/>
+					<element name="skiltutformingXML" type="string" minOccurs="0"/>
+					<element name="størrelse" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<appinfo>
+								<sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Stoerrelse.gml</sc:targetCodeListURI>
+								<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Stoerrelse.gml</defaultCodeSpace>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="tekstSymbolhøyde" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<appinfo>
+								<sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_TekstSymbolhoeyde.gml</sc:targetCodeListURI>
+								<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_TekstSymbolhoeyde.gml</defaultCodeSpace>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="tosidigPlateMedUlikeMotiv" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<appinfo>
+								<sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_TosidigPlateMedUlikeMotiv.gml</sc:targetCodeListURI>
+								<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_TosidigPlateMedUlikeMotiv.gml</defaultCodeSpace>
+							</appinfo>
+						</annotation>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="FastSkilplatePropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmskl:FastSkilplate"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Fjellfeste" type="fmskl:FjellfesteType" substitutionGroup="fmskl:OppsettingsutstyrIkkeSelveid">
+		<annotation>
+			<appinfo>
+				<sc:taggedValue tag="kilde">VU053</sc:taggedValue>
+				<sc:taggedValue tag="referanse">UML 2023</sc:taggedValue>
+			</appinfo>
+		</annotation>
+	</element>
+	<complexType name="FjellfesteType">
+		<complexContent>
+			<extension base="fmskl:OppsettingsutstyrIkkeSelveidType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="FjellfestePropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmskl:Fjellfeste"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Fylling" type="fmskl:FyllingType" substitutionGroup="svvli:VU053PhysicalElement">
+		<annotation>
+			<appinfo>
+				<sc:taggedValue tag="kilde">VU053</sc:taggedValue>
+				<sc:taggedValue tag="referanse">UML 2023</sc:taggedValue>
+			</appinfo>
+		</annotation>
+	</element>
+	<complexType name="FyllingType">
+		<complexContent>
+			<extension base="svvli:VU053PhysicalElementType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="FyllingPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmskl:Fylling"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Komponentdatering" type="fmskl:KomponentdateringType" substitutionGroup="gml:AbstractObject">
+		<annotation>
+			<documentation>datering av komponenter til nærmeste år, sammen med angivelse av sikkerhet på dateringen</documentation>
+		</annotation>
+	</element>
+	<complexType name="KomponentdateringType">
+		<sequence>
+			<element name="aldersreferanse" type="gml:CodeType">
+				<annotation>
+					<appinfo>
+						<sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Ledningsalderreferanse.gml</sc:targetCodeListURI>
+						<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Ledningsalderreferanse.gml</defaultCodeSpace>
+					</appinfo>
+				</annotation>
+			</element>
+			<element name="årstall" type="integer"/>
+		</sequence>
+	</complexType>
+	<complexType name="KomponentdateringPropertyType">
+		<sequence>
+			<element ref="fmskl:Komponentdatering"/>
+		</sequence>
+	</complexType>
+	<element name="Objektreferanse" type="fmskl:ObjektreferanseType" substitutionGroup="gml:AbstractObject"/>
+	<complexType name="ObjektreferanseType">
+		<choice>
+			<element name="ikkeRelevant" type="string" minOccurs="0">
+				<annotation>
+					<documentation>ekstern referanse ikke relevant for dette oppsettingsutstyret. Forklaring på  hvorfor.</documentation>
+				</annotation>
+			</element>
+			<element name="mangler" type="string" minOccurs="0">
+				<annotation>
+					<documentation>ekstern referanse er relevant, men informasjonen er ikke lagt inn (ennå). Forklaring på  hvorfor.</documentation>
+				</annotation>
+			</element>
+			<element name="objektreferanse" type="string" minOccurs="0"/>
+		</choice>
+	</complexType>
+	<complexType name="ObjektreferansePropertyType">
+		<sequence>
+			<element ref="fmskl:Objektreferanse"/>
+		</sequence>
+	</complexType>
+	<element name="Oppsettingsutstyr" type="fmskl:OppsettingsutstyrType" abstract="true" substitutionGroup="gml:AbstractFeature">
+		<annotation>
+			<documentation>Oppsettingsutstyr skiltplatene er festet på.</documentation>
+			<appinfo>
+				<sc:taggedValue tag="kilde">Håndboka</sc:taggedValue>
+				<sc:taggedValue tag="referanse">V320</sc:taggedValue>
+			</appinfo>
+		</annotation>
+	</element>
+	<complexType name="OppsettingsutstyrType" abstract="true">
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="produktbetegnelse" type="string" minOccurs="0">
+						<annotation>
+							<documentation>produktbetegnelse på oppsettingsutstyret som benyttes</documentation>
+						</annotation>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="OppsettingsutstyrPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmskl:Oppsettingsutstyr"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="OppsettingsutstyrIkkeSelveid" type="fmskl:OppsettingsutstyrIkkeSelveidType" abstract="true" substitutionGroup="fmskl:Oppsettingsutstyr">
+		<annotation>
+			<appinfo>
+				<sc:taggedValue tag="kilde">VU053</sc:taggedValue>
+				<sc:taggedValue tag="referanse">UML 2023</sc:taggedValue>
+			</appinfo>
+		</annotation>
+	</element>
+	<complexType name="OppsettingsutstyrIkkeSelveidType" abstract="true">
+		<complexContent>
+			<extension base="fmskl:OppsettingsutstyrType">
+				<sequence>
+					<element name="festesPå" type="fmskl:ObjektreferansePropertyType" minOccurs="0" maxOccurs="unbounded"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="OppsettingsutstyrIkkeSelveidPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmskl:OppsettingsutstyrIkkeSelveid"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="OppsettingsutstyrLysmast" type="fmskl:OppsettingsutstyrLysmastType" substitutionGroup="fmskl:OppsettingsutstyrIkkeSelveid">
+		<annotation>
+			<appinfo>
+				<sc:taggedValue tag="kilde">VU053</sc:taggedValue>
+				<sc:taggedValue tag="referanse">UML 2023</sc:taggedValue>
+			</appinfo>
+		</annotation>
+	</element>
+	<complexType name="OppsettingsutstyrLysmastType">
+		<complexContent>
+			<extension base="fmskl:OppsettingsutstyrIkkeSelveidType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="OppsettingsutstyrLysmastPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmskl:OppsettingsutstyrLysmast"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="OppsettingsutstyrRekkverkStoetpute" type="fmskl:OppsettingsutstyrRekkverkStoetputeType" substitutionGroup="fmskl:OppsettingsutstyrIkkeSelveid">
+		<annotation>
+			<appinfo>
+				<sc:taggedValue tag="kilde">VU053</sc:taggedValue>
+				<sc:taggedValue tag="referanse">UML 2023</sc:taggedValue>
+			</appinfo>
+		</annotation>
+	</element>
+	<complexType name="OppsettingsutstyrRekkverkStoetputeType">
+		<complexContent>
+			<extension base="fmskl:OppsettingsutstyrIkkeSelveidType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="OppsettingsutstyrRekkverkStoetputePropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmskl:OppsettingsutstyrRekkverkStoetpute"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="OppsettingsutstyrSelveid" type="fmskl:OppsettingsutstyrSelveidType" abstract="true" substitutionGroup="fmskl:Oppsettingsutstyr">
+		<annotation>
+			<appinfo>
+				<sc:taggedValue tag="kilde">VU053</sc:taggedValue>
+				<sc:taggedValue tag="referanse">UML 2023</sc:taggedValue>
+			</appinfo>
+		</annotation>
+	</element>
+	<complexType name="OppsettingsutstyrSelveidType" abstract="true">
+		<complexContent>
+			<extension base="fmskl:OppsettingsutstyrType">
+				<sequence>
+					<element name="terrengarbeid" minOccurs="0" maxOccurs="unbounded">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="fmskl:Terrengarbeid"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="OppsettingsutstyrSelveidPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmskl:OppsettingsutstyrSelveid"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="OppsettingsutstyrSignalstolpe" type="fmskl:OppsettingsutstyrSignalstolpeType" substitutionGroup="fmskl:OppsettingsutstyrIkkeSelveid">
+		<annotation>
+			<appinfo>
+				<sc:taggedValue tag="kilde">VU053</sc:taggedValue>
+				<sc:taggedValue tag="referanse">UML 2023</sc:taggedValue>
+			</appinfo>
+		</annotation>
+	</element>
+	<complexType name="OppsettingsutstyrSignalstolpeType">
+		<complexContent>
+			<extension base="fmskl:OppsettingsutstyrIkkeSelveidType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="OppsettingsutstyrSignalstolpePropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmskl:OppsettingsutstyrSignalstolpe"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="OppsettingsutstyrTunnelvegg" type="fmskl:OppsettingsutstyrTunnelveggType" substitutionGroup="fmskl:OppsettingsutstyrIkkeSelveid">
+		<annotation>
+			<appinfo>
+				<sc:taggedValue tag="kilde">VU053</sc:taggedValue>
+				<sc:taggedValue tag="referanse">UML 2023</sc:taggedValue>
+			</appinfo>
+		</annotation>
+	</element>
+	<complexType name="OppsettingsutstyrTunnelveggType">
+		<complexContent>
+			<extension base="fmskl:OppsettingsutstyrIkkeSelveidType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="OppsettingsutstyrTunnelveggPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmskl:OppsettingsutstyrTunnelvegg"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="OppsettingsutstyrTverrbjelkeITunnel" type="fmskl:OppsettingsutstyrTverrbjelkeITunnelType" substitutionGroup="fmskl:OppsettingsutstyrIkkeSelveid">
+		<annotation>
+			<appinfo>
+				<sc:taggedValue tag="kilde">VU053</sc:taggedValue>
+				<sc:taggedValue tag="referanse">UML 2023</sc:taggedValue>
+			</appinfo>
+		</annotation>
+	</element>
+	<complexType name="OppsettingsutstyrTverrbjelkeITunnelType">
+		<complexContent>
+			<extension base="fmskl:OppsettingsutstyrIkkeSelveidType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="OppsettingsutstyrTverrbjelkeITunnelPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmskl:OppsettingsutstyrTverrbjelkeITunnel"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Planum" type="fmskl:PlanumType" substitutionGroup="svvli:VU053PhysicalElement">
+		<annotation>
+			<appinfo>
+				<sc:taggedValue tag="kilde">VU053</sc:taggedValue>
+				<sc:taggedValue tag="referanse">UML 2023</sc:taggedValue>
+			</appinfo>
+		</annotation>
+	</element>
+	<complexType name="PlanumType">
+		<complexContent>
+			<extension base="svvli:VU053PhysicalElementType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="PlanumPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmskl:Planum"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Plate" type="fmskl:PlateType" abstract="true" substitutionGroup="gml:AbstractFeature">
+		<annotation>
+			<documentation>Plate med skiltmotiv.</documentation>
+			<appinfo>
+				<sc:taggedValue tag="kilde">Håndboka</sc:taggedValue>
+				<sc:taggedValue tag="referanse">V320</sc:taggedValue>
+			</appinfo>
+		</annotation>
+	</element>
+	<complexType name="PlateType" abstract="true">
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="bruksområde" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<appinfo>
+								<sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_BruksomraadePlate.gml</sc:targetCodeListURI>
+								<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_BruksomraadePlate.gml</defaultCodeSpace>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="arkivnummer" type="string" minOccurs="0"/>
+					<element name="plasseringskode" type="string" minOccurs="0"/>
+					<element name="ansiktssideRettetMot" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<appinfo>
+								<sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_AnsiktssideRettetMot.gml</sc:targetCodeListURI>
+								<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_AnsiktssideRettetMot.gml</defaultCodeSpace>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="produktnavn" type="string" minOccurs="0"/>
+					<element name="arkivreferanse" type="string" minOccurs="0"/>
+					<element name="driftsmerking" type="string" minOccurs="0"/>
+					<element name="leverandør" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<appinfo>
+								<sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Leverandoer.gml</sc:targetCodeListURI>
+								<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Leverandoer.gml</defaultCodeSpace>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="produsent" type="string" minOccurs="0"/>
+					<element name="prosjektInternObjektID" type="string" minOccurs="0"/>
+					<element name="prosjektreferanse" type="string" minOccurs="0"/>
+					<element name="tilleggsinformasjon" type="string" minOccurs="0"/>
+					<element name="belysning" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<appinfo>
+								<sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Belysning.gml</sc:targetCodeListURI>
+								<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Belysning.gml</defaultCodeSpace>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="vedtaksnummer" type="string" minOccurs="0"/>
+					<element name="beskrivelse" type="string" minOccurs="0"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="PlatePropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmskl:Plate"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Produktinformasjon" type="fmskl:ProduktinformasjonType" substitutionGroup="gml:AbstractObject">
+		<annotation>
+			<documentation>Betegnelsen produktet har hos produsenten.
+
+Nyttig når det skal skaffes fram erstatning for "utslitt" komponent.</documentation>
+		</annotation>
+	</element>
+	<complexType name="ProduktinformasjonType">
+		<sequence>
+			<element name="produktnavn" type="string" minOccurs="0">
+				<annotation>
+					<documentation>navnet produktet har hos produsenten</documentation>
+				</annotation>
+			</element>
+			<element name="produsentnavn" type="string" minOccurs="0">
+				<annotation>
+					<documentation>navnet på produsenten av produktet</documentation>
+				</annotation>
+			</element>
+			<element name="produktkode" type="string" minOccurs="0">
+				<annotation>
+					<documentation>produsentens produktkode for produktet</documentation>
+				</annotation>
+			</element>
+			<element name="produsertÅr" type="fmskl:KomponentdateringPropertyType" minOccurs="0">
+				<annotation>
+					<documentation>året produktet ble produsert</documentation>
+				</annotation>
+			</element>
+		</sequence>
+	</complexType>
+	<complexType name="ProduktinformasjonPropertyType">
+		<sequence>
+			<element ref="fmskl:Produktinformasjon"/>
+		</sequence>
+	</complexType>
+	<element name="SkiltElement" type="fmskl:SkiltElementType" substitutionGroup="svvli:VU053PhysicalElement">
+		<annotation>
+			<documentation>Skiltpunkt er en sammensetning av skiltplater, stolper og stolpefundament m.m.</documentation>
+			<appinfo>
+				<sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+				<sc:taggedValue tag="referanse">95</sc:taggedValue>
+			</appinfo>
+		</annotation>
+	</element>
+	<complexType name="SkiltElementType">
+		<complexContent>
+			<extension base="svvli:VU053PhysicalElementType">
+				<sequence>
+					<element name="antallFundament" type="integer" minOccurs="0"/>
+					<element name="antallOppsettingsutstyr" type="integer" minOccurs="0"/>
+					<element name="antallStøttestolper" type="integer" minOccurs="0"/>
+					<element name="bebyggelse" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<appinfo>
+								<sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Bebyggelse.gml</sc:targetCodeListURI>
+								<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Bebyggelse.gml</defaultCodeSpace>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="bøyle" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<appinfo>
+								<sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Boeyle.gml</sc:targetCodeListURI>
+								<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Boeyle.gml</defaultCodeSpace>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="eier" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<appinfo>
+								<sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Eier.gml</sc:targetCodeListURI>
+								<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Eier.gml</defaultCodeSpace>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="fundamentering" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<appinfo>
+								<sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Fundamentering.gml</sc:targetCodeListURI>
+								<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_FundamenteringSignalstolpe.gml</defaultCodeSpace>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="høydeOverVegkant" type="double" minOccurs="0"/>
+					<element name="kampanjeEgnet" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<appinfo>
+								<sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_KampanjeEgnet.gml</sc:targetCodeListURI>
+								<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_KampanjeEgnet.gml</defaultCodeSpace>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="kampanjePågående" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<appinfo>
+								<sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_KampanjePaagaaende.gml</sc:targetCodeListURI>
+								<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_KampanjePaagaaende.gml</defaultCodeSpace>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="kampanjeperiode" type="string" minOccurs="0"/>
+					<element name="klima" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<appinfo>
+								<sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Klima.gml</sc:targetCodeListURI>
+								<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Klima.gml</defaultCodeSpace>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="miljø" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<appinfo>
+								<sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Miljoe.gml</sc:targetCodeListURI>
+								<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Miljoe.gml</defaultCodeSpace>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="produktnavnSkiltmast" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<appinfo>
+								<sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_ProduktnavnSkiltmast.gml</sc:targetCodeListURI>
+								<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_ProduktnavnSkiltmast.gml</defaultCodeSpace>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="prosjektInternObjektID" type="string" minOccurs="0"/>
+					<element name="prosjektreferanse" type="string" minOccurs="0"/>
+					<element name="avskjæringsledd" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<appinfo>
+								<sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Avskjaeringsledd.gml</sc:targetCodeListURI>
+								<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Avskjaeringsledd.gml</defaultCodeSpace>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="vedlikeholdsansvarlig" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<appinfo>
+								<sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Vedlikeholdsansvarlig.gml</sc:targetCodeListURI>
+								<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Vedlikeholdsansvarlig.gml</defaultCodeSpace>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="brakett" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<appinfo>
+								<sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Brakett.gml</sc:targetCodeListURI>
+								<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Brakett.gml</defaultCodeSpace>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="skiltholder" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<appinfo>
+								<sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Skiltholder.gml</sc:targetCodeListURI>
+								<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Skiltholder.gml</defaultCodeSpace>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="plate" maxOccurs="unbounded">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="fmskl:Plate"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+					<element name="oppsettingsutstyr" maxOccurs="unbounded">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="fmskl:Oppsettingsutstyr"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="SkiltElementPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmskl:SkiltElement"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Skiltstolpe" type="fmskl:SkiltstolpeType" substitutionGroup="fmskl:OppsettingsutstyrSelveid">
+		<annotation>
+			<appinfo>
+				<sc:taggedValue tag="kilde">VU053</sc:taggedValue>
+				<sc:taggedValue tag="referanse">UML 2023</sc:taggedValue>
+			</appinfo>
+		</annotation>
+	</element>
+	<complexType name="SkiltstolpeType">
+		<complexContent>
+			<extension base="fmskl:OppsettingsutstyrSelveidType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="SkiltstolpePropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmskl:Skiltstolpe"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Terrengarbeid" type="fmskl:TerrengarbeidType" substitutionGroup="svvli:VU053PhysicalElement">
+		<annotation>
+			<documentation>terrengarbeid som trengs for skiltfundament</documentation>
+			<appinfo>
+				<sc:taggedValue tag="kilde">Annet</sc:taggedValue>
+				<sc:taggedValue tag="referanse">VU053-prosjektet</sc:taggedValue>
+			</appinfo>
+		</annotation>
+	</element>
+	<complexType name="TerrengarbeidType">
+		<complexContent>
+			<extension base="svvli:VU053PhysicalElementType">
+				<sequence>
+					<element name="fylling" minOccurs="0" maxOccurs="unbounded">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="fmskl:Fylling"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+					<element name="planum" minOccurs="0">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="fmskl:Planum"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="TerrengarbeidPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmskl:Terrengarbeid"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="UtkragerFraVegg" type="fmskl:UtkragerFraVeggType" substitutionGroup="fmskl:OppsettingsutstyrIkkeSelveid">
+		<annotation>
+			<appinfo>
+				<sc:taggedValue tag="kilde">VU053</sc:taggedValue>
+				<sc:taggedValue tag="referanse">UML 2023</sc:taggedValue>
+			</appinfo>
+		</annotation>
+	</element>
+	<complexType name="UtkragerFraVeggType">
+		<complexContent>
+			<extension base="fmskl:OppsettingsutstyrIkkeSelveidType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="UtkragerFraVeggPropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmskl:UtkragerFraVegg"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="VariabeltSkiltplate" type="fmskl:VariabeltSkiltplateType" substitutionGroup="fmskl:Plate">
+		<annotation>
+			<appinfo>
+				<sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+				<sc:taggedValue tag="referanse">97</sc:taggedValue>
+			</appinfo>
+		</annotation>
+	</element>
+	<complexType name="VariabeltSkiltplateType">
+		<complexContent>
+			<extension base="fmskl:PlateType">
+				<sequence>
+					<element name="type" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<appinfo>
+								<sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_TypeVariabeltSkilt.gml</sc:targetCodeListURI>
+								<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_TypeVariabeltSkilt.gml</defaultCodeSpace>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="variasjon" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<appinfo>
+								<sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Variasjon.gml</sc:targetCodeListURI>
+								<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_Variasjon.gml</defaultCodeSpace>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="skiftingAvBudskap" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<appinfo>
+								<sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_SkiftingAvBudskap.gml</sc:targetCodeListURI>
+								<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_SkiftingAvBudskap.gml</defaultCodeSpace>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="skiltnummerOrdinaerVisning" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<appinfo>
+								<sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_SkiltnummerOrdinaerVisning.gml</sc:targetCodeListURI>
+								<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_SkiltnummerOrdinaerVisning.gml</defaultCodeSpace>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="tekstOrdinaerVisning" type="string" minOccurs="0"/>
+					<element name="fjernstyring" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<appinfo>
+								<sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_FjernstyringVariabelt.gml</sc:targetCodeListURI>
+								<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_FjernstyringVariabelt.gml</defaultCodeSpace>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="skiltutforming" type="string" minOccurs="0"/>
+					<element name="tekstSekundærVisning" type="string" minOccurs="0"/>
+					<element name="skiltnummerSekundærVisning" type="gml:CodeType" minOccurs="0" maxOccurs="unbounded">
+						<annotation>
+							<appinfo>
+								<sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_SkiltnummerOrdinaerVisning.gml</sc:targetCodeListURI>
+								<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmskl_SkiltnummerOrdinaerVisning.gml</defaultCodeSpace>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="etableringsår" type="integer" minOccurs="0"/>
+					<element name="SCADAmerking" type="string" minOccurs="0"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="VariabeltSkiltplatePropertyType">
+		<sequence minOccurs="0">
+			<element ref="fmskl:VariabeltSkiltplate"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+</schema>

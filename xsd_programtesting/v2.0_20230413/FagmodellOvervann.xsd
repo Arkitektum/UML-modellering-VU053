@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:fmov="https://skjema.atlas.vegvesen.no/r000/fagmodellovervann/0.1" xmlns:fmva="https://skjema.atlas.vegvesen.no/r000/fagmodellvannogavloep/1.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:lv="https://skjema.atlas.vegvesen.no/r000/svvleveranse/1.0" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:svvli="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/fagmodellovervann/0.1" version="0.1">
+  <import namespace="http://www.interactive-instruments.de/ShapeChange/AppInfo" schemaLocation="http://shapechange.net/resources/schema/ShapeChangeAppinfo.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/fagmodellvannogavloep/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_programtesting/v2.0_20230413/FagmodellVannOgAvloep.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_programtesting/v2.0_20230413/SVV_Landinfra.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/svvleveranse/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_programtesting/v2.0_20230413/SVV_Leveranse.xsd"/>
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element abstract="true" name="AapenElement" substitutionGroup="fmov:VannHaandteringElement" type="fmov:AapenElementType"/>
+  <complexType abstract="true" name="AapenElementType">
+    <complexContent>
+      <extension base="fmov:VannHaandteringElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AapenElementPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmov:AapenElement"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="BassengMagasin" substitutionGroup="fmov:AapenElement" type="fmov:BassengMagasinType">
+    <annotation>
+      <documentation>208: Innretning for opplagring av vann.  Eksempelvis i tilknytning til tunneler.</documentation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+        <sc:taggedValue tag="referanse">208</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="BassengMagasinType">
+    <complexContent>
+      <extension base="fmov:AapenElementType">
+        <sequence>
+          <element minOccurs="0" name="bruksområde" type="gml:CodeType">
+            <annotation>
+              <documentation>1283: Angir hva vegobjektet brukes til, hvilken funksjon det har</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmov_BruksomraadeBassengMagasin.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmov_BruksomraadeBassengMagasin.gml</defaultCodeSpace>
+                <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+                <sc:taggedValue tag="referanse">1283</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BassengMagasinPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmov:BassengMagasin"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="ElvBekk" substitutionGroup="fmov:AapenElement" type="fmov:ElvBekkType">
+    <annotation>
+      <documentation>Vannvei for rennende vann</documentation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">SOSI</sc:taggedValue>
+        <sc:taggedValue tag="referanse">Vann-4.0</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="ElvBekkType">
+    <complexContent>
+      <extension base="fmov:AapenElementType">
+        <sequence>
+          <element minOccurs="0" name="vannBredde" type="gml:CodeType">
+            <annotation>
+              <documentation>Grov klassifikasjon av vassdrag etter gjennomsnittelig bredde over lengre strekninge</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmov_VannBredde.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmov_VannBredde.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ElvBekkPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmov:ElvBekk"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Erosjonssikring" substitutionGroup="fmov:OvervannElement" type="fmov:ErosjonssikringType"/>
+  <complexType name="ErosjonssikringType">
+    <complexContent>
+      <extension base="fmov:OvervannElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ErosjonssikringPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmov:Erosjonssikring"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="FagmodellOvervann" substitutionGroup="lv:Fagmodell" type="fmov:FagmodellOvervannType"/>
+  <complexType name="FagmodellOvervannType">
+    <complexContent>
+      <extension base="lv:FagmodellType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="overvanElementSamling">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmov:OvervannElementSamling"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="overvannElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmov:OvervannElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="FagmodellOvervannPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmov:FagmodellOvervann"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="FilterdukElement" substitutionGroup="fmov:OvervannElement" type="fmov:FilterdukElementType"/>
+  <complexType name="FilterdukElementType">
+    <complexContent>
+      <extension base="fmov:OvervannElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="FilterdukElementPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmov:FilterdukElement"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="FilterlagElement" substitutionGroup="fmov:OvervannElement" type="fmov:FilterlagElementType"/>
+  <complexType name="FilterlagElementType">
+    <complexContent>
+      <extension base="fmov:OvervannElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="FilterlagElementPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmov:FilterlagElement"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Flomveg" substitutionGroup="fmov:AapenElement" type="fmov:FlomvegType"/>
+  <complexType name="FlomvegType">
+    <complexContent>
+      <extension base="fmov:AapenElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="FlomvegPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmov:Flomveg"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Fontene" substitutionGroup="fmov:AapenElement" type="fmov:FonteneType">
+    <annotation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">SOSI</sc:taggedValue>
+        <sc:taggedValue tag="referanse">Bygnan-4.0</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="FonteneType">
+    <complexContent>
+      <extension base="fmov:AapenElementType">
+        <sequence>
+          <element minOccurs="0" name="type" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmov_Fontenetype.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmov_Fontenetype.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="FontenePropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmov:Fontene"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="GroeftAapen" substitutionGroup="fmov:AapenElement" type="fmov:GroeftAapenType">
+    <annotation>
+      <documentation>80: Forsenkning i terrenget for å lede bort vann.  Del av vegens avvanningssystem.  Kan også benevnes "kanal".  Merknad: Breddemåling skal refereres til topp grøft.</documentation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+        <sc:taggedValue tag="referanse">80</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="GroeftAapenType">
+    <complexContent>
+      <extension base="fmov:AapenElementType">
+        <sequence>
+          <element minOccurs="0" name="type" type="gml:CodeType">
+            <annotation>
+              <documentation>1139: Angir hvilken type vegobjektet er av</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmov_TypeGroeftAapen.gml</sc:targetCodeListURI>
+                <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+                <sc:taggedValue tag="referanse">1139</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="materiale" type="gml:CodeType">
+            <annotation>
+              <documentation>1944: Angir hvilket materiale grøfta i hovedsak ligger i/er omsluttet av.  Evt belegning skal ikke oppgis her.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmov_MaterialeGroeftAapen.gml</sc:targetCodeListURI>
+                <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+                <sc:taggedValue tag="referanse">1944</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GroeftAapenPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmov:GroeftAapen"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Kanal" substitutionGroup="fmov:AapenElement" type="fmov:KanalType">
+    <annotation>
+      <documentation>Rennende vann der forløpet er menneskeskapt</documentation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">SOSI</sc:taggedValue>
+        <sc:taggedValue tag="referanse">Vann-4.0</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="KanalType">
+    <complexContent>
+      <extension base="fmov:AapenElementType">
+        <sequence>
+          <element minOccurs="0" name="vannBredde" type="gml:CodeType">
+            <annotation>
+              <documentation>Gir informasjon om hvordan elv/bekk og kanal/grøft grovt er klassifisert etter bredde</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmov_VannBredde.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmov_VannBredde.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="KanalPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmov:Kanal"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="LukketElement" substitutionGroup="fmov:VannHaandteringElement" type="fmov:LukketElementType"/>
+  <complexType name="LukketElementType">
+    <complexContent>
+      <extension base="fmov:VannHaandteringElementType">
+        <sequence>
+          <element minOccurs="0" name="varmekabler" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir om det er varmekabler eller ikke i tilknytning til vegobjektet.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmov_VarmekablerLukketRørgrøft.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmov_VarmekablerLukketRørgrøft.gml</defaultCodeSpace>
+                <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+                <sc:taggedValue tag="referanse">1831</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="LukketElementPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmov:LukketElement"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="LukketGroeft" substitutionGroup="fmov:LukketElement" type="fmov:LukketGroeftType"/>
+  <complexType name="LukketGroeftType">
+    <complexContent>
+      <extension base="fmov:LukketElementType">
+        <sequence>
+          <element name="type" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmov_TypeLukketRoergroeft.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmov_TypeLukketRoergroeft.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="LukketGroeftPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmov:LukketGroeft"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="OvervannElement" substitutionGroup="svvli:VU053Feature" type="fmov:OvervannElementType"/>
+  <complexType abstract="true" name="OvervannElementType">
+    <complexContent>
+      <extension base="svvli:VU053FeatureType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="OvervannElementPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmov:OvervannElement"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="OvervannElementSamling" substitutionGroup="svvli:VU053ElementSamling" type="fmov:OvervannElementSamlingType"/>
+  <complexType name="OvervannElementSamlingType">
+    <complexContent>
+      <extension base="svvli:VU053ElementSamlingType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="filterdukElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmov:FilterdukElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="lukketElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmov:LukketElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="aapenElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmov:AapenElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="filterlagElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmov:FilterlagElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="rensetiltakElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmov:RensetiltakElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="erosjonsikringElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmov:Erosjonssikring"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="OvervannElementSamlingPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmov:OvervannElementSamling"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="OvervannNettverk" substitutionGroup="fmov:OvervannElementSamling" type="fmov:OvervannNettverkType"/>
+  <complexType name="OvervannNettverkType">
+    <complexContent>
+      <extension base="fmov:OvervannElementSamlingType">
+        <sequence>
+          <element minOccurs="0" name="varmekabler" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir om det er varmekabler eller ikke i tilknytning til vegobjektet.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmov_VarmekablerLukketRørgrøft.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmov_VarmekablerLukketRørgrøft.gml</defaultCodeSpace>
+                <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+                <sc:taggedValue tag="referanse">1831</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="lukkaGroeft">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmva:Groeft"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="va_KoplingElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmva:KoplingElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="va_LedningElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmva:LedningElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="OvervannNettverkPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmov:OvervannNettverk"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="PlastringErosjonssikring" substitutionGroup="fmov:AapenElement" type="fmov:PlastringErosjonssikringType">
+    <annotation>
+      <documentation>144: Enklere forebygning utført av stein, evt med underliggende filterlag (1). Benyttes i forbindelse med sikring av skråninger mot vannerosjon.</documentation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+        <sc:taggedValue tag="referanse">144</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="PlastringErosjonssikringType">
+    <complexContent>
+      <extension base="fmov:AapenElementType">
+        <sequence>
+          <element minOccurs="0" name="bruksområde" type="gml:CodeType">
+            <annotation>
+              <documentation>1277: Angir hvilken type erosjon/glidning det sikres mot.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmov_BruksomraadePlastringErosjonssikring.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmov_BruksomraadePlastringErosjonssikring.gml</defaultCodeSpace>
+                <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+                <sc:taggedValue tag="referanse">1277</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="type" type="gml:CodeType">
+            <annotation>
+              <documentation>1171: Angir hvilken type vegobjektet er av.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmov_TypePlastringErosjonssikring.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmov_TypePlastringErosjonssikring.gml</defaultCodeSpace>
+                <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+                <sc:taggedValue tag="referanse">1171</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="vannoverdekning" type="gml:CodeType">
+            <annotation>
+              <documentation>1873: Angir hvor mye av konstruksjonen som er under vann.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmov_Vannoverdekning.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmov_Vannoverdekning.gml</defaultCodeSpace>
+                <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+                <sc:taggedValue tag="referanse">1873</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="PlastringErosjonssikringPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmov:PlastringErosjonssikring"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Regnbed" substitutionGroup="fmov:AapenElement" type="fmov:RegnbedType"/>
+  <complexType name="RegnbedType">
+    <complexContent>
+      <extension base="fmov:AapenElementType">
+        <sequence>
+          <element minOccurs="0" name="innløp" type="double"/>
+          <element minOccurs="0" name="overløp" type="double"/>
+          <element minOccurs="0" name="utløp" type="double"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RegnbedPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmov:Regnbed"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Renne" substitutionGroup="fmov:AapenElement" type="fmov:RenneType">
+    <annotation>
+      <documentation>Konstruksjon som fører overvann langs vegen til lukket dreneringssystem eller grøft</documentation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+        <sc:taggedValue tag="referanse">876</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="RenneType">
+    <complexContent>
+      <extension base="fmov:AapenElementType">
+        <sequence>
+          <element minOccurs="0" name="type" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvilken type objektet er av.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmov_TypeOvervannsrenne.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmov_TypeOvervannsrenne.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RennePropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmov:Renne"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="RensetiltakElement" substitutionGroup="fmov:VannHaandteringElement" type="fmov:RensetiltakElementType"/>
+  <complexType name="RensetiltakElementType">
+    <complexContent>
+      <extension base="fmov:VannHaandteringElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RensetiltakElementPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmov:RensetiltakElement"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Rist" substitutionGroup="fmov:AapenElement" type="fmov:RistType">
+    <annotation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+        <sc:taggedValue tag="referanse">828</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="RistType">
+    <complexContent>
+      <extension base="fmov:AapenElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RistPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmov:Rist"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="StikkrenneKulvert" substitutionGroup="fmov:AapenElement" type="fmov:StikkrenneKulvertType">
+    <annotation>
+      <documentation>79: Rør for vanngjennomløp på tvers av vegen (evnt. på tvers av tilgrensende avkjørsel) med maks lysåpning 2,5 meter. Stikkrenne/kulvert har åpent innløp og/eller utløp. Stikkrenne/kulvert kan ha inn- og utløpskonstruksjoner som kummer og støtteskjold. Merknad: Inntil videre registrere stikkrenner med bruksområde biologisk mangfold eller landbruk som vanlig stikkrenne. Dette blir endret på i senere versjon av Datakatalogen.</documentation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+        <sc:taggedValue tag="referanse">79</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="StikkrenneKulvertType">
+    <complexContent>
+      <extension base="fmov:AapenElementType">
+        <sequence>
+          <element minOccurs="0" name="stormingsform" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmov_Stoermingsform.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmov_Stoermingsform.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="gjentettingsgrad" type="double"/>
+          <element minOccurs="0" name="spesielleHensynFiskevandring" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir om det skal tas spesielle hensyn i forhold til fiskevandring. For mer info se datterobejkt av type "Fysisk inngrep i vannforekomst".</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmov_SpesielleHensynFiskevandring.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmov_SpesielleHensynFiskevandring.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="bruksområde" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hva stikkrenne kulvert primært brukes til.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmov_BruksomraadeStikkrenneKulvert.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmov_BruksomraadeStikkrenneKulvert.gml</defaultCodeSpace>
+                <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+                <sc:taggedValue tag="referanse">6981</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="materialtype" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir materialtype</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmov_MaterialtypeStikkrenneKulvert.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmov_MaterialtypeStikkrenneKulvert.gml</defaultCodeSpace>
+                <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+                <sc:taggedValue tag="referanse">6983</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="tverrsnittsform" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvilken type tverrsnitt gjennomløpskonstruksjon har.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmov_Tverrsnittsform.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmov_Tverrsnittsform.gml</defaultCodeSpace>
+                <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+                <sc:taggedValue tag="referanse">6984</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="typeInnløp" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvilken type innløp det er i ei stikkrenne</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmov_TypeInnloep.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmov_TypeInnloep.gml</defaultCodeSpace>
+                <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+                <sc:taggedValue tag="referanse">1939</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="typeUtløp" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvilken type utløp det er i ei stikkrenne</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmov_TypeUtloep.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmov_TypeUtloep.gml</defaultCodeSpace>
+                <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+                <sc:taggedValue tag="referanse">1940</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="overfyllingInnløp" type="double">
+            <annotation>
+              <documentation>Angir tykkelsen på overfylling ved innløp. Det vil si  tykkelse fra topp av stikkrenne til topp dekke.</documentation>
+              <appinfo>
+                <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+                <sc:taggedValue tag="referanse">10224</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="StikkrenneKulvertPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmov:StikkrenneKulvert"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="VannHaandteringElement" substitutionGroup="fmov:OvervannElement" type="fmov:VannHaandteringElementType"/>
+  <complexType abstract="true" name="VannHaandteringElementType">
+    <complexContent>
+      <extension base="fmov:OvervannElementType">
+        <sequence>
+          <element minOccurs="0" name="dybde" type="double"/>
+          <element minOccurs="0" name="lengde" type="double"/>
+          <element minOccurs="0" name="retning" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmov_VannHaandteringRetning.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmov_VannHaandteringRetning.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="normalVannstand" type="double"/>
+          <element minOccurs="0" name="lavesteVannstand" type="double"/>
+          <element minOccurs="0" name="høyesteVannstand" type="double"/>
+          <element minOccurs="0" name="brede" type="double"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="VannHaandteringElementPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmov:VannHaandteringElement"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Vannspeil" substitutionGroup="fmov:AapenElement" type="fmov:VannspeilType">
+    <annotation>
+      <documentation>uspesifisert vann avgrenset av kontur, vannkontur etc.</documentation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">Håndboka</sc:taggedValue>
+        <sc:taggedValue tag="referanse">VU053 - 2022.10</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="VannspeilType">
+    <complexContent>
+      <extension base="fmov:AapenElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="VannspeilPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmov:Vannspeil"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>

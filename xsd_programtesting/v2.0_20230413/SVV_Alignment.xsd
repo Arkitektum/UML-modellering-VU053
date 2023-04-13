@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:lic="http://www.opengis.net/infragml/core/1.0" xmlns:lr="http://www.opengis.net/gml/3.3/lr" xmlns:svval="https://skjema.atlas.vegvesen.no/r000/svvalignment/1.0" xmlns:svvli="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0" targetNamespace="https://skjema.atlas.vegvesen.no/r000/svvalignment/1.0" elementFormDefault="qualified" version="1.0">
+	<import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+	<import namespace="http://www.opengis.net/gml/3.3/lr" schemaLocation="http://schemas.opengis.net/gml/3.3/linearRef.xsd"/>
+	<import namespace="http://www.opengis.net/infragml/core/1.0" schemaLocation="https://schemas.opengis.net/infragml/part0/1.0/core.xsd"/>
+	<import namespace="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_programtesting/v2.0_20230413/SVV_Landinfra.xsd"/>
+	<!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+	<element name="Alignment" type="svval:AlignmentType" substitutionGroup="gml:AbstractFeature">
+		<annotation>
+			<documentation>PositioningElement which provides a Linear Referencing System for locating PhysicalElements.
+An Alignment shall be continuous, non-branching, and non-overlapping. If it is a Project Alignment, it is for a single alternative, as specified by its owning ProjectPart.</documentation>
+		</annotation>
+	</element>
+	<complexType name="AlignmentType">
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="purpose" type="string" minOccurs="0"/>
+					<element name="designAlternative" type="string" minOccurs="0"/>
+					<element name="linestring2DRepresentation" type="gml:LineStringType" minOccurs="0"/>
+					<element name="linestring3DRepresentation" type="gml:LineStringType" minOccurs="0"/>
+					<element name="horizontal" type="svval:Alignment2DHorizontalPropertyType" minOccurs="0"/>
+					<element name="vertical" type="svval:Alignment2DVerticalPropertyType" minOccurs="0"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="AlignmentPropertyType">
+		<sequence minOccurs="0">
+			<element ref="svval:Alignment"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Alignment2DHorSegment" type="svval:Alignment2DHorSegmentType" substitutionGroup="gml:AbstractObject">
+		<annotation>
+			<documentation>part of a horizontal alignment having a single geometric representation (either line, circular curve, clothoid, or other spiral)</documentation>
+		</annotation>
+	</element>
+	<complexType name="Alignment2DHorSegmentType">
+		<sequence>
+			<element name="tangentialContinuity" type="boolean"/>
+			<element name="geometry" type="svval:CurveSegment2DHorizontalPropertyType">
+				<annotation>
+					<documentation>the geometry of the segment (line, circular curve, clothoid, or other spiral)</documentation>
+				</annotation>
+			</element>
+		</sequence>
+	</complexType>
+	<complexType name="Alignment2DHorSegmentPropertyType">
+		<sequence>
+			<element ref="svval:Alignment2DHorSegment"/>
+		</sequence>
+	</complexType>
+	<element name="Alignment2DHorizontal" type="svval:Alignment2DHorizontalType" substitutionGroup="gml:AbstractObject">
+		<annotation>
+			<documentation>2D representation of the alignment geometry in the x-y plane</documentation>
+		</annotation>
+	</element>
+	<complexType name="Alignment2DHorizontalType">
+		<sequence>
+			<element name="location" type="string">
+				<annotation>
+					<documentation>e.g., "road centerline"</documentation>
+				</annotation>
+			</element>
+			<element name="description" type="string">
+				<annotation>
+					<documentation>describes where the alignment is located with respect to the owning road or rail segment, such as "roadway centerline"</documentation>
+				</annotation>
+			</element>
+			<element name="state" type="gml:CodeType">
+				<annotation>
+					<appinfo>
+						<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/svval_State.xml</defaultCodeSpace>
+					</appinfo>
+				</annotation>
+			</element>
+			<element name="linestring2DRepresentation" type="gml:LineStringType" minOccurs="0"/>
+			<element name="startDistanceAlong" type="gml:LengthType" minOccurs="0">
+				<annotation>
+					<documentation>If LRM is of type "absolute", then the measured value at the start of the horizontal alignment if other than 0</documentation>
+				</annotation>
+			</element>
+			<element name="crs" type="gml:CRSPropertyType" minOccurs="0">
+				<annotation>
+					<documentation>if defined by segments, the Cartesian engineering reference system</documentation>
+				</annotation>
+			</element>
+			<element name="segment" type="svval:Alignment2DHorSegmentPropertyType" minOccurs="0" maxOccurs="unbounded"/>
+		</sequence>
+	</complexType>
+	<complexType name="Alignment2DHorizontalPropertyType">
+		<sequence>
+			<element ref="svval:Alignment2DHorizontal"/>
+		</sequence>
+	</complexType>
+	<element name="Alignment2DVertSegment" type="svval:Alignment2DVertSegmentType" substitutionGroup="gml:AbstractObject"/>
+	<complexType name="Alignment2DVertSegmentType">
+		<sequence>
+			<element name="tangentialContinuity" type="boolean"/>
+			<element name="geometry" type="svval:CurveSegment2DVertPropertyType"/>
+		</sequence>
+	</complexType>
+	<complexType name="Alignment2DVertSegmentPropertyType">
+		<sequence>
+			<element ref="svval:Alignment2DVertSegment"/>
+		</sequence>
+	</complexType>
+	<element name="Alignment2DVertical" type="svval:Alignment2DVerticalType" substitutionGroup="gml:AbstractObject">
+		<annotation>
+			<documentation>long section profile along a line at or offset from a horizontal alignment.
+2D coordinate axes are alignment distanceAlong and ground elevation.
+State distinguishes between existing ground surface vs. proposed design profile.</documentation>
+		</annotation>
+	</element>
+	<complexType name="Alignment2DVerticalType">
+		<sequence>
+			<element name="location" type="string">
+				<annotation>
+					<documentation>e.g., "edge of pavement"</documentation>
+				</annotation>
+			</element>
+			<element name="description" type="string"/>
+			<element name="state" type="gml:CodeType">
+				<annotation>
+					<appinfo>
+						<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/svval_State.xml</defaultCodeSpace>
+					</appinfo>
+				</annotation>
+			</element>
+			<element name="alignmentOffset" type="gml:LengthType" minOccurs="0"/>
+			<element name="segments" type="svval:Alignment2DVertSegmentPropertyType" maxOccurs="unbounded"/>
+		</sequence>
+	</complexType>
+	<complexType name="Alignment2DVerticalPropertyType">
+		<sequence>
+			<element ref="svval:Alignment2DVertical"/>
+		</sequence>
+	</complexType>
+	<element name="AlignmentSet" type="svval:AlignmentSetType" substitutionGroup="gml:AbstractFeature"/>
+	<complexType name="AlignmentSetType">
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="alignment" maxOccurs="unbounded">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="svval:Alignment"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="AlignmentSetPropertyType">
+		<sequence minOccurs="0">
+			<element ref="svval:AlignmentSet"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="CurveSegment2DHorizontal" type="svval:CurveSegment2DHorizontalType" substitutionGroup="gml:AbstractObject"/>
+	<complexType name="CurveSegment2DHorizontalType">
+		<choice>
+			<element name="lineSegment" type="gml:LineStringType"/>
+			<element name="circularArcSegment" type="gml:ArcStringType"/>
+			<element name="clothoidArcSegment" type="gml:ClothoidType"/>
+		</choice>
+	</complexType>
+	<complexType name="CurveSegment2DHorizontalPropertyType">
+		<sequence>
+			<element ref="svval:CurveSegment2DHorizontal"/>
+		</sequence>
+	</complexType>
+	<element name="CurveSegment2DVert" type="svval:CurveSegment2DVertType" substitutionGroup="gml:AbstractObject"/>
+	<complexType name="CurveSegment2DVertType">
+		<sequence>
+			<element name="startDistAlong">
+				<complexType>
+					<complexContent>
+						<extension base="gml:AbstractMemberType">
+							<sequence minOccurs="0">
+								<element ref="lr:DistanceExpression"/>
+							</sequence>
+							<attributeGroup ref="gml:AssociationAttributeGroup"/>
+						</extension>
+					</complexContent>
+				</complexType>
+			</element>
+			<element name="startHeight" type="gml:LengthType"/>
+			<element name="startGradient">
+				<complexType>
+					<complexContent>
+						<extension base="gml:AbstractMemberType">
+							<sequence minOccurs="0">
+								<element ref="lic:Percentage"/>
+							</sequence>
+							<attributeGroup ref="gml:AssociationAttributeGroup"/>
+						</extension>
+					</complexContent>
+				</complexType>
+			</element>
+			<element name="horizontalLength" type="gml:LengthType"/>
+		</sequence>
+	</complexType>
+	<complexType name="CurveSegment2DVertPropertyType">
+		<sequence>
+			<element ref="svval:CurveSegment2DVert"/>
+		</sequence>
+	</complexType>
+	<element name="VertSegmentCircularArc" type="svval:VertSegmentCircularArcType" substitutionGroup="svval:CurveSegment2DVert"/>
+	<complexType name="VertSegmentCircularArcType">
+		<complexContent>
+			<extension base="svval:CurveSegment2DVertType">
+				<sequence>
+					<element name="radius" type="gml:LengthType"/>
+					<element name="isConvex" type="boolean">
+						<annotation>
+							<documentation>A value of ”true” (convex) means that the gradient at the beginning of the segment is less than the gradient at the end of the previous segment.  A value of “false” (concave) (Boolean=”false”) means that the gradient at the beginning of the segment is greater than the gradient at the end of the previous segment.</documentation>
+						</annotation>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="VertSegmentCircularArcPropertyType">
+		<sequence>
+			<element ref="svval:VertSegmentCircularArc"/>
+		</sequence>
+	</complexType>
+	<element name="VertSegmentLine" type="svval:VertSegmentLineType" substitutionGroup="svval:CurveSegment2DVert"/>
+	<complexType name="VertSegmentLineType">
+		<complexContent>
+			<extension base="svval:CurveSegment2DVertType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="VertSegmentLinePropertyType">
+		<sequence>
+			<element ref="svval:VertSegmentLine"/>
+		</sequence>
+	</complexType>
+	<element name="VertSegmentParabolicArc" type="svval:VertSegmentParabolicArcType" substitutionGroup="svval:CurveSegment2DVert"/>
+	<complexType name="VertSegmentParabolicArcType">
+		<complexContent>
+			<extension base="svval:CurveSegment2DVertType">
+				<sequence>
+					<element name="constant" type="double">
+						<annotation>
+							<documentation>parabola constant (determining the “steepness” of the parabola = K * 100</documentation>
+						</annotation>
+					</element>
+					<element name="isConvex" type="boolean">
+						<annotation>
+							<documentation>A value of ”true” (convex) means that the gradient at the beginning of the segment is less than the gradient at the end of the previous segment.  A value of “false” (concave) (Boolean=”false”) means that the gradient at the beginning of the segment is greater than the gradient at the end of the previous segment.</documentation>
+						</annotation>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="VertSegmentParabolicArcPropertyType">
+		<sequence>
+			<element ref="svval:VertSegmentParabolicArc"/>
+		</sequence>
+	</complexType>
+</schema>

@@ -1,0 +1,44 @@
+
+v2.0_20230413
+
+Main Structure
+	* VU053 LandInfra
+		* Ny feature "VU053ElementSamling", har et attributt for å lage en liste for de forskjellige systemer
+	* SOSI GenrelleEgenskaper
+		* Ny klasse "Posisjonskvalitet"
+		* Ny attributti SOSI GenerelleEgenskaper (element)
+	* Ny pake "VU053_Metadata
+	* Koble VU053_LeveranseMetadata til leveranse
+	
+Grunnlagsmodell
+	* Terreng
+		* Ny modell [xsd]
+		* Kodelister i GML format,alle kodelister som tilhører Terreng starter med "gmter_" i Github
+	* Grunnforhold
+		* Oppdatering av hovedstruktur
+		* Nye Kodelister i GML format
+	* Samfersel
+		* Ny modell [xsd]
+		* Kodelister i GML format,alle kodelister som tilhører Samfersel starter med "gmsfd_" i Github
+	
+Fagmodell
+	* Vann og Avløp (VA)
+		* Oppdaterte kodelister, nå bruker vi GML-Dictionary kodeliste, alle kodelister som tilhører VA starter med "fmva_" i Github
+		* SchemaChanges
+			* Relasjunter i VannOgAvloepElementSamling
+			* Avhengighet til SVV_framfoeringsvei.xsd
+		* Endre type til class "LedningRehab"
+		* Ny Feature 'Kumlokk'
+	* Rekkverk
+		* Oppdaterte kodelister, nå bruker vi GML-Dictionary kodeliste, alle kodelister som tilhører Rekkverk starter med "fmrek_" i Github
+		* SchemaChanges
+			*Relasjunter i "RekkverkElementSamling" til "Rekkverk"
+		* Flytte Attributter fra RekkverksElement til "Rekkverk"
+	* Veg
+		* Oppdaterte kodelister, nå bruker vi GML-Dictionary kodeliste, alle kodelister som tilhører veg starter med "fmveg_" i Github
+	* skilt
+		* Ny modell [xsd]
+		* Kodelister i GML format, alle kodelister som tilhører skilt starter med "fmskl_" i Github
+	* Overvann
+		* Ny modell [xsd]
+		* Kodelister i GML format, alle kodelister som tilhører Overvann starter med "fmov_" i Github
