@@ -91,36 +91,12 @@
     <complexContent>
       <extension base="svvli:VU053ElementSamlingType">
         <sequence>
-          <element maxOccurs="unbounded" minOccurs="0" name="terrengOverflate">
+          <element maxOccurs="unbounded" minOccurs="0" name="terrengElement">
             <complexType>
               <complexContent>
                 <extension base="gml:AbstractFeatureMemberType">
                   <sequence minOccurs="0">
-                    <element ref="gmter:TerrengOverflate"/>
-                  </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
-                </extension>
-              </complexContent>
-            </complexType>
-          </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="terrenglinje">
-            <complexType>
-              <complexContent>
-                <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="gmter:Terrenglinje"/>
-                  </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
-                </extension>
-              </complexContent>
-            </complexType>
-          </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="terrengpunkt">
-            <complexType>
-              <complexContent>
-                <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="gmter:Terrengpunkt"/>
+                    <element ref="gmter:TerrengElement"/>
                   </sequence>
                   <attributeGroup ref="gml:AssociationAttributeGroup"/>
                 </extension>
