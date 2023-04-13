@@ -155,7 +155,7 @@
     <complexContent>
       <extension base="fmva:LedningElementType">
         <sequence>
-          <element name="lengde" type="double"/>
+          <element minOccurs="0" name="lengde" type="double"/>
         </sequence>
       </extension>
     </complexContent>
