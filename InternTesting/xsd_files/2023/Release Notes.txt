@@ -1,5 +1,5 @@
 
-v1_0_0
+v1_0_0 ---> xsd_programtesting\v2.0_20230413
 Main Structure
 	* VU053 LandInfra
 		* ny feature "VU053ElementSamling", har et attributt for å lage en liste for de forskjellige systemer
