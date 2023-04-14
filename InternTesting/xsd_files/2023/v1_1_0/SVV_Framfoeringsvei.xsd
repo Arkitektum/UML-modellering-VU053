@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:ffv="https://skjema.atlas.vegvesen.no/r000/framfoeringsvei/0.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:svvli="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/framfoeringsvei/0.1" version="0.1">
+  <import namespace="http://www.interactive-instruments.de/ShapeChange/AppInfo" schemaLocation="http://shapechange.net/resources/schema/ShapeChangeAppinfo.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/InternTesting/xsd_files/2023/v1_1_0/SVV_Landinfra.xsd"/>
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="FiberdukGroeft" substitutionGroup="svvli:VU053PhysicalElement" type="ffv:FiberdukGroeftType">
+    <annotation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">Håndboka</sc:taggedValue>
+        <sc:taggedValue tag="referanse">R761 42.13</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="FiberdukGroeftType">
+    <complexContent>
+      <extension base="svvli:VU053PhysicalElementType">
+        <sequence>
+          <element name="areal" type="double">
+            <annotation>
+              <documentation>Fra HB R761: Mengden måles som prosjektert areal belagt med fiberduk. Overlapp i skjøter
+måles ikke for oppgjør. Enhet: m2</documentation>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="FiberdukGroeftPropertyType">
+    <sequence minOccurs="0">
+      <element ref="ffv:FiberdukGroeft"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="FramfoeringsveiElement" substitutionGroup="svvli:VU053Feature" type="ffv:FramfoeringsveiElementType"/>
+  <complexType name="FramfoeringsveiElementType">
+    <complexContent>
+      <extension base="svvli:VU053FeatureType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="FramfoeringsveiElementPropertyType">
+    <sequence minOccurs="0">
+      <element ref="ffv:FramfoeringsveiElement"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Gjenfyllingsone" substitutionGroup="svvli:VU053PhysicalElement" type="ffv:GjenfyllingsoneType"/>
+  <complexType name="GjenfyllingsoneType">
+    <complexContent>
+      <extension base="svvli:VU053PhysicalElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GjenfyllingsonePropertyType">
+    <sequence minOccurs="0">
+      <element ref="ffv:Gjenfyllingsone"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Ledningssone" substitutionGroup="svvli:VU053PhysicalElement" type="ffv:LedningssoneType"/>
+  <complexType name="LedningssoneType">
+    <complexContent>
+      <extension base="svvli:VU053PhysicalElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="LedningssonePropertyType">
+    <sequence minOccurs="0">
+      <element ref="ffv:Ledningssone"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="LukkaGroeft" substitutionGroup="ffv:FramfoeringsveiElement" type="ffv:LukkaGroeftType">
+    <annotation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">SOSI</sc:taggedValue>
+        <sc:taggedValue tag="referanse">Ledning 4.6</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="LukkaGroeftType">
+    <complexContent>
+      <extension base="ffv:FramfoeringsveiElementType">
+        <sequence>
+          <element minOccurs="0" name="type" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/ffv_LukkaRoerGroeftType.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/ffv_LukkaRoerGroeftType.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="fiberduk">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="ffv:FiberdukGroeft"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="ledningssone">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="ffv:Ledningssone"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="gjenfyllingsone">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="ffv:Gjenfyllingsone"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="LukkaGroeftPropertyType">
+    <sequence minOccurs="0">
+      <element ref="ffv:LukkaGroeft"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>
