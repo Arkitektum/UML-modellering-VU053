@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Hole</title>
+<title>ControlContour</title>
 <link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script language="JavaScript" src="../../../../../../js/displayToc.js" type="text/javascript"></script>
 <script>
@@ -64,12 +64,12 @@
 <div class="section group" >
 
 		<div class="col span_2_of_2 header_frame">
-			<h1> Hole </h1>
+			<h1> ControlContour </h1>
 			<!-- <img class="header_image" src="../../../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
 			<img class="header_image" src="../../../../../../images/ea-banner.png" align="right" alt="Header Image" />
 		</div>
 		<div class="col span_2_of_2 breadcrumb_frame">
-			<p><a href="../../../../../EA3.htm">Vegprosjekt VU053 v1.0</a> / <a href="../../../../EA8.htm">Eksterne_UML-deler</a> / <a href="../../../EA196.htm">SupportingPackages</a> / <a href="../../EA205.htm">GML</a> / <a href="../EA234.htm">3.3_TIN</a> / <a href="EA239.htm">MovedFron_Land_feature</a> / <a href="EA246.htm">Hole</a></p>
+			<p><a href="../../../../../EA3.htm">Vegprosjekt VU053 v1.0</a> / <a href="../../../../EA8.htm">Eksterne_UML-deler</a> / <a href="../../../EA199.htm">SupportingPackages</a> / <a href="../../EA208.htm">GML</a> / <a href="../EA237.htm">3.3_TIN</a> / <a href="EA242.htm">MovedFron_Land_feature</a> / <a href="EA246.htm">ControlContour</a></p>
 		</div>
 			
 		<table class="contentmaintable">
@@ -84,12 +84,12 @@
 					<td class="indexcell">
 						<div class="projectBrowserTitle">Project: </div>
 						<ul>
-<a href="EA239.htm">MovedFron_Land_feature</a></ul>
+<a href="EA242.htm">MovedFron_Land_feature</a></ul>
 
 					</td>
 					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<span class="ObjectTitle">Hole  : Public   Class</span>
+	<span class="ObjectTitle">ControlContour  : Public   Class</span>
 	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -142,14 +142,14 @@
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{45DBB525-787A-4861-B501-8A550D697E9E}</td>
+			<td class="ObjectDetailsValue">{BB12F3CD-B11A-4cf2-9F16-F5FAA731516B}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA237.htm">TIN</a></td>
+			<td class="ObjectDetailsValue"><a href="EA240.htm">TIN</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">encloses an area of the TIN surface designated as a hole.&lt;br/&gt;the boundary &lt;i&gt;LineStrings&lt;/i&gt; of the &lt;i&gt;Polygon&lt;/i&gt; behave as breaklines in that triangles in the &lt;i&gt;Patches&lt;/i&gt; attribute of the &lt;i&gt;TIN&lt;/i&gt; value must be adjusted so that becomes an edge of two or more triangles.&#160;&#160;Hole boundaries are treated like drape void boundaries in that the elevation of the original TIN surface The area bounded by TIN elements having a &lt;i&gt;&#39;&lt;/i&gt;break void&#39;, &#39;drape void&#39;, &#39;void&#39; and &#39;hole&#39; element type are still considered to be part of the TIN surface, rather than a hole bounded by an interior boundary of the surface.&#160;&#160;This distinction is significant when merging two TIN surfaces.&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">a breakline whose points have the same z coordinate value; behaves as a breakline&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -172,7 +172,7 @@
 					Public 
 				</td>
 				<td width="25%" class="TableRow">
-					<a href="EA253.htm">TINElementType</a>
+					<a href="EA256.htm">TINElementType</a>
 				</td>
 			</tr>
 			<tr>
@@ -189,13 +189,23 @@
 					Public 
 				</td>
 				<td width="25%" class="TableRow">
-					Polygon
+					LineString
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="3">										
 					
-						&nbsp;
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			3D, constant z coordinate&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
 						
 				</td>
 			</tr>
@@ -224,7 +234,7 @@
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA252.htm">TINElement</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA255.htm">TINElement</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">To</td>
