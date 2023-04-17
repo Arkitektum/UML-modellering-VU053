@@ -242,7 +242,7 @@
     <complexContent>
       <extension base="fmrek:FagmodellRekkverkElementType">
         <sequence>
-          <element name="type" type="gml:CodeType">
+          <element minOccurs="0" name="type" type="gml:CodeType">
             <annotation>
               <appinfo>
                 <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmrek_TypeRekkverksende.gml</sc:targetCodeListURI>
@@ -250,7 +250,7 @@
               </appinfo>
             </annotation>
           </element>
-          <element name="etableringsår" type="dateTime"/>
+          <element minOccurs="0" name="etableringsår" type="dateTime"/>
           <element minOccurs="0" name="sikkerhetsklasse" type="gml:CodeType">
             <annotation>
               <appinfo>

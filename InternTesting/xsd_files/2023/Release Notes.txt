@@ -1,4 +1,10 @@
 
+v1_1_0
+Fagmodell
+	* Rekkverk
+		* Endre attributter som var påkrevd til valgfrie
+		
+----------
 v1_0_0 ---> xsd_programtesting\v2.0_20230413
 Main Structure
 	* VU053 LandInfra
