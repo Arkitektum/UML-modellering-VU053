@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>FagmodellVeg Kodeliste</title>
+<link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> FagmodellVeg Kodeliste </h1>
+			<!-- <img class="header_image" src="../../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../../EA3.htm">Vegprosjekt VU053 v1.0</a> / <a href="../../../EA344.htm">LeveranseVegprosjekt</a> / <a href="../../EA348.htm">Samordningsmodell</a> / <a href="../EA579.htm">Tverrfagligmodell</a> / <a href="EA1444.htm">FagmodellVeg</a> / <a href="EA1440.htm">FagmodellVeg Kodeliste</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<li><img src="../../../../../images/4.png" alt="Package"/> <a href="./EA1/EA1462.htm">Vegkonstruksjon</a></li>
+<li><img src="../../../../../images/4.png" alt="Package"/> <a href="./EA2/EA1527.htm">VegOgGateObjekter</a></li>
+<li><img src="../../../../../images/4.png" alt="Package"/> <a href="./EA3/EA1578.htm">Vegomraade</a></li>
+<li><img src="../../../../../images/175.png" alt="Diagram"/> <a href="EA1438.htm">FagmodellVeg</a></li>
+<li><img src="../../../../../images/175.png" alt="Diagram"/> <a href="EA1440.htm">FagmodellVeg Kodeliste</a></li>
+<li><img src="../../../../../images/175.png" alt="Diagram"/> <a href="EA1442.htm">Geometrimodifikasjoner_des2022</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1447.htm">FagmodellVeg</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1453.htm">VegElement</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1454.htm">VegElementSamling</a></li>
+</ul>
+
+					</td>
+					<td class="contentcell"><div class="PageBody">
+	<div class=diagram_image> 
+<img src="EA1441.png" usemap="#EA1441" border="0" />
+
+<MAP NAME="EA1441">
+<area shape="rect" coords="204,1505,303,1655" href="./EA2/EA1571.htm" target="_self">
+<area shape="rect" coords="609,1484,782,1634" href="./EA2/EA1573.htm" target="_self">
+<area shape="rect" coords="621,1308,771,1471" href="./EA2/EA1560.htm" target="_self">
+<area shape="rect" coords="461,1409,630,1546" href="./EA2/EA1575.htm" target="_self">
+<area shape="rect" coords="321,1358,469,1525" href="./EA2/EA1565.htm" target="_self">
+<area shape="rect" coords="203,1369,302,1493" href="./EA2/EA1570.htm" target="_self">
+<area shape="rect" coords="688,1092,826,1294" href="./EA2/EA1568.htm" target="_self">
+<area shape="rect" coords="550,1085,703,1170" href="./EA2/EA1559.htm" target="_self">
+<area shape="rect" coords="555,1180,699,1278" href="./EA2/EA1562.htm" target="_self">
+<area shape="rect" coords="407,1242,497,1340" href="./EA2/EA1574.htm" target="_self">
+<area shape="rect" coords="308,1248,398,1333" href="./EA2/EA1558.htm" target="_self">
+<area shape="rect" coords="208,1260,306,1358" href="./EA2/EA1572.htm" target="_self">
+<area shape="rect" coords="298,1144,388,1242" href="./EA2/EA1569.htm" target="_self">
+<area shape="rect" coords="204,1136,290,1250" href="./EA2/EA1563.htm" target="_self">
+<area shape="rect" coords="511,1294,608,1392" href="./EA2/EA1567.htm" target="_self">
+<area shape="rect" coords="550,960,723,1074" href="./EA2/EA1561.htm" target="_self">
+<area shape="rect" coords="407,960,576,1227" href="./EA2/EA1564.htm" target="_self">
+<area shape="rect" coords="214,949,399,1125" href="./EA2/EA1566.htm" target="_self">
+<area shape="rect" coords="490,61,573,159" href="./EA3/EA1/EA1601.htm" target="_self">
+<area shape="rect" coords="28,717,191,841" href="./EA1/EA2/EA1477.htm" target="_self">
+<area shape="rect" coords="123,717,233,815" href="./EA1/EA2/EA1479.htm" target="_self">
+<area shape="rect" coords="218,717,338,828" href="./EA1/EA2/EA1476.htm" target="_self">
+<area shape="rect" coords="244,352,494,645" href="./EA3/EA1586.htm" target="_self">
+<area shape="rect" coords="91,372,163,470" href="./EA3/EA1580.htm" target="_self">
+<area shape="rect" coords="580,50,736,252" href="./EA1/EA4/EA2/EA1517.htm" target="_self">
+<area shape="rect" coords="765,67,875,165" href="./EA1/EA4/EA2/EA1519.htm" target="_self">
+<area shape="rect" coords="886,366,1112,815" href="./EA1/EA4/EA1/EA1511.htm" target="_self">
+<area shape="rect" coords="738,601,847,803" href="./EA1/EA4/EA1/EA1509.htm" target="_self">
+<area shape="rect" coords="721,498,865,596" href="./EA1/EA4/EA1/EA1506.htm" target="_self">
+<area shape="rect" coords="748,362,812,490" href="./EA1/EA4/EA1/EA1502.htm" target="_self">
+<area shape="rect" coords="517,381,701,713" href="./EA1/EA4/EA1/EA1510.htm" target="_self">
+<area shape="rect" coords="25,190,245,310" href="./EA3/EA1/EA1600.htm" target="_self">
+<area shape="rect" coords="260,50,470,200" href="./EA3/EA1/EA1594.htm" target="_self">
+<area shape="rect" coords="30,50,240,170" href="./EA3/EA1/EA1598.htm" target="_self">
+<area shape="rect" coords="10,10,746,319" href="EA1451.htm" target="_self">
+<area shape="rect" coords="482,26,1206,276" href="EA1452.htm" target="_self">
+<area shape="rect" coords="497,341,1127,841" href="EA1449.htm" target="_self">
+<area shape="rect" coords="10,330,478,667" href="EA1458.htm" target="_self">
+<area shape="rect" coords="10,683,319,852" href="EA1450.htm" target="_self">
+<area shape="rect" coords="187,893,812,1681" href="EA1456.htm" target="_self">
+</MAP>
+ </div>
+	<div class="ObjectTitle">FagmodellVeg Kodeliste : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">27.09.2022 13:25:15</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">27.12.2022 12:37:57</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">MatiasGonzalezTognoni</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{9CC26AEB-3853-420f-B106-2610E478F07A}</td>
+		</tr>
+	</table>
+	
+</div>
+
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

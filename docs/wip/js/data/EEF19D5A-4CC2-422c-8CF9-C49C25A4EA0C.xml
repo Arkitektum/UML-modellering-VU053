@@ -1,5 +1,5 @@
-tocTab[tocTab.length] = new Array("0.2.1.1.2.1.1:1", "", "Observasjon", "EARoot/EA2/EA1/EA1/EA2/EA1/EA1/EA402.htm", "175.png", "3287", "0", "", "Logical diagram0","{0D29EA6A-2866-4c07-ACB5-F56BA6A2D845}");
-tocTab[tocTab.length] = new Array("0.2.1.1.2.1.1:2", "", "«FeatureType» BergIDag", "EARoot/EA2/EA1/EA1/EA2/EA1/EA1/EA405.htm", "5.png", "E19937", "0", "", "Class0","{92C5E2BA-3B86-488f-BC64-1EE6F96DC696}");
-tocTab[tocTab.length] = new Array("0.2.1.1.2.1.1:3", "", "«FeatureType» ObservasjonElement", "EARoot/EA2/EA1/EA1/EA2/EA1/EA1/EA406.htm", "5.png", "E19934", "0", "", "Class0","{057DE414-42D4-422c-BEF9-D789DEE876B7}");
-tocTab[tocTab.length] = new Array("0.2.1.1.2.1.1:4", "", "«FeatureType» Skraaning", "EARoot/EA2/EA1/EA1/EA2/EA1/EA1/EA407.htm", "5.png", "E19936", "0", "", "Class0","{9196878F-09AF-4056-992E-3CB90A13B98F}");
-tocTab[tocTab.length] = new Array("0.2.1.1.2.1.1:5", "", "«CodeList» TypeSkråning", "EARoot/EA2/EA1/EA1/EA2/EA1/EA1/EA408.htm", "5.png", "E19935", "0", "", "Class0","{3B0F310C-E276-4cc9-B075-2462D7ACF2BA}");
+tocTab[tocTab.length] = new Array("0.2.1.1.2.2.2:1", "", "Observasjon", "EARoot/EA2/EA1/EA1/EA2/EA2/EA2/EA454.htm", "175.png", "3287", "0", "", "Logical diagram0","{0D29EA6A-2866-4c07-ACB5-F56BA6A2D845}");
+tocTab[tocTab.length] = new Array("0.2.1.1.2.2.2:2", "", "«FeatureType» BergIDag", "EARoot/EA2/EA1/EA1/EA2/EA2/EA2/EA457.htm", "5.png", "E19937", "0", "", "Class0","{92C5E2BA-3B86-488f-BC64-1EE6F96DC696}");
+tocTab[tocTab.length] = new Array("0.2.1.1.2.2.2:3", "", "«FeatureType» ObservasjonElement", "EARoot/EA2/EA1/EA1/EA2/EA2/EA2/EA458.htm", "5.png", "E19934", "0", "", "Class0","{057DE414-42D4-422c-BEF9-D789DEE876B7}");
+tocTab[tocTab.length] = new Array("0.2.1.1.2.2.2:4", "", "«FeatureType» Skraaning", "EARoot/EA2/EA1/EA1/EA2/EA2/EA2/EA459.htm", "5.png", "E19936", "0", "", "Class0","{9196878F-09AF-4056-992E-3CB90A13B98F}");
+tocTab[tocTab.length] = new Array("0.2.1.1.2.2.2:5", "", "«CodeList» TypeSkråning", "EARoot/EA2/EA1/EA1/EA2/EA2/EA2/EA460.htm", "5.png", "E19935", "0", "", "Class0","{3B0F310C-E276-4cc9-B075-2462D7ACF2BA}");
