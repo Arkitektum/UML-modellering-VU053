@@ -1,5 +1,10 @@
 
 v1_1_0
+Grunnlagsmodell
+	* Grunnforhold
+		* Nye elementer
+		* Nye kodelister
+		
 Fagmodell
 	* Rekkverk
 		* Endre attributter som var påkrevd til valgfrie
