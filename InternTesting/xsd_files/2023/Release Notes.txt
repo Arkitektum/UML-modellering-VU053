@@ -8,7 +8,9 @@ Grunnlagsmodell
 Fagmodell
 	* Rekkverk
 		* Endre attributter som var påkrevd til valgfrie
-		
+	* Veg
+		* Endre overordnet element til abstrakt
+			SideomraadeElement, VegkroppElement, VegElement, VegOgGateObjekterElement,VegkroppElement,VegomraadeElement
 ----------
 v1_0_0 ---> xsd_programtesting\v2.0_20230413
 Main Structure

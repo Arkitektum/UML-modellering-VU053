@@ -751,8 +751,8 @@
 		<attributeGroup ref="gml:AssociationAttributeGroup"/>
 		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
 	</complexType>
-	<element name="SideomraadeElement" type="fmveg:SideomraadeElementType" substitutionGroup="fmveg:VegomraadeElement"/>
-	<complexType name="SideomraadeElementType">
+	<element name="SideomraadeElement" type="fmveg:SideomraadeElementType" abstract="true" substitutionGroup="fmveg:VegomraadeElement"/>
+	<complexType name="SideomraadeElementType" abstract="true">
 		<complexContent>
 			<extension base="fmveg:VegomraadeElementType">
 				<sequence/>
@@ -959,8 +959,8 @@
 		<attributeGroup ref="gml:AssociationAttributeGroup"/>
 		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
 	</complexType>
-	<element name="Underbygning" type="fmveg:UnderbygningType" substitutionGroup="fmveg:VegkroppElement"/>
-	<complexType name="UnderbygningType">
+	<element name="Underbygning" type="fmveg:UnderbygningType" abstract="true" substitutionGroup="fmveg:VegkroppElement"/>
+	<complexType name="UnderbygningType" abstract="true">
 		<complexContent>
 			<extension base="fmveg:VegkroppElementType">
 				<sequence/>
@@ -991,8 +991,8 @@
 		<attributeGroup ref="gml:AssociationAttributeGroup"/>
 		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
 	</complexType>
-	<element name="VegElement" type="fmveg:VegElementType" substitutionGroup="svvli:VU053Feature"/>
-	<complexType name="VegElementType">
+	<element name="VegElement" type="fmveg:VegElementType" abstract="true" substitutionGroup="svvli:VU053Feature"/>
+	<complexType name="VegElementType" abstract="true">
 		<complexContent>
 			<extension base="svvli:VU053FeatureType">
 				<sequence>
@@ -1064,8 +1064,8 @@
 		<attributeGroup ref="gml:AssociationAttributeGroup"/>
 		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
 	</complexType>
-	<element name="VegOgGateObjekterElement" type="fmveg:VegOgGateObjekterElementType" substitutionGroup="fmveg:VegElement"/>
-	<complexType name="VegOgGateObjekterElementType">
+	<element name="VegOgGateObjekterElement" type="fmveg:VegOgGateObjekterElementType" abstract="true" substitutionGroup="fmveg:VegElement"/>
+	<complexType name="VegOgGateObjekterElementType" abstract="true">
 		<complexContent>
 			<extension base="fmveg:VegElementType">
 				<sequence/>
@@ -1166,8 +1166,8 @@
 		<attributeGroup ref="gml:AssociationAttributeGroup"/>
 		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
 	</complexType>
-	<element name="VegkroppElement" type="fmveg:VegkroppElementType" substitutionGroup="fmveg:VegkonstruksjonElement"/>
-	<complexType name="VegkroppElementType">
+	<element name="VegkroppElement" type="fmveg:VegkroppElementType" abstract="true" substitutionGroup="fmveg:VegkonstruksjonElement"/>
+	<complexType name="VegkroppElementType" abstract="true">
 		<complexContent>
 			<extension base="fmveg:VegkonstruksjonElementType">
 				<sequence/>
@@ -1209,8 +1209,8 @@
 		<attributeGroup ref="gml:AssociationAttributeGroup"/>
 		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
 	</complexType>
-	<element name="VegomraadeElement" type="fmveg:VegomraadeElementType" substitutionGroup="fmveg:VegElement"/>
-	<complexType name="VegomraadeElementType">
+	<element name="VegomraadeElement" type="fmveg:VegomraadeElementType" abstract="true" substitutionGroup="fmveg:VegElement"/>
+	<complexType name="VegomraadeElementType" abstract="true">
 		<complexContent>
 			<extension base="fmveg:VegElementType">
 				<sequence>
