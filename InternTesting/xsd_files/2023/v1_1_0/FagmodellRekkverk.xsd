@@ -162,7 +162,7 @@
               </complexContent>
             </complexType>
           </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="rekverkElement">
+          <element maxOccurs="unbounded" minOccurs="0" name="rekkverkElement">
             <complexType>
               <complexContent>
                 <extension base="gml:AbstractFeatureMemberType">

@@ -8,6 +8,7 @@ Grunnlagsmodell
 Fagmodell
 	* Rekkverk
 		* Endre attributter som var påkrevd til valgfrie
+		* Change attribute name in Rekkverk "rekkverkElement"
 	* Veg
 		* Endre overordnet element til abstrakt
 			SideomraadeElement, VegkroppElement, VegElement, VegOgGateObjekterElement,VegkroppElement,VegomraadeElement
