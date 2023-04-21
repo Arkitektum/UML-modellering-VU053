@@ -28,6 +28,374 @@
       <element ref="fmvrv:Andel"/>
     </sequence>
   </complexType>
+  <element name="Arealressurs" substitutionGroup="gml:AbstractFeature" type="fmvrv:ArealressursType">
+    <annotation>
+      <documentation>AreaResourceSurface: et sammenhengende areal som er tilordnet de samme egenskapsverdiene i henhold til et Arealressursklassifikasjonssystem</documentation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">SOSI</sc:taggedValue>
+        <sc:taggedValue tag="referanse">FKB-AR5 4.5</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="ArealressursType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element minOccurs="0" name="arealtype" type="fmvrv:ArealressursArealtypeType">
+            <annotation>
+              <documentation>areaType: hovedinndeling etter kriterier for vegetasjon, naturlig drenering og kulturpåvirkning</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmvrv_ArealressursArealtype.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmvrv_ArealressursArealtype.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="treslag" type="fmvrv:ArealressursTreslagType">
+            <annotation>
+              <documentation>type of wood: inndeling etter fordeling av kronedekket mellom bartrær og lauvtrær</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmvrv_ArealressursTreslag.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmvrv_ArealressursTreslag.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="skogbonitet" type="fmvrv:ArealressursSkogbonitetType">
+            <annotation>
+              <documentation>forestSiteQuality: inndeling etter arealets evne til å produsere trevirke</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmvrv_ArealressursSkogbonitet.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmvrv_ArealressursSkogbonitet.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="grunnforhold" type="fmvrv:ArealressursGrunnforholdType">
+            <annotation>
+              <documentation>groundConditions: inndeling etter tjukkelse, type og fordeling av jorddekket</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmvrv_ArealressursGrunnforhold.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmvrv_ArealressursGrunnforhold.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ArealressursPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmvrv:Arealressurs"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <simpleType name="ArealressursArealtypeType">
+    <annotation>
+      <documentation>AreaResourceAreaType: hovedinndeling etter kriterier for vegetasjon, naturlig drenering og kulturpåvirkning</documentation>
+    </annotation>
+    <union memberTypes="fmvrv:ArealressursArealtypeEnumerationType fmvrv:ArealressursArealtypeOtherType"/>
+  </simpleType>
+  <simpleType name="ArealressursArealtypeEnumerationType">
+    <annotation>
+      <documentation>AreaResourceAreaType: hovedinndeling etter kriterier for vegetasjon, naturlig drenering og kulturpåvirkning</documentation>
+    </annotation>
+    <restriction base="string">
+      <enumeration value="11">
+        <annotation>
+          <documentation>Developed area: Bebygd; areal som er utbygd eller i betydelig grad opparbeida, samt tilstøtende arealer som i funksjon er nært knytta til bebyggelsen</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="81">
+        <annotation>
+          <documentation>Freshwater: Ferskvann; innsjø og elv</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="21">
+        <annotation>
+          <documentation>Fully cultivated land: Fulldyrka jord; jordbruksareal som er dyrka til vanlig pløyedybde, og som kan benyttes til åkervekster eller til eng, og som kan fornyes ved pløying</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="82">
+        <annotation>
+          <documentation>Ocean: Hav</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="99">
+        <annotation>
+          <documentation>Not surveyed: Ikke kartlagt; areal som har ukjent beskaffenhet.</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="23">
+        <annotation>
+          <documentation>Home fields grazing land: Innmarksbeite; jordbruksareal som kan benyttes som beite, men som ikke kan høstes maskinelt. Minst 50 % av arealet skal være dekt av grasarter</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="60">
+        <annotation>
+          <documentation>Marsh: Myr; areal med myrvegetasjon og minst 30 cm tjukt torvlag</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="22">
+        <annotation>
+          <documentation>Superficially cultivated land: Overflatedyrka jord; jordbruksareal som for det meste er rydda og jevna i overflata, slik at maskinell høsting er mulig</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="12">
+        <annotation>
+          <documentation>Communications/traffic: Samferdsel; areal som brukes til samferdsel</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="30">
+        <annotation>
+          <documentation>Forest: Skog; areal med minst 6 trær per dekar som er eller kan bli 5 meter høye, og disse bør være jevnt fordelt på arealet.</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="70">
+        <annotation>
+          <documentation>Snowy glacier??: Snøisbre; blanding av snø og isbre som ikke smelter i løpet av sommeren</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="50">
+        <annotation>
+          <documentation>Open firm ground: Åpen fastmark; fastmark som ikke er jordbruksareal, skog, bebygd eller samferdsel</documentation>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <simpleType name="ArealressursArealtypeOtherType">
+    <restriction base="string">
+      <pattern value="other: \w{2,}"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="ArealressursAvgrensingTypeType">
+    <annotation>
+      <documentation>AreaResourceDelimitationType: informasjon om grense som er henta fra annet datasett</documentation>
+    </annotation>
+    <union memberTypes="fmvrv:ArealressursAvgrensingTypeEnumerationType fmvrv:ArealressursAvgrensingTypeOtherType"/>
+  </simpleType>
+  <simpleType name="ArealressursAvgrensingTypeEnumerationType">
+    <annotation>
+      <documentation>AreaResourceDelimitationType: informasjon om grense som er henta fra annet datasett</documentation>
+    </annotation>
+    <restriction base="string">
+      <enumeration value="4206">
+        <annotation>
+          <documentation>AreaResourceBoundary: ArealressursGrense; grense mot annet arealressurskartlagt areal</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="9300">
+        <annotation>
+          <documentation>NonSurveyedBoundary: IkkeKartlagtgrense; grense mot ikke kartlagt område</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="3310">
+        <annotation>
+          <documentation>GlacierBoundary: Isbregrense; grense mot isbre</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="9111">
+        <annotation>
+          <documentation>Storage Unit Boundary: Lagringsenhetgrense; grense for lagringsenhet</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="7200">
+        <annotation>
+          <documentation>Traffic boundary: Samferdselsgrense; grense mot samferdselsområde</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="3000">
+        <annotation>
+          <documentation>Water boundary: Vanngrense; grense mot vann</documentation>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <simpleType name="ArealressursAvgrensingTypeOtherType">
+    <restriction base="string">
+      <pattern value="other: \w{2,}"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="ArealressursGrunnforholdType">
+    <annotation>
+      <documentation>AreaResourceSoilConditions: inndeling etter tjukkelse, type og fordeling av jorddekket</documentation>
+    </annotation>
+    <union memberTypes="fmvrv:ArealressursGrunnforholdEnumerationType fmvrv:ArealressursGrunnforholdOtherType"/>
+  </simpleType>
+  <simpleType name="ArealressursGrunnforholdEnumerationType">
+    <annotation>
+      <documentation>AreaResourceSoilConditions: inndeling etter tjukkelse, type og fordeling av jorddekket</documentation>
+    </annotation>
+    <restriction base="string">
+      <enumeration value="41">
+        <annotation>
+          <documentation>Boulder land: Blokkmark; areal der overflata i hovedsak er dekt med steinblokker.</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="42">
+        <annotation>
+          <documentation>Exposed bedrock: Fjell i dagen; areal der mer enn 50 % er bart fjell og mindre enn 10 % har jord dypere enn 30 cm.</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="43">
+        <annotation>
+          <documentation>Shallow soil: Grunnlendt; areal der mer enn 50 % har mindre jorddybde enn 30 cm, men som ikke kan klassifiseres som fjell i dagen.</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="99">
+        <annotation>
+          <documentation>Not registered: Ikke registrert; opplysning om grunnforhold er ikke registrert.</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="98">
+        <annotation>
+          <documentation>Not relevant: Ikke relevant; opplysning om grunnforhold er ikke relevant.</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="44">
+        <annotation>
+          <documentation>Soil-covered: Jorddekt; fastmark der mer enn 50 % av arealet har større jorddybde enn 30 cm</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="46">
+        <annotation>
+          <documentation>Konstruert; areal som er sterkt menneskepåvirket og ikke biologisk produktivt</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="45">
+        <annotation>
+          <documentation>Organic soil: Organiske jordlag; areal som har et organisk jordlag tjukkere enn 30 cm (20 cm)</documentation>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <simpleType name="ArealressursGrunnforholdOtherType">
+    <restriction base="string">
+      <pattern value="other: \w{2,}"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="ArealressursKartstandardType">
+    <annotation>
+      <documentation>AreaResourceMapStandard: informasjon om hvilket klassifikasjonssystem som er brukt</documentation>
+    </annotation>
+    <union memberTypes="fmvrv:ArealressursKartstandardEnumerationType fmvrv:ArealressursKartstandardOtherType"/>
+  </simpleType>
+  <simpleType name="ArealressursKartstandardEnumerationType">
+    <annotation>
+      <documentation>AreaResourceMapStandard: informasjon om hvilket klassifikasjonssystem som er brukt</documentation>
+    </annotation>
+    <restriction base="string">
+      <enumeration value="AR5">
+        <annotation>
+          <documentation>AR5: AR5</documentation>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <simpleType name="ArealressursKartstandardOtherType">
+    <restriction base="string">
+      <pattern value="other: \w{2,}"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="ArealressursSkogbonitetType">
+    <annotation>
+      <documentation>AreaResourceForestSiteQuality: inndeling etter arealets evne til å produsere trevirke</documentation>
+    </annotation>
+    <union memberTypes="fmvrv:ArealressursSkogbonitetEnumerationType fmvrv:ArealressursSkogbonitetOtherType"/>
+  </simpleType>
+  <simpleType name="ArealressursSkogbonitetEnumerationType">
+    <annotation>
+      <documentation>AreaResourceForestSiteQuality: inndeling etter arealets evne til å produsere trevirke</documentation>
+    </annotation>
+    <restriction base="string">
+      <enumeration value="11">
+        <annotation>
+          <documentation>Impediment: Impediment; mindre enn 0,1 m³ tilvekst per dekar og år</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="12">
+        <annotation>
+          <documentation>Low: Lav; 0,1 - 0,3 m³ tilvekst per dekar og år</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="13">
+        <annotation>
+          <documentation>Medium: Middels; 0,3 - 0,5 m³ tilvekst per dekar og år</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="14">
+        <annotation>
+          <documentation>High: Høy; 0,5 - 1,0 m³ tilvekst per dekar og år</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="15">
+        <annotation>
+          <documentation>Particularly high: Særs høy; mer enn 1,0 m³ tilvekst per dekar og år</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="98">
+        <annotation>
+          <documentation>Not relevant: Ikke relevant; opplysning om skogbonitet er ikke relevant</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="99">
+        <annotation>
+          <documentation>Not registered: Ikke registrert; opplysning om skogbonitet er ikke registrert</documentation>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <simpleType name="ArealressursSkogbonitetOtherType">
+    <restriction base="string">
+      <pattern value="other: \w{2,}"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="ArealressursTreslagType">
+    <annotation>
+      <documentation>AreaResourceTypeOfWood: inndeling etter fordeling av kronedekket mellom bartrær og lauvtrær</documentation>
+    </annotation>
+    <union memberTypes="fmvrv:ArealressursTreslagEnumerationType fmvrv:ArealressursTreslagOtherType"/>
+  </simpleType>
+  <simpleType name="ArealressursTreslagEnumerationType">
+    <annotation>
+      <documentation>AreaResourceTypeOfWood: inndeling etter fordeling av kronedekket mellom bartrær og lauvtrær</documentation>
+    </annotation>
+    <restriction base="string">
+      <enumeration value="31">
+        <annotation>
+          <documentation>Coniferous forest: Barskog; minst 50 % av skogdekt areal er dekt av bartrær</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="32">
+        <annotation>
+          <documentation>Deciduous forest: Lauvskog; mindre enn 20 % av skogdekt areal er dekt av bartrær</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="33">
+        <annotation>
+          <documentation>Mixied forest: Blandingsskog; mellom 20 - 50 % av skogdekt areal er dekt av bartrær</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="39">
+        <annotation>
+          <documentation>No growth of trees: Ikke tresatt; arealet har ikke tresetting som holder kravet til skog</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="98">
+        <annotation>
+          <documentation>Not relevant: Ikke relevant; opplysning om treslag er ikke relevant</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="99">
+        <annotation>
+          <documentation>Not registered: Ikke registrert; opplysning om treslag er ikke registrert</documentation>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <simpleType name="ArealressursTreslagOtherType">
+    <restriction base="string">
+      <pattern value="other: \w{2,}"/>
+    </restriction>
+  </simpleType>
   <element abstract="true" name="Eiendomsgrense" substitutionGroup="fmvrv:Teiggrense" type="fmvrv:EiendomsgrenseType">
     <annotation>
       <appinfo>
@@ -175,7 +543,7 @@ Framfeste brukes der det er flere nivå med festere. (fester fester bort på nyt
     <complexContent>
       <extension base="lv:TverrfagligmodellType">
         <sequence>
-          <element maxOccurs="unbounded" minOccurs="0" name="generelleelementer">
+          <element maxOccurs="unbounded" minOccurs="0" name="generelleElementer">
             <complexType>
               <complexContent>
                 <extension base="gml:AbstractFeatureMemberType">
@@ -532,6 +900,14 @@ Hjemmelshavere, aktuelle eiere og kontaktinstanser til eiendommer ligger i perso
   </complexType>
   <element name="Teig" substitutionGroup="gml:AbstractFeature" type="fmvrv:TeigType">
     <annotation>
+      <documentation>En teig er et sammenhengende areal som avgrenses av teiggrense. 
+
+Merknad:
+Teiger skal ikke overlappe hverandre. Naboteiger skal ha delt geometri.
+Matrikkelenheter som består av flere areal som er sammenhengende i bare et punkt er teigdelt etter denne definisjonen.
+
+Merknad 2:
+Matrikkelenheten Anleggseiendom kan ha en kombinasjon av teig(er) på bakken og projeksjoner av volumer over/under bakken. Teigene på bakken registreres som Teig og ikke som Anleggsprojeksjonsflate.</documentation>
       <appinfo>
         <sc:taggedValue tag="kilde">SOSI</sc:taggedValue>
         <sc:taggedValue tag="referanse">Eiendomsinformasjon-4.5</sc:taggedValue>
@@ -573,6 +949,18 @@ Hjemmelshavere, aktuelle eiere og kontaktinstanser til eiendommer ligger i perso
                 <reversePropertyName xmlns="http://www.opengis.net/gml/3.2">fmvrv:teig</reversePropertyName>
               </appinfo>
             </annotation>
+          </element>
+          <element maxOccurs="unbounded" name="arealressurs">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmvrv:Arealressurs"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
           </element>
         </sequence>
       </extension>
