@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:fmvrv="https://skjema.atlas.vegvesen.no/r000/fagmodellgrunnerverv/0.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:lv="https://skjema.atlas.vegvesen.no/r000/svvleveranse/1.0" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:svvli="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/fagmodellgrunnerverv/0.1" version="0.1">
+  <import namespace="http://www.interactive-instruments.de/ShapeChange/AppInfo" schemaLocation="http://shapechange.net/resources/schema/ShapeChangeAppinfo.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/InternTesting/xsd_files/2023/v1_1_0/SVV_Landinfra.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/svvleveranse/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/InternTesting/xsd_files/2023/v1_1_0/SVV_Leveranse.xsd"/>
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="Andel" substitutionGroup="gml:AbstractObject" type="fmvrv:AndelType">
+    <annotation>
+      <documentation>brøk som beskriver eierandel.</documentation>
+    </annotation>
+  </element>
+  <complexType name="AndelType">
+    <sequence>
+      <element name="nevner" type="integer">
+        <annotation>
+          <documentation>Nevner i andelsbrøk.</documentation>
+        </annotation>
+      </element>
+      <element name="teller" type="integer">
+        <annotation>
+          <documentation>Teller i andelsbrøk.</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="AndelPropertyType">
+    <sequence>
+      <element ref="fmvrv:Andel"/>
+    </sequence>
+  </complexType>
+  <element abstract="true" name="Eiendomsgrense" substitutionGroup="fmvrv:Teiggrense" type="fmvrv:EiendomsgrenseType">
+    <annotation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">SOSI</sc:taggedValue>
+        <sc:taggedValue tag="referanse">Eiendomsinformasjon-4.5</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType abstract="true" name="EiendomsgrenseType">
+    <complexContent>
+      <extension base="fmvrv:TeiggrenseType">
+        <sequence>
+          <element minOccurs="0" name="typeGrense" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmvrv_Eigedomsgrensetype.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmvrv_Eigedomsgrensetype.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="følgerTerrengdetalj" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmvrv_TerrengdetaljKode.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmvrv_TerrengdetaljKode.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="EiendomsgrensePropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmvrv:Eiendomsgrense"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <simpleType name="EierforholdTinglystKodeType">
+    <annotation>
+      <documentation>Type eierforhold som kommer fra Tinglysingssystemet.
+Framfeste brukes der det er flere nivå med festere. (fester fester bort på nytt osv.)</documentation>
+    </annotation>
+    <union memberTypes="fmvrv:EierforholdTinglystKodeEnumerationType fmvrv:EierforholdTinglystKodeOtherType"/>
+  </simpleType>
+  <simpleType name="EierforholdTinglystKodeEnumerationType">
+    <annotation>
+      <documentation>Type eierforhold som kommer fra Tinglysingssystemet.
+Framfeste brukes der det er flere nivå med festere. (fester fester bort på nytt osv.)</documentation>
+    </annotation>
+    <restriction base="string">
+      <enumeration value="F">
+        <annotation>
+          <documentation>Andelshaveren har inngått festekontrakt med hjemmelshaver.</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="F1">
+        <annotation>
+          <documentation>Andelshaveren har inngått festekontrakt med fester.</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="F2">
+        <annotation>
+          <documentation>Andelshaveren har inngått festekontrakt med framfester.</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="F3">
+        <annotation>
+          <documentation>Andelshaveren har inngått festekontrakt med framfester2.</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="F4">
+        <annotation>
+          <documentation>Andelshaveren har inngått festekontrakt med framfester3.</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="F5">
+        <annotation>
+          <documentation>Andelshaveren har inngått festekontrakt med framfester4.</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="F6">
+        <annotation>
+          <documentation>Andelshaveren har inngått festekontrakt med framfester5.</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="F7">
+        <annotation>
+          <documentation>Andelshaveren har inngått festekontrakt med framfester6.</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="F8">
+        <annotation>
+          <documentation>Andelshaveren har inngått festekontrakt med framfester7.</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="F9">
+        <annotation>
+          <documentation>Andelshaveren har inngått festekontrakt med framfester8.</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="H">
+        <annotation>
+          <documentation>Den som grunnboka utpeker som hjemmelshaver (eier).</documentation>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <simpleType name="EierforholdTinglystKodeOtherType">
+    <restriction base="string">
+      <pattern value="other: \w{2,}"/>
+    </restriction>
+  </simpleType>
+  <element name="ErvervetArealElement" substitutionGroup="svvli:VU053Feature" type="fmvrv:ErvervetArealElementType"/>
+  <complexType name="ErvervetArealElementType">
+    <complexContent>
+      <extension base="svvli:VU053FeatureType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="teig">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmvrv:Teig"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ErvervetArealElementPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmvrv:ErvervetArealElement"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="FagmodellGrunnerverv" substitutionGroup="lv:Tverrfagligmodell" type="fmvrv:FagmodellGrunnervervType"/>
+  <complexType name="FagmodellGrunnervervType">
+    <complexContent>
+      <extension base="lv:TverrfagligmodellType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="generelleelementer">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmvrv:GenerelleElementer"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="ervervetArealElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmvrv:ErvervetArealElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="teg">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmvrv:Teig"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="FagmodellGrunnervervPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmvrv:FagmodellGrunnerverv"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="GenerelleElementer" substitutionGroup="svvli:VU053Feature" type="fmvrv:GenerelleElementerType"/>
+  <complexType name="GenerelleElementerType">
+    <complexContent>
+      <extension base="svvli:VU053FeatureType">
+        <sequence>
+          <element minOccurs="0" name="generelleElementerType" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmvrv_GrunnervervGenerelleElementerType.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmvrv_GrunnervervGenerelleElementerType.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GenerelleElementerPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmvrv:GenerelleElementer"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Matrikkelenhet" substitutionGroup="gml:AbstractFeature" type="fmvrv:MatrikkelenhetType">
+    <annotation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">SOSI</sc:taggedValue>
+        <sc:taggedValue tag="referanse">Eiendomsinformasjon-4.5</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="MatrikkelenhetType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element minOccurs="0" name="matrikkelnummer" type="fmvrv:MatrikkelnummerPropertyType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="teig">
+            <annotation>
+              <appinfo>
+                <reversePropertyName xmlns="http://www.opengis.net/gml/3.2">fmvrv:tilhoereMatrikkelenhet</reversePropertyName>
+              </appinfo>
+            </annotation>
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmvrv:Teig"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="harPersonTinglystEierforhold">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmvrv:PersonTinglystEierforhold"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="MatrikkelenhetPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmvrv:Matrikkelenhet"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Matrikkelnummer" substitutionGroup="gml:AbstractObject" type="fmvrv:MatrikkelnummerType">
+    <annotation>
+      <documentation>Entydig identifisering av matrikkelenhet innen kommune, definert i matrikkelforskrift § 7.
+
+Matrikkelnummeret for grunneiendom, anleggseiendom og jordsameie skal bestå av et gårdsnummer og et bruksnummer. Bruksnummeret inngår i en fortløpende nummerering innenfor gårdsnummeret.
+
+Matrikkelnummer for festegrunn skal bestå av gårdsnummer, bruksnummer og festenummer. Festenummeret inngår i en fortløpende nummerering av festegrunn på vedkommende grunneiendom eller jordsameie.
+
+Matrikkelnummer for eierseksjon skal bestå av gårdsnummer, bruksnummer og seksjonsnummer. Dersom eierseksjonen ligg på festegrunn, skal festenummeret være en del av matrikkelnummeret. Seksjonsnummeret inngår i en fortløpende nummerering av eierseksjonene på vedkommende grunneiendom, anleggseiendom eller festegrunn.</documentation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">SOSI</sc:taggedValue>
+        <sc:taggedValue tag="referanse">Eiendomsinformasjon-4.5</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="MatrikkelnummerType">
+    <sequence>
+      <element name="kommunenummer" type="string">
+        <annotation>
+          <documentation>nummerering av kommuner i henhold til Statistisk sentralbyrå sin offisielle liste
+
+Merknad: Det presiseres at kommune alltid skal ha 4 siffer, dvs. eventuelt med ledende null. Kommune benyttes for kopling mot en rekke andre registre som også benytter 4 siffer.</documentation>
+        </annotation>
+      </element>
+      <element name="gårdsnummer" type="integer">
+        <annotation>
+          <documentation>En kommune er delt inn i flere gårder, og alle matrikkelenheter ligger på en gårdsenhet. Gårdsnummer er nummeret på en gårdsenhet i matrikkelen og er unikt innenfor hver kommune. Forkortelsen er gnr</documentation>
+        </annotation>
+      </element>
+      <element name="bruksnummer" type="integer">
+        <annotation>
+          <documentation>Hver gård er delt opp i et eller flere bruk. Neste ledige bruksnummer innen et gårdsnummer tildeles automatisk. Forkortelsen er bnr</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="festenummer" type="integer">
+        <annotation>
+          <documentation>Fortløpende nummerering av fester under gårdsnummer/bruksnummer. Forkortelsen er fnr</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="seksjonsnummer" type="integer">
+        <annotation>
+          <documentation>Fortløpende nummerering av seksjoner under gårdsnummer/bruksnummer og eventuelt festenummer.</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="MatrikkelnummerPropertyType">
+    <sequence>
+      <element ref="fmvrv:Matrikkelnummer"/>
+    </sequence>
+  </complexType>
+  <element name="MidlertidigBeslag" substitutionGroup="fmvrv:ErvervetArealElement" type="fmvrv:MidlertidigBeslagType">
+    <annotation>
+      <documentation>Er areal som leies under anleggsperioden, men som
+tilbakeføres i tilsvarende stand til grunneier ved anleggsslutt</documentation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">Annet</sc:taggedValue>
+        <sc:taggedValue tag="referanse">Viken Fylkeskommune</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="MidlertidigBeslagType">
+    <complexContent>
+      <extension base="fmvrv:ErvervetArealElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="MidlertidigBeslagPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmvrv:MidlertidigBeslag"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="PermanentErverv" substitutionGroup="fmvrv:ErvervetArealElement" type="fmvrv:PermanentErvervType">
+    <annotation>
+      <documentation>Er areal som grunneier avstår permanent</documentation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">Annet</sc:taggedValue>
+        <sc:taggedValue tag="referanse">Viken Fylkeskommune</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="PermanentErvervType">
+    <complexContent>
+      <extension base="fmvrv:ErvervetArealElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="PermanentErvervPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmvrv:PermanentErverv"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="PermanentKlausulertAreal" substitutionGroup="fmvrv:ErvervetArealElement" type="fmvrv:PermanentKlausulertArealType">
+    <annotation>
+      <documentation>F.eks. fri sikt ved privat avkjørsel mot veikryss</documentation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">Annet</sc:taggedValue>
+        <sc:taggedValue tag="referanse">Viken Fylkeskommune</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="PermanentKlausulertArealType">
+    <complexContent>
+      <extension base="fmvrv:ErvervetArealElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="PermanentKlausulertArealPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmvrv:PermanentKlausulertAreal"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Person" substitutionGroup="gml:AbstractFeature" type="fmvrv:PersonType">
+    <annotation>
+      <documentation>en samlebetegnelsen for juridiske, fysiske og andre personer.
+En Person har eller har hatt et forhold til en eller flere matrikkelenheter eller bygninger.
+Den kan være en person fra personregisteret, en organisasjon/enhet fra enhetsregisteret, eller en person kommunen har registrert.
+
+BESKRIVELSE
+Personene/organisasjonene er identifisert med fødselsnr., organisasjonsnr. eller med internt løpenr, evt. kombinert med fødselsdato.
+
+EKSEMPEL
+Hjemmelshavere, aktuelle eiere og kontaktinstanser til eiendommer ligger i person/organisasjon. Det samme gjør bygningers kontaktpersoner.</documentation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">SOSI</sc:taggedValue>
+        <sc:taggedValue tag="referanse">Eiendomsinformasjon-4.5</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="PersonType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element minOccurs="0" name="postadresse" type="string">
+            <annotation>
+              <documentation>Personens postadresse.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="navn" type="string">
+            <annotation>
+              <documentation>Navn på person. For FysiskPerson inneholder feltet fullt navn.</documentation>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="PersonPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmvrv:Person"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="PersonTinglystEierforhold" substitutionGroup="gml:AbstractFeature" type="fmvrv:PersonTinglystEierforholdType">
+    <annotation>
+      <documentation>Realisering av TinglystEierforhold der det er en fysisk person som er eier.</documentation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">SOSI</sc:taggedValue>
+        <sc:taggedValue tag="referanse">Eiendomsinformasjon-4.5</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="PersonTinglystEierforholdType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element minOccurs="0" name="Andel" type="fmvrv:AndelPropertyType"/>
+          <element minOccurs="0" name="eierforhold" type="fmvrv:EierforholdTinglystKodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmvrv_EierforholdTinglystKode.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmvrv_EierforholdTinglystKode.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="person">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmvrv:Person"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="PersonTinglystEierforholdPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmvrv:PersonTinglystEierforhold"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Servitutter" substitutionGroup="fmvrv:ErvervetArealElement" type="fmvrv:ServitutterType">
+    <annotation>
+      <documentation>F.eks. rettighet til å ha liggende V/A-ledninger</documentation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">Annet</sc:taggedValue>
+        <sc:taggedValue tag="referanse">Viken Fylkeskommune</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="ServitutterType">
+    <complexContent>
+      <extension base="fmvrv:ErvervetArealElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ServitutterPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmvrv:Servitutter"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Teig" substitutionGroup="gml:AbstractFeature" type="fmvrv:TeigType">
+    <annotation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">SOSI</sc:taggedValue>
+        <sc:taggedValue tag="referanse">Eiendomsinformasjon-4.5</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="TeigType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element minOccurs="0" name="takstnummer" type="string"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="ervervetArealElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmvrv:ErvervetArealElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="teiggrense">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmvrv:Teiggrense"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" name="tilhoereMatrikkelenhet" type="fmvrv:MatrikkelenhetPropertyType">
+            <annotation>
+              <appinfo>
+                <reversePropertyName xmlns="http://www.opengis.net/gml/3.2">fmvrv:teig</reversePropertyName>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="TeigPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmvrv:Teig"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Teiggrense" substitutionGroup="svvli:VU053Feature" type="fmvrv:TeiggrenseType">
+    <annotation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">SOSI</sc:taggedValue>
+        <sc:taggedValue tag="referanse">Eiendomsinformasjon-4.5</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="TeiggrenseType">
+    <complexContent>
+      <extension base="svvli:VU053FeatureType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="TeiggrensePropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmvrv:Teiggrense"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>
