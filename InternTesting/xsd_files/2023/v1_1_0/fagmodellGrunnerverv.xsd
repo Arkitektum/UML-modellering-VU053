@@ -28,7 +28,7 @@
       <element ref="fmvrv:Andel"/>
     </sequence>
   </complexType>
-  <element name="Arealressurs" substitutionGroup="gml:AbstractFeature" type="fmvrv:ArealressursType">
+  <element name="Arealressurs" substitutionGroup="svvli:VU053Feature" type="fmvrv:ArealressursType">
     <annotation>
       <documentation>AreaResourceSurface: et sammenhengende areal som er tilordnet de samme egenskapsverdiene i henhold til et Arealressursklassifikasjonssystem</documentation>
       <appinfo>
@@ -39,7 +39,7 @@
   </element>
   <complexType name="ArealressursType">
     <complexContent>
-      <extension base="gml:AbstractFeatureType">
+      <extension base="svvli:VU053FeatureType">
         <sequence>
           <element minOccurs="0" name="arealtype" type="gml:CodeType">
             <annotation>
