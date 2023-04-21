@@ -1,7 +1,7 @@
-tocTab[tocTab.length] = new Array("0.4.2:1", "", "Prosjektorganisasjon", "EARoot/EA4/EA2/EA1771.htm", "175.png", "3256", "0", "", "Logical diagram0","{ECC00CC4-A5D2-45cf-9B65-F552D332CFEE}");
-tocTab[tocTab.length] = new Array("0.4.2:2", "", "«dataType» Bestillingstype", "EARoot/EA4/EA2/EA1775.htm", "5.png", "E19719", "0", "", "Class0","{7BA81F72-A443-4e86-87E3-FE2CBDD0E23D}");
-tocTab[tocTab.length] = new Array("0.4.2:3", "", "«CodeList» Konkuranseform", "EARoot/EA4/EA2/EA1776.htm", "5.png", "E19833", "0", "", "Class0","{71972FEC-173F-4879-8BE4-5AAA7F3823CB}");
-tocTab[tocTab.length] = new Array("0.4.2:4", "", "«CodeList» Konkurransegrunnlagsmal", "EARoot/EA4/EA2/EA1777.htm", "5.png", "E19831", "0", "", "Class0","{63A9989D-AC64-4352-9399-4CD5A213B7BA}");
-tocTab[tocTab.length] = new Array("0.4.2:5", "", "«CodeList» Kontraktsform", "EARoot/EA4/EA2/EA1778.htm", "5.png", "E19834", "0", "", "Class0","{992BA281-565D-4949-895C-BEDF82D8670A}");
-tocTab[tocTab.length] = new Array("0.4.2:6", "", "«union» Part", "EARoot/EA4/EA2/EA1779.htm", "5.png", "E19835", "0", "", "Class0","{DA930A9B-8618-4783-A256-C7026F0BDC2C}");
-tocTab[tocTab.length] = new Array("0.4.2:7", "", "«CodeList» Partstype", "EARoot/EA4/EA2/EA1780.htm", "5.png", "E19832", "0", "", "Class0","{65A7096A-FAFB-4087-8905-DD41356DA52F}");
+tocTab[tocTab.length] = new Array("0.4.2:1", "", "Prosjektorganisasjon", "EARoot/EA4/EA2/EA1782.htm", "175.png", "3256", "0", "", "Logical diagram0","{ECC00CC4-A5D2-45cf-9B65-F552D332CFEE}");
+tocTab[tocTab.length] = new Array("0.4.2:2", "", "«dataType» Bestillingstype", "EARoot/EA4/EA2/EA1786.htm", "5.png", "E19719", "0", "", "Class0","{7BA81F72-A443-4e86-87E3-FE2CBDD0E23D}");
+tocTab[tocTab.length] = new Array("0.4.2:3", "", "«CodeList» Konkuranseform", "EARoot/EA4/EA2/EA1787.htm", "5.png", "E19833", "0", "", "Class0","{71972FEC-173F-4879-8BE4-5AAA7F3823CB}");
+tocTab[tocTab.length] = new Array("0.4.2:4", "", "«CodeList» Konkurransegrunnlagsmal", "EARoot/EA4/EA2/EA1788.htm", "5.png", "E19831", "0", "", "Class0","{63A9989D-AC64-4352-9399-4CD5A213B7BA}");
+tocTab[tocTab.length] = new Array("0.4.2:5", "", "«CodeList» Kontraktsform", "EARoot/EA4/EA2/EA1789.htm", "5.png", "E19834", "0", "", "Class0","{992BA281-565D-4949-895C-BEDF82D8670A}");
+tocTab[tocTab.length] = new Array("0.4.2:6", "", "«union» Part", "EARoot/EA4/EA2/EA1790.htm", "5.png", "E19835", "0", "", "Class0","{DA930A9B-8618-4783-A256-C7026F0BDC2C}");
+tocTab[tocTab.length] = new Array("0.4.2:7", "", "«CodeList» Partstype", "EARoot/EA4/EA2/EA1791.htm", "5.png", "E19832", "0", "", "Class0","{65A7096A-FAFB-4087-8905-DD41356DA52F}");
