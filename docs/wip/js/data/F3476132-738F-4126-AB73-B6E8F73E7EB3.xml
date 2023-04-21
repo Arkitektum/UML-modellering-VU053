@@ -5,4 +5,4 @@ tocTab[tocTab.length] = new Array("0.2.1.1.2:4", "", "«CodeList» GeologiskAlde
 tocTab[tocTab.length] = new Array("0.2.1.1.2:5", "", "«CodeList» GeolVerdivurdering", "EARoot/EA2/EA1/EA1/EA2/EA389.htm", "5.png", "E19944", "0", "", "Class0","{44A4BF62-D5FC-4f1c-B2A1-E55AD25F8B5C}");
 tocTab[tocTab.length] = new Array("0.2.1.1.2:6", "", "«FeatureType» GrunnlagsmodellGrunnforhold", "EARoot/EA2/EA1/EA1/EA2/EA390.htm", "5.png", "E19915", "0", "", "Class0","{8B137F35-45BA-4b45-BE25-D22037F73DA9}");
 tocTab[tocTab.length] = new Array("0.2.1.1.2.1", "1", "LagIGrunn", "EARoot/EA2/EA1/EA1/EA2/EA1/EA400.htm", "4.png", "", "", "{420F9C51-848A-4e24-AF65-7154FD9B4947}", "Package");
-tocTab[tocTab.length] = new Array("0.2.1.1.2.2", "1", "GrunnUndersoekelser", "EARoot/EA2/EA1/EA1/EA2/EA2/EA422.htm", "4.png", "", "", "{7994124A-35CC-4eca-8E4A-919C39B0847C}", "Package");
+tocTab[tocTab.length] = new Array("0.2.1.1.2.2", "1", "GrunnUndersoekelser", "EARoot/EA2/EA1/EA1/EA2/EA2/EA421.htm", "4.png", "", "", "{7994124A-35CC-4eca-8E4A-919C39B0847C}", "Package");
