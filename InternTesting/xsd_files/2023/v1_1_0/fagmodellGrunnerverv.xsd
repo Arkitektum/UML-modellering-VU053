@@ -33,7 +33,7 @@
       <documentation>AreaResourceSurface: et sammenhengende areal som er tilordnet de samme egenskapsverdiene i henhold til et Arealressursklassifikasjonssystem</documentation>
       <appinfo>
         <sc:taggedValue tag="kilde">SOSI</sc:taggedValue>
-        <sc:taggedValue tag="referanse">FKB-AR5 4.5</sc:taggedValue>
+        <sc:taggedValue tag="referanse">Arealressurs-4.0</sc:taggedValue>
       </appinfo>
     </annotation>
   </element>
@@ -77,6 +77,13 @@
               </appinfo>
             </annotation>
           </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="teig" type="fmvrv:TeigPropertyType">
+            <annotation>
+              <appinfo>
+                <reversePropertyName xmlns="http://www.opengis.net/gml/3.2">fmvrv:arealressurs</reversePropertyName>
+              </appinfo>
+            </annotation>
+          </element>
         </sequence>
       </extension>
     </complexContent>
@@ -84,6 +91,42 @@
   <complexType name="ArealressursPropertyType">
     <sequence minOccurs="0">
       <element ref="fmvrv:Arealressurs"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="ArealressursGrense" substitutionGroup="fmvrv:Arealressurs" type="fmvrv:ArealressursGrenseType">
+    <annotation>
+      <documentation>AreaResourceBoundary: avgrensing for en eller to arealressursflater
+
+
+-- Definition -- 
+delimitation for one or two area resource surfaces</documentation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">SOSI</sc:taggedValue>
+        <sc:taggedValue tag="referanse">Arealressurs-4.0</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="ArealressursGrenseType">
+    <complexContent>
+      <extension base="fmvrv:ArealressursType">
+        <sequence>
+          <element minOccurs="0" name="avgrensingType" type="gml:CodeType">
+            <annotation>
+              <documentation>delimitationType: informasjon om grense som er henta fra annet datasett
+
+-- Definition -- 
+information relating to boundaries retrieved from other datasets</documentation>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ArealressursGrensePropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmvrv:ArealressursGrense"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
@@ -190,6 +233,18 @@
                 <extension base="gml:AbstractFeatureMemberType">
                   <sequence minOccurs="0">
                     <element ref="fmvrv:Teig"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="arealressurs">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmvrv:Arealressurs"/>
                   </sequence>
                   <attributeGroup ref="gml:AssociationAttributeGroup"/>
                 </extension>
@@ -568,6 +623,11 @@ Matrikkelenheten Anleggseiendom kan ha en kombinasjon av teig(er) på bakken og 
             </annotation>
           </element>
           <element maxOccurs="unbounded" name="arealressurs">
+            <annotation>
+              <appinfo>
+                <reversePropertyName xmlns="http://www.opengis.net/gml/3.2">fmvrv:teig</reversePropertyName>
+              </appinfo>
+            </annotation>
             <complexType>
               <complexContent>
                 <extension base="gml:AbstractFeatureMemberType">
