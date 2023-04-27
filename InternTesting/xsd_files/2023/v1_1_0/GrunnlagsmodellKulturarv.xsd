@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gmgld="https://skjema.atlas.vegvesen.no/r000/grunnlagsdata/0.1" xmlns:gmkav="https://skjema.atlas.vegvesen.no/r000/grunnlagsmodellkulturarv/0.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:lv="https://skjema.atlas.vegvesen.no/r000/svvleveranse/1.0" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:svvli="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/grunnlagsmodellkulturarv/0.1" version="0.1">
+  <import namespace="http://www.interactive-instruments.de/ShapeChange/AppInfo" schemaLocation="http://shapechange.net/resources/schema/ShapeChangeAppinfo.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/grunnlagsdata/0.1" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/InternTesting/xsd_files/2023/v1_1_0/Grunnlagsdata.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/InternTesting/xsd_files/2023/v1_1_0/SVV_Landinfra.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/svvleveranse/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/InternTesting/xsd_files/2023/v1_1_0/SVV_Leveranse.xsd"/>
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="GrunnlagsmodellKulturarv" substitutionGroup="lv:Grunnlagsmodell" type="gmkav:GrunnlagsmodellKulturarvType"/>
+  <complexType name="GrunnlagsmodellKulturarvType">
+    <complexContent>
+      <extension base="lv:GrunnlagsmodellType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="kulturarvElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="gmkav:KulturarvElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GrunnlagsmodellKulturarvPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmkav:GrunnlagsmodellKulturarv"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="KulturarvElement" substitutionGroup="svvli:VU053Feature" type="gmkav:KulturarvElementType"/>
+  <complexType name="KulturarvElementType">
+    <complexContent>
+      <extension base="svvli:VU053FeatureType">
+        <sequence>
+          <element minOccurs="0" name="grunnlagsdataBrukt">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="gmgld:GrunnlagsdataBrukt"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="KulturarvElementPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmkav:KulturarvElement"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Kulturmiljoe" substitutionGroup="gmkav:KulturarvElement" type="gmkav:KulturmiljoeType">
+    <annotation>
+      <documentation>CulturalEnvironment: områder hvor kulturminner inngår som del av en større helhet eller sammenheng
+
+Merknad: Det kan være en samling av bygninger eller andre kulturminner som fysisk eller funksjonelt er knyttet til hverandre
+
+
+-- Definition -- 
+areas where cultural heritage sites/artifacts constitute a part of a greater totality or context</documentation>
+    </annotation>
+  </element>
+  <complexType name="KulturmiljoeType">
+    <complexContent>
+      <extension base="gmkav:KulturarvElementType">
+        <sequence>
+          <element maxOccurs="3" minOccurs="0" name="kulturminneDateringGruppe" type="gmkav:KulturminneDateringGruppePropertyType">
+            <annotation>
+              <documentation>culturalHeritageDatingGroup: opplysninger om kulturminnets alder
+
+-- Definition -- 
+information about the age of the cultural heritage site/artefact</documentation>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="matrikkelnummer" type="gmkav:MatrikkelnummerPropertyType"/>
+          <element maxOccurs="3" minOccurs="0" name="vern" type="gmkav:VernPropertyType">
+            <annotation>
+              <documentation>preservation: lovgrunnlag for restriksjoner knyttet til et objekt
+
+-- Definition -- 
+legal basis for restrictions related to an object</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="kulturminneVerneverdi" type="gml:CodeType">
+            <annotation>
+              <documentation>culturalHeritageSitePreservationValue: vurdering av verneverdien til kulturminner og kulturmiljøer som ikke er underlagt formelt vern etter lov
+
+-- Definition -- 
+assessment of the preservation value of cultural heritage sites/artefacts and cultural environments which are not subject to formal preservation pursuant to statutes</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmkav_KulturminneVerneverdi.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmkav_KulturminneVerneverdi.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="planidentifikasjon" type="string">
+            <annotation>
+              <documentation>planIdentification: entydig identifikasjon for en plan innen en kommune (PBL § 19-1, 6. ledd, § 20-1, 2. ledd og 5. ledd og § 22 og § 28-2)
+
+-- Definition -- 
+unique identification of a plan within a municipality (Section 19-1, subsection 6, Section 20-1, subsections 2 and 5 and Sections 22 and 28-2 of the PBA)</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="planstatus" type="gml:CodeType">
+            <annotation>
+              <documentation>planStatus: planens behandling (PBL §§ 19-4, 20-5, 27-1, 27-2, 28-1 og 28-2) samt planens virkning (PBL §§ 19-6, 20-6, 28-2 og 31)
+
+-- Definition -- 
+the processing of the plan (Sections 19-4, 20-5, 27-1, 27-2, 28-1 and 28-2 of the PBA) as well as the effect of the plan (Sections 19-6, 20-6, 28-2 and 31 of the PBA)</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/codeListNavn.xml</sc:targetCodeListURI>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="arealbruksstatus" type="gml:CodeType">
+            <annotation>
+              <documentation>landUseStatus: status for arealbruk innen oversiktsplan (PBL § 20-4, 1. ledd og § 25)
+
+-- Definition -- 
+status of land use within general plan (Section 20-4, subsection 1 and Section 25 of the PBA)</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/codeListNavn.xml</sc:targetCodeListURI>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" name="kulturminne" type="gmkav:KulturminnePropertyType">
+            <annotation>
+              <appinfo>
+                <reversePropertyName xmlns="http://www.opengis.net/gml/3.2">gmkav:kulturmiloe</reversePropertyName>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="KulturmiljoePropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmkav:Kulturmiljoe"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Kulturminne" substitutionGroup="gmkav:KulturarvElement" type="gmkav:KulturminneType">
+    <annotation>
+      <documentation>CulturalHeritageSite: lokalitet med fysiske spor av menneskelig virksomhet, eller
+lokaliteter der det knytter seg historiske hendelser, tro eller tradisjon til, eller steder hvor det er gjort funn av oldsaker eller samisk materiale
+
+Merknad: En lokalitet kan inneholde et eller flere enkeltminner.
+Objekttypen omfatter ikke stående bygninger (dvs. bygninger med tak),  disse hører inn under objekttypen "bygningenhet".
+I tilfeller hvor kulturminnet har en viss utstrekning som f.eks. en kirkegård eller et gravfelt, bør det angis som en flate.
+
+Eksempel: Boplasser, gravminner, forsvarsverk, fangstanlegg, vegfar, bruer, kanaler, tekniske installasjoner, ruiner m.m.
+
+
+-- Definition -- 
+site with physical traces of human activity, or sites to which historical incidents, beliefs or traditions are associated, or locations at which discoveries of antiquities or Sami material have been made</documentation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">SOSI</sc:taggedValue>
+        <sc:taggedValue tag="referanse">Kulturminner-4.0</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="KulturminneType">
+    <complexContent>
+      <extension base="gmkav:KulturarvElementType">
+        <sequence>
+          <element maxOccurs="3" minOccurs="0" name="kulturminneDateringGruppe" type="gmkav:KulturminneDateringGruppePropertyType">
+            <annotation>
+              <documentation>culturalHeritageDatingGroup: kulturminnets alder
+
+-- Definition -- 
+the age of the cultural heritage site/artefact</documentation>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="matrikkelnummer" type="gmkav:MatrikkelnummerPropertyType"/>
+          <element minOccurs="0" name="kulturminneAntall" type="integer">
+            <annotation>
+              <documentation>culturalHeritageNumber: totale antall enkeltminner innenfor en sammensatt kulturminnelokalitet
+
+-- Definition -- 
+the total number of individual sites/artefacts within a compound cultural heritage locality</documentation>
+            </annotation>
+          </element>
+          <element maxOccurs="3" minOccurs="0" name="vern" type="gmkav:VernPropertyType">
+            <annotation>
+              <documentation>preservation: lovgrunnlag for restriksjoner knyttet til et objekt
+
+-- Definition -- 
+legal basis for restrictions related to an object</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="kulturminneVerneverdi" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmkav_KulturminneVerneverdi.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmkav_KulturminneVerneverdi.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="kulturminneSynlig" type="boolean">
+            <annotation>
+              <documentation>culturalHeritageVisible: opplysning om hvorvidt objektet er synlig på eller over bakkenivå
+
+Merknad: Dersom minst ett av enkeltminene på en kulturminnelokalitet er synlig, skal lokaliteten regnes som synlig
+
+-- Definition -- 
+information as to whether the object is visible on or above ground level    Note: If at least one of the individual sites/artefacts at cultural heritage location is visible, then the site must be regarded as visible</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="kulturminneKategori" type="gml:CodeType">
+            <annotation>
+              <documentation>culturalHeritageSiteCategory: hvilken hovedkategori et kulturminne tilhører
+
+-- Definition -- 
+main category to which a cultural heritage site/artefact belongs</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmkav_KulturminneKategori.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmkav_KulturminneKategori.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="3" minOccurs="0" name="kulturminneBetegnelse" type="string">
+            <annotation>
+              <documentation>culturalHeritageSiteDesignation: kortfattet artsbetegnelse for kulturminnet eller kulturmiljøet
+
+-- Definition -- 
+brief type designation for the cultural heritage site/artefact or the cultural environment</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="kulturminneHovedgruppe" type="gml:CodeType">
+            <annotation>
+              <documentation>culturalHeritageSiteMainGroup: hvilken næringsgruppering/samfunnssektor kulturminnet hører med til
+
+Merknad: Overordnet gruppering av kulturminner basert på funksjon
+
+-- Definition -- 
+which business group/sector of society to which the cultural heritage site/artefact belongs   Note: General grouping of cultural artefacts based on function</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmkav_KulturminneHovedgruppe.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmkav_KulturminneHovedgruppe.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="3" minOccurs="0" name="kulturminneOpprinneligFunksjon" type="gml:CodeType">
+            <annotation>
+              <documentation>culturalHeritageArtefactOriginalFunction: kulturminnets opprinnelige hovedfunksjon
+
+-- Definition -- 
+the original main function of the cultural artefact</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmkav_KulturminneOpprinneligFunksjon.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmkav_KulturminneOpprinneligFunksjon.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="3" minOccurs="0" name="kulturminneNåværendeFunksjon" type="gml:CodeType">
+            <annotation>
+              <documentation>culturalHeritageArtefactCurrentFunction: nåværende eller sist registrerte funksjon
+
+-- Definition -- 
+current or most recently registered function</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmkav_KulturminneNaavaerendeFunksjon.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmkav_KulturminneNaavaerendeFunksjon.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="kulturminneHovedMateriale" type="gml:CodeType">
+            <annotation>
+              <documentation>culturalHeritageArtefactMainMaterial: hovedmaterialet brukt i  framstilling av kulturminnet
+
+-- Definition -- 
+the main material used in the making of the cultural artefact</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmkav_KulturminneHovedMateriale.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmkav_KulturminneHovedMateriale.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="planidentifikasjon" type="string">
+            <annotation>
+              <documentation>planIdentification: entydig identifikasjon for en plan innen en kommune (PBL § 19-1, 6. ledd, § 20-1, 2. ledd og 5. ledd og § 22 og § 28-2)
+
+-- Definition -- 
+unique identification of a plan within a municipality (Section 19-1, subsection 6, Section 20-1, subsections 2 and 5 and Sections 22 and 28-2 of the PBA)</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="planstatus" type="gml:CodeType">
+            <annotation>
+              <documentation>planStatus: planens behandling (PBL §§ 19-4, 20-5, 27-1, 27-2, 28-1 og 28-2) samt planens virkning (PBL §§ 19-6, 20-6, 28-2 og 31)
+
+-- Definition -- 
+the processing of the plan (Sections 19-4, 20-5, 27-1, 27-2, 28-1 and 28-2 of the PBA) as well as the effect of the plan (Sections 19-6, 20-6, 28-2 and 31 of the PBA)</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/codeListNavn.xml</sc:targetCodeListURI>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="arealbruksstatus" type="gml:CodeType">
+            <annotation>
+              <documentation>landUseStatus: status for arealbruk innen oversiktsplan (PBL § 20-4, 1. ledd og § 25)
+
+-- Definition -- 
+status of land use within general plan (Section 20-4, subsection 1 and Section 25 of the PBA)</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/codeListNavn.xml</sc:targetCodeListURI>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="kulturmiloe">
+            <annotation>
+              <appinfo>
+                <reversePropertyName xmlns="http://www.opengis.net/gml/3.2">gmkav:kulturminne</reversePropertyName>
+              </appinfo>
+            </annotation>
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="gmkav:Kulturmiljoe"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="sikringssone">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="gmkav:KulturminneSikringssone"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="KulturminnePropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmkav:Kulturminne"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="KulturminneDateringGruppe" substitutionGroup="gml:AbstractObject" type="gmkav:KulturminneDateringGruppeType">
+    <annotation>
+      <documentation>CulturalHeritageDatingGroup: kulturminnets alder
+
+
+-- Definition - - 
+the age of the cultural heritage site/artefact</documentation>
+    </annotation>
+  </element>
+  <complexType name="KulturminneDateringGruppeType">
+    <sequence>
+      <element name="kulturminneDatering" type="gml:CodeType">
+        <annotation>
+          <documentation>culturalHeritageSiteDating: hvilken epoke eller periode kulturminnet stammer fra
+
+-- Definition -- 
+epoch or period from which the cultural heritage site dates</documentation>
+          <appinfo>
+            <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmkav_KulturminneDatering.gml</sc:targetCodeListURI>
+            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmkav_KulturminneDatering.gml</defaultCodeSpace>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="kulturminneDateringKvalitet" type="gml:CodeType">
+        <annotation>
+          <documentation>culturalHeritageSiteDatingQuality: påliteligheten av datering under kulturminneDatering
+
+-- Definition -- 
+the reliability of dating during culturalHeritageSiteDating</documentation>
+          <appinfo>
+            <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmkav_KulturminneDateringKvalitet.gml</sc:targetCodeListURI>
+            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmkav_KulturminneDateringKvalitet.gml</defaultCodeSpace>
+          </appinfo>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="KulturminneDateringGruppePropertyType">
+    <sequence>
+      <element ref="gmkav:KulturminneDateringGruppe"/>
+    </sequence>
+  </complexType>
+  <element name="KulturminneSikringssone" substitutionGroup="gmkav:KulturarvElement" type="gmkav:KulturminneSikringssoneType">
+    <annotation>
+      <documentation>CulturalHeritageSiteProtectionZone: områder som er avgrenset gjennom fredninger etter Kulturminneloven  §§ 6 og 19
+
+Merknad: Dvs. en  fredet sone som omgir selve kulturminnet, men som ikke trenger å ha særskilte kulturhistoriske kvaliteter utover dette.
+
+
+-- Definition -- 
+areas which are delimited through preservation in accordance with Sections 6 and 19 of the Cultural Heritage Act</documentation>
+    </annotation>
+  </element>
+  <complexType name="KulturminneSikringssoneType">
+    <complexContent>
+      <extension base="gmkav:KulturarvElementType">
+        <sequence>
+          <element name="kommunenummer" type="string">
+            <annotation>
+              <documentation>municipalityNumber: nummerering av kommuner i henhold til SSB sin offisielle liste
+
+Merknad: Det presiseres at kommune alltid skal ha 4 siffer, dvs. eventuelt med ledende null. Kommune benyttes for kopling mot en rekke andre registre som også benytter 4 siffer.
+
+link: https://register.geonorge.no/sosi-kodelister/kommunenummer
+
+-- Definition -- 
+numbering of municipalities in accordance with Statistics Norway's official list    Note: It must be emphasised that the municipality number always consists of 4 digits, i.e. sometimes with a leading zero. Municipality is used for establishing relations to a number of other registers which also use 4 digits.</documentation>
+            </annotation>
+          </element>
+          <element name="vern" type="gmkav:VernPropertyType">
+            <annotation>
+              <documentation>preservation: lovgrunnlag for restriksjoner knyttet til et objekt
+
+-- Definition -- 
+legal basis for restrictions related to an object</documentation>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="KulturminneSikringssonePropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmkav:KulturminneSikringssone"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Matrikkelnummer" substitutionGroup="gml:AbstractObject" type="gmkav:MatrikkelnummerType">
+    <annotation>
+      <documentation>Entydig identifisering av matrikkelenhet innen kommune, definert i matrikkelforskrift § 7.
+
+Matrikkelnummeret for grunneiendom, anleggseiendom og jordsameie skal bestå av et gårdsnummer og et bruksnummer. Bruksnummeret inngår i en fortløpende nummerering innenfor gårdsnummeret.
+
+Matrikkelnummer for festegrunn skal bestå av gårdsnummer, bruksnummer og festenummer. Festenummeret inngår i en fortløpende nummerering av festegrunn på vedkommende grunneiendom eller jordsameie.
+
+Matrikkelnummer for eierseksjon skal bestå av gårdsnummer, bruksnummer og seksjonsnummer. Dersom eierseksjonen ligg på festegrunn, skal festenummeret være en del av matrikkelnummeret. Seksjonsnummeret inngår i en fortløpende nummerering av eierseksjonene på vedkommende grunneiendom, anleggseiendom eller festegrunn.</documentation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">SOSI</sc:taggedValue>
+        <sc:taggedValue tag="referanse">Eiendomsinformasjon-4.5</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="MatrikkelnummerType">
+    <sequence>
+      <element name="kommunenummer" type="string">
+        <annotation>
+          <documentation>nummerering av kommuner i henhold til Statistisk sentralbyrå sin offisielle liste
+
+Merknad: Det presiseres at kommune alltid skal ha 4 siffer, dvs. eventuelt med ledende null. Kommune benyttes for kopling mot en rekke andre registre som også benytter 4 siffer.</documentation>
+        </annotation>
+      </element>
+      <element name="gårdsnummer" type="integer">
+        <annotation>
+          <documentation>En kommune er delt inn i flere gårder, og alle matrikkelenheter ligger på en gårdsenhet. Gårdsnummer er nummeret på en gårdsenhet i matrikkelen og er unikt innenfor hver kommune. Forkortelsen er gnr</documentation>
+        </annotation>
+      </element>
+      <element name="bruksnummer" type="integer">
+        <annotation>
+          <documentation>Hver gård er delt opp i et eller flere bruk. Neste ledige bruksnummer innen et gårdsnummer tildeles automatisk. Forkortelsen er bnr</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="festenummer" type="integer">
+        <annotation>
+          <documentation>Fortløpende nummerering av fester under gårdsnummer/bruksnummer. Forkortelsen er fnr</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="seksjonsnummer" type="integer">
+        <annotation>
+          <documentation>Fortløpende nummerering av seksjoner under gårdsnummer/bruksnummer og eventuelt festenummer.</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="MatrikkelnummerPropertyType">
+    <sequence>
+      <element ref="gmkav:Matrikkelnummer"/>
+    </sequence>
+  </complexType>
+  <element name="Vern" substitutionGroup="gml:AbstractObject" type="gmkav:VernType">
+    <annotation>
+      <documentation>Preservation: lovgrunnlag for restriksjoner knyttet til et objekt
+
+
+-- Definition - - 
+legal basis for restrictions related to an object</documentation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">SOSI</sc:taggedValue>
+        <sc:taggedValue tag="referanse">Kulturminner-4.0</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="VernType">
+    <sequence>
+      <element minOccurs="0" name="vernelov" type="gml:CodeType">
+        <annotation>
+          <documentation>preservationStatute: hvilken lov vern av objektet er hjemlet i
+
+-- Definition -- 
+which statute the preservation of the object is founded on</documentation>
+          <appinfo>
+            <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmkav_Vernelov.gml</sc:targetCodeListURI>
+            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmkav_Vernelov.gml</defaultCodeSpace>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="verneparagraf" type="string">
+        <annotation>
+          <documentation>preservationSection: verneparagraf i lov
+
+Merknad: Nummer på aktuell paragraf i lov
+
+-- Definition -- 
+preservation section in statutes    Note: Number of the relevant section in statutes</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="vernetype" type="gml:CodeType">
+        <annotation>
+          <documentation>preservationType: hvilken forvaltningsmessig vernestatus et objekt har
+
+-- Definition -- 
+which administrative preservation status an object has</documentation>
+          <appinfo>
+            <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmkav_Vernetype.gml</sc:targetCodeListURI>
+            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmkav_Vernetype.gml</defaultCodeSpace>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="vernedato" type="date">
+        <annotation>
+          <documentation>preservationDate: dato når den angitte vernetype ble gjort gyldig
+
+-- Definition -- 
+date when the indicated preservation type came into force</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="VernPropertyType">
+    <sequence>
+      <element ref="gmkav:Vern"/>
+    </sequence>
+  </complexType>
+</schema>

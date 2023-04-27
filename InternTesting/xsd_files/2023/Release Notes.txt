@@ -15,7 +15,10 @@ Fagmodell
 		* Delete "Stroesandkasse" (flytte til FM gate mobiler)
 	* Grunneverv
 		* Ny modell [xsd]
-		* Kodelister i GML format, alle kodelister som tilhører skilt starter med "fmvrv_" i Github
+		* Kodelister i GML format, alle kodelister som tilhører Grunneverv starter med "fmvrv_" i Github
+	* Kulturarv
+		* Ny modell [xsd]
+		* Kodelister i GML format, alle kodelister som tilhører Kulturarv starter med "gmkav_" i Github
 ----------
 v1_0_0 ---> xsd_programtesting\v2.0_20230413
 Main Structure
