@@ -1,7 +1,7 @@
-tocTab[tocTab.length] = new Array("0.2.1.1.3.1.2:1", "", "Lufthavn", "EARoot/EA2/EA1/EA1/EA3/EA1/EA2/EA528.htm", "175.png", "3433", "0", "", "Logical diagram0","{56A6FB67-E1D4-428c-8075-F8C5BCAE256C}");
-tocTab[tocTab.length] = new Array("0.2.1.1.3.1.2:2", "", "«FeatureType» Lufthavn", "EARoot/EA2/EA1/EA1/EA3/EA1/EA2/EA532.htm", "5.png", "E21518", "0", "", "Class0","{A498DB3A-5DF3-409d-8A10-48B1E2DEC023}");
-tocTab[tocTab.length] = new Array("0.2.1.1.3.1.2:3", "", "«CodeList» IATAKode", "EARoot/EA2/EA1/EA1/EA3/EA1/EA2/EA533.htm", "5.png", "E21515", "0", "", "Class0","{6557400F-4CEC-4730-AFD0-942D26767D66}");
-tocTab[tocTab.length] = new Array("0.2.1.1.3.1.2:4", "", "«CodeList» ICAOKode", "EARoot/EA2/EA1/EA1/EA3/EA1/EA2/EA534.htm", "5.png", "E21517", "0", "", "Class0","{7B343AA7-0A94-42b1-9277-D075F9883EA2}");
-tocTab[tocTab.length] = new Array("0.2.1.1.3.1.2:5", "", "«CodeList» LufthavnArealer", "EARoot/EA2/EA1/EA1/EA3/EA1/EA2/EA535.htm", "5.png", "E21521", "0", "", "Class0","{F34E6C52-9A64-436d-9DD3-D52E8ED8FF74}");
-tocTab[tocTab.length] = new Array("0.2.1.1.3.1.2:6", "", "«CodeList» Lufthavntype", "EARoot/EA2/EA1/EA1/EA3/EA1/EA2/EA536.htm", "5.png", "E21519", "0", "", "Class0","{D46EE29F-6603-4e66-B2D6-B60D1CF10027}");
-tocTab[tocTab.length] = new Array("0.2.1.1.3.1.2:7", "", "«CodeList» Trafikktype", "EARoot/EA2/EA1/EA1/EA3/EA1/EA2/EA537.htm", "5.png", "E21516", "0", "", "Class0","{6D4B652E-80E9-4eae-9CB5-DF621DD06F3E}");
+tocTab[tocTab.length] = new Array("0.2.1.1.4.1.2:1", "", "Lufthavn", "EARoot/EA2/EA1/EA1/EA4/EA1/EA2/EA555.htm", "175.png", "200", "0", "", "Logical diagram0","{56A6FB67-E1D4-428c-8075-F8C5BCAE256C}");
+tocTab[tocTab.length] = new Array("0.2.1.1.4.1.2:2", "", "«FeatureType» Lufthavn", "EARoot/EA2/EA1/EA1/EA4/EA1/EA2/EA559.htm", "5.png", "E968", "0", "", "Class0","{A498DB3A-5DF3-409d-8A10-48B1E2DEC023}");
+tocTab[tocTab.length] = new Array("0.2.1.1.4.1.2:3", "", "«CodeList» IATAKode", "EARoot/EA2/EA1/EA1/EA4/EA1/EA2/EA560.htm", "5.png", "E965", "0", "", "Class0","{6557400F-4CEC-4730-AFD0-942D26767D66}");
+tocTab[tocTab.length] = new Array("0.2.1.1.4.1.2:4", "", "«CodeList» ICAOKode", "EARoot/EA2/EA1/EA1/EA4/EA1/EA2/EA561.htm", "5.png", "E967", "0", "", "Class0","{7B343AA7-0A94-42b1-9277-D075F9883EA2}");
+tocTab[tocTab.length] = new Array("0.2.1.1.4.1.2:5", "", "«CodeList» LufthavnArealer", "EARoot/EA2/EA1/EA1/EA4/EA1/EA2/EA562.htm", "5.png", "E971", "0", "", "Class0","{F34E6C52-9A64-436d-9DD3-D52E8ED8FF74}");
+tocTab[tocTab.length] = new Array("0.2.1.1.4.1.2:6", "", "«CodeList» Lufthavntype", "EARoot/EA2/EA1/EA1/EA4/EA1/EA2/EA563.htm", "5.png", "E969", "0", "", "Class0","{D46EE29F-6603-4e66-B2D6-B60D1CF10027}");
+tocTab[tocTab.length] = new Array("0.2.1.1.4.1.2:7", "", "«CodeList» Trafikktype", "EARoot/EA2/EA1/EA1/EA4/EA1/EA2/EA564.htm", "5.png", "E966", "0", "", "Class0","{6D4B652E-80E9-4eae-9CB5-DF621DD06F3E}");

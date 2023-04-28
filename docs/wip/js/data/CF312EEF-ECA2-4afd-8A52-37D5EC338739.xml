@@ -1,0 +1,8 @@
+tocTab[tocTab.length] = new Array("0.2.1.2.1:1", "", "FagmodellBygninger", "EARoot/EA2/EA1/EA2/EA1/EA624.htm", "175.png", "363", "0", "", "Logical diagram0","{017A73CF-46CC-47ff-98BE-A014E4F6337E}");
+tocTab[tocTab.length] = new Array("0.2.1.2.1:2", "", "«CodeList» PrivatAvtale", "EARoot/EA2/EA1/EA2/EA1/EA627.htm", "5.png", "E2522", "0", "", "Class0","{C195C461-534A-4cb2-BF76-2A03D438E398}");
+tocTab[tocTab.length] = new Array("0.2.1.2.1:3", "", "«FeatureType» Toalettanlegg", "EARoot/EA2/EA1/EA2/EA1/EA628.htm", "5.png", "E2521", "0", "", "Class0","{B02FE994-C52B-4c09-BDC4-6980F80CAD9B}");
+tocTab[tocTab.length] = new Array("0.2.1.2.1:4", "", "«CodeList» AvloepTil", "EARoot/EA2/EA1/EA2/EA1/EA629.htm", "5.png", "E2518", "0", "", "Class0","{2415400A-5F17-4be9-8529-CA0A12B669EC}");
+tocTab[tocTab.length] = new Array("0.2.1.2.1:5", "", "«CodeList» EierToalettanlegg", "EARoot/EA2/EA1/EA2/EA1/EA630.htm", "5.png", "E2523", "0", "", "Class0","{EAE46A4C-DB57-4e72-9896-7DFAF50A1360}");
+tocTab[tocTab.length] = new Array("0.2.1.2.1:6", "", "«CodeList» TypeToalettanlegg", "EARoot/EA2/EA1/EA2/EA1/EA631.htm", "5.png", "E2520", "0", "", "Class0","{5C84D794-1AA9-441d-9F38-507E5D4B85F2}");
+tocTab[tocTab.length] = new Array("0.2.1.2.1:7", "", "«CodeList» UniverseltUtformet", "EARoot/EA2/EA1/EA2/EA1/EA632.htm", "5.png", "E2517", "0", "", "Class0","{15446AE4-F14C-498c-BF53-C181022B5039}");
+tocTab[tocTab.length] = new Array("0.2.1.2.1:8", "", "«CodeList» VedlikeholdsansvarligToalettanlegg", "EARoot/EA2/EA1/EA2/EA1/EA633.htm", "5.png", "E2519", "0", "", "Class0","{31DC21F5-F51D-42f0-8616-487F76C964A6}");
