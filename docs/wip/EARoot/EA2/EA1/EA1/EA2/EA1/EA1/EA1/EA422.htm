@@ -1,0 +1,670 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>GeolPavisningstype</title>
+<link href="../../../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> GeolPavisningstype </h1>
+			<!-- <img class="header_image" src="../../../../../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../../../../../EA3.htm">Vegprosjekt VU053 v1.0</a> / <a href="../../../../../../EA344.htm">LeveranseVegprosjekt</a> / <a href="../../../../../EA348.htm">Samordningsmodell</a> / <a href="../../../../EA353.htm">Situasjonsmodell</a> / <a href="../../../EA375.htm">GrunnlagsmodellGrunnforhold</a> / <a href="../../EA401.htm">GrunnUndersoekelser</a> / <a href="../EA408.htm">Borehull</a> / <a href="EA418.htm">Undersoekelse</a> / <a href="EA422.htm">GeolPavisningstype</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<a href="EA418.htm">Undersoekelse</a></ul>
+
+					</td>
+					<td class="contentcell"><div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">GeolPavisningstype TypeOfGeolFindings : Public  &lt;&lt;CodeList&gt;&gt; Class</span>
+	<table border="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">21.12.2022 14:42:50</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">01.03.2023 11:02:14</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Arkitektum</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" >Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{FBE5F46D-69B2-440b-A773-38819DF3215E}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../../../EA371.htm">GrunnlagsmodellGrunnforhold kodeliste</a>, <a href="EA416.htm">Undersoekelse</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">hvor sikkert et geologisk objekt er påvist i terrenget, eller hvilken metode som ligger til grunn for å påvisningen/registreringen&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;-- Definition - - &lt;br/&gt;with what certainty a geological object has been identified in the terrain, or on which method the identification/registration is based&#160;&#160;&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Attribute</td>
+			<td width="25%" class="TableHeading">Scope</td>
+			<td width="25%" class="TableHeading">Type</td>
+		</tr>
+						<tr>
+				<td width="50%" class="TableRow">
+					Ikke spesifisert
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					&lt;undefined&gt;
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					Sikker påvisning/observasjon
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					&lt;undefined&gt;
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Avgrensningen eller registreringen av objektet er påvist eller observert i felt&lt;br/&gt;&lt;br/&gt;-- Definition -- &lt;br/&gt;The delimitation or registration of the object has been identified or observed in the&#160;&#160;field&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					Usikker påvisning/observasjon
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					&lt;undefined&gt;
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Ikke påvist/observert men antatt avgrensning/registrering av objekt&lt;br/&gt;&lt;br/&gt;-- Definition -- &lt;br/&gt;Not identified/observed; presumed delimitation/registration of object&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					Konstruert avgrensing
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					&lt;undefined&gt;
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Tilfeldig plassert avgrensning og meget usikker.&#160;&#160;Benyttes blant annet under vann- eller breoverflater&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					Geofysisk tolket grense
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					&lt;undefined&gt;
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Avgrensing basert på geofysiske indikasjoner&lt;br/&gt;&lt;br/&gt;-- Definition -- &lt;br/&gt;Delimitation based upon geophysical indications&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					Dårlig synlig avgrensning i terrenget
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					&lt;undefined&gt;
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Basert på generalisert tolkning av objekter med små innbyrdes variasjoner (f.eks. skille mellom tynt humusdekke og bart fjell, eller mellom to svært like bergarter&lt;br/&gt;&lt;br/&gt;-- Definition -- &lt;br/&gt;Based upon generalised interpretation of objects with small mutual variations (e.g., the distinction between a thin humus covering and exposed rock, or between two very similar types of rock&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					Overgangsmessig grense
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					&lt;undefined&gt;
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Glidende overgang mellom to bergarter,&#160;&#160;jordarter ol.&lt;br/&gt;&lt;br/&gt;-- Definition -- &lt;br/&gt;Where there is a gradual transition between two types of rock, soil types, etc.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					Tolket avgrensing/registrering
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					&lt;undefined&gt;
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Avgrensinger av geologisk objekt eller delobjekt fremkomet ved generalisering, samtolkning eller aggregering&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					Flyfototolket objekt eller delobjekt
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					&lt;undefined&gt;
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					Observasjon med usikker geografisk beliggenhet
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					&lt;undefined&gt;
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					Avgrensing ikke basert på geologi
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					&lt;undefined&gt;
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Der f.eks. en administrativ grense eller kystkontur har bidratt til avgrensing av et geologisk objekt &lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					Avgrensning basert på prøvetaking
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					&lt;undefined&gt;
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					Avgrensning basert på seismikk
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					&lt;undefined&gt;
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					Avgrensning basert på detaljerte dybdedata
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					&lt;undefined&gt;
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Avgrensing ved bruk av multistråleekkolodd og/eller interferometrisk sonar&lt;br/&gt;&lt;br/&gt;-- Definition -- &lt;br/&gt;Delimitation by using a multi-beam echo sounder and/or interferometric sonar&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					Avgrensning basert på backscatter data/sidescan.sonar
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					&lt;undefined&gt;
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					Avgrensning basert på prøvetaking og akustiske data/metoder
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					&lt;undefined&gt;
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					Avgrensning basert på akustiske data/metoder
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					&lt;undefined&gt;
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					Avgrensning basert på flere metoder/datatyper
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					&lt;undefined&gt;
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					Avgrensning basert på undervannsfoto og/eller -video
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					&lt;undefined&gt;
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					Avgrensning basert på akustiske data/metoder verifisert ved prøvetaking, foto o.l
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					&lt;undefined&gt;
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					
+						&nbsp;
+						
+				</td>
+			</tr>
+	</table>
+</div>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Tag</td>
+			<td width="50%" class="TableHeading">Value</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">asDictionary</td>
+				<td width="50%" class="TableRow" valign="top">true</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					Details:
+						<div class="ObjectDetailsNotes">Values: true,false<br />Default: true<br />Description: true if codelist is externally managed, else false<br /></div>
+
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">codeList</td>
+				<td width="50%" class="TableRow" valign="top"><a href="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolPavisningstype.gml" target="_blank" >https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolPavisningstype.gml</a></td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					Details:
+						<div class="ObjectDetailsNotes">Default: https://www.codelistURL.com<br /></div>
+
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">kilde</td>
+				<td width="50%" class="TableRow" valign="top">SOSI</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					Details:
+						<div class="ObjectDetailsNotes">Values: Håndboka,NVDB,SOSI,Annet<br /></div>
+
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">referanse</td>
+				<td width="50%" class="TableRow" valign="top">Geologi Generell del 4.0</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					Details:
+						&nbsp;
+				</td>
+			</tr>
+	</table>
+</div>		<div class="ItemBody" id="CustomPropertiesTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Property</td>
+					<td width="70%" class="TableHeading">Value</td>
+				</tr>
+			<tr>
+				<td width="30%" class="TableRow">isFinalSpecialization:</td>
+				<td width="70%" class="TableRow">0</td>
+			</tr>
+
+
+			</table>
+		</div>	</div>
+ </div>
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

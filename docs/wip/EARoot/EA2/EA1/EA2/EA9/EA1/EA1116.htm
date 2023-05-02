@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Tiltak</title>
+<link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Tiltak </h1>
+			<!-- <img class="header_image" src="../../../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../../../EA3.htm">Vegprosjekt VU053 v1.0</a> / <a href="../../../../EA344.htm">LeveranseVegprosjekt</a> / <a href="../../../EA348.htm">Samordningsmodell</a> / <a href="../../EA605.htm">Tverrfagligmodell</a> / <a href="../EA1110.htm">FagmodellNaturvern</a> / <a href="EA1120.htm">Tiltak</a> / <a href="EA1116.htm">Tiltak</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<li><img src="../../../../../../images/175.png" alt="Diagram"/> <a href="EA1116.htm">Tiltak</a></li>
+<li><img src="../../../../../../images/175.png" alt="Diagram"/> <a href="EA1118.htm">Tiltak Kodeliste</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1124.htm">BeggeVeier</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1125.htm">BeggeVeierVandringTiltakstype</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1126.htm">Beskyttelsestiltak</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1127.htm">Faunapassasjer</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1128.htm">FaunapassasjeType</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1129.htm">FiskevandringTiltak</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1130.htm">Fyllingsskraaning</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1131.htm">Gjerde</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1132.htm">Habitattiltak</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1133.htm">Habitattiltakstype</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1134.htm">Kantsone</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1135.htm">Kompensasjonsareal</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1136.htm">KompenserendeTiltak</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1137.htm">Nedvandring</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1138.htm">NedvandringTiltakstype</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1139.htm">Omplassering</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1140.htm">Oppvandring</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1141.htm">OppvandringTiltakstype</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1142.htm">Restaureringstiltak</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1143.htm">Restaureringstiltakstype</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1144.htm">Sedimentasjonsbasseng</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1145.htm">Sedimenthaandtering</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1146.htm">Sedimenthaandteringstype</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1147.htm">SkadereduserendeTiltak</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1148.htm">Tiltak</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1149.htm">TiltakElement</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1150.htm">Vannhaandteringstype</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1151.htm">Vannshaandtering</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1152.htm">VarighetsKategori</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1153.htm">Vernskog</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1154.htm">Voll</a></li>
+</ul>
+
+					</td>
+					<td class="contentcell"><div class="PageBody">
+	<div class=diagram_image> 
+<img src="EA1117.png" usemap="#EA1117" border="0" />
+
+<MAP NAME="EA1117">
+<area shape="rect" coords="140,113,311,198" href="../EA1114.htm" target="_self">
+<area shape="rect" coords="7,384,140,435" href="EA1153.htm" target="_self">
+<area shape="rect" coords="1300,557,1584,616" href="EA1124.htm" target="_self">
+<area shape="rect" coords="1054,557,1276,616" href="EA1140.htm" target="_self">
+<area shape="rect" coords="822,556,1043,615" href="EA1137.htm" target="_self">
+<area shape="rect" coords="1260,411,1374,462" href="EA1139.htm" target="_self">
+<area shape="rect" coords="1390,417,1508,456" href="EA1135.htm" target="_self">
+<area shape="rect" coords="1117,417,1243,456" href="EA1129.htm" target="_self">
+<area shape="rect" coords="928,406,1105,469" href="EA1132.htm" target="_self">
+<area shape="rect" coords="395,472,637,531" href="EA1145.htm" target="_self">
+<area shape="rect" coords="536,386,748,445" href="EA1151.htm" target="_self">
+<area shape="rect" coords="648,275,759,327" href="EA1147.htm" target="_self">
+<area shape="rect" coords="1146,282,1299,337" href="EA1136.htm" target="_self">
+<area shape="rect" coords="815,270,1037,325" href="EA1142.htm" target="_self">
+<area shape="rect" coords="243,265,419,318" href="EA1126.htm" target="_self">
+<area shape="rect" coords="337,373,441,428" href="EA1134.htm" target="_self">
+<area shape="rect" coords="283,472,379,531" href="EA1130.htm" target="_self">
+<area shape="rect" coords="24,469,273,693" href="EA1131.htm" target="_self">
+<area shape="rect" coords="190,373,288,445" href="EA1154.htm" target="_self">
+<area shape="rect" coords="753,386,914,497" href="EA1127.htm" target="_self">
+<area shape="rect" coords="721,80,895,207" href="EA1149.htm" target="_self">
+<area shape="rect" coords="395,5,594,80" href="EA1148.htm" target="_self">
+</MAP>
+ </div>
+	<div class="ObjectTitle">Tiltak : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">16.02.2023 14:01:53</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">09.03.2023 15:01:23</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">antdia</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{C46B20DF-D3DC-45b4-99F6-1A0AB4C4C8BE}</td>
+		</tr>
+	</table>
+	
+</div>
+
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

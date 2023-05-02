@@ -1,5 +1,5 @@
-tocTab[tocTab.length] = new Array("0.2.1.2.15.1.2:1", "", "Oversiktsdiagram Rabatt", "EARoot/EA2/EA1/EA2/EA15/EA1/EA2/EA1510.htm", "175.png", "3345", "0", "", "Logical diagram0","{1955E83D-84E8-4d73-8BB5-19E7D20AC46F}");
-tocTab[tocTab.length] = new Array("0.2.1.2.15.1.2:2", "", "«CodeList» Bruksomraade", "EARoot/EA2/EA1/EA2/EA15/EA1/EA2/EA1513.htm", "5.png", "E20716", "0", "", "Class0","{BCC733B6-5A8E-4dd8-A403-4BDE47C71CE8}");
-tocTab[tocTab.length] = new Array("0.2.1.2.15.1.2:3", "", "«CodeList» Material", "EARoot/EA2/EA1/EA2/EA15/EA1/EA2/EA1514.htm", "5.png", "E20715", "0", "", "Class0","{3285D22A-9B36-4dc5-B119-2D2F1F952724}");
-tocTab[tocTab.length] = new Array("0.2.1.2.15.1.2:4", "", "«FeatureType» RabattElement", "EARoot/EA2/EA1/EA2/EA15/EA1/EA2/EA1515.htm", "5.png", "E20717", "0", "", "Class0","{DBE5A76C-3357-445f-9C3D-B53127922A6D}");
-tocTab[tocTab.length] = new Array("0.2.1.2.15.1.2:5", "", "«CodeList» RabattUtforming", "EARoot/EA2/EA1/EA2/EA15/EA1/EA2/EA1516.htm", "5.png", "E20718", "0", "", "Class0","{EC27B554-375B-4000-91FF-E53006137738}");
+tocTab[tocTab.length] = new Array("0.2.1.2.17.1.2:1", "", "Oversiktsdiagram Rabatt", "EARoot/EA2/EA1/EA2/EA17/EA1/EA2/EA1617.htm", "175.png", "262", "0", "", "Logical diagram0","{1955E83D-84E8-4d73-8BB5-19E7D20AC46F}");
+tocTab[tocTab.length] = new Array("0.2.1.2.17.1.2:2", "", "«CodeList» Bruksomraade", "EARoot/EA2/EA1/EA2/EA17/EA1/EA2/EA1620.htm", "5.png", "E1811", "0", "", "Class0","{BCC733B6-5A8E-4dd8-A403-4BDE47C71CE8}");
+tocTab[tocTab.length] = new Array("0.2.1.2.17.1.2:3", "", "«CodeList» Material", "EARoot/EA2/EA1/EA2/EA17/EA1/EA2/EA1621.htm", "5.png", "E1810", "0", "", "Class0","{3285D22A-9B36-4dc5-B119-2D2F1F952724}");
+tocTab[tocTab.length] = new Array("0.2.1.2.17.1.2:4", "", "«FeatureType» RabattElement", "EARoot/EA2/EA1/EA2/EA17/EA1/EA2/EA1622.htm", "5.png", "E1812", "0", "", "Class0","{DBE5A76C-3357-445f-9C3D-B53127922A6D}");
+tocTab[tocTab.length] = new Array("0.2.1.2.17.1.2:5", "", "«CodeList» RabattUtforming", "EARoot/EA2/EA1/EA2/EA17/EA1/EA2/EA1623.htm", "5.png", "E1813", "0", "", "Class0","{EC27B554-375B-4000-91FF-E53006137738}");
