@@ -1,0 +1,1593 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:fmget="https://skjema.atlas.vegvesen.no/r000/fagmodellgeoteknikk/0.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:lv="https://skjema.atlas.vegvesen.no/r000/svvleveranse/1.0" xmlns:svvli="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/fagmodellgeoteknikk/0.1" version="0.1">
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/svvleveranse/1.0"/>
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="Avstiving" substitutionGroup="gml:AbstractObject" type="fmget:AvstivingType"/>
+  <complexType name="AvstivingType">
+    <choice>
+      <element name="forankringsstag">
+        <complexType>
+          <complexContent>
+            <extension base="gml:AbstractFeatureMemberType">
+              <sequence minOccurs="0">
+                <element ref="fmget:Forankringsstag"/>
+              </sequence>
+              <attributeGroup ref="gml:AssociationAttributeGroup"/>
+            </extension>
+          </complexContent>
+        </complexType>
+      </element>
+      <element name="innvendigAvstiving">
+        <complexType>
+          <complexContent>
+            <extension base="gml:AbstractFeatureMemberType">
+              <sequence minOccurs="0">
+                <element ref="fmget:InnvendigAvstiving"/>
+              </sequence>
+              <attributeGroup ref="gml:AssociationAttributeGroup"/>
+            </extension>
+          </complexContent>
+        </complexType>
+      </element>
+    </choice>
+  </complexType>
+  <complexType name="AvstivingPropertyType">
+    <sequence>
+      <element ref="fmget:Avstiving"/>
+    </sequence>
+  </complexType>
+  <element name="BergsikringBergskjaering" substitutionGroup="fmget:Bergskjaering" type="fmget:BergsikringBergskjaeringType">
+    <annotation>
+      <documentation>Område/felt i tunnel eller bergskjæring i dagen som er sikra med nett, bolter etc.</documentation>
+    </annotation>
+  </element>
+  <complexType name="BergsikringBergskjaeringType">
+    <complexContent>
+      <extension base="fmget:BergskjaeringType">
+        <sequence>
+          <element minOccurs="0" name="areal" type="double">
+            <annotation>
+              <documentation>Angir areal av sikringsfeltet.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="høydeOverVeg" type="double">
+            <annotation>
+              <documentation>Angir største høyde til overkant av bergsikring.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="etableringsår" type="integer">
+            <annotation>
+              <documentation>Angir hvilket år vegobjektet ble etablert på stedet.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="adkomst" type="gml:CodeType">
+            <annotation>
+              <documentation>Beskriver hvordan man får adkomst til vegobjektet for vedlikehold.</documentation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmigeo_AdkomstBergsikring.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="plassering" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir sikringsfeltets plassering.</documentation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmigeo_PlasseringBergsikring.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="eier" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvem som er eier av vegobjektet.</documentation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmigeo_EierBergsikring.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="lengde" type="double">
+            <annotation>
+              <documentation>Angir total lengde av sikringsfelt.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="prosjektreferanse" type="string">
+            <annotation>
+              <documentation>Referanse til prosjekt. Det benyttes samme prosjektreferanse som på tilhørende Veganlegg (VT30). Benyttes for lettere å kunne skille nye data fra eksisterende data i NVDB.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="prosjektInternObjektID" type="string">
+            <annotation>
+              <documentation>Objektmerking. Unik innenfor tilhørende vegprosjekt.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="tilleggsinformasjon" type="string">
+            <annotation>
+              <documentation>Supplerende informasjon om vegobjektet som ikke framkommer direkte av andre egenskapstyper.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="vedlikeholdsansvarlig" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvem som er ansvarlig for vedlikehold av vegobjektet.</documentation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmigeo_VedlikeholdsansvarligBergsikring.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="fanggroeft">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmget:Fanggroeft"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="sikring">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmget:Sikring"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BergsikringBergskjaeringPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:BergsikringBergskjaering"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="BergsikringTunnel" substitutionGroup="fmget:TiltakITunnel" type="fmget:BergsikringTunnelType">
+    <annotation>
+      <documentation>Område/felt i tunnel eller bergskjæring i dagen som er sikra med nett, bolter etc.</documentation>
+    </annotation>
+  </element>
+  <complexType name="BergsikringTunnelType">
+    <complexContent>
+      <extension base="fmget:TiltakITunnelType">
+        <sequence>
+          <element minOccurs="0" name="areal" type="double">
+            <annotation>
+              <documentation>Angir areal av sikringsfeltet.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="etableringsår" type="integer">
+            <annotation>
+              <documentation>Angir hvilket år vegobjektet ble etablert på stedet.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="adkomst" type="gml:CodeType">
+            <annotation>
+              <documentation>Beskriver hvordan man får adkomst til vegobjektet for vedlikehold.</documentation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmigeo_AdkomstBergsikring.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="plassering" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir sikringsfeltets plassering.</documentation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmigeo_PlasseringBergsikring.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="eier" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvem som er eier av vegobjektet.</documentation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmigeo_EierBergsikring.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="høydeOverVeg" type="double">
+            <annotation>
+              <documentation>Angir største høyde til overkant av bergsikring.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="lengde" type="double">
+            <annotation>
+              <documentation>Angir total lengde av sikringsfelt.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="prosjektreferanse" type="string">
+            <annotation>
+              <documentation>Referanse til prosjekt. Det benyttes samme prosjektreferanse som på tilhørende Veganlegg (VT30). Benyttes for lettere å kunne skille nye data fra eksisterende data i NVDB.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="prosjektInternObjektID" type="string">
+            <annotation>
+              <documentation>Objektmerking. Unik innenfor tilhørende vegprosjekt.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="tilleggsinformasjon" type="string">
+            <annotation>
+              <documentation>Supplerende informasjon om vegobjektet som ikke framkommer direkte av andre egenskapstyper.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="vedlikeholdsansvarlig" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvem som er ansvarlig for vedlikehold av vegobjektet.</documentation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmigeo_VedlikeholdsansvarligBergsikring.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="sikring">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmget:Sikring"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BergsikringTunnelPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:BergsikringTunnel"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Bergskjaering" substitutionGroup="fmget:TiltakElement" type="fmget:BergskjaeringType"/>
+  <complexType name="BergskjaeringType">
+    <complexContent>
+      <extension base="fmget:TiltakElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BergskjaeringPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Bergskjaering"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="BerguttakBergskjaering" substitutionGroup="fmget:Bergskjaering" type="fmget:BerguttakBergskjaeringType"/>
+  <complexType name="BerguttakBergskjaeringType">
+    <complexContent>
+      <extension base="fmget:BergskjaeringType">
+        <sequence>
+          <element minOccurs="0" name="metode" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmigeo_TypeBerguttak.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BerguttakBergskjaeringPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:BerguttakBergskjaering"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="BerguttakTunnel" substitutionGroup="fmget:TiltakITunnel" type="fmget:BerguttakTunnelType"/>
+  <complexType name="BerguttakTunnelType">
+    <complexContent>
+      <extension base="fmget:TiltakITunnelType">
+        <sequence>
+          <element minOccurs="0" name="type" type="gml:CodeType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BerguttakTunnelPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:BerguttakTunnel"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Bjelkestengsler" substitutionGroup="fmget:TiltakElement" type="fmget:BjelkestengslerType"/>
+  <complexType name="BjelkestengslerType">
+    <complexContent>
+      <extension base="fmget:TiltakElementType">
+        <sequence>
+          <element minOccurs="0" name="material" type="string"/>
+          <element minOccurs="0" name="type" type="string"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BjelkestengslerPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Bjelkestengsler"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Bolter" substitutionGroup="fmget:Sikring" type="fmget:BolterType"/>
+  <complexType name="BolterType">
+    <complexContent>
+      <extension base="fmget:SikringType">
+        <sequence>
+          <element minOccurs="0" name="antall" type="integer"/>
+          <element minOccurs="0" name="type" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmigeo_TypeBolt.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="diameter" type="double"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BolterPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Bolter"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="BoredePeler" substitutionGroup="gml:AbstractFeature" type="fmget:BoredePelerType"/>
+  <complexType name="BoredePelerType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element minOccurs="0" name="boremetode" type="string"/>
+          <element minOccurs="0" name="borkrone" type="string"/>
+          <element minOccurs="0" name="innboringIBerg" type="double"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BoredePelerPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:BoredePeler"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Erosjonssikring" substitutionGroup="fmget:TiltakElement" type="fmget:ErosjonssikringType"/>
+  <complexType name="ErosjonssikringType">
+    <complexContent>
+      <extension base="fmget:TiltakElementType">
+        <sequence>
+          <element minOccurs="0" name="bruksområder" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmget_ErosjonssikringBruksomraade.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="type" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmget_ErosjonssikringsType.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="vannoverdekning" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmget_Vannoverdekning.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ErosjonssikringPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Erosjonssikring"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Etterinjeksjon" substitutionGroup="fmget:Injeksjon" type="fmget:EtterinjeksjonType"/>
+  <complexType name="EtterinjeksjonType">
+    <complexContent>
+      <extension base="fmget:InjeksjonType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="EtterinjeksjonPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Etterinjeksjon"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="FagmodellGeoteknikk" substitutionGroup="lv:Fagmodell" type="fmget:FagmodellGeoteknikkType"/>
+  <complexType name="FagmodellGeoteknikkType">
+    <complexContent>
+      <extension base="lv:FagmodellType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="geoteknikkElementSamling">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmget:GeoteknikkElementSamling"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="geoteknikkElementElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmget:GeoteknikkElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="FagmodellGeoteknikkPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:FagmodellGeoteknikk"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="Fanggroeft" substitutionGroup="svvli:VU053PhysicalElement" type="fmget:FanggroeftType"/>
+  <complexType abstract="true" name="FanggroeftType">
+    <complexContent>
+      <extension base="svvli:VU053PhysicalElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="FanggroeftPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Fanggroeft"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Forankringsstag" substitutionGroup="gml:AbstractFeature" type="fmget:ForankringsstagType"/>
+  <complexType name="ForankringsstagType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element minOccurs="0" name="stagtype" type="integer"/>
+          <element minOccurs="0" name="typeBorkrone" type="integer"/>
+          <element minOccurs="0" name="diameterBorkrone" type="integer"/>
+          <element minOccurs="0" name="forankringslengde" type="integer"/>
+          <element minOccurs="0" name="injeksjonslengde" type="integer"/>
+          <element minOccurs="0" name="frilengde" type="integer"/>
+          <element minOccurs="0" name="dimensjonerendeLevetid" type="integer"/>
+          <element minOccurs="0" name="dimensjonerendeKapasitet" type="integer"/>
+          <element minOccurs="0" name="prøvelast" type="integer"/>
+          <element minOccurs="0" name="låselast" type="integer"/>
+          <element minOccurs="0" name="avstiving" type="fmget:AvstivingPropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ForankringsstagPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Forankringsstag"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Forinjeksjon" substitutionGroup="fmget:Injeksjon" type="fmget:ForinjeksjonType"/>
+  <complexType name="ForinjeksjonType">
+    <complexContent>
+      <extension base="fmget:InjeksjonType">
+        <sequence>
+          <element minOccurs="0" name="type" type="string"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ForinjeksjonPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Forinjeksjon"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Gabioner" substitutionGroup="fmget:Stoettekonstruksjoner" type="fmget:GabionerType"/>
+  <complexType name="GabionerType">
+    <complexContent>
+      <extension base="fmget:StoettekonstruksjonerType">
+        <sequence>
+          <element minOccurs="0" name="bredde" type="double"/>
+          <element minOccurs="0" name="maskevidde" type="double"/>
+          <element minOccurs="0" name="steinstoerrelse" type="string"/>
+          <element minOccurs="0" name="helning" type="double"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GabionerPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Gabioner"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="GeoteknikkElement" substitutionGroup="svvli:VU053PhysicalElement" type="fmget:GeoteknikkElementType"/>
+  <complexType name="GeoteknikkElementType">
+    <complexContent>
+      <extension base="svvli:VU053PhysicalElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GeoteknikkElementPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:GeoteknikkElement"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="GeoteknikkElementSamling" substitutionGroup="gml:AbstractFeature" type="fmget:GeoteknikkElementSamlingType"/>
+  <complexType abstract="true" name="GeoteknikkElementSamlingType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GeoteknikkElementSamlingPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:GeoteknikkElementSamling"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="GraveplanerForByggegrop" substitutionGroup="fmget:TiltakElement" type="fmget:GraveplanerForByggegropType"/>
+  <complexType name="GraveplanerForByggegropType">
+    <complexContent>
+      <extension base="fmget:TiltakElementType">
+        <sequence>
+          <element minOccurs="0" name="skraaningshelning" type="double"/>
+          <element minOccurs="0" name="nivaaforplanum" type="integer"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GraveplanerForByggegropPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:GraveplanerForByggegrop"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Grunnforsterkning" substitutionGroup="fmget:TiltakElement" type="fmget:GrunnforsterkningType"/>
+  <complexType name="GrunnforsterkningType">
+    <complexContent>
+      <extension base="fmget:TiltakElementType">
+        <sequence>
+          <element minOccurs="0" name="type" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmget_GrunnforsterkningType.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="mønster" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmget_MoensterType.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="innblandingssystem" type="string"/>
+          <element minOccurs="0" name="blandingsforhold" type="string"/>
+          <element minOccurs="0" name="diameter" type="double"/>
+          <element minOccurs="0" name="helning" type="double"/>
+          <element minOccurs="0" name="lengde" type="double"/>
+          <element minOccurs="0" name="forboringslengde" type="double"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GrunnforsterkningPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Grunnforsterkning"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Injeksjon" substitutionGroup="fmget:TiltakITunnel" type="fmget:InjeksjonType"/>
+  <complexType name="InjeksjonType">
+    <complexContent>
+      <extension base="fmget:TiltakITunnelType">
+        <sequence>
+          <element minOccurs="0" name="diameter" type="double"/>
+          <element minOccurs="0" name="dybde" type="double"/>
+          <element minOccurs="0" name="injeksjonsmiddel" type="string"/>
+          <element minOccurs="0" name="trykk" type="double"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="InjeksjonPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Injeksjon"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Innstallasjonsmetode" substitutionGroup="gml:AbstractObject" type="fmget:InnstallasjonsmetodeType"/>
+  <complexType name="InnstallasjonsmetodeType">
+    <choice>
+      <element name="rammedePeler">
+        <complexType>
+          <complexContent>
+            <extension base="gml:AbstractFeatureMemberType">
+              <sequence minOccurs="0">
+                <element ref="fmget:RammedePeler"/>
+              </sequence>
+              <attributeGroup ref="gml:AssociationAttributeGroup"/>
+            </extension>
+          </complexContent>
+        </complexType>
+      </element>
+      <element name="boredePeler">
+        <complexType>
+          <complexContent>
+            <extension base="gml:AbstractFeatureMemberType">
+              <sequence minOccurs="0">
+                <element ref="fmget:BoredePeler"/>
+              </sequence>
+              <attributeGroup ref="gml:AssociationAttributeGroup"/>
+            </extension>
+          </complexContent>
+        </complexType>
+      </element>
+    </choice>
+  </complexType>
+  <complexType name="InnstallasjonsmetodePropertyType">
+    <sequence>
+      <element ref="fmget:Innstallasjonsmetode"/>
+    </sequence>
+  </complexType>
+  <element name="InnvendigAvstiving" substitutionGroup="gml:AbstractFeature" type="fmget:InnvendigAvstivingType"/>
+  <complexType name="InnvendigAvstivingType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element minOccurs="0" name="profiltype" type="string"/>
+          <element minOccurs="0" name="dimensjon" type="double"/>
+          <element minOccurs="0" name="stålkvalitet" type="string"/>
+          <element minOccurs="0" name="lengde" type="double"/>
+          <element minOccurs="0" name="dimensjonerendeLevetid" type="integer"/>
+          <element minOccurs="0" name="avstiving" type="fmget:AvstivingPropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="InnvendigAvstivingPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:InnvendigAvstiving"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="JordArmertmur" substitutionGroup="fmget:Stoettekonstruksjoner" type="fmget:JordArmertmurType"/>
+  <complexType name="JordArmertmurType">
+    <complexContent>
+      <extension base="fmget:StoettekonstruksjonerType">
+        <sequence>
+          <element minOccurs="0" name="materialtypejordarmering" type="string"/>
+          <element minOccurs="0" name="forankringslengde" type="double"/>
+          <element minOccurs="0" name="forblending" type="string"/>
+          <element minOccurs="0" name="fronthelning" type="double"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="JordArmertmurPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:JordArmertmur"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Jordnagling" substitutionGroup="fmget:Stoettekonstruksjoner" type="fmget:JordnaglingType"/>
+  <complexType name="JordnaglingType">
+    <complexContent>
+      <extension base="fmget:StoettekonstruksjonerType">
+        <sequence>
+          <element minOccurs="0" name="type" type="string"/>
+          <element minOccurs="0" name="dimensjon" type="double"/>
+          <element minOccurs="0" name="forankringslengde" type="double"/>
+          <element minOccurs="0" name="installasjonsvinkel" type="double"/>
+          <element minOccurs="0" name="horisontalavstand" type="double"/>
+          <element minOccurs="0" name="forankringskapasitet" type="string"/>
+          <element minOccurs="0" name="forblending" type="string"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="JordnaglingPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Jordnagling"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Lettfyllinger" substitutionGroup="fmget:TiltakElement" type="fmget:LettfyllingerType"/>
+  <complexType name="LettfyllingerType">
+    <complexContent>
+      <extension base="fmget:TiltakElementType">
+        <sequence>
+          <element minOccurs="0" name="volum" type="double"/>
+          <element minOccurs="0" name="type" type="string"/>
+          <element minOccurs="0" name="tyngdetetthet" type="string"/>
+          <element minOccurs="0" name="ISO fraksjon" type="string"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="LettfyllingerPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Lettfyllinger"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Masseutskifting" substitutionGroup="fmget:TiltakElement" type="fmget:MasseutskiftingType"/>
+  <complexType name="MasseutskiftingType">
+    <complexContent>
+      <extension base="fmget:TiltakElementType">
+        <sequence>
+          <element minOccurs="0" name="type" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmget_TypeNyeMasser.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="maksimalUtskiftingsdybde" type="double"/>
+          <element minOccurs="0" name="plasering" type="string"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="MasseutskiftingPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Masseutskifting"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Nett" substitutionGroup="fmget:Sikring" type="fmget:NettType"/>
+  <complexType name="NettType">
+    <complexContent>
+      <extension base="fmget:SikringType">
+        <sequence>
+          <element minOccurs="0" name="type" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmigeo_TypeNett.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="wiredimensjon" type="double"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="NettPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Nett"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Peler" substitutionGroup="fmget:TiltakElement" type="fmget:PelerType"/>
+  <complexType name="PelerType">
+    <complexContent>
+      <extension base="fmget:TiltakElementType">
+        <sequence>
+          <element minOccurs="0" name="type" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmget_PelerType.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="installasjonsmetode" type="fmget:InnstallasjonsmetodePropertyType"/>
+          <element minOccurs="0" name="dimensjon" type="integer"/>
+          <element minOccurs="0" name="lengde" type="double"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="PelerPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Peler"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="PermanentSpunt" substitutionGroup="fmget:Stoettekonstruksjoner" type="fmget:PermanentSpuntType"/>
+  <complexType name="PermanentSpuntType">
+    <complexContent>
+      <extension base="fmget:StoettekonstruksjonerType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="PermanentSpuntPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:PermanentSpunt"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="RammedePeler" substitutionGroup="gml:AbstractFeature" type="fmget:RammedePelerType"/>
+  <complexType name="RammedePelerType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element minOccurs="0" name="rammeenergi" type="integer"/>
+          <element minOccurs="0" name="stoppkriterium" type="integer"/>
+          <element minOccurs="0" name="innmeislingIBerg" type="integer"/>
+          <element minOccurs="0" name="etteramming" type="integer"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RammedePelerPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:RammedePeler"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Roervegger" substitutionGroup="fmget:Stoettekonstruksjoner" type="fmget:RoerveggerType"/>
+  <complexType name="RoerveggerType">
+    <complexContent>
+      <extension base="fmget:StoettekonstruksjonerType">
+        <sequence>
+          <element minOccurs="0" name="type" type="string"/>
+          <element minOccurs="0" name="dimensjon" type="double"/>
+          <element minOccurs="0" name="lengde" type="double"/>
+          <element minOccurs="0" name="dimensjonerendeLevetid" type="integer"/>
+          <element minOccurs="0" name="avstiving" type="fmget:AvstivingPropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RoerveggerPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Roervegger"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="Sikring" substitutionGroup="svvli:VU053PhysicalElement" type="fmget:SikringType"/>
+  <complexType abstract="true" name="SikringType">
+    <complexContent>
+      <extension base="svvli:VU053PhysicalElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SikringPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Sikring"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="SkredIBrattTerreng" substitutionGroup="fmget:TiltakElement" type="fmget:SkredIBrattTerrengType"/>
+  <complexType name="SkredIBrattTerrengType">
+    <complexContent>
+      <extension base="fmget:TiltakElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SkredIBrattTerrengPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:SkredIBrattTerreng"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="SkredVarslingOvervaakning" substitutionGroup="fmget:Skredsikring" type="fmget:SkredVarslingOvervaakningType">
+    <annotation>
+      <documentation>Område som blir overvåket med hensyn på skred.</documentation>
+    </annotation>
+  </element>
+  <complexType name="SkredVarslingOvervaakningType">
+    <complexContent>
+      <extension base="fmget:SkredsikringType">
+        <sequence>
+          <element minOccurs="0" name="typeNaturfare" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvilken type naturfare overvåkning/varsling gjelder for.</documentation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmigeo_TypeNaturfare.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="overvåkningstype" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir type overvåkning.</documentation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmigeo_Overvaakningstype.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="varslingPåVeg" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir type varsling som er satt opp synlig for trafikanter.</documentation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmigeo_VarslingPaaVeg.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="prosjektInternObjektID" type="string">
+            <annotation>
+              <documentation>Objektmerking. Unik innenfor tilhørende vegprosjekt.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="prosjektreferanse" type="string">
+            <annotation>
+              <documentation>Referanse til prosjekt. Det benyttes samme prosjektreferanse som på tilhørende Veganlegg (VT30). Benyttes for lettere å kunne skille nye data fra eksisterende data i NVDB.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="tilleggsinformasjon" type="string">
+            <annotation>
+              <documentation>Supplerende informasjon om vegobjektet som ikke framkommer direkte av andre egenskapstyper.</documentation>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SkredVarslingOvervaakningPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:SkredVarslingOvervaakning"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="SkreddsikringFanggroeft" substitutionGroup="fmget:Skredsikring" type="fmget:SkreddsikringFanggroeftType"/>
+  <complexType name="SkreddsikringFanggroeftType">
+    <complexContent>
+      <extension base="fmget:SkredsikringType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="fanggroeft">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmget:Fanggroeft"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SkreddsikringFanggroeftPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:SkreddsikringFanggroeft"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="SkredmagasinFanggroeft" substitutionGroup="fmget:Fanggroeft" type="fmget:SkredmagasinFanggroeftType"/>
+  <complexType name="SkredmagasinFanggroeftType">
+    <complexContent>
+      <extension base="fmget:FanggroeftType">
+        <sequence>
+          <element minOccurs="0" name="type" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvilken type magasin det er tale om.</documentation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmigeo_TypeSkredmagasinFanggroeft.gml&#13;
+</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="lengde" type="double">
+            <annotation>
+              <documentation>Lengde av magasinet langs vegretningen.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="bredde" type="double">
+            <annotation>
+              <documentation>Gjennomsnittlig bredde av magasinet på tvers av vegretningen.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="magasinvolum" type="double">
+            <annotation>
+              <documentation>Angir hvor stort volum med masser magasinet kan ta opp.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="adkomst" type="gml:CodeType">
+            <annotation>
+              <documentation>Beskriver hvordan man får adkomst til vegobjektet for vedlikehold.</documentation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmigeo_AdkomstSkredmagasinFanggroeft.gml&#13;
+</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="etableringsår" type="integer">
+            <annotation>
+              <documentation>Angir hvilket år vegobjektet ble etablert på stedet.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="dybdeUnderVegkant" type="double">
+            <annotation>
+              <documentation>Høydeforskjell mellom nærmeste vegkant og bunn av magasin.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="prosjektInternObjektID" type="string">
+            <annotation>
+              <documentation>Objektmerking. Unik innenfor tilhørende vegprosjekt.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="prosjektreferanse" type="string">
+            <annotation>
+              <documentation>Referanse til prosjekt. Det benyttes samme prosjektreferanse som på tilhørende Veganlegg (VT30). Benyttes for lettere å kunne skille nye data fra eksisterende data i NVDB.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="tilleggsinformasjon" type="string">
+            <annotation>
+              <documentation>Supplerende informasjon om vegobjektet som ikke framkommer direkte av andre egenskapstyper.</documentation>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SkredmagasinFanggroeftPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:SkredmagasinFanggroeft"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Skredoverbygg" substitutionGroup="fmget:Skredsikring" type="fmget:SkredoverbyggType">
+    <annotation>
+      <documentation>Konstruksjon som omslutter vegen for å beskytte den mot skred. Tak og vegg inn mot skråning er massive. Vegg ut fra skråning er åpen eller ev. tettet med lettere materiale. Se også utgått Håndbok 100.</documentation>
+    </annotation>
+  </element>
+  <complexType name="SkredoverbyggType">
+    <complexContent>
+      <extension base="fmget:SkredsikringType">
+        <sequence>
+          <element minOccurs="0" name="type" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvilken type skredoverbygg det er tale om.</documentation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmigeo_TypeSkredoverbygg.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="lengde" type="double">
+            <annotation>
+              <documentation>Angir lengde av vegobjektet.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="etableringsår" type="integer">
+            <annotation>
+              <documentation>Angir hvilket år vegobjektet ble etablert på stedet.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="brutusID" type="string">
+            <annotation>
+              <documentation>Gir referanse til brudatabanken.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="merknad" type="string">
+            <annotation>
+              <documentation>Permanent merknad til aktuell forekomst.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="prosjektreferanse" type="string">
+            <annotation>
+              <documentation>Referanse til prosjekt. Det benyttes samme prosjektreferanse som på tilhørende Veganlegg (VT30). Benyttes for lettere å kunne skille nye data fra eksisterende data i NVDB.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="prosjektInternObjektID" type="string">
+            <annotation>
+              <documentation>Objektmerking. Unik innenfor tilhørende vegprosjekt.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="tunnelnummer" type="string">
+            <annotation>
+              <documentation>Gir unikt nummer for tunnel/skredoverbygg, benyttes av Plania.</documentation>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SkredoverbyggPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Skredoverbygg"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Skredsikring" substitutionGroup="fmget:SkredIBrattTerreng" type="fmget:SkredsikringType"/>
+  <complexType name="SkredsikringType">
+    <complexContent>
+      <extension base="fmget:SkredIBrattTerrengType">
+        <sequence>
+          <element minOccurs="0" name="eier"/>
+          <element minOccurs="0" name="vedlikeholdsansvarlig"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SkredsikringPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Skredsikring"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Skredutloesningstiltak" substitutionGroup="fmget:Skredsikring" type="fmget:SkredutloesningstiltakType">
+    <annotation>
+      <documentation>Skredutsatt terreng som er sikret av en eller flere installasjoner i løsneområdet der skred løses ut kunstig. Hver enkelt konstruksjon kartlegges som skredteknisk objekt.</documentation>
+    </annotation>
+  </element>
+  <complexType name="SkredutloesningstiltakType">
+    <complexContent>
+      <extension base="fmget:SkredsikringType">
+        <sequence>
+          <element minOccurs="0" name="antallEnheter" type="integer">
+            <annotation>
+              <documentation>Antall enheter for skredutløsning.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="etableringsår" type="integer">
+            <annotation>
+              <documentation>Angir hvilket år vegobjektet ble etablert på stedet.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="type" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir type skredutløsning.</documentation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmigeo_TypeSkredutloesningstiltak.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="prosjektInternObjektID" type="string">
+            <annotation>
+              <documentation>Objektmerking. Unik innenfor tilhørende vegprosjekt.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="prosjektreferanse" type="string">
+            <annotation>
+              <documentation>Referanse til prosjekt. Det benyttes samme prosjektreferanse som på tilhørende Veganlegg (VT30). Benyttes for lettere å kunne skille nye data fra eksisterende data i NVDB.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="tilleggsinformasjon" type="string">
+            <annotation>
+              <documentation>Supplerende informasjon om vegobjektet som ikke framkommer direkte av andre egenskapstyper.</documentation>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SkredutloesningstiltakPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Skredutloesningstiltak"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Slissevegger" substitutionGroup="fmget:Stoettekonstruksjoner" type="fmget:SlisseveggerType"/>
+  <complexType name="SlisseveggerType">
+    <complexContent>
+      <extension base="fmget:StoettekonstruksjonerType">
+        <sequence>
+          <element minOccurs="0" name="tykkelse" type="double"/>
+          <element minOccurs="0" name="dybde" type="double"/>
+          <element minOccurs="0" name="slurryblanding" type="string"/>
+          <element minOccurs="0" name="betongkvalitet" type="string"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SlisseveggerPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Slissevegger"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Sproeytebetong" substitutionGroup="fmget:Sikring" type="fmget:SproeytebetongType"/>
+  <complexType name="SproeytebetongType">
+    <complexContent>
+      <extension base="fmget:SikringType">
+        <sequence>
+          <element minOccurs="0" name="type" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmigeo_TypeSproeytebetong.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="tykkelse" type="double"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SproeytebetongPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Sproeytebetong"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Spunt" substitutionGroup="fmget:Stoettekonstruksjoner" type="fmget:SpuntType"/>
+  <complexType name="SpuntType">
+    <complexContent>
+      <extension base="fmget:StoettekonstruksjonerType">
+        <sequence>
+          <element minOccurs="0" name="spunttype" type="string"/>
+          <element minOccurs="0" name="spuntlengde" type="double"/>
+          <element minOccurs="0" name="fordyblingIBerg" type="integer"/>
+          <element minOccurs="0" name="korrosjonsbeskyttelse" type="string"/>
+          <element minOccurs="0" name="dimensjonerendeLevetid" type="integer"/>
+          <element minOccurs="0" name="avstiving" type="fmget:AvstivingPropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SpuntPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Spunt"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Steinspranggjerde" substitutionGroup="fmget:Skredsikring" type="fmget:SteinspranggjerdeType"/>
+  <complexType name="SteinspranggjerdeType">
+    <complexContent>
+      <extension base="fmget:SkredsikringType">
+        <sequence>
+          <element minOccurs="0" name="høyde" type="double"/>
+          <element minOccurs="0" name="material" type="string"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SteinspranggjerdePropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Steinspranggjerde"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="StoetteforbygningSnoe" substitutionGroup="fmget:Skredsikring" type="fmget:StoetteforbygningSnoeType">
+    <annotation>
+      <documentation>Installasjoner i løsneområde som hindrer skred i å løsne.</documentation>
+    </annotation>
+  </element>
+  <complexType name="StoetteforbygningSnoeType">
+    <complexContent>
+      <extension base="fmget:SkredsikringType">
+        <sequence>
+          <element minOccurs="0" name="adkomst" type="gml:CodeType">
+            <annotation>
+              <documentation>Beskriver hvordan man får adkomst til vegobjektet for vedlikehold.</documentation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmigeo_AdkomstStoetteforbygningSnoe.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="antallRader" type="integer">
+            <annotation>
+              <documentation>Antall rader med forbygninger i skredsikringen.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="etableringsår" type="integer">
+            <annotation>
+              <documentation>Angir hvilket år vegobjektet ble etablert på stedet.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="høydeSikringselement" type="double">
+            <annotation>
+              <documentation>Angir gjennomsnittlig høyde for forbygningene.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="sikraAreal" type="double">
+            <annotation>
+              <documentation>Angir areal for området skredsikringen dekker.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="totaltAntall" type="integer">
+            <annotation>
+              <documentation>Totalt antall forbygninger i skredsikringen.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="type" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir type forbygning.</documentation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmigeo_TypeStoetteforbygningSnoe.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="prosjektInternObjektID" type="string">
+            <annotation>
+              <documentation>Objektmerking. Unik innenfor tilhørende vegprosjekt.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="prosjektreferanse" type="string">
+            <annotation>
+              <documentation>Referanse til prosjekt. Det benyttes samme prosjektreferanse som på tilhørende Veganlegg (VT30). Benyttes for lettere å kunne skille nye data fra eksisterende data i NVDB.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="tilleggsinformasjon" type="string">
+            <annotation>
+              <documentation>Supplerende informasjon om vegobjektet som ikke framkommer direkte av andre egenskapstyper.</documentation>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="StoetteforbygningSnoePropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:StoetteforbygningSnoe"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Stoettekonstruksjoner" substitutionGroup="fmget:TiltakElement" type="fmget:StoettekonstruksjonerType"/>
+  <complexType name="StoettekonstruksjonerType">
+    <complexContent>
+      <extension base="fmget:TiltakElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="StoettekonstruksjonerPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Stoettekonstruksjoner"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Tiltak" substitutionGroup="fmget:GeoteknikkElementSamling" type="fmget:TiltakType"/>
+  <complexType name="TiltakType">
+    <complexContent>
+      <extension base="fmget:GeoteknikkElementSamlingType">
+        <sequence>
+          <element minOccurs="0" name="geotekniskKategori" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmget_GeotekniskKategori.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="tiltakElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmget:TiltakElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="TiltakPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Tiltak"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="TiltakElement" substitutionGroup="fmget:GeoteknikkElement" type="fmget:TiltakElementType"/>
+  <complexType name="TiltakElementType">
+    <complexContent>
+      <extension base="fmget:GeoteknikkElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="TiltakElementPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:TiltakElement"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="TiltakITunnel" substitutionGroup="fmget:TiltakElement" type="fmget:TiltakITunnelType">
+    <annotation>
+      <documentation>Sted hvor veg passerer gjennom jord/fjell eller under større lokk. Består av ett eller flere tunnelløp.</documentation>
+    </annotation>
+  </element>
+  <complexType name="TiltakITunnelType">
+    <complexContent>
+      <extension base="fmget:TiltakElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="TiltakITunnelPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:TiltakITunnel"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Toerrmur" substitutionGroup="fmget:Stoettekonstruksjoner" type="fmget:ToerrmurType"/>
+  <complexType name="ToerrmurType">
+    <complexContent>
+      <extension base="fmget:StoettekonstruksjonerType">
+        <sequence>
+          <element minOccurs="0" name="forblending" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmget_Forblending.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="fundamentering" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmget_Fundamentering.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="bruksområde" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmget_StoettekonstruksjonerBruksomraade.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="høyde" type="double"/>
+          <element minOccurs="0" name="tykkelse" type="double"/>
+          <element minOccurs="0" name="lengde" type="double"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ToerrmurPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Toerrmur"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="TyngreSikring" substitutionGroup="fmget:Sikring" type="fmget:TyngreSikringType"/>
+  <complexType name="TyngreSikringType">
+    <complexContent>
+      <extension base="fmget:SikringType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="TyngreSikringPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:TyngreSikring"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Voll" substitutionGroup="fmget:Skredsikring" type="fmget:VollType"/>
+  <complexType name="VollType">
+    <complexContent>
+      <extension base="fmget:SkredsikringType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="VollPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Voll"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Voll" substitutionGroup="fmget:TiltakElement" type="fmget:VollType"/>
+  <complexType name="VollType">
+    <complexContent>
+      <extension base="fmget:TiltakElementType">
+        <sequence>
+          <element minOccurs="0" name="bruksomraade" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmget_BruksomraadeVoll.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="materialtype" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmget_MaterialtypeVoll.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="lengde" type="double"/>
+          <element minOccurs="0" name="breddeFot" type="double"/>
+          <element minOccurs="0" name="breddeKrone" type="double"/>
+          <element minOccurs="0" name="høyde,gjennomsnitt" type="double"/>
+          <element minOccurs="0" name="høyde,maks" type="double"/>
+          <element minOccurs="0" name="helning,gjennomsnitt" type="double"/>
+          <element minOccurs="0" name="helning,maks" type="double"/>
+          <element minOccurs="0" name="retningsendring" type="double"/>
+          <element minOccurs="0" name="adkomst" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmget_AdkomstVoll.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="etableringsår" type="integer"/>
+          <element minOccurs="0" name="tilleggsinformasjon" type="string"/>
+          <element minOccurs="0" name="prosjektreferanse" type="string"/>
+          <element minOccurs="0" name="eier" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmget_EierVoll.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="vedlikeholdsansvarlig" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmget_VedlikeholdsansvarligVoll.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="VollPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmget:Voll"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>
