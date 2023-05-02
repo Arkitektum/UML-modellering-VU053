@@ -24,7 +24,7 @@ Fagmodell
 		* Kodelister i GML format, alle kodelister som tilhører Gatemoebler starter med "fmgtm" i Github
 	* Geoteknikk
 		* Ny modell [xsd]
-		* Kodelister i GML format, alle kodelister som tilhører Gatemoebler starter med "fmget" i Github
+		* Kodelister i GML format, alle kodelister som tilhører Geoteknikk starter med "fmget" i Github
 ----------
 v1_0_0 ---> xsd_programtesting\v2.0_20230413
 Main Structure
