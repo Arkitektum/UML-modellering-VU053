@@ -350,8 +350,8 @@
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
-  <element name="KoplingElement" substitutionGroup="fmva:VannOgAvloepElement" type="fmva:KoplingElementType"/>
-  <complexType name="KoplingElementType">
+  <element abstract="true" name="KoplingElement" substitutionGroup="fmva:VannOgAvloepElement" type="fmva:KoplingElementType"/>
+  <complexType abstract="true" name="KoplingElementType">
     <complexContent>
       <extension base="fmva:VannOgAvloepElementType">
         <sequence>
@@ -469,7 +469,7 @@
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
-  <element name="LedningElement" substitutionGroup="fmva:VannOgAvloepElement" type="fmva:LedningElementType">
+  <element abstract="true" name="LedningElement" substitutionGroup="fmva:VannOgAvloepElement" type="fmva:LedningElementType">
     <annotation>
       <documentation>Utvikler av VA_ledning fra SOSI 4.6 og NVDB 77 'Rørledning'</documentation>
       <appinfo>
@@ -478,7 +478,7 @@
       </appinfo>
     </annotation>
   </element>
-  <complexType name="LedningElementType">
+  <complexType abstract="true" name="LedningElementType">
     <complexContent>
       <extension base="fmva:VannOgAvloepElementType">
         <sequence>
@@ -691,8 +691,8 @@ enhet [mm]</documentation>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
-  <element name="Nettstasjon" substitutionGroup="fmva:KoplingElement" type="fmva:NettstasjonType"/>
-  <complexType name="NettstasjonType">
+  <element abstract="true" name="Nettstasjon" substitutionGroup="fmva:KoplingElement" type="fmva:NettstasjonType"/>
+  <complexType abstract="true" name="NettstasjonType">
     <complexContent>
       <extension base="fmva:KoplingElementType">
         <sequence/>
@@ -1119,8 +1119,8 @@ enhet [mm]</documentation>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
-  <element name="VannOgAvloepElement" substitutionGroup="svvli:VU053Feature" type="fmva:VannOgAvloepElementType"/>
-  <complexType name="VannOgAvloepElementType">
+  <element abstract="true" name="VannOgAvloepElement" substitutionGroup="svvli:VU053Feature" type="fmva:VannOgAvloepElementType"/>
+  <complexType abstract="true" name="VannOgAvloepElementType">
     <complexContent>
       <extension base="svvli:VU053FeatureType">
         <sequence>

@@ -25,6 +25,9 @@ Fagmodell
 	* Geoteknikk
 		* Ny modell [xsd]
 		* Kodelister i GML format, alle kodelister som tilhører Geoteknikk starter med "fmget" i Github
+	* Vann og Avløp
+		* Endre overordnet element til abstrakt
+			LedningElement, KoplingElement, Nettstasjon, VannOgAvloepElement
 ----------
 v1_0_0 ---> xsd_programtesting\v2.0_20230413
 Main Structure
