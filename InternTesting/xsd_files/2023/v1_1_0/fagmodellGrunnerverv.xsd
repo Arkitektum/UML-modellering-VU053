@@ -28,19 +28,63 @@
       <element ref="fmvrv:Andel"/>
     </sequence>
   </complexType>
-  <element name="Arealressurs" substitutionGroup="svvli:VU053Feature" type="fmvrv:ArealressursType">
+  <element name="ArealressursGrense" substitutionGroup="fmvrv:ArealressursTeiggrense" type="fmvrv:ArealressursGrenseType">
     <annotation>
-      <documentation>AreaResourceSurface: et sammenhengende areal som er tilordnet de samme egenskapsverdiene i henhold til et Arealressursklassifikasjonssystem</documentation>
+      <documentation>AreaResourceBoundary: avgrensing for en eller to arealressursflater
+
+
+-- Definition -- 
+delimitation for one or two area resource surfaces</documentation>
       <appinfo>
         <sc:taggedValue tag="kilde">SOSI</sc:taggedValue>
         <sc:taggedValue tag="referanse">Arealressurs-4.0</sc:taggedValue>
       </appinfo>
     </annotation>
   </element>
-  <complexType name="ArealressursType">
+  <complexType name="ArealressursGrenseType">
     <complexContent>
-      <extension base="svvli:VU053FeatureType">
+      <extension base="fmvrv:ArealressursTeiggrenseType">
         <sequence>
+          <element minOccurs="0" name="avgrensingType" type="gml:CodeType">
+            <annotation>
+              <documentation>delimitationType: informasjon om grense som er henta fra annet datasett
+
+-- Definition -- 
+information relating to boundaries retrieved from other datasets</documentation>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ArealressursGrensePropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmvrv:ArealressursGrense"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="ArealressursTeig" substitutionGroup="gml:AbstractFeature" type="fmvrv:ArealressursTeigType">
+    <annotation>
+      <documentation>En teig er et sammenhengende areal som avgrenses av teiggrense. 
+
+Merknad:
+Teiger skal ikke overlappe hverandre. Naboteiger skal ha delt geometri.
+Matrikkelenheter som består av flere areal som er sammenhengende i bare et punkt er teigdelt etter denne definisjonen.
+
+Merknad 2:
+Matrikkelenheten Anleggseiendom kan ha en kombinasjon av teig(er) på bakken og projeksjoner av volumer over/under bakken. Teigene på bakken registreres som Teig og ikke som Anleggsprojeksjonsflate.</documentation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">SOSI</sc:taggedValue>
+        <sc:taggedValue tag="referanse">Eiendomsinformasjon-4.5</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="ArealressursTeigType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element minOccurs="0" name="takstnummer" type="string"/>
           <element minOccurs="0" name="arealtype" type="gml:CodeType">
             <annotation>
               <documentation>areaType: hovedinndeling etter kriterier for vegetasjon, naturlig drenering og kulturpåvirkning</documentation>
@@ -77,61 +121,59 @@
               </appinfo>
             </annotation>
           </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="teig" type="fmvrv:TeigPropertyType">
+          <element maxOccurs="unbounded" name="tilhoereMatrikkelenhet" type="fmvrv:MatrikkelenhetPropertyType">
             <annotation>
               <appinfo>
-                <reversePropertyName xmlns="http://www.opengis.net/gml/3.2">fmvrv:arealressurs</reversePropertyName>
+                <reversePropertyName xmlns="http://www.opengis.net/gml/3.2">fmvrv:teig</reversePropertyName>
               </appinfo>
             </annotation>
           </element>
-        </sequence>
-      </extension>
-    </complexContent>
-  </complexType>
-  <complexType name="ArealressursPropertyType">
-    <sequence minOccurs="0">
-      <element ref="fmvrv:Arealressurs"/>
-    </sequence>
-    <attributeGroup ref="gml:AssociationAttributeGroup"/>
-    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
-  </complexType>
-  <element name="ArealressursGrense" substitutionGroup="fmvrv:Arealressurs" type="fmvrv:ArealressursGrenseType">
-    <annotation>
-      <documentation>AreaResourceBoundary: avgrensing for en eller to arealressursflater
-
-
--- Definition -- 
-delimitation for one or two area resource surfaces</documentation>
-      <appinfo>
-        <sc:taggedValue tag="kilde">SOSI</sc:taggedValue>
-        <sc:taggedValue tag="referanse">Arealressurs-4.0</sc:taggedValue>
-      </appinfo>
-    </annotation>
-  </element>
-  <complexType name="ArealressursGrenseType">
-    <complexContent>
-      <extension base="fmvrv:ArealressursType">
-        <sequence>
-          <element minOccurs="0" name="avgrensingType" type="gml:CodeType">
-            <annotation>
-              <documentation>delimitationType: informasjon om grense som er henta fra annet datasett
-
--- Definition -- 
-information relating to boundaries retrieved from other datasets</documentation>
-            </annotation>
+          <element maxOccurs="unbounded" minOccurs="0" name="teiggrense">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmvrv:ArealressursTeiggrense"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
           </element>
         </sequence>
       </extension>
     </complexContent>
   </complexType>
-  <complexType name="ArealressursGrensePropertyType">
+  <complexType name="ArealressursTeigPropertyType">
     <sequence minOccurs="0">
-      <element ref="fmvrv:ArealressursGrense"/>
+      <element ref="fmvrv:ArealressursTeig"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
-  <element abstract="true" name="Eiendomsgrense" substitutionGroup="fmvrv:Teiggrense" type="fmvrv:EiendomsgrenseType">
+  <element name="ArealressursTeiggrense" substitutionGroup="svvli:VU053Feature" type="fmvrv:ArealressursTeiggrenseType">
+    <annotation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">SOSI</sc:taggedValue>
+        <sc:taggedValue tag="referanse">Eiendomsinformasjon-4.5</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="ArealressursTeiggrenseType">
+    <complexContent>
+      <extension base="svvli:VU053FeatureType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ArealressursTeiggrensePropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmvrv:ArealressursTeiggrense"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="Eiendomsgrense" substitutionGroup="fmvrv:ArealressursTeiggrense" type="fmvrv:EiendomsgrenseType">
     <annotation>
       <appinfo>
         <sc:taggedValue tag="kilde">SOSI</sc:taggedValue>
@@ -141,7 +183,7 @@ information relating to boundaries retrieved from other datasets</documentation>
   </element>
   <complexType abstract="true" name="EiendomsgrenseType">
     <complexContent>
-      <extension base="fmvrv:TeiggrenseType">
+      <extension base="fmvrv:ArealressursTeiggrenseType">
         <sequence>
           <element minOccurs="0" name="typeGrense" type="gml:CodeType">
             <annotation>
@@ -170,8 +212,8 @@ information relating to boundaries retrieved from other datasets</documentation>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
-  <element name="ErvervetArealElement" substitutionGroup="svvli:VU053Feature" type="fmvrv:ErvervetArealElementType"/>
-  <complexType name="ErvervetArealElementType">
+  <element abstract="true" name="ErvervetArealElement" substitutionGroup="svvli:VU053Feature" type="fmvrv:ErvervetArealElementType"/>
+  <complexType abstract="true" name="ErvervetArealElementType">
     <complexContent>
       <extension base="svvli:VU053FeatureType">
         <sequence>
@@ -180,7 +222,7 @@ information relating to boundaries retrieved from other datasets</documentation>
               <complexContent>
                 <extension base="gml:AbstractFeatureMemberType">
                   <sequence minOccurs="0">
-                    <element ref="fmvrv:Teig"/>
+                    <element ref="fmvrv:ArealressursTeig"/>
                   </sequence>
                   <attributeGroup ref="gml:AssociationAttributeGroup"/>
                 </extension>
@@ -215,36 +257,24 @@ information relating to boundaries retrieved from other datasets</documentation>
               </complexContent>
             </complexType>
           </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="teg">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmvrv:ArealressursTeig"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
           <element maxOccurs="unbounded" minOccurs="0" name="ervervetArealElement">
             <complexType>
               <complexContent>
                 <extension base="gml:AbstractFeatureMemberType">
                   <sequence minOccurs="0">
                     <element ref="fmvrv:ErvervetArealElement"/>
-                  </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
-                </extension>
-              </complexContent>
-            </complexType>
-          </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="teg">
-            <complexType>
-              <complexContent>
-                <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="fmvrv:Teig"/>
-                  </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
-                </extension>
-              </complexContent>
-            </complexType>
-          </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="arealressurs">
-            <complexType>
-              <complexContent>
-                <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="fmvrv:Arealressurs"/>
                   </sequence>
                   <attributeGroup ref="gml:AssociationAttributeGroup"/>
                 </extension>
@@ -309,7 +339,7 @@ information relating to boundaries retrieved from other datasets</documentation>
               <complexContent>
                 <extension base="gml:AbstractFeatureMemberType">
                   <sequence minOccurs="0">
-                    <element ref="fmvrv:Teig"/>
+                    <element ref="fmvrv:ArealressursTeig"/>
                   </sequence>
                   <attributeGroup ref="gml:AssociationAttributeGroup"/>
                 </extension>
@@ -566,108 +596,6 @@ Hjemmelshavere, aktuelle eiere og kontaktinstanser til eiendommer ligger i perso
   <complexType name="ServitutterPropertyType">
     <sequence minOccurs="0">
       <element ref="fmvrv:Servitutter"/>
-    </sequence>
-    <attributeGroup ref="gml:AssociationAttributeGroup"/>
-    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
-  </complexType>
-  <element name="Teig" substitutionGroup="gml:AbstractFeature" type="fmvrv:TeigType">
-    <annotation>
-      <documentation>En teig er et sammenhengende areal som avgrenses av teiggrense. 
-
-Merknad:
-Teiger skal ikke overlappe hverandre. Naboteiger skal ha delt geometri.
-Matrikkelenheter som består av flere areal som er sammenhengende i bare et punkt er teigdelt etter denne definisjonen.
-
-Merknad 2:
-Matrikkelenheten Anleggseiendom kan ha en kombinasjon av teig(er) på bakken og projeksjoner av volumer over/under bakken. Teigene på bakken registreres som Teig og ikke som Anleggsprojeksjonsflate.</documentation>
-      <appinfo>
-        <sc:taggedValue tag="kilde">SOSI</sc:taggedValue>
-        <sc:taggedValue tag="referanse">Eiendomsinformasjon-4.5</sc:taggedValue>
-      </appinfo>
-    </annotation>
-  </element>
-  <complexType name="TeigType">
-    <complexContent>
-      <extension base="gml:AbstractFeatureType">
-        <sequence>
-          <element minOccurs="0" name="takstnummer" type="string"/>
-          <element maxOccurs="unbounded" minOccurs="0" name="ervervetArealElement">
-            <complexType>
-              <complexContent>
-                <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="fmvrv:ErvervetArealElement"/>
-                  </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
-                </extension>
-              </complexContent>
-            </complexType>
-          </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="teiggrense">
-            <complexType>
-              <complexContent>
-                <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="fmvrv:Teiggrense"/>
-                  </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
-                </extension>
-              </complexContent>
-            </complexType>
-          </element>
-          <element maxOccurs="unbounded" name="tilhoereMatrikkelenhet" type="fmvrv:MatrikkelenhetPropertyType">
-            <annotation>
-              <appinfo>
-                <reversePropertyName xmlns="http://www.opengis.net/gml/3.2">fmvrv:teig</reversePropertyName>
-              </appinfo>
-            </annotation>
-          </element>
-          <element maxOccurs="unbounded" name="arealressurs">
-            <annotation>
-              <appinfo>
-                <reversePropertyName xmlns="http://www.opengis.net/gml/3.2">fmvrv:teig</reversePropertyName>
-              </appinfo>
-            </annotation>
-            <complexType>
-              <complexContent>
-                <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="fmvrv:Arealressurs"/>
-                  </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
-                </extension>
-              </complexContent>
-            </complexType>
-          </element>
-        </sequence>
-      </extension>
-    </complexContent>
-  </complexType>
-  <complexType name="TeigPropertyType">
-    <sequence minOccurs="0">
-      <element ref="fmvrv:Teig"/>
-    </sequence>
-    <attributeGroup ref="gml:AssociationAttributeGroup"/>
-    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
-  </complexType>
-  <element name="Teiggrense" substitutionGroup="svvli:VU053Feature" type="fmvrv:TeiggrenseType">
-    <annotation>
-      <appinfo>
-        <sc:taggedValue tag="kilde">SOSI</sc:taggedValue>
-        <sc:taggedValue tag="referanse">Eiendomsinformasjon-4.5</sc:taggedValue>
-      </appinfo>
-    </annotation>
-  </element>
-  <complexType name="TeiggrenseType">
-    <complexContent>
-      <extension base="svvli:VU053FeatureType">
-        <sequence/>
-      </extension>
-    </complexContent>
-  </complexType>
-  <complexType name="TeiggrensePropertyType">
-    <sequence minOccurs="0">
-      <element ref="fmvrv:Teiggrense"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
