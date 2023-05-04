@@ -1,14 +1,5 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema"
-xmlns:fmget="https://skjema.atlas.vegvesen.no/r000/fagmodellgeoteknikk/0.1"
-xmlns:gml="http://www.opengis.net/gml/3.2"
-xmlns:lv="https://skjema.atlas.vegvesen.no/r000/svvleveranse/1.0"
-xmlns:svvli="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0"
-elementFormDefault="qualified"
-targetNamespace="https://skjema.atlas.vegvesen.no/r000/fagmodellgeoteknikk/0.1"
-version="0.1">
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:fmget="https://skjema.atlas.vegvesen.no/r000/fagmodellgeoteknikk/0.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:lv="https://skjema.atlas.vegvesen.no/r000/svvleveranse/1.0" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/fagmodellgeoteknikk/0.1" version="0.1">
   <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
-  <import namespace="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0"/>
   <import namespace="https://skjema.atlas.vegvesen.no/r000/svvleveranse/1.0"/>
   <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
   <element name="Avstiving" substitutionGroup="gml:AbstractObject" type="fmget:AvstivingType"/>
@@ -85,14 +76,6 @@ version="0.1">
               </appinfo>
             </annotation>
           </element>
-          <element minOccurs="0" name="eier" type="gml:CodeType">
-            <annotation>
-              <documentation>Angir hvem som er eier av vegobjektet.</documentation>
-              <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmigeo_EierBergsikring.gml</defaultCodeSpace>
-              </appinfo>
-            </annotation>
-          </element>
           <element minOccurs="0" name="lengde" type="double">
             <annotation>
               <documentation>Angir total lengde av sikringsfelt.</documentation>
@@ -111,14 +94,6 @@ version="0.1">
           <element minOccurs="0" name="tilleggsinformasjon" type="string">
             <annotation>
               <documentation>Supplerende informasjon om vegobjektet som ikke framkommer direkte av andre egenskapstyper.</documentation>
-            </annotation>
-          </element>
-          <element minOccurs="0" name="vedlikeholdsansvarlig" type="gml:CodeType">
-            <annotation>
-              <documentation>Angir hvem som er ansvarlig for vedlikehold av vegobjektet.</documentation>
-              <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmigeo_VedlikeholdsansvarligBergsikring.gml</defaultCodeSpace>
-              </appinfo>
             </annotation>
           </element>
           <element maxOccurs="unbounded" minOccurs="0" name="fanggroeft">
@@ -191,14 +166,6 @@ version="0.1">
               </appinfo>
             </annotation>
           </element>
-          <element minOccurs="0" name="eier" type="gml:CodeType">
-            <annotation>
-              <documentation>Angir hvem som er eier av vegobjektet.</documentation>
-              <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmigeo_EierBergsikring.gml</defaultCodeSpace>
-              </appinfo>
-            </annotation>
-          </element>
           <element minOccurs="0" name="høydeOverVeg" type="double">
             <annotation>
               <documentation>Angir største høyde til overkant av bergsikring.</documentation>
@@ -222,14 +189,6 @@ version="0.1">
           <element minOccurs="0" name="tilleggsinformasjon" type="string">
             <annotation>
               <documentation>Supplerende informasjon om vegobjektet som ikke framkommer direkte av andre egenskapstyper.</documentation>
-            </annotation>
-          </element>
-          <element minOccurs="0" name="vedlikeholdsansvarlig" type="gml:CodeType">
-            <annotation>
-              <documentation>Angir hvem som er ansvarlig for vedlikehold av vegobjektet.</documentation>
-              <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmigeo_VedlikeholdsansvarligBergsikring.gml</defaultCodeSpace>
-              </appinfo>
             </annotation>
           </element>
           <element maxOccurs="unbounded" minOccurs="0" name="sikring">
@@ -464,10 +423,10 @@ version="0.1">
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
-  <element abstract="true" name="Fanggroeft" substitutionGroup="svvli:VU053PhysicalElement" type="fmget:FanggroeftType"/>
+  <element abstract="true" name="Fanggroeft" substitutionGroup="gml:AbstractFeature" type="fmget:FanggroeftType"/>
   <complexType abstract="true" name="FanggroeftType">
     <complexContent>
-      <extension base="svvli:VU053PhysicalElementType">
+      <extension base="gml:AbstractFeatureType">
         <sequence/>
       </extension>
     </complexContent>
@@ -543,10 +502,10 @@ version="0.1">
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
-  <element name="GeoteknikkElement" substitutionGroup="svvli:VU053PhysicalElement" type="fmget:GeoteknikkElementType"/>
+  <element name="GeoteknikkElement" substitutionGroup="gml:AbstractFeature" type="fmget:GeoteknikkElementType"/>
   <complexType name="GeoteknikkElementType">
     <complexContent>
-      <extension base="svvli:VU053PhysicalElementType">
+      <extension base="gml:AbstractFeatureType">
         <sequence/>
       </extension>
     </complexContent>
@@ -615,6 +574,7 @@ version="0.1">
           <element minOccurs="0" name="diameter" type="double"/>
           <element minOccurs="0" name="helning" type="double"/>
           <element minOccurs="0" name="lengde" type="double"/>
+          <element minOccurs="0" name="navn" type="string"/>
           <element minOccurs="0" name="forboringslengde" type="double"/>
         </sequence>
       </extension>
@@ -754,7 +714,7 @@ version="0.1">
           <element minOccurs="0" name="volum" type="double"/>
           <element minOccurs="0" name="type" type="string"/>
           <element minOccurs="0" name="tyngdetetthet" type="string"/>
-          <element minOccurs="0" name="ISO fraksjon" type="string"/>
+          <element minOccurs="0" name="ISOFraksjon" type="string"/>
         </sequence>
       </extension>
     </complexContent>
@@ -897,10 +857,10 @@ version="0.1">
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
-  <element abstract="true" name="Sikring" substitutionGroup="svvli:VU053PhysicalElement" type="fmget:SikringType"/>
+  <element abstract="true" name="Sikring" substitutionGroup="gml:AbstractFeature" type="fmget:SikringType"/>
   <complexType abstract="true" name="SikringType">
     <complexContent>
-      <extension base="svvli:VU053PhysicalElementType">
+      <extension base="gml:AbstractFeatureType">
         <sequence/>
       </extension>
     </complexContent>
@@ -1062,6 +1022,11 @@ version="0.1">
               <documentation>Høydeforskjell mellom nærmeste vegkant og bunn av magasin.</documentation>
             </annotation>
           </element>
+          <element minOccurs="0" name="beskrivelse" type="string">
+            <annotation>
+              <documentation>Kan angi beskrivelse til skredgropen.</documentation>
+            </annotation>
+          </element>
           <element minOccurs="0" name="prosjektInternObjektID" type="string">
             <annotation>
               <documentation>Objektmerking. Unik innenfor tilhørende vegprosjekt.</documentation>
@@ -1097,6 +1062,11 @@ version="0.1">
     <complexContent>
       <extension base="fmget:SkredsikringType">
         <sequence>
+          <element minOccurs="0" name="navn" type="string">
+            <annotation>
+              <documentation>Angir navn på skredoverbygget.</documentation>
+            </annotation>
+          </element>
           <element minOccurs="0" name="type" type="gml:CodeType">
             <annotation>
               <documentation>Angir hvilken type skredoverbygg det er tale om.</documentation>
@@ -1155,10 +1125,7 @@ version="0.1">
   <complexType name="SkredsikringType">
     <complexContent>
       <extension base="fmget:SkredIBrattTerrengType">
-        <sequence>
-          <element minOccurs="0" name="eier"/>
-          <element minOccurs="0" name="vedlikeholdsansvarlig"/>
-        </sequence>
+        <sequence/>
       </extension>
     </complexContent>
   </complexType>
@@ -1436,7 +1403,10 @@ version="0.1">
   <complexType name="TiltakElementType">
     <complexContent>
       <extension base="fmget:GeoteknikkElementType">
-        <sequence/>
+        <sequence>
+          <element name="eier" type="gml:CodeType"/>
+          <element name="vedlikeholdsansvarlig" type="gml:CodeType"/>
+        </sequence>
       </extension>
     </complexContent>
   </complexType>
@@ -1543,10 +1513,10 @@ version="0.1">
           <element minOccurs="0" name="lengde" type="double"/>
           <element minOccurs="0" name="breddeFot" type="double"/>
           <element minOccurs="0" name="breddeKrone" type="double"/>
-          <element minOccurs="0" name="høyde,gjennomsnitt" type="double"/>
+          <element minOccurs="0" name="høydeGjennomsnitt" type="double"/>
           <element minOccurs="0" name="høyde,maks" type="double"/>
-          <element minOccurs="0" name="helning,gjennomsnitt" type="double"/>
-          <element minOccurs="0" name="helning,maks" type="double"/>
+          <element minOccurs="0" name="helningGjennomsnitt" type="double"/>
+          <element minOccurs="0" name="helningMaks" type="double"/>
           <element minOccurs="0" name="retningsendring" type="double"/>
           <element minOccurs="0" name="adkomst" type="gml:CodeType">
             <annotation>
