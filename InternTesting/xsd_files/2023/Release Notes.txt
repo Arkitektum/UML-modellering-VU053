@@ -1,10 +1,19 @@
+v1_2_0
+Fagmodell
+	* Geoteknikk
+		* Ny modell [xsd]
+		* Kodelister i GML format, alle kodelister som tilhører Geoteknikk starter med "fmget_" i Github
 
-v1_1_0
+----------		
+v1_1_0 ---> xsd_programtesting\v2.1_20230504
 Grunnlagsmodell
 	* Grunnforhold
 		* Nye elementer
 		* Nye kodelister
-		
+	* Kulturarv
+		* Ny modell [xsd]
+		* Kodelister i GML format, alle kodelister som tilhører Kulturarv starter med "gmkav_" i Github
+
 Fagmodell
 	* Rekkverk
 		* Endre attributter som var påkrevd til valgfrie
@@ -16,15 +25,9 @@ Fagmodell
 	* Grunneverv
 		* Ny modell [xsd]
 		* Kodelister i GML format, alle kodelister som tilhører Grunneverv starter med "fmvrv_" i Github
-	* Kulturarv
-		* Ny modell [xsd]
-		* Kodelister i GML format, alle kodelister som tilhører Kulturarv starter med "gmkav_" i Github
 	* Gatemoebler
 		* Ny modell [xsd]
 		* Kodelister i GML format, alle kodelister som tilhører Gatemoebler starter med "fmgtm" i Github
-	* Geoteknikk
-		* Ny modell [xsd]
-		* Kodelister i GML format, alle kodelister som tilhører Geoteknikk starter med "fmget" i Github
 	* Vann og Avløp
 		* Endre overordnet element til abstrakt
 			LedningElement, KoplingElement, Nettstasjon, VannOgAvloepElement

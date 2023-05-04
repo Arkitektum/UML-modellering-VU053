@@ -1,0 +1,1529 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gmgld="https://skjema.atlas.vegvesen.no/r000/grunnlagsdata/0.1" xmlns:gmgrf="https://skjema.atlas.vegvesen.no/r000/grunnlagsmodellgrunnforhold/0.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:lv="https://skjema.atlas.vegvesen.no/r000/svvleveranse/1.0" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:svvli="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/grunnlagsmodellgrunnforhold/0.1" version="0.1">
+  <import namespace="http://www.interactive-instruments.de/ShapeChange/AppInfo" schemaLocation="http://shapechange.net/resources/schema/ShapeChangeAppinfo.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/grunnlagsdata/0.1" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/InternTesting/xsd_files/2023/v1_2_0/Grunnlagsdata.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/InternTesting/xsd_files/2023/v1_2_0/SVV_Landinfra.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/svvleveranse/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/InternTesting/xsd_files/2023/v1_2_0/SVV_Leveranse.xsd"/>
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="Berg" substitutionGroup="gmgrf:LagIGrunnElement" type="gmgrf:BergType">
+    <annotation>
+      <documentation>RockSurface: polygon som representerer en avgrensing av en(eller flere) bergartstyper(er) eller tektonisk enhet (dekker)
+
+
+-- Definition -- 
+polygon representing a delimitation of one (or more) rocktypes or a tectonic unit (nappes)</documentation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">SOSI</sc:taggedValue>
+        <sc:taggedValue tag="referanse">Berg-4.0</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="BergType">
+    <complexContent>
+      <extension base="gmgrf:LagIGrunnElementType">
+        <sequence>
+          <element minOccurs="0" name="hovedBergKode" type="gmgrf:HovedBergKodeType">
+            <annotation>
+              <documentation>mainRockCode: grovinndeling av berggrunnen i Norge
+
+-- Definition -- 
+rough classification of the bedrock in Norway</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_HovedBergKode.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_HovedBergKode.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="bergartKornstorrelse" type="gmgrf:BergartKornstorrelseType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_BergartKornstorrelse.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_BergartKornstorrelse.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="bergartStruktur" type="gmgrf:BergartStrukturType">
+            <annotation>
+              <documentation>rockStructure: primære trekk i bergartens utseende som er med på å fortelle hvordan den er blitt dannet
+
+-- Definition -- 
+primary characteristics of the appearance of the rock, which helps to describe how it was formed</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_BergartStruktur.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_BergartStruktur.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="bergartTekstur" type="gmgrf:BergartTeksturType">
+            <annotation>
+              <documentation>rockTypeTexture: uttrykk brukt om bergartsstruktur (kornstørrelse, kornform og arrangement) slik som den sees under et mikroskop
+
+-- Definition -- 
+term used about the structure of a rock (grain size, grain shape and arrangement) as seen under a microscope</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_BergartTekstur.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_BergartTekstur.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="geolAlder" type="gml:CodeType">
+            <annotation>
+              <documentation>geolAge: alderen av en bergart forteller hvor lang tid som er gått siden den ble dannet.  Navn på geologisk periode/epoke for det tidsrom en geologisk lagrekke ble dannet
+
+-- Definition -- 
+the age of a rock indicate how long ago since it was formed. Name of geological period/epoch when a stratigraphic sequence was formed</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="geolMinAlder" type="gml:CodeType">
+            <annotation>
+              <documentation>geolMinAge: navn på geologisk periode/epoke for det tidsrom da den yngste geologisk bergarten/lagrekken ble dannet
+
+-- Definition -- 
+name of geological period/epoch for the period of time when the youngest geological rock type/stratigraphic sequence was formed</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="geolMaksAlder" type="gml:CodeType">
+            <annotation>
+              <documentation>geolMaxAge: navn på geologisk periode/epoke for det tidsrom da den eldste geologisk bergarten/lagrekken ble dannet
+
+-- Definition -- 
+name of geological period/epoch for the period of time when the oldest geological rock type/stratigraphic sequence was formed</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="bergartAlderBestemmelse" type="string">
+            <annotation>
+              <documentation>bedrockAgeDetermination: alder på bergart i millioner år, bestemt ved datering
+
+Merknad:
+Oppgis som et tall med et +/minus antall mill. år
+
+-- Definition -- 
+age of the bedrock in millions of years (age determination)    Note:Stated as a figure with a +/- tolerance, in millions of years</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="dateringMetode" type="gml:CodeType">
+            <annotation>
+              <documentation>datingMethod: metode som er brukt til å bestemme alderen på bergarter, sedimenter, minaraler og organisk materiale
+
+-- Definition -- 
+method used to determine the age of rocks, minerals and organic material</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_DateringMetode.gml</sc:targetCodeListURI>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="fossilNavn" type="string">
+            <annotation>
+              <documentation>fossilName: navn på rester, avtrykk eller spor etter tidligere tiders livsformer, bevart i jord- eller steinlag
+
+-- Definition -- 
+name of remains, imprints or traces of prehistoric life forms, preserved in soil or rock strata</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="dekkeEnhetNavn" type="string">
+            <annotation>
+              <documentation>nappeUnitName: uttrykk brukt i strukturgeologen for bergartsmasser som er skjøvet som enhetlige bergflak eller glidd som store folder til det sted de ligger nå
+
+-- Definition -- 
+term used in structual geology for rock masses which have moved as uniform sheets of rock or slid in large folds to where they are now</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="overgruppeNavn" type="string">
+            <annotation>
+              <documentation>mainGroupName: inndeling av to eller flere grupper med sedimentære eller vulkanske lag
+
+-- Definition -- 
+subdivision of two or more groups of sedimentary or volcanic sequences</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="geolGruppeNavn" type="string">
+            <annotation>
+              <documentation>geolGroupName: inndeling av to eller flere formasjoner med sedimentære eller vulkanske lag
+
+-- Definition -- 
+subdivision of two or more formations of sedimentary or volcanic sequences</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="geolFormasjonNavn" type="string">
+            <annotation>
+              <documentation>geolFormationName: inndeling av sedimentære eller vulkanske lag som danner en særlig enhet i en lagrekke
+
+-- Definition -- 
+characterisation of sedimentary or volcanic layers forming a special defined unit in a stratigraphic sequence</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="loslighetGrad" type="gmgrf:LoslighetGradType">
+            <annotation>
+              <documentation>degreeOfSolubility: bergartens evne til å la seg løse kjemisk
+
+-- Definition -- 
+the ability of the rock to dissolve chemically</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_LoslighetGrad.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_LoslighetGrad.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="bergartKjemiskSammensetning" type="gmgrf:BergartKjemiskSammensetningType">
+            <annotation>
+              <documentation>chemicalCompositionOfRock: grovinndeling av bergarter basert på bergartenes kjemiske sammensetninger, og som har stor sammenheng med innholdet av SiO2 i bergarten
+
+-- Definition -- 
+rough classification of rock types based on the rock's chemical composition, closely connected to the content of Si02 in the rock</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_BergartKjemiskSammensetning.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_BergartKjemiskSammensetning.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="metamorfGrad" type="gmgrf:MetamorfGradType">
+            <annotation>
+              <documentation>metamorphicDegree: bergartens omvanlingsgrad (metamorfosegrad)
+
+-- Definition -- 
+the rock's degree of transformation (metamorphic grade)</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_MetamorfGrad.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_MetamorfGrad.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="indeksMineral" type="gmgrf:IndeksMineralType">
+            <annotation>
+              <documentation>indexMineral: mineral som benyttes til å kjennetegne soner med ulik grad av bergartsomdannelse (metamorfose)
+
+-- Definition -- 
+mineral used to characterise zones with different degrees of rock transformation (metamorphism)</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_IndeksMineral.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_IndeksMineral.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="radioaktivitetNiva" type="gmgrf:RadioaktivitetNivaType">
+            <annotation>
+              <documentation>levelOfRadioactivity: naturlig radioaktiv stråling fra bergarten/berggrunnen
+
+-- Definition -- 
+natural level of radioactive radiation from the rock type/bedrock</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_RadioaktivitetNiva.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_RadioaktivitetNiva.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="geolKartnummer" type="integer">
+            <annotation>
+              <documentation>geolMapNumber: nummerering av ulike bergarter på kart
+
+-- Definition -- 
+numbering of various rock types on a map</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="tegnforklaring" type="string">
+            <annotation>
+              <documentation>key: fri tekst beskrivelse av berggrunnen/bergarter
+
+-- Definition -- 
+free text description of the bedrock/rock types</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="cmykFargekode" type="string">
+            <annotation>
+              <documentation>cmykColourCode: fargekodedefinisjon i CMYK som viser prosentvis innhold av Cyan, Magenta, Yellow og Black
+
+-- Definition -- 
+colour code definition in CMYK showing the percentual content of Cyan, Magenta, Yellow and Black</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="berggrunnKlassifikasjon" type="gmgrf:BerggrunnKlassifikasjonType">
+            <annotation>
+              <documentation>bedrockClassification: grovinndeling basert på berggrunnens innbyrdes alder og bevegelse (hvorvidt de er dannet på det sted de ligger eller er flyttet på (overskjøvet))
+
+-- Definition -- 
+rough classification based on the mutual age and position of the bedrock (if it has formed where it is located or has been moved (overthrust))</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_BerggrunnKlassifikasjon.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_BerggrunnKlassifikasjon.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="geolVerdivurdering" type="gml:CodeType">
+            <annotation>
+              <documentation>geolValueAssessment: hvor viktig en geologisk ressurs eller registrering er med tanke på mulig økonomisk utnyttelse nå eller for framtiden
+
+-- Definition -- 
+how important a geological resource or registration is in relation to potential economic utilisation now or in the future</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolVerdivurdering.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolVerdivurdering.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="arealverdiindikator" type="gmgrf:HoeydereferanseType">
+            <annotation>
+              <documentation>areaValueIndicator: indikasjon som viser i hvilken grad man kan forvente innsigelser dersom det foretas endringer i arealdisponeringen
+
+-- Definition -- 
+indication which shows to what extent one may expect objections if changes are made in the land-use plan</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Hoeydereferanse.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_Hoeydereferanse.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="alderBeskrivelse" type="string">
+            <annotation>
+              <documentation>ageDescription: tekstlig beskrivelse av bergartens aldersforhold
+
+-- Definition -- 
+free text description of the age relations of the rocks</documentation>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BergPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgrf:Berg"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="BergIDag" substitutionGroup="gmgrf:ObservasjonElement" type="gmgrf:BergIDagType"/>
+  <complexType name="BergIDagType">
+    <complexContent>
+      <extension base="gmgrf:ObservasjonElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BergIDagPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgrf:BergIDag"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <simpleType name="BergartKjemiskSammensetningType">
+    <annotation>
+      <documentation>ChemicalCompositionOfRock: grovinndeling av bergarter basert på bergartenes kjemiske sammensetninger, og som har stor sammenheng med innholdet av SiO2 i bergarten
+
+
+-- Definition - - 
+rough classification of rock types based on their chemical composition, closely connected to the content of Si02 in the rock</documentation>
+    </annotation>
+    <union memberTypes="gmgrf:BergartKjemiskSammensetningEnumerationType gmgrf:BergartKjemiskSammensetningOtherType"/>
+  </simpleType>
+  <simpleType name="BergartKjemiskSammensetningEnumerationType">
+    <annotation>
+      <documentation>ChemicalCompositionOfRock: grovinndeling av bergarter basert på bergartenes kjemiske sammensetninger, og som har stor sammenheng med innholdet av SiO2 i bergarten
+
+
+-- Definition - - 
+rough classification of rock types based on their chemical composition, closely connected to the content of Si02 in the rock</documentation>
+    </annotation>
+    <restriction base="string">
+      <enumeration value="sur">
+        <annotation>
+          <documentation>Acidic: Størkningsbergarter som inneholder mere enn 63 % SiO2
+
+-- Definition -- 
+Magmatic rock containing more than 63% SiO2</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="intermediaer">
+        <annotation>
+          <documentation>Intermediate: Størkningsbergarter som inneholder 52-63 % SiO2
+
+-- Definition -- 
+Magmatic rock containing 52-63% SiO2.</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="basisk">
+        <annotation>
+          <documentation>Basic: Størkningsbergarter som inneholder 45-52 % SiO2
+
+-- Definition -- 
+Magmatic rock containing 45-52% SiO2</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="ultrabasisk">
+        <annotation>
+          <documentation>Ultrabasic: Størkningsbergarter som inneholder &lt; 45 % SiO2
+
+-- Definition -- 
+Magmatic rock containing &lt; 45% SiO2</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="salisk">
+        <annotation>
+          <documentation>Salic: Normative silicium-aluminium-mineralene som f.eks. kvarts, feltspat, feltspatoider og korund.
+
+Eksempel: kvarts, feltspat, feltspatoider og korund.
+
+-- Definition -- 
+Said about magmatic rocks where normative silicon and aluminium-rich minerals such as quartz, feldspar, feldspatoids and corundum dominate</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="femisk">
+        <annotation>
+          <documentation>Femic: Normative jern-, magnesium-, kalsium-mineraler som f.eks. pyroksen, olivin, magnetitt, ilmenitt og hematitt.
+
+Eksempel: Pyroksen, olivin, magnetitt, ilmenitt og hematitt
+
+-- Definition -- 
+Said about magmatic rocks where normative iron, magnesium and calcium-rich minerals such as pyroxene, olivine, magnetite, ilmenite and hematite dominate</documentation>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <simpleType name="BergartKjemiskSammensetningOtherType">
+    <restriction base="string">
+      <pattern value="other: \w{2,}"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="BergartKornstorrelseType">
+    <annotation>
+      <documentation>RockGrainSize: inndeling av bergarter etter kornstørrelse
+
+Merknad:  (etter Visser, W.A. (red.) 1980)
+
+
+-- Definition - - 
+classification of rock types according to grain size    Note: (according to Visser, W.A. (ed.) 1980)</documentation>
+    </annotation>
+    <union memberTypes="gmgrf:BergartKornstorrelseEnumerationType gmgrf:BergartKornstorrelseOtherType"/>
+  </simpleType>
+  <simpleType name="BergartKornstorrelseEnumerationType">
+    <annotation>
+      <documentation>RockGrainSize: inndeling av bergarter etter kornstørrelse
+
+Merknad:  (etter Visser, W.A. (red.) 1980)
+
+
+-- Definition - - 
+classification of rock types according to grain size    Note: (according to Visser, W.A. (ed.) 1980)</documentation>
+    </annotation>
+    <restriction base="string">
+      <enumeration value="svaertGrovkornet">
+        <annotation>
+          <documentation>Kornstørrelse større enn 30 mm</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="grovkornet">
+        <annotation>
+          <documentation>Kornstørrelse mellom 5 og 30 mm</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="middelsTilGrovkornet">
+        <annotation>
+          <documentation>Kornstørrelse mellom 1 og 30 mm</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="middelskornet">
+        <annotation>
+          <documentation>Kornstørrelse mellom 1 og 5 mm</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="finkornet">
+        <annotation>
+          <documentation>Kornstørrelse mellom 0.1 og 1 mm</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="svaertFinkornet">
+        <annotation>
+          <documentation>Kornstørrelse mellom 0.01 og 0.1 mm</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="tett">
+        <annotation>
+          <documentation>Kornstørrelse mellom 0.001 og 0.01 mm</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="kryptokrystallin">
+        <annotation>
+          <documentation>Kornstørrelse finere enn 0.001 mm</documentation>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <simpleType name="BergartKornstorrelseOtherType">
+    <restriction base="string">
+      <pattern value="other: \w{2,}"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="BergartStrukturType">
+    <annotation>
+      <documentation>RockStructure: primære trekk i bergartens utseende som er med på å fortelle hvordan den er blitt dannet
+
+
+-- Definition - - 
+primary characteristics of the rock's appearance, which help to describe how it has been formed</documentation>
+    </annotation>
+    <union memberTypes="gmgrf:BergartStrukturEnumerationType gmgrf:BergartStrukturOtherType"/>
+  </simpleType>
+  <simpleType name="BergartStrukturEnumerationType">
+    <annotation>
+      <documentation>RockStructure: primære trekk i bergartens utseende som er med på å fortelle hvordan den er blitt dannet
+
+
+-- Definition - - 
+primary characteristics of the rock's appearance, which help to describe how it has been formed</documentation>
+    </annotation>
+    <restriction base="string">
+      <enumeration value="massiv">
+        <annotation>
+          <documentation>Massive: Deformeringsmåte
+
+-- Definition -- 
+Deformation type</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="lagdelt"/>
+      <enumeration value="homogentLagdelt"/>
+      <enumeration value="heterogentLagdelt"/>
+      <enumeration value="diffustLagdelt"/>
+      <enumeration value="homogentSjiktet"/>
+      <enumeration value="diffustSjiktet"/>
+      <enumeration value="kryssjiktet"/>
+      <enumeration value="svaktForskifret"/>
+      <enumeration value="forskifret"/>
+      <enumeration value="sterktForskifret"/>
+      <enumeration value="forskifretMedLinser">
+        <annotation>
+          <documentation>Foliated with lenses: Forskifret med linseformede øyne
+
+-- Definition -- 
+Foliated with lens-shaped eyes??</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="sterktForskifretMedLinse">
+        <annotation>
+          <documentation>Highly foliated with lens: Sterkt forskifret med linseformede øyne
+
+-- Definition -- 
+Highly foliated with lens-shaped augens</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="mylonittisk"/>
+      <enumeration value="blastomylonittisk"/>
+      <enumeration value="svaktStenglig"/>
+      <enumeration value="stenglig"/>
+      <enumeration value="sterktStenglig"/>
+      <enumeration value="smaafoldet"/>
+      <enumeration value="foldet"/>
+      <enumeration value="sterktFoldet"/>
+      <enumeration value="boudinert"/>
+      <enumeration value="breksjert"/>
+      <enumeration value="oppknust"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="BergartStrukturOtherType">
+    <restriction base="string">
+      <pattern value="other: \w{2,}"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="BergartTeksturType">
+    <annotation>
+      <documentation>RockTypeTexture: uttrykk brukt om bergartsstruktur (kornstørrelse, kornform og arrangement) slik som den sees under et mikroskop
+
+
+-- Definition - - 
+phrase used about the structure of a rock type (grain size, grain shape and arrangement) as seen under a microscope</documentation>
+    </annotation>
+    <union memberTypes="gmgrf:BergartTeksturEnumerationType gmgrf:BergartTeksturOtherType"/>
+  </simpleType>
+  <simpleType name="BergartTeksturEnumerationType">
+    <annotation>
+      <documentation>RockTypeTexture: uttrykk brukt om bergartsstruktur (kornstørrelse, kornform og arrangement) slik som den sees under et mikroskop
+
+
+-- Definition - - 
+phrase used about the structure of a rock type (grain size, grain shape and arrangement) as seen under a microscope</documentation>
+    </annotation>
+    <restriction base="string">
+      <enumeration value="granulaer"/>
+      <enumeration value="porfyrisk"/>
+      <enumeration value="felsittisk"/>
+      <enumeration value="ofittisk"/>
+      <enumeration value="kataklastisk"/>
+      <enumeration value="jevnkornet"/>
+      <enumeration value="ujevnkornet"/>
+      <enumeration value="svaktOrientert"/>
+      <enumeration value="baandet"/>
+      <enumeration value="sliret"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="BergartTeksturOtherType">
+    <restriction base="string">
+      <pattern value="other: \w{2,}"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="BerggrunnKlassifikasjonType">
+    <annotation>
+      <documentation>BedrockClassification: grovinndeling basert på berggrunnens innbyrdes alder og bevegelse
+
+Merknad: Hvorvidt de er dannet på det sted de ligger eller er flyttet på (overskjøvet)
+
+
+-- Definition - - 
+rough classification based on the relative age and movement of the bedrock    Note: Whether they have been formed on location or have been moved (overthrust)</documentation>
+    </annotation>
+    <union memberTypes="gmgrf:BerggrunnKlassifikasjonEnumerationType gmgrf:BerggrunnKlassifikasjonOtherType"/>
+  </simpleType>
+  <simpleType name="BerggrunnKlassifikasjonEnumerationType">
+    <annotation>
+      <documentation>BedrockClassification: grovinndeling basert på berggrunnens innbyrdes alder og bevegelse
+
+Merknad: Hvorvidt de er dannet på det sted de ligger eller er flyttet på (overskjøvet)
+
+
+-- Definition - - 
+rough classification based on the relative age and movement of the bedrock    Note: Whether they have been formed on location or have been moved (overthrust)</documentation>
+    </annotation>
+    <restriction base="string">
+      <enumeration value="0"/>
+      <enumeration value="1"/>
+      <enumeration value="2"/>
+      <enumeration value="3"/>
+      <enumeration value="4">
+        <annotation>
+          <documentation>Autochthonous and overthrust sedimentary rock: bergarter fra senproterozoisk og kambrosilurisk tid
+
+-- Definition -- 
+Autochthonous and overthrust sedimentary rock from the late Neoproterozoic and the Cambro-Silurian periods</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="5"/>
+      <enumeration value="6"/>
+      <enumeration value="7"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="BerggrunnKlassifikasjonOtherType">
+    <restriction base="string">
+      <pattern value="other: \w{2,}"/>
+    </restriction>
+  </simpleType>
+  <element name="BorehullElement" substitutionGroup="gmgrf:GrunnUndersoekelserElement" type="gmgrf:BorehullElementType"/>
+  <complexType name="BorehullElementType">
+    <complexContent>
+      <extension base="gmgrf:GrunnUndersoekelserElementType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="punkt">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="gmgrf:UndersoekelsePunkt"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="antallPunkt" type="integer"/>
+          <element minOccurs="0" name="kvalitet" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_TemaKvalitet.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_TemaKvalitet.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BorehullElementPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgrf:BorehullElement"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="CPTU" substitutionGroup="gmgrf:UndersoekelseElement" type="gmgrf:CPTUType"/>
+  <complexType name="CPTUType">
+    <complexContent>
+      <extension base="gmgrf:UndersoekelseElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="CPTUPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgrf:CPTU"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Geofysiske" substitutionGroup="gmgrf:BorehullElement" type="gmgrf:GeofysiskeType"/>
+  <complexType name="GeofysiskeType">
+    <complexContent>
+      <extension base="gmgrf:BorehullElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GeofysiskePropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgrf:Geofysiske"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="GrunnUndersoekelserElement" substitutionGroup="svvli:VU053Feature" type="gmgrf:GrunnUndersoekelserElementType"/>
+  <complexType name="GrunnUndersoekelserElementType">
+    <complexContent>
+      <extension base="svvli:VU053FeatureType">
+        <sequence>
+          <element minOccurs="0" name="grunnlagsdataBrukt">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="gmgld:GrunnlagsdataBrukt"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GrunnUndersoekelserElementPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgrf:GrunnUndersoekelserElement"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="GrunnUndersoekelserElementSamling" substitutionGroup="svvli:VU053ElementSamling" type="gmgrf:GrunnUndersoekelserElementSamlingType"/>
+  <complexType name="GrunnUndersoekelserElementSamlingType">
+    <complexContent>
+      <extension base="svvli:VU053ElementSamlingType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="borehullElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="gmgrf:BorehullElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="observasjonElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="gmgrf:ObservasjonElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GrunnUndersoekelserElementSamlingPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgrf:GrunnUndersoekelserElementSamling"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="GrunnlagsmodellGrunnforhold" substitutionGroup="lv:Grunnlagsmodell" type="gmgrf:GrunnlagsmodellGrunnforholdType">
+    <annotation>
+      <documentation>Grunnlagsmodellen “Grunnforhold” skal vise informasjon om geologiske- og geotekniske forhold på og under terrengoverflate og vann i prosjektområdet.</documentation>
+    </annotation>
+  </element>
+  <complexType name="GrunnlagsmodellGrunnforholdType">
+    <complexContent>
+      <extension base="lv:GrunnlagsmodellType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="grunnUndersoekelserElementSamling">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="gmgrf:GrunnUndersoekelserElementSamling"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="grunnUndersoekelserElementElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="gmgrf:GrunnUndersoekelserElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="lagIGrunnElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="gmgrf:LagIGrunnElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GrunnlagsmodellGrunnforholdPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgrf:GrunnlagsmodellGrunnforhold"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <simpleType name="HoeydereferanseType">
+    <annotation>
+      <documentation>koordinatregistering utført på topp eller bunn av et objekt</documentation>
+    </annotation>
+    <union memberTypes="gmgrf:HoeydereferanseEnumerationType gmgrf:HoeydereferanseOtherType"/>
+  </simpleType>
+  <simpleType name="HoeydereferanseEnumerationType">
+    <annotation>
+      <documentation>koordinatregistering utført på topp eller bunn av et objekt</documentation>
+    </annotation>
+    <restriction base="string">
+      <enumeration value="FOT"/>
+      <enumeration value="TOP"/>
+      <enumeration value="UKJENT">
+        <annotation>
+          <documentation>benyttes ikke ved nyregistrering</documentation>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <simpleType name="HoeydereferanseOtherType">
+    <restriction base="string">
+      <pattern value="other: \w{2,}"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="HovedBergKodeType">
+    <annotation>
+      <documentation>MainRockCode: grovinndeling av berggrunnen i Norge 
+
+Merknad: Beregnet hovedsakelig på større regionale datasett (landsdekkende og fylkesdekkende) i mindre målestokker. Kilde fra trykt kartserie - Berggrunn N250.
+
+
+-- Definition - - 
+rough classification of the bedrock in Norway</documentation>
+    </annotation>
+    <union memberTypes="gmgrf:HovedBergKodeEnumerationType gmgrf:HovedBergKodeOtherType"/>
+  </simpleType>
+  <simpleType name="HovedBergKodeEnumerationType">
+    <annotation>
+      <documentation>MainRockCode: grovinndeling av berggrunnen i Norge 
+
+Merknad: Beregnet hovedsakelig på større regionale datasett (landsdekkende og fylkesdekkende) i mindre målestokker. Kilde fra trykt kartserie - Berggrunn N250.
+
+
+-- Definition - - 
+rough classification of the bedrock in Norway</documentation>
+    </annotation>
+    <restriction base="string">
+      <enumeration value="1"/>
+      <enumeration value="2"/>
+      <enumeration value="3"/>
+      <enumeration value="4"/>
+      <enumeration value="5"/>
+      <enumeration value="7"/>
+      <enumeration value="8"/>
+      <enumeration value="9"/>
+      <enumeration value="10"/>
+      <enumeration value="11"/>
+      <enumeration value="21"/>
+      <enumeration value="22"/>
+      <enumeration value="23"/>
+      <enumeration value="24"/>
+      <enumeration value="25"/>
+      <enumeration value="26"/>
+      <enumeration value="27"/>
+      <enumeration value="28"/>
+      <enumeration value="29"/>
+      <enumeration value="30"/>
+      <enumeration value="35"/>
+      <enumeration value="37"/>
+      <enumeration value="38"/>
+      <enumeration value="40"/>
+      <enumeration value="41"/>
+      <enumeration value="45"/>
+      <enumeration value="46"/>
+      <enumeration value="50"/>
+      <enumeration value="55"/>
+      <enumeration value="60"/>
+      <enumeration value="61"/>
+      <enumeration value="62"/>
+      <enumeration value="65"/>
+      <enumeration value="66"/>
+      <enumeration value="70"/>
+      <enumeration value="71"/>
+      <enumeration value="82"/>
+      <enumeration value="85"/>
+      <enumeration value="87">
+        <annotation>
+          <documentation>Banded gneiss (amph., hbl.gneiss, mic. gneiss), locally migm.: (Amfibolitt, hornblendegneis, glimmergneis) stedvis migmatisk
+
+-- Definition -- 
+Banded gneiss (amphibolite, hornblende gneiss, mica gneiss locally migmatitic)</documentation>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <simpleType name="HovedBergKodeOtherType">
+    <restriction base="string">
+      <pattern value="other: \w{2,}"/>
+    </restriction>
+  </simpleType>
+  <element name="Hydrologiske" substitutionGroup="gmgrf:BorehullElement" type="gmgrf:HydrologiskeType"/>
+  <complexType name="HydrologiskeType">
+    <complexContent>
+      <extension base="gmgrf:BorehullElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="HydrologiskePropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgrf:Hydrologiske"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <simpleType name="IndeksMineralType">
+    <annotation>
+      <documentation>IndexMineral: mineral som benyttes til å kjennetegne soner med ulik grad av bergartsomdannelse (metamorfose)
+
+Merknad: Gjengis med initialer til mineral(er), Flere initialer sammen, skilt med komma, som for eksempel Ky,Sil.
+
+
+-- Definition - - 
+mineral used to characterise zones with a different degree of rock conversion (metamorphism)    Note: Rendered as the initials of the mineral(s); several initials together, comma-separated, for example Ky,Sil.    Note: Rendered as the initials of the mineral(s); several initials together, comma-separated, for example Ky,Sil.</documentation>
+    </annotation>
+    <union memberTypes="gmgrf:IndeksMineralEnumerationType gmgrf:IndeksMineralOtherType"/>
+  </simpleType>
+  <simpleType name="IndeksMineralEnumerationType">
+    <annotation>
+      <documentation>IndexMineral: mineral som benyttes til å kjennetegne soner med ulik grad av bergartsomdannelse (metamorfose)
+
+Merknad: Gjengis med initialer til mineral(er), Flere initialer sammen, skilt med komma, som for eksempel Ky,Sil.
+
+
+-- Definition - - 
+mineral used to characterise zones with a different degree of rock conversion (metamorphism)    Note: Rendered as the initials of the mineral(s); several initials together, comma-separated, for example Ky,Sil.    Note: Rendered as the initials of the mineral(s); several initials together, comma-separated, for example Ky,Sil.</documentation>
+    </annotation>
+    <restriction base="string">
+      <enumeration value="Ab"/>
+      <enumeration value="Alm"/>
+      <enumeration value="And"/>
+      <enumeration value="Bi"/>
+      <enumeration value="Co"/>
+      <enumeration value="Cps"/>
+      <enumeration value="Di"/>
+      <enumeration value="Gnt"/>
+      <enumeration value="Hy"/>
+      <enumeration value="Kfs"/>
+      <enumeration value="Ky"/>
+      <enumeration value="Opx"/>
+      <enumeration value="Px"/>
+      <enumeration value="Py"/>
+      <enumeration value="Sil"/>
+      <enumeration value="St"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="IndeksMineralOtherType">
+    <restriction base="string">
+      <pattern value="other: \w{2,}"/>
+    </restriction>
+  </simpleType>
+  <element name="Kjerneboringer" substitutionGroup="gmgrf:BorehullElement" type="gmgrf:KjerneboringerType"/>
+  <complexType name="KjerneboringerType">
+    <complexContent>
+      <extension base="gmgrf:BorehullElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="KjerneboringerPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgrf:Kjerneboringer"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="LagIGrunnElement" substitutionGroup="svvli:VU053Feature" type="gmgrf:LagIGrunnElementType"/>
+  <complexType name="LagIGrunnElementType">
+    <complexContent>
+      <extension base="svvli:VU053FeatureType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="LagIGrunnElementPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgrf:LagIGrunnElement"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Loesmassegeologi" substitutionGroup="gmgrf:BorehullElement" type="gmgrf:LoesmassegeologiType"/>
+  <complexType name="LoesmassegeologiType">
+    <complexContent>
+      <extension base="gmgrf:BorehullElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="LoesmassegeologiPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgrf:Loesmassegeologi"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Loesmasser" substitutionGroup="gmgrf:LagIGrunnElement" type="gmgrf:LoesmasserType"/>
+  <complexType name="LoesmasserType">
+    <complexContent>
+      <extension base="gmgrf:LagIGrunnElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="LoesmasserPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgrf:Loesmasser"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <simpleType name="LoslighetGradType">
+    <annotation>
+      <documentation>DegreeOfSolubility: bergartens evne til å la seg løse kjemisk
+
+Merknad: Gir også uttrykk for berggrunnens bufferkapasitet.
+
+
+-- Definition - - 
+the ability of the rock to dissolve chemically    Note: Also expresses buffer capacity of the the bedrock</documentation>
+    </annotation>
+    <union memberTypes="gmgrf:LoslighetGradEnumerationType gmgrf:LoslighetGradOtherType"/>
+  </simpleType>
+  <simpleType name="LoslighetGradEnumerationType">
+    <annotation>
+      <documentation>DegreeOfSolubility: bergartens evne til å la seg løse kjemisk
+
+Merknad: Gir også uttrykk for berggrunnens bufferkapasitet.
+
+
+-- Definition - - 
+the ability of the rock to dissolve chemically    Note: Also expresses buffer capacity of the the bedrock</documentation>
+    </annotation>
+    <restriction base="string">
+      <enumeration value="1"/>
+      <enumeration value="2"/>
+      <enumeration value="3"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="LoslighetGradOtherType">
+    <restriction base="string">
+      <pattern value="other: \w{2,}"/>
+    </restriction>
+  </simpleType>
+  <element name="Matjord" substitutionGroup="gmgrf:LagIGrunnElement" type="gmgrf:MatjordType"/>
+  <complexType name="MatjordType">
+    <complexContent>
+      <extension base="gmgrf:LagIGrunnElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="MatjordPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgrf:Matjord"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <simpleType name="MetamorfGradType">
+    <annotation>
+      <documentation>??MetamorphicDegree/MetamorphicGrade: bergartens omvandlingsgrad (metamorfosegrad)
+
+Merknad: En liste med mineralselskap som er karakteristisk for omvandlingen er spesifisert i forklaringer.
+
+
+-- Definition - - 
+the rock's conversion degree (metamorphic grade)   Note: A list of mineral assemblages which is characteristic for the conversion has been specified under explanations.</documentation>
+    </annotation>
+    <union memberTypes="gmgrf:MetamorfGradEnumerationType gmgrf:MetamorfGradOtherType"/>
+  </simpleType>
+  <simpleType name="MetamorfGradEnumerationType">
+    <annotation>
+      <documentation>??MetamorphicDegree/MetamorphicGrade: bergartens omvandlingsgrad (metamorfosegrad)
+
+Merknad: En liste med mineralselskap som er karakteristisk for omvandlingen er spesifisert i forklaringer.
+
+
+-- Definition - - 
+the rock's conversion degree (metamorphic grade)   Note: A list of mineral assemblages which is characteristic for the conversion has been specified under explanations.</documentation>
+    </annotation>
+    <restriction base="string">
+      <enumeration value="1">
+        <annotation>
+          <documentation>Non-metamorphic: Ingen omvandling av bergarten
+
+-- Definition -- 
+No alternation of the rock</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="10">
+        <annotation>
+          <documentation>Very low grade: Innhold av lawsonitt, laumontitt, prehnitt,pumellyitt, albitt
+
+-- Definition -- 
+Content of lawsonite, laumontite, prehnite, pumpellyite??, albite</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="20">
+        <annotation>
+          <documentation>Low grade: Innhold av kloritt, zoisitt, klinozoisitt
+
+-- Definition -- 
+Content of chlorite, zoisite, clinozoisite, actinolite</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="30">
+        <annotation>
+          <documentation>Medium grade: Innhold av staurolitt, cordieritt, (klorittoid og jernrik kloritt er borte))
+
+-- Definition -- 
+Content of staurolite, cordierite (chloritoid and ferriferous chlorite are gone)</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="40">
+        <annotation>
+          <documentation>High grade: Innhold av kalifeltspat,aluminiums-silikater, cordieritt, almandin
+
+-- Definition -- 
+Content of potassium feldspar, aluminium silicates, cordierite, almandine</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="50">
+        <annotation>
+          <documentation>Granulite grade: Innhold av hypersten (høy grad med meget lavt vanntrykk)
+
+-- Definition -- 
+Content of hypersthene (high degree with very low water pressure)</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="60">
+        <annotation>
+          <documentation>Eclogite grade: Innhold av omphacitt, pyrop (basisk sammensetning)
+
+-- Definition -- 
+Content of omphacite, pyrope (basic composition)</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="70">
+        <annotation>
+          <documentation>Contact metamorphism: Omvandling som følge av kontaktmetamorfose
+
+-- Definition -- 
+Transformation as a result of contact metamorphism</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="80">
+        <annotation>
+          <documentation>High pressure: Omvandling som følge av meteorittnedslag
+
+-- Definition -- 
+Metamorphism/Transformation as a result of meteorite impact</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="90">
+        <annotation>
+          <documentation>Anatexis: Begynnende oppsmelting, migmatittdannelse
+
+-- Definition -- 
+Partial melting, migmatite formation</documentation>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <simpleType name="MetamorfGradOtherType">
+    <restriction base="string">
+      <pattern value="other: \w{2,}"/>
+    </restriction>
+  </simpleType>
+  <element name="Miljoegeologiske" substitutionGroup="gmgrf:BorehullElement" type="gmgrf:MiljoegeologiskeType"/>
+  <complexType name="MiljoegeologiskeType">
+    <complexContent>
+      <extension base="gmgrf:BorehullElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="MiljoegeologiskePropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgrf:Miljoegeologiske"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="ObservasjonElement" substitutionGroup="gmgrf:GrunnUndersoekelserElement" type="gmgrf:ObservasjonElementType"/>
+  <complexType name="ObservasjonElementType">
+    <complexContent>
+      <extension base="gmgrf:GrunnUndersoekelserElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ObservasjonElementPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgrf:ObservasjonElement"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Poretrykksmaaling" substitutionGroup="gmgrf:UndersoekelseElement" type="gmgrf:PoretrykksmaalingType"/>
+  <complexType name="PoretrykksmaalingType">
+    <complexContent>
+      <extension base="gmgrf:UndersoekelseElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="PoretrykksmaalingPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgrf:Poretrykksmaaling"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Proevegraving" substitutionGroup="gmgrf:UndersoekelseElement" type="gmgrf:ProevegravingType"/>
+  <complexType name="ProevegravingType">
+    <complexContent>
+      <extension base="gmgrf:UndersoekelseElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ProevegravingPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgrf:Proevegraving"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Proevetaking" substitutionGroup="gmgrf:UndersoekelseElement" type="gmgrf:ProevetakingType"/>
+  <complexType name="ProevetakingType">
+    <complexContent>
+      <extension base="gmgrf:UndersoekelseElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ProevetakingPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgrf:Proevetaking"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <simpleType name="RadioaktivitetNivaType">
+    <annotation>
+      <documentation>LevelOfRadioactivity: naturlig radioaktiv stråling fra bergarten/berggrunnen
+
+Merknad: Vanligvis påvist ved måling av gammastråling fra bergarten (målt i imp./sek).
+
+
+-- Definition - - 
+natural radioactive radiation from the rock type/bedrock    Note: Usually established by measuring gamma radiation from the rock(measured in imp/sec).</documentation>
+    </annotation>
+    <union memberTypes="gmgrf:RadioaktivitetNivaEnumerationType gmgrf:RadioaktivitetNivaOtherType"/>
+  </simpleType>
+  <simpleType name="RadioaktivitetNivaEnumerationType">
+    <annotation>
+      <documentation>LevelOfRadioactivity: naturlig radioaktiv stråling fra bergarten/berggrunnen
+
+Merknad: Vanligvis påvist ved måling av gammastråling fra bergarten (målt i imp./sek).
+
+
+-- Definition - - 
+natural radioactive radiation from the rock type/bedrock    Note: Usually established by measuring gamma radiation from the rock(measured in imp/sec).</documentation>
+    </annotation>
+    <restriction base="string">
+      <enumeration value="0"/>
+      <enumeration value="1">
+        <annotation>
+          <documentation>Low radiation: Lavere stråling enn det som er vanlig for de fleste bergarter (&lt;50 imp/sek)
+
+-- Definition -- 
+Lower radiation than what is common for most rock (&lt;50 imp/sec)</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="2">
+        <annotation>
+          <documentation>Ordinary radiation: Normal stråling for de fleste bergarter (50-100 imp/sek)
+
+-- Definition -- 
+Normal radiation for most rocks (50-100 imp/sec)</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="3">
+        <annotation>
+          <documentation>Slightly raised: Strålingen er  noe høyere enn det som er vanlig for de fleste bergarter (100-200 imp/sek)
+
+-- Definition -- 
+The radiation is somewhat higher than normal for most rock (100-200 imp/sec)</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="4">
+        <annotation>
+          <documentation>Raised radiation level: Den naturlige strålingen fra bergartene er såpass forhøyet at den bør tas i betraktning under arealdisponeringen. Større sannsynlighet for oppkonsentrering av radon enn normalt.
+
+-- Definition -- 
+The natural radiation level from the rock has increased so much that it should be taken into account in the land-use plan. Greater probability of higher concentrations of radon than normal</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="5">
+        <annotation>
+          <documentation>High radiation: Den naturlige strålingen fra bergarten er så høy at man ikke bør oppholde seg i området over lengere tid eller ta med seg steinprøver hjem.
+
+-- Definition -- 
+The natural radiation from the rock is so high that one should not stay in the area for extended periods or take rock samples home.</documentation>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <simpleType name="RadioaktivitetNivaOtherType">
+    <restriction base="string">
+      <pattern value="other: \w{2,}"/>
+    </restriction>
+  </simpleType>
+  <element name="Skraaning" substitutionGroup="gmgrf:ObservasjonElement" type="gmgrf:SkraaningType">
+    <annotation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+        <sc:taggedValue tag="referanse">270</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="SkraaningType">
+    <complexContent>
+      <extension base="gmgrf:ObservasjonElementType">
+        <sequence>
+          <element minOccurs="0" name="type" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_TypeSkraaning.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_TypeSkraaning.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SkraaningPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgrf:Skraaning"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Sondering" substitutionGroup="gmgrf:UndersoekelseElement" type="gmgrf:SonderingType"/>
+  <complexType name="SonderingType">
+    <complexContent>
+      <extension base="gmgrf:UndersoekelseElementType">
+        <sequence>
+          <element minOccurs="0" name="stoppkode" type="string"/>
+          <element minOccurs="0" name="type" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_SonderingType.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_SonderingType.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="boringIBerg" type="boolean"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SonderingPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgrf:Sondering"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Svakhetssoner" substitutionGroup="gmgrf:LagIGrunnElement" type="gmgrf:SvakhetssonerType"/>
+  <complexType name="SvakhetssonerType">
+    <complexContent>
+      <extension base="gmgrf:LagIGrunnElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SvakhetssonerPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgrf:Svakhetssoner"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="UndersoekelseElement" substitutionGroup="gmgrf:BorehullElement" type="gmgrf:UndersoekelseElementType"/>
+  <complexType name="UndersoekelseElementType">
+    <complexContent>
+      <extension base="gmgrf:BorehullElementType">
+        <sequence>
+          <element minOccurs="0" name="pavisningsType" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolPavisningstype.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolPavisningstype.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="geologiskAlder" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeologiskAlder.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="dateringMetode" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_DateringMetode.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_DateringMetode.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="temaJustering" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolTemajustering.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolTemajustering.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="UndersoekelseElementPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgrf:UndersoekelseElement"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="UndersoekelsePunkt" substitutionGroup="gml:AbstractFeature" type="gmgrf:UndersoekelsePunktType"/>
+  <complexType name="UndersoekelsePunktType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element minOccurs="0" name="dybdde" type="integer"/>
+          <element minOccurs="0" name="terrengkote" type="integer"/>
+          <element minOccurs="0" name="verdi" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolVerdivurdering.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgrf_GeolVerdivurdering.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="UndersoekelsePunktPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgrf:UndersoekelsePunkt"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Utkiftingsmasser" substitutionGroup="gmgrf:LagIGrunnElement" type="gmgrf:UtkiftingsmasserType"/>
+  <complexType name="UtkiftingsmasserType">
+    <complexContent>
+      <extension base="gmgrf:LagIGrunnElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="UtkiftingsmasserPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgrf:Utkiftingsmasser"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Vegetasjondekke" substitutionGroup="gmgrf:LagIGrunnElement" type="gmgrf:VegetasjondekkeType"/>
+  <complexType name="VegetasjondekkeType">
+    <complexContent>
+      <extension base="gmgrf:LagIGrunnElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="VegetasjondekkePropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgrf:Vegetasjondekke"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Vingeboring" substitutionGroup="gmgrf:UndersoekelseElement" type="gmgrf:VingeboringType"/>
+  <complexType name="VingeboringType">
+    <complexContent>
+      <extension base="gmgrf:UndersoekelseElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="VingeboringPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgrf:Vingeboring"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>

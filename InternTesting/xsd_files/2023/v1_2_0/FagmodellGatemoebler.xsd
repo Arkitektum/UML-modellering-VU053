@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:fmgtm="https://skjema.atlas.vegvesen.no/r000/fagmodellgatemoebler/0.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:lv="https://skjema.atlas.vegvesen.no/r000/svvleveranse/1.0" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:svvli="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/fagmodellgatemoebler/0.1" version="0.1">
+  <import namespace="http://www.interactive-instruments.de/ShapeChange/AppInfo" schemaLocation="http://shapechange.net/resources/schema/ShapeChangeAppinfo.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/InternTesting/xsd_files/2023/v1_2_0/SVV_Landinfra.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/svvleveranse/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/InternTesting/xsd_files/2023/v1_2_0/SVV_Leveranse.xsd"/>
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="FagmodellGatemoebler" substitutionGroup="lv:Fagmodell" type="fmgtm:FagmodellGatemoeblerType"/>
+  <complexType name="FagmodellGatemoeblerType">
+    <complexContent>
+      <extension base="lv:FagmodellType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="gatemoeblerElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmgtm:GatemoeblerElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="FagmodellGatemoeblerPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmgtm:FagmodellGatemoebler"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="GatemoeblerElement" substitutionGroup="svvli:VU053PhysicalElement" type="fmgtm:GatemoeblerElementType"/>
+  <complexType abstract="true" name="GatemoeblerElementType">
+    <complexContent>
+      <extension base="svvli:VU053PhysicalElementType">
+        <sequence>
+          <element minOccurs="0" name="etableringsår" type="integer"/>
+          <element minOccurs="0" name="leverandør" type="string"/>
+          <element minOccurs="0" name="produktnavn" type="string"/>
+          <element minOccurs="0" name="produsent" type="string"/>
+          <element minOccurs="0" name="prosjektreferanse" type="string"/>
+          <element minOccurs="0" name="prosjektInternObjektID" type="string"/>
+          <element minOccurs="0" name="tilleggsinformasjon" type="string"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GatemoeblerElementPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmgtm:GatemoeblerElement"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Gjerde" substitutionGroup="fmgtm:GatemoeblerElement" type="fmgtm:GjerdeType">
+    <annotation>
+      <documentation>Gjerde er frittstående hinder som skal stenge/lede ferdsel av folk eller dyr</documentation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+        <sc:taggedValue tag="referanse">7</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="GjerdeType">
+    <complexContent>
+      <extension base="fmgtm:GatemoeblerElementType">
+        <sequence>
+          <element minOccurs="0" name="bruksområde" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hva vegobjektet brukes til, hvilken funksjon det har.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_BruksomraadeGjerde.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_BruksomraadeGjerde.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="eier" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvem som er eier av vegobjektet.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_EierGjerde.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_EierGjerde.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="FKBID" type="string">
+            <annotation>
+              <documentation>Refererer til FKB-identitet. Benyttes i forbindelse med felles forvaltning av geometri.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="høydeGjennomsnitt" type="double">
+            <annotation>
+              <documentation>Angir gjennomsnittlig egenhøyde for hele vegobjektet.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="type" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvilken type vegobjektet er av</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_TypeGjerde.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_TypeGjerde.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="lengde" type="double">
+            <annotation>
+              <documentation>Angir eksakt lengde av gjerde.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="typeStolpe" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvilken type stolper gjerdet har</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_TypeStolpe.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_TypeStolpe.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="lydtett" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir om vegobjektet er lydtett, har betydning for støyutbredelse.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_Lydtett.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_Lydtett.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="overflatebehandling" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvordan vegobjektet er overflatebehandla.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_OverflatebehandlingGjerde.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_OverflatebehandlingGjerde.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="vedlikeholdsansvarlig" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvem som er ansvarlig for vedlikehold av vegobjektet.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_VedlikeholdsansvarligGjerde.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_VedlikeholdsansvarligGjerde.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GjerdePropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmgtm:Gjerde"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Gjerdeport" substitutionGroup="fmgtm:GatemoeblerElement" type="fmgtm:GjerdeportType">
+    <annotation>
+      <documentation>Passasje i gjerder eller skjermer</documentation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+        <sc:taggedValue tag="referanse">855</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="GjerdeportType">
+    <complexContent>
+      <extension base="fmgtm:GatemoeblerElementType">
+        <sequence>
+          <element minOccurs="0" name="bruksområde" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hva vegobjektet brukes til, hvilken funksjon det har.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_BruksomraadeGjerdeport.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_BruksomraadeGjerdeport.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="materiale" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir materiale.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_MaterialeGjerdeport.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_MaterialeGjerdeport.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="bredde" type="double">
+            <annotation>
+              <documentation>Angir bredde av gjerdeport.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="eier" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvem som er eier av vegobjektet.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_EierGjerdeport.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_EierGjerdeport.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="høyde" type="double">
+            <annotation>
+              <documentation>Angir egenhøyde av vegobjektet.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="normalStilling" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hva som er normal stilling for dør.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_NormalStilling.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_NormalStilling.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="vedlikeholdsansvarlig" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvem som er ansvarlig for vedlikehold av vegobjektet.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_VedlikeholdsansvarligGjerdeport.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_VedlikeholdsansvarligGjerdeport.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="utforming" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvilken utforming grinda har.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_UtformingGjerdeport.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_UtformingGjerdeport.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GjerdeportPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmgtm:Gjerdeport"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="KunstUtsmykking" substitutionGroup="fmgtm:GatemoeblerElement" type="fmgtm:KunstUtsmykkingType">
+    <annotation>
+      <documentation>Kunst/utsmykking i forbindelse med et veganlegg.  Kan være skulpturer, relieff mm</documentation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+        <sc:taggedValue tag="referanse">19</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="KunstUtsmykkingType">
+    <complexContent>
+      <extension base="fmgtm:GatemoeblerElementType">
+        <sequence>
+          <element minOccurs="0" name="type" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvilken type vegobjektet er av</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_TypeKunstUtsmykking.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_TypeKunstUtsmykking.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="navnPåKunstner" type="string">
+            <annotation>
+              <documentation>Angir navn på kunstner.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="tittel" type="string">
+            <annotation>
+              <documentation>Angir tittel på kunst/utsmykking.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="vedlikeholdsansvarlig" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvem som er ansvarlig for vedlikehold av vegobjektet.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_VedlikeholdsansvarligKunstUtsmykking.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_VedlikeholdsansvarligKunstUtsmykking.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="eier" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvem som er eier av vegobjektet.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_EierKunstUtsmykking.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_EierKunstUtsmykking.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="KunstUtsmykkingPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmgtm:KunstUtsmykking"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Lekeapparat" substitutionGroup="fmgtm:GatemoeblerElement" type="fmgtm:LekeapparatType">
+    <annotation>
+      <documentation>Utstyr satt opp på f.eks. rasteplasser brukt til lek mm</documentation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+        <sc:taggedValue tag="referanse">26</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="LekeapparatType">
+    <complexContent>
+      <extension base="fmgtm:GatemoeblerElementType">
+        <sequence>
+          <element minOccurs="0" name="type" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvilken type vegobjektet er av.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_TypeLekeapparat.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_TypeLekeapparat.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="antall" type="integer">
+            <annotation>
+              <documentation>Vegobjektet kan representere flere objekt av samme type. Vi angir her hvor mange objekt dette objektet representerer.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="eier" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvem som er eier av vegobjektet.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_EierLekeapparat.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_EierLekeapparat.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="fastmontert" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir om lekeapparatet er fastmontert.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_FastmontertLekeapparat.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_FastmontertLekeapparat.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="materialtype" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir primær materialtype for vegobjektet.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_MaterialtypeLekeapparat.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_MaterialtypeLekeapparat.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="overflatebehandling" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvordan vegobjektet er overflatebehandlet.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_OverflatebehandlingLekeapparat.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_OverflatebehandlingLekeapparat.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="sikkerhetskrav" type="string">
+            <annotation>
+              <documentation>Angir hvilke krav til sikkerhet som gjelder. Det henvises til lover/forskrifter og paragrafer.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="underlag" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvilket underlag der er i tilknytning til lekeapparatet.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_Underlag.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_Underlag.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="vedlikeholdsansvarlig" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvem som er ansvarlig for vedlikehold av vegobjektet.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_VedlikeholdsansvarligLekeapparat.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_VedlikeholdsansvarligLekeapparat.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="vedlikeholdsavtale" type="string">
+            <annotation>
+              <documentation>Angir arkivnummer for henvisning til eventuell vedlikeholdsavtale for vegobjektet.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="vinterlagring" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir om lekeapparatet blir vinterlagret.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_VinterlagringLekeapparat.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_VinterlagringLekeapparat.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="LekeapparatPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmgtm:Lekeapparat"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Leskur" substitutionGroup="fmgtm:GatemoeblerElement" type="fmgtm:LeskurType">
+    <annotation>
+      <documentation>Lite bygg for vern mot vær og vind.  Benyttes i forbindelse med holdeplasser.</documentation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+        <sc:taggedValue tag="referanse">25</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="LeskurType">
+    <complexContent>
+      <extension base="fmgtm:GatemoeblerElementType">
+        <sequence>
+          <element minOccurs="0" name="materialtype" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir primær materialtype for vegobjektet</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_MaterialtypeLeskur.gml</sc:targetCodeListURI>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="antallModuler" type="integer">
+            <annotation>
+              <documentation>Angir hvor mange moduler et leskur er satt sammen av.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="arealTilpassetRullestol" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir om det finnes fritt areal innvendig på minst 1.5 x 1.5 m.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_ArealTilpassetRullestol.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_ArealTilpassetRullestol.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="eier" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvem som er eier av vegobjektet.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_EierLeskur.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_EierLeskur.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="friBreddeInnvendig" type="double">
+            <annotation>
+              <documentation>Angir minste frie bredde innvendig i leskur. Fri bredde måles i leskurets lengderetning, dvs. parallelt med åpning. Innenfor denne bredden skal det være mulig å bevege seg med rullestol, dvs. bredde av ev. benker m.m. er ikke inkludert i fri bredde.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="friDybdeInnvendig" type="double">
+            <annotation>
+              <documentation>Angir minste fri dybde i leskur. Fri dybde måles innover i leskuret fra åpningen mot bakvegg. Innenfor denne bredden skal det være mulig å bevege seg med rullestol, dvs. bredde av ev. benker m.m. skal ikke inkluderes i fri bredde.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="glassflaterMarkert" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir om glassflater har markering i 2 høyder for å unngå at noen går på dem.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_GlassflaterMarkert.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_GlassflaterMarkert.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="lengdeUtvendig" type="double">
+            <annotation>
+              <documentation>Angir utvendig lengdemål. Lengde gis i leskurets lengderetning. Dette er vanligvis parallelt med plattform.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="reklameavtale" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir om det finnes avtale for reklame i leskuret.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_Reklameavtale.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_Reklameavtale.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="sittemulighet" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir om det er sittemulighet i leskur.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_Sittemulighet.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_Sittemulighet.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="trinnfriAdkomst" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir om høydeforskjell mellom fortau og leskur er så lav at f.eks. rullestol eller barnevogn enkelt kan komme inn, dvs. mindre enn 2 cm.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_TrinnfriAdkomst.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_TrinnfriAdkomst.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="vedlikeholdsansvarlig" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvem som er ansvarlig for vedlikehold av vegobjektet.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_VedlikeholdsansvarligLeskur.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_VedlikeholdsansvarligLeskur.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="vedlikeholdsavtale" type="string">
+            <annotation>
+              <documentation>Angir hvem det er gjort vedlikeholdsavtale med.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="innvendigBelysning" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir om det er innvendig belysning i leskur.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_InnvendigBelysning.gml</sc:targetCodeListURI>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="LeskurPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmgtm:Leskur"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="PlantekasseUrne" substitutionGroup="fmgtm:GatemoeblerElement" type="fmgtm:PlantekasseUrneType">
+    <annotation>
+      <documentation>Kasse, urne, krukke etc. med blomster/busker. Er plassert på terreng, ikke nedgravd.</documentation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+        <sc:taggedValue tag="referanse">18</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="PlantekasseUrneType">
+    <complexContent>
+      <extension base="fmgtm:GatemoeblerElementType">
+        <sequence>
+          <element minOccurs="0" name="breddeDiameter" type="double">
+            <annotation>
+              <documentation>Angir hvor bredt vegobjektet er, Benyttes til å angi diameter om det er sirkulær form.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="eier" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvem som er eier av vegobjektet.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_EierPlantekasseUrne.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_EierPlantekasseUrne.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="høyde" type="double">
+            <annotation>
+              <documentation>Angir vegobjektets egenhøyde (inkludert fot).</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="lengde" type="double">
+            <annotation>
+              <documentation>Angir lengde av vegobjektet.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="materialtype" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir primær materialtype for vegobjektet.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_MaterialtypePlantekasseUrne.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_MaterialtypePlantekasseUrne.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="vedlikeholdsansvarlig" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvem som er ansvarlig for vedlikehold av vegobjektet.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_VedlikeholdsansvarligPlantekasseUrne.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_VedlikeholdsansvarligPlantekasseUrne.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="vinterlagring" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir om Plantekasse/urne blir flyttet til annet sted for vinterlagring eller ikke.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_VinterlagringPlantekasseUrne.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_VinterlagringPlantekasseUrne.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="PlantekasseUrnePropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmgtm:PlantekasseUrne"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Renovasjon" substitutionGroup="fmgtm:GatemoeblerElement" type="fmgtm:RenovasjonType">
+    <annotation>
+      <documentation>Utstyr for søppelhåndtering.</documentation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+        <sc:taggedValue tag="referanse">27</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="RenovasjonType">
+    <complexContent>
+      <extension base="fmgtm:GatemoeblerElementType">
+        <sequence>
+          <element minOccurs="0" name="antall" type="integer">
+            <annotation>
+              <documentation>Angir hvor mange fysiske objekt dette objektet representerer.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="eier" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvem som er eier av vegobjektet.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_EierRenovasjon.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_EierRenovasjon.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="type" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvilken type vegobjektet er av.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_TypeRenovasjon.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_TypeRenovasjon.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="tømmebehov" type="string">
+            <annotation>
+              <documentation>Angir hvor ofte det er behov for tømming.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="vedlikeholdsansvarlig" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvem som er ansvarlig for vedlikehold av vegobjektet.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_VedlikeholdsansvarligRenovasjon.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_VedlikeholdsansvarligRenovasjon.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="volume" type="double">
+            <annotation>
+              <documentation>Angir volum av vegobjektet.</documentation>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RenovasjonPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmgtm:Renovasjon"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Stroesandkasse" substitutionGroup="fmgtm:GatemoeblerElement" type="fmgtm:StroesandkasseType">
+    <annotation>
+      <documentation>Innretning laget for lagring av strøsand.</documentation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+        <sc:taggedValue tag="referanse">29</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="StroesandkasseType">
+    <complexContent>
+      <extension base="fmgtm:GatemoeblerElementType">
+        <sequence>
+          <element minOccurs="0" name="eier" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvem som er eier av vegobjektet.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_EierStroesandkasse.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_EierStroesandkasse.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="type" type="string">
+            <annotation>
+              <documentation>Angir hvilken type strøsandkasse det er tale om.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="vedlikeholdsansvarlig" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvem som er ansvarlig for vedlikehold av vegobjektet.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_VedlikeholdsansvarligStroesandkassen.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_VedlikeholdsansvarligStroesandkassen.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="volum" type="double">
+            <annotation>
+              <documentation>Angir volum av vegobjektet.</documentation>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="StroesandkassePropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmgtm:Stroesandkasse"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Sykkelparkering" substitutionGroup="fmgtm:GatemoeblerElement" type="fmgtm:SykkelparkeringType">
+    <annotation>
+      <documentation>Angir område tilrettelagt for sykkelparkering.</documentation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+        <sc:taggedValue tag="referanse">451</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="SykkelparkeringType">
+    <complexContent>
+      <extension base="fmgtm:GatemoeblerElementType">
+        <sequence>
+          <element minOccurs="0" name="antallSyklerTotalt" type="integer">
+            <annotation>
+              <documentation>Angir hvor mange sykler det er plass til totalt.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="eier" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvem som er eier av vegobjektet.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_EierSykkelparkering.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_EierSykkelparkering.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="sykkelstativ" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir om det er sykkelstativ på sykkelparkeringen.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_Sykkelstativ.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_Sykkelstativ.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="takoverbygg" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir om det er takoverbygg over hele eller deler av sykkelparkeringen.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_Takoverbygg.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_Takoverbygg.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="vedlikeholdsansvarlig" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvem som er ansvarlig for vedlikehold av vegobjektet.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_VedlikeholdsansvarligSykkelparkering.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_VedlikeholdsansvarligSykkelparkering.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SykkelparkeringPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmgtm:Sykkelparkering"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Utemoebler" substitutionGroup="fmgtm:GatemoeblerElement" type="fmgtm:UtemoeblerType">
+    <annotation>
+      <documentation>Møbler som benyttes ute i samband med vegsystemet. Dette kan f.eks. være på rasteplasser, ferjeoppstillingsplasser etc.</documentation>
+      <appinfo>
+        <sc:taggedValue tag="kilde">NVDB</sc:taggedValue>
+        <sc:taggedValue tag="referanse">28</sc:taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <complexType name="UtemoeblerType">
+    <complexContent>
+      <extension base="fmgtm:GatemoeblerElementType">
+        <sequence>
+          <element minOccurs="0" name="antall" type="integer">
+            <annotation>
+              <documentation>Vegobjektet kan representere flere objekt av samme type. Vi angir her hvor mange objekt dette objektet representerer.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="eier" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvem som er eier av vegobjektet.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_EierUtemoebler.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_EierUtemoebler.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="fastmontert" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir om utemøblet er fastmontert.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_FastmontertUtemoebler.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_FastmontertUtemoebler.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="materialtype" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir primær materialtype for vegobjektet.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_MaterialtypeUtemoebler.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_MaterialtypeUtemoebler.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="overflatebehandling" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvordan vegobjektet er overflatebehandla.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_OverflatebehandlingUtemoebler.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_OverflatebehandlingUtemoebler.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="type" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvilken type vegobjektet er av.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_TypeUtemoebler.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_TypeUtemoebler.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="vedlikeholdsansvarlig" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvem som er ansvarlig for vedlikehold av vegobjektet.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_VedlikeholdsansvarligUtemoebler.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_VedlikeholdsansvarligUtemoebler.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="vedlikeholdsavtale" type="string">
+            <annotation>
+              <documentation>Angir arkivnummer for henvisning til eventuell vedlikeholdsavtale for vegobjektet.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="vinterlagring" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir om utemøbler blir vinterlagret.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_VinterlagringUtemoebler.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmgtm_VinterlagringUtemoebler.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="UtemoeblerPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmgtm:Utemoebler"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>

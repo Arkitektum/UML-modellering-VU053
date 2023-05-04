@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:svvge="https://skjema.atlas.vegvesen.no/r000/sosigenerelleegenskaper/1.0" xmlns:svvli="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0" xmlns:svvlr="https://skjema.atlas.vegvesen.no/r000/svvlinearereferanser/1.0" xmlns:svvpm="https://skjema.atlas.vegvesen.no/r000/svvpolyfacemesh/1.0" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0" version="1.0">
+  <import namespace="http://www.interactive-instruments.de/ShapeChange/AppInfo" schemaLocation="http://shapechange.net/resources/schema/ShapeChangeAppinfo.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/sosigenerelleegenskaper/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/InternTesting/xsd_files/2023/v1_2_0/SOSI_GenerelleEgenskaper.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/svvlinearereferanser/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/InternTesting/xsd_files/2023/v1_2_0/SVV_LineareReferanser.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/svvpolyfacemesh/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/InternTesting/xsd_files/2023/v1_2_0/SVV_PolyfaceMesh.xsd"/>
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="DistanceExpression" substitutionGroup="gml:AbstractGML" type="svvli:DistanceExpressionType"/>
+  <complexType name="DistanceExpressionType">
+    <complexContent>
+      <extension base="gml:AbstractGMLType">
+        <sequence>
+          <element name="distanceAlong" type="gml:LengthType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="DistanceExpressionPropertyType">
+    <sequence minOccurs="0">
+      <element ref="svvli:DistanceExpression"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Percentage" substitutionGroup="gml:AbstractGML" type="svvli:PercentageType"/>
+  <complexType name="PercentageType">
+    <complexContent>
+      <extension base="gml:AbstractGMLType">
+        <sequence>
+          <element name="percentage" type="double">
+            <annotation>
+              <documentation>real number in the range of -100 to +100, where 2.00 = 2%</documentation>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="PercentagePropertyType">
+    <sequence minOccurs="0">
+      <element ref="svvli:Percentage"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="SpatialRepresentationType" substitutionGroup="gml:AbstractObject" type="svvli:SpatialRepresentationTypeType"/>
+  <complexType name="SpatialRepresentationTypeType">
+    <choice>
+      <element name="geometry" type="gml:GeometryPropertyType"/>
+      <element name="polyfaceMesh" type="svvpm:PolyfaceMeshPropertyType"/>
+    </choice>
+  </complexType>
+  <complexType name="SpatialRepresentationTypePropertyType">
+    <sequence>
+      <element ref="svvli:SpatialRepresentationType"/>
+    </sequence>
+  </complexType>
+  <element name="VU053ElementSamling" substitutionGroup="svvli:VU053Set" type="svvli:VU053ElementSamlingType"/>
+  <complexType name="VU053ElementSamlingType">
+    <complexContent>
+      <extension base="svvli:VU053SetType">
+        <sequence>
+          <element minOccurs="0" name="distributionSystem" type="gml:CodeType">
+            <annotation>
+              <documentation>This enumeration identifies different types of distribution systems. It is used to designate systems by their function as well as ports of devices within such systems to restrict connectivity to compatible connections.
+
+Link: https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcDistributionSystemEnum.htm</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/svvli_DistribusjonssystemType.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/svvli_DistribusjonssystemType.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="propertySet">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="svvli:VU053PropertySet"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="property">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="svvli:VU053Property"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="VU053ElementSamlingPropertyType">
+    <sequence minOccurs="0">
+      <element ref="svvli:VU053ElementSamling"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="VU053Facility" substitutionGroup="svvli:VU053Feature" type="svvli:VU053FacilityType"/>
+  <complexType name="VU053FacilityType">
+    <complexContent>
+      <extension base="svvli:VU053FeatureType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="part">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="svvli:VU053FaciltyPart"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="VU053FacilityPropertyType">
+    <sequence minOccurs="0">
+      <element ref="svvli:VU053Facility"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="VU053FaciltyPart" substitutionGroup="svvli:VU053Feature" type="svvli:VU053FaciltyPartType"/>
+  <complexType name="VU053FaciltyPartType">
+    <complexContent>
+      <extension base="svvli:VU053FeatureType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="VU053FaciltyPartPropertyType">
+    <sequence minOccurs="0">
+      <element ref="svvli:VU053FaciltyPart"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="VU053Feature" substitutionGroup="svvge:SOSIFeature" type="svvli:VU053FeatureType"/>
+  <complexType name="VU053FeatureType">
+    <complexContent>
+      <extension base="svvge:SOSIFeatureType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="linearposisjon" type="svvlr:LineærPosisjonPropertyType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="spatialRepresentation" type="svvli:SpatialRepresentationTypePropertyType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="propertySet">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="svvli:VU053PropertySet"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="property">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="svvli:VU053Property"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="VU053FeaturePropertyType">
+    <sequence minOccurs="0">
+      <element ref="svvli:VU053Feature"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="VU053PhysicalElement" substitutionGroup="svvli:VU053Feature" type="svvli:VU053PhysicalElementType"/>
+  <complexType name="VU053PhysicalElementType">
+    <complexContent>
+      <extension base="svvli:VU053FeatureType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="VU053PhysicalElementPropertyType">
+    <sequence minOccurs="0">
+      <element ref="svvli:VU053PhysicalElement"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="VU053Property" substitutionGroup="svvge:SOSIFeature" type="svvli:VU053Property_Type"/>
+  <complexType name="VU053Property_Type">
+    <complexContent>
+      <extension base="svvge:SOSIFeatureType">
+        <sequence>
+          <element name="valueType" type="string"/>
+          <element name="value">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="gml:AbstractObject"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element name="units" type="string"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="VU053Property_PropertyType">
+    <sequence minOccurs="0">
+      <element ref="svvli:VU053Property"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="VU053PropertySet" substitutionGroup="svvli:VU053Set" type="svvli:VU053PropertySetType"/>
+  <complexType name="VU053PropertySetType">
+    <complexContent>
+      <extension base="svvli:VU053SetType">
+        <sequence>
+          <element maxOccurs="unbounded" name="property">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="svvli:VU053Property"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="VU053PropertySetPropertyType">
+    <sequence minOccurs="0">
+      <element ref="svvli:VU053PropertySet"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="VU053Set" substitutionGroup="svvge:SOSIFeature" type="svvli:VU053SetType"/>
+  <complexType abstract="true" name="VU053SetType">
+    <complexContent>
+      <extension base="svvge:SOSIFeatureType">
+        <sequence>
+          <element minOccurs="0" name="authority" type="string"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="VU053SetPropertyType">
+    <sequence minOccurs="0">
+      <element ref="svvli:VU053Set"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>

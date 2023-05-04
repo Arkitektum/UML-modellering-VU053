@@ -4,9 +4,9 @@
 	<import namespace="http://www.interactive-instruments.de/ShapeChange/AppInfo" schemaLocation="http://shapechange.net/resources/schema/ShapeChangeAppinfo.xsd"/>
 	<import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
 	<import namespace="https://skjema.atlas.vegvesen.no/r000/0.1/fagmodellelektro"/>
-	<import namespace="https://skjema.atlas.vegvesen.no/r000/fagmodellrekkverk/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/InternTesting/xsd_files/2023/v1_1_0/FagmodellRekkverk.xsd"/>
-	<import namespace="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/InternTesting/xsd_files/2023/v1_1_0/SVV_Landinfra.xsd"/>
-	<import namespace="https://skjema.atlas.vegvesen.no/r000/svvleveranse/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/InternTesting/xsd_files/2023/v1_1_0/SVV_Leveranse.xsd"/>
+	<import namespace="https://skjema.atlas.vegvesen.no/r000/fagmodellrekkverk/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/InternTesting/xsd_files/2023/v1_2_0/FagmodellRekkverk.xsd"/>
+	<import namespace="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/InternTesting/xsd_files/2023/v1_2_0/SVV_Landinfra.xsd"/>
+	<import namespace="https://skjema.atlas.vegvesen.no/r000/svvleveranse/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/InternTesting/xsd_files/2023/v1_2_0/SVV_Leveranse.xsd"/>
 	<!--XML Schema document created by ShapeChange - http://shapechange.net/-->
 	<element name="AnnetOppsettingsutsyr" type="fmskl:AnnetOppsettingsutsyrType" substitutionGroup="fmskl:OppsettingsutstyrSelveid">
 		<annotation>
