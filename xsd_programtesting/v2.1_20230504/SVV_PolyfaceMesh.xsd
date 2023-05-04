@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:svvpm="https://skjema.atlas.vegvesen.no/r000/svvpolyfacemesh/1.0" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/svvpolyfacemesh/1.0" version="1.0">
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="IndexedPoint" substitutionGroup="gml:AbstractObject" type="svvpm:IndexedPointType"/>
+  <complexType name="IndexedPointType">
+    <sequence>
+      <element name="index" type="integer"/>
+      <element name="coordinates" type="gml:doubleList"/>
+    </sequence>
+  </complexType>
+  <complexType name="IndexedPointPropertyType">
+    <sequence>
+      <element ref="svvpm:IndexedPoint"/>
+    </sequence>
+  </complexType>
+  <element name="IndexedPointList" substitutionGroup="gml:AbstractObject" type="svvpm:IndexedPointListType"/>
+  <complexType name="IndexedPointListType">
+    <sequence>
+      <element maxOccurs="unbounded" minOccurs="3" name="indexedPoint" type="svvpm:IndexedPointPropertyType"/>
+    </sequence>
+  </complexType>
+  <complexType name="IndexedPointListPropertyType">
+    <sequence>
+      <element ref="svvpm:IndexedPointList"/>
+    </sequence>
+  </complexType>
+  <element name="PolyfaceMesh" substitutionGroup="gml:AbstractGeometry" type="svvpm:PolyfaceMeshType"/>
+  <complexType name="PolyfaceMeshType">
+    <complexContent>
+      <extension base="gml:AbstractGeometryType">
+        <sequence>
+          <element name="simpleIndexedPolygonList" type="svvpm:SimpleIndexedPolygonListPropertyType"/>
+          <element name="indexedPointList" type="svvpm:IndexedPointListPropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="PolyfaceMeshPropertyType">
+    <sequence>
+      <element ref="svvpm:PolyfaceMesh"/>
+    </sequence>
+  </complexType>
+  <element name="SimpleIndexedPolygon" substitutionGroup="gml:AbstractSurface" type="svvpm:SimpleIndexedPolygonType"/>
+  <complexType name="SimpleIndexedPolygonType">
+    <complexContent>
+      <extension base="gml:AbstractSurfaceType">
+        <sequence>
+          <element name="pointIndex" type="gml:integerList"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SimpleIndexedPolygonPropertyType">
+    <sequence>
+      <element ref="svvpm:SimpleIndexedPolygon"/>
+    </sequence>
+  </complexType>
+  <element name="SimpleIndexedPolygonList" substitutionGroup="gml:AbstractObject" type="svvpm:SimpleIndexedPolygonListType"/>
+  <complexType name="SimpleIndexedPolygonListType">
+    <sequence>
+      <element maxOccurs="unbounded" name="simpleIndexedPolygon" type="svvpm:SimpleIndexedPolygonPropertyType"/>
+    </sequence>
+  </complexType>
+  <complexType name="SimpleIndexedPolygonListPropertyType">
+    <sequence>
+      <element ref="svvpm:SimpleIndexedPolygonList"/>
+    </sequence>
+  </complexType>
+</schema>

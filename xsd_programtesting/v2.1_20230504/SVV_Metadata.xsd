@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:svvge="https://skjema.atlas.vegvesen.no/r000/sosigenerelleegenskaper/1.0" xmlns:svvme="https://skjema.atlas.vegvesen.no/r000/svvmetadata/0.1" targetNamespace="https://skjema.atlas.vegvesen.no/r000/svvmetadata/0.1" elementFormDefault="qualified" version="0.1">
+	<import namespace="http://www.interactive-instruments.de/ShapeChange/AppInfo" schemaLocation="http://shapechange.net/resources/schema/ShapeChangeAppinfo.xsd"/>
+	<import namespace="http://www.isotc211.org/2005/gmd" schemaLocation="http://schemas.opengis.net/iso/19139/20070417/gmd/gmd.xsd"/>
+	<import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+	<import namespace="https://skjema.atlas.vegvesen.no/r000/sosigenerelleegenskaper/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_programtesting/v2.1_20230504/SOSI_GenerelleEgenskaper.xsd"/>
+	<!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+	<element name="Aktoer" type="svvme:AktoerType" substitutionGroup="gml:AbstractFeature"/>
+	<complexType name="AktoerType">
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="part" type="gml:CodeType" minOccurs="0">
+						<annotation>
+							<appinfo>
+								<sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/vp_Partstype.gml</sc:targetCodeListURI>
+								<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/vp_Partstype.gml</defaultCodeSpace>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="organisasjonsnavn" type="string" minOccurs="0"/>
+					<element name="personRolle" type="svvme:PersonRollePropertyType" maxOccurs="unbounded"/>
+					<element name="person" type="svvme:PersonPropertyType"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="AktoerPropertyType">
+		<sequence minOccurs="0">
+			<element ref="svvme:Aktoer"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="AktoerRolleKlasse" type="svvme:AktoerRolleKlasseType" substitutionGroup="gml:AbstractObject"/>
+	<complexType name="AktoerRolleKlasseType">
+		<choice>
+			<element name="rolle" type="gml:CodeType">
+				<annotation>
+					<appinfo>
+						<sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/svvme_AktoerRolle.gml</sc:targetCodeListURI>
+						<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/svvme_AktoerRolle.gml</defaultCodeSpace>
+					</appinfo>
+				</annotation>
+			</element>
+			<element name="fagressus" type="gml:CodeType">
+				<annotation>
+					<appinfo>
+						<sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/svvme_Fagressurs.gml</sc:targetCodeListURI>
+						<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/svvme_Fagressurs.gml</defaultCodeSpace>
+					</appinfo>
+				</annotation>
+			</element>
+		</choice>
+	</complexType>
+	<complexType name="AktoerRolleKlassePropertyType">
+		<sequence>
+			<element ref="svvme:AktoerRolleKlasse"/>
+		</sequence>
+	</complexType>
+	<element name="Datafangstinfo" type="svvme:DatafangstinfoType" substitutionGroup="gml:AbstractObject"/>
+	<complexType name="DatafangstinfoType">
+		<sequence>
+			<element name="datafangstForklaring" type="string" minOccurs="0"/>
+			<element name="datafangstRapport" type="gmd:URL_PropertyType" minOccurs="0"/>
+			<element name="omraade" minOccurs="0" maxOccurs="unbounded">
+				<complexType>
+					<complexContent>
+						<extension base="gml:AbstractFeatureMemberType">
+							<sequence minOccurs="0">
+								<element ref="svvme:Leveranseomraade"/>
+							</sequence>
+							<attributeGroup ref="gml:AssociationAttributeGroup"/>
+						</extension>
+					</complexContent>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+	<complexType name="DatafangstinfoPropertyType">
+		<sequence>
+			<element ref="svvme:Datafangstinfo"/>
+		</sequence>
+	</complexType>
+	<element name="Datakvalitetinfo" type="svvme:DatakvalitetinfoType" substitutionGroup="gml:AbstractObject">
+		<annotation>
+			<documentation>SOSI Produktspesifikasjon versjon 5 ( 2014), kap 17</documentation>
+		</annotation>
+	</element>
+	<complexType name="DatakvalitetinfoType">
+		<sequence>
+			<element name="behandlingshistorie" type="string" minOccurs="0">
+				<annotation>
+					<documentation>Begrep i ISO19115: Lineage/statemet</documentation>
+				</annotation>
+			</element>
+			<element name="stedfestingsnoyaktighet" type="svvge:PosisjonskvalitetPropertyType" minOccurs="0"/>
+			<element name="omraade" minOccurs="0" maxOccurs="unbounded">
+				<complexType>
+					<complexContent>
+						<extension base="gml:AbstractFeatureMemberType">
+							<sequence minOccurs="0">
+								<element ref="svvme:Leveranseomraade"/>
+							</sequence>
+							<attributeGroup ref="gml:AssociationAttributeGroup"/>
+						</extension>
+					</complexContent>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+	<complexType name="DatakvalitetinfoPropertyType">
+		<sequence>
+			<element ref="svvme:Datakvalitetinfo"/>
+		</sequence>
+	</complexType>
+	<element name="LeveranseKontakt" type="svvme:LeveranseKontaktType" substitutionGroup="gml:AbstractObject"/>
+	<complexType name="LeveranseKontaktType">
+		<sequence>
+			<element name="person" type="svvme:PersonPropertyType" minOccurs="0"/>
+			<element name="rolle" type="gml:CodeType" minOccurs="0">
+				<annotation>
+					<appinfo>
+						<sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/svvme_LeveranseRolle.gml</sc:targetCodeListURI>
+						<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/svvme_LeveranseRolle.gml</defaultCodeSpace>
+					</appinfo>
+				</annotation>
+			</element>
+			<element name="utfoerendeOrganisasjon" type="string" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="LeveranseKontaktPropertyType">
+		<sequence>
+			<element ref="svvme:LeveranseKontakt"/>
+		</sequence>
+	</complexType>
+	<element name="LeveranseKoordinatsystem" type="svvme:LeveranseKoordinatsystemType" substitutionGroup="svvge:Koordinatsystem">
+		<annotation>
+			<documentation>KOORDSYS: angivelse av hvilket koordinatsystem (og ev. akse) koordinatene pa fila tilhorer. Hele fila må inneholde koordinater fra bare ett koordinatsystem.
+
+KIlde: SOSI Del 1 + SOSI Produktspesifikasjoner ver 5 (2014) kap 16</documentation>
+		</annotation>
+	</element>
+	<complexType name="LeveranseKoordinatsystemType">
+		<complexContent>
+			<extension base="svvge:KoordinatsystemType">
+				<sequence>
+					<element name="omraade" minOccurs="0" maxOccurs="unbounded">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="svvme:Leveranseomraade"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="LeveranseKoordinatsystemPropertyType">
+		<sequence>
+			<element ref="svvme:LeveranseKoordinatsystem"/>
+		</sequence>
+	</complexType>
+	<element name="Leveranseomraade" type="svvme:LeveranseomraadeType" substitutionGroup="gml:AbstractFeature">
+		<annotation>
+			<documentation>I SOSI Produktspesifikasjoner, versjon 5 (2014) kap 14,  heter dette Spesifikasjonsomfang</documentation>
+		</annotation>
+	</element>
+	<complexType name="LeveranseomraadeType">
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="identifikasjon" type="svvge:IdentifikasjonPropertyType" minOccurs="0">
+						<annotation>
+							<documentation>Bruker SOSI_Identifikasjon i stedet for LandInfra/ID</documentation>
+						</annotation>
+					</element>
+					<element name="navn" type="string" minOccurs="0">
+						<annotation>
+							<documentation>Tilsvarer LandInfra/AbstractData/name</documentation>
+						</annotation>
+					</element>
+					<element name="forklaring" type="string" minOccurs="0"/>
+					<element name="utstrekning" type="gml:PolygonType" minOccurs="0" maxOccurs="unbounded"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="LeveranseomraadePropertyType">
+		<sequence minOccurs="0">
+			<element ref="svvme:Leveranseomraade"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Person" type="svvme:PersonType" substitutionGroup="gml:AbstractObject"/>
+	<complexType name="PersonType">
+		<sequence>
+			<element name="navn" type="string"/>
+			<element name="tel" type="string" minOccurs="0"/>
+			<element name="e_post" type="string" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="PersonPropertyType">
+		<sequence>
+			<element ref="svvme:Person"/>
+		</sequence>
+	</complexType>
+	<element name="PersonRolle" type="svvme:PersonRolleType" substitutionGroup="gml:AbstractObject"/>
+	<complexType name="PersonRolleType">
+		<sequence>
+			<element name="rolle" type="svvme:AktoerRolleKlassePropertyType"/>
+		</sequence>
+	</complexType>
+	<complexType name="PersonRollePropertyType">
+		<sequence>
+			<element ref="svvme:PersonRolle"/>
+		</sequence>
+	</complexType>
+	<element name="Prosjektreferanse" type="svvme:ProsjektreferanseType" substitutionGroup="gml:AbstractObject">
+		<annotation>
+			<documentation>Referanse til prosjektinformasjon
+
+Kilde: SOSI Vegkropp</documentation>
+		</annotation>
+	</element>
+	<complexType name="ProsjektreferanseType">
+		<sequence>
+			<element name="oppdragsgiverNavn" type="string">
+				<annotation>
+					<documentation>navn på oppdragsgiver</documentation>
+				</annotation>
+			</element>
+			<element name="oppdragsgiversOrganisasjonsnummer" type="string" minOccurs="0">
+				<annotation>
+					<documentation>oppdragsgivers organisasjonsnummer</documentation>
+				</annotation>
+			</element>
+			<element name="prosjektnavn" type="string">
+				<annotation>
+					<documentation>Oppdragsgivers prosjektnavn</documentation>
+				</annotation>
+			</element>
+			<element name="prosjektID" type="string">
+				<annotation>
+					<documentation>Oppdragsgivers prosjektID</documentation>
+				</annotation>
+			</element>
+			<element name="prosjektfase" type="string" minOccurs="0">
+				<annotation>
+					<documentation>Prosjektfase i henhold til faser definert for prosjektet</documentation>
+				</annotation>
+			</element>
+			<element name="fasestatus" type="string" minOccurs="0">
+				<annotation>
+					<documentation>Status på dataleveransen i forhold til fasen. 
+Fasebetegnelsen som brukes må finnes i oppdragsgivers liste over definerte faser for prosjektet.</documentation>
+				</annotation>
+			</element>
+			<element name="prosjektURL" type="string" minOccurs="0">
+				<annotation>
+					<documentation>URL til prosjektdatabasen det mer informasjon om prosjektet kan finnes.
+Merknad: Det antas at prosjektdatabasen også kan inneholde informasjon om andre prosjekt, og at noen av de andre egenskapene på dette objektet må brukes for å søke fram det rette prosjektet og del/fase av prosjektet.</documentation>
+				</annotation>
+			</element>
+		</sequence>
+	</complexType>
+	<complexType name="ProsjektreferansePropertyType">
+		<sequence>
+			<element ref="svvme:Prosjektreferanse"/>
+		</sequence>
+	</complexType>
+	<element name="VU053_LeveranseMetadata" type="svvme:VU053_LeveranseMetadataType" substitutionGroup="gml:AbstractFeature"/>
+	<complexType name="VU053_LeveranseMetadataType">
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="identifikasjon" type="svvge:IdentifikasjonPropertyType" minOccurs="0">
+						<annotation>
+							<documentation>Bruker SOSI_Identifikasjon i stedet for LandInfra/ID</documentation>
+						</annotation>
+					</element>
+					<element name="navn" type="string" minOccurs="0">
+						<annotation>
+							<documentation>Tilsvarer LandInfra/AbstractData/name</documentation>
+						</annotation>
+					</element>
+					<element name="hensikt" type="string" minOccurs="0">
+						<annotation>
+							<documentation>Tilsvarer LandInfra/AbstractData/description</documentation>
+						</annotation>
+					</element>
+					<element name="forklaring" type="string" minOccurs="0"/>
+					<element name="leveransekontakt" type="svvme:LeveranseKontaktPropertyType" minOccurs="0"/>
+					<element name="prosjektreferanse" type="svvme:ProsjektreferansePropertyType" minOccurs="0"/>
+					<element name="datafangstinfo" type="svvme:DatafangstinfoPropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<element name="datakvalitet" type="svvme:DatakvalitetinfoPropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<element name="referansesystem" type="svvme:LeveranseKoordinatsystemPropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<element name="omraadeOppdeling" minOccurs="0">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="svvme:Leveranseomraade"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="VU053_LeveranseMetadataPropertyType">
+		<sequence minOccurs="0">
+			<element ref="svvme:VU053_LeveranseMetadata"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+</schema>
