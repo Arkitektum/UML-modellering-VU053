@@ -1,0 +1,236 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>FagmodellSkilt Kodelister</title>
+<link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> FagmodellSkilt Kodelister </h1>
+			<!-- <img class="header_image" src="../../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../../EA3.htm">Vegprosjekt VU053 v1.0</a> / <a href="../../../EA344.htm">LeveranseVegprosjekt</a> / <a href="../../EA348.htm">Samordningsmodell</a> / <a href="../EA609.htm">Tverrfagligmodell</a> / <a href="EA1319.htm">FagmodellSkilt</a> / <a href="EA1313.htm">FagmodellSkilt Kodelister</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<li><img src="../../../../../images/4.png" alt="Package"/> <a href="./EA1/EA1398.htm">Produkt-info</a></li>
+<li><img src="../../../../../images/175.png" alt="Diagram"/> <a href="EA1311.htm">FagmodellSkilt</a></li>
+<li><img src="../../../../../images/175.png" alt="Diagram"/> <a href="EA1313.htm">FagmodellSkilt Kodelister</a></li>
+<li><img src="../../../../../images/175.png" alt="Diagram"/> <a href="EA1315.htm">FagmodellSkilt Kodelister Skiltplater</a></li>
+<li><img src="../../../../../images/175.png" alt="Diagram"/> <a href="EA1317.htm">SkiltElement</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1330.htm">AnnetOppsettingsutsyr</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1331.htm">Avskjaeringsledd</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1332.htm">BoltegruppeFraKonstruksjon</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1333.htm">BrakettFraKonstruksjon</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1334.htm">BruksomraadePlate</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1335.htm">EtterlysendeSkiltplate</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1336.htm">FagmodellSkilt</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1337.htm">FastSkilplate</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1338.htm">Fjellfeste</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1339.htm">Fundament</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1340.htm">Fylling</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1341.htm">Objektreferanse</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1342.htm">Oppsettingsutstyr</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1344.htm">OppsettingsutstyrIkkeSelveid</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1345.htm">OppsettingsutstyrLysmast</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1346.htm">OppsettingsutstyrRekkverkStoetpute</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1347.htm">OppsettingsutstyrSelveid</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1348.htm">OppsettingsutstyrSignalstolpe</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1349.htm">OppsettingsutstyrTunnelvegg</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1350.htm">OppsettingsutstyrTverrbjelkeITunnel</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1352.htm">Planum</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1353.htm">Plate</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1357.htm">SkiltElement</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1358.htm">SkiltnummerEtterlysende</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1362.htm">Skiltstolpe</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1363.htm">Terrengarbeid</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1364.htm">UtkragerFraVegg</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1365.htm">VariabeltSkiltplate</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1366.htm">AnsiktssideRettetMot</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1367.htm">Bebyggelse</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1368.htm">Belysning</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1369.htm">Brakett</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1370.htm">Boeyle</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1371.htm">Farge</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1372.htm">FjernstyringVariabelt</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1373.htm">Eier</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1374.htm">Folieklasse</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1375.htm">SkiftingAvBudskap</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1376.htm">Fundamentering</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1377.htm">Himmelretning</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1378.htm">SkiltnummerOrdinaerVisning</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1379.htm">KampanjeEgnet</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1380.htm">Klappskilt</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1381.htm">TypeVariabeltSkilt</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1382.htm">KampanjePaagaaende</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1383.htm">Leverandoer</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1384.htm">Variasjon</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1385.htm">Klima</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1386.htm">Refleksleverandoer</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1387.htm">Miljoe</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1388.htm">Skiltform</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1389.htm">Skiltnummer</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1390.htm">ProduktnavnSkiltmast</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1391.htm">Stoerrelse</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1392.htm">Skiltholder</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1393.htm">TekstSymbolhoeyde</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1394.htm">TosidigPlateMedUlikeMotiv</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA1395.htm">Vedlikeholdsansvarlig</a></li>
+</ul>
+
+					</td>
+					<td class="contentcell"><div class="PageBody">
+	<div class=diagram_image> 
+<img src="EA1314.png" usemap="#EA1314" border="0" />
+
+<MAP NAME="EA1314">
+<area shape="rect" coords="1129,142,1302,279" href="EA1395.htm" target="_self">
+<area shape="rect" coords="811,171,958,240" href="EA1394.htm" target="_self">
+<area shape="rect" coords="1097,305,1270,585" href="EA1393.htm" target="_self">
+<area shape="rect" coords="1350,11,1523,125" href="EA1392.htm" target="_self">
+<area shape="rect" coords="897,890,1070,1004" href="EA1391.htm" target="_self">
+<area shape="rect" coords="897,266,1070,585" href="EA1390.htm" target="_self">
+<area shape="rect" coords="457,269,877,8323" href="EA1389.htm" target="_self">
+<area shape="rect" coords="979,142,1102,241" href="EA1388.htm" target="_self">
+<area shape="rect" coords="1153,10,1326,124" href="EA1387.htm" target="_self">
+<area shape="rect" coords="897,613,1070,737" href="EA1386.htm" target="_self">
+<area shape="rect" coords="897,753,1070,867" href="EA1385.htm" target="_self">
+<area shape="rect" coords="897,1167,1129,1291" href="EA1384.htm" target="_self">
+<area shape="rect" coords="897,1025,1070,1149" href="EA1383.htm" target="_self">
+<area shape="rect" coords="958,11,1131,125" href="EA1382.htm" target="_self">
+<area shape="rect" coords="659,11,926,148" href="EA1381.htm" target="_self">
+<area shape="rect" coords="1302,309,1475,423" href="EA1380.htm" target="_self">
+<area shape="rect" coords="1326,142,1499,256" href="EA1379.htm" target="_self">
+<area shape="rect" coords="10,269,438,2590" href="EA1378.htm" target="_self">
+<area shape="rect" coords="1097,601,1270,715" href="EA1377.htm" target="_self">
+<area shape="rect" coords="1097,737,1270,851" href="EA1376.htm" target="_self">
+<area shape="rect" coords="1097,875,1270,989" href="EA1375.htm" target="_self">
+<area shape="rect" coords="1087,1011,1260,1148" href="EA1374.htm" target="_self">
+<area shape="rect" coords="1153,1167,1326,1291" href="EA1373.htm" target="_self">
+<area shape="rect" coords="1350,1171,1523,1285" href="EA1372.htm" target="_self">
+<area shape="rect" coords="1286,973,1459,1149" href="EA1371.htm" target="_self">
+<area shape="rect" coords="1286,830,1459,944" href="EA1369.htm" target="_self">
+<area shape="rect" coords="1302,699,1475,813" href="EA1368.htm" target="_self">
+<area shape="rect" coords="1302,569,1475,683" href="EA1367.htm" target="_self">
+<area shape="rect" coords="1499,291,1672,405" href="EA1366.htm" target="_self">
+<area shape="rect" coords="1302,437,1475,561" href="EA1370.htm" target="_self">
+<area shape="rect" coords="287,11,644,226" href="EA1358.htm" target="_self">
+<area shape="rect" coords="19,11,271,239" href="EA1334.htm" target="_self">
+<area shape="rect" coords="678,170,787,243" href="EA1331.htm" target="_self">
+<area shape="rect" coords="1317,2592,1432,2647" href="EA1328.htm" target="_self">
+</MAP>
+ </div>
+	<div class="ObjectTitle">FagmodellSkilt Kodelister : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">03.11.2022 14:03:16</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">04.04.2023 14:31:03</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">ilypal</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{76ECD137-EC15-4cb9-B859-5DE11B2BF1C1}</td>
+		</tr>
+	</table>
+	
+</div>
+
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+
