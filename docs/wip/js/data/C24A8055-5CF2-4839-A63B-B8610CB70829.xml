@@ -1,3 +1,0 @@
-tocTab[tocTab.length] = new Array("0.1.7.2:1", "", "ISO-19103-CoreDataTypes", "EARoot/EA1/EA7/EA2/EA270.htm", "175.png", "323", "0", "", "Logical diagram0","{C801A973-178D-4523-B83C-89055B7B77CA}");
-tocTab[tocTab.length] = new Array("0.1.7.2:2", "", "Any", "EARoot/EA1/EA7/EA2/EA273.htm", "8.png", "E2373", "0", "", "Interface0","{ED13009D-7EBE-4569-9F67-359520224AFD}");
-tocTab[tocTab.length] = new Array("0.1.7.2:3", "", "UomLength", "EARoot/EA1/EA7/EA2/EA274.htm", "8.png", "E2372", "0", "", "Interface0","{AA1FB1FD-1FD4-40c0-B803-4AB39BCDE997}");

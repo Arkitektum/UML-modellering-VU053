@@ -1,5 +1,0 @@
-tocTab[tocTab.length] = new Array("0.1.7.1.3.2:1", "", "OGC-ASTopic19-LinearReferencing", "EARoot/EA1/EA7/EA1/EA3/EA2/EA259.htm", "175.png", "321", "0", "", "Logical diagram0","{FEFE3E9F-D236-4e9b-8A1C-814582FB1FF8}");
-tocTab[tocTab.length] = new Array("0.1.7.1.3.2:2", "", "ILinearElement", "EARoot/EA1/EA7/EA1/EA3/EA2/EA262.htm", "8.png", "E2369", "0", "", "Interface0","{9596415F-30BC-4fc7-9602-116219A2E4AE}");
-tocTab[tocTab.length] = new Array("0.1.7.1.3.2:3", "", "ISpatial", "EARoot/EA1/EA7/EA1/EA3/EA2/EA263.htm", "8.png", "E2367", "0", "", "Interface0","{5B53E65E-FBE9-479a-9ACE-A22D775E1D7E}");
-tocTab[tocTab.length] = new Array("0.1.7.1.3.2:4", "", "LinearReferencingMethod", "EARoot/EA1/EA7/EA1/EA3/EA2/EA264.htm", "5.png", "E2368", "0", "", "Class0","{6CC68FAA-1E4C-4dfa-8764-A2A9A27BD89F}");
-tocTab[tocTab.length] = new Array("0.1.7.1.3.2.1", "1", "RemovedParts", "EARoot/EA1/EA7/EA1/EA3/EA2/EA1/EA268.htm", "4.png", "", "", "{A41C679E-8EB9-47ea-B5A8-5A1FC4BBC01E}", "Package");

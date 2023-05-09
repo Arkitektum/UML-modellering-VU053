@@ -1,3 +1,0 @@
-tocTab[tocTab.length] = new Array("0.1.7.4:1", "", "LandInfra_part3_Alignment", "EARoot/EA1/EA7/EA4/EA286.htm", "175.png", "326", "0", "", "Logical diagram0","{8B1B2489-1ED6-41a6-990B-4D1D9374E50A}");
-tocTab[tocTab.length] = new Array("0.1.7.4:2", "", "AlignmentCurve", "EARoot/EA1/EA7/EA4/EA289.htm", "5.png", "E2379", "0", "", "Class0","{4CF27BA5-AF4A-42d1-85A9-D5C5DC1E71BE}");
-tocTab[tocTab.length] = new Array("0.1.7.4:3", "", "«union» CurveSegment2DHorizontal", "EARoot/EA1/EA7/EA4/EA290.htm", "5.png", "E2380", "0", "", "Class0","{FF955D25-EF90-45fb-88D1-90A34D692372}");
