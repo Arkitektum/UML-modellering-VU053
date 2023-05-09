@@ -1,8 +1,8 @@
-tocTab[tocTab.length] = new Array("0.2.1.2.8:1", "", "FagmodellKulturminnevern", "EARoot/EA2/EA1/EA2/EA8/EA1081.htm", "175.png", "286", "0", "", "Logical diagram0","{FE4574CA-E656-4bfd-A6EF-195659BACC63}");
-tocTab[tocTab.length] = new Array("0.2.1.2.8:2", "", "«FeatureType» FagmodellKulturminnevern", "EARoot/EA2/EA1/EA2/EA8/EA1085.htm", "5.png", "E2134", "0", "", "Class0","{ABD129CA-1425-4686-8DA9-7887EFE82063}");
-tocTab[tocTab.length] = new Array("0.2.1.2.8:3", "", "«FeatureType» Hensynssone", "EARoot/EA2/EA1/EA2/EA8/EA1086.htm", "5.png", "E2142", "0", "", "Class0","{0636DC82-C0BF-463d-B125-B659B90934CF}");
-tocTab[tocTab.length] = new Array("0.2.1.2.8:4", "", "«FeatureType» KulturminnevernElement", "EARoot/EA2/EA1/EA2/EA8/EA1087.htm", "5.png", "E2135", "0", "", "Class0","{FED9D738-DC2E-439f-9AF6-5EF0EC1010E0}");
-tocTab[tocTab.length] = new Array("0.2.1.2.8:5", "", "«FeatureType» KulturminnevernElementSamling", "EARoot/EA2/EA1/EA2/EA8/EA1088.htm", "5.png", "E2232", "0", "", "Class0","{2A333D3C-D2A1-498b-9DD4-0F24E6CA1B23}");
-tocTab[tocTab.length] = new Array("0.2.1.2.8:6", "", "«CodeList» DataKildevurdering", "EARoot/EA2/EA1/EA2/EA8/EA1090.htm", "5.png", "E2144", "0", "", "Class0","{B0539D6A-9AF9-4004-AB21-193721D861EE}");
-tocTab[tocTab.length] = new Array("0.2.1.2.8.1", "1", "Analyse", "EARoot/EA2/EA1/EA2/EA8/EA1/EA1093.htm", "4.png", "", "", "{6D33807C-E130-4999-A95F-460587C71112}", "Package");
-tocTab[tocTab.length] = new Array("0.2.1.2.8.2", "1", "Tiltak", "EARoot/EA2/EA1/EA2/EA8/EA2/EA1097.htm", "4.png", "", "", "{B20A80D5-0ECA-47a9-B8B8-D4FF2E73949E}", "Package");
+tocTab[tocTab.length] = new Array("0.2.1.2.8:1", "", "FagmodellKulturminnevern", "EARoot/EA2/EA1/EA2/EA8/EA1119.htm", "175.png", "286", "0", "", "Logical diagram0","{FE4574CA-E656-4bfd-A6EF-195659BACC63}");
+tocTab[tocTab.length] = new Array("0.2.1.2.8:2", "", "«FeatureType» FagmodellKulturminnevern", "EARoot/EA2/EA1/EA2/EA8/EA1123.htm", "5.png", "E2134", "0", "", "Class0","{ABD129CA-1425-4686-8DA9-7887EFE82063}");
+tocTab[tocTab.length] = new Array("0.2.1.2.8:3", "", "«FeatureType» Hensynssone", "EARoot/EA2/EA1/EA2/EA8/EA1124.htm", "5.png", "E2142", "0", "", "Class0","{0636DC82-C0BF-463d-B125-B659B90934CF}");
+tocTab[tocTab.length] = new Array("0.2.1.2.8:4", "", "«FeatureType» KulturminnevernElement", "EARoot/EA2/EA1/EA2/EA8/EA1125.htm", "5.png", "E2135", "0", "", "Class0","{FED9D738-DC2E-439f-9AF6-5EF0EC1010E0}");
+tocTab[tocTab.length] = new Array("0.2.1.2.8:5", "", "«FeatureType» KulturminnevernElementSamling", "EARoot/EA2/EA1/EA2/EA8/EA1126.htm", "5.png", "E2232", "0", "", "Class0","{2A333D3C-D2A1-498b-9DD4-0F24E6CA1B23}");
+tocTab[tocTab.length] = new Array("0.2.1.2.8:6", "", "«CodeList» DataKildevurdering", "EARoot/EA2/EA1/EA2/EA8/EA1128.htm", "5.png", "E2144", "0", "", "Class0","{B0539D6A-9AF9-4004-AB21-193721D861EE}");
+tocTab[tocTab.length] = new Array("0.2.1.2.8.1", "1", "Analyse", "EARoot/EA2/EA1/EA2/EA8/EA1/EA1131.htm", "4.png", "", "", "{6D33807C-E130-4999-A95F-460587C71112}", "Package");
+tocTab[tocTab.length] = new Array("0.2.1.2.8.2", "1", "Tiltak", "EARoot/EA2/EA1/EA2/EA8/EA2/EA1135.htm", "4.png", "", "", "{B20A80D5-0ECA-47a9-B8B8-D4FF2E73949E}", "Package");

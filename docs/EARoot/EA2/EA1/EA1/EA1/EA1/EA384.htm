@@ -1,0 +1,462 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>NiNVariabelVerdi</title>
+<link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> NiNVariabelVerdi </h1>
+			<!-- <img class="header_image" src="../../../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../../../EA3.htm">Vegprosjekt VU053 v2.1</a> / <a href="../../../../EA344.htm">LeveranseVegprosjekt</a> / <a href="../../../EA348.htm">Samordningsmodell</a> / <a href="../../EA353.htm">Situasjonsmodell</a> / <a href="../EA366.htm">GrunnlagsmodellLandskap</a> / <a href="EA377.htm">Naturtype</a> / <a href="EA384.htm">NiNVariabelVerdi</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<a href="EA377.htm">Naturtype</a></ul>
+
+					</td>
+					<td class="contentcell"><div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">NiNVariabelVerdi  : Public  &lt;&lt;Union&gt;&gt; Class</span>
+	<table border="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">08.05.2023 14:34:00</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">08.05.2023 15:31:00</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Arkitektum</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" >Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{47DAB4D9-7EAD-448e-BA3B-88ED1C385681}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../EA362.htm">GrunnlagsmodellLandskap</a>, <a href="EA375.htm">Naturtype</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">samling av ulike utpregningsgraddomener i form av kodelister som brukes for å beskrive en grunntype&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Attribute</td>
+			<td width="25%" class="TableHeading">Scope</td>
+			<td width="25%" class="TableHeading">Type</td>
+		</tr>
+						<tr>
+				<td width="50%" class="TableRow">
+					borealtEllerAlpintLandskap
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					<a href="EA386.htm">BorealtEllerAlpintLandskap</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					defaultCodeSpace=<a href="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmlnk_BorealtEllerAlpintLandskap.gml" target="_blank" >https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmlnk_BorealtEllerAlpintLandskap.gml</a><br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			&lt;b&gt;Forkortelse: &lt;/b&gt;BA&lt;br/&gt;&lt;b&gt;&lt;br/&gt;&lt;/b&gt;&lt;b&gt;Aktuelt for:&lt;/b&gt;&lt;br/&gt;Alle hovedtype-AE&#39;er som hører til hovedtypegruppe innlandslandskap (I)&lt;br/&gt;Tre trinn. &lt;br/&gt;&lt;br/&gt;&lt;b&gt;Datagrunnlag&lt;/b&gt;: &lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;Topografisk kart&lt;/li&gt;&lt;li&gt;Modell for utbredelsen av &#39;boreal hei&#39; (trebare arealer under skoggrensa som ikke er utbygd eller oppdyrket); inngår i &#39;arealer under klimatisk skoggrense, dvs. BA = 1)&lt;/li&gt;&lt;li&gt;Modell for klimatisk skoggrense&lt;/li&gt;&lt;/ul&gt;&lt;p/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					brepreg
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					<a href="EA385.htm">Brepreg</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					defaultCodeSpace=<a href="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmlnk_Brepreg.gml" target="_blank" >https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmlnk_Brepreg.gml</a><br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			&lt;b&gt;Forkortelse: &lt;/b&gt;BP&lt;br/&gt;&lt;b&gt;&lt;br/&gt;&lt;/b&gt;&lt;b&gt;Aktuelt for:&lt;/b&gt;&lt;br/&gt;AE&#8217;er for ås-og fjellandskap og innlanddallandskap (IÅ og ID)&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Datagrunnlag: &lt;/b&gt;(N50-signatur).&lt;br/&gt;&lt;b&gt;Breindeksen (BrI),&lt;/b&gt; frekvens av bre beregnet i standardraster og 500 m målenabolag (naboskapssirkel med diameter 1 km), basert på primærvariabelen forekomst av bre (N50-signatur).&lt;br/&gt;&lt;b&gt;&lt;br/&gt;&lt;/b&gt;Brepreg deles i to trinn. Gradienten brukes bare til inndeling innenfor hovedtyper for innlandslandskap. Gradienten er delt i ett normaltrinn (trinn 1) og ett spesialtrinn.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					dalOgNedskjæring
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					<a href="EA387.htm">DalOgNedskjaering</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					defaultCodeSpace=<a href="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmlnk_DalOgNedskjaering.gml" target="_blank" >https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmlnk_DalOgNedskjaering.gml</a><br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			&lt;b&gt;Forkortelse: &lt;/b&gt;DN&lt;br/&gt;&lt;b&gt;&lt;br/&gt;&lt;/b&gt;&lt;b&gt;Aktuelt for&lt;/b&gt;: Dal og fjord (hovedtypene MD, KF og ID)&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Datagrunnlag:&lt;/b&gt; Nøkkelegenskapslinje (&lt;b&gt;NEL&lt;/b&gt;) basert på DNI (&lt;i&gt;dalnedskjæringsindeksen&lt;/i&gt;); som er lik Daldybde/(2×Dalbredde). Daldybden i et punkt måles som reliativt relieff basert på et 4 km nabolag (RR4), som gjør bruk av DEM klipt til dalformens utstrekning + 0,5 km. Dalbredden i et punkt i dalbunnen måles som 2× den maksimale avstanden fra et punkt innenfor en naboskapssirkel med radius 0,5 km til kanten av dalfiguren. Nøkkelegenskapslinja skal følge dalbunnen, i dalens lengderetning. Dette blir i praksis oppnådd ved å beregne DNI for alle piksler i dalbunnen som inneholder deler av en elvestreng.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Trinndeling:&lt;/b&gt;&lt;br/&gt;DN har 4 klasser fra flat, åpen dal til smal, nedskåret og/eller bratt, karakterisert ved DNI som følger:&lt;br/&gt;DN = 1: DNI #lt; 0,2, &lt;br/&gt;DN = 2: 0,2 = DNI = 0,4, &lt;br/&gt;DN = 3: 0,4 = DNI = 0,6 &lt;br/&gt;DN = 4: DNI #gt; 0,6&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					innsjøpreg
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					<a href="EA391.htm">Innsjoepreg</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					defaultCodeSpace=<a href="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmlnk_Innsjoepreg.gml" target="_blank" >https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmlnk_Innsjoepreg.gml</a><br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			&lt;b&gt;Forkortelse: &lt;/b&gt;IP&lt;br/&gt;&lt;b&gt;&lt;br/&gt;&lt;/b&gt;&lt;b&gt;Aktuelt for:&lt;/b&gt;&lt;br/&gt;Alle hovedtyper som hører til innland og kyst (I og K)&lt;br/&gt;To trinn. &lt;br/&gt;&lt;b&gt;&lt;br/&gt;&lt;/b&gt;&lt;b&gt;Datagrunnlag:&lt;/b&gt; (N50-signatur).&lt;br/&gt;&lt;b&gt;Innsjøindeksen (II)&lt;/b&gt;&lt;br/&gt;frekvens av innsjøer beregnet i standardraster og 500 m målenabolag (naboskapssirkel med diameter 1 km), basert på primærvariabelen forekomst av innsjø (N50-signatur). Merk at II beregnes som frekvens i landareal-delen av naboskapssirkelen.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					jordbrukspreg
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					<a href="EA392.htm">Jordbrukspreg</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					defaultCodeSpace=<a href="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmlnk_Jordbrukspreg.gml" target="_blank" >https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmlnk_Jordbrukspreg.gml</a><br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			&lt;b&gt;Forkortelse: &lt;/b&gt;JP&lt;br/&gt;&lt;b&gt;&lt;br/&gt;&lt;/b&gt;&lt;b&gt;Aktuelt for:&lt;/b&gt;&lt;br/&gt;Alle hovedtyper som hører til innland og kyst (I og K)&lt;br/&gt;Tre trinn&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Datagrunnlag:&lt;/b&gt; (N50 signatur, dyrka mark) &lt;br/&gt;&lt;b&gt;Jordbruksindeksen (JI),&lt;/b&gt; frekvens av dyrkamark beregnet i standardraster og 500 m målenabolag (naboskapssirkel med diameter 1 km)&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					myrpreg
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					<a href="EA393.htm">Myrpreg</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					defaultCodeSpace=<a href="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmlnk_Myrpreg.gml" target="_blank" >https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmlnk_Myrpreg.gml</a><br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			&lt;b&gt;Forkortelse: &lt;/b&gt;MP&lt;br/&gt;&lt;b&gt;&lt;br/&gt;&lt;/b&gt;&lt;b&gt;Aktuelt for:&lt;/b&gt;&lt;br/&gt;Alle hovedtyper som hører til innland og kyst (I og K)&lt;br/&gt;To trinn.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Datagrunnlag:&lt;/b&gt; &lt;br/&gt;&lt;b&gt;Myrindeksen (MI),&lt;/b&gt; &lt;br/&gt;frekvens av myr beregnet i standardraster og 500 m målenabolag (naboskapssirkel med diameter 1 km), basert på primærvariabelen forekomst av myr (N50-signatur). Merk at MI beregnes som frekvens i landareal-delen av naboskapssirkelen.&lt;br/&gt;&lt;br/&gt;Myrpreg deles i to trinn som vist i Tabell V8&#8211;10. Gradienten er delt i ett normaltrinn (trinn 1) og ett spesialtrinn.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					omfangAvInfrastruktur
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					<a href="EA395.htm">OmfangAvInfrastruktur</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					defaultCodeSpace=<a href="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmlnk_OmfangAvInfrastruktur.gml" target="_blank" >https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmlnk_OmfangAvInfrastruktur.gml</a><br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			&lt;b&gt;Forkortelse: &lt;/b&gt;OI&lt;br/&gt;&lt;b&gt;&lt;br/&gt;&lt;/b&gt;&lt;b&gt;Aktuelt for:&lt;/b&gt;&lt;br/&gt;Alle hovedtyper som hører til innland og kyst (I og K)&lt;br/&gt;Seks trinn&lt;br/&gt;&lt;u&gt;&lt;br/&gt;&lt;/u&gt;&lt;b&gt;Datagrunnlag:&lt;/b&gt; &lt;br/&gt;(Matrikkelen, NVE kraftanleggdatabase og N50-signatur)&lt;br/&gt;&lt;b&gt;&lt;i&gt;Infrastrukturindeks&lt;/i&gt;&lt;/b&gt;&lt;b&gt; (IfI), &lt;/b&gt;en indeks med tre komponenter (alle målt i en naboskapssirkel med diameter 1 km) som summeres; (a) en bygningskomponent (ByI), (b) en komponent (KfI) som adresserer forekomst av sterkt menneskepåvirket fastmarksareal (resultatet av inngrep) som bidrar til å gi landskapet et &#8217;menneskelandskapspreg&#8217;, og (c) en komponent (ØI) for &#8217;øvrige inngrep&#8217; slike som regulerte vann og elver, vindmøller og infrastruktur knyttet til disse. Alle de tre komponentene 2-logaritmetransformeres før de tas inn i samleformelen for IfI, slik at økningen i indeksverdi pr. piksel med infrastruktur av gitt type er størst når omfanget av infrastrukturen av relevant type er lav. &lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					relieff
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					<a href="EA396.htm">Relieff</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					defaultCodeSpace=<a href="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmlnk_Relieff.gml" target="_blank" >https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmlnk_Relieff.gml</a><br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			&lt;b&gt;Forkortelse: &lt;/b&gt;RE&lt;br/&gt;&lt;b&gt;&lt;br/&gt;&lt;/b&gt;&lt;b&gt;Aktuelt for: &lt;/b&gt;&lt;br/&gt;AE&#39;er for ås-, vidde- og fjell-landskap (hovedtypene MA, KS, KA og IA)&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Datagrunnlag: &lt;/b&gt;&lt;br/&gt;&lt;b&gt;RR1 (Relativt relief)&lt;/b&gt; (høydeforskjell) i standardraster og 500 m målenabolag (naboskapssirkel med diameter 1 km).&lt;br/&gt;&lt;br/&gt;Relieff (relativt relieff) deles i tre trinn. Gradienten er komplementær til dalnedskjæring (DN), uttrykker grov-skala terrengform og brukes først og fremst til inndeling av ås- og fjell-landskapsfigurer. Den brukes ikke til inndeling av hovedtyper for dal og fjord.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					skjærgårdspreg
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					<a href="EA397.htm">Skjaergaardspreg</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					defaultCodeSpace=<a href="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmlnk_Skjaergaardspreg.gml" target="_blank" >https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmlnk_Skjaergaardspreg.gml</a><br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			&lt;b&gt;Forkortelse: &lt;/b&gt;SP&lt;br/&gt;&lt;b&gt;&lt;br/&gt;&lt;/b&gt;&lt;b&gt;Aktuelt for:&lt;/b&gt;&lt;br/&gt;Alle hovedtype-AE&#39;er som hører til hovedtypegruppe kystlandskap (K)&lt;br/&gt;&lt;b&gt;&lt;br/&gt;&lt;/b&gt;&lt;b&gt;Datagrunnlag:&lt;/b&gt;&lt;br/&gt;&lt;b&gt;Øystørrelse (N50 signatur)&lt;/b&gt; og AI1 (afotisk indeks; beregnet for naboskapssirkel 1 km som frekvens av piksler med h o.h. #gt; enn &#8211;30 m (altså maks ned til &#8211; 30 meter) under havnivå som er maksdybde på strandflateplattformen som må være sammenhengende for å være del av et landskapsområde i skjærgården, beregnet i standardraster.&lt;br/&gt;&lt;br/&gt;Gradienten brukes bare til inndeling innenfor hovedtyper for kystlandskap, og er særlig viktig innenfor kystslettelandskap. Den er delt i ett normaltrinn (trinn 2) og fem spesialtrinn, hvorav trinn 1 representerer spesialsituasjonen der et egenskapsområde uten kystlinje fradeles en kystlandskaps-hovedtypearealenhet.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					tindelandskapspreg
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					<a href="EA398.htm">Tindelandskapspreg</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					defaultCodeSpace=<a href="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmlnk_Tindelandskapspreg.gml" target="_blank" >https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmlnk_Tindelandskapspreg.gml</a><br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			&lt;b&gt;Forkortelse: &lt;/b&gt;TP&lt;br/&gt;&lt;b&gt;&lt;br/&gt;&lt;/b&gt;&lt;b&gt;Aktuelt for:&lt;/b&gt;&lt;br/&gt;AE&#8217;er for ås-og fjellandskap (IÅ og KÅ)&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Datagrunnlag:&lt;/b&gt; &lt;b&gt;TPI1 (topographic position index)&lt;/b&gt;&lt;br/&gt;i standardraster og 500 m målenabolag (naboskapssirkel med diameter 1 km), basert på primærvariabelen høyde over havet tatt fra 25 m høydemodell. TPI er den gjennomsnittlige høydeforskjellen mellom fokuspunktet og de andre punktene i målenabolaget.&lt;br/&gt;&lt;br/&gt;Tindelandskapspreg deles i to trinn. Gradienten brukes bare til inndeling innenfor hovedtyper for innlandslandskap, fordi tindelandskapspreg nær kysten gir grunnlag for utskilling av en innlandsfjell-landskaps-arealenhet uansett størrelse.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>
+	</table>
+</div>
+		<div class="ItemBody" id="CustomPropertiesTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Property</td>
+					<td width="70%" class="TableHeading">Value</td>
+				</tr>
+			<tr>
+				<td width="30%" class="TableRow">isFinalSpecialization:</td>
+				<td width="70%" class="TableRow">0</td>
+			</tr>
+
+
+			</table>
+		</div>	</div>
+ </div>
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>ELBryterNormalstilling</title>
+<title>Tilknytningspunkt</title>
 <link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script language="JavaScript" src="../../../../../js/displayToc.js" type="text/javascript"></script>
 <script>
@@ -64,12 +64,12 @@
 <div class="section group" >
 
 		<div class="col span_2_of_2 header_frame">
-			<h1> ELBryterNormalstilling </h1>
+			<h1> Tilknytningspunkt </h1>
 			<!-- <img class="header_image" src="../../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
 			<img class="header_image" src="../../../../../images/ea-banner.png" align="right" alt="Header Image" />
 		</div>
 		<div class="col span_2_of_2 breadcrumb_frame">
-			<p><a href="../../../../EA3.htm">Vegprosjekt VU053 v2.1</a> / <a href="../../../EA344.htm">LeveranseVegprosjekt</a> / <a href="../../EA348.htm">Samordningsmodell</a> / <a href="../EA609.htm">Tverrfagligmodell</a> / <a href="EA642.htm">FagmodellElektro</a> / <a href="EA719.htm">ELBryterNormalstilling</a></p>
+			<p><a href="../../../../EA3.htm">Vegprosjekt VU053 v2.1</a> / <a href="../../../EA344.htm">LeveranseVegprosjekt</a> / <a href="../../EA348.htm">Samordningsmodell</a> / <a href="../EA648.htm">Tverrfagligmodell</a> / <a href="EA681.htm">FagmodellElektro</a> / <a href="EA719.htm">Tilknytningspunkt</a></p>
 		</div>
 			
 		<table class="contentmaintable">
@@ -84,20 +84,20 @@
 					<td class="indexcell">
 						<div class="projectBrowserTitle">Project: </div>
 						<ul>
-<a href="EA642.htm">FagmodellElektro</a></ul>
+<a href="EA681.htm">FagmodellElektro</a></ul>
 
 					</td>
 					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<span class="ObjectTitle">ELBryterNormalstilling  : Public  &lt;&lt;CodeList&gt;&gt; Class</span>
+	<span class="ObjectTitle">Tilknytningspunkt  : Public  &lt;&lt;FeatureType&gt;&gt; Class</span>
 	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">14.12.2022 13:00:33</td>
+			<td width="85%" class="ObjectDetailsValue">21.12.2022 15:01:06</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">14.12.2022 13:01:09</td>
+			<td class="ObjectDetailsValue">27.12.2022 12:41:50</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -106,7 +106,7 @@
 		</tr>
 		<tr id="proj00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
-			<td class="ObjectDetailsValue">oiegei</td>
+			<td class="ObjectDetailsValue">ilypal</td>
 		</tr>
 		<tr id="proj01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
@@ -142,14 +142,14 @@
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{D7DE995C-C3F3-4526-AC65-AB2D532338CF}</td>
+			<td class="ObjectDetailsValue">{76EEF16C-8D8F-410c-93E8-A8AF21F25C33}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA638.htm">FagmodellElektro</a>, <a href="EA640.htm">FagmodellElektro Kodelister</a></td>
+			<td class="ObjectDetailsValue"><a href="EA677.htm">FagmodellElektro</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">Stilling inn eller ut&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">Node i nettverket som markerer en overgang til anna nettverk med andre eiere (&quot;Leveringspunkt&quot;)&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -166,13 +166,13 @@
 		</tr>
 						<tr>
 				<td width="50%" class="TableRow">
-					Inn
+					anleggsnummer
 				</td>
 				<td width="25%" class="TableRow">
 					Public 
 				</td>
 				<td width="25%" class="TableRow">
-					&lt;undefined&gt;
+					Character
 				</td>
 			</tr>
 			<tr>
@@ -183,18 +183,103 @@
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow">
-					Ut
+					cosinusPhi
 				</td>
 				<td width="25%" class="TableRow">
 					Public 
 				</td>
 				<td width="25%" class="TableRow">
-					&lt;undefined&gt;
+					Real
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="3">										
 					
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					fase
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					<a href="EA765.htm">ELFase</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					defaultCodeSpace=<a href="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmele_ELFase" target="_blank" >https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmele_ELFase</a><br>
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					maksEffekt
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					Integer
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					sluttbrukergruppe
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					<a href="EA785.htm">FASITSluttbrukergruppe</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					defaultCodeSpace=<a href="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmele_FASITSluttbrukergruppe" target="_blank" >https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmele_FASITSluttbrukergruppe</a><br>
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					tilknyttingsadresse
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					Character
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					type
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					<a href="EA782.htm">ELTilknytningspunkttype</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					defaultCodeSpace=<a href="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmele_ELTilknytningspunkttype" target="_blank" >https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmele_ELTilknytningspunkttype</a><br>
 						&nbsp;
 						
 				</td>
@@ -208,26 +293,6 @@
 			<td width="50%" class="TableHeading">Value</td>
 		</tr>
 					<tr>
-				<td width="50%" class="TableRow" valign="top">asDictionary</td>
-				<td width="50%" class="TableRow" valign="top">true</td>
-			</tr>	
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="2">
-					Details:
-						<div class="ObjectDetailsNotes">Values: true,false<br />Default: true<br />Description: true if codelist is externally managed, else false<br /></div>
-
-				</td>
-			</tr>			<tr>
-				<td width="50%" class="TableRow" valign="top">codeList</td>
-				<td width="50%" class="TableRow" valign="top"><a href="https://www.codelistURL.com" target="_blank" >https://www.codelistURL.com</a></td>
-			</tr>	
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="2">
-					Details:
-						<div class="ObjectDetailsNotes">Default: https://www.codelistURL.com<br /></div>
-
-				</td>
-			</tr>			<tr>
 				<td width="50%" class="TableRow" valign="top">kilde</td>
 				<td width="50%" class="TableRow" valign="top">SOSI</td>
 			</tr>	
