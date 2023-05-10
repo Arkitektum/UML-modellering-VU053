@@ -1,3 +1,0 @@
-tocTab[tocTab.length] = new Array("0.1.2.1.4:1", "", "Oversiktsdiagram Rabatt", "EARoot/EA1/EA2/EA1/EA4/EA117.htm", "175.png", "67", "0", "", "Logical diagram0","{CCABDBE0-1588-4398-9170-6CBADC1D933C}");
-tocTab[tocTab.length] = new Array("0.1.2.1.4:2", "", "Rabatt", "EARoot/EA1/EA2/EA1/EA4/EA120.htm", "5.png", "E266", "0", "", "Class0","{BC0C53E1-6915-4cf4-AFF6-81135DD1348D}");
-tocTab[tocTab.length] = new Array("0.1.2.1.4:3", "", "«featureType» RabattElement", "EARoot/EA1/EA2/EA1/EA4/EA121.htm", "5.png", "E265", "0", "", "Class0","{3EF7AA4C-749F-4791-91DE-DBFB31736F99}");

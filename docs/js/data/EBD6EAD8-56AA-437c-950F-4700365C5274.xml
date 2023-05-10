@@ -1,3 +1,0 @@
-tocTab[tocTab.length] = new Array("0.1.4.7:1", "", "Hoveddiagram Generelle egenskaper", "EARoot/EA1/EA4/EA7/EA193.htm", "175.png", "346", "0", "", "Logical diagram0","{AA36A94C-3900-4265-8C0C-BDBF28FE4034}");
-tocTab[tocTab.length] = new Array("0.1.4.7:2", "", "«featureType» GenerelleEgenskaper", "EARoot/EA1/EA4/EA7/EA197.htm", "5.png", "E1375", "0", "", "Class0","{1BC29D3E-2BC3-4c67-AAB5-89F3BF3C073E}");
-tocTab[tocTab.length] = new Array("0.1.4.7:3", "", "«dataType» Identifikasjon", "EARoot/EA1/EA4/EA7/EA198.htm", "5.png", "E1374", "0", "", "Class0","{39F30B9C-1669-46f6-B0D5-F93AEA1E29FA}");

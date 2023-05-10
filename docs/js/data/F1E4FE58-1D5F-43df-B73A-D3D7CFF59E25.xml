@@ -1,8 +1,0 @@
-tocTab[tocTab.length] = new Array("0.1.4.1", "1", "GML", "EARoot/EA1/EA4/EA1/EA81.htm", "4.png", "", "", "{5216C9C5-A132-41f8-935A-31CA73176CAD}", "Package");
-tocTab[tocTab.length] = new Array("0.1.4.2", "1", "ISO-19103-CoreDataTypes", "EARoot/EA1/EA4/EA2/EA138.htm", "4.png", "", "", "{78897037-7C65-4f28-B1C4-23AF6639F228}", "Package");
-tocTab[tocTab.length] = new Array("0.1.4.3", "1", "LandInfra_part3_Alignment", "EARoot/EA1/EA4/EA3/EA142.htm", "4.png", "", "", "{BA924E08-C2C8-42db-9436-1AE7E2B6D0AB}", "Package");
-tocTab[tocTab.length] = new Array("0.1.4.4", "1", "Plassholdere_for_Original_InfraGML", "EARoot/EA1/EA4/EA4/EA147.htm", "4.png", "", "", "{259335AA-6A77-439d-9E1D-C045C02E4500}", "Package");
-tocTab[tocTab.length] = new Array("0.1.4.5", "1", "ISO-19109-ApplicationSchema", "EARoot/EA1/EA4/EA5/EA164.htm", "4.png", "", "", "{BDF3517F-8D04-4ab6-A457-100199A860A3}", "Package");
-tocTab[tocTab.length] = new Array("0.1.4.6", "1", "OGC-ASTopic1-FeatureGeometry", "EARoot/EA1/EA4/EA6/EA175.htm", "4.png", "", "", "{73243AF9-8584-4451-B1D9-022BDA2325E0}", "Package");
-tocTab[tocTab.length] = new Array("0.1.4.7", "1", "SOSI_GenerelleEgenskaper", "EARoot/EA1/EA4/EA7/EA195.htm", "4.png", "", "", "{EBD6EAD8-56AA-437c-950F-4700365C5274}", "Package");
-tocTab[tocTab.length] = new Array("0.1.4.8", "1", "OGC-ASTopic2-SpatialReferencingByCoordinates", "EARoot/EA1/EA4/EA8/EA201.htm", "4.png", "", "", "{FD4347D6-7131-44eb-900F-F0A98643AEAE}", "Package");

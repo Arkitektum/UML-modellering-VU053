@@ -1,6 +1,0 @@
-tocTab[tocTab.length] = new Array("0.3.1.2.1.3:1", "", "Støtpute", "EARoot/EA3/EA1/EA2/EA1/EA3/EA401.htm", "175.png", "203", "0", "", "Logical diagram0","{5514DFA5-02F2-42db-A096-76702D0C4464}");
-tocTab[tocTab.length] = new Array("0.3.1.2.1.3:2", "", "«featureType» StøteputeElement", "EARoot/EA3/EA1/EA2/EA1/EA3/EA404.htm", "5.png", "E825", "0", "", "Class0","{2E5737D4-38EB-42e8-B98A-F5A60AF14D79}");
-tocTab[tocTab.length] = new Array("0.3.1.2.1.3:3", "", "«featureType» Støtpute", "EARoot/EA3/EA1/EA2/EA1/EA3/EA405.htm", "5.png", "E822", "0", "", "Class0","{A9CA939E-1C5C-4bdb-AF61-0D3E84D9AA64}");
-tocTab[tocTab.length] = new Array("0.3.1.2.1.3:4", "", "«codeList» Avledningsevne", "EARoot/EA3/EA1/EA2/EA1/EA3/EA406.htm", "5.png", "E826", "0", "", "Class0","{57F6337E-F27B-4f32-BFD6-31CED955AE2A}");
-tocTab[tocTab.length] = new Array("0.3.1.2.1.3:5", "", "«codeList» ProduktnavnTypegodkjenningStoetpute", "EARoot/EA3/EA1/EA2/EA1/EA3/EA407.htm", "5.png", "E824", "0", "", "Class0","{2F6E8D4D-38D6-49f6-957F-EBBDE5C8B2E4}");
-tocTab[tocTab.length] = new Array("0.3.1.2.1.3:6", "", "«codeList» Sikkerhetsklasse", "EARoot/EA3/EA1/EA2/EA1/EA3/EA408.htm", "5.png", "E823", "0", "", "Class0","{3AC7E2E0-97C5-4bed-A19C-C194009DDE29}");

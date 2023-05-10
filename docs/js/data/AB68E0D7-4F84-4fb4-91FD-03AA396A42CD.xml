@@ -1,2 +1,0 @@
-tocTab[tocTab.length] = new Array("0.1.5.3:1", "", "OGC-ASTopic19-LinearReferencing", "EARoot/EA1/EA5/EA3/EA128.htm", "175.png", "1181", "0", "", "Logical diagram0","{4E44D9A3-CC09-4af5-9B25-6E28929402E8}");
-tocTab[tocTab.length] = new Array("0.1.5.3:2", "", "DistanceExpression", "EARoot/EA1/EA5/EA3/EA131.htm", "5.png", "E6074", "0", "", "Class0","{60B61E31-DBFF-488f-BE41-404F4C004239}");

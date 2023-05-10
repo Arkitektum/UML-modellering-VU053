@@ -1,6 +1,0 @@
-tocTab[tocTab.length] = new Array("0.1.1:1", "", "Rekkverkmodell", "EARoot/EA1/EA1/EA17.htm", "175.png", "59", "0", "", "Logical diagram0","{484288ED-4CFC-4c89-AFBC-4F171A1D29CE}");
-tocTab[tocTab.length] = new Array("0.1.1:2", "", "RekkverkElementSamling", "EARoot/EA1/EA1/EA22.htm", "5.png", "E243", "0", "", "Class0","{6A354817-D5A2-45c3-9DD4-4F886BB445A4}");
-tocTab[tocTab.length] = new Array("0.1.1.1", "1", "Kodelister", "EARoot/EA1/EA1/EA1/EA27.htm", "4.png", "", "", "{4938CE89-1ECE-47fa-8723-23876D17072D}", "Package");
-tocTab[tocTab.length] = new Array("0.1.1.2", "1", "Rekkverk", "EARoot/EA1/EA1/EA2/EA35.htm", "4.png", "", "", "{8F717912-4640-4820-994B-5A8378A8A490}", "Package");
-tocTab[tocTab.length] = new Array("0.1.1.3", "1", "Rekkverksende", "EARoot/EA1/EA1/EA3/EA50.htm", "4.png", "", "", "{9DBFA73C-6757-4de5-B229-F41AC6FF0B60}", "Package");
-tocTab[tocTab.length] = new Array("0.1.1.4", "1", "Støtpute", "EARoot/EA1/EA1/EA4/EA58.htm", "4.png", "", "", "{735D3B42-C111-43a0-90EF-3A3376207FE6}", "Package");

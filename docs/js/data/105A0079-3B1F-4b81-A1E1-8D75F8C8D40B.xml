@@ -1,5 +1,0 @@
-tocTab[tocTab.length] = new Array("0.3.1.2.2.1.1.1:1", "", "Oversiktsdiagram drennering", "EARoot/EA3/EA1/EA2/EA2/EA1/EA1/EA1/EA438.htm", "175.png", "207", "0", "", "Logical diagram0","{DE0E200B-32E2-431d-96C6-D59DBCC75602}");
-tocTab[tocTab.length] = new Array("0.3.1.2.2.1.1.1:2", "", "Vannhaandtering", "EARoot/EA3/EA1/EA2/EA2/EA1/EA1/EA1/EA441.htm", "5.png", "E843", "0", "", "Class0","{9049281A-AB3C-4bd6-AA4D-07EB83B88508}");
-tocTab[tocTab.length] = new Array("0.3.1.2.2.1.1.1:3", "", "«featureType» VannHaandteringElement", "EARoot/EA3/EA1/EA2/EA2/EA1/EA1/EA1/EA443.htm", "5.png", "E842", "0", "", "Class0","{6D412D6F-10B0-406f-BE5F-3A25720DC8CE}");
-tocTab[tocTab.length] = new Array("0.3.1.2.2.1.1.1.1", "1", "VannhaandteringAapen", "EARoot/EA3/EA1/EA2/EA2/EA1/EA1/EA1/EA1/EA447.htm", "4.png", "", "", "{AF5E784C-AADA-4faa-A0AB-98030A8A0A3A}", "Package");
-tocTab[tocTab.length] = new Array("0.3.1.2.2.1.1.1.2", "1", "VannhaandteringLukket", "EARoot/EA3/EA1/EA2/EA2/EA1/EA1/EA1/EA2/EA453.htm", "4.png", "", "", "{4B689148-42A4-4899-A1B4-347BFC99AED0}", "Package");

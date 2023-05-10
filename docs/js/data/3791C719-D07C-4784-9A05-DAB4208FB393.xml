@@ -1,5 +1,0 @@
-tocTab[tocTab.length] = new Array("0.3.1.1:1", "", "Situasjonsmodell", "EARoot/EA3/EA1/EA1/EA333.htm", "175.png", "244", "0", "", "Logical diagram0","{7580F983-DF6E-4806-A6B8-341CDFC50ED1}");
-tocTab[tocTab.length] = new Array("0.3.1.1:2", "", "«featureType» Situasjonsmodell", "EARoot/EA3/EA1/EA1/EA336.htm", "5.png", "E989", "0", "", "Class0","{451E57CD-3B6D-470f-9839-F990BB1A64C1}");
-tocTab[tocTab.length] = new Array("0.3.1.1:3", "", "«featureType» Grunnlagsmodell", "EARoot/EA3/EA1/EA1/EA338.htm", "5.png", "E970", "0", "", "Class0","{640A2494-4B8E-4c78-AAFB-234D73456418}");
-tocTab[tocTab.length] = new Array("0.3.1.1.1", "1", "Grunnlagsdata", "EARoot/EA3/EA1/EA1/EA1/EA344.htm", "4.png", "", "", "{66866EB2-AE48-4c7e-9065-F40D25E52AE7}", "Package");
-tocTab[tocTab.length] = new Array("0.3.1.1.2", "1", "GrunnlagsmodellTerreng", "EARoot/EA3/EA1/EA1/EA2/EA352.htm", "4.png", "", "", "{3316E155-F23F-4e9b-8571-B1DFF2766E75}", "Package");

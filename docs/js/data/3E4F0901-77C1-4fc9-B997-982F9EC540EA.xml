@@ -1,4 +1,0 @@
-tocTab[tocTab.length] = new Array("0.1.1.1.1:1", "", "Added_EO", "EARoot/EA1/EA1/EA1/EA1/EA44.htm", "175.png", "328", "0", "", "Logical diagram0","{186728CC-E410-4748-9AF2-DD051528E142}");
-tocTab[tocTab.length] = new Array("0.1.1.1.1:2", "", "«union» CircularArcSegment", "EARoot/EA1/EA1/EA1/EA1/EA47.htm", "5.png", "E1283", "0", "", "Class0","{5C499218-40D5-4747-B591-EB806003D70B}");
-tocTab[tocTab.length] = new Array("0.1.1.1.1:3", "", "«dataType» SC_EngineeringCRS", "EARoot/EA1/EA1/EA1/EA1/EA48.htm", "5.png", "E1284", "0", "", "Class0","{FBFE8DFE-EC72-4824-B930-C79932999CDB}");
-tocTab[tocTab.length] = new Array("0.1.1.1.1:4", "", "TransitionCurve", "EARoot/EA1/EA1/EA1/EA1/EA49.htm", "5.png", "E1282", "0", "", "Class0","{52AADCF9-BED2-400a-8F8A-2AED6A8CA1F2}");

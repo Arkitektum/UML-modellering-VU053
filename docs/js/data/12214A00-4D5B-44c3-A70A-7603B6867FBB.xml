@@ -1,8 +1,0 @@
-tocTab[tocTab.length] = new Array("0.2.1:1", "", "Geometry", "EARoot/EA2/EA1/EA192.htm", "175.png", "77", "0", "", "Logical diagram0","{C1A028B9-05CF-4060-A047-4C5A4AFD0D74}");
-tocTab[tocTab.length] = new Array("0.2.1:2", "", "«dataType» Geometry", "EARoot/EA2/EA1/EA195.htm", "5.png", "E316", "0", "", "Class0","{1DA1E75C-C999-405f-81B3-49852D9EAAFE}");
-tocTab[tocTab.length] = new Array("0.2.1:3", "", "«dataType» Line", "EARoot/EA2/EA1/EA196.htm", "5.png", "E313", "0", "", "Class0","{FB7B0035-C47D-4f52-BB6E-CE8D8A55C41F}");
-tocTab[tocTab.length] = new Array("0.2.1:4", "", "«dataType» Point", "EARoot/EA2/EA1/EA197.htm", "5.png", "E317", "0", "", "Class0","{AD3B2A48-6BFC-4f89-9D09-B699D4167CEE}");
-tocTab[tocTab.length] = new Array("0.2.1:5", "", "«dataType» Polygon", "EARoot/EA2/EA1/EA198.htm", "5.png", "E319", "0", "", "Class0","{F3DC175C-9978-4389-BBC2-B42EF96C8830}");
-tocTab[tocTab.length] = new Array("0.2.1:6", "", "«dataType» Solid", "EARoot/EA2/EA1/EA199.htm", "5.png", "E314", "0", "", "Class0","{F1469696-0A50-4d92-B46E-5304709A38DC}");
-tocTab[tocTab.length] = new Array("0.2.1:7", "", "«dataType» Surface", "EARoot/EA2/EA1/EA200.htm", "5.png", "E318", "0", "", "Class0","{B4EA9B1E-29B3-417f-9E64-33344FC95E90}");
-tocTab[tocTab.length] = new Array("0.2.1:8", "", "TIN", "EARoot/EA2/EA1/EA201.htm", "5.png", "E315", "0", "", "Class0","{25E660A2-B307-4b23-85A2-29E18BE4C20F}");

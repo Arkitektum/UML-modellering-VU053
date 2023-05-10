@@ -1,7 +1,0 @@
-tocTab[tocTab.length] = new Array("0.2:1", "", "FellesModuler", "EARoot/EA2/EA203.htm", "175.png", "221", "0", "", "Logical diagram0","{BA8FAC07-9AEB-4e67-A899-20106AEB9922}");
-tocTab[tocTab.length] = new Array("0.2:2", "", "Fellesmoduler kodeliste", "EARoot/EA2/EA205.htm", "175.png", "222", "0", "", "Logical diagram0","{19B7E86F-5EDD-4d83-8C60-D771CBF40373}");
-tocTab[tocTab.length] = new Array("0.2:3", "", "«featureType» FellesmodulElement", "EARoot/EA2/EA213.htm", "5.png", "E895", "0", "", "Class0","{5AC0C4B2-78E4-4bb9-9EDA-5EC81520BC19}");
-tocTab[tocTab.length] = new Array("0.2.1", "1", "Geometry", "EARoot/EA2/EA1/EA221.htm", "4.png", "", "", "{6152A582-CFC6-419e-8A83-32353D713702}", "Package");
-tocTab[tocTab.length] = new Array("0.2.2", "1", "Leveranse", "EARoot/EA2/EA2/EA233.htm", "4.png", "", "", "{5B4A680B-A11A-493b-AC58-C5C1C7524A15}", "Package");
-tocTab[tocTab.length] = new Array("0.2.3", "1", "Prosjektorganisasjon", "EARoot/EA2/EA3/EA286.htm", "4.png", "", "", "{2A1B4BC1-48CC-4bc4-A0F2-3D4D4AC75917}", "Package");
-tocTab[tocTab.length] = new Array("0.2.4", "1", "Vegprosjekt", "EARoot/EA2/EA4/EA306.htm", "4.png", "", "", "{8A500EFA-587E-41c5-9CAD-DB3BD91373E8}", "Package");

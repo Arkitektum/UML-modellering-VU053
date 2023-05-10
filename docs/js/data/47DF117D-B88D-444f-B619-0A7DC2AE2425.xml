@@ -1,5 +1,0 @@
-tocTab[tocTab.length] = new Array("0.2.4:1", "", "Kodeliste Vegprosjekt", "EARoot/EA2/EA4/EA277.htm", "175.png", "89", "0", "", "Logical diagram0","{B5FF460A-7784-459b-9CD2-E05FE15AEA66}");
-tocTab[tocTab.length] = new Array("0.2.4:2", "", "Oversiktsdiagram Vegprosjekt", "EARoot/EA2/EA4/EA279.htm", "175.png", "88", "0", "", "Logical diagram0","{83D7B76E-624E-497d-B5DD-141F3F332298}");
-tocTab[tocTab.length] = new Array("0.2.4:3", "", "«codeList» Prosjekttype", "EARoot/EA2/EA4/EA284.htm", "5.png", "E370", "0", "", "Class0","{C892E10B-23C1-4ab5-8693-2737F40DB979}");
-tocTab[tocTab.length] = new Array("0.2.4:4", "", "«featureType» Vegprosjekt", "EARoot/EA2/EA4/EA285.htm", "5.png", "E369", "0", "", "Class0","{2E840C54-C802-4e7e-9B4F-0DF6A1197E13}");
-tocTab[tocTab.length] = new Array("0.2.4.1", "1", "«applicationSchema» ProsjektInformasjon", "EARoot/EA2/EA4/EA1/EA290.htm", "4.png", "", "", "{C5C2C95C-9107-4262-882D-E2CE9A7D5543}", "Package");

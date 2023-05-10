@@ -1,9 +1,0 @@
-tocTab[tocTab.length] = new Array("0.1.2.2:1", "", "Oversiktsdiagram Vegområde", "EARoot/EA1/EA2/EA2/EA169.htm", "175.png", "41", "0", "", "Logical diagram0","{AA9A62C3-99BA-4faf-9D49-12343ED26C71}");
-tocTab[tocTab.length] = new Array("0.1.2.2:2", "", "«dataType» Mellomprofil", "EARoot/EA1/EA2/EA2/EA172.htm", "5.png", "E156", "0", "", "Class0","{92EE450A-2997-4eff-81BE-006764EA28F8}");
-tocTab[tocTab.length] = new Array("0.1.2.2:3", "", "«codeList» Side", "EARoot/EA1/EA2/EA2/EA173.htm", "5.png", "E144", "0", "", "Class0","{4EA5379F-93AC-4a67-A0C3-D071F5EE3204}");
-tocTab[tocTab.length] = new Array("0.1.2.2:4", "", "Vegområde", "EARoot/EA1/EA2/EA2/EA174.htm", "5.png", "E167", "0", "", "Class0","{1DFE7060-31CD-44fd-9939-992E32C121B0}");
-tocTab[tocTab.length] = new Array("0.1.2.2:5", "", "«featureType» VegområdeElement", "EARoot/EA1/EA2/EA2/EA175.htm", "5.png", "E145", "0", "", "Class0","{5F46F001-116D-4d11-913F-FA75EF8DA966}");
-tocTab[tocTab.length] = new Array("0.1.2.2:6", "", "«dataType» VegområdeRef", "EARoot/EA1/EA2/EA2/EA176.htm", "5.png", "E143", "0", "", "Class0","{E499BF20-4BA8-4dd0-823D-E1112CE9B024}");
-tocTab[tocTab.length] = new Array("0.1.2.2:7", "", "«union» Ytterkant", "EARoot/EA1/EA2/EA2/EA177.htm", "5.png", "E153", "0", "", "Class0","{D73F6C19-1F7A-406c-947A-D4C8E7155D36}");
-tocTab[tocTab.length] = new Array("0.1.2.2:8", "", "«codeList» VegområdeElementType", "EARoot/EA1/EA2/EA2/EA178.htm", "5.png", "E149", "0", "", "Class0","{58272636-D191-4594-9520-341525BCDDDD}");
-tocTab[tocTab.length] = new Array("0.1.2.2:9", "", "«dataType» BreddeHellingGittVerdi", "EARoot/EA1/EA2/EA2/EA179.htm", "5.png", "E155", "0", "", "Class0","{D5711570-CF36-47f4-8BF1-79731D781E9D}");

@@ -1,6 +1,0 @@
-tocTab[tocTab.length] = new Array("0.1.4.4.2:1", "", "LandInfra_part0_Core", "EARoot/EA1/EA4/EA4/EA2/EA154.htm", "175.png", "341", "0", "", "Logical diagram0","{8FB2ABBD-71E9-4aca-AC53-F727D55DF08D}");
-tocTab[tocTab.length] = new Array("0.1.4.4.2:2", "", "«featureType» Alignment", "EARoot/EA1/EA4/EA4/EA2/EA157.htm", "5.png", "E1351", "0", "", "Class0","{8005AFE0-47CF-46a8-A5FC-1A7AF584EAC2}");
-tocTab[tocTab.length] = new Array("0.1.4.4.2:3", "", "«FeatureType» Feature", "EARoot/EA1/EA4/EA4/EA2/EA158.htm", "5.png", "E1353", "0", "", "Class0","{609A321D-C33D-46cb-9AFF-7235EF790C24}");
-tocTab[tocTab.length] = new Array("0.1.4.4.2:4", "", "Percentage", "EARoot/EA1/EA4/EA4/EA2/EA159.htm", "5.png", "E1354", "0", "", "Class0","{CAF1AE70-225A-4567-908A-ADD81944795F}");
-tocTab[tocTab.length] = new Array("0.1.4.4.2:5", "", "PolyfaceMesh", "EARoot/EA1/EA4/EA4/EA2/EA160.htm", "5.png", "E1350", "0", "", "Class0","{AF840CC0-B086-4b32-B054-DBB8FA28C431}");
-tocTab[tocTab.length] = new Array("0.1.4.4.2:6", "", "«CodeList» State", "EARoot/EA1/EA4/EA4/EA2/EA161.htm", "5.png", "E1352", "0", "", "Class0","{AB77821D-9B96-4727-8C40-6313744180C7}");

@@ -1,3 +1,0 @@
-tocTab[tocTab.length] = new Array("0.1.4.4:1", "", "Plassholdere_for_Original_InfraGML", "EARoot/EA1/EA4/EA4/EA145.htm", "175.png", "339", "0", "", "Logical diagram0","{10B1E4D8-855B-45b9-A103-8FAE06C8B89C}");
-tocTab[tocTab.length] = new Array("0.1.4.4.1", "1", "«appicationSchema» OGC-ASTopic19-LinearReferencing", "EARoot/EA1/EA4/EA4/EA1/EA152.htm", "4.png", "", "", "{9F308ED1-9994-4825-A6E2-A3726D0CA060}", "Package");
-tocTab[tocTab.length] = new Array("0.1.4.4.2", "1", "«appicationSchema» LandInfra_part0_Core", "EARoot/EA1/EA4/EA4/EA2/EA156.htm", "4.png", "", "", "{6B20BEE0-7190-4b71-966E-16E7D455EE25}", "Package");

@@ -1,7 +1,0 @@
-tocTab[tocTab.length] = new Array("0.3.1.2.2.1:1", "", "Oversiktsdiagram vegkonstruksjon", "EARoot/EA3/EA1/EA2/EA2/EA1/EA424.htm", "175.png", "205", "0", "", "Logical diagram0","{CECEFC7F-3F24-4a03-AF61-D25456A76F20}");
-tocTab[tocTab.length] = new Array("0.3.1.2.2.1:2", "", "Vegkonstruksjon", "EARoot/EA3/EA1/EA2/EA2/EA1/EA431.htm", "5.png", "E832", "0", "", "Class0","{B88A3656-2455-4c5a-980D-69DEC3D635F6}");
-tocTab[tocTab.length] = new Array("0.3.1.2.2.1.1", "1", "Groefter", "EARoot/EA3/EA1/EA2/EA2/EA1/EA1/EA435.htm", "4.png", "", "", "{CDD21194-E473-4cbe-8228-4CADC4B1B21F}", "Package");
-tocTab[tocTab.length] = new Array("0.3.1.2.2.1.2", "1", "Planum", "EARoot/EA3/EA1/EA2/EA2/EA1/EA2/EA458.htm", "4.png", "", "", "{ADFBAE67-03BA-4874-8549-9486CE742EBE}", "Package");
-tocTab[tocTab.length] = new Array("0.3.1.2.2.1.3", "1", "Rabatt", "EARoot/EA3/EA1/EA2/EA2/EA1/EA3/EA463.htm", "4.png", "", "", "{799BF243-FCAC-4dc8-B2D7-F32A8C4922BD}", "Package");
-tocTab[tocTab.length] = new Array("0.3.1.2.2.1.4", "1", "Sideomraade", "EARoot/EA3/EA1/EA2/EA2/EA1/EA4/EA468.htm", "4.png", "", "", "{9B739DA1-5715-439d-9D3D-CA976B66D472}", "Package");
-tocTab[tocTab.length] = new Array("0.3.1.2.2.1.5", "1", "«applicationSchema» Vegkropp", "EARoot/EA3/EA1/EA2/EA2/EA1/EA5/EA480.htm", "4.png", "", "", "{A44D38E8-C0C8-4c0f-9959-83C6BC7460E2}", "Package");

@@ -1,9 +1,0 @@
-tocTab[tocTab.length] = new Array("0.1.4.1", "1", "GML", "EARoot/EA1/EA4/EA1/EA88.htm", "4.png", "", "", "{8CB4A2AD-15E6-4b0a-8A19-79BD4AA0DD81}", "Package");
-tocTab[tocTab.length] = new Array("0.1.4.2", "1", "ISO-19103-CoreDataTypes", "EARoot/EA1/EA4/EA2/EA145.htm", "4.png", "", "", "{C24A8055-5CF2-4839-A63B-B8610CB70829}", "Package");
-tocTab[tocTab.length] = new Array("0.1.4.3", "1", "ISO-19109-ApplicationSchema", "EARoot/EA1/EA4/EA3/EA149.htm", "4.png", "", "", "{70ED2AB1-7F96-4658-979B-BE50335FF60F}", "Package");
-tocTab[tocTab.length] = new Array("0.1.4.4", "1", "LandInfra_part3_Alignment", "EARoot/EA1/EA4/EA4/EA160.htm", "4.png", "", "", "{CEEE3FFE-01E2-4a2f-BC6E-AE9A07F81627}", "Package");
-tocTab[tocTab.length] = new Array("0.1.4.5", "1", "OGC-ASTopic1-FeatureGeometry", "EARoot/EA1/EA4/EA5/EA165.htm", "4.png", "", "", "{1D9C8455-534C-46be-BAA1-69467F9F42DA}", "Package");
-tocTab[tocTab.length] = new Array("0.1.4.6", "1", "Plassholdere_for_Original_InfraGML", "EARoot/EA1/EA4/EA6/EA185.htm", "4.png", "", "", "{B86EF9FC-890F-4707-BB80-04115478F99C}", "Package");
-tocTab[tocTab.length] = new Array("0.1.4.7", "1", "«ApplicationSchema» SOSI Nettverk og lineære referanser 5.0", "EARoot/EA1/EA4/EA7/EA236.htm", "4.png", "", "", "{4F701CE8-791C-44e5-90B2-7F2892C1942D}", "Package");
-tocTab[tocTab.length] = new Array("0.1.4.8", "1", "SOSI_GenerelleEgenskaper", "EARoot/EA1/EA4/EA8/EA257.htm", "4.png", "", "", "{7562AEFE-0A79-4391-AE35-89002665BC4F}", "Package");
-tocTab[tocTab.length] = new Array("0.1.4.9", "1", "OGC-ASTopic2-SpatialReferencingByCoordinates", "EARoot/EA1/EA4/EA9/EA264.htm", "4.png", "", "", "{4E99FFD0-499F-47b5-AD28-C5B8CC04C389}", "Package");

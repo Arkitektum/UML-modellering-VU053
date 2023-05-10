@@ -1,3 +1,0 @@
-tocTab[tocTab.length] = new Array("0.1.2.1.1.1.2:1", "", "VannhåndteringLukket", "EARoot/EA1/EA2/EA1/EA1/EA1/EA2/EA103.htm", "175.png", "64", "0", "", "Logical diagram0","{7D15646C-EB05-498a-A7C3-7FE3A1D16103}");
-tocTab[tocTab.length] = new Array("0.1.2.1.1.1.2:2", "", "«featureType» VannHåmdteringLukket", "EARoot/EA1/EA2/EA1/EA1/EA1/EA2/EA106.htm", "5.png", "E261", "0", "", "Class0","{9B4F447C-1B0A-461a-B384-586339B0F31F}");
-tocTab[tocTab.length] = new Array("0.1.2.1.1.1.2:3", "", "«codeList» TypeLukketRørgrøft", "EARoot/EA1/EA2/EA1/EA1/EA1/EA2/EA107.htm", "5.png", "E260", "0", "", "Class0","{0C29C1B4-7CA5-49e9-BB7C-2B0ECC19546B}");

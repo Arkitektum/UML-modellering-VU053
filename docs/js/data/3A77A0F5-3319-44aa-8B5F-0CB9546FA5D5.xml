@@ -1,3 +1,0 @@
-tocTab[tocTab.length] = new Array("0.1.2.1.3:1", "", "Planum", "EARoot/EA1/EA2/EA1/EA3/EA112.htm", "175.png", "66", "0", "", "Logical diagram0","{F6287641-DF61-4aeb-A72F-C6AC7F3FC665}");
-tocTab[tocTab.length] = new Array("0.1.2.1.3:2", "", "Planum", "EARoot/EA1/EA2/EA1/EA3/EA115.htm", "5.png", "E264", "0", "", "Class0","{5A070325-DE93-4dd7-BD5D-57FE5E617E28}");
-tocTab[tocTab.length] = new Array("0.1.2.1.3:3", "", "«featureType» PlanumElement", "EARoot/EA1/EA2/EA1/EA3/EA116.htm", "5.png", "E263", "0", "", "Class0","{827FCD87-E728-4189-A4C9-E90A4EB9A12A}");

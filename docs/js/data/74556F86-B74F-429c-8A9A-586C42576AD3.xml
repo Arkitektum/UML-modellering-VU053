@@ -1,4 +1,0 @@
-tocTab[tocTab.length] = new Array("0.1.2.1.1:1", "", "Grøfter", "EARoot/EA1/EA2/EA1/EA1/EA82.htm", "175.png", "60", "0", "", "Logical diagram0","{71881159-C625-42f1-AFDF-FBE093B44AD1}");
-tocTab[tocTab.length] = new Array("0.1.2.1.1:2", "", "Grøfter", "EARoot/EA1/EA2/EA1/EA1/EA86.htm", "5.png", "E251", "0", "", "Class0","{4E44241D-8984-46a6-B4F7-BD0B1FA8797D}");
-tocTab[tocTab.length] = new Array("0.1.2.1.1:3", "", "«featureType» GrøfterElement", "EARoot/EA1/EA2/EA1/EA1/EA87.htm", "5.png", "E250", "0", "", "Class0","{CF2755F1-A86B-4987-8802-8EC61B1E0E19}");
-tocTab[tocTab.length] = new Array("0.1.2.1.1.1", "1", "Drennering", "EARoot/EA1/EA2/EA1/EA1/EA1/EA92.htm", "4.png", "", "", "{916BBA79-B6FE-417f-80FC-D86DC7C09E41}", "Package");
