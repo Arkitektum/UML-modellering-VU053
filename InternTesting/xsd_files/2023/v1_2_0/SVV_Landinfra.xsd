@@ -206,10 +206,10 @@ Link: https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lex
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
-  <element name="VU053Property" substitutionGroup="svvge:SOSIFeature" type="svvli:VU053Property_Type"/>
+  <element name="VU053Property" substitutionGroup="svvge:GenerelleEgenskaper" type="svvli:VU053Property_Type"/>
   <complexType name="VU053Property_Type">
     <complexContent>
-      <extension base="svvge:SOSIFeatureType">
+      <extension base="svvge:GenerelleEgenskaperType">
         <sequence>
           <element name="valueType" type="string"/>
           <element name="value">
@@ -264,10 +264,10 @@ Link: https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lex
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
-  <element abstract="true" name="VU053Set" substitutionGroup="svvge:SOSIFeature" type="svvli:VU053SetType"/>
+  <element abstract="true" name="VU053Set" substitutionGroup="svvge:GenerelleEgenskaper" type="svvli:VU053SetType"/>
   <complexType abstract="true" name="VU053SetType">
     <complexContent>
-      <extension base="svvge:SOSIFeatureType">
+      <extension base="svvge:GenerelleEgenskaperType">
         <sequence>
           <element minOccurs="0" name="authority" type="string"/>
         </sequence>

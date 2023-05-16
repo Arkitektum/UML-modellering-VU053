@@ -1,4 +1,12 @@
 v1_2_0
+Main Structure
+	* Flyttepakke "SVV_Alignment" inne på VU053 Nettverk og lineære referanser "SVV_LineareReferanser"
+	* SVV_LineareReferanser
+		* Endre attributt til valgfritt
+		* Endre strukturen
+	* SVV_Landinfra
+		* Oppdater kobling til SOSI
+
 Fagmodell
 	* Geoteknikk
 		* Ny modell [xsd]
