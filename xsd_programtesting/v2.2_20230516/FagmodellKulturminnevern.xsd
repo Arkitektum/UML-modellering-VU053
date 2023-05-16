@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:fmkmv="https://skjema.atlas.vegvesen.no/r000/FagmodellKulturminnevern/0.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:lv="https://skjema.atlas.vegvesen.no/r000/svvleveranse/1.0" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:svvli="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/FagmodellKulturminnevern/0.1" version="0.1">
+  <import namespace="http://www.interactive-instruments.de/ShapeChange/AppInfo" schemaLocation="http://shapechange.net/resources/schema/ShapeChangeAppinfo.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/svvlandinfra/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_programtesting/v2.2_20230516/SVV_Landinfra.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/svvleveranse/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_programtesting/v2.2_20230516/SVV_Leveranse.xsd"/>
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="FagmodellKulturminnevern" substitutionGroup="lv:Tverrfagligmodell" type="fmkmv:FagmodellKulturminnevernType"/>
+  <complexType name="FagmodellKulturminnevernType">
+    <complexContent>
+      <extension base="lv:TverrfagligmodellType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="kulturminnevernElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmkmv:KulturminnevernElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="kulturminnevernElementSamling">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmkmv:KulturminnevernElementSamling"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="FagmodellKulturminnevernPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmkmv:FagmodellKulturminnevern"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Gjerde" substitutionGroup="fmkmv:Skadeforebygging" type="fmkmv:GjerdeType"/>
+  <complexType name="GjerdeType">
+    <complexContent>
+      <extension base="fmkmv:SkadeforebyggingType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GjerdePropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmkmv:Gjerde"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Hensynssone" substitutionGroup="fmkmv:KulturminnevernElement" type="fmkmv:HensynssoneType"/>
+  <complexType name="HensynssoneType">
+    <complexContent>
+      <extension base="fmkmv:KulturminnevernElementType">
+        <sequence>
+          <element minOccurs="0" name="dataKildevurdering" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmkmv_DataKildevurdering.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmkmv_DataKildevurdering.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="HensynssonePropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmkmv:Hensynssone"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Konservering" substitutionGroup="fmkmv:KulturminnevernTiltakElement" type="fmkmv:KonserveringType"/>
+  <complexType name="KonserveringType">
+    <complexContent>
+      <extension base="fmkmv:KulturminnevernTiltakElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="KonserveringPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmkmv:Konservering"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="KulturminnevernAnalyseElement" substitutionGroup="fmkmv:KulturminnevernElement" type="fmkmv:KulturminnevernAnalyseElementType"/>
+  <complexType name="KulturminnevernAnalyseElementType">
+    <complexContent>
+      <extension base="fmkmv:KulturminnevernElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="KulturminnevernAnalyseElementPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmkmv:KulturminnevernAnalyseElement"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="KulturminnevernElement" substitutionGroup="svvli:VU053Feature" type="fmkmv:KulturminnevernElementType"/>
+  <complexType abstract="true" name="KulturminnevernElementType">
+    <complexContent>
+      <extension base="svvli:VU053FeatureType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="KulturminnevernElementPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmkmv:KulturminnevernElement"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="KulturminnevernElementSamling" substitutionGroup="svvli:VU053ElementSamling" type="fmkmv:KulturminnevernElementSamlingType"/>
+  <complexType name="KulturminnevernElementSamlingType">
+    <complexContent>
+      <extension base="svvli:VU053ElementSamlingType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="hensynssone">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmkmv:Hensynssone"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="analyseElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmkmv:KulturminnevernAnalyseElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="tiltakElement">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="fmkmv:KulturminnevernTiltakElement"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="KulturminnevernElementSamlingPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmkmv:KulturminnevernElementSamling"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="KulturminnevernTiltakElement" substitutionGroup="fmkmv:KulturminnevernElement" type="fmkmv:KulturminnevernTiltakElementType"/>
+  <complexType abstract="true" name="KulturminnevernTiltakElementType">
+    <complexContent>
+      <extension base="fmkmv:KulturminnevernElementType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="KulturminnevernTiltakElementPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmkmv:KulturminnevernTiltakElement"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Overvaakning" substitutionGroup="fmkmv:Skadeforebygging" type="fmkmv:OvervaakningType"/>
+  <complexType name="OvervaakningType">
+    <complexContent>
+      <extension base="fmkmv:SkadeforebyggingType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="OvervaakningPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmkmv:Overvaakning"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Restaurering" substitutionGroup="fmkmv:KulturminnevernTiltakElement" type="fmkmv:RestaureringType"/>
+  <complexType name="RestaureringType">
+    <complexContent>
+      <extension base="fmkmv:KulturminnevernTiltakElementType">
+        <sequence>
+          <element minOccurs="0" name="type" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmkmv_RestaureringType.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmkmv_RestaureringType.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RestaureringPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmkmv:Restaurering"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="Skadeforebygging" substitutionGroup="fmkmv:KulturminnevernTiltakElement" type="fmkmv:SkadeforebyggingType"/>
+  <complexType abstract="true" name="SkadeforebyggingType">
+    <complexContent>
+      <extension base="fmkmv:KulturminnevernTiltakElementType">
+        <sequence>
+          <element minOccurs="0" name="type" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmkmv_SkadeforebyggingType.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/fmkmv_SkadeforebyggingType.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SkadeforebyggingPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmkmv:Skadeforebygging"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="SpuntVegg" substitutionGroup="fmkmv:Skadeforebygging" type="fmkmv:SpuntVeggType"/>
+  <complexType name="SpuntVeggType">
+    <complexContent>
+      <extension base="fmkmv:SkadeforebyggingType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SpuntVeggPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fmkmv:SpuntVegg"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>

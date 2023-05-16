@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:lic="http://www.opengis.net/infragml/core/1.0" xmlns:lr="http://www.opengis.net/gml/3.3/lr" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:svvge="https://skjema.atlas.vegvesen.no/r000/sosigenerelleegenskaper/1.0" xmlns:svvlr="https://skjema.atlas.vegvesen.no/r000/svvlinearereferanser/1.0" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/svvlinearereferanser/1.0" version="1.0">
+  <import namespace="http://www.interactive-instruments.de/ShapeChange/AppInfo" schemaLocation="http://shapechange.net/resources/schema/ShapeChangeAppinfo.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.3/lr" schemaLocation="http://schemas.opengis.net/gml/3.3/linearRef.xsd"/>
+  <import namespace="http://www.opengis.net/infragml/core/1.0" schemaLocation="https://schemas.opengis.net/infragml/part0/1.0/core.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/sosigenerelleegenskaper/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_programtesting/v2.2_20230516/SOSI_GenerelleEgenskaper.xsd"/>
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="Alignment" substitutionGroup="svvge:SOSIFeature" type="svvlr:AlignmentType">
+    <annotation>
+      <documentation>PositioningElement which provides a Linear Referencing System for locating PhysicalElements.
+An Alignment shall be continuous, non-branching, and non-overlapping. If it is a Project Alignment, it is for a single alternative, as specified by its owning ProjectPart.</documentation>
+    </annotation>
+  </element>
+  <complexType name="AlignmentType">
+    <complexContent>
+      <extension base="svvge:SOSIFeatureType">
+        <sequence>
+          <element minOccurs="0" name="purpose" type="string"/>
+          <element minOccurs="0" name="designAlternative" type="string"/>
+          <element minOccurs="0" name="linestring2DRepresentation" type="gml:LineStringType"/>
+          <element minOccurs="0" name="linestring3DRepresentation" type="gml:LineStringType"/>
+          <element minOccurs="0" name="horizontal" type="svvlr:Alignment2DHorizontalPropertyType"/>
+          <element minOccurs="0" name="vertical" type="svvlr:Alignment2DVerticalPropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AlignmentPropertyType">
+    <sequence minOccurs="0">
+      <element ref="svvlr:Alignment"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Alignment2DHorSegment" substitutionGroup="gml:AbstractObject" type="svvlr:Alignment2DHorSegmentType">
+    <annotation>
+      <documentation>part of a horizontal alignment having a single geometric representation (either line, circular curve, clothoid, or other spiral)</documentation>
+    </annotation>
+  </element>
+  <complexType name="Alignment2DHorSegmentType">
+    <sequence>
+      <element minOccurs="0" name="tangentialContinuity" type="boolean"/>
+      <element minOccurs="0" name="geometry" type="svvlr:CurveSegment2DHorizontalPropertyType">
+        <annotation>
+          <documentation>the geometry of the segment (line, circular curve, clothoid, or other spiral)</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="Alignment2DHorSegmentPropertyType">
+    <sequence>
+      <element ref="svvlr:Alignment2DHorSegment"/>
+    </sequence>
+  </complexType>
+  <element name="Alignment2DHorizontal" substitutionGroup="gml:AbstractObject" type="svvlr:Alignment2DHorizontalType">
+    <annotation>
+      <documentation>2D representation of the alignment geometry in the x-y plane</documentation>
+    </annotation>
+  </element>
+  <complexType name="Alignment2DHorizontalType">
+    <sequence>
+      <element minOccurs="0" name="location" type="string">
+        <annotation>
+          <documentation>e.g., "road centerline"</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="description" type="string">
+        <annotation>
+          <documentation>describes where the alignment is located with respect to the owning road or rail segment, such as "roadway centerline"</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="state" type="gml:CodeType">
+        <annotation>
+          <appinfo>
+            <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/svvlr_State.gml</sc:targetCodeListURI>
+            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/svvlr_State.gml</defaultCodeSpace>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="linestring2DRepresentation" type="gml:LineStringType"/>
+      <element minOccurs="0" name="startDistanceAlong" type="gml:LengthType">
+        <annotation>
+          <documentation>If LRM is of type "absolute", then the measured value at the start of the horizontal alignment if other than 0</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="crs" type="gml:CRSPropertyType">
+        <annotation>
+          <documentation>if defined by segments, the Cartesian engineering reference system</documentation>
+        </annotation>
+      </element>
+      <element maxOccurs="unbounded" minOccurs="0" name="segment" type="svvlr:Alignment2DHorSegmentPropertyType"/>
+    </sequence>
+  </complexType>
+  <complexType name="Alignment2DHorizontalPropertyType">
+    <sequence>
+      <element ref="svvlr:Alignment2DHorizontal"/>
+    </sequence>
+  </complexType>
+  <element name="Alignment2DVertSegment" substitutionGroup="gml:AbstractObject" type="svvlr:Alignment2DVertSegmentType"/>
+  <complexType name="Alignment2DVertSegmentType">
+    <sequence>
+      <element name="tangentialContinuity" type="boolean"/>
+      <element minOccurs="0" name="geometry" type="svvlr:CurveSegment2DVertPropertyType"/>
+    </sequence>
+  </complexType>
+  <complexType name="Alignment2DVertSegmentPropertyType">
+    <sequence>
+      <element ref="svvlr:Alignment2DVertSegment"/>
+    </sequence>
+  </complexType>
+  <element name="Alignment2DVertical" substitutionGroup="gml:AbstractObject" type="svvlr:Alignment2DVerticalType">
+    <annotation>
+      <documentation>long section profile along a line at or offset from a horizontal alignment.
+2D coordinate axes are alignment distanceAlong and ground elevation.
+State distinguishes between existing ground surface vs. proposed design profile.</documentation>
+    </annotation>
+  </element>
+  <complexType name="Alignment2DVerticalType">
+    <sequence>
+      <element minOccurs="0" name="location" type="string">
+        <annotation>
+          <documentation>e.g., "edge of pavement"</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="description" type="string"/>
+      <element minOccurs="0" name="state" type="gml:CodeType">
+        <annotation>
+          <appinfo>
+            <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/svvlr_State.gml</sc:targetCodeListURI>
+            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/svvlr_State.gml</defaultCodeSpace>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="alignmentOffset" type="gml:LengthType"/>
+      <element maxOccurs="unbounded" name="segments" type="svvlr:Alignment2DVertSegmentPropertyType"/>
+    </sequence>
+  </complexType>
+  <complexType name="Alignment2DVerticalPropertyType">
+    <sequence>
+      <element ref="svvlr:Alignment2DVertical"/>
+    </sequence>
+  </complexType>
+  <element name="AlignmentSet" substitutionGroup="svvge:SOSIFeature" type="svvlr:AlignmentSetType"/>
+  <complexType name="AlignmentSetType">
+    <complexContent>
+      <extension base="svvge:SOSIFeatureType">
+        <sequence>
+          <element maxOccurs="unbounded" name="alignment">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="svvlr:Alignment"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AlignmentSetPropertyType">
+    <sequence minOccurs="0">
+      <element ref="svvlr:AlignmentSet"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="CurveSegment2DHorizontal" substitutionGroup="gml:AbstractObject" type="svvlr:CurveSegment2DHorizontalType"/>
+  <complexType name="CurveSegment2DHorizontalType">
+    <choice>
+      <element minOccurs="0" name="lineSegment" type="gml:LineStringType"/>
+      <element minOccurs="0" name="circularArcSegment" type="gml:ArcStringType"/>
+      <element minOccurs="0" name="clothoidArcSegment" type="gml:ClothoidType"/>
+    </choice>
+  </complexType>
+  <complexType name="CurveSegment2DHorizontalPropertyType">
+    <sequence>
+      <element ref="svvlr:CurveSegment2DHorizontal"/>
+    </sequence>
+  </complexType>
+  <element name="CurveSegment2DVert" substitutionGroup="gml:AbstractObject" type="svvlr:CurveSegment2DVertType"/>
+  <complexType name="CurveSegment2DVertType">
+    <sequence>
+      <element minOccurs="0" name="startDistAlong">
+        <complexType>
+          <complexContent>
+            <extension base="gml:AbstractMemberType">
+              <sequence minOccurs="0">
+                <element ref="lr:DistanceExpression"/>
+              </sequence>
+              <attributeGroup ref="gml:AssociationAttributeGroup"/>
+            </extension>
+          </complexContent>
+        </complexType>
+      </element>
+      <element minOccurs="0" name="startHeight" type="gml:LengthType"/>
+      <element minOccurs="0" name="startGradient">
+        <complexType>
+          <complexContent>
+            <extension base="gml:AbstractMemberType">
+              <sequence minOccurs="0">
+                <element ref="lic:Percentage"/>
+              </sequence>
+              <attributeGroup ref="gml:AssociationAttributeGroup"/>
+            </extension>
+          </complexContent>
+        </complexType>
+      </element>
+      <element minOccurs="0" name="horizontalLength" type="gml:LengthType"/>
+    </sequence>
+  </complexType>
+  <complexType name="CurveSegment2DVertPropertyType">
+    <sequence>
+      <element ref="svvlr:CurveSegment2DVert"/>
+    </sequence>
+  </complexType>
+  <element name="LinearElement" substitutionGroup="gml:AbstractFeature" type="svvlr:LinearElementType"/>
+  <complexType name="LinearElementType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element minOccurs="0" name="standardLRM" type="gml:CodeType">
+            <annotation>
+              <documentation>STANDARDLRM: Standard metode som brukes for å angi lineære referanser til nettverkselementet
+
+Merknad: Kan overstyres for den enkelte posisjonsangivelse. 
+
+ISO19148: LR_ILinearElement ::defaultLRM() : LR_LinearReferencingMethod</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/svvlr_LineærReferanseMetode.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/svvlr_LineærReferanseMetode.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="måltLengde" type="double">
+            <annotation>
+              <documentation>STARTVERDI: Målt lengde for lenken, innenfor lenkens lineære referansesystem
+
+Merknad: Målt lengde overstyrer geometrilengde. 
+
+ISO19148: LR_ILinearElement ::measure(measureAttribute : CharacterString = defaultLength) : Measure</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="startposisjon" type="double">
+            <annotation>
+              <documentation>STARTVERDI: startposisjon for lenken i et lineært referansesystem
+
+ISO19148: 
+LR_ILinearElement ::
+startValue(LRM : LinearReferencingMethod) : Measure</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="sluttposisjon" type="double">
+            <annotation>
+              <documentation>STARTVERDI: sluttposisjon for lenken i et lineært referansesystem
+
+ISO19148: Finnes ikke</documentation>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="geometry">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="svvge:SOSIFeature"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="LinearElementPropertyType">
+    <sequence minOccurs="0">
+      <element ref="svvlr:LinearElement"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="LineærPosisjon" substitutionGroup="gml:AbstractObject" type="svvlr:LineærPosisjonType">
+    <annotation>
+      <documentation>Angivelse av en posisjon langs et nettverkselement
+
+Realisering av ISO19148: LE_EventLocation</documentation>
+    </annotation>
+  </element>
+  <complexType abstract="true" name="LineærPosisjonType">
+    <sequence>
+      <element minOccurs="0" name="lineærReferanseMetode" type="gml:CodeType">
+        <annotation>
+          <documentation>metode som er brukt for å angi lineære referanser
+
+Merknad: Dersom verdi er angitt overstyrer denne standard metode for det refererte nettverkselementet. 
+
+ISO19148: overridingLRM</documentation>
+          <appinfo>
+            <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/svvlr_LineærReferanseMetode.gml</sc:targetCodeListURI>
+            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/svvlr_LineærReferanseMetode.gml</defaultCodeSpace>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="retning" type="gml:CodeType">
+        <annotation>
+          <documentation>Posisjonens retning i forhold til nettverkselementet sin retning</documentation>
+          <appinfo>
+            <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/svvlr_Retningskode.gml</sc:targetCodeListURI>
+            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/svvlr_Retningskode.gml</defaultCodeSpace>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="avstandSide" type="double">
+        <annotation>
+          <documentation>Forskyvning til side for nettverkselementet. Positivt tall betyr høyre side, negativt tall betyr venstre side.
+ISO19148: offsetLateralDistance</documentation>
+        </annotation>
+      </element>
+      <element name="linearElement">
+        <complexType>
+          <complexContent>
+            <extension base="gml:AbstractFeatureMemberType">
+              <sequence minOccurs="0">
+                <element ref="svvlr:LinearElement"/>
+              </sequence>
+              <attributeGroup ref="gml:AssociationAttributeGroup"/>
+            </extension>
+          </complexContent>
+        </complexType>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="LineærPosisjonPropertyType">
+    <sequence>
+      <element ref="svvlr:LineærPosisjon"/>
+    </sequence>
+  </complexType>
+  <element name="LineærPosisjonPunkt" substitutionGroup="svvlr:LineærPosisjon" type="svvlr:LineærPosisjonPunktType">
+    <annotation>
+      <documentation>lineær posisjon som et punkt
+
+Merknad:
+Dette er en forenkling i forhold til ISO19148, der posisjonsangivelsene er en egen datatype LR_DistanceExpression som har igjen egenskapen DistanceAlong.
+LR_DistanceExpression har også en subtype LRO_LateralOffsetDistanceExpression, som inneholder egenskapen offsetLateralDistance (avstandSide).
+
+Realisering av ISO19148: LE_AtLocation</documentation>
+    </annotation>
+  </element>
+  <complexType name="LineærPosisjonPunktType">
+    <complexContent>
+      <extension base="svvlr:LineærPosisjonType">
+        <sequence>
+          <element minOccurs="0" name="posisjon" type="double">
+            <annotation>
+              <documentation>posisjon langs nettverkselementet, i henhold til referansemetoden 
+
+Merknad: Ref ISO19148: atPosition -  distanceAlong</documentation>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="LineærPosisjonPunktPropertyType">
+    <sequence>
+      <element ref="svvlr:LineærPosisjonPunkt"/>
+    </sequence>
+  </complexType>
+  <element name="LineærPosisjonStrekning" substitutionGroup="svvlr:LineærPosisjon" type="svvlr:LineærPosisjonStrekningType">
+    <annotation>
+      <documentation>lineær posisjon som en strekning
+
+Merknad: 
+Dette er en forenkling i forhold til ISO19148, der posisjonsangivelsene er en egen datatype LR_DistanceExpression som har igjen egenskapen DistanceAlong.
+LR_DistanceExpression har også en subtype LRO_LateralOffsetDistanceExpression, som inneholder egenskapen offsetLateralDistance (avstandSide).
+
+Realisering av ISO19148: LE_FromToLocation</documentation>
+    </annotation>
+  </element>
+  <complexType name="LineærPosisjonStrekningType">
+    <complexContent>
+      <extension base="svvlr:LineærPosisjonType">
+        <sequence>
+          <element minOccurs="0" name="fraPosisjon" type="double">
+            <annotation>
+              <documentation>startposisjon langs nettverkselementet, i henhold til referansemetoden 
+
+Merknad: Ref ISO19148: fromPosition -  distanceAlong</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="tilPosisjon" type="double">
+            <annotation>
+              <documentation>sluttposisjon langs nettverkselementet, i henhold til referansemetoden
+
+Merknad: Ref ISO19148: toPosition -  distanceAlong</documentation>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="LineærPosisjonStrekningPropertyType">
+    <sequence>
+      <element ref="svvlr:LineærPosisjonStrekning"/>
+    </sequence>
+  </complexType>
+  <element name="VertSegmentCircularArc" substitutionGroup="svvlr:CurveSegment2DVert" type="svvlr:VertSegmentCircularArcType"/>
+  <complexType name="VertSegmentCircularArcType">
+    <complexContent>
+      <extension base="svvlr:CurveSegment2DVertType">
+        <sequence>
+          <element name="radius" type="gml:LengthType"/>
+          <element name="isConvex" type="boolean">
+            <annotation>
+              <documentation>A value of ”true” (convex) means that the gradient at the beginning of the segment is less than the gradient at the end of the previous segment.  A value of “false” (concave) (Boolean=”false”) means that the gradient at the beginning of the segment is greater than the gradient at the end of the previous segment.</documentation>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="VertSegmentCircularArcPropertyType">
+    <sequence>
+      <element ref="svvlr:VertSegmentCircularArc"/>
+    </sequence>
+  </complexType>
+  <element name="VertSegmentLine" substitutionGroup="svvlr:CurveSegment2DVert" type="svvlr:VertSegmentLineType"/>
+  <complexType name="VertSegmentLineType">
+    <complexContent>
+      <extension base="svvlr:CurveSegment2DVertType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="VertSegmentLinePropertyType">
+    <sequence>
+      <element ref="svvlr:VertSegmentLine"/>
+    </sequence>
+  </complexType>
+  <element name="VertSegmentParabolicArc" substitutionGroup="svvlr:CurveSegment2DVert" type="svvlr:VertSegmentParabolicArcType"/>
+  <complexType name="VertSegmentParabolicArcType">
+    <complexContent>
+      <extension base="svvlr:CurveSegment2DVertType">
+        <sequence>
+          <element name="constant" type="double">
+            <annotation>
+              <documentation>parabola constant (determining the “steepness” of the parabola = K * 100</documentation>
+            </annotation>
+          </element>
+          <element name="isConvex" type="boolean">
+            <annotation>
+              <documentation>A value of ”true” (convex) means that the gradient at the beginning of the segment is less than the gradient at the end of the previous segment.  A value of “false” (concave) (Boolean=”false”) means that the gradient at the beginning of the segment is greater than the gradient at the end of the previous segment.</documentation>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="VertSegmentParabolicArcPropertyType">
+    <sequence>
+      <element ref="svvlr:VertSegmentParabolicArc"/>
+    </sequence>
+  </complexType>
+</schema>

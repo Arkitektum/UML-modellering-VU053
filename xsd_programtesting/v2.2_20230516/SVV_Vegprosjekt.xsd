@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:svvge="https://skjema.atlas.vegvesen.no/r000/sosigenerelleegenskaper/1.0" xmlns:svvme="https://skjema.atlas.vegvesen.no/r000/svvmetadata/0.1" xmlns:vp="https://skjema.atlas.vegvesen.no/r000/svv_vegprosjekt/1.0" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/svv_vegprosjekt/1.0" version="1.0">
+  <import namespace="http://www.interactive-instruments.de/ShapeChange/AppInfo" schemaLocation="http://shapechange.net/resources/schema/ShapeChangeAppinfo.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/sosigenerelleegenskaper/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_programtesting/v2.2_20230516/SOSI_GenerelleEgenskaper.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/svvmetadata/0.1" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_programtesting/v2.2_20230516/SVV_Metadata.xsd"/>
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="Bestillingstype" substitutionGroup="gml:AbstractObject" type="vp:BestillingstypeType"/>
+  <complexType name="BestillingstypeType">
+    <sequence>
+      <element name="kontraktsform" type="gml:CodeType">
+        <annotation>
+          <appinfo>
+            <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/vp_Kontraktsform.gml</sc:targetCodeListURI>
+            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/vp_Kontraktsform.gml</defaultCodeSpace>
+          </appinfo>
+        </annotation>
+      </element>
+      <element name="konkurransegrunnlagsmal" type="gml:CodeType">
+        <annotation>
+          <appinfo>
+            <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/vp_Konkurransegrunnlagsmal.gml</sc:targetCodeListURI>
+            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/vp_Konkurransegrunnlagsmal.gml</defaultCodeSpace>
+          </appinfo>
+        </annotation>
+      </element>
+      <element name="konkurranseform" type="gml:CodeType">
+        <annotation>
+          <appinfo>
+            <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/vp_Konkuranseform.gml</sc:targetCodeListURI>
+            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/vp_Konkuranseform.gml</defaultCodeSpace>
+          </appinfo>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="BestillingstypePropertyType">
+    <sequence>
+      <element ref="vp:Bestillingstype"/>
+    </sequence>
+  </complexType>
+  <element abstract="true" name="LeveranseVegprosjekt" substitutionGroup="gml:AbstractFeature" type="vp:LeveranseVegprosjektType">
+    <annotation>
+      <documentation>Angivelse av hvilke modeller (grunnlagsmodeller og fagmodeller) som inngår i leveransen i vegprosjektet.</documentation>
+    </annotation>
+  </element>
+  <complexType abstract="true" name="LeveranseVegprosjektType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="grunnlagsmodell" type="gml:CodeType">
+            <annotation>
+              <documentation>navn på grunnlagsmodellene som inngår i leveransene fra prosjektet.</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/lv_GrunnlagsmodellType.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/lv_GrunnlagsmodellType.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="fagmodeller" type="gml:CodeType">
+            <annotation>
+              <documentation>navn på fagmodellene som inngår i leveransen</documentation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/lv_Fagmodelltype.gml</sc:targetCodeListURI>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="samordningsmodell" type="boolean">
+            <annotation>
+              <documentation>Angir om samordningsmodell skal leveres (true) eller ikke (false)</documentation>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="LeveranseVegprosjektPropertyType">
+    <sequence minOccurs="0">
+      <element ref="vp:LeveranseVegprosjekt"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Oppdragsgiver" substitutionGroup="gml:AbstractFeature" type="vp:OppdragsgiverType"/>
+  <complexType name="OppdragsgiverType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="rolle" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/svvme_OppdragsgiverRolle.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/svvme_OppdragsgiverRolle.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="organisasjonsnavn" type="string"/>
+          <element name="person" type="svvme:PersonPropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="OppdragsgiverPropertyType">
+    <sequence minOccurs="0">
+      <element ref="vp:Oppdragsgiver"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Part" substitutionGroup="gml:AbstractObject" type="vp:PartType"/>
+  <complexType name="PartType">
+    <choice>
+      <element name="oppdragsgiver" type="gml:CodeType">
+        <annotation>
+          <appinfo>
+            <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/svvme_OppdragsgiverRolle.gml</sc:targetCodeListURI>
+            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/svvme_OppdragsgiverRolle.gml</defaultCodeSpace>
+          </appinfo>
+        </annotation>
+      </element>
+      <element name="raadgiver" type="gml:CodeType">
+        <annotation>
+          <appinfo>
+            <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/svvme_OppdragsgiverRolle.gml</sc:targetCodeListURI>
+            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/svvme_OppdragsgiverRolle.gml</defaultCodeSpace>
+          </appinfo>
+        </annotation>
+      </element>
+      <element name="entreprenoer" type="gml:CodeType">
+        <annotation>
+          <appinfo>
+            <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/svvme_OppdragsgiverRolle.gml</sc:targetCodeListURI>
+            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/svvme_OppdragsgiverRolle.gml</defaultCodeSpace>
+          </appinfo>
+        </annotation>
+      </element>
+      <element name="generisk" type="gml:CodeType">
+        <annotation>
+          <appinfo>
+            <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/svvme_OppdragsgiverRolle.gml</sc:targetCodeListURI>
+            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/svvme_OppdragsgiverRolle.gml</defaultCodeSpace>
+          </appinfo>
+        </annotation>
+      </element>
+    </choice>
+  </complexType>
+  <complexType name="PartPropertyType">
+    <sequence>
+      <element ref="vp:Part"/>
+    </sequence>
+  </complexType>
+  <element name="ProsjektOrganisasjon" substitutionGroup="gml:AbstractFeature" type="vp:ProsjektOrganisasjonType"/>
+  <complexType name="ProsjektOrganisasjonType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="prosjektId" type="string"/>
+          <element name="prosjekttype" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/vp_Prosjekttype.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/vp_Prosjekttype.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="prosjektnavn" type="vp:ProsjektnavnStandardPropertyType"/>
+          <element name="fasestatus" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/vp_Prosjektfase.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/vp_Prosjektfase.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="roller" type="string"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="bestillingstype" type="vp:BestillingstypePropertyType"/>
+          <element name="oppdragsgiver">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="vp:Oppdragsgiver"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="aktør">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="svvme:Aktoer"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ProsjektOrganisasjonPropertyType">
+    <sequence minOccurs="0">
+      <element ref="vp:ProsjektOrganisasjon"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="ProsjektnavnStandard" substitutionGroup="gml:AbstractObject" type="vp:ProsjektnavnStandardType"/>
+  <complexType name="ProsjektnavnStandardType">
+    <sequence>
+      <element name="vegnummer" type="gml:CodeType">
+        <annotation>
+          <appinfo>
+            <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/vp_Vegnummer.gml</sc:targetCodeListURI>
+            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/vp_Vegnummer.gml</defaultCodeSpace>
+          </appinfo>
+        </annotation>
+      </element>
+      <element name="startSted" type="string"/>
+      <element name="endSted" type="string"/>
+    </sequence>
+  </complexType>
+  <complexType name="ProsjektnavnStandardPropertyType">
+    <sequence>
+      <element ref="vp:ProsjektnavnStandard"/>
+    </sequence>
+  </complexType>
+  <element name="Prosjektomraade" substitutionGroup="gml:AbstractFeature" type="vp:ProsjektomraadeType">
+    <annotation>
+      <documentation>Prosjektområde, dvs den geografiske avgrensningen, for hele prosjektet</documentation>
+    </annotation>
+  </element>
+  <complexType name="ProsjektomraadeType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="prosjektomraade" type="gml:PolygonType"/>
+          <element name="inngrepssone" type="gml:PolygonType"/>
+          <element name="visualiseringssone" type="gml:PolygonType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ProsjektomraadePropertyType">
+    <sequence minOccurs="0">
+      <element ref="vp:Prosjektomraade"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Vegprosjekt" substitutionGroup="gml:AbstractFeature" type="vp:VegprosjektType"/>
+  <complexType name="VegprosjektType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="koordinatsystem" type="svvge:KoordinatsystemPropertyType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="leveranseomraade">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="vp:LeveranseVegprosjekt"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element name="prosjektomraade">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="vp:Prosjektomraade"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="prosjektorganisasjon">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="vp:ProsjektOrganisasjon"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="VegprosjektPropertyType">
+    <sequence minOccurs="0">
+      <element ref="vp:Vegprosjekt"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>

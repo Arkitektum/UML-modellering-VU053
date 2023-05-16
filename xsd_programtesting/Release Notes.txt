@@ -1,3 +1,16 @@
+v2.2_20230516
+Main Structure
+	* Flyttepakke "SVV_Alignment" inne på VU053 Nettverk og lineære referanser "SVV_LineareReferanser"
+	* SVV_LineareReferanser
+		* Endre attributt til valgfritt
+		* Endre strukturen
+		* Kodelister i GML format, alle kodelister som tilhører SVV_LineareReferanser starter med "svvlr_" i Github
+	* SVV_Landinfra
+		* Oppdater kobling til SOSI
+		* Kodelister i GML format, alle kodelister som tilhører Geoteknikk starter med "svvli_" i Github
+	
+----------
+
 v2.1_20230504
 
 Grunnlagsmodell

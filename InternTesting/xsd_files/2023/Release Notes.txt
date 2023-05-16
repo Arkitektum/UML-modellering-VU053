@@ -8,7 +8,6 @@ Main Structure
 	* SVV_Landinfra
 		* Oppdater kobling til SOSI
 		* Kodelister i GML format, alle kodelister som tilhører Geoteknikk starter med "svvli_" i Github
-
 Fagmodell
 	* Geoteknikk
 		* Ny modell [xsd]

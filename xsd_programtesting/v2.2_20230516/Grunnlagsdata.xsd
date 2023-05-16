@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gmgld="https://skjema.atlas.vegvesen.no/r000/grunnlagsdata/0.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:svvge="https://skjema.atlas.vegvesen.no/r000/sosigenerelleegenskaper/1.0" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/grunnlagsdata/0.1" version="0.1">
+  <import namespace="http://www.interactive-instruments.de/ShapeChange/AppInfo" schemaLocation="http://shapechange.net/resources/schema/ShapeChangeAppinfo.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <import namespace="https://skjema.atlas.vegvesen.no/r000/sosigenerelleegenskaper/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/xsd_programtesting/v2.2_20230516/SOSI_GenerelleEgenskaper.xsd"/>
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="Datakilde" substitutionGroup="gml:AbstractObject" type="gmgld:DatakildeType"/>
+  <complexType name="DatakildeType">
+    <sequence>
+      <element minOccurs="0" name="filnavn" type="string"/>
+      <element minOccurs="0" name="datafangstmetoder" type="gml:CodeType">
+        <annotation>
+          <appinfo>
+            <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgld_Datafangstmetode.gml</sc:targetCodeListURI>
+            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgld_Datafangstmetode.gml</defaultCodeSpace>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="utførtAv" type="string"/>
+      <element minOccurs="0" name="koordinatsystem" type="svvge:KoordinatsystemPropertyType"/>
+      <element minOccurs="0" name="dataeier" type="gml:CodeType">
+        <annotation>
+          <appinfo>
+            <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/lv_Organisasjoner.gml</sc:targetCodeListURI>
+            <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/lv_Organisasjoner.gml</defaultCodeSpace>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="datasettnavn" type="string"/>
+    </sequence>
+  </complexType>
+  <complexType name="DatakildePropertyType">
+    <sequence>
+      <element ref="gmgld:Datakilde"/>
+    </sequence>
+  </complexType>
+  <element name="GrunnlagsdataBrukt" substitutionGroup="gml:AbstractFeature" type="gmgld:GrunnlagsdataBruktType"/>
+  <complexType name="GrunnlagsdataBruktType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element minOccurs="0" name="datakilde" type="gmgld:DatakildePropertyType"/>
+          <element minOccurs="0" name="kildevurdering" type="string"/>
+          <element minOccurs="0" name="dataKildevurdering" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgld_DataKildevurdering.gml</sc:targetCodeListURI>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/gmgld_DataKildevurdering.gml</defaultCodeSpace>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GrunnlagsdataBruktPropertyType">
+    <sequence minOccurs="0">
+      <element ref="gmgld:GrunnlagsdataBrukt"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>
