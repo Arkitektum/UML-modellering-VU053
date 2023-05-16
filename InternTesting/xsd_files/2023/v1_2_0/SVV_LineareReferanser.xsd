@@ -1,223 +1,408 @@
-<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:svvge="https://skjema.atlas.vegvesen.no/r000/sosigenerelleegenskaper/1.0" xmlns:svvlr="https://skjema.atlas.vegvesen.no/r000/svvlinearereferanser/1.0" elementFormDefault="qualified" targetNamespace="https://skjema.atlas.vegvesen.no/r000/svvlinearereferanser/1.0" version="1.0">
-  <import namespace="http://www.interactive-instruments.de/ShapeChange/AppInfo" schemaLocation="http://shapechange.net/resources/schema/ShapeChangeAppinfo.xsd"/>
-  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
-  <import namespace="https://skjema.atlas.vegvesen.no/r000/sosigenerelleegenskaper/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/InternTesting/xsd_files/2023/v1_2_0/SOSI_GenerelleEgenskaper.xsd"/>
-  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
-  <element name="LinearElement" substitutionGroup="gml:AbstractFeature" type="svvlr:LinearElementType"/>
-  <complexType name="LinearElementType">
-    <complexContent>
-      <extension base="gml:AbstractFeatureType">
-        <sequence>
-          <element minOccurs="0" name="standardLRM" type="svvlr:LineærReferanseMetodeType">
-            <annotation>
-              <documentation>STANDARDLRM: Standard metode som brukes for å angi lineære referanser til nettverkselementet
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:lic="http://www.opengis.net/infragml/core/1.0" xmlns:lr="http://www.opengis.net/gml/3.3/lr" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:svvge="https://skjema.atlas.vegvesen.no/r000/sosigenerelleegenskaper/1.0" xmlns:svvlr="https://skjema.atlas.vegvesen.no/r000/svvlinearereferanser/1.0" targetNamespace="https://skjema.atlas.vegvesen.no/r000/svvlinearereferanser/1.0" elementFormDefault="qualified" version="1.0">
+	<import namespace="http://www.interactive-instruments.de/ShapeChange/AppInfo" schemaLocation="http://shapechange.net/resources/schema/ShapeChangeAppinfo.xsd"/>
+	<import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+	<import namespace="http://www.opengis.net/gml/3.3/lr" schemaLocation="http://schemas.opengis.net/gml/3.3/linearRef.xsd"/>
+	<import namespace="http://www.opengis.net/infragml/core/1.0" schemaLocation="https://schemas.opengis.net/infragml/part0/1.0/core.xsd"/>
+	<import namespace="https://skjema.atlas.vegvesen.no/r000/sosigenerelleegenskaper/1.0" schemaLocation="https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/InternTesting/xsd_files/2023/v1_2_0/SOSI_GenerelleEgenskaper.xsd"/>
+	<!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+	<element name="Alignment" type="svvlr:AlignmentType" substitutionGroup="svvge:SOSIFeature">
+		<annotation>
+			<documentation>PositioningElement which provides a Linear Referencing System for locating PhysicalElements.
+An Alignment shall be continuous, non-branching, and non-overlapping. If it is a Project Alignment, it is for a single alternative, as specified by its owning ProjectPart.</documentation>
+		</annotation>
+	</element>
+	<complexType name="AlignmentType">
+		<complexContent>
+			<extension base="svvge:SOSIFeatureType">
+				<sequence>
+					<element name="purpose" type="string" minOccurs="0"/>
+					<element name="designAlternative" type="string" minOccurs="0"/>
+					<element name="linestring2DRepresentation" type="gml:LineStringType" minOccurs="0"/>
+					<element name="linestring3DRepresentation" type="gml:LineStringType" minOccurs="0"/>
+					<element name="horizontal" type="svvlr:Alignment2DHorizontalPropertyType" minOccurs="0"/>
+					<element name="vertical" type="svvlr:Alignment2DVerticalPropertyType" minOccurs="0"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="AlignmentPropertyType">
+		<sequence minOccurs="0">
+			<element ref="svvlr:Alignment"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Alignment2DHorSegment" type="svvlr:Alignment2DHorSegmentType" substitutionGroup="gml:AbstractObject">
+		<annotation>
+			<documentation>part of a horizontal alignment having a single geometric representation (either line, circular curve, clothoid, or other spiral)</documentation>
+		</annotation>
+	</element>
+	<complexType name="Alignment2DHorSegmentType">
+		<sequence>
+			<element name="tangentialContinuity" type="boolean" minOccurs="0"/>
+			<element name="geometry" type="svvlr:CurveSegment2DHorizontalPropertyType" minOccurs="0">
+				<annotation>
+					<documentation>the geometry of the segment (line, circular curve, clothoid, or other spiral)</documentation>
+				</annotation>
+			</element>
+		</sequence>
+	</complexType>
+	<complexType name="Alignment2DHorSegmentPropertyType">
+		<sequence>
+			<element ref="svvlr:Alignment2DHorSegment"/>
+		</sequence>
+	</complexType>
+	<element name="Alignment2DHorizontal" type="svvlr:Alignment2DHorizontalType" substitutionGroup="gml:AbstractObject">
+		<annotation>
+			<documentation>2D representation of the alignment geometry in the x-y plane</documentation>
+		</annotation>
+	</element>
+	<complexType name="Alignment2DHorizontalType">
+		<sequence>
+			<element name="location" type="string" minOccurs="0">
+				<annotation>
+					<documentation>e.g., "road centerline"</documentation>
+				</annotation>
+			</element>
+			<element name="description" type="string" minOccurs="0">
+				<annotation>
+					<documentation>describes where the alignment is located with respect to the owning road or rail segment, such as "roadway centerline"</documentation>
+				</annotation>
+			</element>
+			<element name="state" type="gml:CodeType" minOccurs="0">
+				<annotation>
+					<appinfo>
+						<sc:targetCodeListURI>https://www.codelistURL.com</sc:targetCodeListURI>
+						<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/svval_State.xml</defaultCodeSpace>
+					</appinfo>
+				</annotation>
+			</element>
+			<element name="linestring2DRepresentation" type="gml:LineStringType" minOccurs="0"/>
+			<element name="startDistanceAlong" type="gml:LengthType" minOccurs="0">
+				<annotation>
+					<documentation>If LRM is of type "absolute", then the measured value at the start of the horizontal alignment if other than 0</documentation>
+				</annotation>
+			</element>
+			<element name="crs" type="gml:CRSPropertyType" minOccurs="0">
+				<annotation>
+					<documentation>if defined by segments, the Cartesian engineering reference system</documentation>
+				</annotation>
+			</element>
+			<element name="segment" type="svvlr:Alignment2DHorSegmentPropertyType" minOccurs="0" maxOccurs="unbounded"/>
+		</sequence>
+	</complexType>
+	<complexType name="Alignment2DHorizontalPropertyType">
+		<sequence>
+			<element ref="svvlr:Alignment2DHorizontal"/>
+		</sequence>
+	</complexType>
+	<element name="Alignment2DVertSegment" type="svvlr:Alignment2DVertSegmentType" substitutionGroup="gml:AbstractObject"/>
+	<complexType name="Alignment2DVertSegmentType">
+		<sequence>
+			<element name="tangentialContinuity" type="boolean"/>
+			<element name="geometry" type="svvlr:CurveSegment2DVertPropertyType" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="Alignment2DVertSegmentPropertyType">
+		<sequence>
+			<element ref="svvlr:Alignment2DVertSegment"/>
+		</sequence>
+	</complexType>
+	<element name="Alignment2DVertical" type="svvlr:Alignment2DVerticalType" substitutionGroup="gml:AbstractObject">
+		<annotation>
+			<documentation>long section profile along a line at or offset from a horizontal alignment.
+2D coordinate axes are alignment distanceAlong and ground elevation.
+State distinguishes between existing ground surface vs. proposed design profile.</documentation>
+		</annotation>
+	</element>
+	<complexType name="Alignment2DVerticalType">
+		<sequence>
+			<element name="location" type="string" minOccurs="0">
+				<annotation>
+					<documentation>e.g., "edge of pavement"</documentation>
+				</annotation>
+			</element>
+			<element name="description" type="string" minOccurs="0"/>
+			<element name="state" type="gml:CodeType" minOccurs="0">
+				<annotation>
+					<appinfo>
+						<sc:targetCodeListURI>https://www.codelistURL.com</sc:targetCodeListURI>
+						<defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://raw.githubusercontent.com/Arkitektum/UML-modellering-VU053/main/codelists/svval_State.xml</defaultCodeSpace>
+					</appinfo>
+				</annotation>
+			</element>
+			<element name="alignmentOffset" type="gml:LengthType" minOccurs="0"/>
+			<element name="segments" type="svvlr:Alignment2DVertSegmentPropertyType" maxOccurs="unbounded"/>
+		</sequence>
+	</complexType>
+	<complexType name="Alignment2DVerticalPropertyType">
+		<sequence>
+			<element ref="svvlr:Alignment2DVertical"/>
+		</sequence>
+	</complexType>
+	<element name="AlignmentSet" type="svvlr:AlignmentSetType" substitutionGroup="svvge:SOSIFeature"/>
+	<complexType name="AlignmentSetType">
+		<complexContent>
+			<extension base="svvge:SOSIFeatureType">
+				<sequence>
+					<element name="alignment" maxOccurs="unbounded">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="svvlr:Alignment"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="AlignmentSetPropertyType">
+		<sequence minOccurs="0">
+			<element ref="svvlr:AlignmentSet"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="CurveSegment2DHorizontal" type="svvlr:CurveSegment2DHorizontalType" substitutionGroup="gml:AbstractObject"/>
+	<complexType name="CurveSegment2DHorizontalType">
+		<choice>
+			<element name="lineSegment" type="gml:LineStringType" minOccurs="0"/>
+			<element name="circularArcSegment" type="gml:ArcStringType" minOccurs="0"/>
+			<element name="clothoidArcSegment" type="gml:ClothoidType" minOccurs="0"/>
+		</choice>
+	</complexType>
+	<complexType name="CurveSegment2DHorizontalPropertyType">
+		<sequence>
+			<element ref="svvlr:CurveSegment2DHorizontal"/>
+		</sequence>
+	</complexType>
+	<element name="CurveSegment2DVert" type="svvlr:CurveSegment2DVertType" substitutionGroup="gml:AbstractObject"/>
+	<complexType name="CurveSegment2DVertType">
+		<sequence>
+			<element name="startDistAlong" minOccurs="0">
+				<complexType>
+					<complexContent>
+						<extension base="gml:AbstractMemberType">
+							<sequence minOccurs="0">
+								<element ref="lr:DistanceExpression"/>
+							</sequence>
+							<attributeGroup ref="gml:AssociationAttributeGroup"/>
+						</extension>
+					</complexContent>
+				</complexType>
+			</element>
+			<element name="startHeight" type="gml:LengthType" minOccurs="0"/>
+			<element name="startGradient" minOccurs="0">
+				<complexType>
+					<complexContent>
+						<extension base="gml:AbstractMemberType">
+							<sequence minOccurs="0">
+								<element ref="lic:Percentage"/>
+							</sequence>
+							<attributeGroup ref="gml:AssociationAttributeGroup"/>
+						</extension>
+					</complexContent>
+				</complexType>
+			</element>
+			<element name="horizontalLength" type="gml:LengthType" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="CurveSegment2DVertPropertyType">
+		<sequence>
+			<element ref="svvlr:CurveSegment2DVert"/>
+		</sequence>
+	</complexType>
+	<element name="LinearElement" type="svvlr:LinearElementType" substitutionGroup="gml:AbstractFeature"/>
+	<complexType name="LinearElementType">
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="standardLRM" type="svvlr:LineærReferanseMetodeType" minOccurs="0">
+						<annotation>
+							<documentation>STANDARDLRM: Standard metode som brukes for å angi lineære referanser til nettverkselementet
 
 Merknad: Kan overstyres for den enkelte posisjonsangivelse. 
 
 ISO19148: LR_ILinearElement ::defaultLRM() : LR_LinearReferencingMethod</documentation>
-            </annotation>
-          </element>
-          <element minOccurs="0" name="måltLengde" type="double">
-            <annotation>
-              <documentation>STARTVERDI: Målt lengde for lenken, innenfor lenkens lineære referansesystem
+						</annotation>
+					</element>
+					<element name="måltLengde" type="double" minOccurs="0">
+						<annotation>
+							<documentation>STARTVERDI: Målt lengde for lenken, innenfor lenkens lineære referansesystem
 
 Merknad: Målt lengde overstyrer geometrilengde. 
 
 ISO19148: LR_ILinearElement ::measure(measureAttribute : CharacterString = defaultLength) : Measure</documentation>
-              <appinfo>
-                <sc:taggedValue tag="SOSI_navn">LRMÅLTLENGDE</sc:taggedValue>
-              </appinfo>
-            </annotation>
-          </element>
-          <element minOccurs="0" name="startposisjon" type="double">
-            <annotation>
-              <documentation>STARTVERDI: startposisjon for lenken i et lineært referansesystem
+						</annotation>
+					</element>
+					<element name="startposisjon" type="double" minOccurs="0">
+						<annotation>
+							<documentation>STARTVERDI: startposisjon for lenken i et lineært referansesystem
 
 ISO19148: 
 LR_ILinearElement ::
 startValue(LRM : LinearReferencingMethod) : Measure</documentation>
-              <appinfo>
-                <sc:taggedValue tag="SOSI_navn">LRSTARTVERDI</sc:taggedValue>
-              </appinfo>
-            </annotation>
-          </element>
-          <element minOccurs="0" name="sluttposisjon" type="double">
-            <annotation>
-              <documentation>STARTVERDI: sluttposisjon for lenken i et lineært referansesystem
+						</annotation>
+					</element>
+					<element name="sluttposisjon" type="double" minOccurs="0">
+						<annotation>
+							<documentation>STARTVERDI: sluttposisjon for lenken i et lineært referansesystem
 
 ISO19148: Finnes ikke</documentation>
-              <appinfo>
-                <sc:taggedValue tag="SOSI_navn">LRSLUTTVERDI</sc:taggedValue>
-              </appinfo>
-            </annotation>
-          </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="feature">
-            <complexType>
-              <complexContent>
-                <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="svvge:SOSIFeature"/>
-                  </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
-                </extension>
-              </complexContent>
-            </complexType>
-          </element>
-        </sequence>
-      </extension>
-    </complexContent>
-  </complexType>
-  <complexType name="LinearElementPropertyType">
-    <sequence minOccurs="0">
-      <element ref="svvlr:LinearElement"/>
-    </sequence>
-    <attributeGroup ref="gml:AssociationAttributeGroup"/>
-    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
-  </complexType>
-  <element abstract="true" name="LineærPosisjon" substitutionGroup="gml:AbstractObject" type="svvlr:LineærPosisjonType">
-    <annotation>
-      <documentation>Angivelse av en posisjon langs et nettverkselement
+						</annotation>
+					</element>
+					<element name="geometry" minOccurs="0" maxOccurs="unbounded">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="svvge:SOSIFeature"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="LinearElementPropertyType">
+		<sequence minOccurs="0">
+			<element ref="svvlr:LinearElement"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="LineærPosisjon" type="svvlr:LineærPosisjonType" abstract="true" substitutionGroup="gml:AbstractObject">
+		<annotation>
+			<documentation>Angivelse av en posisjon langs et nettverkselement
 
 Realisering av ISO19148: LE_EventLocation</documentation>
-      <appinfo>
-        <sc:taggedValue tag="SOSI_navn">LRPOSISJON</sc:taggedValue>
-      </appinfo>
-    </annotation>
-  </element>
-  <complexType abstract="true" name="LineærPosisjonType">
-    <sequence>
-      <element minOccurs="0" name="lineærReferanseMetode" type="svvlr:LineærReferanseMetodeType">
-        <annotation>
-          <documentation>metode som er brukt for å angi lineære referanser
+		</annotation>
+	</element>
+	<complexType name="LineærPosisjonType" abstract="true">
+		<sequence>
+			<element name="lineærReferanseMetode" type="svvlr:LineærReferanseMetodeType" minOccurs="0">
+				<annotation>
+					<documentation>metode som er brukt for å angi lineære referanser
 
 Merknad: Dersom verdi er angitt overstyrer denne standard metode for det refererte nettverkselementet. 
 
 ISO19148: overridingLRM</documentation>
-        </annotation>
-      </element>
-      <element minOccurs="0" name="retning" type="svvlr:RetningskodeType">
-        <annotation>
-          <documentation>Posisjonens retning i forhold til nettverkselementet sin retning</documentation>
-          <appinfo>
-            <sc:taggedValue tag="SOSI_navn">RETNING</sc:taggedValue>
-          </appinfo>
-        </annotation>
-      </element>
-      <element minOccurs="0" name="avstandSide" type="double">
-        <annotation>
-          <documentation>Forskyvning til side for nettverkselementet. Positivt tall betyr høyre side, negativt tall betyr venstre side.
+				</annotation>
+			</element>
+			<element name="retning" type="svvlr:RetningskodeType" minOccurs="0">
+				<annotation>
+					<documentation>Posisjonens retning i forhold til nettverkselementet sin retning</documentation>
+					<appinfo>
+						<sc:targetCodeListURI>http://skjema.geonorge.no/legg_inn_riktig_url</sc:targetCodeListURI>
+					</appinfo>
+				</annotation>
+			</element>
+			<element name="avstandSide" type="double" minOccurs="0">
+				<annotation>
+					<documentation>Forskyvning til side for nettverkselementet. Positivt tall betyr høyre side, negativt tall betyr venstre side.
 ISO19148: offsetLateralDistance</documentation>
-          <appinfo>
-            <sc:taggedValue tag="SOSI_navn">LRAVSTANDSIDE</sc:taggedValue>
-          </appinfo>
-        </annotation>
-      </element>
-      <element name="linearElement">
-        <complexType>
-          <complexContent>
-            <extension base="gml:AbstractFeatureMemberType">
-              <sequence minOccurs="0">
-                <element ref="svvlr:LinearElement"/>
-              </sequence>
-              <attributeGroup ref="gml:AssociationAttributeGroup"/>
-            </extension>
-          </complexContent>
-        </complexType>
-      </element>
-    </sequence>
-  </complexType>
-  <complexType name="LineærPosisjonPropertyType">
-    <sequence>
-      <element ref="svvlr:LineærPosisjon"/>
-    </sequence>
-  </complexType>
-  <element name="LineærPosisjonPunkt" substitutionGroup="svvlr:LineærPosisjon" type="svvlr:LineærPosisjonPunktType">
-    <annotation>
-      <documentation>lineær posisjon som et punkt
+				</annotation>
+			</element>
+			<element name="linearElement">
+				<complexType>
+					<complexContent>
+						<extension base="gml:AbstractFeatureMemberType">
+							<sequence minOccurs="0">
+								<element ref="svvlr:LinearElement"/>
+							</sequence>
+							<attributeGroup ref="gml:AssociationAttributeGroup"/>
+						</extension>
+					</complexContent>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+	<complexType name="LineærPosisjonPropertyType">
+		<sequence>
+			<element ref="svvlr:LineærPosisjon"/>
+		</sequence>
+	</complexType>
+	<element name="LineærPosisjonPunkt" type="svvlr:LineærPosisjonPunktType" substitutionGroup="svvlr:LineærPosisjon">
+		<annotation>
+			<documentation>lineær posisjon som et punkt
 
 Merknad:
 Dette er en forenkling i forhold til ISO19148, der posisjonsangivelsene er en egen datatype LR_DistanceExpression som har igjen egenskapen DistanceAlong.
 LR_DistanceExpression har også en subtype LRO_LateralOffsetDistanceExpression, som inneholder egenskapen offsetLateralDistance (avstandSide).
 
 Realisering av ISO19148: LE_AtLocation</documentation>
-      <appinfo>
-        <sc:taggedValue tag="SOSI_navn">LRPUNKT</sc:taggedValue>
-      </appinfo>
-    </annotation>
-  </element>
-  <complexType name="LineærPosisjonPunktType">
-    <complexContent>
-      <extension base="svvlr:LineærPosisjonType">
-        <sequence>
-          <element name="posisjon" type="double">
-            <annotation>
-              <documentation>posisjon langs nettverkselementet, i henhold til referansemetoden 
+		</annotation>
+	</element>
+	<complexType name="LineærPosisjonPunktType">
+		<complexContent>
+			<extension base="svvlr:LineærPosisjonType">
+				<sequence>
+					<element name="posisjon" type="double" minOccurs="0">
+						<annotation>
+							<documentation>posisjon langs nettverkselementet, i henhold til referansemetoden 
 
 Merknad: Ref ISO19148: atPosition -  distanceAlong</documentation>
-              <appinfo>
-                <sc:taggedValue tag="SOSI_navn">LRPUNKTPOSISJON</sc:taggedValue>
-              </appinfo>
-            </annotation>
-          </element>
-        </sequence>
-      </extension>
-    </complexContent>
-  </complexType>
-  <complexType name="LineærPosisjonPunktPropertyType">
-    <sequence>
-      <element ref="svvlr:LineærPosisjonPunkt"/>
-    </sequence>
-  </complexType>
-  <element name="LineærPosisjonStrekning" substitutionGroup="svvlr:LineærPosisjon" type="svvlr:LineærPosisjonStrekningType">
-    <annotation>
-      <documentation>lineær posisjon som en strekning
+						</annotation>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="LineærPosisjonPunktPropertyType">
+		<sequence>
+			<element ref="svvlr:LineærPosisjonPunkt"/>
+		</sequence>
+	</complexType>
+	<element name="LineærPosisjonStrekning" type="svvlr:LineærPosisjonStrekningType" substitutionGroup="svvlr:LineærPosisjon">
+		<annotation>
+			<documentation>lineær posisjon som en strekning
 
 Merknad: 
 Dette er en forenkling i forhold til ISO19148, der posisjonsangivelsene er en egen datatype LR_DistanceExpression som har igjen egenskapen DistanceAlong.
 LR_DistanceExpression har også en subtype LRO_LateralOffsetDistanceExpression, som inneholder egenskapen offsetLateralDistance (avstandSide).
 
 Realisering av ISO19148: LE_FromToLocation</documentation>
-      <appinfo>
-        <sc:taggedValue tag="SOSI_navn">LRSTREKNING</sc:taggedValue>
-      </appinfo>
-    </annotation>
-  </element>
-  <complexType name="LineærPosisjonStrekningType">
-    <complexContent>
-      <extension base="svvlr:LineærPosisjonType">
-        <sequence>
-          <element name="fraPosisjon" type="double">
-            <annotation>
-              <documentation>startposisjon langs nettverkselementet, i henhold til referansemetoden 
+		</annotation>
+	</element>
+	<complexType name="LineærPosisjonStrekningType">
+		<complexContent>
+			<extension base="svvlr:LineærPosisjonType">
+				<sequence>
+					<element name="fraPosisjon" type="double" minOccurs="0">
+						<annotation>
+							<documentation>startposisjon langs nettverkselementet, i henhold til referansemetoden 
 
 Merknad: Ref ISO19148: fromPosition -  distanceAlong</documentation>
-              <appinfo>
-                <sc:taggedValue tag="SOSI_navn">LRFRAPOSISJON</sc:taggedValue>
-              </appinfo>
-            </annotation>
-          </element>
-          <element name="tilPosisjon" type="double">
-            <annotation>
-              <documentation>sluttposisjon langs nettverkselementet, i henhold til referansemetoden
+						</annotation>
+					</element>
+					<element name="tilPosisjon" type="double" minOccurs="0">
+						<annotation>
+							<documentation>sluttposisjon langs nettverkselementet, i henhold til referansemetoden
 
 Merknad: Ref ISO19148: toPosition -  distanceAlong</documentation>
-              <appinfo>
-                <sc:taggedValue tag="SOSI_navn">LRTILPOSISJON</sc:taggedValue>
-              </appinfo>
-            </annotation>
-          </element>
-        </sequence>
-      </extension>
-    </complexContent>
-  </complexType>
-  <complexType name="LineærPosisjonStrekningPropertyType">
-    <sequence>
-      <element ref="svvlr:LineærPosisjonStrekning"/>
-    </sequence>
-  </complexType>
-  <simpleType name="LineærReferanseMetodeType">
-    <annotation>
-      <documentation>Metode brukt for lineære referanser
+						</annotation>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="LineærPosisjonStrekningPropertyType">
+		<sequence>
+			<element ref="svvlr:LineærPosisjonStrekning"/>
+		</sequence>
+	</complexType>
+	<simpleType name="LineærReferanseMetodeType">
+		<annotation>
+			<documentation>Metode brukt for lineære referanser
 
 Merknad:
 
@@ -232,15 +417,12 @@ Dette er en kodeliste basert på en forenkling av ISO19148: LR_LinearReferencing
  - type (absolutt, relativ eller interpolert) 
  - måleenhet 
  - restriksjoner/regler (constraints)</documentation>
-      <appinfo>
-        <sc:taggedValue tag="SOSI_navn">LRLRM</sc:taggedValue>
-      </appinfo>
-    </annotation>
-    <union memberTypes="svvlr:LineærReferanseMetodeEnumerationType svvlr:LineærReferanseMetodeOtherType"/>
-  </simpleType>
-  <simpleType name="LineærReferanseMetodeEnumerationType">
-    <annotation>
-      <documentation>Metode brukt for lineære referanser
+		</annotation>
+		<union memberTypes="svvlr:LineærReferanseMetodeEnumerationType svvlr:LineærReferanseMetodeOtherType"/>
+	</simpleType>
+	<simpleType name="LineærReferanseMetodeEnumerationType">
+		<annotation>
+			<documentation>Metode brukt for lineære referanser
 
 Merknad:
 
@@ -255,104 +437,140 @@ Dette er en kodeliste basert på en forenkling av ISO19148: LR_LinearReferencing
  - type (absolutt, relativ eller interpolert) 
  - måleenhet 
  - restriksjoner/regler (constraints)</documentation>
-      <appinfo>
-        <sc:taggedValue tag="SOSI_navn">LRLRM</sc:taggedValue>
-      </appinfo>
-    </annotation>
-    <restriction base="string">
-      <enumeration value="metrering">
-        <annotation>
-          <documentation>posisjon fra start av nettverkselementet (lenken), angitt i meter
+		</annotation>
+		<restriction base="string">
+			<enumeration value="metrering">
+				<annotation>
+					<documentation>posisjon fra start av nettverkselementet (lenken), angitt i meter
 
 Merknad: Kan ta utgangspunkt i en angitt startverdi for nettverkselementet.
 
 ISO19148: LR_LinearReferencingMethod:
  - type: "absolute"  
  - units: "meter"</documentation>
-          <appinfo>
-            <sc:taggedValue tag="SOSI_verdi">1</sc:taggedValue>
-          </appinfo>
-        </annotation>
-      </enumeration>
-      <enumeration value="kilometrering">
-        <annotation>
-          <documentation>posisjon fra start av nettverkselementet, angitt i kilometer. 
+				</annotation>
+			</enumeration>
+			<enumeration value="kilometrering">
+				<annotation>
+					<documentation>posisjon fra start av nettverkselementet, angitt i kilometer. 
 
 Merknad: Kan ta utgangspunkt i en angitt startverdi for nettverkselementet (lenken).
 
 ISO19148: LR_LinearReferencingMethod:
  - type: "absolute" 
  - units: "kilometer"</documentation>
-          <appinfo>
-            <sc:taggedValue tag="SOSI_verdi">2</sc:taggedValue>
-          </appinfo>
-        </annotation>
-      </enumeration>
-      <enumeration value="normalisert">
-        <annotation>
-          <documentation>posisjon fra start av nettverkselementet, angitt som et desimaltall mellom 0 og 1, i forhold til start (0) og slutt (1) på nettverkselementet (lenken)
+				</annotation>
+			</enumeration>
+			<enumeration value="normalisert">
+				<annotation>
+					<documentation>posisjon fra start av nettverkselementet, angitt som et desimaltall mellom 0 og 1, i forhold til start (0) og slutt (1) på nettverkselementet (lenken)
 
 Merknad: 
 ISO19148: LR_LinearReferencingMethod:
  - type: "Interpolative"  
  - units: "0..1"</documentation>
-          <appinfo>
-            <sc:taggedValue tag="SOSI_verdi">3</sc:taggedValue>
-          </appinfo>
-        </annotation>
-      </enumeration>
-      <enumeration value="prosent">
-        <annotation>
-          <documentation>posisjon fra start av nettverkselementet, angitt i prosent av lengden på nettverkselementet (lenken)
+				</annotation>
+			</enumeration>
+			<enumeration value="prosent">
+				<annotation>
+					<documentation>posisjon fra start av nettverkselementet, angitt i prosent av lengden på nettverkselementet (lenken)
 
 Merknad: 
 ISO19148: LR_LinearReferencingMethod:
  - type: "Interpolative"  
  - units: "percent"</documentation>
-          <appinfo>
-            <sc:taggedValue tag="SOSI_verdi">5</sc:taggedValue>
-          </appinfo>
-        </annotation>
-      </enumeration>
-    </restriction>
-  </simpleType>
-  <simpleType name="LineærReferanseMetodeOtherType">
-    <restriction base="string">
-      <pattern value="other: \w{2,}"/>
-    </restriction>
-  </simpleType>
-  <simpleType name="RetningskodeType">
-    <annotation>
-      <documentation>Kodeliste for å angi retning i forrhold til nettverkselementets geometri.</documentation>
-      <appinfo>
-        <sc:taggedValue tag="SOSI_navn">RETNINGSKODE</sc:taggedValue>
-      </appinfo>
-    </annotation>
-    <union memberTypes="svvlr:RetningskodeEnumerationType svvlr:RetningskodeOtherType"/>
-  </simpleType>
-  <simpleType name="RetningskodeEnumerationType">
-    <annotation>
-      <documentation>Kodeliste for å angi retning i forrhold til nettverkselementets geometri.</documentation>
-      <appinfo>
-        <sc:taggedValue tag="SOSI_navn">RETNINGSKODE</sc:taggedValue>
-      </appinfo>
-    </annotation>
-    <restriction base="string">
-      <enumeration value="med">
-        <annotation>
-          <documentation>Retning med geometrien</documentation>
-        </annotation>
-      </enumeration>
-      <enumeration value="mot">
-        <annotation>
-          <documentation>Retning mot geometrien</documentation>
-        </annotation>
-      </enumeration>
-    </restriction>
-  </simpleType>
-  <simpleType name="RetningskodeOtherType">
-    <restriction base="string">
-      <pattern value="other: \w{2,}"/>
-    </restriction>
-  </simpleType>
+				</annotation>
+			</enumeration>
+		</restriction>
+	</simpleType>
+	<simpleType name="LineærReferanseMetodeOtherType">
+		<restriction base="string">
+			<pattern value="other: \w{2,}"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="RetningskodeType">
+		<annotation>
+			<documentation>Kodeliste for å angi retning i forrhold til nettverkselementets geometri.</documentation>
+		</annotation>
+		<union memberTypes="svvlr:RetningskodeEnumerationType svvlr:RetningskodeOtherType"/>
+	</simpleType>
+	<simpleType name="RetningskodeEnumerationType">
+		<annotation>
+			<documentation>Kodeliste for å angi retning i forrhold til nettverkselementets geometri.</documentation>
+		</annotation>
+		<restriction base="string">
+			<enumeration value="med">
+				<annotation>
+					<documentation>Retning med geometrien</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="mot">
+				<annotation>
+					<documentation>Retning mot geometrien</documentation>
+				</annotation>
+			</enumeration>
+		</restriction>
+	</simpleType>
+	<simpleType name="RetningskodeOtherType">
+		<restriction base="string">
+			<pattern value="other: \w{2,}"/>
+		</restriction>
+	</simpleType>
+	<element name="VertSegmentCircularArc" type="svvlr:VertSegmentCircularArcType" substitutionGroup="svvlr:CurveSegment2DVert"/>
+	<complexType name="VertSegmentCircularArcType">
+		<complexContent>
+			<extension base="svvlr:CurveSegment2DVertType">
+				<sequence>
+					<element name="radius" type="gml:LengthType"/>
+					<element name="isConvex" type="boolean">
+						<annotation>
+							<documentation>A value of ”true” (convex) means that the gradient at the beginning of the segment is less than the gradient at the end of the previous segment.  A value of “false” (concave) (Boolean=”false”) means that the gradient at the beginning of the segment is greater than the gradient at the end of the previous segment.</documentation>
+						</annotation>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="VertSegmentCircularArcPropertyType">
+		<sequence>
+			<element ref="svvlr:VertSegmentCircularArc"/>
+		</sequence>
+	</complexType>
+	<element name="VertSegmentLine" type="svvlr:VertSegmentLineType" substitutionGroup="svvlr:CurveSegment2DVert"/>
+	<complexType name="VertSegmentLineType">
+		<complexContent>
+			<extension base="svvlr:CurveSegment2DVertType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="VertSegmentLinePropertyType">
+		<sequence>
+			<element ref="svvlr:VertSegmentLine"/>
+		</sequence>
+	</complexType>
+	<element name="VertSegmentParabolicArc" type="svvlr:VertSegmentParabolicArcType" substitutionGroup="svvlr:CurveSegment2DVert"/>
+	<complexType name="VertSegmentParabolicArcType">
+		<complexContent>
+			<extension base="svvlr:CurveSegment2DVertType">
+				<sequence>
+					<element name="constant" type="double">
+						<annotation>
+							<documentation>parabola constant (determining the “steepness” of the parabola = K * 100</documentation>
+						</annotation>
+					</element>
+					<element name="isConvex" type="boolean">
+						<annotation>
+							<documentation>A value of ”true” (convex) means that the gradient at the beginning of the segment is less than the gradient at the end of the previous segment.  A value of “false” (concave) (Boolean=”false”) means that the gradient at the beginning of the segment is greater than the gradient at the end of the previous segment.</documentation>
+						</annotation>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="VertSegmentParabolicArcPropertyType">
+		<sequence>
+			<element ref="svvlr:VertSegmentParabolicArc"/>
+		</sequence>
+	</complexType>
 </schema>
