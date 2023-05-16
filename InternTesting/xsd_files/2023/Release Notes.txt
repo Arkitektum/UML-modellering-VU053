@@ -4,13 +4,15 @@ Main Structure
 	* SVV_LineareReferanser
 		* Endre attributt til valgfritt
 		* Endre strukturen
+		* Kodelister i GML format, alle kodelister som tilhører SVV_LineareReferanser starter med "svvlr_" i Github
 	* SVV_Landinfra
 		* Oppdater kobling til SOSI
+		* Kodelister i GML format, alle kodelister som tilhører Geoteknikk starter med "svvli_" i Github
 
 Fagmodell
 	* Geoteknikk
 		* Ny modell [xsd]
-		* Kodelister i GML format, alle kodelister som tilhører Geoteknikk starter med "fmget_" i Github
+		* Kodelister i GML format, alle kodelister som tilhører SVV_Landinfra starter med "fmget_" i Github
 
 ----------		
 v1_1_0 ---> xsd_programtesting\v2.1_20230504

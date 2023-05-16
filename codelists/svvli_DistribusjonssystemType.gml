@@ -3,7 +3,7 @@
   <gml:metaDataProperty>
     <gml:GenericMetaData>
       <status>submitted</status>
-      <lastUpdated>2023-03-20T12:35:31</lastUpdated>
+      <lastUpdated>2023-05-16T12:20:51</lastUpdated>
       <kilde>VU053</kilde>
       <referense>VU053_UML 2023</referense>
     </gml:GenericMetaData>
