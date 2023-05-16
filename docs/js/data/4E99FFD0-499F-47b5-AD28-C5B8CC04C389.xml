@@ -1,2 +1,2 @@
-tocTab[tocTab.length] = new Array("0.1.7.6:1", "", "OGC-ASTopic2-CoordinateReferenceSystems", "EARoot/EA1/EA7/EA6/EA295.htm", "175.png", "328", "0", "", "Logical diagram0","{675BD900-20E7-46c7-A18D-3DBD0EBD5966}");
-tocTab[tocTab.length] = new Array("0.1.7.6:2", "", "«dataType» SC_CRS", "EARoot/EA1/EA7/EA6/EA298.htm", "5.png", "E2382", "0", "", "Class0","{C39DF273-C3E5-45ca-B320-7E6DF159543E}");
+tocTab[tocTab.length] = new Array("0.1.6.6:1", "", "OGC-ASTopic2-CoordinateReferenceSystems", "EARoot/EA1/EA6/EA6/EA291.htm", "175.png", "633", "0", "", "Logical diagram0","{675BD900-20E7-46c7-A18D-3DBD0EBD5966}");
+tocTab[tocTab.length] = new Array("0.1.6.6:2", "", "«dataType» SC_CRS", "EARoot/EA1/EA6/EA6/EA294.htm", "5.png", "E4810", "0", "", "Class0","{C39DF273-C3E5-45ca-B320-7E6DF159543E}");

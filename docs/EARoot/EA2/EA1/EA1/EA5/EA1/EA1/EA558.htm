@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Bane-4.0</title>
+<link href="../../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Bane-4.0 </h1>
+			<!-- <img class="header_image" src="../../../../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../../../../EA3.htm">Vegprosjekt VU053 v2.1</a> / <a href="../../../../../EA340.htm">LeveranseVegprosjekt</a> / <a href="../../../../EA344.htm">Samordningsmodell</a> / <a href="../../../EA349.htm">Situasjonsmodell</a> / <a href="../../EA527.htm">GrunnlagsmodellSamferdsel</a> / <a href="../EA537.htm">Infrastruktur</a> / <a href="EA558.htm">Bane-4.0</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<li><img src="../../../../../../../images/175.png" alt="Diagram"/> <a href="EA552.htm">Frittstående objekttyper</a></li>
+<li><img src="../../../../../../../images/175.png" alt="Diagram"/> <a href="EA554.htm">Kodelister</a></li>
+<li><img src="../../../../../../../images/175.png" alt="Diagram"/> <a href="EA556.htm">Samlemodell</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA559.htm">Bane</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA560.htm">Baneavgrening</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA561.htm">BaneElementSamling</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA562.htm">Baneende</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA563.htm">Banelenke</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA564.htm">Banenode</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA565.htm">FrittstaaendeElement</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA566.htm">GrunnrissreferanseSpor</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA567.htm">HøydereferanseSpor</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA568.htm">Jernbaneeier</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA569.htm">Jernbanelenke</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA570.htm">Jernbanenode</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA571.htm">Jernbaneplattform</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA572.htm">Jernbanetype</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA573.htm">Kilometerskilt</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA574.htm">Kjedebrudd</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA575.htm">Sporantall</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA576.htm">Sporavgrening</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA577.htm">Sporavgreningspunkt</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA578.htm">Sporavgreningspunkttype</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA579.htm">Sporavgreningstype</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA580.htm">Sporende</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA581.htm">Sporlenke</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA582.htm">Spormidt</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA583.htm">Spornode</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA584.htm">Sporpunkt</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA585.htm">Sporpunkttype</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA586.htm">Sportype</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA587.htm">Stasjon</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA588.htm">Stasjonsende</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA589.htm">Stasjonsformål</a></li>
+<li><img src="../../../../../../../images/5.png" alt="Class"/> <a href="EA590.htm">Stasjonstype</a></li>
+</ul>
+
+					</td>
+					<td class="contentcell"><div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">Bane-4.0  : Public   Package</span>
+	<table border="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">04.04.2023 13:04:21</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">04.04.2023 13:10:36</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">MatiasGonzalezTognoni</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">4.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" >Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{C8BD395F-6CAA-42ca-82F7-4E98D34701E7}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">databeskrivelsen omfatter i hovedsak den delen av jernbanens infrastruktur som betegnes &#8221;overbygning&#8221;, dvs. spor,&lt;br/&gt;sporveksler/-kryss og plattformer. Med &#8221;jernbane&#8221; menes her også sporveg, tunnelbane mv. Elementer som naturlig inngår i jernbanens infrastruktur, men som kan beskrives med objekttyper i andre kapitler, er ikke tatt med i dette kapitlet. Slik infrastruktur er beskrevet i bl.a. kapitlene om Ledningsnett (anlegg for strømforsyning, signal-/sikring&lt;br/&gt;og telekommunikasjon), Bygninger (stasjonsbygning, takoverbygg og snøoverbygg), Bygningstekniske anlegg (bru, kulvert, tunnelportal, støttemur, stikkrenne, gjerde og støyskjerm) og Terrengform (skjæringer og fyllinger)&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+		</ul>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Tag</td>
+			<td width="50%" class="TableHeading">Value</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">kilde</td>
+				<td width="50%" class="TableRow" valign="top">SOSI</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					Details:
+						&nbsp;
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">referanse</td>
+				<td width="50%" class="TableRow" valign="top">bane 4.0</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					Details:
+						&nbsp;
+				</td>
+			</tr>
+	</table>
+</div>	</div>
+ </div>
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

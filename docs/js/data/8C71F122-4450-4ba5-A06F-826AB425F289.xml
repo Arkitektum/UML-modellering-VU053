@@ -1,6 +1,6 @@
-tocTab[tocTab.length] = new Array("0.2.1.2.7.1:1", "", "ErvervetAreal", "EARoot/EA2/EA1/EA2/EA7/EA1/EA1089.htm", "175.png", "388", "0", "", "Logical diagram0","{7A8C3E43-A297-4871-B910-6E68668DA37E}");
-tocTab[tocTab.length] = new Array("0.2.1.2.7.1:2", "", "«FeatureType» ErvervetArealElement", "EARoot/EA2/EA1/EA2/EA7/EA1/EA1092.htm", "5.png", "E2910", "0", "", "Class0","{877ACD80-4DC0-4cfd-92D8-FF39CBDF866A}");
-tocTab[tocTab.length] = new Array("0.2.1.2.7.1:3", "", "«FeatureType» MidlertidigBeslag", "EARoot/EA2/EA1/EA2/EA7/EA1/EA1093.htm", "5.png", "E2909", "0", "", "Class0","{57EB5567-F98B-4808-9803-2DF7D49F237D}");
-tocTab[tocTab.length] = new Array("0.2.1.2.7.1:4", "", "«FeatureType» PermanentErverv", "EARoot/EA2/EA1/EA2/EA7/EA1/EA1094.htm", "5.png", "E2907", "0", "", "Class0","{1AC8633B-BEE0-4189-91B9-8582F48A3271}");
-tocTab[tocTab.length] = new Array("0.2.1.2.7.1:5", "", "«FeatureType» PermanentKlausulertAreal", "EARoot/EA2/EA1/EA2/EA7/EA1/EA1095.htm", "5.png", "E2911", "0", "", "Class0","{CAD61161-1F63-4117-AD57-35D448B5CA3B}");
-tocTab[tocTab.length] = new Array("0.2.1.2.7.1:6", "", "«FeatureType» Servitutter", "EARoot/EA2/EA1/EA2/EA7/EA1/EA1096.htm", "5.png", "E2908", "0", "", "Class0","{3B6B8CA7-89F8-477d-884D-5BFBA2B1B978}");
+tocTab[tocTab.length] = new Array("0.2.1.2.7.1:1", "", "ErvervetAreal", "EARoot/EA2/EA1/EA2/EA7/EA1/EA1085.htm", "175.png", "738", "0", "", "Logical diagram0","{7A8C3E43-A297-4871-B910-6E68668DA37E}");
+tocTab[tocTab.length] = new Array("0.2.1.2.7.1:2", "", "«FeatureType» ErvervetArealElement", "EARoot/EA2/EA1/EA2/EA7/EA1/EA1088.htm", "5.png", "E5655", "0", "", "Class0","{877ACD80-4DC0-4cfd-92D8-FF39CBDF866A}");
+tocTab[tocTab.length] = new Array("0.2.1.2.7.1:3", "", "«FeatureType» MidlertidigBeslag", "EARoot/EA2/EA1/EA2/EA7/EA1/EA1089.htm", "5.png", "E5654", "0", "", "Class0","{57EB5567-F98B-4808-9803-2DF7D49F237D}");
+tocTab[tocTab.length] = new Array("0.2.1.2.7.1:4", "", "«FeatureType» PermanentErverv", "EARoot/EA2/EA1/EA2/EA7/EA1/EA1090.htm", "5.png", "E5652", "0", "", "Class0","{1AC8633B-BEE0-4189-91B9-8582F48A3271}");
+tocTab[tocTab.length] = new Array("0.2.1.2.7.1:5", "", "«FeatureType» PermanentKlausulertAreal", "EARoot/EA2/EA1/EA2/EA7/EA1/EA1091.htm", "5.png", "E5656", "0", "", "Class0","{CAD61161-1F63-4117-AD57-35D448B5CA3B}");
+tocTab[tocTab.length] = new Array("0.2.1.2.7.1:6", "", "«FeatureType» Servitutter", "EARoot/EA2/EA1/EA2/EA7/EA1/EA1092.htm", "5.png", "E5653", "0", "", "Class0","{3B6B8CA7-89F8-477d-884D-5BFBA2B1B978}");

@@ -1,0 +1,322 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>FagmodellElektro</title>
+<link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> FagmodellElektro </h1>
+			<!-- <img class="header_image" src="../../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../../EA3.htm">Vegprosjekt VU053 v2.1</a> / <a href="../../../EA340.htm">LeveranseVegprosjekt</a> / <a href="../../EA344.htm">Samordningsmodell</a> / <a href="../EA644.htm">Tverrfagligmodell</a> / <a href="EA677.htm">FagmodellElektro</a> / <a href="EA673.htm">FagmodellElektro</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<li><img src="../../../../../images/175.png" alt="Diagram"/> <a href="EA673.htm">FagmodellElektro</a></li>
+<li><img src="../../../../../images/175.png" alt="Diagram"/> <a href="EA675.htm">FagmodellElektro Kodelister</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA678.htm">Armatur</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA680.htm">Bryter</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA682.htm">ElBryterSvoepe</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA683.htm">elektroElement</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA684.htm">FagmodellElektro</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA685.htm">FargeTrekkeroer</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA686.htm">Fjordspenn</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA687.htm">Framfoeringsnoder</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA688.htm">Framfoeringsveier</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA689.htm">Generator</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA690.htm">Generell</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA692.htm">Hengekabel</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA693.htm">Jordingspunkt</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA695.htm">Kobling</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA697.htm">Konsesjon</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA698.htm">Kraftstasjon</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA699.htm">Kum</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA701.htm">Kveil</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA702.htm">Ledning</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA704.htm">Luftkabel</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA705.htm">Mast</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA707.htm">Matepunkt</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA708.htm">MaterialeLokk</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA709.htm">Nettverkstasjon</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA711.htm">Sikring</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA712.htm">Skap</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA713.htm">Søkesonde</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA714.htm">TekniskBygg</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA715.htm">Tilknytningspunkt</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA717.htm">Transformator</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA719.htm">Transformatorstasjon</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA720.htm">Trase</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA722.htm">Trekkeroer</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA724.htm">TypeKobling</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA725.htm">TypeKobling</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA726.htm">TypeLedning</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA727.htm">TypeLedning</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA728.htm">TypeNettverkstasjon</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA729.htm">UtleidTil</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA730.htm">Varmekabel</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA731.htm">Vindturbin</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA732.htm">AntallLyskilderPerArmatur</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA733.htm">Brannsikker</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA734.htm">EierTrekkeroerKanal</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA735.htm">Fundamenttype</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA736.htm">Armaturtype</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA737.htm">EierTrekkekum</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA738.htm">Konstruksjonmaterial</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA739.htm">AvskjermingMateriale</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA740.htm">Kumform</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA741.htm">LedigPlass</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA742.htm">AvskjermingType</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA743.htm">MaterialeKum</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA744.htm">MaterialeTrekkeroerKanal</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA745.htm">DimmingLysarmatur</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA746.htm">PlasseringTrekkeroerKanal</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA747.htm">EierLysarmatur</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA748.htm">PlasseringTrekkekum</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA749.htm">RelevantForEkomportalenTrekkeroerKanal</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA750.htm">ELBryterManoevrering</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA751.htm">InngaarINoedsystemetLysarmatur</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA752.htm">RelevantForEkomportalenTrekkekum</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA753.htm">TypeTrekkeroerKanal</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA754.htm">ELBryterNormalstilling</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA755.htm">KonstantLysutbytte</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA756.htm">Mastefunksjon</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA757.htm">VedlikeholdsansvarligTrekkekum</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA758.htm">ELBrytertype</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA759.htm">LyskildeTypeLysarmatur</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA760.htm">VedlikeholdsansvarligTrekkeroerKanal</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA761.htm">ELFase</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA762.htm">Mastekonstruksjon</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA763.htm">Optikk</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA764.htm">Nettverkstasjontype</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA765.htm">ProdusentArmatur</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA766.htm">Tilt</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA767.htm">ELJordingType</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA768.htm">UtskiftbareLyskilder</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA769.htm">Utstyrsklasse</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA770.htm">VedlikeholdsansvarligLysarmatur</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA771.htm">ELKoplingType</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA772.htm">ELKraftstasjonstype</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA773.htm">ELLedningFunksjon</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA774.htm">ELLedningTverrsnitt</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA775.htm">ELMaterial</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA776.htm">ELNettnivaa</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA777.htm">ELNettSpenning</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA778.htm">ELTilknytningspunkttype</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA779.htm">ELTransformatortype</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA780.htm">ELTransformatorytelse</a></li>
+<li><img src="../../../../../images/5.png" alt="Class"/> <a href="EA781.htm">FASITSluttbrukergruppe</a></li>
+</ul>
+
+					</td>
+					<td class="contentcell"><div class="PageBody">
+	<div class=diagram_image> 
+<img src="EA674.png" usemap="#EA674" border="0" />
+
+<MAP NAME="EA674">
+<area shape="rect" coords="1547,664,1676,749" href="EA766.htm" target="_self">
+<area shape="rect" coords="1407,664,1529,736" href="EA739.htm" target="_self">
+<area shape="rect" coords="1299,650,1393,736" href="EA769.htm" target="_self">
+<area shape="rect" coords="1184,650,1280,748" href="EA763.htm" target="_self">
+<area shape="rect" coords="1521,539,1636,650" href="EA742.htm" target="_self">
+<area shape="rect" coords="1400,539,1504,611" href="EA768.htm" target="_self">
+<area shape="rect" coords="1278,539,1382,611" href="EA755.htm" target="_self">
+<area shape="rect" coords="1184,539,1264,637" href="EA736.htm" target="_self">
+<area shape="rect" coords="2594,1171,2681,1256" href="EA708.htm" target="_self">
+<area shape="rect" coords="2377,1177,2577,1249" href="EA752.htm" target="_self">
+<area shape="rect" coords="3065,433,3222,531" href="EA697.htm" target="_self">
+<area shape="rect" coords="349,181,457,233" href="EA714.htm" target="_self">
+<area shape="rect" coords="4000,671,4106,785" href="EA729.htm" target="_self">
+<area shape="rect" coords="3999,583,4213,655" href="EA749.htm" target="_self">
+<area shape="rect" coords="3893,583,3987,733" href="EA685.htm" target="_self">
+<area shape="rect" coords="3684,698,3861,835" href="EA760.htm" target="_self">
+<area shape="rect" coords="3564,698,3669,809" href="EA753.htm" target="_self">
+<area shape="rect" coords="3415,723,3548,886" href="EA746.htm" target="_self">
+<area shape="rect" coords="3658,583,3788,681" href="EA744.htm" target="_self">
+<area shape="rect" coords="3555,583,3641,681" href="EA741.htm" target="_self">
+<area shape="rect" coords="3415,583,3540,707" href="EA734.htm" target="_self">
+<area shape="rect" coords="3053,583,3367,851" href="EA722.htm" target="_self">
+<area shape="rect" coords="3422,296,3528,408" href="EA776.htm" target="_self">
+<area shape="rect" coords="3280,296,3408,486" href="EA773.htm" target="_self">
+<area shape="rect" coords="3051,296,3251,383" href="EA720.htm" target="_self">
+<area shape="rect" coords="2290,1550,2404,1622" href="EA764.htm" target="_self">
+<area shape="rect" coords="2490,1654,2615,1843" href="EA772.htm" target="_self">
+<area shape="rect" coords="2290,1871,2457,2008" href="EA731.htm" target="_self">
+<area shape="rect" coords="2290,1783,2409,1843" href="EA719.htm" target="_self">
+<area shape="rect" coords="2290,1654,2457,1754" href="EA698.htm" target="_self">
+<area shape="rect" coords="2029,1550,2271,1648" href="EA728.htm" target="_self">
+<area shape="rect" coords="2031,1467,2197,1526" href="EA709.htm" target="_self">
+<area shape="rect" coords="2031,1227,2138,1312" href="EA712.htm" target="_self">
+<area shape="rect" coords="2031,1363,2139,1415" href="EA713.htm" target="_self">
+<area shape="rect" coords="2518,1014,2681,1151" href="EA757.htm" target="_self">
+<area shape="rect" coords="2377,1027,2504,1164" href="EA748.htm" target="_self">
+<area shape="rect" coords="2518,890,2654,1004" href="EA743.htm" target="_self">
+<area shape="rect" coords="2666,890,2751,974" href="EA740.htm" target="_self">
+<area shape="rect" coords="2376,890,2504,1014" href="EA737.htm" target="_self">
+<area shape="rect" coords="2694,987,2762,1059" href="EA733.htm" target="_self">
+<area shape="rect" coords="2031,889,2321,1142" href="EA699.htm" target="_self">
+<area shape="rect" coords="2615,296,2763,836" href="EA762.htm" target="_self">
+<area shape="rect" coords="2483,460,2603,584" href="EA756.htm" target="_self">
+<area shape="rect" coords="2483,296,2593,447" href="EA738.htm" target="_self">
+<area shape="rect" coords="2314,296,2470,564" href="EA735.htm" target="_self">
+<area shape="rect" coords="2031,295,2273,445" href="EA705.htm" target="_self">
+<area shape="rect" coords="1502,2503,1600,2705" href="EA777.htm" target="_self">
+<area shape="rect" coords="1322,2503,1487,2709" href="EA779.htm" target="_self">
+<area shape="rect" coords="1193,2503,1307,2901" href="EA780.htm" target="_self">
+<area shape="rect" coords="964,2504,1176,2615" href="EA717.htm" target="_self">
+<area shape="rect" coords="1323,2082,1628,2478" href="EA781.htm" target="_self">
+<area shape="rect" coords="1194,2155,1310,2240" href="EA761.htm" target="_self">
+<area shape="rect" coords="1194,2083,1310,2142" href="EA778.htm" target="_self">
+<area shape="rect" coords="942,2083,1176,2220" href="EA715.htm" target="_self">
+<area shape="rect" coords="1010,1969,1176,2054" href="EA711.htm" target="_self">
+<area shape="rect" coords="1010,1842,1176,1940" href="EA707.htm" target="_self">
+<area shape="rect" coords="1067,1751,1176,1811" href="EA701.htm" target="_self">
+<area shape="rect" coords="1374,1384,1547,1729" href="EA774.htm" target="_self">
+<area shape="rect" coords="1187,1384,1360,1534" href="EA767.htm" target="_self">
+<area shape="rect" coords="952,1384,1170,1508" href="EA693.htm" target="_self">
+<area shape="rect" coords="1184,1169,1345,1358" href="EA771.htm" target="_self">
+<area shape="rect" coords="1029,1169,1167,1227" href="EA690.htm" target="_self">
+<area shape="rect" coords="855,139,979,237" href="EA725.htm" target="_self">
+<area shape="rect" coords="985,1005,1167,1142" href="EA689.htm" target="_self">
+<area shape="rect" coords="1414,894,1494,966" href="EA682.htm" target="_self">
+<area shape="rect" coords="1299,808,1401,932" href="EA758.htm" target="_self">
+<area shape="rect" coords="1414,808,1522,880" href="EA754.htm" target="_self">
+<area shape="rect" coords="1181,808,1286,971" href="EA750.htm" target="_self">
+<area shape="rect" coords="923,809,1167,933" href="EA680.htm" target="_self">
+<area shape="rect" coords="1448,266,1604,402" href="EA770.htm" target="_self">
+<area shape="rect" coords="1316,350,1434,500" href="EA759.htm" target="_self">
+<area shape="rect" coords="1448,415,1604,487" href="EA751.htm" target="_self">
+<area shape="rect" coords="1184,403,1302,527" href="EA747.htm" target="_self">
+<area shape="rect" coords="1316,266,1411,338" href="EA745.htm" target="_self">
+<area shape="rect" coords="1184,266,1302,390" href="EA732.htm" target="_self">
+<area shape="rect" coords="879,266,1167,533" href="EA678.htm" target="_self">
+<area shape="rect" coords="681,266,858,390" href="EA724.htm" target="_self">
+<area shape="rect" coords="10,116,120,266" href="EA775.htm" target="_self">
+<area shape="rect" coords="159,539,265,611" href="EA686.htm" target="_self">
+<area shape="rect" coords="67,429,197,514" href="EA704.htm" target="_self">
+<area shape="rect" coords="228,429,358,514" href="EA692.htm" target="_self">
+<area shape="rect" coords="140,314,283,399" href="EA726.htm" target="_self">
+<area shape="rect" coords="10,314,120,399" href="EA727.htm" target="_self">
+<area shape="rect" coords="523,181,633,233" href="EA730.htm" target="_self">
+<area shape="rect" coords="2819,188,2926,240" href="EA688.htm" target="_self">
+<area shape="rect" coords="1793,188,1900,240" href="EA687.htm" target="_self">
+<area shape="rect" coords="705,178,833,237" href="EA695.htm" target="_self">
+<area shape="rect" coords="140,181,283,266" href="EA702.htm" target="_self">
+<area shape="rect" coords="828,10,938,62" href="EA683.htm" target="_self">
+<area shape="rect" coords="621,10,731,62" href="EA684.htm" target="_self">
+</MAP>
+ </div>
+	<div class="ObjectTitle">FagmodellElektro : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">08.12.2022 10:51:03</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">27.12.2022 15:40:09</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">ilypal</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{68084238-ED53-4027-94E5-9F918DD0BBD5}</td>
+		</tr>
+	</table>
+	
+</div>
+
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

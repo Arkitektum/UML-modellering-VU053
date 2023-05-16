@@ -1,0 +1,272 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Tiltak</title>
+<link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Tiltak </h1>
+			<!-- <img class="header_image" src="../../../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../../../EA3.htm">Vegprosjekt VU053 v2.1</a> / <a href="../../../../EA340.htm">LeveranseVegprosjekt</a> / <a href="../../../EA344.htm">Samordningsmodell</a> / <a href="../../EA644.htm">Tverrfagligmodell</a> / <a href="../EA963.htm">FagmodellGeoteknikk</a> / <a href="EA974.htm">Tiltak</a> / <a href="EA970.htm">Tiltak</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<li><img src="../../../../../../images/175.png" alt="Diagram"/> <a href="EA970.htm">Tiltak</a></li>
+<li><img src="../../../../../../images/175.png" alt="Diagram"/> <a href="EA972.htm">Tiltak Kodeliste</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA978.htm">Avstiving</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA979.htm">BergsikringBergskjaering</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA980.htm">BergsikringTunnel</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA981.htm">Bergskjaering</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA983.htm">BerguttakBergskjaering</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA984.htm">BerguttakTunnel</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA985.htm">Bjelkestengsler</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA986.htm">Bolter</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA987.htm">BoredePeler</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA988.htm">Erosjonssikring</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA990.htm">ErosjonssikringBruksomraade</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA991.htm">ErosjonssikringsType</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA992.htm">Etterinjeksjon</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA993.htm">Fanggroeft</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA995.htm">Forankringsstag</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA996.htm">Forblending</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA997.htm">Forinjeksjon</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA998.htm">Fundamentering</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA999.htm">Gabioner</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1000.htm">GeotekniskKategori</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1001.htm">GraveplanerForByggegrop</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1002.htm">Grunnforsterkning</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1004.htm">GrunnforsterkningType</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1005.htm">Injeksjon</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1006.htm">Innstallasjonsmetode</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1007.htm">InnvendigAvstiving</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1008.htm">JordArmertmur</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1009.htm">Jordnagling</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1010.htm">Lettfyllinger</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1011.htm">Masseutskifting</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1013.htm">MetodeBerguttak</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1014.htm">MoensterType</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1015.htm">Nett</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1016.htm">Peler</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1018.htm">PelerType</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1019.htm">PermanentSpunt</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1020.htm">RammedePeler</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1021.htm">Roervegger</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1022.htm">Sikring</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1024.htm">SkreddsikringFanggroeft</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1025.htm">SkredIBrattTerreng</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1026.htm">SkredmagasinFanggroeft</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1027.htm">Skredoverbygg</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1028.htm">Skredsikring</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1030.htm">Skredutloesningstiltak</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1031.htm">SkredVarslingOvervaakning</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1032.htm">Slissevegger</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1033.htm">Sproeytebetong</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1034.htm">Spunt</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1035.htm">Steinspranggjerde</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1036.htm">StoetteforbygningSnoe</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1037.htm">Stoettekonstruksjoner</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1038.htm">StoettekonstruksjonerBruksomraade</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1039.htm">Tiltak</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1041.htm">TiltakElement</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1043.htm">TiltakITunnel</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1044.htm">Toerrmur</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1045.htm">TyngreSikring</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1046.htm">TypeNett</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1047.htm">TypeNyeMasser</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1049.htm">Vannoverdekning</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1050.htm">Voll</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1052.htm">AdkomstBergsikring</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1053.htm">AdkomstSkredmagasinFanggroeft</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1054.htm">AdkomstStoetteforbygningSnoe</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1055.htm">AdkomstVoll</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1056.htm">BruksomraadeVoll</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1057.htm">Eier</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1058.htm">Overvaakningstype</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1059.htm">TypeBolt</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1060.htm">TypeSkredoverbygg</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1061.htm">TypeSkredutloesningstiltak</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1062.htm">PlasseringBergsikring</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1063.htm">TypeNaturfare</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1064.htm">TypeSkredmagasinFanggroeft</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1065.htm">TypeStoetteforbygningSnoe</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1066.htm">MaterialtypeVoll</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1067.htm">VarslingPaaVeg</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1068.htm">TypeSproeytebetong</a></li>
+<li><img src="../../../../../../images/5.png" alt="Class"/> <a href="EA1069.htm">Vedlikeholdsansvarlig</a></li>
+<li><img src="../../../../../../images/25.png" alt="Object"/> <a href="EA977.htm"></a></li>
+</ul>
+
+					</td>
+					<td class="contentcell"><div class="PageBody">
+	<div class=diagram_image> 
+<img src="EA971.png" usemap="#EA971" border="0" />
+
+<MAP NAME="EA971">
+<area shape="rect" coords="1350,513,1496,595" href="EA1024.htm" target="_self">
+<area shape="rect" coords="692,596,824,648" href="EA1022.htm" target="_self">
+<area shape="rect" coords="1228,706,1368,774" href="EA993.htm" target="_self">
+<area shape="rect" coords="1000,302,1160,372" href="EA981.htm" target="_self">
+<area shape="rect" coords="1464,631,1608,703" href="EA1035.htm" target="_self">
+<area shape="rect" coords="874,748,970,800" href="EA1045.htm" target="_self">
+<area shape="rect" coords="1959,625,2196,801" href="EA1036.htm" target="_self">
+<area shape="rect" coords="1836,467,2055,591" href="EA1031.htm" target="_self">
+<area shape="rect" coords="1724,651,1910,775" href="EA1030.htm" target="_self">
+<area shape="rect" coords="1607,453,1792,617" href="EA1027.htm" target="_self">
+<area shape="rect" coords="694,737,859,809" href="EA1033.htm" target="_self">
+<area shape="rect" coords="1176,821,1417,1009" href="EA1026.htm" target="_self">
+<area shape="rect" coords="502,737,660,809" href="EA1015.htm" target="_self">
+<area shape="rect" coords="314,711,472,809" href="EA986.htm" target="_self">
+<area shape="rect" coords="321,508,417,560" href="EA992.htm" target="_self">
+<area shape="rect" coords="167,505,286,564" href="EA997.htm" target="_self">
+<area shape="rect" coords="437,343,744,532" href="EA980.htm" target="_self">
+<area shape="rect" coords="10,363,178,422" href="EA984.htm" target="_self">
+<area shape="rect" coords="501,188,588,240" href="EA1043.htm" target="_self">
+<area shape="rect" coords="220,343,385,441" href="EA1005.htm" target="_self">
+<area shape="rect" coords="1019,475,1290,663" href="EA979.htm" target="_self">
+<area shape="rect" coords="794,475,952,533" href="EA983.htm" target="_self">
+<area shape="rect" coords="1403,294,1532,337" href="EA1028.htm" target="_self">
+<area shape="rect" coords="1413,196,1532,236" href="EA1025.htm" target="_self">
+<area shape="rect" coords="2108,821,2352,1088" href="EA1050.htm" target="_self">
+<area shape="rect" coords="2822,774,3134,843" href="EA975.htm" target="_self">
+<area shape="rect" coords="3161,631,3633,843" href="EA976.htm" target="_self">
+<area shape="rect" coords="2776,460,2961,530" href="EA978.htm" target="_self">
+<area shape="rect" coords="2447,735,2599,805" href="EA1006.htm" target="_self">
+<area shape="rect" coords="2371,637,2514,718" href="EA987.htm" target="_self">
+<area shape="rect" coords="2542,630,2693,725" href="EA1020.htm" target="_self">
+<area shape="rect" coords="2917,565,3100,689" href="EA1007.htm" target="_self">
+<area shape="rect" coords="2710,544,2901,733" href="EA995.htm" target="_self">
+<area shape="rect" coords="795,10,1000,98" href="EA1041.htm" target="_self">
+<area shape="rect" coords="1058,16,1269,91" href="EA1039.htm" target="_self">
+<area shape="rect" coords="2555,305,2738,429" href="EA1034.htm" target="_self">
+<area shape="rect" coords="3478,336,3739,460" href="EA1044.htm" target="_self">
+<area shape="rect" coords="1859,205,2032,368" href="EA1002.htm" target="_self">
+<area shape="rect" coords="3369,492,3521,591" href="EA999.htm" target="_self">
+<area shape="rect" coords="3245,309,3421,446" href="EA1009.htm" target="_self">
+<area shape="rect" coords="3008,330,3160,428" href="EA1032.htm" target="_self">
+<area shape="rect" coords="2778,318,2961,429" href="EA1021.htm" target="_self">
+<area shape="rect" coords="3112,460,3308,558" href="EA1008.htm" target="_self">
+<area shape="rect" coords="1575,210,1801,295" href="EA988.htm" target="_self">
+<area shape="rect" coords="2671,188,2779,229" href="EA1037.htm" target="_self">
+<area shape="rect" coords="2412,510,2632,608" href="EA1016.htm" target="_self">
+<area shape="rect" coords="680,177,828,249" href="EA1001.htm" target="_self">
+<area shape="rect" coords="900,177,1027,249" href="EA985.htm" target="_self">
+<area shape="rect" coords="2089,216,2238,314" href="EA1010.htm" target="_self">
+<area shape="rect" coords="1161,171,1350,256" href="EA1011.htm" target="_self">
+</MAP>
+ </div>
+	<div class="ObjectTitle">Tiltak : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">28.09.2022 13:58:16</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">03.05.2023 09:41:06</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">MatiasGonzalezTognon</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{DFD5C591-F547-4de8-87C9-4D05A9F4B059}</td>
+		</tr>
+	</table>
+	
+</div>
+
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

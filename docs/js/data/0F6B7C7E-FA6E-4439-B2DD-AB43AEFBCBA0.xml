@@ -1,5 +1,5 @@
-tocTab[tocTab.length] = new Array("0.2.1.2.11.3:1", "", "Stoetpute", "EARoot/EA2/EA1/EA2/EA11/EA3/EA1340.htm", "175.png", "236", "0", "", "Logical diagram0","{107275DC-553D-4690-813B-6D858772C0AD}");
-tocTab[tocTab.length] = new Array("0.2.1.2.11.3:2", "", "«FeatureType» StoetputeElement", "EARoot/EA2/EA1/EA2/EA11/EA3/EA1343.htm", "5.png", "E1520", "0", "", "Class0","{C34E3238-5846-4e47-9E65-9975181F9641}");
-tocTab[tocTab.length] = new Array("0.2.1.2.11.3:3", "", "«CodeList» Avledningsevne", "EARoot/EA2/EA1/EA2/EA11/EA3/EA1344.htm", "5.png", "E1518", "0", "", "Class0","{5A5202FF-38D9-4ac6-8816-53F7B78877EE}");
-tocTab[tocTab.length] = new Array("0.2.1.2.11.3:4", "", "«CodeList» ProduktnavnTypegodkjenningStoetpute", "EARoot/EA2/EA1/EA2/EA11/EA3/EA1345.htm", "5.png", "E1519", "0", "", "Class0","{B94E8417-3301-4e94-9A3C-EB7EAEAE8F68}");
-tocTab[tocTab.length] = new Array("0.2.1.2.11.3:5", "", "«CodeList» Sikkerhetsklasse", "EARoot/EA2/EA1/EA2/EA11/EA3/EA1346.htm", "5.png", "E1517", "0", "", "Class0","{07BBE9BB-4558-4432-A1FC-D4C79BE41C5F}");
+tocTab[tocTab.length] = new Array("0.2.1.2.11.3:1", "", "Stoetpute", "EARoot/EA2/EA1/EA2/EA11/EA3/EA1336.htm", "175.png", "759", "0", "", "Logical diagram0","{107275DC-553D-4690-813B-6D858772C0AD}");
+tocTab[tocTab.length] = new Array("0.2.1.2.11.3:2", "", "«FeatureType» StoetputeElement", "EARoot/EA2/EA1/EA2/EA11/EA3/EA1339.htm", "5.png", "E5855", "0", "", "Class0","{C34E3238-5846-4e47-9E65-9975181F9641}");
+tocTab[tocTab.length] = new Array("0.2.1.2.11.3:3", "", "«CodeList» Avledningsevne", "EARoot/EA2/EA1/EA2/EA11/EA3/EA1340.htm", "5.png", "E5853", "0", "", "Class0","{5A5202FF-38D9-4ac6-8816-53F7B78877EE}");
+tocTab[tocTab.length] = new Array("0.2.1.2.11.3:4", "", "«CodeList» ProduktnavnTypegodkjenningStoetpute", "EARoot/EA2/EA1/EA2/EA11/EA3/EA1341.htm", "5.png", "E5854", "0", "", "Class0","{B94E8417-3301-4e94-9A3C-EB7EAEAE8F68}");
+tocTab[tocTab.length] = new Array("0.2.1.2.11.3:5", "", "«CodeList» Sikkerhetsklasse", "EARoot/EA2/EA1/EA2/EA11/EA3/EA1342.htm", "5.png", "E5852", "0", "", "Class0","{07BBE9BB-4558-4432-A1FC-D4C79BE41C5F}");

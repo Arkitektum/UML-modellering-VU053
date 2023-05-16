@@ -1,6 +1,6 @@
-tocTab[tocTab.length] = new Array("0.2.1.2.11.2:1", "", "Rekkverksende", "EARoot/EA2/EA1/EA2/EA11/EA2/EA1332.htm", "175.png", "235", "0", "", "Logical diagram0","{C889B61E-8D41-41de-A35D-8E29B37042A7}");
-tocTab[tocTab.length] = new Array("0.2.1.2.11.2:2", "", "«CodeList» Energiabsorpsjon", "EARoot/EA2/EA1/EA2/EA11/EA2/EA1335.htm", "5.png", "E1512", "0", "", "Class0","{5360C12F-6B55-4d15-9FB7-45631437B5B0}");
-tocTab[tocTab.length] = new Array("0.2.1.2.11.2:3", "", "«FeatureType» RekkverksendeElement", "EARoot/EA2/EA1/EA2/EA11/EA2/EA1336.htm", "5.png", "E1513", "0", "", "Class0","{9D337190-5408-4e78-BD79-2EF389544822}");
-tocTab[tocTab.length] = new Array("0.2.1.2.11.2:4", "", "«CodeList» SikkerhetsklasseType", "EARoot/EA2/EA1/EA2/EA11/EA2/EA1337.htm", "5.png", "E1514", "0", "", "Class0","{A13DCC17-7B8E-4f9e-A965-C94AB7C24E5C}");
-tocTab[tocTab.length] = new Array("0.2.1.2.11.2:5", "", "«CodeList» ProduktnavnTypegodkjenningRekkverksende", "EARoot/EA2/EA1/EA2/EA11/EA2/EA1338.htm", "5.png", "E1516", "0", "", "Class0","{F1EC57A8-14DB-49f5-AFCA-ADB747D9BBCF}");
-tocTab[tocTab.length] = new Array("0.2.1.2.11.2:6", "", "«CodeList» TypeRekkverksende", "EARoot/EA2/EA1/EA2/EA11/EA2/EA1339.htm", "5.png", "E1515", "0", "", "Class0","{E94822B1-5F28-4f56-980A-63DF4ADBAB4B}");
+tocTab[tocTab.length] = new Array("0.2.1.2.11.2:1", "", "Rekkverksende", "EARoot/EA2/EA1/EA2/EA11/EA2/EA1328.htm", "175.png", "758", "0", "", "Logical diagram0","{C889B61E-8D41-41de-A35D-8E29B37042A7}");
+tocTab[tocTab.length] = new Array("0.2.1.2.11.2:2", "", "«CodeList» Energiabsorpsjon", "EARoot/EA2/EA1/EA2/EA11/EA2/EA1331.htm", "5.png", "E5847", "0", "", "Class0","{5360C12F-6B55-4d15-9FB7-45631437B5B0}");
+tocTab[tocTab.length] = new Array("0.2.1.2.11.2:3", "", "«FeatureType» RekkverksendeElement", "EARoot/EA2/EA1/EA2/EA11/EA2/EA1332.htm", "5.png", "E5848", "0", "", "Class0","{9D337190-5408-4e78-BD79-2EF389544822}");
+tocTab[tocTab.length] = new Array("0.2.1.2.11.2:4", "", "«CodeList» SikkerhetsklasseType", "EARoot/EA2/EA1/EA2/EA11/EA2/EA1333.htm", "5.png", "E5849", "0", "", "Class0","{A13DCC17-7B8E-4f9e-A965-C94AB7C24E5C}");
+tocTab[tocTab.length] = new Array("0.2.1.2.11.2:5", "", "«CodeList» ProduktnavnTypegodkjenningRekkverksende", "EARoot/EA2/EA1/EA2/EA11/EA2/EA1334.htm", "5.png", "E5851", "0", "", "Class0","{F1EC57A8-14DB-49f5-AFCA-ADB747D9BBCF}");
+tocTab[tocTab.length] = new Array("0.2.1.2.11.2:6", "", "«CodeList» TypeRekkverksende", "EARoot/EA2/EA1/EA2/EA11/EA2/EA1335.htm", "5.png", "E5850", "0", "", "Class0","{E94822B1-5F28-4f56-980A-63DF4ADBAB4B}");
